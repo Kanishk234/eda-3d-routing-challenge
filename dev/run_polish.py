@@ -59,11 +59,11 @@ def decode(inst, text):
             "accepted_replacements":accepted,"searches":searches,"expansions":expansions,
             "net_delays":delays}
 
-def run_core(case_dir, data, budget, seed, passes):
+def run_core(case_dir, data, budget, seed, passes, mode="polish"):
     case_dir.mkdir(parents=True)
     source=case_dir/"input.txt"; output=case_dir/"output.txt"; resources=case_dir/"resources.txt"
     source.write_text(data)
-    command=[str(ENGINE),str(budget),str(seed),str(passes),"polish"]
+    command=[str(ENGINE),str(budget),str(seed),str(passes),mode]
     measured=["/usr/bin/time","-f","%e %U %S %M","-o",str(resources),*command]
     start=time.perf_counter()
     interrupted=external_timeout=False
@@ -93,6 +93,7 @@ def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument("--suite",choices=["benchmarks","benchmarks_hard"],default="benchmarks_hard")
     p.add_argument("--case")
+    p.add_argument("--mode",choices=["polish","repair"],default="polish")
     p.add_argument("--budget",type=float,default=10)
     p.add_argument("--seed",type=int,default=1)
     p.add_argument("--passes",type=int,default=5)
@@ -137,7 +138,7 @@ def main():
         destination=out/"routes"/warm.name
         temporary=destination.with_suffix(".json.tmp")
         old.save(str(temporary)); os.replace(temporary,destination)
-        result,raw=run_core(out/c["name"],encode(inst,old),a.budget,a.seed,a.passes)
+        result,raw=run_core(out/c["name"],encode(inst,old),a.budget,a.seed,a.passes,a.mode)
         record={"case":c["name"],"case_sha256":digest(OFFICIAL/a.suite/c["instance_file"]),
                 "case_seed":inst.seed,"warm_start_sha256":digest(warm),"before_delay":previous.total_delay,
                 "process":result,"candidate_accepted":False,"error":None}

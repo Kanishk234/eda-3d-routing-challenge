@@ -155,6 +155,25 @@ class ExactKernel(unittest.TestCase):
         self.assertTrue(check(inst,out).legal)
         self.assertLessEqual(stats["total_delay"],check(inst,sub).total_delay)
 
+    def test_group_repair_is_legal_and_nonworsening(self):
+        own=[((0,0,0),(0,1,0)),((0,1,0),(1,1,0)),
+             ((1,1,0),(2,1,0)),((2,1,0),(2,0,0))]
+        inst,sub=make(3,2,[1,1],1,(0,0,0),[(2,0,0)],
+                      ((1,0,0),(1,0,1)),own)
+        before=check(inst,sub).total_delay
+        for seed in (1,2,3):
+            run,out,stats=core(inst,sub,"repair",seed=seed)
+            self.assertEqual(run.returncode,0)
+            self.assertTrue(check(inst,out).legal)
+            self.assertLessEqual(stats["total_delay"],before)
+
+    def test_group_repair_zero_budget_retains_incumbent(self):
+        own=[((0,0,0),(1,0,0)),((1,0,0),(2,0,0))]
+        inst,sub=make(3,1,[2],3,(0,0,0),[(2,0,0)],own_edges=own)
+        _,out,stats=core(inst,sub,"repair",budget=0)
+        self.assertEqual(check(inst,out).total_delay,4)
+        self.assertTrue(stats["budget_reached"])
+
     def test_output_parser_rejects_truncation(self):
         inst,_=make(3,1,[1],1,(0,0,0),[(2,0,0)])
         with self.assertRaises(ValueError):

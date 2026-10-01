@@ -150,7 +150,7 @@ struct Engine {
             }
         }
     }
-    bool shortest(const Net& n,Net& proposed) {
+    bool shortest(const Net& n,Net& proposed,bool ignore_owners=false) {
         ++searches;
         if(expired()) return false;
         std::fill(dist.begin(),dist.end(),INF);
@@ -168,7 +168,7 @@ struct Engine {
             if((expansions&1023)==0 && expired()) return false;
             if(is_sink[u]) { is_sink[u]=0; --left; }
             neighbors(u,[&](int v,I delay){
-                if((owner[v]>=0 && owner[v]!=n.id) ||
+                if((!ignore_owners && owner[v]>=0 && owner[v]!=n.id) ||
                    (pin_owner[v]>=0 && pin_owner[v]!=n.id)) return;
                 I next=add(cost,delay);
                 if(next<dist[v]) { dist[v]=next; parent[v]=u; q.push({next,v}); }
@@ -227,6 +227,48 @@ struct Engine {
             if(!improved) break;
         }
     }
+    void repair(unsigned long long seed,int passes) {
+        std::mt19937_64 rng(seed);
+        std::vector<int> order(nets.size()); std::iota(order.begin(),order.end(),0);
+        for(int pass=0;pass<passes && !expired();++pass) {
+            for(std::size_t i=order.size();i>1;--i) std::swap(order[i-1],order[rng()%i]);
+            bool changed=false;
+            for(int index:order) {
+                if(expired()) break;
+                Net ideal;
+                if(!shortest(nets[index],ideal,true)) break;
+                if(ideal.delay>=nets[index].delay) continue;
+                std::set<int> blockers;
+                for(int v:ideal.vertices) if(owner[v]>=0 && owner[v]!=nets[index].id)
+                    blockers.insert(owner[v]);
+                if(blockers.size()>4) continue;
+                std::vector<int> group{index};
+                for(std::size_t j=0;j<nets.size();++j)
+                    if(blockers.count(nets[j].id)) group.push_back(static_cast<int>(j));
+                // Full transaction snapshot makes all failed/expired repairs reversible.
+                auto old_owner=owner;
+                std::vector<Net> old;
+                I before=0;
+                for(int j:group) {
+                    old.push_back(nets[j]); before=add(before,nets[j].delay);
+                    for(int v:nets[j].vertices) owner[v]=-1;
+                }
+                bool legal=true; I after=0;
+                for(int j:group) {
+                    Net candidate;
+                    if(!shortest(nets[j],candidate)) { legal=false; break; }
+                    for(int v:candidate.vertices) owner[v]=candidate.id;
+                    after=add(after,candidate.delay); nets[j]=std::move(candidate);
+                }
+                if(legal && after<before) { ++accepted; changed=true; }
+                else {
+                    owner=std::move(old_owner);
+                    for(std::size_t k=0;k<group.size();++k) nets[group[k]]=std::move(old[k]);
+                }
+            }
+            if(!changed) break;
+        }
+    }
     void output() {
         I total=0; for(const Net& n:nets) total=add(total,n.delay);
         std::cout<<"M3DOUT1 "<<nets.size()<<" "<<total<<" "<<timed_out<<" "
@@ -239,17 +281,20 @@ struct Engine {
 };
 int main(int argc,char**argv) {
     try {
-        if(argc!=5) throw std::runtime_error("usage: engine SECONDS SEED PASSES polish|search");
+        if(argc!=5) throw std::runtime_error("usage: engine SECONDS SEED PASSES polish|search|repair");
         double seconds=std::stod(argv[1]);
         if(!std::isfinite(seconds) || seconds<0 || seconds>600) throw std::runtime_error("invalid budget");
         auto seed=std::stoull(argv[2]); int passes=std::stoi(argv[3]);
         if(passes<1 || passes>100) throw std::runtime_error("invalid passes");
         bool search_only=std::string(argv[4])=="search";
-        if(!search_only && std::string(argv[4])!="polish") throw std::runtime_error("invalid mode");
+        if(!search_only && std::string(argv[4])!="polish" && std::string(argv[4])!="repair") throw std::runtime_error("invalid mode");
         std::signal(SIGINT,on_signal); std::signal(SIGTERM,on_signal);
         Engine engine;
         engine.deadline=std::chrono::steady_clock::now()+std::chrono::duration_cast<std::chrono::steady_clock::duration>(std::chrono::duration<double>(seconds));
-        engine.read(search_only); engine.polish(seed,passes,search_only); engine.output();
+        engine.read(search_only);
+        if(std::string(argv[4])=="repair") engine.repair(seed,passes);
+        else engine.polish(seed,passes,search_only);
+        engine.output();
         return 0;
     } catch(const std::exception& e) { std::cerr<<e.what()<<"\n"; return 2; }
 }
