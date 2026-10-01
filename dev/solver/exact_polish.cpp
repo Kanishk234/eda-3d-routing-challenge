@@ -40,6 +40,7 @@ struct Engine {
     std::chrono::steady_clock::time_point deadline;
     std::uint64_t searches=0, expansions=0, accepted=0;
     bool timed_out=false;
+    std::uint64_t proposals=0,no_gain=0,too_many=0,attempts=0,failed=0,nonimproving=0;
 
     bool expired() {
         if (stopped || std::chrono::steady_clock::now() >= deadline) {
@@ -150,7 +151,7 @@ struct Engine {
             }
         }
     }
-    bool shortest(const Net& n,Net& proposed,bool ignore_owners=false) {
+    bool shortest(const Net& n,Net& proposed,bool ignore_owners=false,I occupancy_penalty=0) {
         ++searches;
         if(expired()) return false;
         std::fill(dist.begin(),dist.end(),INF);
@@ -170,7 +171,8 @@ struct Engine {
             neighbors(u,[&](int v,I delay){
                 if((!ignore_owners && owner[v]>=0 && owner[v]!=n.id) ||
                    (pin_owner[v]>=0 && pin_owner[v]!=n.id)) return;
-                I next=add(cost,delay);
+                I extra=(ignore_owners && owner[v]>=0 && owner[v]!=n.id)?occupancy_penalty:0;
+                I next=add(add(cost,delay),extra);
                 if(next<dist[v]) { dist[v]=next; parent[v]=u; q.push({next,v}); }
             });
         }
@@ -179,7 +181,13 @@ struct Engine {
         std::vector<char> in_tree(vcount,0);
         in_tree[n.root]=1;
         for(int sink:n.sinks) {
-            proposed.delay=add(proposed.delay,dist[sink]);
+            int qv=sink; I physical=0;
+            while(qv!=n.root) {
+                int pv=parent[qv];
+                if(pv<0) throw std::runtime_error("missing physical predecessor");
+                physical=add(physical,weight(qv,pv)); qv=pv;
+            }
+            proposed.delay=add(proposed.delay,physical);
             int u=sink;
             while(!in_tree[u]) {
                 int p=parent[u];
@@ -227,7 +235,7 @@ struct Engine {
             if(!improved) break;
         }
     }
-    void repair(unsigned long long seed,int passes) {
+    void repair(unsigned long long seed,int passes,I penalty=0) {
         std::mt19937_64 rng(seed);
         std::vector<int> order(nets.size()); std::iota(order.begin(),order.end(),0);
         for(int pass=0;pass<passes && !expired();++pass) {
@@ -235,13 +243,14 @@ struct Engine {
             bool changed=false;
             for(int index:order) {
                 if(expired()) break;
-                Net ideal;
-                if(!shortest(nets[index],ideal,true)) break;
-                if(ideal.delay>=nets[index].delay) continue;
+                ++proposals; Net ideal;
+                if(!shortest(nets[index],ideal,true,penalty)) break;
+                if(ideal.delay>=nets[index].delay) { ++no_gain; continue; }
                 std::set<int> blockers;
                 for(int v:ideal.vertices) if(owner[v]>=0 && owner[v]!=nets[index].id)
                     blockers.insert(owner[v]);
-                if(blockers.size()>4) continue;
+                if(blockers.size()>4) { ++too_many; continue; }
+                ++attempts;
                 std::vector<int> group{index};
                 for(std::size_t j=0;j<nets.size();++j)
                     if(blockers.count(nets[j].id)) group.push_back(static_cast<int>(j));
@@ -262,6 +271,7 @@ struct Engine {
                 }
                 if(legal && after<before) { ++accepted; changed=true; }
                 else {
+                    if(!legal) ++failed; else ++nonimproving;
                     owner=std::move(old_owner);
                     for(std::size_t k=0;k<group.size();++k) nets[group[k]]=std::move(old[k]);
                 }
@@ -270,6 +280,9 @@ struct Engine {
         }
     }
     void output() {
+        std::cerr<<"{\"proposals\":"<<proposals<<",\"no_gain\":"<<no_gain
+                 <<",\"too_many\":"<<too_many<<",\"attempts\":"<<attempts
+                 <<",\"failed\":"<<failed<<",\"nonimproving\":"<<nonimproving<<"}\n";
         I total=0; for(const Net& n:nets) total=add(total,n.delay);
         std::cout<<"M3DOUT1 "<<nets.size()<<" "<<total<<" "<<timed_out<<" "
                  <<accepted<<" "<<searches<<" "<<expansions<<"\n";
@@ -287,12 +300,13 @@ int main(int argc,char**argv) {
         auto seed=std::stoull(argv[2]); int passes=std::stoi(argv[3]);
         if(passes<1 || passes>100) throw std::runtime_error("invalid passes");
         bool search_only=std::string(argv[4])=="search";
-        if(!search_only && std::string(argv[4])!="polish" && std::string(argv[4])!="repair") throw std::runtime_error("invalid mode");
+        if(!search_only && std::string(argv[4])!="polish" && std::string(argv[4])!="repair" && std::string(argv[4])!="repairsoft") throw std::runtime_error("invalid mode");
         std::signal(SIGINT,on_signal); std::signal(SIGTERM,on_signal);
         Engine engine;
         engine.deadline=std::chrono::steady_clock::now()+std::chrono::duration_cast<std::chrono::steady_clock::duration>(std::chrono::duration<double>(seconds));
         engine.read(search_only);
-        if(std::string(argv[4])=="repair") engine.repair(seed,passes);
+        if(std::string(argv[4])=="repair" || std::string(argv[4])=="repairsoft")
+            engine.repair(seed,passes,std::string(argv[4])=="repairsoft"?4:0);
         else engine.polish(seed,passes,search_only);
         engine.output();
         return 0;

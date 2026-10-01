@@ -86,6 +86,8 @@ def run_core(case_dir, data, budget, seed, passes, mode="polish"):
         if len(fields)==4:
             try: result.update(user_cpu_s=float(fields[1]),system_cpu_s=float(fields[2]),peak_rss_kib=int(fields[3]))
             except ValueError: pass
+    try: result["repair_counters"]=json.loads((case_dir/"stderr.log").read_text().splitlines()[-1])
+    except (ValueError,IndexError): result["repair_counters"]=None
     return result,output.read_text()
 
 def main():
@@ -93,7 +95,7 @@ def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument("--suite",choices=["benchmarks","benchmarks_hard"],default="benchmarks_hard")
     p.add_argument("--case")
-    p.add_argument("--mode",choices=["polish","repair"],default="polish")
+    p.add_argument("--mode",choices=["polish","repair","repairsoft"],default="polish")
     p.add_argument("--budget",type=float,default=10)
     p.add_argument("--seed",type=int,default=1)
     p.add_argument("--passes",type=int,default=5)

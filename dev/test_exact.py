@@ -174,6 +174,14 @@ class ExactKernel(unittest.TestCase):
         self.assertEqual(check(inst,out).total_delay,4)
         self.assertTrue(stats["budget_reached"])
 
+    def test_soft_repair_reports_physical_shared_trunk_delay(self):
+        own=[((0,0,0),(1,0,0)),((1,0,0),(2,0,0)),
+             ((2,0,0),(3,0,0)),((3,0,0),(4,0,0))]
+        inst,sub=make(5,1,[2],3,(0,0,0),[(2,0,0),(4,0,0)],own_edges=own)
+        _,out,stats=core(inst,sub,"repairsoft")
+        self.assertEqual(stats["total_delay"],12)
+        self.assertEqual(check(inst,out).total_delay,12)
+
     def test_output_parser_rejects_truncation(self):
         inst,_=make(3,1,[1],1,(0,0,0),[(2,0,0)])
         with self.assertRaises(ValueError):
