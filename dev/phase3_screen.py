@@ -10,7 +10,7 @@ def main():
     import argparse
     parser=argparse.ArgumentParser()
     parser.add_argument("--label",default="repair-diagnostics")
-    parser.add_argument("--mode",choices=["repair","repairsoft","ablation","negotiated","explore","restart","select","wide","walk","descent","compact","fanout","restart_fanout","restart_compact","restart_polish","fanout_walk","fanout_descent","astar","fanout_astar","fanout_gap"],default="repair")
+    parser.add_argument("--mode",choices=["repair","repairsoft","ablation","negotiated","explore","restart","select","wide","walk","descent","compact","fanout","restart_fanout","restart_compact","restart_polish","fanout_walk","fanout_descent","astar","fanout_astar","fanout_gap","fanout_astar_gap","restart_astar","treecost"],default="repair")
     parser.add_argument("--budget",type=float,default=2)
     parser.add_argument("--passes",type=int,default=5)
     parser.add_argument("--resume-dir",type=Path,default=ROOT/'dev/artifacts/20261001T212816.474321Z-exact-polish/routes')

@@ -44,7 +44,7 @@ struct Engine {
     double read_s=0,validation_s=0,optimization_s=0;
     bool timed_out=false;
     bool ablation_mode=false;
-    bool compact_groups=false,fanout_prices=false,astar_search=false,gap_order=false;
+    bool compact_groups=false,fanout_prices=false,astar_search=false,gap_order=false,discounted_groups=false;
     bool random_ties=false; std::uint64_t tie_seed=0;
     std::uint64_t tie_rank(int v) const {
         std::uint64_t x=static_cast<std::uint64_t>(v)+tie_seed+0x9e3779b97f4a7c15ULL;
@@ -291,7 +291,8 @@ struct Engine {
                     I step=0;for(int k=0;k<4;++k) step=add(step,delay);
                     if(usage) {
                         I price=add((*history)[v],static_cast<I>((*usage)[v])*present);
-                        for(int k=0;k<4;++k) step=add(step,price);
+                        I divisor=fanout_prices?static_cast<I>(std::ceil(std::sqrt(static_cast<double>(n.sinks.size())))):1;
+                        for(int k=0;k<4;++k) step=add(step,price/divisor);
                     }
                     I next=add(cost,step);
                     if(next<dist[v]) {dist[v]=next;parent[v]=u;q.push({next,v});}
@@ -366,7 +367,7 @@ struct Engine {
             for(int j:group) {
                 for(int v:nets[j].vertices) --usage[v];
                 Net candidate;
-                bool routed=compact_groups?attach(nets[j],candidate,true,3,&usage,&history,2+2*iteration):
+                bool routed=(compact_groups || discounted_groups)?attach(nets[j],candidate,true,compact_groups?3:4,&usage,&history,2+2*iteration):
                     shortest(nets[j],candidate,false,0,&usage,&history,2+2*iteration);
                 if(!routed) return false;
                 nets[j]=std::move(candidate);
@@ -574,7 +575,7 @@ int main(int argc,char**argv) {
         auto seed=std::stoull(argv[2]); int passes=std::stoi(argv[3]);
         if(passes<1 || passes>100) throw std::runtime_error("invalid passes");
         bool search_only=std::string(argv[4])=="search";
-        if(!search_only && std::string(argv[4])!="polish" && std::string(argv[4])!="repair" && std::string(argv[4])!="repairsoft" && std::string(argv[4])!="ablation" && std::string(argv[4])!="negotiated" && std::string(argv[4])!="explore" && std::string(argv[4])!="restart" && std::string(argv[4])!="select" && std::string(argv[4])!="wide" && std::string(argv[4])!="walk" && std::string(argv[4])!="descent" && std::string(argv[4])!="compact" && std::string(argv[4])!="fanout" && std::string(argv[4])!="restart_fanout" && std::string(argv[4])!="restart_compact" && std::string(argv[4])!="restart_polish" && std::string(argv[4])!="fanout_walk" && std::string(argv[4])!="fanout_descent" && std::string(argv[4])!="astar" && std::string(argv[4])!="fanout_astar" && std::string(argv[4])!="fanout_gap") throw std::runtime_error("invalid mode");
+        if(!search_only && std::string(argv[4])!="polish" && std::string(argv[4])!="repair" && std::string(argv[4])!="repairsoft" && std::string(argv[4])!="ablation" && std::string(argv[4])!="negotiated" && std::string(argv[4])!="explore" && std::string(argv[4])!="restart" && std::string(argv[4])!="select" && std::string(argv[4])!="wide" && std::string(argv[4])!="walk" && std::string(argv[4])!="descent" && std::string(argv[4])!="compact" && std::string(argv[4])!="fanout" && std::string(argv[4])!="restart_fanout" && std::string(argv[4])!="restart_compact" && std::string(argv[4])!="restart_polish" && std::string(argv[4])!="fanout_walk" && std::string(argv[4])!="fanout_descent" && std::string(argv[4])!="astar" && std::string(argv[4])!="fanout_astar" && std::string(argv[4])!="fanout_gap" && std::string(argv[4])!="fanout_astar_gap" && std::string(argv[4])!="restart_astar" && std::string(argv[4])!="treecost") throw std::runtime_error("invalid mode");
         std::signal(SIGINT,on_signal); std::signal(SIGTERM,on_signal);
         Engine engine;
         engine.deadline=std::chrono::steady_clock::now()+std::chrono::duration_cast<std::chrono::steady_clock::duration>(std::chrono::duration<double>(seconds));
@@ -583,7 +584,10 @@ int main(int argc,char**argv) {
         engine.read_s=std::chrono::duration<double>(std::chrono::steady_clock::now()-read_start).count();
         auto optimization_start=std::chrono::steady_clock::now();
         engine.ablation_mode=std::string(argv[4])=="ablation";
-        if(std::string(argv[4])=="fanout_gap") {engine.gap_order=true;engine.fanout_prices=true;engine.explore(seed,passes,true);}
+        if(std::string(argv[4])=="treecost") {engine.discounted_groups=true;engine.astar_search=true;engine.fanout_prices=true;engine.explore(seed,passes,true);}
+        else if(std::string(argv[4])=="fanout_astar_gap") {engine.gap_order=true;engine.astar_search=true;engine.fanout_prices=true;engine.explore(seed,passes,true);}
+        else if(std::string(argv[4])=="restart_astar") {engine.astar_search=true;engine.fanout_prices=true;engine.restart(seed,passes,true);}
+        else if(std::string(argv[4])=="fanout_gap") {engine.gap_order=true;engine.fanout_prices=true;engine.explore(seed,passes,true);}
         else if(std::string(argv[4])=="astar") {engine.astar_search=true;engine.polish(seed,passes,false);}
         else if(std::string(argv[4])=="fanout_astar") {engine.astar_search=true;engine.fanout_prices=true;engine.explore(seed,passes,true);}
         else if(engine.ablation_mode) engine.ablation();
