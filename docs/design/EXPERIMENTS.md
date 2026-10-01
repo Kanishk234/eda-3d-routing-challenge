@@ -15,3 +15,5 @@ Wrapper offers bounded run-suite/score-suite and optional official per-case runt
 ## Phase 2 update
 
 Phases1/2 are complete; earlier “unperformed” statements describe Phase0 only. Authoritative current evidence: docs/evidence/phase2/comparison.json and runs.json; PHASE2 summary covers checks, deterministic outputs, budgets, baseline provenance and limits.13 kernel checks pass and official CLI rescore confirms9/9 legal, aggregate1.046629. Baseline-plus-wrapper sum97.952s is a paired same-machine comparison within600s, not a fresh end-to-end timing or speedup. Generated validation seeds and final submission checks remain unperformed.
+
+Budget expansion October1:2s/case was a local matched screen,not official limit or final budget. Six serial representative runs(cases01/04/07,seed1,100-cycle ceiling) compared2vs10s from identical plateau starts;longer budgets improved every case. Full-tier fixed10s/100-cycle wide validation launched after development selection. Per-stage search and total portfolio/screen costs remain separate;no two-second ceiling is assumed.

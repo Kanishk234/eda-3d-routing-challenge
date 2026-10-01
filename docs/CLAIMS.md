@@ -23,3 +23,5 @@ Driver-aware attachment matches exact costs on546 isolated-net reconstructions; 
 Negotiated fixed config hard9/9 legal1.0710212727385569,19 tests pass;21/21 development improve vs Phase2,2 regressions vs soft. Independent official rescore. Latest public hard audit13 heads117 legal routes:highest checked closedPR11 mj97 1.3873941742426144;highest openPR3 1.387366331135629. No solver runtime reproduction or adoption as warm starts.
 
 Basin experiment:22 checks pass;fixed seed1 exploration after negotiated improves all9 hard cases,official1.1059077449039443. Three-seed development aggregates improve but3 case regressions vs negotiated exist. Whole restart9/21 gains,rest retained originals. No global-basin diagnosis,novelty,source reproducibility or exact global-selection claim.
+
+Wide10s/100 cycles fixed seed1 hard9/9 legal1.1834968761196418,all improve vs1.105908;official rescore. Longer matched representative budgets show4.1–5.3% delay gains,no convergence. Stage wrapper91.845s,component total208.868s excludes screening/scoring.

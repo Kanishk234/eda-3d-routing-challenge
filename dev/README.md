@@ -114,3 +114,13 @@ Next operators(screened before full validation):
 ```
 
 Select is bounded branch-and-bound over original plus6 candidate variants,at most5 nets. Complete means optimal within generated candidate sets only. Wide uses equal-delay exploration,max12 blockers and24 negotiation rounds. Physical/legal acceptance and rollback remain unchanged.25 checks pass;candidate selector not default.
+
+Budget scaling and selected wider-stage validation:
+
+```bash
+.venv/bin/python dev/budget_screen.py
+.venv/bin/python dev/run_polish.py --mode wide --budget 10 --passes 100 --seed 1 --resume-dir dev/artifacts/20261001T215550.921679Z-exact-polish/routes
+.venv/bin/python dev/finish_phase3_screen.py --mode wide
+```
+
+Two seconds is a screening cap only. This comparison keeps100-cycle ceiling/seed/warm start fixed on development cases01/04/07. The subsequent full-tier ten-second stage is selected from those measurements;actual cumulative generation and prior-stage costs remain part of the pipeline.
