@@ -84,3 +84,13 @@ Driver-distance ablation (candidate outputs remain unchanged):
 ```
 
 Reconstructs each net independently with other nets fixed. Compare exact costs to driver-aware/zero-source attachment. Reported sums are not jointly routable scores. Submission paths were rechecked at current upstream3d8948f; development sources remain here and final routes/metadata go in a clean submission checkout.
+
+Negotiated comparison and public-output audit tools:
+
+```bash
+.venv/bin/python dev/phase3_screen.py --mode negotiated --label negotiated-screen
+.venv/bin/python dev/finish_phase3_screen.py --mode negotiated
+.venv/bin/python dev/audit_public_hard.py
+```
+
+Public audit downloads routes solely for comparison,including closed PR heads. It does not execute public solvers or promote public outputs. Network required;results pinned by head/output hashes. Current negotiated validation starts from Phase2 warm routes under seed1,5passes,2s/case and max12 negotiation rounds.

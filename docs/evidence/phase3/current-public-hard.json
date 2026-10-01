@@ -1,0 +1,1437 @@
+{
+  "time_utc": "20261001T214829.078098Z",
+  "scope": "All available PR heads, hard-tier directories containing changed route files; includes closed PRs. No solver runtimes reproduced.",
+  "entries": [
+    {
+      "pr": 11,
+      "state": "closed",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/11",
+      "head": "93b6c420ef38b6a0294e8bf9727eb60dc4d89d62",
+      "method": "mj97",
+      "result": {
+        "format": "m3d-leaderboard",
+        "complete": true,
+        "aggregate_score": 1.3873941742426144,
+        "n_cases": 9,
+        "n_legal": 9,
+        "formula": "aggregate = geomean_c(baseline_total_c / submission_total_c); higher is better; baseline scores 1.0; all cases must be legal for a complete ranked submission (else aggregate = 0.0)",
+        "cases": [
+          {
+            "case": "case_01",
+            "legal": true,
+            "total_delay": 8666,
+            "baseline_delay": 11938,
+            "ratio": 1.3775675051927072,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_02",
+            "legal": true,
+            "total_delay": 13156,
+            "baseline_delay": 18910,
+            "ratio": 1.4373669808452416,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_03",
+            "legal": true,
+            "total_delay": 11072,
+            "baseline_delay": 14724,
+            "ratio": 1.3298410404624277,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_04",
+            "legal": true,
+            "total_delay": 13059,
+            "baseline_delay": 18077,
+            "ratio": 1.3842560686116854,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_05",
+            "legal": true,
+            "total_delay": 15211,
+            "baseline_delay": 21051,
+            "ratio": 1.3839326802971534,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_06",
+            "legal": true,
+            "total_delay": 19786,
+            "baseline_delay": 27134,
+            "ratio": 1.3713736985747498,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_07",
+            "legal": true,
+            "total_delay": 21295,
+            "baseline_delay": 31341,
+            "ratio": 1.4717539328480864,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_08",
+            "legal": true,
+            "total_delay": 21432,
+            "baseline_delay": 30886,
+            "ratio": 1.4411160880925717,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_09",
+            "legal": true,
+            "total_delay": 21418,
+            "baseline_delay": 27802,
+            "ratio": 1.298067046409562,
+            "runtime_s": null,
+            "reasons": []
+          }
+        ]
+      },
+      "output_hashes": {
+        "case_01.sol.json": "937faa5581cc4b14ac3d02b426886d0bae27719801a3e642beb47caa21aa332c",
+        "case_02.sol.json": "8aee3ec71f2094e27ba4541eea381d23ceee1ed9d83d560e3e618f43d8b1021d",
+        "case_03.sol.json": "eac6fee09b398fe6c9d949d98f076b4fdc8bb2a085677ed987af22eb3f1fcc7b",
+        "case_04.sol.json": "dd63b7c1e7df611f048e291dfb35173aa25b89967ec30a27db18e142fa1b018f",
+        "case_05.sol.json": "fb17997c73dd5a95303220af55a6095aab262135aa873564be244acff00466ca",
+        "case_06.sol.json": "357f57dc7f4349946819b5f083fd2393f6fa3757b164b9f51d333c1ed9dc9596",
+        "case_07.sol.json": "0e7fcbe90de6e97765719c538dc2f2253c21d6938e0cb0a9f45b12e5a7128e17",
+        "case_08.sol.json": "85ccfe8a0144b5af08a40a01406f2b3f170486b609f5a3fec7db3bd898f68c45",
+        "case_09.sol.json": "1b8c0b3fa65207da910cffac19bbdd41364c7a580edb9e08cd40fcd458e76a36"
+      },
+      "local_routes": "dev/artifacts/20261001T214923.738630Z-public-hard-audit/11/mj97"
+    },
+    {
+      "pr": 3,
+      "state": "open",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/3",
+      "head": "4e21227867ee1f8f72c9f4d9ad446e05c20fe452",
+      "method": "pathfinder_lns",
+      "result": {
+        "format": "m3d-leaderboard",
+        "complete": true,
+        "aggregate_score": 1.387366331135629,
+        "n_cases": 9,
+        "n_legal": 9,
+        "formula": "aggregate = geomean_c(baseline_total_c / submission_total_c); higher is better; baseline scores 1.0; all cases must be legal for a complete ranked submission (else aggregate = 0.0)",
+        "cases": [
+          {
+            "case": "case_01",
+            "legal": true,
+            "total_delay": 8666,
+            "baseline_delay": 11938,
+            "ratio": 1.3775675051927072,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_02",
+            "legal": true,
+            "total_delay": 13156,
+            "baseline_delay": 18910,
+            "ratio": 1.4373669808452416,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_03",
+            "legal": true,
+            "total_delay": 11074,
+            "baseline_delay": 14724,
+            "ratio": 1.3296008668954307,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_04",
+            "legal": true,
+            "total_delay": 13059,
+            "baseline_delay": 18077,
+            "ratio": 1.3842560686116854,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_05",
+            "legal": true,
+            "total_delay": 15211,
+            "baseline_delay": 21051,
+            "ratio": 1.3839326802971534,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_06",
+            "legal": true,
+            "total_delay": 19786,
+            "baseline_delay": 27134,
+            "ratio": 1.3713736985747498,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_07",
+            "legal": true,
+            "total_delay": 21295,
+            "baseline_delay": 31341,
+            "ratio": 1.4717539328480864,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_08",
+            "legal": true,
+            "total_delay": 21432,
+            "baseline_delay": 30886,
+            "ratio": 1.4411160880925717,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_09",
+            "legal": true,
+            "total_delay": 21418,
+            "baseline_delay": 27802,
+            "ratio": 1.298067046409562,
+            "runtime_s": null,
+            "reasons": []
+          }
+        ]
+      },
+      "output_hashes": {
+        "case_01.sol.json": "afc85979e54971d7348de713eff2d962ea14c171f1053a82f2e4ca02d2a10c60",
+        "case_02.sol.json": "e2290195b3da471f897d4ce7caf604fb1798e79a435b105416183a6ecb2372c8",
+        "case_03.sol.json": "81e7edac970637d52ca6506279d4c8b349411bea36527ba4c1dcb99172c13904",
+        "case_04.sol.json": "98c9675147c09c980be238ce4e45603d879a2bd84d14bdaee940190aa2030834",
+        "case_05.sol.json": "99f99445deed64ba19302ef6861ca5efd4895d27572319e673f169570234113e",
+        "case_06.sol.json": "d54e15ed97954b2581aeec0b5563b2c74a13cbd7d663c91061fad548c1df8afb",
+        "case_07.sol.json": "50d0b2e0f769e69f3c14d7c137cfe1c4fbde69e661a4931e1dfe3274567aad2a",
+        "case_08.sol.json": "92f525870e48d22c64362a06fa94e7fa31551a6b298e556abf18148b93526a6e",
+        "case_09.sol.json": "0ae09fe306507f649b14b3aebb7f88c1c6419d9fecdb0dab9b8c2a9df92a05ba"
+      },
+      "local_routes": "dev/artifacts/20261001T214829.078098Z-public-hard-audit/3/pathfinder_lns"
+    },
+    {
+      "pr": 9,
+      "state": "open",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/9",
+      "head": "06eab75bb49c07c050f9b6720157b844f9a5a56c",
+      "method": "warm_lns_refinement",
+      "result": {
+        "format": "m3d-leaderboard",
+        "complete": true,
+        "aggregate_score": 1.385765135688459,
+        "n_cases": 9,
+        "n_legal": 9,
+        "formula": "aggregate = geomean_c(baseline_total_c / submission_total_c); higher is better; baseline scores 1.0; all cases must be legal for a complete ranked submission (else aggregate = 0.0)",
+        "cases": [
+          {
+            "case": "case_01",
+            "legal": true,
+            "total_delay": 8668,
+            "baseline_delay": 11938,
+            "ratio": 1.3772496538994001,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_02",
+            "legal": true,
+            "total_delay": 13158,
+            "baseline_delay": 18910,
+            "ratio": 1.4371485028119775,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_03",
+            "legal": true,
+            "total_delay": 11072,
+            "baseline_delay": 14724,
+            "ratio": 1.3298410404624277,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_04",
+            "legal": true,
+            "total_delay": 13075,
+            "baseline_delay": 18077,
+            "ratio": 1.3825621414913958,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_05",
+            "legal": true,
+            "total_delay": 15211,
+            "baseline_delay": 21051,
+            "ratio": 1.3839326802971534,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_06",
+            "legal": true,
+            "total_delay": 19810,
+            "baseline_delay": 27134,
+            "ratio": 1.3697122665320545,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_07",
+            "legal": true,
+            "total_delay": 21361,
+            "baseline_delay": 31341,
+            "ratio": 1.4672065914517112,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_08",
+            "legal": true,
+            "total_delay": 21508,
+            "baseline_delay": 30886,
+            "ratio": 1.4360238050957783,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_09",
+            "legal": true,
+            "total_delay": 21442,
+            "baseline_delay": 27802,
+            "ratio": 1.2966141218169946,
+            "runtime_s": null,
+            "reasons": []
+          }
+        ]
+      },
+      "output_hashes": {
+        "case_01.sol.json": "9f8c037fce98eb1f449fb5072959fed724c6ff65d68c79578486eda401af84c9",
+        "case_02.sol.json": "8dd4fb67a4b0def28d8d4b9e3aefc102ee30cb97ca0406d117a2ba60a47c1ae2",
+        "case_03.sol.json": "593726a2eba179add01c6abd5fdd1404cee4a12db8d8c886f9fbaede83ea9adc",
+        "case_04.sol.json": "6ee25cd671d6bd9495bf345d2607ee7ab91b53c8de14d8e039030d887930f7cc",
+        "case_05.sol.json": "6c1a7f10e40204fe3adfbd46ca4c6e364f6b253384d66bd6770beb420bdb0d0a",
+        "case_06.sol.json": "afba2f1d9969d35e5f0165c9591b1fd769b505f0d65b99815708f9b32a83127f",
+        "case_07.sol.json": "5f2d78b8402aeea5729eb0907acbd9d7e7d3fba0e17bb17567c133f01d52fd87",
+        "case_08.sol.json": "1de3ac50ec8ffa83a3cf19a36083f430978ac362ed0994aa13526cbfd9ed81ce",
+        "case_09.sol.json": "49a2fa7dd71b742bc8db2b571db38184b295889e067ede010f55442dd244ed76"
+      },
+      "local_routes": "dev/artifacts/20261001T214829.078098Z-public-hard-audit/9/warm_lns_refinement"
+    },
+    {
+      "pr": 5,
+      "state": "open",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/5",
+      "head": "4533580ce9a84b83c9c80b831d92f2fbac2bdac9",
+      "method": "coordinated_refinement",
+      "result": {
+        "format": "m3d-leaderboard",
+        "complete": true,
+        "aggregate_score": 1.385765135688459,
+        "n_cases": 9,
+        "n_legal": 9,
+        "formula": "aggregate = geomean_c(baseline_total_c / submission_total_c); higher is better; baseline scores 1.0; all cases must be legal for a complete ranked submission (else aggregate = 0.0)",
+        "cases": [
+          {
+            "case": "case_01",
+            "legal": true,
+            "total_delay": 8668,
+            "baseline_delay": 11938,
+            "ratio": 1.3772496538994001,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_02",
+            "legal": true,
+            "total_delay": 13158,
+            "baseline_delay": 18910,
+            "ratio": 1.4371485028119775,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_03",
+            "legal": true,
+            "total_delay": 11072,
+            "baseline_delay": 14724,
+            "ratio": 1.3298410404624277,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_04",
+            "legal": true,
+            "total_delay": 13075,
+            "baseline_delay": 18077,
+            "ratio": 1.3825621414913958,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_05",
+            "legal": true,
+            "total_delay": 15211,
+            "baseline_delay": 21051,
+            "ratio": 1.3839326802971534,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_06",
+            "legal": true,
+            "total_delay": 19810,
+            "baseline_delay": 27134,
+            "ratio": 1.3697122665320545,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_07",
+            "legal": true,
+            "total_delay": 21361,
+            "baseline_delay": 31341,
+            "ratio": 1.4672065914517112,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_08",
+            "legal": true,
+            "total_delay": 21508,
+            "baseline_delay": 30886,
+            "ratio": 1.4360238050957783,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_09",
+            "legal": true,
+            "total_delay": 21442,
+            "baseline_delay": 27802,
+            "ratio": 1.2966141218169946,
+            "runtime_s": null,
+            "reasons": []
+          }
+        ]
+      },
+      "output_hashes": {
+        "case_01.sol.json": "9f8c037fce98eb1f449fb5072959fed724c6ff65d68c79578486eda401af84c9",
+        "case_02.sol.json": "8dd4fb67a4b0def28d8d4b9e3aefc102ee30cb97ca0406d117a2ba60a47c1ae2",
+        "case_03.sol.json": "593726a2eba179add01c6abd5fdd1404cee4a12db8d8c886f9fbaede83ea9adc",
+        "case_04.sol.json": "6ee25cd671d6bd9495bf345d2607ee7ab91b53c8de14d8e039030d887930f7cc",
+        "case_05.sol.json": "6c1a7f10e40204fe3adfbd46ca4c6e364f6b253384d66bd6770beb420bdb0d0a",
+        "case_06.sol.json": "afba2f1d9969d35e5f0165c9591b1fd769b505f0d65b99815708f9b32a83127f",
+        "case_07.sol.json": "5f2d78b8402aeea5729eb0907acbd9d7e7d3fba0e17bb17567c133f01d52fd87",
+        "case_08.sol.json": "1de3ac50ec8ffa83a3cf19a36083f430978ac362ed0994aa13526cbfd9ed81ce",
+        "case_09.sol.json": "49a2fa7dd71b742bc8db2b571db38184b295889e067ede010f55442dd244ed76"
+      },
+      "local_routes": "dev/artifacts/20261001T214829.078098Z-public-hard-audit/5/coordinated_refinement"
+    },
+    {
+      "pr": 12,
+      "state": "open",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/12",
+      "head": "db257b464807886fe504c646338dd1b038adb365",
+      "method": "spt_lns",
+      "result": {
+        "format": "m3d-leaderboard",
+        "complete": true,
+        "aggregate_score": 1.3608582696910276,
+        "n_cases": 9,
+        "n_legal": 9,
+        "formula": "aggregate = geomean_c(baseline_total_c / submission_total_c); higher is better; baseline scores 1.0; all cases must be legal for a complete ranked submission (else aggregate = 0.0)",
+        "cases": [
+          {
+            "case": "case_01",
+            "legal": true,
+            "total_delay": 8838,
+            "baseline_delay": 11938,
+            "ratio": 1.3507580900656257,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_02",
+            "legal": true,
+            "total_delay": 13332,
+            "baseline_delay": 18910,
+            "ratio": 1.4183918391839183,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_03",
+            "legal": true,
+            "total_delay": 11140,
+            "baseline_delay": 14724,
+            "ratio": 1.3217235188509875,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_04",
+            "legal": true,
+            "total_delay": 13297,
+            "baseline_delay": 18077,
+            "ratio": 1.35947958186057,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_05",
+            "legal": true,
+            "total_delay": 15341,
+            "baseline_delay": 21051,
+            "ratio": 1.3722052017469526,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_06",
+            "legal": true,
+            "total_delay": 20202,
+            "baseline_delay": 27134,
+            "ratio": 1.3431343431343432,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_07",
+            "legal": true,
+            "total_delay": 21949,
+            "baseline_delay": 31341,
+            "ratio": 1.4279010433277142,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_08",
+            "legal": true,
+            "total_delay": 22292,
+            "baseline_delay": 30886,
+            "ratio": 1.3855194688677552,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_09",
+            "legal": true,
+            "total_delay": 21802,
+            "baseline_delay": 27802,
+            "ratio": 1.275204109714705,
+            "runtime_s": null,
+            "reasons": []
+          }
+        ]
+      },
+      "output_hashes": {
+        "case_01.sol.json": "c8f45c8b194ef40221e4336cf3dde76a493603a635d56908edc600c5b309cf4e",
+        "case_02.sol.json": "2651f967b456a73028e7dedccc0dd368647e85dee9a6c8bf83934337a9d4e75c",
+        "case_03.sol.json": "f92134f6d89fdf39abe710376806f8838a4b3f98a9cf41066c95a8a2ca364317",
+        "case_04.sol.json": "a600a69d1bea759644f4c331dad935d0898ae69836a11e5834fa426fbeeb1560",
+        "case_05.sol.json": "7823f20744cf12e0ae48dd691a9da6ebf8b44f0215b27c99fda8368b392e7a3f",
+        "case_06.sol.json": "eb07072a7509617aad0cbb57d53347033e35f1b27bb5ffd0ae31e320e3782e79",
+        "case_07.sol.json": "0613d7ccd8b7ede2950661ce9125be6ec3305f37c6fce5d048c5e9902af3a6bc",
+        "case_08.sol.json": "a8cc6cd82d9996ad928b6e5ba60c22033d98254012431a9670d9c27be9c9826c",
+        "case_09.sol.json": "060c5af97da07350845572282a83727d18253bb6b36b742114a1c4a233f07724"
+      },
+      "local_routes": "dev/artifacts/20261001T214829.078098Z-public-hard-audit/12/spt_lns"
+    },
+    {
+      "pr": 2,
+      "state": "open",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/2",
+      "head": "607bb91f497a105942ce6ed14e01fb39150036d3",
+      "method": "erikqu_root_aware_portfolio",
+      "result": {
+        "format": "m3d-leaderboard",
+        "complete": true,
+        "aggregate_score": 1.274474947945242,
+        "n_cases": 9,
+        "n_legal": 9,
+        "formula": "aggregate = geomean_c(baseline_total_c / submission_total_c); higher is better; baseline scores 1.0; all cases must be legal for a complete ranked submission (else aggregate = 0.0)",
+        "cases": [
+          {
+            "case": "case_01",
+            "legal": true,
+            "total_delay": 9428,
+            "baseline_delay": 11938,
+            "ratio": 1.266228256257955,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_02",
+            "legal": true,
+            "total_delay": 14020,
+            "baseline_delay": 18910,
+            "ratio": 1.348787446504993,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_03",
+            "legal": true,
+            "total_delay": 11718,
+            "baseline_delay": 14724,
+            "ratio": 1.2565284178187404,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_04",
+            "legal": true,
+            "total_delay": 14353,
+            "baseline_delay": 18077,
+            "ratio": 1.259457953041176,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_05",
+            "legal": true,
+            "total_delay": 16455,
+            "baseline_delay": 21051,
+            "ratio": 1.2793072014585232,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_06",
+            "legal": true,
+            "total_delay": 21412,
+            "baseline_delay": 27134,
+            "ratio": 1.2672333271062954,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_07",
+            "legal": true,
+            "total_delay": 23685,
+            "baseline_delay": 31341,
+            "ratio": 1.3232425585813805,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_08",
+            "legal": true,
+            "total_delay": 23982,
+            "baseline_delay": 30886,
+            "ratio": 1.2878825786006172,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_09",
+            "legal": true,
+            "total_delay": 23402,
+            "baseline_delay": 27802,
+            "ratio": 1.1880181181095633,
+            "runtime_s": null,
+            "reasons": []
+          }
+        ]
+      },
+      "output_hashes": {
+        "case_01.sol.json": "42bd7eb1d2dd801dd14d8e1f83eecd2b88d58f85926be747b127e1d1db7f0ded",
+        "case_02.sol.json": "144f9df4f185cdf49e5f892f9333d16fd9d436accded2d03a9777d02531742fe",
+        "case_03.sol.json": "383503ecb0c7a9d8193f0ac2672f5d4e1f524591bf96ff0ffa08025ac3a0e24a",
+        "case_04.sol.json": "3c02e9f0ff05ad0c8161ddb97049d1c8a872d53ece2d62df96cd6f64a793feac",
+        "case_05.sol.json": "2454dd1db57ff2fc373769ff7d11362d1bdbc5e43b420941a3b10d5f3efccf3e",
+        "case_06.sol.json": "99c078c70a5dd4fa8dc1058329ab826fd21e30c1380fa61876fd2886ae4feb43",
+        "case_07.sol.json": "2fa8abe75d9e24dcc69057b9ecea43023cbffd102764e70dd9e7806d479ffda0",
+        "case_08.sol.json": "7f3eb323736a15ecdce832202b000228fc65f2aa9e53a7ff60a32f0128657e2b",
+        "case_09.sol.json": "645c5f9443b92c2fde1f2d5bcbe0438979e61f12780291ca5c8ba6d7f89b5ac1"
+      },
+      "local_routes": "dev/artifacts/20261001T214829.078098Z-public-hard-audit/2/erikqu_root_aware_portfolio"
+    },
+    {
+      "pr": 10,
+      "state": "open",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/10",
+      "head": "ca3cb1de2c046546f2ed8fca14576f6056b8488d",
+      "method": "reubalink",
+      "result": {
+        "format": "m3d-leaderboard",
+        "complete": true,
+        "aggregate_score": 1.2671868111635183,
+        "n_cases": 9,
+        "n_legal": 9,
+        "formula": "aggregate = geomean_c(baseline_total_c / submission_total_c); higher is better; baseline scores 1.0; all cases must be legal for a complete ranked submission (else aggregate = 0.0)",
+        "cases": [
+          {
+            "case": "case_01",
+            "legal": true,
+            "total_delay": 9202,
+            "baseline_delay": 11938,
+            "ratio": 1.297326668115627,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_02",
+            "legal": true,
+            "total_delay": 14560,
+            "baseline_delay": 18910,
+            "ratio": 1.2987637362637363,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_03",
+            "legal": true,
+            "total_delay": 11880,
+            "baseline_delay": 14724,
+            "ratio": 1.2393939393939395,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_04",
+            "legal": true,
+            "total_delay": 14365,
+            "baseline_delay": 18077,
+            "ratio": 1.258405847546119,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_05",
+            "legal": true,
+            "total_delay": 16665,
+            "baseline_delay": 21051,
+            "ratio": 1.2631863186318633,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_06",
+            "legal": true,
+            "total_delay": 21890,
+            "baseline_delay": 27134,
+            "ratio": 1.239561443581544,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_07",
+            "legal": true,
+            "total_delay": 23703,
+            "baseline_delay": 31341,
+            "ratio": 1.3222376914314644,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_08",
+            "legal": true,
+            "total_delay": 23958,
+            "baseline_delay": 30886,
+            "ratio": 1.289172718924785,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_09",
+            "legal": true,
+            "total_delay": 23146,
+            "baseline_delay": 27802,
+            "ratio": 1.2011578674500993,
+            "runtime_s": null,
+            "reasons": []
+          }
+        ]
+      },
+      "output_hashes": {
+        "case_01.sol.json": "7aef8ba24de647dc4555067ab3f9f7bd5dd82c2d2c38515970dc0d9140d3311b",
+        "case_02.sol.json": "88865365a99c0d9f4bcb542dff77c6855036fba755a303901b8b4286a2318d91",
+        "case_03.sol.json": "04a4238e12be7ed1b1a7a605764291cc2fce8b068779bee5b8cfa1c4f9243ccf",
+        "case_04.sol.json": "8a4003c240deeed7e897c9c687f5e2982459390187663eee2d2260e09e3dfe6a",
+        "case_05.sol.json": "8fdf7b67a1de60549b864092cd19c8b6beaaf6ad800e33e38213883da166df37",
+        "case_06.sol.json": "98e57b6961003c73b8437bc979d16acc4384cf367be1f3f18e49ee5fe3c29164",
+        "case_07.sol.json": "671e24ba7e915ee49de14bf0ac6f136a3d2ab551fd07da398ae7242b41e6b544",
+        "case_08.sol.json": "d24dce3d444d7581b6b22b86b9c495d1337881c81c55cf67a12fb5367f093810",
+        "case_09.sol.json": "f760d1a8d47274bfa91e7612e9aa9f5cd2453700649762349e6e7a4c5ca2ec06"
+      },
+      "local_routes": "dev/artifacts/20261001T214829.078098Z-public-hard-audit/10/reubalink"
+    },
+    {
+      "pr": 1,
+      "state": "open",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/1",
+      "head": "5b5be704578623c0430fedbd8d3c382d8b90caed",
+      "method": "lns_negotiated",
+      "result": {
+        "format": "m3d-leaderboard",
+        "complete": true,
+        "aggregate_score": 1.226653470239184,
+        "n_cases": 9,
+        "n_legal": 9,
+        "formula": "aggregate = geomean_c(baseline_total_c / submission_total_c); higher is better; baseline scores 1.0; all cases must be legal for a complete ranked submission (else aggregate = 0.0)",
+        "cases": [
+          {
+            "case": "case_01",
+            "legal": true,
+            "total_delay": 9462,
+            "baseline_delay": 11938,
+            "ratio": 1.2616782921158318,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_02",
+            "legal": true,
+            "total_delay": 15008,
+            "baseline_delay": 18910,
+            "ratio": 1.259994669509595,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_03",
+            "legal": true,
+            "total_delay": 12064,
+            "baseline_delay": 14724,
+            "ratio": 1.2204907161803713,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_04",
+            "legal": true,
+            "total_delay": 14517,
+            "baseline_delay": 18077,
+            "ratio": 1.2452297306606048,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_05",
+            "legal": true,
+            "total_delay": 16771,
+            "baseline_delay": 21051,
+            "ratio": 1.2552024327708544,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_06",
+            "legal": true,
+            "total_delay": 22882,
+            "baseline_delay": 27134,
+            "ratio": 1.1858229175771349,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_07",
+            "legal": true,
+            "total_delay": 25107,
+            "baseline_delay": 31341,
+            "ratio": 1.2482972876090332,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_08",
+            "legal": true,
+            "total_delay": 25728,
+            "baseline_delay": 30886,
+            "ratio": 1.2004819651741294,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_09",
+            "legal": true,
+            "total_delay": 23828,
+            "baseline_delay": 27802,
+            "ratio": 1.166778579822058,
+            "runtime_s": null,
+            "reasons": []
+          }
+        ]
+      },
+      "output_hashes": {
+        "case_01.sol.json": "c1005b6e823138928242b747ea01ac5c4abbe72b0239bfafb3c69e2af07053f0",
+        "case_02.sol.json": "3180f42a68539febef82c5ad80aea3c092b0d4b8e927e10dbc101b3b81b192be",
+        "case_03.sol.json": "3b8f57903ed364602850153b351536a882987a4e3f8cee1d1329408702779e5c",
+        "case_04.sol.json": "31ed572f5a918235aa4686867375e5c685ec192b3b3fbea5a4154d48d5ce7a8f",
+        "case_05.sol.json": "71366f77b3dbab01befa7666176990d11b4262806182e8f9839f7185999260ce",
+        "case_06.sol.json": "e722e7dbe58f6f9fc8f950963d91e333fbefb9fcacef5f96236d6d4a4579fd0b",
+        "case_07.sol.json": "4e1a6338d5f163ea8cfd4e73b0ac89f52fd75ab60d088ac3a9406ebcb24be5ef",
+        "case_08.sol.json": "ba3ad8b663cfd3745b7f7ddb171b4d8eba0608ce308d7541de0a6bb50dad2424",
+        "case_09.sol.json": "ba260906a9024213b75fe0cf8897c1086223737d975c468304085d889dd96bbc"
+      },
+      "local_routes": "dev/artifacts/20261001T214829.078098Z-public-hard-audit/1/lns_negotiated"
+    },
+    {
+      "pr": 7,
+      "state": "open",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/7",
+      "head": "dfbcba48bd762433350aea82cd653af74e7137ac",
+      "method": "anvesh",
+      "result": {
+        "format": "m3d-leaderboard",
+        "complete": true,
+        "aggregate_score": 1.1863027025952646,
+        "n_cases": 9,
+        "n_legal": 9,
+        "formula": "aggregate = geomean_c(baseline_total_c / submission_total_c); higher is better; baseline scores 1.0; all cases must be legal for a complete ranked submission (else aggregate = 0.0)",
+        "cases": [
+          {
+            "case": "case_01",
+            "legal": true,
+            "total_delay": 10010,
+            "baseline_delay": 11938,
+            "ratio": 1.1926073926073926,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_02",
+            "legal": true,
+            "total_delay": 15954,
+            "baseline_delay": 18910,
+            "ratio": 1.1852826877272158,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_03",
+            "legal": true,
+            "total_delay": 12478,
+            "baseline_delay": 14724,
+            "ratio": 1.1799967943580703,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_04",
+            "legal": true,
+            "total_delay": 16205,
+            "baseline_delay": 18077,
+            "ratio": 1.1155199012650416,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_05",
+            "legal": true,
+            "total_delay": 17257,
+            "baseline_delay": 21051,
+            "ratio": 1.219852813351104,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_06",
+            "legal": true,
+            "total_delay": 23078,
+            "baseline_delay": 27134,
+            "ratio": 1.175751798249415,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_07",
+            "legal": true,
+            "total_delay": 24651,
+            "baseline_delay": 31341,
+            "ratio": 1.2713885846415967,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_08",
+            "legal": true,
+            "total_delay": 26270,
+            "baseline_delay": 30886,
+            "ratio": 1.175713741910925,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_09",
+            "legal": true,
+            "total_delay": 23834,
+            "baseline_delay": 27802,
+            "ratio": 1.1664848535705294,
+            "runtime_s": null,
+            "reasons": []
+          }
+        ]
+      },
+      "output_hashes": {
+        "case_01.sol.json": "68ff268b4d9d9730994e8aa06b65c77638609ae55a93645657596f63790b3de8",
+        "case_02.sol.json": "75c7dbdcc286f6adf9110fb7817be77cf45580c12814818fb47e8cc4a85a5170",
+        "case_03.sol.json": "37285d0e2ce4d52dae8002f95c481ffac14afbea546c65ae3053c0b5a07c0c0d",
+        "case_04.sol.json": "c023b31c9b1bbfaf4f44238cf95fc9952fe6a8b233070aceefde3813d757e187",
+        "case_05.sol.json": "870f7edcfa73ce4f08dccde8f1dd9d387f274f9956a44a66ecf2651872c73c16",
+        "case_06.sol.json": "a64e31a1516b88c3a4e909e4a920cabc392ce07233a6d658307fd24ac528abcb",
+        "case_07.sol.json": "852e5f98caded4117622089e1f5cdb4a24d6c8bd40502109ea8dccf3fd664e28",
+        "case_08.sol.json": "9590a1cec772f6131c98070f939fe0c04f4a760fcbfb5e45e90c1c3a2cafe73a",
+        "case_09.sol.json": "c3fca4fca0cf57013ea47c0912131ff5bc13939792077e27f41595771fd52861"
+      },
+      "local_routes": "dev/artifacts/20261001T214829.078098Z-public-hard-audit/7/anvesh"
+    },
+    {
+      "pr": 6,
+      "state": "closed",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/6",
+      "head": "bc8a8a942eb4dca9f06bb58585667a9a91c92af1",
+      "method": "carter-group-routing",
+      "result": {
+        "format": "m3d-leaderboard",
+        "complete": true,
+        "aggregate_score": 1.163739103739662,
+        "n_cases": 9,
+        "n_legal": 9,
+        "formula": "aggregate = geomean_c(baseline_total_c / submission_total_c); higher is better; baseline scores 1.0; all cases must be legal for a complete ranked submission (else aggregate = 0.0)",
+        "cases": [
+          {
+            "case": "case_01",
+            "legal": true,
+            "total_delay": 10110,
+            "baseline_delay": 11938,
+            "ratio": 1.180811078140455,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_02",
+            "legal": true,
+            "total_delay": 15988,
+            "baseline_delay": 18910,
+            "ratio": 1.1827620715536653,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_03",
+            "legal": true,
+            "total_delay": 12602,
+            "baseline_delay": 14724,
+            "ratio": 1.1683859704808761,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_04",
+            "legal": true,
+            "total_delay": 15745,
+            "baseline_delay": 18077,
+            "ratio": 1.1481105112734202,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_05",
+            "legal": true,
+            "total_delay": 18211,
+            "baseline_delay": 21051,
+            "ratio": 1.1559497007303279,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_06",
+            "legal": true,
+            "total_delay": 23786,
+            "baseline_delay": 27134,
+            "ratio": 1.1407550660052133,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_07",
+            "legal": true,
+            "total_delay": 26351,
+            "baseline_delay": 31341,
+            "ratio": 1.1893666274524686,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_08",
+            "legal": true,
+            "total_delay": 26646,
+            "baseline_delay": 30886,
+            "ratio": 1.1591233205734444,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_09",
+            "legal": true,
+            "total_delay": 24188,
+            "baseline_delay": 27802,
+            "ratio": 1.1494129320324127,
+            "runtime_s": null,
+            "reasons": []
+          }
+        ]
+      },
+      "output_hashes": {
+        "case_01.sol.json": "28d5771f70532d024575313082e14c86f5dad26292aba07fce35767d99ddead0",
+        "case_02.sol.json": "f8b53b728ac47cd79a800f4db441640ad607f6c151cba270f7ad3116bf6b3909",
+        "case_03.sol.json": "92ee6786104e86adfda3f3f3e478ecd0589152e874903e0949605848dc978d27",
+        "case_04.sol.json": "d7b73f62b8e2bb77572950374f5685360013455c38d839b223833ffec190f358",
+        "case_05.sol.json": "1f80e0a8908bf47fba99ba679234328912efd0a4ebdbcfb74f5bb56edcadccf5",
+        "case_06.sol.json": "3caaab8d3fa89b1895a0e2d2d8c8d4808c67659034da2af889cd379e3253dc26",
+        "case_07.sol.json": "99161ec392ebf203ea1fbf4f360be87892f148a2a5eabc5ffa0ef8ad1e7f370f",
+        "case_08.sol.json": "3587b1b6da3e3e12291517d2bd487eb633abfe4f78d0c681de6b929ef6207b8d",
+        "case_09.sol.json": "537f294f73cb456bef34246bdd91e3843477c0603a40f138bb2338e520e40117"
+      },
+      "local_routes": "dev/artifacts/20261001T214829.078098Z-public-hard-audit/6/carter-group-routing"
+    },
+    {
+      "pr": 8,
+      "state": "open",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/8",
+      "head": "e2a01b990f3044f0650697ef4e963c579d107126",
+      "method": "drama3d-portfolio",
+      "result": {
+        "format": "m3d-leaderboard",
+        "complete": true,
+        "aggregate_score": 1.1120725064771073,
+        "n_cases": 9,
+        "n_legal": 9,
+        "formula": "aggregate = geomean_c(baseline_total_c / submission_total_c); higher is better; baseline scores 1.0; all cases must be legal for a complete ranked submission (else aggregate = 0.0)",
+        "cases": [
+          {
+            "case": "case_01",
+            "legal": true,
+            "total_delay": 10122,
+            "baseline_delay": 11938,
+            "ratio": 1.1794111835605612,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_02",
+            "legal": true,
+            "total_delay": 17206,
+            "baseline_delay": 18910,
+            "ratio": 1.0990352202719982,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_03",
+            "legal": true,
+            "total_delay": 13548,
+            "baseline_delay": 14724,
+            "ratio": 1.0868024800708591,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_04",
+            "legal": true,
+            "total_delay": 16189,
+            "baseline_delay": 18077,
+            "ratio": 1.1166223979245167,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_05",
+            "legal": true,
+            "total_delay": 19139,
+            "baseline_delay": 21051,
+            "ratio": 1.09990072626574,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_06",
+            "legal": true,
+            "total_delay": 25418,
+            "baseline_delay": 27134,
+            "ratio": 1.067511212526556,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_07",
+            "legal": true,
+            "total_delay": 27661,
+            "baseline_delay": 31341,
+            "ratio": 1.1330392972054517,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_08",
+            "legal": true,
+            "total_delay": 27678,
+            "baseline_delay": 30886,
+            "ratio": 1.115904328347424,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_09",
+            "legal": true,
+            "total_delay": 24958,
+            "baseline_delay": 27802,
+            "ratio": 1.1139514384165399,
+            "runtime_s": null,
+            "reasons": []
+          }
+        ]
+      },
+      "output_hashes": {
+        "case_01.sol.json": "1b84d9dc4eb94ba1c94a01bdb5f82b314d960d0fc9ac3c38593a4127b7ed8c7e",
+        "case_02.sol.json": "4fc20da1c70b89749446fb300bb957084a231f8cdf96ef11421d599a99a9c777",
+        "case_03.sol.json": "465eb2b634f3360976bc950036a14e19648893480b612f2415adde09d249f7d8",
+        "case_04.sol.json": "38b15e511f5a9c50419809a6ac34dc74919f647759bcf79a0fe895b0d290e411",
+        "case_05.sol.json": "03d72f9eb9cd878fa0c8b7765b4b01a678e59fe5af43f271d97dca6bbbc807f4",
+        "case_06.sol.json": "a20c579c865c8fa5984903166527afefad8944bd47decfe5d1e1ed8b990ff0ac",
+        "case_07.sol.json": "22dcbcbaa75ea44f081fb73042a101a8f50d5bfce58f849034e8c450f44b1b93",
+        "case_08.sol.json": "125cecc673209ad2aa427fb2ce29d30293aa702fd6217bb596cd519e7c3402ae",
+        "case_09.sol.json": "07ec83455bbaeefc2e17f2a64083440190fd8e24d1295c174a1a793089f68c66"
+      },
+      "local_routes": "dev/artifacts/20261001T214829.078098Z-public-hard-audit/8/drama3d-portfolio"
+    },
+    {
+      "pr": 14,
+      "state": "open",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/14",
+      "head": "a9818be6ad4a3068626d087695120527cf6a55f0",
+      "method": "iamparv7043",
+      "result": {
+        "format": "m3d-leaderboard",
+        "complete": true,
+        "aggregate_score": 1.0799588344034654,
+        "n_cases": 9,
+        "n_legal": 9,
+        "formula": "aggregate = geomean_c(baseline_total_c / submission_total_c); higher is better; baseline scores 1.0; all cases must be legal for a complete ranked submission (else aggregate = 0.0)",
+        "cases": [
+          {
+            "case": "case_01",
+            "legal": true,
+            "total_delay": 10826,
+            "baseline_delay": 11938,
+            "ratio": 1.102715684463329,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_02",
+            "legal": true,
+            "total_delay": 17966,
+            "baseline_delay": 18910,
+            "ratio": 1.0525436936435488,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_03",
+            "legal": true,
+            "total_delay": 13172,
+            "baseline_delay": 14724,
+            "ratio": 1.1178256908593986,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_04",
+            "legal": true,
+            "total_delay": 16883,
+            "baseline_delay": 18077,
+            "ratio": 1.070722028075579,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_05",
+            "legal": true,
+            "total_delay": 19485,
+            "baseline_delay": 21051,
+            "ratio": 1.0803695150115473,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_06",
+            "legal": true,
+            "total_delay": 25372,
+            "baseline_delay": 27134,
+            "ratio": 1.0694466340848179,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_07",
+            "legal": true,
+            "total_delay": 29297,
+            "baseline_delay": 31341,
+            "ratio": 1.0697682356555278,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_08",
+            "legal": true,
+            "total_delay": 28720,
+            "baseline_delay": 30886,
+            "ratio": 1.0754178272980501,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_09",
+            "legal": true,
+            "total_delay": 25690,
+            "baseline_delay": 27802,
+            "ratio": 1.0822109770338653,
+            "runtime_s": null,
+            "reasons": []
+          }
+        ]
+      },
+      "output_hashes": {
+        "case_01.sol.json": "4551fd5eb8d60cf1d265b82b9fdbc74d7784ac6e3d099c87985466cd65a8ce9a",
+        "case_02.sol.json": "7f4109e282ee0bb72b3d264b5c33bc1621cf0310d1a496084484fd20eeb08145",
+        "case_03.sol.json": "e855a922f1682f734084a8fee54d1e59bf477a6958ba0997209bd175e486316e",
+        "case_04.sol.json": "22b4950248ff03b41868363f50ba2d5eaa78c39d72f791c7ff780e17d3964359",
+        "case_05.sol.json": "112814a8651235720a0f78b9dabaa53665ca4633b163ad90bb61fdbd94c2bcf6",
+        "case_06.sol.json": "b09b0c3ff7bf669a7420aa88fe93d3ea4722a713e8537e4639622533852e3623",
+        "case_07.sol.json": "8421ce73a489d87b8661534ddedbd4025fb14a6008264eeb3f48a7f66ec44b67",
+        "case_08.sol.json": "0d62c566883052387f8cb455796428c3c851965984f045627c01493b98112b83",
+        "case_09.sol.json": "77409dd673fe5df72648be86cf2ba2e488ba9dfbc8938ed8118912f1ad14dbd0"
+      },
+      "local_routes": "dev/artifacts/20261001T214829.078098Z-public-hard-audit/14/iamparv7043"
+    },
+    {
+      "pr": 4,
+      "state": "open",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/4",
+      "head": "cd057ed79c2f91b0da1ab173b1d106ea28c39651",
+      "method": "shivaahir158",
+      "result": {
+        "format": "m3d-leaderboard",
+        "complete": true,
+        "aggregate_score": 1.0507501700992865,
+        "n_cases": 9,
+        "n_legal": 9,
+        "formula": "aggregate = geomean_c(baseline_total_c / submission_total_c); higher is better; baseline scores 1.0; all cases must be legal for a complete ranked submission (else aggregate = 0.0)",
+        "cases": [
+          {
+            "case": "case_01",
+            "legal": true,
+            "total_delay": 11026,
+            "baseline_delay": 11938,
+            "ratio": 1.0827135860692907,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_02",
+            "legal": true,
+            "total_delay": 17898,
+            "baseline_delay": 18910,
+            "ratio": 1.056542630461504,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_03",
+            "legal": true,
+            "total_delay": 14278,
+            "baseline_delay": 14724,
+            "ratio": 1.0312368679086708,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_04",
+            "legal": true,
+            "total_delay": 17377,
+            "baseline_delay": 18077,
+            "ratio": 1.0402831328767912,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_05",
+            "legal": true,
+            "total_delay": 19545,
+            "baseline_delay": 21051,
+            "ratio": 1.0770529547198773,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_06",
+            "legal": true,
+            "total_delay": 26428,
+            "baseline_delay": 27134,
+            "ratio": 1.0267140911154835,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_07",
+            "legal": true,
+            "total_delay": 29643,
+            "baseline_delay": 31341,
+            "ratio": 1.0572816516546908,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_08",
+            "legal": true,
+            "total_delay": 30070,
+            "baseline_delay": 30886,
+            "ratio": 1.0271366810774858,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_09",
+            "legal": true,
+            "total_delay": 26242,
+            "baseline_delay": 27802,
+            "ratio": 1.059446688514595,
+            "runtime_s": null,
+            "reasons": []
+          }
+        ]
+      },
+      "output_hashes": {
+        "case_01.sol.json": "080804dfb0438f5c60ef21871c8ed68d3338a8b26af26f201a2a24b38308a8dc",
+        "case_02.sol.json": "5a31b8f515f28cf13ac494ac902b072957845dea39809a05b5534f50f0c4d258",
+        "case_03.sol.json": "d314ae516068dddd8280bc12a6feb227f5633de1eb57c4bc3ce83fe8719a88e8",
+        "case_04.sol.json": "8c7f18139afcccbc4cd8b1ee8c378f3aabcc185e4af26c2f46c883880026c4d8",
+        "case_05.sol.json": "33e7d6e4adf4e06188214fe8502f2e7018d490efb01f3dd3ab102ecaee72d1fd",
+        "case_06.sol.json": "c8f85d8225f3cf57683ec111b722758bee18b38411837cfd4c724336a142ab74",
+        "case_07.sol.json": "d79eac49bf9cf9fffefdee0be58d3edcc8582198408fe12786f39c8f033664b1",
+        "case_08.sol.json": "1459521a3204c1eee651789e7998c03374be92543e0cd65dd157555e176c4f4f",
+        "case_09.sol.json": "69a74c797431ff6c8383044b7858f72cdcca7370124b1f4640362dba614a2185"
+      },
+      "local_routes": "dev/artifacts/20261001T214829.078098Z-public-hard-audit/4/shivaahir158"
+    }
+  ],
+  "errors": []
+}

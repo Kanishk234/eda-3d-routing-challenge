@@ -15,3 +15,5 @@
 10. Retain occupied-vertex penalty4 proposal search with exact physical rescoring:18/21 development improvements and fixed seed1 hard score1.052972,including reserved validation improvements. Candidate penalty is heuristic; legality/acceptance uses physical delay only. Reject plain repair. No per-case seed selection.
 
 11. Keep exact root Dijkstra:546 isolated-net comparisons show root-aware attachment matches exact delay,zero attachment worsens all7 case sums. Do not claim independent reconstructions jointly routable. Current upstream rules unchanged; keep dev separate and retain evaluation pin until submission recheck.
+
+12. Retain bounded negotiated group repair with full rollback;score1.071021. Continue optimization before final freeze:public gap to1.387394 remains large. Next test equal-delay/tie plateau exploration and expanded neighborhoods. Public audit separates closed/open/merged output standings.

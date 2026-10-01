@@ -71,3 +71,11 @@ Implemented exact/root-aware/zero-source isolated-net construction ablation.546 
 User asked whether dev is appropriate: rechecked live upstream rules/workflow,byte-identical to pin. Current HEAD3d8948f adds Windows UTF-8 fixes only (cli/verify/test). No benchmark/checker/scorer changes. Source/docs belong in development checkout; final route/meta files plus leaderboard in clean submission checkout. Sandbox network failed DNS; approved read-only network check succeeded. Evidence captured.
 
 No routing jobs running. Current best1.052972 unchanged. Next concrete action: bounded group negotiated-congestion repair with transaction rollback; compare against soft sequential repair on hard01–07 before reserved validation. Phase3 remains active,negotiation gate unfulfilled. Local commits authorized; no push/publication.
+
+## 2026-10-01 — Negotiation/public target audit and report repair
+
+Negotiated21-run screen completed:all legal/improve over Phase2,2 case05 regressions vs soft. Full fixed seed1 validation1.0710212727385569,9/9 legal,official rescore,19 checks pass;selected214526 run,core6.594s/wrapper8.233s. Local commits e3c03f2 and774f502 created. Discovered freezer report-path bug:soft report overwritten;restored from4bbf016 and preserved negotiation separately,conditional path fixed. Attempted summary write had stopped before docs;now actual state updated. No affected route/score result.
+
+User requested current best target:read all14 current PRs,13 routing heads including closed,downloaded117 hard outputs and officially rescored. All legal. Highest checked closedPR11 mj97 1.3873941742426144;highest openPR3 1.387366331135629. New12/14 below. Closed11 fork deleted;read preserved upstream commit with fallback. Source heads/hashes/evidence stored separately;no public warm starts.
+
+No running jobs. Measured Phase3 gates satisfied,but continuing optimization before final freeze due gap. Next concrete action:deterministic alternate equal-cost predecessor choices and controlled plateau/neighborhood repair on hard01–07,holding08/09 for validation. Current best1.071021. No publication;authorized local evidence/report repair commits next.

@@ -1,10 +1,10 @@
 # Phase 3 — Measured optimization
 
-Status: active. Initial repair rejected; occupied-vertex penalty repair retained after repeated development and fixed-config validation. See PHASE3 summary and phase3/repair-screen.json.
+Status: measured operator gates satisfied; continued optimization before final freeze due competitive gap.
 
-- [ ] Controlled root-aware/negotiation/legal reroute-polish comparisons — root-aware546-net ablation and legal polish/repair done; negotiation pending.
-- [x] Use profiles/failures to choose methods —1371/1638 proposals exceeded group cap; penalty repair measured.
-- [ ] Per-case/repeated-seed/validation evidence including regressions for retained methods — pending.
-- [x] Record rejected methods — plain max4-blocker repair0/21 improvements; summary/evidence.
+- [x] Controlled exact/root-aware/zero-source546-net comparison;plain/soft/negotiated groups measured.
+- [x] Search profiles and repair failure counters guide methods.
+- [x] Retained methods per-case,seeds1–3,held-out08/09 fixed-config validation;regressions disclosed.
+- [x] Plain repair and unnecessary attachment replacement rejected with evidence.
 
-Do not tick unperformed checks. Evidence must be a run ID, checked output/report or CI result. End this phase with docs/summaries/PHASE3.md and WORKLOG.md updates.
+Current verified hard1.071021. Highest checked public artifact1.387394(closedPR11),highest open1.387366(PR3). Next:equal-delay/plateau tree choices and expanded neighborhoods before Phase4 final freeze. See summary/evidence;no global-optimum or latest-private-best claim.

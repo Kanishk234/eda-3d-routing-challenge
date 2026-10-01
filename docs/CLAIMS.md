@@ -19,3 +19,5 @@ Phase3 initial screen:21 development runs (hard01–07,seeds1–3) officially le
 Phase3 soft repair: fixed seed1/5passes/2s config gives9/9 legal hard score1.0529719287378287;8 improve,1 unchanged vs Phase2. Official CLI rescore agrees. Development seeds1–3:18/21 improved.16 kernel checks pass. Sum baseline+polish+repair wrappers101.865s is component accounting,not fresh end-to-end timing. Evidence: phase3/soft-validation.json.
 
 Driver-aware attachment matches exact costs on546 isolated-net reconstructions; zero-source case sums worse for7/7 development cases. Not tier results.17 checks pass. Current upstream rules/CI rechecked at3d8948f; unchanged vs pin,with Windows encoding-only upstream change per compare metadata.
+
+Negotiated fixed config hard9/9 legal1.0710212727385569,19 tests pass;21/21 development improve vs Phase2,2 regressions vs soft. Independent official rescore. Latest public hard audit13 heads117 legal routes:highest checked closedPR11 mj97 1.3873941742426144;highest openPR3 1.387366331135629. No solver runtime reproduction or adoption as warm starts.

@@ -30,7 +30,7 @@ def main():
                   test_log_sha256=digest(ROOT/'dev/artifacts/build/phase3-negotiation-tests.log'),
                   policy='fixed seed1,penalty4,max4 blockers,5passes,2s/case;12 negotiation rounds max; no per-case portfolio selection',
                   warm_start_cost='Phase2 wrapper3.186s + baseline94.765s; add this repair wrapper. Screening costs reported separately.')
-    save(ROOT/'docs/evidence/phase3/soft-validation.json',report)
+    save(ROOT/'docs/evidence/phase3'/('negotiated-validation.json' if args.mode=='negotiated' else 'soft-validation.json'),report)
     print(score['aggregate_score'],'core',m['total_core_wall_s'],'wrapper',m['wrapper_wall_s'])
 
 if __name__=='__main__': main()
