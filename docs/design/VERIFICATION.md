@@ -27,3 +27,7 @@ Phases1/2 are complete; earlier “unperformed” statements describe Phase0 onl
 ## Current Phase3 evidence
 
 All45selectedoutputs independentlyofficialCLIrescored in tier-followup-coverage.json,withper-casehash/legality/delay agreement. Repeated/budget/fresh/treecost benchmarks officiallychecked beforepromotion. No newunitchecks runforlatestmodes;29-check historicallog predatesA*/gap/treecost additions. Finalfreeze/regeneration/currentworkflow submissionverification remain pending. Officialinputs unchanged.
+
+## A* and work-budget properties
+
+User-requested focused suite now passes31 tests. New checks cover30 random small layered/foreign-pin instances comparing A* and ordinary shortest costs with independent coordinate Dijkstra and the official checker;20 mode/work-cap combinations compare complete stdout under2s/5s safety caps, enforce expansion ceilings and legal rollback. Existing tests retain timeout/rollback/serializer coverage. Large stress fixed10M runs also yield identical stdout across30s/45s safety caps. Evidence:work-budget-profile.json. This does not establish all-config determinism or explicit internal owner consistency after every accepted move; that instrumentation remains pending.

@@ -41,3 +41,6 @@ Fanout stage fixedseed1 hard9/9 legal1.2054914475674077,allimprove vs1.186873;of
 - Relaxed analytic score ceilings(delay-bounds.json)are not achievable targets without legalconstruction. A*stress1020vs252searches under matched60s is unequalcompletedwork;no globaloptimality/general speedup claim.
 
 - Currentcongested1.082668/designs1.212499 aftermeasured20sA*stageandoptionalcongestedfreshstage;all7targetedcasesimprove overprioroutputs. Officialtier-followup-coverage.json andcomparison,45/45all-tierlegal. Repeatedseeds supportA*6/6vssingleordinarycontrol representatives,not unseen-case/general superiority. Screencost223.803s separatefrom generation/stages. No newunitcheckclaim.
+
+- Fixed10M expansion stress repeats produce identical C++ stdout and officially legal delay1121978, score1.0204335557381696. Independent selected-tier CLI rescore confirms45/45 legal;other tiers unchanged. Evidence tier-work-budget-coverage.json/work-budget-profile.json.31 focused tests pass. Determinism is conditional on identical implementation/config/inputs and no earlier wall/signal interruption.
+- Public gap diagnosis is a checked geometry comparison, not proof of attainable per-net gains. Hard signed deficit21046;multi-sink nets contribute22212 whileone-sink aggregate is1166 lower locally. No public warm starts adopted.
