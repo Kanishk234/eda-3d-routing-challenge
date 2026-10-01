@@ -159,3 +159,5 @@ Rescore selected complete runs without best-of selection:
 ```
 
 Each tier has its own score; no all-tier aggregate is reported. Coverage is preliminary until final solver/config freeze, regeneration, current-rules recheck, and clean route-only submission checks.
+
+Guided search: `--mode astar` applies exact single-net polish with consistent physical lookahead; `fanout_astar` combines it with wide fanout-priced exploration. `fanout_gap` prioritizes repair proposals by excess delay over a relaxed bound. All use official verification and preserve the incumbent. `dev/delay_bounds.py` writes relaxed,non-achievable-in-general tier score ceilings from the recorded initial optimized coverage. See tier-guided-coverage.json for newer selected outputs.
