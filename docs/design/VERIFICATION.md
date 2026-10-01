@@ -23,3 +23,7 @@ Final review: git diff --check passes; no official code/data/submission/leaderbo
 ## Phase 2 update
 
 Phases1/2 are complete; earlier “unperformed” statements describe Phase0 only. Authoritative current evidence: docs/evidence/phase2/comparison.json and runs.json; PHASE2 summary covers checks, deterministic outputs, budgets, baseline provenance and limits.13 kernel checks pass and official CLI rescore confirms9/9 legal, aggregate1.046629. Baseline-plus-wrapper sum97.952s is a paired same-machine comparison within600s, not a fresh end-to-end timing or speedup. Generated validation seeds and final submission checks remain unperformed.
+
+## Current Phase3 evidence
+
+All45selectedoutputs independentlyofficialCLIrescored in tier-followup-coverage.json,withper-casehash/legality/delay agreement. Repeated/budget/fresh/treecost benchmarks officiallychecked beforepromotion. No newunitchecks runforlatestmodes;29-check historicallog predatesA*/gap/treecost additions. Finalfreeze/regeneration/currentworkflow submissionverification remain pending. Officialinputs unchanged.

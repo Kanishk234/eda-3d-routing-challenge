@@ -1,0 +1,65 @@
+{
+  "rows": [
+    {
+      "tier": "intro",
+      "before_score": 1.0504090271124256,
+      "score": 1.0504090271124256,
+      "run_id": "20261001T225037.404983Z-exact-polish",
+      "improved_cases": 0,
+      "unchanged_cases": 20,
+      "worse_cases": 0,
+      "optimizer_chain_wall_s": 20.387601818016265
+    },
+    {
+      "tier": "hard",
+      "before_score": 1.220250233796514,
+      "score": 1.220250233796514,
+      "run_id": "20261001T231330.371744Z-exact-polish",
+      "improved_cases": 0,
+      "unchanged_cases": 9,
+      "worse_cases": 0,
+      "optimizer_chain_wall_s": 378.88574989599874
+    },
+    {
+      "tier": "scale",
+      "before_score": 1.0299239499469701,
+      "score": 1.0299239499469701,
+      "run_id": "20261001T230148.803499Z-exact-polish",
+      "improved_cases": 0,
+      "unchanged_cases": 8,
+      "worse_cases": 0,
+      "optimizer_chain_wall_s": 73.144137263007
+    },
+    {
+      "tier": "congested",
+      "before_score": 1.0553607547875163,
+      "score": 1.0826675712383234,
+      "run_id": "20261001T232900.916803Z-exact-polish",
+      "improved_cases": 4,
+      "unchanged_cases": 0,
+      "worse_cases": 0,
+      "optimizer_chain_wall_s": 229.42851800605422
+    },
+    {
+      "tier": "designs",
+      "before_score": 1.164826219486074,
+      "score": 1.2124988396182923,
+      "run_id": "20261001T232756.705387Z-exact-polish",
+      "improved_cases": 3,
+      "unchanged_cases": 0,
+      "worse_cases": 0,
+      "optimizer_chain_wall_s": 106.55203746800544
+    },
+    {
+      "tier": "stress",
+      "before_score": 1.0203262465956566,
+      "score": 1.0203262465956566,
+      "run_id": "20261001T230938.706316Z-exact-polish",
+      "improved_cases": 0,
+      "unchanged_cases": 1,
+      "worse_cases": 0,
+      "optimizer_chain_wall_s": 157.92405129101826
+    }
+  ],
+  "note": "Incremental outputs,not equal-budget algorithm superiority. Six tiers remain separate;45/45legal. All independentdevelopment search cost excludedfrom optimizerchain but recordedseparately."
+}

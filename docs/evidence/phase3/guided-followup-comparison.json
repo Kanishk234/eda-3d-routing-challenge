@@ -1,0 +1,221 @@
+{
+  "repeat_pairs": [
+    {
+      "tier": "hard",
+      "seed": 2,
+      "mode": "fanout_astar",
+      "delay": 9262,
+      "minus_control": -50,
+      "minus_astar": 0
+    },
+    {
+      "tier": "hard",
+      "seed": 3,
+      "mode": "fanout_astar",
+      "delay": 9290,
+      "minus_control": -8,
+      "minus_astar": 0
+    },
+    {
+      "tier": "congested",
+      "seed": 2,
+      "mode": "fanout_astar",
+      "delay": 63977,
+      "minus_control": -966,
+      "minus_astar": 0
+    },
+    {
+      "tier": "congested",
+      "seed": 3,
+      "mode": "fanout_astar",
+      "delay": 64645,
+      "minus_control": -464,
+      "minus_astar": 0
+    },
+    {
+      "tier": "designs",
+      "seed": 2,
+      "mode": "fanout_astar",
+      "delay": 60874,
+      "minus_control": -104,
+      "minus_astar": 0
+    },
+    {
+      "tier": "designs",
+      "seed": 3,
+      "mode": "fanout_astar",
+      "delay": 61096,
+      "minus_control": -374,
+      "minus_astar": 0
+    },
+    {
+      "tier": "hard",
+      "seed": 2,
+      "mode": "fanout_astar_gap",
+      "delay": 9240,
+      "minus_control": -72,
+      "minus_astar": -22
+    },
+    {
+      "tier": "hard",
+      "seed": 3,
+      "mode": "fanout_astar_gap",
+      "delay": 9296,
+      "minus_control": -2,
+      "minus_astar": 6
+    },
+    {
+      "tier": "congested",
+      "seed": 2,
+      "mode": "fanout_astar_gap",
+      "delay": 65239,
+      "minus_control": 296,
+      "minus_astar": 1262
+    },
+    {
+      "tier": "congested",
+      "seed": 3,
+      "mode": "fanout_astar_gap",
+      "delay": 64735,
+      "minus_control": -374,
+      "minus_astar": 90
+    },
+    {
+      "tier": "designs",
+      "seed": 2,
+      "mode": "fanout_astar_gap",
+      "delay": 61540,
+      "minus_control": 562,
+      "minus_astar": 666
+    },
+    {
+      "tier": "designs",
+      "seed": 3,
+      "mode": "fanout_astar_gap",
+      "delay": 61556,
+      "minus_control": 86,
+      "minus_astar": 460
+    }
+  ],
+  "budget_pairs": [
+    {
+      "tier": "hard",
+      "delay_5s": 9292,
+      "delay_20s": 9292,
+      "wall_5s": 5.034075339033734,
+      "wall_20s": 5.332269393024035,
+      "reached_20s": false
+    },
+    {
+      "tier": "congested",
+      "delay_5s": 64591,
+      "delay_20s": 62981,
+      "wall_5s": 5.033683699963149,
+      "wall_20s": 20.03684813302243,
+      "reached_20s": true
+    },
+    {
+      "tier": "designs",
+      "delay_5s": 61266,
+      "delay_20s": 59844,
+      "wall_5s": 5.03215771401301,
+      "wall_20s": 20.037366099015344,
+      "reached_20s": true
+    }
+  ],
+  "decision": "Retain fanout_astar;reject combined gap priority as universal default(5/6 lossesvsastar). Increasecongested/designs cap20s;hard representative completes100cyclesabout5s,so capalone showsnoextra gain.",
+  "note": "Developmentrepresentatives only,no per-caseportfolio,single20sseed;costsallrecorded.",
+  "treecost": [
+    {
+      "tier": "hard",
+      "delay": 9284,
+      "minus_astar": -8
+    },
+    {
+      "tier": "congested",
+      "delay": 65459,
+      "minus_astar": 868
+    },
+    {
+      "tier": "designs",
+      "delay": 61712,
+      "minus_astar": 446
+    }
+  ],
+  "fresh": [
+    {
+      "tier": "hard",
+      "before": 9364,
+      "delay": 9364,
+      "counters": {
+        "proposals": 0,
+        "no_gain": 0,
+        "too_many": 0,
+        "attempts": 0,
+        "negotiation_rounds": 214,
+        "conflicted_rounds": 209,
+        "fresh_attempts": 5,
+        "fresh_legal": 5,
+        "read_s": 0.00248916,
+        "validation_s": 0.00127996,
+        "optimization_s": 1.82174,
+        "uphill_moves": 0,
+        "selection_nodes": 0,
+        "selection_complete": 0,
+        "selection_partial": 0,
+        "failed": 0,
+        "nonimproving": 0
+      }
+    },
+    {
+      "tier": "congested",
+      "before": 65617,
+      "delay": 62163,
+      "counters": {
+        "proposals": 0,
+        "no_gain": 0,
+        "too_many": 0,
+        "attempts": 0,
+        "negotiation_rounds": 112,
+        "conflicted_rounds": 110,
+        "fresh_attempts": 2,
+        "fresh_legal": 1,
+        "read_s": 0.00514601,
+        "validation_s": 0.00253986,
+        "optimization_s": 19.9949,
+        "uphill_moves": 0,
+        "selection_nodes": 0,
+        "selection_complete": 0,
+        "selection_partial": 0,
+        "failed": 0,
+        "nonimproving": 0
+      }
+    },
+    {
+      "tier": "designs",
+      "before": 61964,
+      "delay": 61964,
+      "counters": {
+        "proposals": 0,
+        "no_gain": 0,
+        "too_many": 0,
+        "attempts": 0,
+        "negotiation_rounds": 78,
+        "conflicted_rounds": 77,
+        "fresh_attempts": 1,
+        "fresh_legal": 0,
+        "read_s": 0.00701824,
+        "validation_s": 0.00353383,
+        "optimization_s": 19.9931,
+        "uphill_moves": 0,
+        "selection_nodes": 0,
+        "selection_complete": 0,
+        "selection_partial": 0,
+        "failed": 0,
+        "nonimproving": 0
+      }
+    }
+  ],
+  "additional_decision": "Treecost8betterhard representative but worsecongested/designs;notdefault. Guidedfresh improvescongested62163,hard/designs retainstarts. Select optionalcongested freshstage withfixed20s/seed1/max5starts.",
+  "screen_cost_s": 223.80269655404845
+}

@@ -27,3 +27,7 @@ Stress matched performance comparison starts both60s runs from225241/routes,seed
 ## Guided-search comparison
 
 Relaxed analytic distance bounds cover all45 released cases,ignoring ownership and foreign pins;optimistic ceilings are not achievable targets without jointly legal construction. Matched stress A* versus ordinarypolish uses same225241/routes,seed1/5passes/60s whole-core cap. Three-method screen declares hard01/congested01/designs-ctrl,seed1/5s/100passes from tier-optimized-coverage.json starts. A* beats ordinaryfanout3/3;gap-order beats ordinary3/3 and A*2/3,but loses congested representative. Select fixed fanout_astar for fullhard/congested/designs validation from those original starts. No per-case selected artifacts,nohard08/09 tuning. Further seeds/budget curves remain next work;single-seed comparisons do not prove general superiority.
+
+## Repeated seeds,budget scaling,and guarded fresh starts
+
+`dev/guided_screen.py repeat|budget|fresh|treecost` freezes starts to tier-guided-coverage.json,representatives hard01/congested01/designsctrl,serialoneworker,explicitmode/seed/cap/pass configs and per-run provenance.18repeated trials seed2/3,6budget trials seed1,3fresh trials,3treecost trials;none selects per-casebest. Fullstages choose fixedseed1/20s/100cycles fanout_astar forcongested/designs,then fixedcongested restart_astar20s/max5starts with3single-netpolishpasses. Screen/generation/finalstage costs remain separate. No newunitchecks implied by benchmark verification.

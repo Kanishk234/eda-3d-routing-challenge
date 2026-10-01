@@ -39,3 +39,5 @@ Fanout stage fixedseed1 hard9/9 legal1.2054914475674077,allimprove vs1.186873;of
 
 - Current officialhard1.220250,congested1.055361,designs1.164826,stress1.020326;intro1.050409/scale1.029924 unchanged,45/45legal,tier-guided-coverage.json.17 incrementalcasegains. Seed1 fixedconfigs,siblings/inheritedcost and officialreference warmstarts disclosed.
 - Relaxed analytic score ceilings(delay-bounds.json)are not achievable targets without legalconstruction. A*stress1020vs252searches under matched60s is unequalcompletedwork;no globaloptimality/general speedup claim.
+
+- Currentcongested1.082668/designs1.212499 aftermeasured20sA*stageandoptionalcongestedfreshstage;all7targetedcasesimprove overprioroutputs. Officialtier-followup-coverage.json andcomparison,45/45all-tierlegal. Repeatedseeds supportA*6/6vssingleordinarycontrol representatives,not unseen-case/general superiority. Screencost223.803s separatefrom generation/stages. No newunitcheckclaim.
