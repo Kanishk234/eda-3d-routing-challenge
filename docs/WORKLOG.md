@@ -87,3 +87,9 @@ User requested entirely different approaches/research. Implemented original exac
 Implemented whole-instance fresh geometry negotiation with100-round cap and rollback.21 dev runs2s/pass5:9 improve;rest preserve original. Separate case01 10s/pass1 pilot215416 improves10854. Fresh-start not default under2s cap. Both screen/validation evidence retained;no per-case seed selection. Literature/public-source inspection overlapped some run time:read-only low-load browsing/downloads,not CPU-heavy competing jobs. Timings remain local samples,not algorithm speedup claims.
 
 Inspected primary PathFinder/SALT/MAPF-LNS2/NDP papers andMIT IrwinJam/m3d-router source0027d807(no execution/copy). Research followup notes alternatives/objective mismatch;next restricted candidate-tree selection/expanded neighborhoods/controlled uphill search. No public warm starts. No jobs running. Phase3 optimization continues,current hard1.105908. Local commits authorized;no publication.
+
+## 2026-10-01 — Autonomous progress,selection/wide screens
+
+User explicitly authorized continued local commits/progress and will push. Implemented bounded compatible candidate-tree selection;21 dev runs9 improve vs Phase2,967 finite-set searches exhausted,most no improvement. Added wide equal-delay/negotiated operator(max12 blockers,24 rounds):21/21 legal/improved vs Phase2,matched caps/seeds. Bundle comparison/regressions retained.25 tests pass. Initial compiler indentation warning fixed.
+
+No screen jobs running. Current full-tier best still1.105908. Next:commit operators/screen evidence,validate fixed seed1 wide stage from current full-tier incumbent,then budget scaling on development before more validation. No push/publication.

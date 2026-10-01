@@ -105,3 +105,12 @@ Alternative initialization and geometry exploration:
 ```
 
 Explore varies equal-cost queue ranks,accepts legal equal/lower-delay geometry,then negotiates groups. Restart rebuilds all nets from empty geometry,up to100 negotiation rounds/start,restores prior legal incumbent on failure/timeout/nonimprovement. Mode-specific search costs and pipeline warm-start cost are separate. Research source is ignored and never executed/copied;see OPTIMIZATION_FOLLOWUP.md.
+
+Next operators(screened before full validation):
+
+```bash
+.venv/bin/python dev/phase3_screen.py --mode select --label candidate-selection-screen
+.venv/bin/python dev/phase3_screen.py --mode wide --label wide-neighborhood-screen
+```
+
+Select is bounded branch-and-bound over original plus6 candidate variants,at most5 nets. Complete means optimal within generated candidate sets only. Wide uses equal-delay exploration,max12 blockers and24 negotiation rounds. Physical/legal acceptance and rollback remain unchanged.25 checks pass;candidate selector not default.

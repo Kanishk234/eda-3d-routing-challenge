@@ -1,0 +1,43 @@
+{
+  "comparison": "matched Phase2 starts,2s/case,5passes,seeds1\u20133,hard01\u201307;wide max12 blockers/24 rounds vs narrow max4/12;bundle comparison",
+  "wide_vs_plateau_regressions": [
+    {
+      "seed": 1,
+      "case": "case_07",
+      "narrow": 28499,
+      "wide": 28539
+    },
+    {
+      "seed": 2,
+      "case": "case_06",
+      "narrow": 24978,
+      "wide": 25006
+    },
+    {
+      "seed": 3,
+      "case": "case_07",
+      "narrow": 27949,
+      "wide": 28293
+    }
+  ],
+  "development_only_aggregates": [
+    {
+      "seed": 1,
+      "candidate": 1.0468112446929942,
+      "narrow": 1.083163789394443,
+      "wide": 1.1289248562077758
+    },
+    {
+      "seed": 2,
+      "candidate": 1.0463183370372466,
+      "narrow": 1.0879743048653598,
+      "wide": 1.1351075969590594
+    },
+    {
+      "seed": 3,
+      "candidate": 1.0463640802295537,
+      "narrow": 1.0981736713322008,
+      "wide": 1.1244033566890674
+    }
+  ]
+}
