@@ -79,3 +79,11 @@ Negotiated21-run screen completed:all legal/improve over Phase2,2 case05 regress
 User requested current best target:read all14 current PRs,13 routing heads including closed,downloaded117 hard outputs and officially rescored. All legal. Highest checked closedPR11 mj97 1.3873941742426144;highest openPR3 1.387366331135629. New12/14 below. Closed11 fork deleted;read preserved upstream commit with fallback. Source heads/hashes/evidence stored separately;no public warm starts.
 
 No running jobs. Measured Phase3 gates satisfied,but continuing optimization before final freeze due gap. Next concrete action:deterministic alternate equal-cost predecessor choices and controlled plateau/neighborhood repair on hard01–07,holding08/09 for validation. Current best1.071021. No publication;authorized local evidence/report repair commits next.
+
+## 2026-10-01 — Alternative basins and parallel research
+
+User requested entirely different approaches/research. Implemented original exact equal-cost tie ranks and sideways legal moves followed by negotiated repair.21 development trials:all improve vs Phase2;18 improve/3 regress vs negotiated;all3 dev aggregates improve. Fixed seed1 explore after negotiated routes,run215550:9/9 legal,all improve,official1.1059077449039443;core9.080s/wrapper10.837s.22 checks pass;stage sum117.023s excluding screens/scorers.
+
+Implemented whole-instance fresh geometry negotiation with100-round cap and rollback.21 dev runs2s/pass5:9 improve;rest preserve original. Separate case01 10s/pass1 pilot215416 improves10854. Fresh-start not default under2s cap. Both screen/validation evidence retained;no per-case seed selection. Literature/public-source inspection overlapped some run time:read-only low-load browsing/downloads,not CPU-heavy competing jobs. Timings remain local samples,not algorithm speedup claims.
+
+Inspected primary PathFinder/SALT/MAPF-LNS2/NDP papers andMIT IrwinJam/m3d-router source0027d807(no execution/copy). Research followup notes alternatives/objective mismatch;next restricted candidate-tree selection/expanded neighborhoods/controlled uphill search. No public warm starts. No jobs running. Phase3 optimization continues,current hard1.105908. Local commits authorized;no publication.

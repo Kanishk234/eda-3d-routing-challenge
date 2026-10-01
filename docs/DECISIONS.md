@@ -17,3 +17,5 @@
 11. Keep exact root Dijkstra:546 isolated-net comparisons show root-aware attachment matches exact delay,zero attachment worsens all7 case sums. Do not claim independent reconstructions jointly routable. Current upstream rules unchanged; keep dev separate and retain evaluation pin until submission recheck.
 
 12. Retain bounded negotiated group repair with full rollback;score1.071021. Continue optimization before final freeze:public gap to1.387394 remains large. Next test equal-delay/tie plateau exploration and expanded neighborhoods. Public audit separates closed/open/merged output standings.
+
+13. Retain equal-delay geometric exploration after negotiated repair:fixed seed1 hard1.105908,all9 improve. Reject whole-instance restart as default under2s cap(9/21 gains),keep alternate-initialization experiment. Research alternatives documented;next restricted compatible candidate-tree selection/expanded neighborhoods. No public solver code copied.

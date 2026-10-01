@@ -94,3 +94,14 @@ Negotiated comparison and public-output audit tools:
 ```
 
 Public audit downloads routes solely for comparison,including closed PR heads. It does not execute public solvers or promote public outputs. Network required;results pinned by head/output hashes. Current negotiated validation starts from Phase2 warm routes under seed1,5passes,2s/case and max12 negotiation rounds.
+
+Alternative initialization and geometry exploration:
+
+```bash
+.venv/bin/python dev/phase3_screen.py --mode explore --label plateau-screen
+.venv/bin/python dev/phase3_screen.py --mode restart --label global-restart-screen
+.venv/bin/python dev/run_polish.py --mode explore --budget 2 --passes 5 --seed 1 --resume-dir dev/artifacts/20261001T214526.246570Z-exact-polish/routes
+.venv/bin/python dev/finish_phase3_screen.py --mode explore
+```
+
+Explore varies equal-cost queue ranks,accepts legal equal/lower-delay geometry,then negotiates groups. Restart rebuilds all nets from empty geometry,up to100 negotiation rounds/start,restores prior legal incumbent on failure/timeout/nonimprovement. Mode-specific search costs and pipeline warm-start cost are separate. Research source is ignored and never executed/copied;see OPTIMIZATION_FOLLOWUP.md.

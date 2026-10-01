@@ -21,3 +21,5 @@ Phase3 soft repair: fixed seed1/5passes/2s config gives9/9 legal hard score1.052
 Driver-aware attachment matches exact costs on546 isolated-net reconstructions; zero-source case sums worse for7/7 development cases. Not tier results.17 checks pass. Current upstream rules/CI rechecked at3d8948f; unchanged vs pin,with Windows encoding-only upstream change per compare metadata.
 
 Negotiated fixed config hard9/9 legal1.0710212727385569,19 tests pass;21/21 development improve vs Phase2,2 regressions vs soft. Independent official rescore. Latest public hard audit13 heads117 legal routes:highest checked closedPR11 mj97 1.3873941742426144;highest openPR3 1.387366331135629. No solver runtime reproduction or adoption as warm starts.
+
+Basin experiment:22 checks pass;fixed seed1 exploration after negotiated improves all9 hard cases,official1.1059077449039443. Three-seed development aggregates improve but3 case regressions vs negotiated exist. Whole restart9/21 gains,rest retained originals. No global-basin diagnosis,novelty,source reproducibility or exact global-selection claim.

@@ -1,0 +1,17 @@
+{
+  "repo": "IrwinJam/m3d-router",
+  "head": "0027d80768b69c52ba96e673d46967f3a6cf6fc3",
+  "files": [
+    ".gitignore",
+    "LICENSE",
+    "README.md",
+    "core.py",
+    "pack_submission.py",
+    "requirements.txt",
+    "router.py",
+    "run_suite.py"
+  ],
+  "local": "dev/artifacts/research-m3d",
+  "executed": false,
+  "adapted": false
+}
