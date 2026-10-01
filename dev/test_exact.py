@@ -287,6 +287,16 @@ class ExactKernel(unittest.TestCase):
         self.assertEqual(route_resources(sub),{"net_vertex_uses":5,"edges":4,"vias":0})
         self.assertEqual(check(inst,sub).total_delay,12)
 
+    def test_fresh_price_variants_checkpoint_and_physical_cost(self):
+        path=[(x,0,0) for x in range(5)]+[(4,y,0) for y in range(1,5)]
+        inst,sub=make(5,5,[6,2],3,(0,0,0),[(4,4,0)],own_edges=list(zip(path,path[1:])))
+        for mode in ("restart_fanout","restart_compact"):
+            _,out,stats=core(inst,sub,mode)
+            self.assertEqual(check(inst,out).total_delay,22)
+            self.assertEqual(stats["total_delay"],22)
+            _,out,_=core(inst,sub,mode,budget=0)
+            self.assertEqual(check(inst,out).total_delay,48)
+
     def test_output_parser_rejects_truncation(self):
         inst,_=make(3,1,[1],1,(0,0,0),[(2,0,0)])
         with self.assertRaises(ValueError):
