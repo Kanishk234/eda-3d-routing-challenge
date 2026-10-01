@@ -41,6 +41,7 @@ struct Engine {
     std::vector<I> dist;
     std::chrono::steady_clock::time_point deadline;
     std::uint64_t searches=0, expansions=0, accepted=0;
+    double read_s=0,validation_s=0,optimization_s=0;
     bool timed_out=false;
     bool ablation_mode=false;
     bool compact_groups=false,fanout_prices=false;
@@ -96,14 +97,22 @@ struct Engine {
         for(int v:net.vertices)
             if(pin_owner[v]>=0 && pin_owner[v]!=net.id)
                 throw std::runtime_error("foreign terminal");
-        std::vector<std::vector<std::pair<int,I>>> adj(vcount);
+        // Validate only this tree's vertices, not the entire routing grid.
+        auto local=[&](int v) {
+            auto it=std::lower_bound(net.vertices.begin(),net.vertices.end(),v);
+            if(it==net.vertices.end() || *it!=v) throw std::runtime_error("missing tree vertex");
+            return static_cast<int>(it-net.vertices.begin());
+        };
+        std::vector<std::vector<std::pair<int,I>>> adj(net.vertices.size());
         for(auto [a,b]:net.edges) {
             I cost=weight(a,b);
-            adj[a].push_back({b,cost}); adj[b].push_back({a,cost});
+            int u=local(a),v=local(b);
+            adj[u].push_back({v,cost}); adj[v].push_back({u,cost});
         }
-        std::vector<I> costs(vcount,INF);
+        std::vector<I> costs(net.vertices.size(),INF);
         std::queue<int> q;
-        q.push(net.root); costs[net.root]=0;
+        int root=local(net.root);
+        q.push(root); costs[root]=0;
         std::size_t seen=0;
         while(!q.empty()) {
             int u=q.front(); q.pop(); ++seen;
@@ -114,7 +123,7 @@ struct Engine {
         if(seen!=net.vertices.size() || net.edges.size()+1!=seen)
             throw std::runtime_error("disconnected or cyclic tree");
         I total=0;
-        for(int s:net.sinks) total=add(total,costs[s]);
+        for(int s:net.sinks) total=add(total,costs[local(s)]);
         return total;
     }
     void read(bool search_only) {
@@ -158,7 +167,9 @@ struct Engine {
         for(std::size_t i=0;i<nets.size();++i) {
             Net& n=nets[i];
             if(search_only && i==0) continue;
+            auto validation_start=std::chrono::steady_clock::now();
             n.delay=validate_tree(n);
+            validation_s+=std::chrono::duration<double>(std::chrono::steady_clock::now()-validation_start).count();
             for(int v:n.vertices) {
                 if(owner[v]!=-1) throw std::runtime_error("shared routing vertex");
                 owner[v]=n.id;
@@ -501,6 +512,7 @@ struct Engine {
                  <<",\"too_many\":"<<too_many<<",\"attempts\":"<<attempts
                  <<",\"negotiation_rounds\":"<<negotiation_rounds<<",\"conflicted_rounds\":"<<conflicted_rounds
                  <<",\"fresh_attempts\":"<<fresh_attempts<<",\"fresh_legal\":"<<fresh_legal
+                 <<",\"read_s\":"<<read_s<<",\"validation_s\":"<<validation_s<<",\"optimization_s\":"<<optimization_s
                  <<",\"uphill_moves\":"<<uphill_moves
                  <<",\"selection_nodes\":"<<selection_nodes<<",\"selection_complete\":"<<selection_complete
                  <<",\"selection_partial\":"<<selection_partial
@@ -526,7 +538,10 @@ int main(int argc,char**argv) {
         std::signal(SIGINT,on_signal); std::signal(SIGTERM,on_signal);
         Engine engine;
         engine.deadline=std::chrono::steady_clock::now()+std::chrono::duration_cast<std::chrono::steady_clock::duration>(std::chrono::duration<double>(seconds));
+        auto read_start=std::chrono::steady_clock::now();
         engine.read(search_only);
+        engine.read_s=std::chrono::duration<double>(std::chrono::steady_clock::now()-read_start).count();
+        auto optimization_start=std::chrono::steady_clock::now();
         engine.ablation_mode=std::string(argv[4])=="ablation";
         if(engine.ablation_mode) engine.ablation();
         else if(std::string(argv[4])=="restart_polish") {
@@ -562,6 +577,7 @@ int main(int argc,char**argv) {
         else if(std::string(argv[4])=="repair" || std::string(argv[4])=="repairsoft")
             engine.repair(seed,passes,std::string(argv[4])=="repairsoft"?4:0);
         else engine.polish(seed,passes,search_only);
+        engine.optimization_s=std::chrono::duration<double>(std::chrono::steady_clock::now()-optimization_start).count();
         engine.output();
         return 0;
     } catch(const std::exception& e) { std::cerr<<e.what()<<"\n"; return 2; }

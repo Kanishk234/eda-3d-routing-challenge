@@ -31,13 +31,29 @@ def main():
         assert score["aggregate_score"] == m["result"]["aggregate_score"]
         warm = Path(m["warm_start"]["directory"])
         official_reference = warm == OFFICIAL / suite / "reference"
+        chain = []
+        ancestor = m
+        while True:
+            chain.append({"run_id": ancestor["run_id"],
+                          "mode": ancestor["config"].get("mode", "polish"),
+                          "wrapper_wall_s": ancestor["wrapper_wall_s"]})
+            origin = Path(ancestor["warm_start"]["directory"])
+            parent = origin.parent / "manifest.json"
+            if not parent.exists():
+                break
+            ancestor = json.loads(parent.read_text())
+        reference_ancestor = origin == OFFICIAL / suite / "reference"
         rows.append({"tier": "intro" if suite == "benchmarks" else suite.removeprefix("benchmarks_"),
                      "run_id": m["run_id"], "manifest_sha256": digest(manifest_path),
                      "source_identity": m["source"]["files_sha256"],
                      "config": m["config"], "score": score,
                      "warm_start": m["warm_start"],
                      "official_reference_warm_start": official_reference,
-                     "attribution": "Official challenge reference routes" if official_reference else "Prior locally validated pipeline; see ancestor manifests",
+                     "official_reference_ancestor": reference_ancestor,
+                     "attribution": "Official challenge reference routes followed by local optimization" if reference_ancestor else "Locally validated pipeline; see ancestor manifests",
+                     "optimizer_chain": list(reversed(chain)),
+                     "recorded_optimizer_chain_wall_s": sum(x["wrapper_wall_s"] for x in chain),
+                     "initial_route_source": str(origin),
                      "wrapper_wall_s": m["wrapper_wall_s"],
                      "core_wall_s": m["total_core_wall_s"],
                      "peak_core_rss_kib": max(c["process"].get("peak_rss_kib") or 0 for c in m["cases"]),
