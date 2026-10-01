@@ -36,3 +36,6 @@ Fanout stage fixedseed1 hard9/9 legal1.2054914475674077,allimprove vs1.186873;of
 
 - Updated45/45legal tier outputs:scale1.029924,congested1.040655,designs1.138274,stress1.006780;intro/hard unchanged. Official tier-optimized-coverage.json. All16 newly targeted cases improve over initial coverage. Additional optimizer stages/single-seed screen/reference starts disclosed;no global optimum or equal-resource superiority claim.
 - Matched stress initialization improvement44.143→0.424s,validation43.950→0.250s;252vs72 searches inside same60s cap. Single-case measured result only;large-case-profile.json.
+
+- Current officialhard1.220250,congested1.055361,designs1.164826,stress1.020326;intro1.050409/scale1.029924 unchanged,45/45legal,tier-guided-coverage.json.17 incrementalcasegains. Seed1 fixedconfigs,siblings/inheritedcost and officialreference warmstarts disclosed.
+- Relaxed analytic score ceilings(delay-bounds.json)are not achievable targets without legalconstruction. A*stress1020vs252searches under matched60s is unequalcompletedwork;no globaloptimality/general speedup claim.

@@ -1,0 +1,455 @@
+{
+  "upstream_revision": "499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+  "tiers": [
+    {
+      "tier": "intro",
+      "current_score": 1.0504090271124256,
+      "optimistic_score_ceiling": 1.1870314683811172,
+      "cases": [
+        {
+          "case": "case_01",
+          "case_sha256": "cc44aff1a21f0d4854ced9d550e95d4a77f6f475b6be0f3eec0416b070625b8c",
+          "baseline_delay": 240,
+          "current_delay": 232,
+          "relaxed_delay_lower_bound": 206,
+          "optimistic_score_ceiling": 1.1650485436893203,
+          "current_over_bound": 1.1262135922330097
+        },
+        {
+          "case": "case_02",
+          "case_sha256": "169d1850ef77912297e3db307ff29c6b86db307e3ea846bafd6d771f147e848a",
+          "baseline_delay": 1190,
+          "current_delay": 1046,
+          "relaxed_delay_lower_bound": 1006,
+          "optimistic_score_ceiling": 1.1829025844930416,
+          "current_over_bound": 1.0397614314115309
+        },
+        {
+          "case": "case_03",
+          "case_sha256": "192bf94aa004b19e166888ca61ae6b6cbc0900d0f4bb108b7421494e2e85c460",
+          "baseline_delay": 1757,
+          "current_delay": 1723,
+          "relaxed_delay_lower_bound": 1595,
+          "optimistic_score_ceiling": 1.1015673981191223,
+          "current_over_bound": 1.0802507836990596
+        },
+        {
+          "case": "case_04",
+          "case_sha256": "27a5b017b31d7f5f15e11894bec5c7352fe66446a11106fb918a91140916cbd0",
+          "baseline_delay": 2162,
+          "current_delay": 2134,
+          "relaxed_delay_lower_bound": 1936,
+          "optimistic_score_ceiling": 1.1167355371900827,
+          "current_over_bound": 1.1022727272727273
+        },
+        {
+          "case": "case_05",
+          "case_sha256": "bc8121afd69bf79056e4521147ee7b92f5c95714b3c49058dfce7ed0f578d43b",
+          "baseline_delay": 4197,
+          "current_delay": 4011,
+          "relaxed_delay_lower_bound": 3563,
+          "optimistic_score_ceiling": 1.1779399382542801,
+          "current_over_bound": 1.12573673870334
+        },
+        {
+          "case": "case_06",
+          "case_sha256": "b3b28f8640b5470534cc942036e7fd71ffb42f6638c366b5674eddd9499b9614",
+          "baseline_delay": 6155,
+          "current_delay": 5773,
+          "relaxed_delay_lower_bound": 5023,
+          "optimistic_score_ceiling": 1.225363328688035,
+          "current_over_bound": 1.1493131594664543
+        },
+        {
+          "case": "case_07",
+          "case_sha256": "ce99efb6e9dbb4e1d5a4891732b033636de49e734e027aff4db29aa744e556db",
+          "baseline_delay": 5855,
+          "current_delay": 5741,
+          "relaxed_delay_lower_bound": 5087,
+          "optimistic_score_ceiling": 1.1509730686062511,
+          "current_over_bound": 1.1285630037350107
+        },
+        {
+          "case": "case_08",
+          "case_sha256": "485c0189d09ddfd5ba716a4e8d2266674ea2f715855c7fbe9ca3bba09f55103f",
+          "baseline_delay": 8549,
+          "current_delay": 8273,
+          "relaxed_delay_lower_bound": 7249,
+          "optimistic_score_ceiling": 1.1793350807007863,
+          "current_over_bound": 1.1412608635673887
+        },
+        {
+          "case": "case_09",
+          "case_sha256": "343f80021db5f9b94c8701e93cc57af504aeaee4fb84849ffb4d171e13c2af6c",
+          "baseline_delay": 9728,
+          "current_delay": 8938,
+          "relaxed_delay_lower_bound": 7970,
+          "optimistic_score_ceiling": 1.2205771643663739,
+          "current_over_bound": 1.1214554579673777
+        },
+        {
+          "case": "case_10",
+          "case_sha256": "a4c94e920951032e8a2d28face6a24cbb9061c9c69d5852eddce4495adfd444d",
+          "baseline_delay": 11969,
+          "current_delay": 11455,
+          "relaxed_delay_lower_bound": 10205,
+          "optimistic_score_ceiling": 1.1728564429201371,
+          "current_over_bound": 1.1224889759921608
+        },
+        {
+          "case": "case_11",
+          "case_sha256": "de941ab2da09af4b577b916440b4a5488f5a911c7f93b99cbeefe65f24378f99",
+          "baseline_delay": 14142,
+          "current_delay": 13496,
+          "relaxed_delay_lower_bound": 11868,
+          "optimistic_score_ceiling": 1.191607684529828,
+          "current_over_bound": 1.137175598247388
+        },
+        {
+          "case": "case_12",
+          "case_sha256": "2ed0461460276127a0777473b75c370bc005833f5645c4d836d9e41d8c3c7ecf",
+          "baseline_delay": 18509,
+          "current_delay": 17437,
+          "relaxed_delay_lower_bound": 15647,
+          "optimistic_score_ceiling": 1.1829104620694062,
+          "current_over_bound": 1.114398926311753
+        },
+        {
+          "case": "case_13",
+          "case_sha256": "f413841a7b40da4ef52825684b9b3faa4ebabc74b0463c873f0aab8090c5c77e",
+          "baseline_delay": 22599,
+          "current_delay": 21671,
+          "relaxed_delay_lower_bound": 18837,
+          "optimistic_score_ceiling": 1.1997133301481127,
+          "current_over_bound": 1.1504485852311939
+        },
+        {
+          "case": "case_14",
+          "case_sha256": "18a2f4f7453e613146247e88ce84880048142657c570c3d7a7787e265b2f2a40",
+          "baseline_delay": 24481,
+          "current_delay": 23267,
+          "relaxed_delay_lower_bound": 20489,
+          "optimistic_score_ceiling": 1.1948362535994923,
+          "current_over_bound": 1.1355849480208893
+        },
+        {
+          "case": "case_15",
+          "case_sha256": "986db029f111f85749f2ddfaddd8aa897a7377ef7c72cb00c0b1bb88eb378e9d",
+          "baseline_delay": 27648,
+          "current_delay": 26548,
+          "relaxed_delay_lower_bound": 23002,
+          "optimistic_score_ceiling": 1.201982436309886,
+          "current_over_bound": 1.154160507781932
+        },
+        {
+          "case": "case_16",
+          "case_sha256": "80606ec42f5ae064b1c25222752ecaa01684f94f9eae7ba359b81209951ec62d",
+          "baseline_delay": 37902,
+          "current_delay": 36238,
+          "relaxed_delay_lower_bound": 31524,
+          "optimistic_score_ceiling": 1.2023220403502093,
+          "current_over_bound": 1.1495368608044665
+        },
+        {
+          "case": "case_17",
+          "case_sha256": "df56b2ecda8fdff6175df01d4e3a74f999fa7a289bd289e9763ea65a7c18add7",
+          "baseline_delay": 49554,
+          "current_delay": 46734,
+          "relaxed_delay_lower_bound": 39678,
+          "optimistic_score_ceiling": 1.248903674580372,
+          "current_over_bound": 1.1778315439286253
+        },
+        {
+          "case": "case_18",
+          "case_sha256": "209f64bb32263e7e4db36f997d4113d08ba88b7bfd9b62f49a173c24080a0136",
+          "baseline_delay": 53805,
+          "current_delay": 51025,
+          "relaxed_delay_lower_bound": 42739,
+          "optimistic_score_ceiling": 1.2589204239687406,
+          "current_over_bound": 1.1938744472261869
+        },
+        {
+          "case": "case_19",
+          "case_sha256": "97b2f17901d53d2dad2f102893ab4e687a194c219e39af985fd960104cf0a7b5",
+          "baseline_delay": 45488,
+          "current_delay": 43356,
+          "relaxed_delay_lower_bound": 38512,
+          "optimistic_score_ceiling": 1.1811383464894059,
+          "current_over_bound": 1.125778977980889
+        },
+        {
+          "case": "case_20",
+          "case_sha256": "c701d3fc484a2d4a77c9e7bfdba030174a445c7e07ec2797d2f797d21b6241fb",
+          "baseline_delay": 51660,
+          "current_delay": 48978,
+          "relaxed_delay_lower_bound": 43180,
+          "optimistic_score_ceiling": 1.1963872163038445,
+          "current_over_bound": 1.134275127373784
+        }
+      ]
+    },
+    {
+      "tier": "hard",
+      "current_score": 1.212967727395428,
+      "optimistic_score_ceiling": 1.7616675826960202,
+      "cases": [
+        {
+          "case": "case_01",
+          "case_sha256": "685a165a7a15811dff12839e0dbe79752b889558213f760ad5f0df6139766f5d",
+          "baseline_delay": 11938,
+          "current_delay": 9504,
+          "relaxed_delay_lower_bound": 7156,
+          "optimistic_score_ceiling": 1.6682504192286194,
+          "current_over_bound": 1.3281162660704304
+        },
+        {
+          "case": "case_02",
+          "case_sha256": "1017b8aac77273a25186858bf39dd66293d56aecebfc7b0e1f5a19c66a2d6c2e",
+          "baseline_delay": 18910,
+          "current_delay": 14836,
+          "relaxed_delay_lower_bound": 9976,
+          "optimistic_score_ceiling": 1.8955493183640737,
+          "current_over_bound": 1.487169206094627
+        },
+        {
+          "case": "case_03",
+          "case_sha256": "4783af0f84289f7d48d70b7428d2f7b8fbcdefaf2bdfca2bac237e874bd97858",
+          "baseline_delay": 14724,
+          "current_delay": 12332,
+          "relaxed_delay_lower_bound": 8744,
+          "optimistic_score_ceiling": 1.6838975297346752,
+          "current_over_bound": 1.4103385178408052
+        },
+        {
+          "case": "case_04",
+          "case_sha256": "06324939b75971e45caa9e7f19d824a254e0f61167dd6b279bbff612d77d96f1",
+          "baseline_delay": 18077,
+          "current_delay": 14925,
+          "relaxed_delay_lower_bound": 10253,
+          "optimistic_score_ceiling": 1.763093728664781,
+          "current_over_bound": 1.4556715107773335
+        },
+        {
+          "case": "case_05",
+          "case_sha256": "51e44c96f14e5d3229047d6ee5ba2aa0faee94fb208f3f9e716310a0620306a1",
+          "baseline_delay": 21051,
+          "current_delay": 17407,
+          "relaxed_delay_lower_bound": 12129,
+          "optimistic_score_ceiling": 1.7355923818946326,
+          "current_over_bound": 1.435155412647374
+        },
+        {
+          "case": "case_06",
+          "case_sha256": "612b2680497826836de4d9553d8dc95d53f1d46fe07858cfdb74e43ce5582cba",
+          "baseline_delay": 27134,
+          "current_delay": 22926,
+          "relaxed_delay_lower_bound": 15332,
+          "optimistic_score_ceiling": 1.769762588051135,
+          "current_over_bound": 1.4953039394729977
+        },
+        {
+          "case": "case_07",
+          "case_sha256": "e3475bed19f53670482b4b864a276c475b47e1cac7237d8fa26eeb48714de8f0",
+          "baseline_delay": 31341,
+          "current_delay": 25633,
+          "relaxed_delay_lower_bound": 16461,
+          "optimistic_score_ceiling": 1.9039548022598871,
+          "current_over_bound": 1.5571957961241722
+        },
+        {
+          "case": "case_08",
+          "case_sha256": "b1dbc8ed8aab7cbb457987f4b8a877b9c2adda8575b326d9822523f090cec1f2",
+          "baseline_delay": 30886,
+          "current_delay": 25694,
+          "relaxed_delay_lower_bound": 16576,
+          "optimistic_score_ceiling": 1.863296332046332,
+          "current_over_bound": 1.550072393822394
+        },
+        {
+          "case": "case_09",
+          "case_sha256": "bcbd72a7bb47ec5c5f82428573ffabdb932594c4b574d552808851617b05f6c1",
+          "baseline_delay": 27802,
+          "current_delay": 23824,
+          "relaxed_delay_lower_bound": 17404,
+          "optimistic_score_ceiling": 1.5974488623304988,
+          "current_over_bound": 1.368880717076534
+        }
+      ]
+    },
+    {
+      "tier": "scale",
+      "current_score": 1.0299239499469701,
+      "optimistic_score_ceiling": 1.1622360203214306,
+      "cases": [
+        {
+          "case": "case_01",
+          "case_sha256": "86aecbc407f74b0988098c968efcb9849eb87e00306e8307dd28ef339e070458",
+          "baseline_delay": 45088,
+          "current_delay": 43978,
+          "relaxed_delay_lower_bound": 38066,
+          "optimistic_score_ceiling": 1.1844690800189146,
+          "current_over_bound": 1.155309199810855
+        },
+        {
+          "case": "case_02",
+          "case_sha256": "e59beb3293a96da64871a1c3f5fd547d619470e178a7dd1ea6bc7aed0f90af39",
+          "baseline_delay": 51828,
+          "current_delay": 50368,
+          "relaxed_delay_lower_bound": 43786,
+          "optimistic_score_ceiling": 1.1836660119672955,
+          "current_over_bound": 1.150322020737222
+        },
+        {
+          "case": "case_03",
+          "case_sha256": "46732d04f041bd582d427ed0c0fece4ecbae4208cbd7b2c90380ef359f485b4c",
+          "baseline_delay": 62452,
+          "current_delay": 60464,
+          "relaxed_delay_lower_bound": 54966,
+          "optimistic_score_ceiling": 1.1361932831204744,
+          "current_over_bound": 1.1000254702907253
+        },
+        {
+          "case": "case_04",
+          "case_sha256": "c419a4d6d2aa7093c4ebf23a9e299a1dfe486cfa24e4eb167deb92f59c820a43",
+          "baseline_delay": 66106,
+          "current_delay": 63468,
+          "relaxed_delay_lower_bound": 55030,
+          "optimistic_score_ceiling": 1.2012720334363074,
+          "current_over_bound": 1.1533345447937489
+        },
+        {
+          "case": "case_05",
+          "case_sha256": "0308afa080feaae6e605419820e329770d519b3a9842db78b2cf57e9527cf85d",
+          "baseline_delay": 74371,
+          "current_delay": 71861,
+          "relaxed_delay_lower_bound": 64295,
+          "optimistic_score_ceiling": 1.1567151411462788,
+          "current_over_bound": 1.1176763356404076
+        },
+        {
+          "case": "case_06",
+          "case_sha256": "e3d6b3ac5e27caa6f519b16d1f2233bed3d80e14bc1dbc9d3f8850133c919b52",
+          "baseline_delay": 86553,
+          "current_delay": 84727,
+          "relaxed_delay_lower_bound": 75995,
+          "optimistic_score_ceiling": 1.1389301927758406,
+          "current_over_bound": 1.1149022962036976
+        },
+        {
+          "case": "case_07",
+          "case_sha256": "af966c99c83fe29ca64dbfa1862d6e95b43997ff09aeadd5b329a55fc0ead9ef",
+          "baseline_delay": 96835,
+          "current_delay": 93617,
+          "relaxed_delay_lower_bound": 84503,
+          "optimistic_score_ceiling": 1.145935647255127,
+          "current_over_bound": 1.10785415902394
+        },
+        {
+          "case": "case_08",
+          "case_sha256": "dfa38773632df7d3560c51b443eb3a32f358ea64799caa1e6ee7ce5bd3e812c6",
+          "baseline_delay": 121175,
+          "current_delay": 118793,
+          "relaxed_delay_lower_bound": 105145,
+          "optimistic_score_ceiling": 1.1524561320081792,
+          "current_over_bound": 1.1298017024109563
+        }
+      ]
+    },
+    {
+      "tier": "congested",
+      "current_score": 1.0406548316718132,
+      "optimistic_score_ceiling": 1.6468322609667874,
+      "cases": [
+        {
+          "case": "case_01",
+          "case_sha256": "74f8fb9b0a4fdf230227e676999da156bd2dfea8dcacb1f8ec3407086fe11d06",
+          "baseline_delay": 71049,
+          "current_delay": 67815,
+          "relaxed_delay_lower_bound": 43171,
+          "optimistic_score_ceiling": 1.6457575687382733,
+          "current_over_bound": 1.57084616988256
+        },
+        {
+          "case": "case_02",
+          "case_sha256": "080b349aea6d22e149d25ca74603cec81331cace10e7731bc4d86a3a7f780740",
+          "baseline_delay": 122534,
+          "current_delay": 118376,
+          "relaxed_delay_lower_bound": 76758,
+          "optimistic_score_ceiling": 1.5963678053101957,
+          "current_over_bound": 1.5421975559550796
+        },
+        {
+          "case": "case_03",
+          "case_sha256": "e4ec45609bfbfb4c31b1b24d4d6ce5be4c4711210f39bb8e096331f66446546c",
+          "baseline_delay": 216835,
+          "current_delay": 208433,
+          "relaxed_delay_lower_bound": 128571,
+          "optimistic_score_ceiling": 1.6865000661113314,
+          "current_over_bound": 1.6211509593920868
+        },
+        {
+          "case": "case_04",
+          "case_sha256": "c591114d5439e4dca0c30b2db15c072e9837461f2469fabc7fea8c753729cf01",
+          "baseline_delay": 234127,
+          "current_delay": 225223,
+          "relaxed_delay_lower_bound": 141039,
+          "optimistic_score_ceiling": 1.6600160239366417,
+          "current_over_bound": 1.5968845496635682
+        }
+      ]
+    },
+    {
+      "tier": "designs",
+      "current_score": 1.1382735873408656,
+      "optimistic_score_ceiling": 1.8111787100197394,
+      "cases": [
+        {
+          "case": "ctrl",
+          "case_sha256": "024ebda5df67cf2077542524a2bf6109bd40937c9ee901d7d8ec0abcf55402cb",
+          "baseline_delay": 73148,
+          "current_delay": 63422,
+          "relaxed_delay_lower_bound": 40580,
+          "optimistic_score_ceiling": 1.8025628388368655,
+          "current_over_bound": 1.5628881222276985
+        },
+        {
+          "case": "int2float",
+          "case_sha256": "1d57b7e5b69292592184aa9368930490c5f7af477f4f739db3500a329d6fb16e",
+          "baseline_delay": 152284,
+          "current_delay": 123250,
+          "relaxed_delay_lower_bound": 69186,
+          "optimistic_score_ceiling": 2.201081143583962,
+          "current_over_bound": 1.7814297690284162
+        },
+        {
+          "case": "router",
+          "case_sha256": "34096ab422d9b1cfff1c607bfc66e28a2a9ab43eeb1e0cd34e481162f017a98c",
+          "baseline_delay": 82491,
+          "current_delay": 79707,
+          "relaxed_delay_lower_bound": 55087,
+          "optimistic_score_ceiling": 1.4974676420934159,
+          "current_over_bound": 1.4469294025813713
+        }
+      ]
+    },
+    {
+      "tier": "stress",
+      "current_score": 1.0067798458310544,
+      "optimistic_score_ceiling": 1.1052071689071914,
+      "cases": [
+        {
+          "case": "case_01",
+          "case_sha256": "125f9d4d871a727418cafe4ce68dda4dc93a40c6c631daaf45fa9a9c73fae550",
+          "baseline_delay": 1144904,
+          "current_delay": 1137194,
+          "relaxed_delay_lower_bound": 1035918,
+          "optimistic_score_ceiling": 1.1052071689071914,
+          "current_over_bound": 1.0977644948731464
+        }
+      ]
+    }
+  ],
+  "formula": "min_k ManhattanXY*layer_delay[k] + via_delay*(abs(driver_z-k)+abs(sink_z-k))",
+  "proof": "Any path visits a cheapest layer k, uses at least ManhattanXY horizontal steps and at least abs(driver_z-k)+abs(sink_z-k) vias. Moving horizontally on k attains that bound when obstacles are removed.",
+  "limitations": "Foreign pins and competing nets are ignored. Pairwise optimum sums are lower bounds only; their score ceilings need not be jointly achievable. No global optimum or legal construction claim."
+}

@@ -1,0 +1,65 @@
+{
+  "rows": [
+    {
+      "tier": "intro",
+      "before_score": 1.0504090271124256,
+      "score": 1.0504090271124256,
+      "run_id": "20261001T225037.404983Z-exact-polish",
+      "improved_cases": 0,
+      "unchanged_cases": 20,
+      "worse_cases": 0,
+      "stage_wrapper_wall_s": 0
+    },
+    {
+      "tier": "hard",
+      "before_score": 1.212967727395428,
+      "score": 1.220250233796514,
+      "run_id": "20261001T231330.371744Z-exact-polish",
+      "improved_cases": 9,
+      "unchanged_cases": 0,
+      "worse_cases": 0,
+      "stage_wrapper_wall_s": 46.29440652200719
+    },
+    {
+      "tier": "scale",
+      "before_score": 1.0299239499469701,
+      "score": 1.0299239499469701,
+      "run_id": "20261001T230148.803499Z-exact-polish",
+      "improved_cases": 0,
+      "unchanged_cases": 8,
+      "worse_cases": 0,
+      "stage_wrapper_wall_s": 0
+    },
+    {
+      "tier": "congested",
+      "before_score": 1.0406548316718132,
+      "score": 1.0553607547875163,
+      "run_id": "20261001T231417.800514Z-exact-polish",
+      "improved_cases": 4,
+      "unchanged_cases": 0,
+      "worse_cases": 0,
+      "stage_wrapper_wall_s": 23.496090208995156
+    },
+    {
+      "tier": "designs",
+      "before_score": 1.1382735873408656,
+      "score": 1.164826219486074,
+      "run_id": "20261001T231442.109038Z-exact-polish",
+      "improved_cases": 3,
+      "unchanged_cases": 0,
+      "worse_cases": 0,
+      "stage_wrapper_wall_s": 17.132815924007446
+    },
+    {
+      "tier": "stress",
+      "before_score": 1.0067798458310544,
+      "score": 1.0203262465956566,
+      "run_id": "20261001T230938.706316Z-exact-polish",
+      "improved_cases": 1,
+      "unchanged_cases": 0,
+      "worse_cases": 0,
+      "stage_wrapper_wall_s": 79.00618297996698
+    }
+  ],
+  "note": "Full-tier incremental output comparison;additional stages disclosed. Stress replaces ordinarypolish sibling from common warmstart;no per-case best selection. All45selected outputs legal."
+}
