@@ -100,7 +100,7 @@ def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument("--suite",choices=["benchmarks","benchmarks_hard","benchmarks_scale","benchmarks_stress","benchmarks_congested","benchmarks_designs"],default="benchmarks_hard")
     p.add_argument("--case")
-    p.add_argument("--mode",choices=["polish","repair","repairsoft","ablation","negotiated","explore","restart","select","wide","walk","descent","compact","fanout","restart_fanout","restart_compact","restart_polish","fanout_walk","fanout_descent","astar","fanout_astar","fanout_gap","fanout_astar_gap","restart_astar","treecost"],default="polish")
+    p.add_argument("--mode",choices=["polish","repair","repairsoft","ablation","negotiated","explore","restart","select","wide","walk","descent","compact","fanout","restart_fanout","restart_compact","restart_polish","fanout_walk","fanout_descent","astar","fanout_astar","fanout_gap","fanout_astar_gap","restart_astar","treecost","fanout_tight","astar_tight"],default="polish")
     p.add_argument("--budget",type=float,default=10)
     p.add_argument("--work-budget",type=int,default=0,help="maximum expanded vertices; 0 disables; wall budget remains a safety cap")
     p.add_argument("--seed",type=int,default=1)

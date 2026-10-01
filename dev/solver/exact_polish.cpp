@@ -38,14 +38,14 @@ struct Engine {
     std::vector<I> layer;
     std::vector<Net> nets;
     std::vector<int> owner,pin_owner,parent;
-    std::vector<I> dist;
+    std::vector<I> dist,heuristic_table;
     std::chrono::steady_clock::time_point deadline;
     std::uint64_t searches=0, expansions=0, accepted=0;
-    double read_s=0,validation_s=0,optimization_s=0,search_reset_s=0,search_rebuild_s=0;
+    double read_s=0,validation_s=0,optimization_s=0,search_reset_s=0,search_rebuild_s=0,snapshot_s=0,negotiation_setup_s=0,negotiation_scan_s=0;
     bool timed_out=false,work_exhausted=false;
     std::uint64_t work_limit=0;
     bool ablation_mode=false;
-    bool compact_groups=false,fanout_prices=false,astar_search=false,gap_order=false,discounted_groups=false;
+    bool compact_groups=false,fanout_prices=false,astar_search=false,tight_heuristic=false,gap_order=false,discounted_groups=false;
     bool random_ties=false; std::uint64_t tie_seed=0;
     std::uint64_t tie_rank(int v) const {
         std::uint64_t x=static_cast<std::uint64_t>(v)+tie_seed+0x9e3779b97f4a7c15ULL;
@@ -205,23 +205,32 @@ struct Engine {
             if(b.x1>=0) boxes.push_back(b);
         }
         I cheapest=*std::min_element(layer.begin(),layer.end());
+        auto& table=heuristic_table;
+        int extent=w+h-1;
+        if(tight_heuristic && table.empty()) {
+            table.resize(static_cast<std::size_t>(l)*l*extent);
+            for(int a=0;a<l;++a) for(int b=0;b<l;++b) for(int d=0;d<extent;++d) {
+                I best=INF;
+                for(int k=0;k<l;++k) best=std::min(best,add(static_cast<I>(d)*layer[k],static_cast<I>(std::abs(a-k)+std::abs(b-k))*via));
+                table[(a*l+b)*extent+d]=best;
+            }
+        }
         auto heuristic=[&](int vertex) -> I {
             if(!astar_search) return 0;
             int z=vertex/wh,x=vertex%w,y=(vertex%wh)/w;
             I result=INF;
             for(const Box& b:boxes) {
                 I xy=std::max({b.x0-x,0,x-b.x1})+std::max({b.y0-y,0,y-b.y1});
-                result=std::min(result,add(xy*cheapest,static_cast<I>(std::abs(z-b.z))*via));
+                result=std::min(result,tight_heuristic?table[(z*l+b.z)*extent+xy]:add(xy*cheapest,static_cast<I>(std::abs(z-b.z))*via));
             }
             return result;
         };
-        using Node=std::tuple<I,std::uint64_t,int>;
+        using Node=std::tuple<I,std::uint64_t,int,I>;
         std::priority_queue<Node,std::vector<Node>,std::greater<Node>> q;
-        dist[n.root]=0; q.push({heuristic(n.root),random_ties?tie_rank(n.root):static_cast<std::uint64_t>(n.root),n.root});
+        dist[n.root]=0; q.push({heuristic(n.root),random_ties?tie_rank(n.root):static_cast<std::uint64_t>(n.root),n.root,0});
         while(!q.empty() && left) {
-            auto [priority,rank,u]=q.top(); q.pop();
-            if(priority!=add(dist[u],heuristic(u))) continue;
-            I cost=dist[u];
+            auto [priority,rank,u,cost]=q.top(); q.pop();
+            if(cost!=dist[u]) continue;
             if(work_limit && expansions>=work_limit) { expired(); return false; }
             ++expansions;
             if((expansions&1023)==0 && expired()) return false;
@@ -236,7 +245,7 @@ struct Engine {
                     extra=add(extra,price/divisor);
                 }
                 I next=add(add(cost,delay),extra);
-                if(next<dist[v]) { dist[v]=next; parent[v]=u; q.push({add(next,heuristic(v)),random_ties?tie_rank(v):static_cast<std::uint64_t>(v),v}); }
+                if(next<dist[v]) { dist[v]=next; parent[v]=u; q.push({add(next,heuristic(v)),random_ties?tie_rank(v):static_cast<std::uint64_t>(v),v,next}); }
             });
         }
         if(left || expired()) return false;
@@ -367,9 +376,11 @@ struct Engine {
         }
     }
     bool negotiate(const std::vector<int>& group,I& after,int max_rounds=12) {
+        auto setup_start=std::chrono::steady_clock::now();
         std::vector<int> usage(vcount,0);
         std::vector<I> history(vcount,0);
         for(int j:group) for(int v:nets[j].vertices) ++usage[v];
+        negotiation_setup_s+=std::chrono::duration<double>(std::chrono::steady_clock::now()-setup_start).count();
         for(int iteration=0;iteration<max_rounds && !expired();++iteration) {
             ++negotiation_rounds;
             for(int j:group) {
@@ -381,10 +392,12 @@ struct Engine {
                 nets[j]=std::move(candidate);
                 for(int v:nets[j].vertices) ++usage[v];
             }
+            auto scan_start=std::chrono::steady_clock::now();
             bool conflict=false;
             for(int v=0;v<vcount;++v) if(usage[v]>1) {
                 conflict=true;history[v]=add(history[v],2*(usage[v]-1));
             }
+            negotiation_scan_s+=std::chrono::duration<double>(std::chrono::steady_clock::now()-scan_start).count();
             if(conflict) { ++conflicted_rounds; continue; }
             after=0;
             for(int j:group) {
@@ -482,7 +495,9 @@ struct Engine {
                 for(std::size_t j=0;j<nets.size();++j)
                     if(blockers.count(nets[j].id)) group.push_back(static_cast<int>(j));
                 // Full transaction snapshot makes all failed/expired repairs reversible.
+                auto snapshot_start=std::chrono::steady_clock::now();
                 auto old_owner=owner;
+                snapshot_s+=std::chrono::duration<double>(std::chrono::steady_clock::now()-snapshot_start).count();
                 std::vector<Net> old;
                 I before=0;
                 for(int j:group) {
@@ -563,6 +578,7 @@ struct Engine {
                  <<",\"fresh_attempts\":"<<fresh_attempts<<",\"fresh_legal\":"<<fresh_legal
                  <<",\"read_s\":"<<read_s<<",\"validation_s\":"<<validation_s<<",\"optimization_s\":"<<optimization_s
                  <<",\"search_reset_s\":"<<search_reset_s<<",\"search_rebuild_s\":"<<search_rebuild_s
+                 <<",\"snapshot_s\":"<<snapshot_s<<",\"negotiation_setup_s\":"<<negotiation_setup_s<<",\"negotiation_scan_s\":"<<negotiation_scan_s
                  <<",\"work_limit\":"<<work_limit<<",\"work_exhausted\":"<<work_exhausted
                  <<",\"expansions_per_second\":"<<(optimization_s>0?expansions/optimization_s:0)
                  <<",\"uphill_moves\":"<<uphill_moves
@@ -586,7 +602,7 @@ int main(int argc,char**argv) {
         auto seed=std::stoull(argv[2]); int passes=std::stoi(argv[3]);
         if(passes<1 || passes>1000) throw std::runtime_error("invalid passes");
         bool search_only=std::string(argv[4])=="search";
-        if(!search_only && std::string(argv[4])!="polish" && std::string(argv[4])!="repair" && std::string(argv[4])!="repairsoft" && std::string(argv[4])!="ablation" && std::string(argv[4])!="negotiated" && std::string(argv[4])!="explore" && std::string(argv[4])!="restart" && std::string(argv[4])!="select" && std::string(argv[4])!="wide" && std::string(argv[4])!="walk" && std::string(argv[4])!="descent" && std::string(argv[4])!="compact" && std::string(argv[4])!="fanout" && std::string(argv[4])!="restart_fanout" && std::string(argv[4])!="restart_compact" && std::string(argv[4])!="restart_polish" && std::string(argv[4])!="fanout_walk" && std::string(argv[4])!="fanout_descent" && std::string(argv[4])!="astar" && std::string(argv[4])!="fanout_astar" && std::string(argv[4])!="fanout_gap" && std::string(argv[4])!="fanout_astar_gap" && std::string(argv[4])!="restart_astar" && std::string(argv[4])!="treecost") throw std::runtime_error("invalid mode");
+        if(!search_only && std::string(argv[4])!="polish" && std::string(argv[4])!="repair" && std::string(argv[4])!="repairsoft" && std::string(argv[4])!="ablation" && std::string(argv[4])!="negotiated" && std::string(argv[4])!="explore" && std::string(argv[4])!="restart" && std::string(argv[4])!="select" && std::string(argv[4])!="wide" && std::string(argv[4])!="walk" && std::string(argv[4])!="descent" && std::string(argv[4])!="compact" && std::string(argv[4])!="fanout" && std::string(argv[4])!="restart_fanout" && std::string(argv[4])!="restart_compact" && std::string(argv[4])!="restart_polish" && std::string(argv[4])!="fanout_walk" && std::string(argv[4])!="fanout_descent" && std::string(argv[4])!="astar" && std::string(argv[4])!="fanout_astar" && std::string(argv[4])!="fanout_gap" && std::string(argv[4])!="fanout_astar_gap" && std::string(argv[4])!="restart_astar" && std::string(argv[4])!="treecost" && std::string(argv[4])!="fanout_tight" && std::string(argv[4])!="astar_tight") throw std::runtime_error("invalid mode");
         std::signal(SIGINT,on_signal); std::signal(SIGTERM,on_signal);
         Engine engine;
         if(argc==6) {
@@ -600,7 +616,9 @@ int main(int argc,char**argv) {
         engine.read_s=std::chrono::duration<double>(std::chrono::steady_clock::now()-read_start).count();
         auto optimization_start=std::chrono::steady_clock::now();
         engine.ablation_mode=std::string(argv[4])=="ablation";
-        if(std::string(argv[4])=="treecost") {engine.discounted_groups=true;engine.astar_search=true;engine.fanout_prices=true;engine.explore(seed,passes,true);}
+        if(std::string(argv[4])=="astar_tight") {engine.tight_heuristic=true;engine.astar_search=true;engine.polish(seed,passes,false);}
+        else if(std::string(argv[4])=="fanout_tight") {engine.tight_heuristic=true;engine.astar_search=true;engine.fanout_prices=true;engine.explore(seed,passes,true);}
+        else if(std::string(argv[4])=="treecost") {engine.discounted_groups=true;engine.astar_search=true;engine.fanout_prices=true;engine.explore(seed,passes,true);}
         else if(std::string(argv[4])=="fanout_astar_gap") {engine.gap_order=true;engine.astar_search=true;engine.fanout_prices=true;engine.explore(seed,passes,true);}
         else if(std::string(argv[4])=="restart_astar") {engine.astar_search=true;engine.fanout_prices=true;engine.restart(seed,passes,true);}
         else if(std::string(argv[4])=="fanout_gap") {engine.gap_order=true;engine.fanout_prices=true;engine.explore(seed,passes,true);}
