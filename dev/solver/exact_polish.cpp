@@ -41,6 +41,7 @@ struct Engine {
     std::uint64_t searches=0, expansions=0, accepted=0;
     bool timed_out=false;
     bool ablation_mode=false;
+    std::uint64_t negotiation_rounds=0,conflicted_rounds=0;
     std::uint64_t proposals=0,no_gain=0,too_many=0,attempts=0,failed=0,nonimproving=0;
 
     bool expired() {
@@ -152,7 +153,8 @@ struct Engine {
             }
         }
     }
-    bool shortest(const Net& n,Net& proposed,bool ignore_owners=false,I occupancy_penalty=0) {
+    bool shortest(const Net& n,Net& proposed,bool ignore_owners=false,I occupancy_penalty=0,
+                  const std::vector<int>* usage=nullptr,const std::vector<I>* history=nullptr,I present=0) {
         ++searches;
         if(expired()) return false;
         std::fill(dist.begin(),dist.end(),INF);
@@ -173,6 +175,7 @@ struct Engine {
                 if((!ignore_owners && owner[v]>=0 && owner[v]!=n.id) ||
                    (pin_owner[v]>=0 && pin_owner[v]!=n.id)) return;
                 I extra=(ignore_owners && owner[v]>=0 && owner[v]!=n.id)?occupancy_penalty:0;
+                if(usage) extra=add(extra,add((*history)[v],static_cast<I>((*usage)[v])*present));
                 I next=add(add(cost,delay),extra);
                 if(next<dist[v]) { dist[v]=next; parent[v]=u; q.push({next,v}); }
             });
@@ -292,7 +295,34 @@ struct Engine {
             if(!improved) break;
         }
     }
-    void repair(unsigned long long seed,int passes,I penalty=0) {
+    bool negotiate(const std::vector<int>& group,I& after) {
+        std::vector<int> usage(vcount,0);
+        std::vector<I> history(vcount,0);
+        for(int j:group) for(int v:nets[j].vertices) ++usage[v];
+        for(int iteration=0;iteration<12 && !expired();++iteration) {
+            ++negotiation_rounds;
+            for(int j:group) {
+                for(int v:nets[j].vertices) --usage[v];
+                Net candidate;
+                if(!shortest(nets[j],candidate,false,0,&usage,&history,2+2*iteration)) return false;
+                nets[j]=std::move(candidate);
+                for(int v:nets[j].vertices) ++usage[v];
+            }
+            bool conflict=false;
+            for(int v=0;v<vcount;++v) if(usage[v]>1) {
+                conflict=true;history[v]=add(history[v],2*(usage[v]-1));
+            }
+            if(conflict) { ++conflicted_rounds; continue; }
+            after=0;
+            for(int j:group) {
+                after=add(after,nets[j].delay);
+                for(int v:nets[j].vertices) owner[v]=nets[j].id;
+            }
+            return true;
+        }
+        return false;
+    }
+    void repair(unsigned long long seed,int passes,I penalty=0,bool negotiated=false) {
         std::mt19937_64 rng(seed);
         std::vector<int> order(nets.size()); std::iota(order.begin(),order.end(),0);
         for(int pass=0;pass<passes && !expired();++pass) {
@@ -320,7 +350,8 @@ struct Engine {
                     for(int v:nets[j].vertices) owner[v]=-1;
                 }
                 bool legal=true; I after=0;
-                for(int j:group) {
+                if(negotiated) legal=negotiate(group,after);
+                else for(int j:group) {
                     Net candidate;
                     if(!shortest(nets[j],candidate)) { legal=false; break; }
                     for(int v:candidate.vertices) owner[v]=candidate.id;
@@ -339,6 +370,7 @@ struct Engine {
     void output() {
         if(!ablation_mode) std::cerr<<"{\"proposals\":"<<proposals<<",\"no_gain\":"<<no_gain
                  <<",\"too_many\":"<<too_many<<",\"attempts\":"<<attempts
+                 <<",\"negotiation_rounds\":"<<negotiation_rounds<<",\"conflicted_rounds\":"<<conflicted_rounds
                  <<",\"failed\":"<<failed<<",\"nonimproving\":"<<nonimproving<<"}\n";
         I total=0; for(const Net& n:nets) total=add(total,n.delay);
         std::cout<<"M3DOUT1 "<<nets.size()<<" "<<total<<" "<<timed_out<<" "
@@ -357,13 +389,14 @@ int main(int argc,char**argv) {
         auto seed=std::stoull(argv[2]); int passes=std::stoi(argv[3]);
         if(passes<1 || passes>100) throw std::runtime_error("invalid passes");
         bool search_only=std::string(argv[4])=="search";
-        if(!search_only && std::string(argv[4])!="polish" && std::string(argv[4])!="repair" && std::string(argv[4])!="repairsoft" && std::string(argv[4])!="ablation") throw std::runtime_error("invalid mode");
+        if(!search_only && std::string(argv[4])!="polish" && std::string(argv[4])!="repair" && std::string(argv[4])!="repairsoft" && std::string(argv[4])!="ablation" && std::string(argv[4])!="negotiated") throw std::runtime_error("invalid mode");
         std::signal(SIGINT,on_signal); std::signal(SIGTERM,on_signal);
         Engine engine;
         engine.deadline=std::chrono::steady_clock::now()+std::chrono::duration_cast<std::chrono::steady_clock::duration>(std::chrono::duration<double>(seconds));
         engine.read(search_only);
         engine.ablation_mode=std::string(argv[4])=="ablation";
         if(engine.ablation_mode) engine.ablation();
+        else if(std::string(argv[4])=="negotiated") engine.repair(seed,passes,4,true);
         else if(std::string(argv[4])=="repair" || std::string(argv[4])=="repairsoft")
             engine.repair(seed,passes,std::string(argv[4])=="repairsoft"?4:0);
         else engine.polish(seed,passes,search_only);

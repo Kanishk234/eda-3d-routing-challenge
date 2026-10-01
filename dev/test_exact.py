@@ -194,6 +194,29 @@ class ExactKernel(unittest.TestCase):
         self.assertEqual(report["root_attachment_delay"],12)
         self.assertEqual(check(inst,out).total_delay,12)
 
+    def test_negotiated_group_crossing_stays_legal(self):
+        pins=[Pin(0,0,0,0,2,0),Pin(1,0,0,4,2,0),
+              Pin(2,1,0,2,0,0),Pin(3,1,0,2,4,0)]
+        inst=Instance("crossing",5,5,2,[2,1],2,[],pins,[Net(0,0,[1]),Net(1,2,[3])])
+        horizontal=[(0,2,0),(0,2,1),(1,2,1),(2,2,1),(3,2,1),(4,2,1),(4,2,0)]
+        vertical=[(2,y,0) for y in range(5)]
+        sub=Submission(inst.name,[NetRoute(0,list(zip(horizontal,horizontal[1:]))),
+                                  NetRoute(1,list(zip(vertical,vertical[1:])))])
+        before=check(inst,sub)
+        self.assertTrue(before.legal)
+        for seed in (1,2,3):
+            run,out,stats=core(inst,sub,"negotiated")
+            self.assertEqual(run.returncode,0)
+            self.assertTrue(check(inst,out).legal)
+            self.assertLessEqual(stats["total_delay"],before.total_delay)
+
+    def test_negotiated_zero_budget_keeps_checkpoint(self):
+        inst,sub=make(3,1,[2],3,(0,0,0),[(2,0,0)],
+                      own_edges=[((0,0,0),(1,0,0)),((1,0,0),(2,0,0))])
+        _,out,stats=core(inst,sub,"negotiated",budget=0)
+        self.assertEqual(check(inst,out).total_delay,4)
+        self.assertTrue(stats["budget_reached"])
+
     def test_output_parser_rejects_truncation(self):
         inst,_=make(3,1,[1],1,(0,0,0),[(2,0,0)])
         with self.assertRaises(ValueError):
