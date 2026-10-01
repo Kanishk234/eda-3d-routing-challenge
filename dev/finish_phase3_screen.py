@@ -7,7 +7,7 @@ from measure import ROOT, digest, save, execute
 def main():
     import argparse
     parser=argparse.ArgumentParser()
-    parser.add_argument("--mode",choices=["repairsoft","negotiated","explore","wide","walk","fanout","restart_polish"],default="repairsoft")
+    parser.add_argument("--mode",choices=["repairsoft","negotiated","explore","wide","walk","fanout","restart_polish","fanout_walk"],default="repairsoft")
     args=parser.parse_args()
     paths=sorted((ROOT/'dev/artifacts').glob('*-exact-polish/manifest.json'))
     candidates=[p for p in paths if (lambda m:m['config'].get('mode')==args.mode and m['result']['complete'])(json.loads(p.read_text()))]
@@ -29,8 +29,9 @@ def main():
     report.update(source_identity=m['source']['files_sha256'],manifest_sha256=digest(p),
                   official_rescore=step,historical_plain_repair_diagnostics_totals=sums,
                   test_log=(ROOT/'dev/artifacts/build/fresh-pricing-tests.log').read_text(),
+                  test_scope='Existing 29-check result predates fanout_walk/fanout_descent; new modes validated by official benchmark checking, with no new unit-test run.',
                   test_log_sha256=digest(ROOT/'dev/artifacts/build/fresh-pricing-tests.log'),
-                  policy={'seed':1,'mode':args.mode,'budget_s':m['config']['budget'],'passes':m['config']['passes'],'blockers':12 if args.mode in ('wide','walk','fanout') else 4,'rounds':24 if args.mode in ('wide','walk','fanout') else 12,'portfolio_selection':False},
+                  policy={'seed':1,'mode':args.mode,'budget_s':m['config']['budget'],'passes':m['config']['passes'],'blockers':12 if args.mode in ('wide','walk','fanout','fanout_walk') else 4,'rounds':24 if args.mode in ('wide','walk','fanout','fanout_walk') else 12,'portfolio_selection':False},
                   warm_start_cost='See pipeline_components for the complete inherited generation cost; independent experiments are excluded.')
     if args.mode=='restart_polish':
         report['policy'].update(blockers=None,group='whole instance',rounds=100,restarts=5,polish_passes=3)
@@ -49,7 +50,7 @@ def main():
         'stages':list(reversed(chain)),
         'summed_generation_and_wrapper_wall_s':baseline['steps'][0]['wall_s']+sum(x['wrapper_wall_s'] or 0 for x in chain),
         'note':'Component accounting from reused warm starts;excludes all independent screens/scorers;not a freshly timed end-to-end run.'}
-    save(ROOT/'docs/evidence/phase3'/({'repairsoft':'soft','negotiated':'negotiated','explore':'plateau','wide':'wide','walk':'walk','fanout':'fanout','restart_polish':'restart-polish'}[args.mode]+'-validation.json'),report)
+    save(ROOT/'docs/evidence/phase3'/({'repairsoft':'soft','negotiated':'negotiated','explore':'plateau','wide':'wide','walk':'walk','fanout':'fanout','restart_polish':'restart-polish','fanout_walk':'fanout-walk'}[args.mode]+'-validation.json'),report)
     print(score['aggregate_score'],'core',m['total_core_wall_s'],'wrapper',m['wrapper_wall_s'])
 
 if __name__=='__main__': main()

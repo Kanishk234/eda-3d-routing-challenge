@@ -522,7 +522,7 @@ int main(int argc,char**argv) {
         auto seed=std::stoull(argv[2]); int passes=std::stoi(argv[3]);
         if(passes<1 || passes>100) throw std::runtime_error("invalid passes");
         bool search_only=std::string(argv[4])=="search";
-        if(!search_only && std::string(argv[4])!="polish" && std::string(argv[4])!="repair" && std::string(argv[4])!="repairsoft" && std::string(argv[4])!="ablation" && std::string(argv[4])!="negotiated" && std::string(argv[4])!="explore" && std::string(argv[4])!="restart" && std::string(argv[4])!="select" && std::string(argv[4])!="wide" && std::string(argv[4])!="walk" && std::string(argv[4])!="descent" && std::string(argv[4])!="compact" && std::string(argv[4])!="fanout" && std::string(argv[4])!="restart_fanout" && std::string(argv[4])!="restart_compact" && std::string(argv[4])!="restart_polish") throw std::runtime_error("invalid mode");
+        if(!search_only && std::string(argv[4])!="polish" && std::string(argv[4])!="repair" && std::string(argv[4])!="repairsoft" && std::string(argv[4])!="ablation" && std::string(argv[4])!="negotiated" && std::string(argv[4])!="explore" && std::string(argv[4])!="restart" && std::string(argv[4])!="select" && std::string(argv[4])!="wide" && std::string(argv[4])!="walk" && std::string(argv[4])!="descent" && std::string(argv[4])!="compact" && std::string(argv[4])!="fanout" && std::string(argv[4])!="restart_fanout" && std::string(argv[4])!="restart_compact" && std::string(argv[4])!="restart_polish" && std::string(argv[4])!="fanout_walk" && std::string(argv[4])!="fanout_descent") throw std::runtime_error("invalid mode");
         std::signal(SIGINT,on_signal); std::signal(SIGTERM,on_signal);
         Engine engine;
         engine.deadline=std::chrono::steady_clock::now()+std::chrono::duration_cast<std::chrono::steady_clock::duration>(std::chrono::duration<double>(seconds));
@@ -541,6 +541,10 @@ int main(int argc,char**argv) {
             engine.compact_groups=std::string(argv[4])=="compact";
             engine.fanout_prices=std::string(argv[4])=="fanout";
             engine.explore(seed,passes,true);
+        }
+        else if(std::string(argv[4])=="fanout_walk" || std::string(argv[4])=="fanout_descent") {
+            engine.fanout_prices=true;engine.random_ties=true;engine.tie_seed=seed;
+            engine.repair(seed,passes,4,true,false,12,std::string(argv[4])=="fanout_walk");
         }
         else if(std::string(argv[4])=="descent") {
             engine.random_ties=true;engine.tie_seed=seed;engine.repair(seed,passes,4,true,false,12,false);

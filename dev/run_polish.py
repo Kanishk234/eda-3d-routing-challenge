@@ -98,9 +98,9 @@ def route_resources(sub):
 def main():
     wrapper_start=time.perf_counter()
     p=argparse.ArgumentParser(description=__doc__)
-    p.add_argument("--suite",choices=["benchmarks","benchmarks_hard"],default="benchmarks_hard")
+    p.add_argument("--suite",choices=["benchmarks","benchmarks_hard","benchmarks_scale","benchmarks_stress","benchmarks_congested","benchmarks_designs"],default="benchmarks_hard")
     p.add_argument("--case")
-    p.add_argument("--mode",choices=["polish","repair","repairsoft","ablation","negotiated","explore","restart","select","wide","walk","descent","compact","fanout","restart_fanout","restart_compact","restart_polish"],default="polish")
+    p.add_argument("--mode",choices=["polish","repair","repairsoft","ablation","negotiated","explore","restart","select","wide","walk","descent","compact","fanout","restart_fanout","restart_compact","restart_polish","fanout_walk","fanout_descent"],default="polish")
     p.add_argument("--budget",type=float,default=10)
     p.add_argument("--seed",type=int,default=1)
     p.add_argument("--passes",type=int,default=5)
@@ -109,7 +109,7 @@ def main():
     if Path(sys.prefix).resolve()!=(ROOT/".venv").resolve(): p.error("use project .venv")
     if not 0<=a.budget<=600 or not 1<=a.passes<=100 or not 0<=a.seed<2**64: p.error("invalid config")
     if not ENGINE.is_file(): p.error("compile dev/solver/exact_polish.cpp first")
-    tier="hard" if a.suite=="benchmarks_hard" else "intro"
+    tier="intro" if a.suite=="benchmarks" else a.suite.removeprefix("benchmarks_")
     incumbent=(a.resume_dir or ROOT/"dev/artifacts/incumbents"/tier).resolve()
     man=json.loads((OFFICIAL/a.suite/"suite.json").read_text())
     cases=[c for c in man["cases"] if a.case is None or c["name"]==a.case]

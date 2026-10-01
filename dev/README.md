@@ -147,3 +147,15 @@ Resource-pricing comparisons:
 ```
 
 Compact group attachment uses3/4 driver-distance seeds,heuristic andnotretained asdefault. Fanout divides group history/present congestionprices byceil(sqrt(sinks)),physicaldelay unaffected. Retain onlyofficiallylegal/nongrowingdelay incumbents. Resource metrics countnetvertices once,edges andvias;not score surrogates.
+
+## All-tier coverage
+
+`run_polish.py --suite` accepts benchmarks, benchmarks_hard, benchmarks_scale, benchmarks_stress, benchmarks_congested, and benchmarks_designs. Supply `--resume-dir` with verified route files for each selected tier. Official `reference/` routes are permitted as explicitly attributed warm starts; their generation cost is not included in wrapper timing. Stress needs a separately declared larger cap than quick hard screens.
+
+Rescore selected complete runs without best-of selection:
+
+```bash
+.venv/bin/python dev/report_tiers.py dev/artifacts/RUN_ID --out docs/evidence/phase3/tier-coverage.json
+```
+
+Each tier has its own score; no all-tier aggregate is reported. Coverage is preliminary until final solver/config freeze, regeneration, current-rules recheck, and clean route-only submission checks.
