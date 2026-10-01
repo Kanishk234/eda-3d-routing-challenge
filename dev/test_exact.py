@@ -262,6 +262,14 @@ class ExactKernel(unittest.TestCase):
             self.assertEqual(check(inst,out).total_delay,4)
             self.assertTrue(check(inst,out).legal)
 
+    def test_threshold_walk_keeps_best_legal_checkpoint(self):
+        path=[(x,0,0) for x in range(5)]+[(4,y,0) for y in range(1,5)]
+        inst,sub=make(5,5,[6,2],3,(0,0,0),[(4,4,0)],own_edges=list(zip(path,path[1:])))
+        for seed in (1,2,3):
+            _,out,stats=core(inst,sub,"walk",seed=seed)
+            self.assertEqual(stats["total_delay"],22)
+            self.assertTrue(check(inst,out).legal)
+
     def test_output_parser_rejects_truncation(self):
         inst,_=make(3,1,[1],1,(0,0,0),[(2,0,0)])
         with self.assertRaises(ValueError):

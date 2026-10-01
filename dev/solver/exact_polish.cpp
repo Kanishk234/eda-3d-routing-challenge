@@ -51,6 +51,7 @@ struct Engine {
         return x^(x>>31);
     }
     std::uint64_t negotiation_rounds=0,conflicted_rounds=0;
+    std::uint64_t uphill_moves=0;
     std::uint64_t selection_nodes=0,selection_complete=0,selection_partial=0;
     std::uint64_t proposals=0,no_gain=0,too_many=0,attempts=0,failed=0,nonimproving=0;
 
@@ -382,8 +383,12 @@ struct Engine {
         }
         return true;
     }
-    void repair(unsigned long long seed,int passes,I penalty=0,bool negotiated=false,bool selection=false,int max_blockers=4) {
+    void repair(unsigned long long seed,int passes,I penalty=0,bool negotiated=false,bool selection=false,int max_blockers=4,bool uphill=false) {
         std::mt19937_64 rng(seed);
+        I current=0;for(const Net& n:nets) current=add(current,n.delay);
+        I best=current;
+        std::vector<Net> best_nets;std::vector<int> best_owner;
+        if(uphill) {best_nets=nets;best_owner=owner;}
         std::vector<int> order(nets.size()); std::iota(order.begin(),order.end(),0);
         for(int pass=0;pass<passes && !expired();++pass) {
             for(std::size_t i=order.size();i>1;--i) std::swap(order[i-1],order[rng()%i]);
@@ -418,7 +423,13 @@ struct Engine {
                     for(int v:candidate.vertices) owner[v]=candidate.id;
                     after=add(after,candidate.delay); nets[j]=std::move(candidate);
                 }
-                if(legal && after<before) { ++accepted; changed=true; }
+                bool accept_uphill=uphill && legal && after>=before && after-before<=before/100 && rng()%4==0;
+                if(legal && (after<before || accept_uphill)) {
+                    ++accepted; changed=true;
+                    if(accept_uphill) ++uphill_moves;
+                    current=add(current-before,after);
+                    if(uphill && current<best) { best=current;best_nets=nets;best_owner=owner; }
+                }
                 else {
                     if(!legal) ++failed; else ++nonimproving;
                     owner=std::move(old_owner);
@@ -427,6 +438,7 @@ struct Engine {
             }
             if(!changed) break;
         }
+        if(uphill) {nets=std::move(best_nets);owner=std::move(best_owner);}
     }
     void restart(unsigned long long seed,int passes) {
         random_ties=true;tie_seed=seed;
@@ -464,6 +476,7 @@ struct Engine {
         if(!ablation_mode) std::cerr<<"{\"proposals\":"<<proposals<<",\"no_gain\":"<<no_gain
                  <<",\"too_many\":"<<too_many<<",\"attempts\":"<<attempts
                  <<",\"negotiation_rounds\":"<<negotiation_rounds<<",\"conflicted_rounds\":"<<conflicted_rounds
+                 <<",\"uphill_moves\":"<<uphill_moves
                  <<",\"selection_nodes\":"<<selection_nodes<<",\"selection_complete\":"<<selection_complete
                  <<",\"selection_partial\":"<<selection_partial
                  <<",\"failed\":"<<failed<<",\"nonimproving\":"<<nonimproving<<"}\n";
@@ -484,13 +497,19 @@ int main(int argc,char**argv) {
         auto seed=std::stoull(argv[2]); int passes=std::stoi(argv[3]);
         if(passes<1 || passes>100) throw std::runtime_error("invalid passes");
         bool search_only=std::string(argv[4])=="search";
-        if(!search_only && std::string(argv[4])!="polish" && std::string(argv[4])!="repair" && std::string(argv[4])!="repairsoft" && std::string(argv[4])!="ablation" && std::string(argv[4])!="negotiated" && std::string(argv[4])!="explore" && std::string(argv[4])!="restart" && std::string(argv[4])!="select" && std::string(argv[4])!="wide") throw std::runtime_error("invalid mode");
+        if(!search_only && std::string(argv[4])!="polish" && std::string(argv[4])!="repair" && std::string(argv[4])!="repairsoft" && std::string(argv[4])!="ablation" && std::string(argv[4])!="negotiated" && std::string(argv[4])!="explore" && std::string(argv[4])!="restart" && std::string(argv[4])!="select" && std::string(argv[4])!="wide" && std::string(argv[4])!="walk" && std::string(argv[4])!="descent") throw std::runtime_error("invalid mode");
         std::signal(SIGINT,on_signal); std::signal(SIGTERM,on_signal);
         Engine engine;
         engine.deadline=std::chrono::steady_clock::now()+std::chrono::duration_cast<std::chrono::steady_clock::duration>(std::chrono::duration<double>(seconds));
         engine.read(search_only);
         engine.ablation_mode=std::string(argv[4])=="ablation";
         if(engine.ablation_mode) engine.ablation();
+        else if(std::string(argv[4])=="descent") {
+            engine.random_ties=true;engine.tie_seed=seed;engine.repair(seed,passes,4,true,false,12,false);
+        }
+        else if(std::string(argv[4])=="walk") {
+            engine.random_ties=true;engine.tie_seed=seed;engine.repair(seed,passes,4,true,false,12,true);
+        }
         else if(std::string(argv[4])=="wide") engine.explore(seed,passes,true);
         else if(std::string(argv[4])=="select") {
             engine.random_ties=true;engine.tie_seed=seed;engine.repair(seed,passes,4,false,true);
