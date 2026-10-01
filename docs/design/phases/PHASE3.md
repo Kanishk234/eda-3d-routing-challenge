@@ -2,7 +2,7 @@
 
 Status: active. Initial repair rejected; occupied-vertex penalty repair retained after repeated development and fixed-config validation. See PHASE3 summary and phase3/repair-screen.json.
 
-- [ ] Controlled root-aware/negotiation/legal reroute-polish comparisons — pending.
+- [ ] Controlled root-aware/negotiation/legal reroute-polish comparisons — root-aware546-net ablation and legal polish/repair done; negotiation pending.
 - [x] Use profiles/failures to choose methods —1371/1638 proposals exceeded group cap; penalty repair measured.
 - [ ] Per-case/repeated-seed/validation evidence including regressions for retained methods — pending.
 - [x] Record rejected methods — plain max4-blocker repair0/21 improvements; summary/evidence.

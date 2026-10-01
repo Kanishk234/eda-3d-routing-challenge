@@ -63,3 +63,11 @@ No running jobs. Next concrete action: instrument proposal skip/repair/rejection
 Instrumented plain repair:1638 proposals,1371 too-large,150 attempts,54 failures,96 nonimproving. Added penalty4 per occupied vertex for candidate selection, separate physical predecessor-path scoring. Same21 development runs:18 improve,all legal. Fixed seed1/5passes/2s configuration validated all9 hard:8 improve,1 unchanged,aggregate1.0529719287378287. Both reserved cases improve. Official CLI rescore agrees;16 checks pass. Selected run20261001T213751.861916Z-exact-polish,core2.149s,wrapper3.913s; summed generation/polish/repair101.865s. No portfolio seed selection. Compact diagnosis/screen/validation evidence and updated summary/docs. Retain soft repair,plain operator rejected.
 
 No jobs running. Phase3 incomplete: root-aware construction/negotiation controlled comparisons and additional group fixtures next. No public warm starts or publication. Local commits authorized by preceding user instruction; group algorithm/tests/tools and evidence/docs separately. Current accepted run routes remain under ignored artifacts and must be backed up.
+
+## 2026-10-01 — Driver-aware ablation and submission-path recheck
+
+Implemented exact/root-aware/zero-source isolated-net construction ablation.546 nets on hard01–07 complete; root-aware costs match exact per net,zero-source sums worse on7/7 cases. Results are not jointly routable tier scores; incumbent outputs unchanged.17 checks pass. Added attachment-ablation.json and interpretation.
+
+User asked whether dev is appropriate: rechecked live upstream rules/workflow,byte-identical to pin. Current HEAD3d8948f adds Windows UTF-8 fixes only (cli/verify/test). No benchmark/checker/scorer changes. Source/docs belong in development checkout; final route/meta files plus leaderboard in clean submission checkout. Sandbox network failed DNS; approved read-only network check succeeded. Evidence captured.
+
+No routing jobs running. Current best1.052972 unchanged. Next concrete action: bounded group negotiated-congestion repair with transaction rollback; compare against soft sequential repair on hard01–07 before reserved validation. Phase3 remains active,negotiation gate unfulfilled. Local commits authorized; no push/publication.

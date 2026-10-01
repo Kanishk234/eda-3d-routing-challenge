@@ -42,3 +42,5 @@ Toolkit MIT, copyright 2026 Partcl, Inc. Vendored EPFL BLIF designs MIT; preserv
 evidence/phase0/upstream.json captures all 11 PR heads (no further page): 9 open, 2 closed (#6,#11), none merged. Heads agree with research; #11 is now closed. Research scores were not re-audited. Latest 10 CI runs captured include failure/action_required states; metadata alone does not establish their causes or every entrant's CI acceptance. Recheck relevant jobs before relying on results. Fixed Pareto-test risk in BUGS.md.
 
 Final CI check: the pinned upstream HEAD's push workflow completed successfully, [run 36622967607](https://github.com/partcleda/eda-3d-routing-challenge/actions/runs/36622967607). This differs from recent participant PR runs. Evidence: api.pinned_head_actions in upstream.json.
+
+Current-rules recheck October1: upstream3d8948fdcd6f87165d5ca1efbf4b65e8168e8e81; contribution/workflow bytes match pin. New commits fix Windows UTF-8 I/O in cli/verify/test files; benchmark/checker/scorer unchanged. Experiment authority remains pinned499ad7e. Evidence in phase3/submission-contract-recheck.json and upstream-change-recheck.json.

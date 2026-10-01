@@ -76,3 +76,11 @@ Occupied-vertex penalty variant (retained, fixed config):
 ```
 
 `repairsoft` uses proposal penalty4 per foreign occupied vertex and max4 blockers. All accepted groups use official physical delay; exact search mode/polish remain physical-cost searches. Diagnostics in stderr are captured in manifests. Screen labels preserve prior comparisons.
+
+Driver-distance ablation (candidate outputs remain unchanged):
+
+```bash
+.venv/bin/python dev/phase3_screen.py --mode ablation --label attachment-ablation
+```
+
+Reconstructs each net independently with other nets fixed. Compare exact costs to driver-aware/zero-source attachment. Reported sums are not jointly routable scores. Submission paths were rechecked at current upstream3d8948f; development sources remain here and final routes/metadata go in a clean submission checkout.

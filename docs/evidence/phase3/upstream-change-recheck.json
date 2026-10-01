@@ -1,0 +1,18 @@
+{
+  "status": "ahead",
+  "commits": [
+    [
+      "e6a16b1dbc8f406ba8180cd0ec9dae4283d56331",
+      "Read/write leaderboard Markdown as UTF-8 so the toolkit works on Windows\n\nLEADERBOARD.md contains non-ASCII (the Pareto check mark and em dashes).\nOn Windows the default text encoding is cp1252, so:\n\n* `leaderboard-all` crashed with UnicodeEncodeError while writing the file;\n* `leaderboard-all --check` and tests/test_leaderboard.py decoded the\n  committed UTF-8 file as cp1252 and reported it out of date;\n* scripts/verify_submissions.py crashed printing its final check mark,\n  exiting 1 even when every solution was legal.\n\nOpen the Markdown files with encoding=\"utf-8\" and let the verify script\nreplace characters the console cannot encode. No behaviour change on\nmacOS/Linux. Full test suite (43 tests) passes on Windows 11 / Python 3.11."
+    ],
+    [
+      "3d8948fdcd6f87165d5ca1efbf4b65e8168e8e81",
+      "Merge pull request #13 from IrwinJam/fix/windows-utf8\n\nFix UTF-8 errors on Windows"
+    ]
+  ],
+  "files": [
+    "m3d/cli.py",
+    "scripts/verify_submissions.py",
+    "tests/test_leaderboard.py"
+  ]
+}

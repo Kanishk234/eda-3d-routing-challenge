@@ -1,0 +1,13 @@
+{
+  "revision": "3d8948fdcd6f87165d5ca1efbf4b65e8168e8e81",
+  "files": {
+    "CONTRIBUTING.md": {
+      "sha256": "088a474d5eae53a120177888befa43c506db238227c9c17ec707fa99b4fdb759",
+      "matches_local": true
+    },
+    ".github/workflows/leaderboard.yml": {
+      "sha256": "d6bb2cbfbf4f3372f54d91b1e9a3af578be8ee909f68fb4d2124062a7e950d39",
+      "matches_local": true
+    }
+  }
+}

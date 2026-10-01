@@ -17,3 +17,5 @@ Earlier not-claimed tier/custom-solver statements describe Phase0. Current evide
 Phase3 initial screen:21 development runs (hard01–07,seeds1–3) officially legal/nonworsening,0 improved. No full-tier aggregate, optimization gain or failure-cause claim.15 kernel checks pass; group transaction coverage remains limited.
 
 Phase3 soft repair: fixed seed1/5passes/2s config gives9/9 legal hard score1.0529719287378287;8 improve,1 unchanged vs Phase2. Official CLI rescore agrees. Development seeds1–3:18/21 improved.16 kernel checks pass. Sum baseline+polish+repair wrappers101.865s is component accounting,not fresh end-to-end timing. Evidence: phase3/soft-validation.json.
+
+Driver-aware attachment matches exact costs on546 isolated-net reconstructions; zero-source case sums worse for7/7 development cases. Not tier results.17 checks pass. Current upstream rules/CI rechecked at3d8948f; unchanged vs pin,with Windows encoding-only upstream change per compare metadata.
