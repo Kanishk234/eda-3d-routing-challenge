@@ -1,0 +1,25 @@
+{
+  "scope": "matched cases01/04/07,seeds1\u20133,2s/100 passes,plateau warm starts;threshold vs strict descent",
+  "uphill_moves": 226,
+  "regressions": [
+    {
+      "seed": 1,
+      "case": "case_07",
+      "strict": 27637,
+      "walk": 27677
+    },
+    {
+      "seed": 2,
+      "case": "case_07",
+      "strict": 27615,
+      "walk": 27681
+    },
+    {
+      "seed": 3,
+      "case": "case_01",
+      "strict": 10572,
+      "walk": 10700
+    }
+  ],
+  "portfolio_selection": false
+}

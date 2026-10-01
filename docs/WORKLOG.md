@@ -97,3 +97,9 @@ No screen jobs running. Current full-tier best still1.105908. Next:commit operat
 ## 2026-10-01 — Two-second budget clarified and expanded
 
 Explained2s as local matched screening only. Added dev/budget_screen.py:cases01/04/07 seed1/100 cycles fromplateau starts,2vs10s all longer runs improve4.1–5.3%,all capped. Fixed10s stage validated hard9/9 legal1.1834968761196418,all improve vs1.105908. Official CLI rescore;run220349,core90.135s/wrapper91.845s,component pipeline208.868s excluding screens/scorers. Current best retained under this run/routes. No jobs running. Commit measured budget expansion,then continue legal threshold-walk experiments with separate best-state snapshots. No publication.
+
+## 2026-10-01 — Continued after commits,controlled threshold walk
+
+Createdbd159c1 then continued without permission stop. Implemented walk/descent paired modes,protected best legal nets/owner snapshots. Walk threshold1% group worsening/probability1/4;sideways included.9 representative trials all improve overstarts;6 beat descent,3 regress;226 sideways/uphill accepts. Fixed seed1 extra2s/100 stage after10s wide,run220917:9/9 legal,6 improve/3 unchanged,official1.1868734408645938.26 tests pass;full score independently recomputed. Stagecore18.225s/wrapper20.000s. Added generic screen case/seed/budget/warmstart controls(prohibits08/09),recursive provenance/timing chain in report,component sum228.868s excluding all independent screens/scorers. One missing Path import stopped freezer before writing;fixed and rerun,no route impact.
+
+No jobs running. Current accepted routes220917/routes. User will push,local commits authorized. Next concrete action:compact near-shortest construction/fanout-aware congestion hypotheses under matched development caps,separate best legal checkpoints;broader independent restarts after targeted measurement. No final freeze/publication.

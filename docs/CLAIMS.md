@@ -25,3 +25,5 @@ Negotiated fixed config hard9/9 legal1.0710212727385569,19 tests pass;21/21 deve
 Basin experiment:22 checks pass;fixed seed1 exploration after negotiated improves all9 hard cases,official1.1059077449039443. Three-seed development aggregates improve but3 case regressions vs negotiated exist. Whole restart9/21 gains,rest retained originals. No global-basin diagnosis,novelty,source reproducibility or exact global-selection claim.
 
 Wide10s/100 cycles fixed seed1 hard9/9 legal1.1834968761196418,all improve vs1.105908;official rescore. Longer matched representative budgets show4.1–5.3% delay gains,no convergence. Stage wrapper91.845s,component total208.868s excludes screening/scoring.
+
+Threshold extra stage fixed seed1 hard1.1868734408645938,9/9 legal,6 improve/3 unchanged;official scorer.26 tests pass. Representative matched walk vs descent6 wins/3 regressions;counter includes equal-delay moves. Traced retained component pipeline228.868s excludes all screen/scorer costs;not fresh end-to-end.

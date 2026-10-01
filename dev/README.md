@@ -124,3 +124,14 @@ Budget scaling and selected wider-stage validation:
 ```
 
 Two seconds is a screening cap only. This comparison keeps100-cycle ceiling/seed/warm start fixed on development cases01/04/07. The subsequent full-tier ten-second stage is selected from those measurements;actual cumulative generation and prior-stage costs remain part of the pipeline.
+
+Controlled temporary worsening experiments:
+
+```bash
+.venv/bin/python dev/phase3_screen.py --mode walk --label threshold-walk-screen --budget 2 --passes 100 --cases 1,4,7 --resume-dir dev/artifacts/20261001T215550.921679Z-exact-polish/routes
+.venv/bin/python dev/phase3_screen.py --mode descent --label threshold-descent-screen --budget 2 --passes 100 --cases 1,4,7 --resume-dir dev/artifacts/20261001T215550.921679Z-exact-polish/routes
+.venv/bin/python dev/run_polish.py --mode walk --budget 2 --passes 100 --seed 1 --resume-dir dev/artifacts/20261001T220349.074348Z-exact-polish/routes
+.venv/bin/python dev/finish_phase3_screen.py --mode walk
+```
+
+Walk temporarily accepts legal group worsening up to1% with probability1/4(and equal-delay moves),but returns the independently protected best snapshot. Descent differs only in this acceptance rule. Reports trace all warm-start component timings. Raw manifests/source snapshots/route hashes retained. Phase3 screen options only accept development01–07.

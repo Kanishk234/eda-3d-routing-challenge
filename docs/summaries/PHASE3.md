@@ -51,3 +51,11 @@ Implemented wide exploration:equal-delay moves plus max12 blockers(13 nets) and2
 ## Budget scaling and full-tier wide validation
 
 Two-second cap is only local screening,not official rule. Matched representative cases01/04/07,seed1,100-cycle ceiling fromplateau starts:2→10s reduces delays10524→10094,15909→15063,27797→26663;allruns hit cap. Fixed10s/100-cycle wide configuration then validates hard9/9 legal1.1834968761196418;all cases improve vs plateau1.105908. Official CLI agrees. Run220349;core90.135s/wrapper91.845s;component pipeline sum208.868s excluding all screens/scorers. Not fresh end-to-end timing or convergence proof.25 checks pass. Current incumbent paths/hashes in wide-validation.json. Next:controlled legal threshold acceptance with immutable best state,matched development comparison.
+
+## Controlled threshold walk
+
+Implemented legal temporary worsening:group delta may be at most1% of its old delay and acceptance probability1/4;zero-delta moves use the same rule. Separate full-route/ownership best snapshot updates only on lower total delay and is restored on normal/signal timeout exit. Conflicting negotiated states remain transactional and never output. Counter named uphill_moves includes sideways moves. No annealing/optimality claim.
+
+Matched representatives01/04/07,seed1–3,2s/100 passes fromplateau starts:walk9/9 improve vs starting routes,6 better/3 worse than strict otherwise-identical descent.226 sideways/uphill accepts;no output worsens its starting incumbent. Fixed seed1 extra2s stage after wider10s current routes:9/9 legal,6 improve/3 unchanged,official1.1868734408645938.26 checks pass. Run220917;core18.225s/wrapper20.000s. Reports now recursively trace warm-start stages;component pipeline228.868s excludes independent screens/scorers and is not fresh end-to-end timing.
+
+Retain this short extra stage as incremental improvement;do not silently replace longer search with2s or select seeds per case. Current routes in220917/routes. Next:compact near-shortest tree/fanout-aware congestion hypotheses to reduce routing resource use,then bounded initialization/restart allocation. Candidate selection remains experimental,not default.

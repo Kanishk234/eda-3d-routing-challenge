@@ -21,3 +21,5 @@
 13. Retain equal-delay geometric exploration after negotiated repair:fixed seed1 hard1.105908,all9 improve. Reject whole-instance restart as default under2s cap(9/21 gains),keep alternate-initialization experiment. Research alternatives documented;next restricted compatible candidate-tree selection/expanded neighborhoods. No public solver code copied.
 
 14. Expand retained wide exploration validation from2 to10s/case after matched representative development runs improve4.1–5.3%. Budget is local resource allocation,not competition rule. Keep100-cycle ceiling/seed1 fixed across budget comparison;do not tune cap on reserved cases.
+
+15. Retain short legal threshold-walk stage after longer wider exploration;separate best-state snapshots protect output. Threshold1% group delta,probability1/4;sideways included. Measured6/9 representative wins vs strict descent,and6 full-tier incremental gains. Next compact near-shortest/fanout-aware resource allocation experiments.
