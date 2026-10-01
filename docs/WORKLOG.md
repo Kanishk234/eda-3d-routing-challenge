@@ -57,3 +57,9 @@ User explicitly authorized local commits, overriding the session Git prohibition
 Implemented experimental max4-blocker group repair with full snapshot rollback, --mode repair and dev/phase3_screen.py.15 kernel checks pass.21 serial runs on hard01–07,seeds1–3,2s/case,5passes:all legal,none improved; core1.621s/wrapper11.576s. Saved compact evidence, negative result and in-progress summary. No validation tuning/public warm starts. Operator rejected as default; cause unmeasured. Phase3 remains active.
 
 No running jobs. Next concrete action: instrument proposal skip/repair/rejection outcomes and independent group transaction fixtures, then choose the next operator from measured failures. Root-aware/negotiation comparisons remain required. Current best hard score1.046629 unchanged. Commit experimental solver/tests/screen and documentation/evidence separately.
+
+## 2026-10-01 — Phase3 measured soft repair gain
+
+Instrumented plain repair:1638 proposals,1371 too-large,150 attempts,54 failures,96 nonimproving. Added penalty4 per occupied vertex for candidate selection, separate physical predecessor-path scoring. Same21 development runs:18 improve,all legal. Fixed seed1/5passes/2s configuration validated all9 hard:8 improve,1 unchanged,aggregate1.0529719287378287. Both reserved cases improve. Official CLI rescore agrees;16 checks pass. Selected run20261001T213751.861916Z-exact-polish,core2.149s,wrapper3.913s; summed generation/polish/repair101.865s. No portfolio seed selection. Compact diagnosis/screen/validation evidence and updated summary/docs. Retain soft repair,plain operator rejected.
+
+No jobs running. Phase3 incomplete: root-aware construction/negotiation controlled comparisons and additional group fixtures next. No public warm starts or publication. Local commits authorized by preceding user instruction; group algorithm/tests/tools and evidence/docs separately. Current accepted run routes remain under ignored artifacts and must be backed up.

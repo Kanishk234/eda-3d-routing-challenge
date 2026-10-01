@@ -7,3 +7,13 @@ Screen hard01–07 only, seeds1/2/3,2s/case,5passes,one worker:21/21 outputs leg
 Reject this implementation as a default optimization: no observed benefit on the development screen. Keep it as an experimental reference. We have not measured how many proposals exceed the group limit, fail sequential repair or lose delay; do not infer the cause from zero improvements. Current best remains Phase2 score1.046629.
 
 Next: add repair outcome counters, independently exercise failed/successful group transactions, then use measured failure distributions to choose bounded alternative paths/windowed groups or congestion negotiation. Root-aware construction and negotiated-congestion controlled comparisons remain open. Phase3 is not complete.
+
+## Occupied-vertex penalty repair retained
+
+Diagnostics of the first operator:1638 proposals,117 no physical gain,1371 exceed4 blockers,150 attempted repairs,54 failed,96 legal but nonimproving. This supports testing less disruptive paths rather than blindly increasing group size. Added a cost4 penalty per occupied vertex in proposal search only. Physical driver-to-sink delay is independently accumulated along predecessor paths and checked officially; penalties never enter reported delay. This is heuristic candidate selection, not an exact physical shortest-path claim.
+
+Matched development screen: same warm start/cases/seeds,2s/case and5passes.18/21 improve; all legal; case02 unchanged for every seed. Full per-run results and process counters in repair-soft-screen.json. Total development core4.104s/wrapper14.327s, excluding earlier diagnostic/screen costs. No per-case seed portfolio selected.
+
+Fixed seed1 config then validated all9 hard cases:8 improve,1 unchanged, aggregate1.0529719287378287 vs Phase2 1.0466292119096317. Reserved hard08 delay29562→29426,hard09 26376→26166. Official CLI independently agrees. Selected run20261001T213751.861916Z-exact-polish; outputs hashed in soft-validation.json. Core2.149s/wrapper3.913s added to earlier baseline-plus-polish97.952s gives summed pipeline101.865s, not fresh end-to-end timing.16 kernel checks pass; successful and failed group attempts additionally checked in benchmark outputs. Keep group fixture coverage limitation explicit.
+
+Retain repairsoft as an optional stage because it improves development and validation without legality/quality regressions under this configuration. No global-optimum, speedup, unseen-case or best-public claim. Phase3 remains open: root-aware construction/negotiation comparisons, richer group transaction fixtures and later controlled methods. Next concrete work is a driver-aware construction ablation and negotiated repair comparison using fixed development budgets.

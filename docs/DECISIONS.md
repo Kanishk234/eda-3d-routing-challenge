@@ -11,3 +11,5 @@
 8. Phase2 uses official negotiated baseline plus original exact C++ single-net polish. Profiles justify compiling search. This is a reliable pipeline with explicit baseline cost, not independent construction. Common600s envelope comparisons use paired baseline reuse and disclose summed measurements. Keep hard08–09 validation-only.
 
 9. Phase3 first screen rejects simple max4-blocker sequential repair as a default:0/21 development runs improve. Keep experimental implementation; collect failure counters before changing group size/search. Reserved cases08–09 untouched.
+
+10. Retain occupied-vertex penalty4 proposal search with exact physical rescoring:18/21 development improvements and fixed seed1 hard score1.052972,including reserved validation improvements. Candidate penalty is heuristic; legality/acceptance uses physical delay only. Reject plain repair. No per-case seed selection.

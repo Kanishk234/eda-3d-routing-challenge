@@ -66,3 +66,13 @@ Baseline incumbents must first exist from Phase1 reproduction/finish_phase1.py. 
 ```
 
 Screen runs only hard01–07, seeds1–3, serially; preserves every manifest and makes no best-of selection. Initial repair operator showed no gain and is experimental. finish_phase2.py is a historical freezer and must not be run on mixed Phase3 manifests/configurations.
+
+Occupied-vertex penalty variant (retained, fixed config):
+
+```bash
+.venv/bin/python dev/phase3_screen.py --mode repairsoft --label repair-soft-screen
+.venv/bin/python dev/run_polish.py --mode repairsoft --budget 2 --passes 5 --seed 1 --resume-dir dev/artifacts/20261001T212816.474321Z-exact-polish/routes
+.venv/bin/python dev/finish_phase3_screen.py
+```
+
+`repairsoft` uses proposal penalty4 per foreign occupied vertex and max4 blockers. All accepted groups use official physical delay; exact search mode/polish remain physical-cost searches. Diagnostics in stderr are captured in manifests. Screen labels preserve prior comparisons.
