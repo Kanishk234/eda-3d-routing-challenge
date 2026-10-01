@@ -11,3 +11,5 @@ Current interface: immutable parsed instance + explicit seed/config/budget + opt
 Output follows model.py/FORMATS.md: version-1 m3d-submission, matching instance, one route per net, integer adjacent-vertex edges. Official independent reloading/checking/scoring is required before acceptance.
 
 Implemented wrapper: unique run directories; smoke candidate written then officially evaluated, accepted output atomically renamed. Previous runs survive timeout. Suite outputs stay isolated and are not automatically promoted. run_polish.py supports --resume-dir and preserves a validated pre-search checkpoint; completed candidates are officially checked before replacement.
+
+Resource-pricing variants:fanout scales search congestion prices only;compact attachment is heuristic3/4 driver seeding using integer-scaled priorities. Root-to-sink physical distances are accumulated separately and officially checked. Accepted-output resource metrics count each net vertex once(including via endpoints),edges and vias independently of delay.

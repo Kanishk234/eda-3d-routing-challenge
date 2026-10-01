@@ -27,3 +27,5 @@ Basin experiment:22 checks pass;fixed seed1 exploration after negotiated improve
 Wide10s/100 cycles fixed seed1 hard9/9 legal1.1834968761196418,all improve vs1.105908;official rescore. Longer matched representative budgets show4.1–5.3% delay gains,no convergence. Stage wrapper91.845s,component total208.868s excludes screening/scoring.
 
 Threshold extra stage fixed seed1 hard1.1868734408645938,9/9 legal,6 improve/3 unchanged;official scorer.26 tests pass. Representative matched walk vs descent6 wins/3 regressions;counter includes equal-delay moves. Traced retained component pipeline228.868s excludes all screen/scorer costs;not fresh end-to-end.
+
+Fanout stage fixedseed1 hard9/9 legal1.2054914475674077,allimprove vs1.186873;officialrescore,28 checks. Compact groupconstruction rejected asdefault despiteoftenfewervertices. Traced retained component pipeline320.758s excludes experiments/scorers;no algorithm-speedup or fresh-reproducibility claim.

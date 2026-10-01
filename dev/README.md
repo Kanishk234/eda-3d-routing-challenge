@@ -135,3 +135,15 @@ Controlled temporary worsening experiments:
 ```
 
 Walk temporarily accepts legal group worsening up to1% with probability1/4(and equal-delay moves),but returns the independently protected best snapshot. Descent differs only in this acceptance rule. Reports trace all warm-start component timings. Raw manifests/source snapshots/route hashes retained. Phase3 screen options only accept development01–07.
+
+Resource-pricing comparisons:
+
+```bash
+.venv/bin/python dev/phase3_screen.py --mode compact --label compact-screen --budget 2 --passes 100 --cases 1,4,7 --resume-dir dev/artifacts/20261001T215550.921679Z-exact-polish/routes
+.venv/bin/python dev/phase3_screen.py --mode fanout --label fanout-screen --budget 2 --passes 100 --cases 1,4,7 --resume-dir dev/artifacts/20261001T215550.921679Z-exact-polish/routes
+.venv/bin/python dev/compare_resource_prices.py
+.venv/bin/python dev/run_polish.py --mode fanout --budget 10 --passes 100 --seed 1 --resume-dir dev/artifacts/20261001T220917.515539Z-exact-polish/routes
+.venv/bin/python dev/finish_phase3_screen.py --mode fanout
+```
+
+Compact group attachment uses3/4 driver-distance seeds,heuristic andnotretained asdefault. Fanout divides group history/present congestionprices byceil(sqrt(sinks)),physicaldelay unaffected. Retain onlyofficiallylegal/nongrowingdelay incumbents. Resource metrics countnetvertices once,edges andvias;not score surrogates.

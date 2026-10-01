@@ -1,0 +1,176 @@
+{
+  "scope": "matched representatives01/04/07,seeds1\u20133,2s/100 cycles,plateau warm starts;development only",
+  "methods": {
+    "wide": {
+      "wins_vs_wide": 0,
+      "losses_vs_wide": 0,
+      "seed_aggregates": {
+        "1": 1.132703853219179,
+        "2": 1.134919868373517,
+        "3": 1.1385655167372424
+      },
+      "total_core_wall_s": 18.234171736054122,
+      "vertex_use_changes": [
+        {
+          "seed": 1,
+          "case": "case_01",
+          "delta": 28
+        },
+        {
+          "seed": 1,
+          "case": "case_04",
+          "delta": -34
+        },
+        {
+          "seed": 1,
+          "case": "case_07",
+          "delta": -6
+        },
+        {
+          "seed": 2,
+          "case": "case_01",
+          "delta": -9
+        },
+        {
+          "seed": 2,
+          "case": "case_04",
+          "delta": -41
+        },
+        {
+          "seed": 2,
+          "case": "case_07",
+          "delta": 35
+        },
+        {
+          "seed": 3,
+          "case": "case_01",
+          "delta": 33
+        },
+        {
+          "seed": 3,
+          "case": "case_04",
+          "delta": 2
+        },
+        {
+          "seed": 3,
+          "case": "case_07",
+          "delta": 35
+        }
+      ]
+    },
+    "compact": {
+      "wins_vs_wide": 3,
+      "losses_vs_wide": 6,
+      "seed_aggregates": {
+        "1": 1.1182467364352884,
+        "2": 1.122509414571198,
+        "3": 1.1295216284392546
+      },
+      "total_core_wall_s": 18.232511617068667,
+      "vertex_use_changes": [
+        {
+          "seed": 1,
+          "case": "case_01",
+          "delta": -13
+        },
+        {
+          "seed": 1,
+          "case": "case_04",
+          "delta": 1
+        },
+        {
+          "seed": 1,
+          "case": "case_07",
+          "delta": -37
+        },
+        {
+          "seed": 2,
+          "case": "case_01",
+          "delta": 5
+        },
+        {
+          "seed": 2,
+          "case": "case_04",
+          "delta": -34
+        },
+        {
+          "seed": 2,
+          "case": "case_07",
+          "delta": -54
+        },
+        {
+          "seed": 3,
+          "case": "case_01",
+          "delta": -13
+        },
+        {
+          "seed": 3,
+          "case": "case_04",
+          "delta": -40
+        },
+        {
+          "seed": 3,
+          "case": "case_07",
+          "delta": -49
+        }
+      ]
+    },
+    "fanout": {
+      "wins_vs_wide": 7,
+      "losses_vs_wide": 2,
+      "seed_aggregates": {
+        "1": 1.1419447854991058,
+        "2": 1.1608292817323855,
+        "3": 1.1513156533013524
+      },
+      "total_core_wall_s": 18.23178396304138,
+      "vertex_use_changes": [
+        {
+          "seed": 1,
+          "case": "case_01",
+          "delta": 15
+        },
+        {
+          "seed": 1,
+          "case": "case_04",
+          "delta": -24
+        },
+        {
+          "seed": 1,
+          "case": "case_07",
+          "delta": 79
+        },
+        {
+          "seed": 2,
+          "case": "case_01",
+          "delta": 28
+        },
+        {
+          "seed": 2,
+          "case": "case_04",
+          "delta": 86
+        },
+        {
+          "seed": 2,
+          "case": "case_07",
+          "delta": 40
+        },
+        {
+          "seed": 3,
+          "case": "case_01",
+          "delta": 23
+        },
+        {
+          "seed": 3,
+          "case": "case_04",
+          "delta": 35
+        },
+        {
+          "seed": 3,
+          "case": "case_07",
+          "delta": 14
+        }
+      ]
+    }
+  }
+}

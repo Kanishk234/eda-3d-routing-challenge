@@ -23,3 +23,5 @@
 14. Expand retained wide exploration validation from2 to10s/case after matched representative development runs improve4.1–5.3%. Budget is local resource allocation,not competition rule. Keep100-cycle ceiling/seed1 fixed across budget comparison;do not tune cap on reserved cases.
 
 15. Retain short legal threshold-walk stage after longer wider exploration;separate best-state snapshots protect output. Threshold1% group delta,probability1/4;sideways included. Measured6/9 representative wins vs strict descent,and6 full-tier incremental gains. Next compact near-shortest/fanout-aware resource allocation experiments.
+
+16. Resource-pricing screen keeps exact physical acceptance. Compact group attachment seeds3/4 of driver distance(in integer-scaled priorities),sacrifices path optimality as a heuristic;reject as default after3/9 wins and allseed aggregates worse. Fanout pricing divides group present/history penalties by ceil(sqrt(sinks)),wins7/9 and allseed aggregates;select fixed seed1 ten-second extra stage for official validation. Resource counts now measured separately from score.
