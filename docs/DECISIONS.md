@@ -43,3 +43,5 @@
 
 26. Add optional cumulative expansion budgets while retaining wall time as safety cap and preserving old CLI calls. This enables repeatable comparisons; expanded vertices do not equate CPU work across algorithms. Verify rollback and exact output repetition before tuning. Retain existing scratch/snapshot code until profiles isolate its cost.
 27. Prioritize multi-sink construction/pricing after public analysis:single-sink aggregate localdelay35011 versuspublic36177;multi-sink deficit22212. Public output stays analysis-only. The top20 positive per-net gaps cover25.33% of positive gap, so do not interpret a few targeted repairs as sufficient.
+
+28. Apply demonstrated1000cyclehardconfiguration tofulltierunder20s cap:7/9gains,score1.229451. Keepheld-outconfigfrozen. Add optionalcachedexactrelaxedlayerlookahead;matched5M representatives improvehard/congested,tie stress. Fixedfullhardadditionalstage1.230000,4gains/5unchanged. Storedg retained as direct stale comparison,not as demonstrated speedup;2-repeat timings give no clear improvement.

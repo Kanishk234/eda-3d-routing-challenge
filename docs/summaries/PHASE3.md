@@ -111,3 +111,7 @@ Fixed20s/100cycles/seed1fanout_astar fullcongested4/4 anddesigns3/3 allimprove. 
 ## Review-driven follow-up
 
 Public hard geometry comparison concentrates the signed deficit in multi-sink nets;single-sink aggregate locally wins. Top20 positive gaps explain only25.33% of positive gap. Longer hard cycles improve one representative only. Added expanded-vertex budgets and shortest reset/rebuild profiles;31 focused tests pass,including randomA*/Dijkstra and work-cap rollback/repetition. Large stress10M repeat isbyte-identical across safetycaps and improvesofficialscoreto1.020434. Selected45/45routes independentlychecked in tier-work-budget-coverage.json. Uncontendedstressreset/rebuild totals5.5%ofoptimization;other proposedcosts notyetisolated. Rankednextwork inNEXT_EXPERIMENTS.md. Fullreviewbacklog,finalfreeze,regeneration,and submissionremainunfinished.
+
+## Hard-tier update and tighter lookahead
+
+Hard now1.2300004741250727 afterfixedlong-cyclefull-tierstage(1.229451)andoptional5M-expansiontight-lookaheadstage.9/9legal,independentselectedsix-tierreport45/45legal(tier-kernel-coverage.json). Kernelcontrolcomparisons byte-identical forstoredg and repeatable;no measuredheapgspeedup. Tightbound improveshard/congestedrepresentatives andtiesstress.31focusedtests passincludingtightlookaheadcostequivalence/rollback. Profilingdoesnotjustifybroadownershiprewrite yet. Next:fixed-pointmulti-sinkcongestionpricesundercontrolledworkbudgets. Finalfreeze/regeneration/submissionstillpending.

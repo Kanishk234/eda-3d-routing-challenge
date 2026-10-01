@@ -44,3 +44,6 @@ Fanout stage fixedseed1 hard9/9 legal1.2054914475674077,allimprove vs1.186873;of
 
 - Fixed10M expansion stress repeats produce identical C++ stdout and officially legal delay1121978, score1.0204335557381696. Independent selected-tier CLI rescore confirms45/45 legal;other tiers unchanged. Evidence tier-work-budget-coverage.json/work-budget-profile.json.31 focused tests pass. Determinism is conditional on identical implementation/config/inputs and no earlier wall/signal interruption.
 - Public gap diagnosis is a checked geometry comparison, not proof of attainable per-net gains. Hard signed deficit21046;multi-sink nets contribute22212 whileone-sink aggregate is1166 lower locally. No public warm starts adopted.
+
+- Currenthard1.2300004741250727,officiallylegal9/9;selectedalltiers45/45legal,otherfiveunchanged. tier-kernel-coverage.json andhard-long_cycles-validation.json/hard-tight_stage-validation.json. Sevenlongstagecasegains,fourtightstagecasegains;fixedconfigs,attributedancestorcosts,no fresh-runtime/globaloptimalityclaim.
+- Storedgkerneloutputidenticaltocontrol,buttimingdoesnotestablishspeedup. Optionaltightlookahead lowershard/congestedrepresentativedelayatfixed5M expansions,stress unchanged. Two repeats/onecasepertieronly.31focusedtests pass;explicitper-moveownerinvariantsstillpending.

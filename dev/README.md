@@ -180,3 +180,11 @@ Fixed-work experiment example (wall cap remains a safety limit):
 ```
 
 `--work-budget 0` preserves wall-budget behavior. Counters include expansions per optimization second and shortest reset/reconstruction timing. Ranked follow-up experiments:docs/design/NEXT_EXPERIMENTS.md.
+
+Tighter physical lookahead is optional:use `--mode fanout_tight` for negotiated exploration or `--mode astar_tight` for fixed-other-net polish. Example measured hard follow-up:
+
+```bash
+.venv/bin/python dev/run_polish.py --suite benchmarks_hard --resume-dir dev/artifacts/20261001T234843.075364Z-exact-polish/routes --mode fanout_tight --budget 60 --passes 1000 --work-budget 5000000
+```
+
+`dev/search_kernel_screen.py --control PATH` compares a rebuilt637a829 control binary with the current engine serially atfixed5M expansions. Treat those outputs as development measurements;this script doesnotcreatecompleteentries.
