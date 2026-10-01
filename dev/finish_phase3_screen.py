@@ -7,7 +7,7 @@ from measure import ROOT, digest, save, execute
 def main():
     import argparse
     parser=argparse.ArgumentParser()
-    parser.add_argument("--mode",choices=["repairsoft","negotiated","explore","wide","walk"],default="repairsoft")
+    parser.add_argument("--mode",choices=["repairsoft","negotiated","explore","wide","walk","fanout"],default="repairsoft")
     args=parser.parse_args()
     paths=sorted((ROOT/'dev/artifacts').glob('*-exact-polish/manifest.json'))
     candidates=[p for p in paths if (lambda m:m['config'].get('mode')==args.mode and m['result']['complete'])(json.loads(p.read_text()))]
@@ -28,9 +28,9 @@ def main():
     report={k:v for k,v in m.items() if k not in ('source','official_hashes','machine')}
     report.update(source_identity=m['source']['files_sha256'],manifest_sha256=digest(p),
                   official_rescore=step,diagnostics_totals=sums,
-                  test_log=(ROOT/'dev/artifacts/build/threshold-tests.log').read_text(),
-                  test_log_sha256=digest(ROOT/'dev/artifacts/build/threshold-tests.log'),
-                  policy={'seed':1,'mode':args.mode,'budget_s':m['config']['budget'],'passes':m['config']['passes'],'blockers':12 if args.mode in ('wide','walk') else 4,'rounds':24 if args.mode in ('wide','walk') else 12,'portfolio_selection':False},
+                  test_log=(ROOT/'dev/artifacts/build/resource-pricing-tests.log').read_text(),
+                  test_log_sha256=digest(ROOT/'dev/artifacts/build/resource-pricing-tests.log'),
+                  policy={'seed':1,'mode':args.mode,'budget_s':m['config']['budget'],'passes':m['config']['passes'],'blockers':12 if args.mode in ('wide','walk','fanout') else 4,'rounds':24 if args.mode in ('wide','walk','fanout') else 12,'portfolio_selection':False},
                   warm_start_cost=('Baseline94.765s + exact wrapper3.186s; add repair wrapper; exploration additionally inherits negotiated wrapper8.233s. Component sum,screen costs separate; not fresh end-to-end timing.'))
     chain=[]
     ancestor=m
@@ -47,7 +47,7 @@ def main():
         'stages':list(reversed(chain)),
         'summed_generation_and_wrapper_wall_s':baseline['steps'][0]['wall_s']+sum(x['wrapper_wall_s'] or 0 for x in chain),
         'note':'Component accounting from reused warm starts;excludes all independent screens/scorers;not a freshly timed end-to-end run.'}
-    save(ROOT/'docs/evidence/phase3'/({'repairsoft':'soft','negotiated':'negotiated','explore':'plateau','wide':'wide','walk':'walk'}[args.mode]+'-validation.json'),report)
+    save(ROOT/'docs/evidence/phase3'/({'repairsoft':'soft','negotiated':'negotiated','explore':'plateau','wide':'wide','walk':'walk','fanout':'fanout'}[args.mode]+'-validation.json'),report)
     print(score['aggregate_score'],'core',m['total_core_wall_s'],'wrapper',m['wrapper_wall_s'])
 
 if __name__=='__main__': main()

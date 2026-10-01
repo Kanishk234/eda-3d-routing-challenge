@@ -270,6 +270,23 @@ class ExactKernel(unittest.TestCase):
             self.assertEqual(stats["total_delay"],22)
             self.assertTrue(check(inst,out).legal)
 
+    def test_group_cost_variants_preserve_physical_delay(self):
+        path=[(x,0,0) for x in range(5)]+[(4,y,0) for y in range(1,5)]
+        inst,sub=make(5,5,[6,2],3,(0,0,0),[(4,0,0),(4,4,0)],own_edges=list(zip(path,path[1:])))
+        for mode in ("compact","fanout"):
+            _,out,stats=core(inst,sub,mode)
+            self.assertEqual(stats["total_delay"],36)
+            self.assertEqual(check(inst,out).total_delay,36)
+            self.assertTrue(check(inst,out).legal)
+
+    def test_resource_counts_do_not_duplicate_shared_trunk(self):
+        from run_polish import route_resources
+        inst,sub=make(5,1,[2],3,(0,0,0),[(2,0,0),(4,0,0)],
+            own_edges=[((0,0,0),(1,0,0)),((1,0,0),(2,0,0)),
+                       ((2,0,0),(3,0,0)),((3,0,0),(4,0,0))])
+        self.assertEqual(route_resources(sub),{"net_vertex_uses":5,"edges":4,"vias":0})
+        self.assertEqual(check(inst,sub).total_delay,12)
+
     def test_output_parser_rejects_truncation(self):
         inst,_=make(3,1,[1],1,(0,0,0),[(2,0,0)])
         with self.assertRaises(ValueError):

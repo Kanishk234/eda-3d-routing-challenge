@@ -90,12 +90,17 @@ def run_core(case_dir, data, budget, seed, passes, mode="polish"):
     except (ValueError,IndexError): result["repair_counters"]=None
     return result,output.read_text()
 
+def route_resources(sub):
+    return {"net_vertex_uses":sum(len({v for edge in r.edges for v in edge}) for r in sub.routes),
+            "edges":sum(len(r.edges) for r in sub.routes),
+            "vias":sum(a[2]!=b[2] for r in sub.routes for a,b in r.edges)}
+
 def main():
     wrapper_start=time.perf_counter()
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument("--suite",choices=["benchmarks","benchmarks_hard"],default="benchmarks_hard")
     p.add_argument("--case")
-    p.add_argument("--mode",choices=["polish","repair","repairsoft","ablation","negotiated","explore","restart","select","wide","walk","descent"],default="polish")
+    p.add_argument("--mode",choices=["polish","repair","repairsoft","ablation","negotiated","explore","restart","select","wide","walk","descent","compact","fanout"],default="polish")
     p.add_argument("--budget",type=float,default=10)
     p.add_argument("--seed",type=int,default=1)
     p.add_argument("--passes",type=int,default=5)
@@ -142,7 +147,7 @@ def main():
         old.save(str(temporary)); os.replace(temporary,destination)
         result,raw=run_core(out/c["name"],encode(inst,old),a.budget,a.seed,a.passes,a.mode)
         record={"case":c["name"],"case_sha256":digest(OFFICIAL/a.suite/c["instance_file"]),
-                "case_seed":inst.seed,"warm_start_sha256":digest(warm),"before_delay":previous.total_delay,
+                "case_seed":inst.seed,"warm_start_sha256":digest(warm),"before_delay":previous.total_delay,"before_resources":route_resources(old),
                 "process":result,"candidate_accepted":False,"error":None}
         try:
             if result["exit_code"]!=0: raise ValueError("core did not complete; checkpoint retained")
@@ -163,6 +168,7 @@ def main():
             record["error"]=str(exc); ok=False
         score=score_case(inst,Submission.load(destination),c["baseline_total"])
         scores.append(score)
+        record["resources"]=route_resources(Submission.load(destination))
         record.update(legal=score.legal,total_delay=score.total_delay,ratio=score.ratio,output_sha256=digest(destination))
         m["cases"].append(record); m["outputs"][str(destination.relative_to(out))]=digest(destination)
         save(out/"manifest.json",m)

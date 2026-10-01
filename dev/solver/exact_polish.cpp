@@ -43,6 +43,7 @@ struct Engine {
     std::uint64_t searches=0, expansions=0, accepted=0;
     bool timed_out=false;
     bool ablation_mode=false;
+    bool compact_groups=false,fanout_prices=false;
     bool random_ties=false; std::uint64_t tie_seed=0;
     std::uint64_t tie_rank(int v) const {
         std::uint64_t x=static_cast<std::uint64_t>(v)+tie_seed+0x9e3779b97f4a7c15ULL;
@@ -187,7 +188,11 @@ struct Engine {
                 if((!ignore_owners && owner[v]>=0 && owner[v]!=n.id) ||
                    (pin_owner[v]>=0 && pin_owner[v]!=n.id)) return;
                 I extra=(ignore_owners && owner[v]>=0 && owner[v]!=n.id)?occupancy_penalty:0;
-                if(usage) extra=add(extra,add((*history)[v],static_cast<I>((*usage)[v])*present));
+                if(usage) {
+                    I price=add((*history)[v],static_cast<I>((*usage)[v])*present);
+                    I divisor=fanout_prices?static_cast<I>(std::ceil(std::sqrt(static_cast<double>(n.sinks.size())))):1;
+                    extra=add(extra,price/divisor);
+                }
                 I next=add(add(cost,delay),extra);
                 if(next<dist[v]) { dist[v]=next; parent[v]=u; q.push({next,random_ties?tie_rank(v):static_cast<std::uint64_t>(v),v}); }
             });
@@ -218,7 +223,8 @@ struct Engine {
         std::sort(proposed.edges.begin(),proposed.edges.end());
         return true;
     }
-    bool attach(const Net& n,Net& proposed,bool root_aware) {
+    bool attach(const Net& n,Net& proposed,bool root_aware,int root_scale=4,
+                const std::vector<int>* usage=nullptr,const std::vector<I>* history=nullptr,I present=0) {
         proposed=n; proposed.edges.clear(); proposed.delay=0;
         std::vector<char> tree(vcount,0),remaining(vcount,0);
         std::vector<I> rootdist(vcount,INF);
@@ -233,7 +239,9 @@ struct Engine {
             std::fill(parent.begin(),parent.end(),-1);
             std::priority_queue<Node,std::vector<Node>,std::greater<Node>> q;
             for(int v=0;v<vcount;++v) if(tree[v]) {
-                dist[v]=root_aware?rootdist[v]:0; q.push({dist[v],v});
+                I seed=0;
+                if(root_aware) for(int k=0;k<root_scale;++k) seed=add(seed,rootdist[v]);
+                dist[v]=seed; q.push({dist[v],v});
             }
             int found=-1;
             while(!q.empty()) {
@@ -243,7 +251,12 @@ struct Engine {
                 neighbors(u,[&](int v,I delay) {
                     if(tree[v] || (owner[v]>=0 && owner[v]!=n.id) ||
                        (pin_owner[v]>=0 && pin_owner[v]!=n.id)) return;
-                    I next=add(cost,delay);
+                    I step=0;for(int k=0;k<4;++k) step=add(step,delay);
+                    if(usage) {
+                        I price=add((*history)[v],static_cast<I>((*usage)[v])*present);
+                        for(int k=0;k<4;++k) step=add(step,price);
+                    }
+                    I next=add(cost,step);
                     if(next<dist[v]) {dist[v]=next;parent[v]=u;q.push({next,v});}
                 });
             }
@@ -316,7 +329,9 @@ struct Engine {
             for(int j:group) {
                 for(int v:nets[j].vertices) --usage[v];
                 Net candidate;
-                if(!shortest(nets[j],candidate,false,0,&usage,&history,2+2*iteration)) return false;
+                bool routed=compact_groups?attach(nets[j],candidate,true,3,&usage,&history,2+2*iteration):
+                    shortest(nets[j],candidate,false,0,&usage,&history,2+2*iteration);
+                if(!routed) return false;
                 nets[j]=std::move(candidate);
                 for(int v:nets[j].vertices) ++usage[v];
             }
@@ -497,13 +512,18 @@ int main(int argc,char**argv) {
         auto seed=std::stoull(argv[2]); int passes=std::stoi(argv[3]);
         if(passes<1 || passes>100) throw std::runtime_error("invalid passes");
         bool search_only=std::string(argv[4])=="search";
-        if(!search_only && std::string(argv[4])!="polish" && std::string(argv[4])!="repair" && std::string(argv[4])!="repairsoft" && std::string(argv[4])!="ablation" && std::string(argv[4])!="negotiated" && std::string(argv[4])!="explore" && std::string(argv[4])!="restart" && std::string(argv[4])!="select" && std::string(argv[4])!="wide" && std::string(argv[4])!="walk" && std::string(argv[4])!="descent") throw std::runtime_error("invalid mode");
+        if(!search_only && std::string(argv[4])!="polish" && std::string(argv[4])!="repair" && std::string(argv[4])!="repairsoft" && std::string(argv[4])!="ablation" && std::string(argv[4])!="negotiated" && std::string(argv[4])!="explore" && std::string(argv[4])!="restart" && std::string(argv[4])!="select" && std::string(argv[4])!="wide" && std::string(argv[4])!="walk" && std::string(argv[4])!="descent" && std::string(argv[4])!="compact" && std::string(argv[4])!="fanout") throw std::runtime_error("invalid mode");
         std::signal(SIGINT,on_signal); std::signal(SIGTERM,on_signal);
         Engine engine;
         engine.deadline=std::chrono::steady_clock::now()+std::chrono::duration_cast<std::chrono::steady_clock::duration>(std::chrono::duration<double>(seconds));
         engine.read(search_only);
         engine.ablation_mode=std::string(argv[4])=="ablation";
         if(engine.ablation_mode) engine.ablation();
+        else if(std::string(argv[4])=="compact" || std::string(argv[4])=="fanout") {
+            engine.compact_groups=std::string(argv[4])=="compact";
+            engine.fanout_prices=std::string(argv[4])=="fanout";
+            engine.explore(seed,passes,true);
+        }
         else if(std::string(argv[4])=="descent") {
             engine.random_ties=true;engine.tie_seed=seed;engine.repair(seed,passes,4,true,false,12,false);
         }
