@@ -1,0 +1,469 @@
+[
+  {
+    "run_id": "20261001T165828.977754Z-tests",
+    "started_utc": "20261001T165828.977754Z",
+    "upstream_revision": "499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+    "config": {
+      "mode": "tests",
+      "suite": "benchmarks",
+      "case": "case_01",
+      "budget": 180.0,
+      "router": "baseline"
+    },
+    "seed": null,
+    "seed_note": "official routers deterministic; input stores case seed",
+    "workers": 1,
+    "threads": 1,
+    "compiler_flags": null,
+    "warm_start": null,
+    "portfolio_runs": 1,
+    "steps": [
+      {
+        "command": [
+          "/home/younix/eda-3d-routing-challenge/.venv/bin/python",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-t",
+          ".",
+          "-v"
+        ],
+        "cwd": "/home/younix/eda-3d-routing-challenge/dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+        "budget_s": 180.0,
+        "wall_s": 6.337606622022577,
+        "exit_code": 0,
+        "timeout": false,
+        "interrupted": false,
+        "log": "dev/artifacts/20261001T165828.977754Z-tests/tests.log",
+        "peak_rss_kib": 21872,
+        "user_cpu_s": 6.41,
+        "system_cpu_s": 0.1
+      }
+    ],
+    "outputs": {},
+    "official_inputs_unchanged": true,
+    "changed_official_files": [],
+    "success": true,
+    "total_subprocess_wall_s": 6.337606622022577,
+    "manifest_path": "dev/artifacts/20261001T165828.977754Z-tests/manifest.json",
+    "manifest_sha256": "2a00e52a17d8b6561ff51c9aeeb3bd1ba29fafa530b5e83a9f4bd13151e8fc6d",
+    "machine": {
+      "hostname": "LAPTOP-C8RSJ5BT",
+      "os": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+      "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+      "cpu_count": 16,
+      "affinity_cpus": 16
+    },
+    "source": {
+      "revision": "d887a05b844f9aeda0f656ca4644c58969d41ec5",
+      "status": "M .gitignore\n?? dev/\n?? docs/evidence/",
+      "diff_sha256": "64fd77fed8ba632e3ec1322dfc433bbdcd8f1465ae8a03e1d46b3150174aab96",
+      "files_sha256": "a43aadb6fede580f5c7b90fce6638efb5ce099579f4472372b4685b8f7b5521f"
+    },
+    "development_source_hashes": {
+      "dev/inspect.py": "3670e74ad3d2e417ad3bd73ddbb52b93a988c3c68de19401b57baffb88b0a914",
+      "dev/measure.py": "3385ab66e5e11894872fa0da5d462fcc173b42ab882bd5a3e607d5fdccb51304",
+      "dev/requirements.txt": "6cb7cda827686d26c70ebd360b359b0be8ebc8821f1a9ab6fcec5621f3c6c1c6",
+      "dev/setup.sh": "14233e92535d89ca2ab530ec6f34cf8a926c4df083f0826fe387271add98d6e4"
+    }
+  },
+  {
+    "run_id": "20261001T165835.673740Z-smoke",
+    "started_utc": "20261001T165835.673740Z",
+    "upstream_revision": "499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+    "config": {
+      "mode": "smoke",
+      "suite": "benchmarks",
+      "case": "case_01",
+      "budget": 60.0,
+      "router": "baseline"
+    },
+    "seed": null,
+    "seed_note": "official routers deterministic; input stores case seed",
+    "workers": 1,
+    "threads": 1,
+    "compiler_flags": null,
+    "warm_start": null,
+    "portfolio_runs": 1,
+    "steps": [
+      {
+        "command": [
+          "/home/younix/eda-3d-routing-challenge/.venv/bin/python",
+          "-m",
+          "m3d.cli",
+          "baseline",
+          "--case",
+          "/home/younix/eda-3d-routing-challenge/dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6/benchmarks/case_01.json",
+          "--out",
+          "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261001T165835.673740Z-smoke/candidate.sol.json",
+          "--order",
+          "bbox_desc",
+          "--rip-limit",
+          "40",
+          "--ops-factor",
+          "200"
+        ],
+        "cwd": "/home/younix/eda-3d-routing-challenge/dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+        "budget_s": 60.0,
+        "wall_s": 0.06449985998915508,
+        "exit_code": 0,
+        "timeout": false,
+        "interrupted": false,
+        "log": "dev/artifacts/20261001T165835.673740Z-smoke/baseline.log",
+        "peak_rss_kib": 14976,
+        "user_cpu_s": 0.04,
+        "system_cpu_s": 0.0
+      },
+      {
+        "command": [
+          "/home/younix/eda-3d-routing-challenge/.venv/bin/python",
+          "-m",
+          "m3d.cli",
+          "evaluate",
+          "--case",
+          "/home/younix/eda-3d-routing-challenge/dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6/benchmarks/case_01.json",
+          "--sol",
+          "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261001T165835.673740Z-smoke/candidate.sol.json",
+          "--suite",
+          "/home/younix/eda-3d-routing-challenge/dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6/benchmarks",
+          "--out",
+          "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261001T165835.673740Z-smoke/evaluation.json"
+        ],
+        "cwd": "/home/younix/eda-3d-routing-challenge/dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+        "budget_s": 60.0,
+        "wall_s": 0.06396525702439249,
+        "exit_code": 0,
+        "timeout": false,
+        "interrupted": false,
+        "log": "dev/artifacts/20261001T165835.673740Z-smoke/evaluate.log",
+        "peak_rss_kib": 14644,
+        "user_cpu_s": 0.03,
+        "system_cpu_s": 0.0
+      }
+    ],
+    "outputs": {
+      "case_01.sol.json": "4dc529988bacf55df471330bc2196ff748e5822cdc2c3e22ed9e1bc5c1ca3db2",
+      "evaluation.json": "b29bb068c01d5777f7fe5f39764687751a693fda1923fa057d8e2de3340606d0"
+    },
+    "input": {
+      "case": "benchmarks/case_01.json",
+      "sha256": "cc44aff1a21f0d4854ced9d550e95d4a77f6f475b6be0f3eec0416b070625b8c",
+      "case_seed": 741772126,
+      "baseline_delay": 240
+    },
+    "result": {
+      "legal": true,
+      "total_delay": 240,
+      "baseline_delay": 240,
+      "ratio": 1.0
+    },
+    "official_inputs_unchanged": true,
+    "changed_official_files": [],
+    "success": true,
+    "total_subprocess_wall_s": 0.12846511701354757,
+    "manifest_path": "dev/artifacts/20261001T165835.673740Z-smoke/manifest.json",
+    "manifest_sha256": "075dee850326d65e2f08b21d10f690b764563d4061a3e66ba1aa21e9b10de049",
+    "machine": {
+      "hostname": "LAPTOP-C8RSJ5BT",
+      "os": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+      "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+      "cpu_count": 16,
+      "affinity_cpus": 16
+    },
+    "source": {
+      "revision": "d887a05b844f9aeda0f656ca4644c58969d41ec5",
+      "status": "M .gitignore\n?? dev/\n?? docs/evidence/",
+      "diff_sha256": "64fd77fed8ba632e3ec1322dfc433bbdcd8f1465ae8a03e1d46b3150174aab96",
+      "files_sha256": "a43aadb6fede580f5c7b90fce6638efb5ce099579f4472372b4685b8f7b5521f"
+    },
+    "development_source_hashes": {
+      "dev/inspect.py": "3670e74ad3d2e417ad3bd73ddbb52b93a988c3c68de19401b57baffb88b0a914",
+      "dev/measure.py": "3385ab66e5e11894872fa0da5d462fcc173b42ab882bd5a3e607d5fdccb51304",
+      "dev/requirements.txt": "6cb7cda827686d26c70ebd360b359b0be8ebc8821f1a9ab6fcec5621f3c6c1c6",
+      "dev/setup.sh": "14233e92535d89ca2ab530ec6f34cf8a926c4df083f0826fe387271add98d6e4"
+    }
+  },
+  {
+    "run_id": "20261001T165836.044251Z-ci",
+    "started_utc": "20261001T165836.044251Z",
+    "upstream_revision": "499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+    "config": {
+      "mode": "ci",
+      "suite": "benchmarks",
+      "case": "case_01",
+      "budget": 60.0,
+      "router": "baseline"
+    },
+    "seed": null,
+    "seed_note": "official routers deterministic; input stores case seed",
+    "workers": 1,
+    "threads": 1,
+    "compiler_flags": null,
+    "warm_start": null,
+    "portfolio_runs": 1,
+    "steps": [
+      {
+        "command": [
+          "/home/younix/eda-3d-routing-challenge/.venv/bin/python",
+          "scripts/verify_submissions.py"
+        ],
+        "cwd": "/home/younix/eda-3d-routing-challenge/dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+        "budget_s": 60.0,
+        "wall_s": 0.3655410020146519,
+        "exit_code": 0,
+        "timeout": false,
+        "interrupted": false,
+        "log": "dev/artifacts/20261001T165836.044251Z-ci/verify-submissions.log",
+        "peak_rss_kib": 17640,
+        "user_cpu_s": 0.33,
+        "system_cpu_s": 0.02
+      },
+      {
+        "command": [
+          "/home/younix/eda-3d-routing-challenge/.venv/bin/python",
+          "-m",
+          "m3d.cli",
+          "leaderboard-all",
+          "--check"
+        ],
+        "cwd": "/home/younix/eda-3d-routing-challenge/dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+        "budget_s": 60.0,
+        "wall_s": 0.4664025660022162,
+        "exit_code": 0,
+        "timeout": false,
+        "interrupted": false,
+        "log": "dev/artifacts/20261001T165836.044251Z-ci/leaderboard-check.log",
+        "peak_rss_kib": 18584,
+        "user_cpu_s": 0.4,
+        "system_cpu_s": 0.02
+      }
+    ],
+    "outputs": {},
+    "official_inputs_unchanged": true,
+    "changed_official_files": [],
+    "success": true,
+    "total_subprocess_wall_s": 0.8319435680168681,
+    "manifest_path": "dev/artifacts/20261001T165836.044251Z-ci/manifest.json",
+    "manifest_sha256": "0e42268174f973eacafa78b593d73d15326aeb23318fb050f9509c25506f0f08",
+    "machine": {
+      "hostname": "LAPTOP-C8RSJ5BT",
+      "os": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+      "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+      "cpu_count": 16,
+      "affinity_cpus": 16
+    },
+    "source": {
+      "revision": "d887a05b844f9aeda0f656ca4644c58969d41ec5",
+      "status": "M .gitignore\n?? dev/\n?? docs/evidence/",
+      "diff_sha256": "64fd77fed8ba632e3ec1322dfc433bbdcd8f1465ae8a03e1d46b3150174aab96",
+      "files_sha256": "a43aadb6fede580f5c7b90fce6638efb5ce099579f4472372b4685b8f7b5521f"
+    },
+    "development_source_hashes": {
+      "dev/inspect.py": "3670e74ad3d2e417ad3bd73ddbb52b93a988c3c68de19401b57baffb88b0a914",
+      "dev/measure.py": "3385ab66e5e11894872fa0da5d462fcc173b42ab882bd5a3e607d5fdccb51304",
+      "dev/requirements.txt": "6cb7cda827686d26c70ebd360b359b0be8ebc8821f1a9ab6fcec5621f3c6c1c6",
+      "dev/setup.sh": "14233e92535d89ca2ab530ec6f34cf8a926c4df083f0826fe387271add98d6e4"
+    }
+  },
+  {
+    "run_id": "20261001T165954.462184Z-smoke",
+    "started_utc": "20261001T165954.462184Z",
+    "upstream_revision": "499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+    "config": {
+      "mode": "smoke",
+      "suite": "benchmarks",
+      "case": "case_01",
+      "budget": 60.0,
+      "router": "baseline"
+    },
+    "seed": null,
+    "seed_note": "official routers deterministic; input stores case seed",
+    "workers": 1,
+    "threads": 1,
+    "compiler_flags": null,
+    "warm_start": null,
+    "portfolio_runs": 1,
+    "steps": [
+      {
+        "command": [
+          "/home/younix/eda-3d-routing-challenge/.venv/bin/python",
+          "-m",
+          "m3d.cli",
+          "baseline",
+          "--case",
+          "/home/younix/eda-3d-routing-challenge/dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6/benchmarks/case_01.json",
+          "--out",
+          "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261001T165954.462184Z-smoke/candidate.sol.json",
+          "--order",
+          "bbox_desc",
+          "--rip-limit",
+          "40",
+          "--ops-factor",
+          "200"
+        ],
+        "cwd": "/home/younix/eda-3d-routing-challenge/dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+        "budget_s": 60.0,
+        "wall_s": 0.11486500996397808,
+        "exit_code": 0,
+        "timeout": false,
+        "interrupted": false,
+        "log": "dev/artifacts/20261001T165954.462184Z-smoke/baseline.log",
+        "peak_rss_kib": 14848,
+        "user_cpu_s": 0.06,
+        "system_cpu_s": 0.01
+      },
+      {
+        "command": [
+          "/home/younix/eda-3d-routing-challenge/.venv/bin/python",
+          "-m",
+          "m3d.cli",
+          "evaluate",
+          "--case",
+          "/home/younix/eda-3d-routing-challenge/dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6/benchmarks/case_01.json",
+          "--sol",
+          "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261001T165954.462184Z-smoke/candidate.sol.json",
+          "--suite",
+          "/home/younix/eda-3d-routing-challenge/dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6/benchmarks",
+          "--out",
+          "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261001T165954.462184Z-smoke/evaluation.json"
+        ],
+        "cwd": "/home/younix/eda-3d-routing-challenge/dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+        "budget_s": 60.0,
+        "wall_s": 0.11517906602239236,
+        "exit_code": 0,
+        "timeout": false,
+        "interrupted": false,
+        "log": "dev/artifacts/20261001T165954.462184Z-smoke/evaluate.log",
+        "peak_rss_kib": 14592,
+        "user_cpu_s": 0.06,
+        "system_cpu_s": 0.02
+      }
+    ],
+    "outputs": {
+      "case_01.sol.json": "4dc529988bacf55df471330bc2196ff748e5822cdc2c3e22ed9e1bc5c1ca3db2",
+      "evaluation.json": "b29bb068c01d5777f7fe5f39764687751a693fda1923fa057d8e2de3340606d0"
+    },
+    "input": {
+      "case": "benchmarks/case_01.json",
+      "sha256": "cc44aff1a21f0d4854ced9d550e95d4a77f6f475b6be0f3eec0416b070625b8c",
+      "case_seed": 741772126,
+      "baseline_delay": 240
+    },
+    "result": {
+      "legal": true,
+      "total_delay": 240,
+      "baseline_delay": 240,
+      "ratio": 1.0
+    },
+    "official_inputs_unchanged": true,
+    "changed_official_files": [],
+    "success": true,
+    "total_subprocess_wall_s": 0.23004407598637044,
+    "manifest_path": "dev/artifacts/20261001T165954.462184Z-smoke/manifest.json",
+    "manifest_sha256": "2071f55abb012bd5545f8f23d3e29f3fc95b9eb36beb444cf547fb9084d1da20",
+    "machine": {
+      "hostname": "LAPTOP-C8RSJ5BT",
+      "os": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+      "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+      "cpu_count": 16,
+      "affinity_cpus": 16
+    },
+    "source": {
+      "revision": "d887a05b844f9aeda0f656ca4644c58969d41ec5",
+      "status": "M .gitignore\n?? dev/\n?? docs/evidence/",
+      "diff_sha256": "64fd77fed8ba632e3ec1322dfc433bbdcd8f1465ae8a03e1d46b3150174aab96",
+      "files_sha256": "7401aa90b42111fc479302b4ca15b65706d6d4169701e19f6797b0685709e459"
+    },
+    "development_source_hashes": {
+      "dev/inspect.py": "3670e74ad3d2e417ad3bd73ddbb52b93a988c3c68de19401b57baffb88b0a914",
+      "dev/measure.py": "567d13af7911c668243237ae39ad84fed9462715cc7a0c85ae9aae7f2970dbe2",
+      "dev/requirements.txt": "6cb7cda827686d26c70ebd360b359b0be8ebc8821f1a9ab6fcec5621f3c6c1c6",
+      "dev/setup.sh": "14233e92535d89ca2ab530ec6f34cf8a926c4df083f0826fe387271add98d6e4",
+      "dev/toolchain_probe.cpp": "060e9ba22d27271f96a8c63a5192aea444f696d10f69060e625c412415c6ef49"
+    }
+  },
+  {
+    "run_id": "20261001T165954.996009Z-smoke",
+    "started_utc": "20261001T165954.996009Z",
+    "upstream_revision": "499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+    "config": {
+      "mode": "smoke",
+      "suite": "benchmarks",
+      "case": "case_01",
+      "budget": 0.001,
+      "router": "baseline"
+    },
+    "seed": null,
+    "seed_note": "official routers deterministic; input stores case seed",
+    "workers": 1,
+    "threads": 1,
+    "compiler_flags": null,
+    "warm_start": null,
+    "portfolio_runs": 1,
+    "steps": [
+      {
+        "command": [
+          "/home/younix/eda-3d-routing-challenge/.venv/bin/python",
+          "-m",
+          "m3d.cli",
+          "baseline",
+          "--case",
+          "/home/younix/eda-3d-routing-challenge/dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6/benchmarks/case_01.json",
+          "--out",
+          "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261001T165954.996009Z-smoke/candidate.sol.json",
+          "--order",
+          "bbox_desc",
+          "--rip-limit",
+          "40",
+          "--ops-factor",
+          "200"
+        ],
+        "cwd": "/home/younix/eda-3d-routing-challenge/dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+        "budget_s": 0.001,
+        "wall_s": 0.0032812159624882042,
+        "exit_code": -15,
+        "timeout": true,
+        "interrupted": false,
+        "log": "dev/artifacts/20261001T165954.996009Z-smoke/baseline.log",
+        "peak_rss_kib": null,
+        "user_cpu_s": null,
+        "system_cpu_s": null
+      }
+    ],
+    "outputs": {},
+    "input": {
+      "case": "benchmarks/case_01.json",
+      "sha256": "cc44aff1a21f0d4854ced9d550e95d4a77f6f475b6be0f3eec0416b070625b8c",
+      "case_seed": 741772126,
+      "baseline_delay": 240
+    },
+    "official_inputs_unchanged": true,
+    "changed_official_files": [],
+    "success": false,
+    "total_subprocess_wall_s": 0.0032812159624882042,
+    "manifest_path": "dev/artifacts/20261001T165954.996009Z-smoke/manifest.json",
+    "manifest_sha256": "11a0714b3413963ab5892ef7df3c44685de47b34ab3e08e3c25ef775837b265a",
+    "machine": {
+      "hostname": "LAPTOP-C8RSJ5BT",
+      "os": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+      "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+      "cpu_count": 16,
+      "affinity_cpus": 16
+    },
+    "source": {
+      "revision": "d887a05b844f9aeda0f656ca4644c58969d41ec5",
+      "status": "M .gitignore\n?? dev/\n?? docs/evidence/",
+      "diff_sha256": "64fd77fed8ba632e3ec1322dfc433bbdcd8f1465ae8a03e1d46b3150174aab96",
+      "files_sha256": "7401aa90b42111fc479302b4ca15b65706d6d4169701e19f6797b0685709e459"
+    },
+    "development_source_hashes": {
+      "dev/inspect.py": "3670e74ad3d2e417ad3bd73ddbb52b93a988c3c68de19401b57baffb88b0a914",
+      "dev/measure.py": "567d13af7911c668243237ae39ad84fed9462715cc7a0c85ae9aae7f2970dbe2",
+      "dev/requirements.txt": "6cb7cda827686d26c70ebd360b359b0be8ebc8821f1a9ab6fcec5621f3c6c1c6",
+      "dev/setup.sh": "14233e92535d89ca2ab530ec6f34cf8a926c4df083f0826fe387271add98d6e4",
+      "dev/toolchain_probe.cpp": "060e9ba22d27271f96a8c63a5192aea444f696d10f69060e625c412415c6ef49"
+    }
+  }
+]

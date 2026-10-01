@@ -1,0 +1,135 @@
+{
+  "cwd": {
+    "command": [
+      "pwd"
+    ],
+    "exit_code": 0,
+    "output": "/home/younix/eda-3d-routing-challenge\n"
+  },
+  "git_status": {
+    "command": [
+      "git",
+      "status",
+      "--short"
+    ],
+    "exit_code": 0,
+    "output": " M .gitignore\n?? dev/\n?? docs/BUGS.md\n?? docs/CLAIMS.md\n?? docs/DECISIONS.md\n?? docs/VERSIONS.md\n?? docs/WORKLOG.md\n?? docs/design/\n?? docs/evidence/\n?? docs/research/\n?? docs/summaries/\n"
+  },
+  "git_head": {
+    "command": [
+      "git",
+      "rev-parse",
+      "HEAD"
+    ],
+    "exit_code": 0,
+    "output": "d887a05b844f9aeda0f656ca4644c58969d41ec5\n"
+  },
+  "upstream_head": {
+    "command": [
+      "git",
+      "ls-remote",
+      "https://github.com/partcleda/eda-3d-routing-challenge.git",
+      "HEAD"
+    ],
+    "exit_code": 0,
+    "output": "499ad7e2a415a97e9ce9b3396b0477e75ebd13e6\tHEAD\n"
+  },
+  "fork_diff": {
+    "command": [
+      "git",
+      "diff",
+      "499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+      "HEAD",
+      "--stat"
+    ],
+    "exit_code": 0,
+    "output": " .gitignore                   |   1 +\n docs/M3D_ROUTING_RESEARCH.md | 475 +++++++++++++++++++++++++++++++++++++++++++\n 2 files changed, 476 insertions(+)\n"
+  },
+  "os": {
+    "command": [
+      "uname",
+      "-a"
+    ],
+    "exit_code": 0,
+    "output": "Linux LAPTOP-C8RSJ5BT 6.6.87.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux\n"
+  },
+  "cpu": {
+    "command": [
+      "lscpu"
+    ],
+    "exit_code": 0,
+    "output": "Architecture:                         x86_64\nCPU op-mode(s):                       32-bit, 64-bit\nAddress sizes:                        46 bits physical, 48 bits virtual\nByte Order:                           Little Endian\nCPU(s):                               16\nOn-line CPU(s) list:                  0-15\nVendor ID:                            GenuineIntel\nModel name:                           Intel(R) Core(TM) Ultra 9 285H\nCPU family:                           6\nModel:                                197\nThread(s) per core:                   1\nCore(s) per socket:                   16\nSocket(s):                            1\nStepping:                             2\nBogoMIPS:                             7372.80\nFlags:                                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology tsc_reliable nonstop_tsc cpuid tsc_known_freq pni pclmulqdq vmx ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves avx_vnni vnmi umip waitpkg gfni vaes vpclmulqdq rdpid movdiri movdir64b fsrm md_clear serialize flush_l1d arch_capabilities\nVirtualization:                       VT-x\nHypervisor vendor:                    Microsoft\nVirtualization type:                  full\nL1d cache:                            768 KiB (16 instances)\nL1i cache:                            1 MiB (16 instances)\nL2 cache:                             48 MiB (16 instances)\nL3 cache:                             24 MiB (1 instance)\nNUMA node(s):                         1\nNUMA node0 CPU(s):                    0-15\nVulnerability Gather data sampling:   Not affected\nVulnerability Itlb multihit:          Not affected\nVulnerability L1tf:                   Not affected\nVulnerability Mds:                    Not affected\nVulnerability Meltdown:               Not affected\nVulnerability Mmio stale data:        Not affected\nVulnerability Reg file data sampling: Not affected\nVulnerability Retbleed:               Mitigation; Enhanced IBRS\nVulnerability Spec rstack overflow:   Not affected\nVulnerability Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl\nVulnerability Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization\nVulnerability Spectre v2:             Mitigation; Enhanced / Automatic IBRS; IBPB conditional; RSB filling; PBRSB-eIBRS SW sequence; BHI BHI_DIS_S\nVulnerability Srbds:                  Not affected\nVulnerability Tsx async abort:        Not affected\n"
+  },
+  "memory": {
+    "command": [
+      "free",
+      "-b"
+    ],
+    "exit_code": 0,
+    "output": "               total        used        free      shared  buff/cache   available\nMem:     16435576832  4356845568  8693727232    10878976  3648425984 12078731264\nSwap:     4294967296           0  4294967296\n"
+  },
+  "nproc": {
+    "command": [
+      "nproc"
+    ],
+    "exit_code": 0,
+    "output": "16\n"
+  },
+  "compiler": {
+    "command": [
+      "g++",
+      "--version"
+    ],
+    "exit_code": 0,
+    "output": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\nCopyright (C) 2023 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n"
+  },
+  "make": {
+    "command": [
+      "make",
+      "--version"
+    ],
+    "exit_code": 0,
+    "output": "GNU Make 4.3\nBuilt for x86_64-pc-linux-gnu\nCopyright (C) 1988-2020 Free Software Foundation, Inc.\nLicense GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>\nThis is free software: you are free to change and redistribute it.\nThere is NO WARRANTY, to the extent permitted by law.\n"
+  },
+  "python": {
+    "command": [
+      "/home/younix/eda-3d-routing-challenge/.venv/bin/python",
+      "--version"
+    ],
+    "exit_code": 0,
+    "output": "Python 3.12.3\n"
+  },
+  "pip": {
+    "command": [
+      "/home/younix/eda-3d-routing-challenge/.venv/bin/python",
+      "-m",
+      "pip",
+      "--version"
+    ],
+    "exit_code": 0,
+    "output": "pip 24.0 from /home/younix/eda-3d-routing-challenge/.venv/lib/python3.12/site-packages/pip (python 3.12)\n"
+  },
+  "packages": {
+    "command": [
+      "/home/younix/eda-3d-routing-challenge/.venv/bin/python",
+      "-m",
+      "pip",
+      "freeze"
+    ],
+    "exit_code": 0,
+    "output": ""
+  },
+  "disk": {
+    "command": [
+      "df",
+      "-B1",
+      "."
+    ],
+    "exit_code": 0,
+    "output": "Filesystem         1B-blocks        Used    Available Use% Mounted on\n/dev/sdd       1081101176832 59541225472 966567596032   6% /\n"
+  },
+  "/etc/os-release": "PRETTY_NAME=\"Ubuntu 24.04.4 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.4 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+  "/sys/fs/cgroup/cpu.max": "unavailable",
+  "/sys/fs/cgroup/memory.max": "unavailable",
+  "/proc/self/status": "Name:\tpython\nUmask:\t0022\nState:\tR (running)\nTgid:\t1373651\nNgid:\t0\nPid:\t1373651\nPPid:\t1373649\nTracerPid:\t0\nUid:\t1000\t1000\t1000\t1000\nGid:\t1000\t1000\t1000\t1000\nFDSize:\t64\nGroups:\t4 20 24 27 30 46 100 1000 \nNStgid:\t1373651\nNSpid:\t1373651\nNSpgid:\t1373651\nNSsid:\t1373651\nKthread:\t0\nVmPeak:\t   31160 kB\nVmSize:\t   30044 kB\nVmLck:\t       0 kB\nVmPin:\t       0 kB\nVmHWM:\t   24976 kB\nVmRSS:\t   24536 kB\nRssAnon:\t   12504 kB\nRssFile:\t   12032 kB\nRssShmem:\t       0 kB\nVmData:\t   13184 kB\nVmStk:\t     132 kB\nVmExe:\t    2956 kB\nVmLib:\t    6460 kB\nVmPTE:\t      96 kB\nVmSwap:\t       0 kB\nHugetlbPages:\t       0 kB\nCoreDumping:\t0\nTHP_enabled:\t1\nuntag_mask:\t0xffffffffffffffff\nThreads:\t1\nSigQ:\t1/62657\nSigPnd:\t0000000000000000\nShdPnd:\t0000000000000000\nSigBlk:\t0000000000000000\nSigIgn:\t0000000001001000\nSigCgt:\t0000000000000002\nCapInh:\t0000000000000000\nCapPrm:\t0000000000000000\nCapEff:\t0000000000000000\nCapBnd:\t000001ffffffffff\nCapAmb:\t0000000000000000\nNoNewPrivs:\t0\nSeccomp:\t2\nSeccomp_filters:\t1\nSpeculation_Store_Bypass:\tthread vulnerable\nSpeculationIndirectBranch:\tconditional enabled\nCpus_allowed:\tffff\nCpus_allowed_list:\t0-15\nMems_allowed:\t00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000001\nMems_allowed_list:\t0\nvoluntary_ctxt_switches:\t96\nnonvoluntary_ctxt_switches:\t2\n"
+}

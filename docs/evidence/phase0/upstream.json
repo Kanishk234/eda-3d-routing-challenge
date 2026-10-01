@@ -1,0 +1,243 @@
+{
+  "checked_utc": "2026-10-01T17:17:47.839006+00:00",
+  "upstream_revision": "499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+  "api": {
+    "repository": {
+      "url": "https://api.github.com/repos/partcleda/eda-3d-routing-challenge",
+      "status": 200,
+      "date_header": "Thu, 01 Oct 2026 17:17:48 GMT",
+      "pagination": null,
+      "default_branch": "main",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      }
+    },
+    "head": {
+      "url": "https://api.github.com/repos/partcleda/eda-3d-routing-challenge/commits/HEAD",
+      "status": 200,
+      "date_header": "Thu, 01 Oct 2026 17:17:48 GMT",
+      "pagination": null,
+      "sha": "499ad7e2a415a97e9ce9b3396b0477e75ebd13e6"
+    },
+    "pulls": {
+      "url": "https://api.github.com/repos/partcleda/eda-3d-routing-challenge/pulls?state=all&per_page=100",
+      "status": 200,
+      "date_header": "Thu, 01 Oct 2026 17:17:49 GMT",
+      "pagination": null,
+      "entries": [
+        {
+          "number": 11,
+          "title": "Add mj97 submissions for all six tiers",
+          "state": "closed",
+          "head": "93b6c420ef38b6a0294e8bf9727eb60dc4d89d62",
+          "updated_at": "2026-10-01T16:14:57Z",
+          "merged_at": null,
+          "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/11"
+        },
+        {
+          "number": 10,
+          "title": "Add reubalink hard submission (aggregate 1.2672)",
+          "state": "open",
+          "head": "ca3cb1de2c046546f2ed8fca14576f6056b8488d",
+          "updated_at": "2026-10-01T12:35:41Z",
+          "merged_at": null,
+          "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/10"
+        },
+        {
+          "number": 9,
+          "title": "Submission: warm_lns_refinement (all six tiers, verified gains, credited warm starts)",
+          "state": "open",
+          "head": "06eab75bb49c07c050f9b6720157b844f9a5a56c",
+          "updated_at": "2026-10-01T07:39:24Z",
+          "merged_at": null,
+          "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/9"
+        },
+        {
+          "number": 8,
+          "title": "Leaderboard submission: drama3d-portfolio (6 tiers: intro 1.0830, hard 1.1121, scale 1.0409, designs 1.1369, stress 1.0201, congested 1.0160)",
+          "state": "open",
+          "head": "e2a01b990f3044f0650697ef4e963c579d107126",
+          "updated_at": "2026-10-01T03:14:16Z",
+          "merged_at": null,
+          "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/8"
+        },
+        {
+          "number": 7,
+          "title": "Submission for M3D Router submission with results for intro, hard, scale, and designs benchmark suites",
+          "state": "open",
+          "head": "dfbcba48bd762433350aea82cd653af74e7137ac",
+          "updated_at": "2026-09-30T22:09:57Z",
+          "merged_at": null,
+          "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/7"
+        },
+        {
+          "number": 6,
+          "title": "Hard-tier submission: CarterT27 joint-group routing (1.1637)",
+          "state": "closed",
+          "head": "bc8a8a942eb4dca9f06bb58585667a9a91c92af1",
+          "updated_at": "2026-10-01T02:43:50Z",
+          "merged_at": null,
+          "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/6"
+        },
+        {
+          "number": 5,
+          "title": "Submission: coordinated_refinement (all six tiers, credited warm starts)",
+          "state": "open",
+          "head": "4533580ce9a84b83c9c80b831d92f2fbac2bdac9",
+          "updated_at": "2026-09-30T16:20:23Z",
+          "merged_at": null,
+          "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/5"
+        },
+        {
+          "number": 4,
+          "title": "Submission: shivaahir158 \u2014 5 tiers, all baselines beaten",
+          "state": "open",
+          "head": "cd057ed79c2f91b0da1ab173b1d106ea28c39651",
+          "updated_at": "2026-09-30T16:23:34Z",
+          "merged_at": null,
+          "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/4"
+        },
+        {
+          "number": 3,
+          "title": "Submission: pathfinder_lns (all six tiers)",
+          "state": "open",
+          "head": "4e21227867ee1f8f72c9f4d9ad446e05c20fe452",
+          "updated_at": "2026-10-01T02:01:44Z",
+          "merged_at": null,
+          "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/3"
+        },
+        {
+          "number": 2,
+          "title": "Add root-aware hard-tier portfolio: 1.274475, 9/9 legal",
+          "state": "open",
+          "head": "607bb91f497a105942ce6ed14e01fb39150036d3",
+          "updated_at": "2026-10-01T04:37:48Z",
+          "merged_at": null,
+          "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/2"
+        },
+        {
+          "number": 1,
+          "title": "Submission: lns_negotiated (all six tiers)",
+          "state": "open",
+          "head": "5b5be704578623c0430fedbd8d3c382d8b90caed",
+          "updated_at": "2026-09-29T23:58:46Z",
+          "merged_at": null,
+          "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/1"
+        }
+      ]
+    },
+    "actions": {
+      "url": "https://api.github.com/repos/partcleda/eda-3d-routing-challenge/actions/runs?per_page=10",
+      "status": 200,
+      "date_header": "Thu, 01 Oct 2026 17:17:50 GMT",
+      "pagination": "<https://api.github.com/repositories/1383821669/actions/runs?per_page=10&page=2>; rel=\"next\", <https://api.github.com/repositories/1383821669/actions/runs?per_page=10&page=4>; rel=\"last\"",
+      "entries": [
+        {
+          "id": 36863503295,
+          "name": "submissions",
+          "head_sha": "93b6c420ef38b6a0294e8bf9727eb60dc4d89d62",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-10-01T12:41:57Z",
+          "html_url": "https://github.com/partcleda/eda-3d-routing-challenge/actions/runs/36863503295"
+        },
+        {
+          "id": 36862799850,
+          "name": "submissions",
+          "head_sha": "ca3cb1de2c046546f2ed8fca14576f6056b8488d",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "action_required",
+          "created_at": "2026-10-01T12:35:41Z",
+          "html_url": "https://github.com/partcleda/eda-3d-routing-challenge/actions/runs/36862799850"
+        },
+        {
+          "id": 36862776466,
+          "name": "submissions",
+          "head_sha": "6a3f9589ddeb0b3fe4b4e8c6d1860f93925a4920",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-10-01T12:35:28Z",
+          "html_url": "https://github.com/partcleda/eda-3d-routing-challenge/actions/runs/36862776466"
+        },
+        {
+          "id": 36858223234,
+          "name": "submissions",
+          "head_sha": "d73e0d1a5a32e2b0e264e5573593cab0132e5010",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "action_required",
+          "created_at": "2026-10-01T11:53:37Z",
+          "html_url": "https://github.com/partcleda/eda-3d-routing-challenge/actions/runs/36858223234"
+        },
+        {
+          "id": 36855153498,
+          "name": "submissions",
+          "head_sha": "ddadee689a2cfeeca68d26e64f30f54a41f11d2d",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "action_required",
+          "created_at": "2026-10-01T11:24:19Z",
+          "html_url": "https://github.com/partcleda/eda-3d-routing-challenge/actions/runs/36855153498"
+        },
+        {
+          "id": 36850198105,
+          "name": "submissions",
+          "head_sha": "4654376ba8ab3379f134a476c43b36284fbcad76",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "action_required",
+          "created_at": "2026-10-01T10:36:34Z",
+          "html_url": "https://github.com/partcleda/eda-3d-routing-challenge/actions/runs/36850198105"
+        },
+        {
+          "id": 36846789647,
+          "name": "submissions",
+          "head_sha": "ec19af4217e71e81ceb101211a721f0b4dd039a3",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "action_required",
+          "created_at": "2026-10-01T10:04:16Z",
+          "html_url": "https://github.com/partcleda/eda-3d-routing-challenge/actions/runs/36846789647"
+        },
+        {
+          "id": 36845186454,
+          "name": "submissions",
+          "head_sha": "fd5749b71cf2919b9f06ead17fdf6053af8fdae4",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "action_required",
+          "created_at": "2026-10-01T09:49:18Z",
+          "html_url": "https://github.com/partcleda/eda-3d-routing-challenge/actions/runs/36845186454"
+        },
+        {
+          "id": 36841459140,
+          "name": "submissions",
+          "head_sha": "699603ef71fd539fc47f174f6e6ef4108654b4d0",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "action_required",
+          "created_at": "2026-10-01T09:14:49Z",
+          "html_url": "https://github.com/partcleda/eda-3d-routing-challenge/actions/runs/36841459140"
+        },
+        {
+          "id": 36831584578,
+          "name": "submissions",
+          "head_sha": "06eab75bb49c07c050f9b6720157b844f9a5a56c",
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "action_required",
+          "created_at": "2026-10-01T07:39:25Z",
+          "html_url": "https://github.com/partcleda/eda-3d-routing-challenge/actions/runs/36831584578"
+        }
+      ],
+      "total_count": 31
+    }
+  }
+}

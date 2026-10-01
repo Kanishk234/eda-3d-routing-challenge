@@ -1,0 +1,9 @@
+# Decisions — 2026-10-01
+
+1. Pin current upstream 499ad7e2a415a97e9ce9b3396b0477e75ebd13e6; exact ignored archive is immutable evaluation input. Preserve all official code/data and attribution.
+2. Develop in this fork under dev/, ignored dev/upstream and dev/artifacts. Phase 5 uses a separate clean route-only checkout; no submission branch/worktree needed now.
+3. Use project .venv and stdlib-only dependency file. Optional visualization/CMake/GPU installs add no Phase 0 value.
+4. Retain C++17/Python CPU-first proposal as unmeasured hypothesis. Target hard first, use intro for smoke/reproduction; designs/congested later. Final submission tiers unknown.
+5. Serial bounded workflow records provenance and verifies candidates before promotion. Stress baseline deferred; historical research scores/times not treated as new evidence.
+6. Reserve hard case_08–09 and generated seeds 9001–9003 before tuning. Future feasibility/generation protocol pending.
+7. Preserve original docs/M3D_ROUTING_RESEARCH.md; copy byte-identically into requested docs/research/ path.

@@ -1,0 +1,45 @@
+# Worklog
+
+## 2026-10-01 — Phase 0 complete (America/Chicago)
+
+Start: native WSL /home/younix/eda-3d-routing-challenge; clean HEAD d887a05b844f9aeda0f656ca4644c58969d41ec5, origin Kanishk234 fork. Read AGENTS.md and existing docs/M3D_ROUTING_RESEARCH.md (requested docs/research path absent). Supporting continuity docs absent. Preserved original research; created byte-identical copy under docs/research/.
+
+Added dev/setup.sh, stdlib-only requirements, dev/measure.py, capture_environment.py, one-time finish_phase0.py, toolchain probe and README; ignore rules for bulk dev artifacts/snapshot; versions/contract/architecture/verification/experiment docs; decisions/bugs/claims; phases 0–5; summary and compact evidence. No official toolkit/data, submissions, leaderboard, Git history/remotes or global Git settings changed.
+
+Current official revision 499ad7e2a415a97e9ce9b3396b0477e75ebd13e6, git ls-remote/API agree. 45 cases: intro20/hard9/scale8/stress1/congested4/designs3. Captured all 11 PR heads/latest10 CI runs; #11 now closed. Research numerical audit not repeated. Licenses/schema in design/CONTRACT.md.
+
+Checks:
+- 20261001T165828.977754Z-tests: 43/43 pass; process wall6.338s, RSS21,872KiB. Pre-existing ResourceWarnings logged, no test failures.
+- 20261001T165835.673740Z-smoke: baseline/evaluate legal240, ratio1.0; baseline process0.064s, RSS14,976KiB.
+- 20261001T165836.044251Z-ci: 26 present seed files legal, negotiated_fast intentionally8/9; leaderboard current. Verification0.366s/check0.466s.
+- 20261001T165954.462184Z-smoke: repeat legal240, same route bytes; baseline process0.115s, RSS14,848KiB.
+- 20261001T165954.996009Z-smoke: deliberate0.001s timeout, failure recorded, no accepted output, previous runs preserved; RSS unknown.
+- GCC13.3.0 C++17 probe compiled/runs, Python syntax verified, all198 archive files match pinned Git blobs and unchanged by checks.
+
+Compact evidence: docs/evidence/phase0/{upstream,environment,inventory,runs,official-input-hashes}.json. Raw logs/manifests/routes: ignored dev/artifacts/<run-id>/. Official archive: ignored dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6. Exact commands in dev/README.md.
+
+Remaining: upstream fixed hard Pareto-test risk and harmless unclosed-file warnings. Sandbox/patch/Node helpers failed; approved WSL/PowerShell fallback worked. Cgroup quotas unknown, CMake absent/unneeded. No custom solver/full-tier reproduction/profiles. No GPU/costs/commits/push/publication/unbounded runs.
+
+Running jobs: none. Phase0 complete; Phase1 first unfinished. Next concrete action: .venv/bin/python dev/measure.py suite --suite benchmarks --router baseline --budget 180; retain per-case agreement, then officially rescore a relevant pinned public hard entry with attribution. Finalize small/large profile cases before tuning, respecting hard case_08–09 and seeds9001–9003 as validation. Do not jump to advanced optimization.
+
+Final review: git diff --check and Python syntax checks pass; official-path diff empty, original research preserved, no running routing jobs. New text reviewed. Pinned upstream HEAD CI push run 36622967607 succeeded, captured in upstream.json. Phase 0 has no outstanding gate blocker; next is the bounded Phase 1 reproduction above.
+
+## 2026-10-01 — Phase 1 active
+
+Continued on user instruction; no transfer to another person/agent. Reproduced intro 20/20 and hard 9/9, every delay exactly matches official normalization and aggregate 1.0. Clean hard suite: 94.765 seconds, 22,080 KiB peak RSS, cap600. Intro suite: 55.676 seconds, 28,572 KiB, cap180; its tail overlapped the first hard attempt by about1.3seconds so runtime is marked non-isolated. Early hard run interrupted after45.208seconds and retained; excluded from claims.
+
+Pinned PR3 hard output audit: 9/9 legal, aggregate1.387366; original public output/provenance retained separately, no public solver executed or copied. Small hard/case_01 profile complete: route13.109seconds under cProfile, 431 searches, 369 repeated calls, 26,652KiB RSS; checking/save/reload are milliseconds. Large scale/case_08 profile currently running, cap300seconds, one worker.
+
+Renamed dev/inspect.py to capture_environment.py after discovering Python stdlib shadowing; added main guard. That bug unintentionally refreshed Phase0 environment/upstream JSON; official data and existing route/score evidence unaffected. Logged in BUGS.md. finish_phase1.py must be run after profiles finish; a premature call stopped on the active manifest after validating/promoting baseline incumbents and writing comparison.json.
+
+Current baseline incumbents: dev/artifacts/incumbents/{intro,hard}, all officially rechecked; no public warm starts. Development source snapshots now retained inside Phase1 run directories. Next: finish large profile, freeze evidence and Phase1 summary, then implement the first C++ exact single-net kernel in Phase2. No optimization launched.
+
+Phase 1 completion: both profiles finished legally, large scale08 route134.012s/search133.947s, peak62,536KiB; no reroutes. finish_phase1.py froze comparison/runs/profiles evidence and verified every output hash plus all official-input hashes. Phase1 checklist/summary complete, no jobs running. Proceeding to Phase2 C++ exact single-net rerouting from verified baseline incumbents; search dominates and justifies compiling the kernel. This is disclosed baseline warm-start work, not from-scratch competitive routing.
+
+## 2026-10-01 — Status and commit audit
+
+Read continuity/design/evidence docs, research summary, development kernel/wrapper/tests and saved run manifests. No solver runs or tests launched during this audit; no Git commits/publication performed. HEAD remains d887a05. All subsequent development is uncommitted. Official toolkit/benchmarks/submissions/leaderboard have no working-tree changes.
+
+Phase0/1 complete. Phase2 is implemented in part despite stale “not started/no solver” text: dev/solver/exact_polish.cpp, run_polish.py and test_exact.py exist, with a built kernel. Saved kernel-tests.log records11 passing checks (0.141s). Full hard run20261001T173145.097188Z-exact-polish records9/9 legal, aggregate1.0466292119096317,547 accepted replacements, core process wall0.555730s and peak4352KiB; repeat173324 records identical case delays/aggregate, wall0.638549s. Config seed1,5passes,10s/case cap, validated official baseline warm starts. This excludes baseline generation (94.765s) and Python wrapper overhead; no from-scratch speedup claim. Saved zero-budget/resume case01 runs succeed. Official-input unchanged checks are true in these manifests.
+
+Remaining: reconcile OVERVIEW/ARCHITECTURE/VERIFICATION/EXPERIMENTS/CLAIMS/PHASE2 and dev/README with these artifacts; freeze compact Phase2 evidence/source and perform gate review before marking completion. Reserved hard08–09 appear in the initial full-tier verification; preserve them from tuning. Phases3–5 not started; no submission prepared. Bulk ignored artifacts need separate backup. No routing jobs observed during audit. Next concrete action: finalize Phase2 evidence and documentation, including total warm-start cost, reproducibility/output hashes, limitations and matched-budget comparison. Suggested user commits: development harness; kernel/wrapper; kernel checks; documentation/evidence.

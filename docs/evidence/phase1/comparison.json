@@ -1,0 +1,837 @@
+{
+  "upstream_revision": "499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+  "scope": "intro/hard baseline reproduction and pinned public hard comparison",
+  "tiers": {
+    "intro": {
+      "baseline_reproduction": {
+        "format": "m3d-leaderboard",
+        "complete": true,
+        "aggregate_score": 1.0,
+        "n_cases": 20,
+        "n_legal": 20,
+        "formula": "aggregate = geomean_c(baseline_total_c / submission_total_c); higher is better; baseline scores 1.0; all cases must be legal for a complete ranked submission (else aggregate = 0.0)",
+        "cases": [
+          {
+            "case": "case_01",
+            "legal": true,
+            "total_delay": 240,
+            "baseline_delay": 240,
+            "ratio": 1.0,
+            "runtime_s": 0.015,
+            "reasons": []
+          },
+          {
+            "case": "case_02",
+            "legal": true,
+            "total_delay": 1190,
+            "baseline_delay": 1190,
+            "ratio": 1.0,
+            "runtime_s": 0.04,
+            "reasons": []
+          },
+          {
+            "case": "case_03",
+            "legal": true,
+            "total_delay": 1757,
+            "baseline_delay": 1757,
+            "ratio": 1.0,
+            "runtime_s": 0.094,
+            "reasons": []
+          },
+          {
+            "case": "case_04",
+            "legal": true,
+            "total_delay": 2162,
+            "baseline_delay": 2162,
+            "ratio": 1.0,
+            "runtime_s": 0.155,
+            "reasons": []
+          },
+          {
+            "case": "case_05",
+            "legal": true,
+            "total_delay": 4197,
+            "baseline_delay": 4197,
+            "ratio": 1.0,
+            "runtime_s": 0.283,
+            "reasons": []
+          },
+          {
+            "case": "case_06",
+            "legal": true,
+            "total_delay": 6155,
+            "baseline_delay": 6155,
+            "ratio": 1.0,
+            "runtime_s": 0.414,
+            "reasons": []
+          },
+          {
+            "case": "case_07",
+            "legal": true,
+            "total_delay": 5855,
+            "baseline_delay": 5855,
+            "ratio": 1.0,
+            "runtime_s": 0.559,
+            "reasons": []
+          },
+          {
+            "case": "case_08",
+            "legal": true,
+            "total_delay": 8549,
+            "baseline_delay": 8549,
+            "ratio": 1.0,
+            "runtime_s": 0.776,
+            "reasons": []
+          },
+          {
+            "case": "case_09",
+            "legal": true,
+            "total_delay": 9728,
+            "baseline_delay": 9728,
+            "ratio": 1.0,
+            "runtime_s": 0.92,
+            "reasons": []
+          },
+          {
+            "case": "case_10",
+            "legal": true,
+            "total_delay": 11969,
+            "baseline_delay": 11969,
+            "ratio": 1.0,
+            "runtime_s": 1.388,
+            "reasons": []
+          },
+          {
+            "case": "case_11",
+            "legal": true,
+            "total_delay": 14142,
+            "baseline_delay": 14142,
+            "ratio": 1.0,
+            "runtime_s": 1.809,
+            "reasons": []
+          },
+          {
+            "case": "case_12",
+            "legal": true,
+            "total_delay": 18509,
+            "baseline_delay": 18509,
+            "ratio": 1.0,
+            "runtime_s": 2.291,
+            "reasons": []
+          },
+          {
+            "case": "case_13",
+            "legal": true,
+            "total_delay": 22599,
+            "baseline_delay": 22599,
+            "ratio": 1.0,
+            "runtime_s": 4.467,
+            "reasons": []
+          },
+          {
+            "case": "case_14",
+            "legal": true,
+            "total_delay": 24481,
+            "baseline_delay": 24481,
+            "ratio": 1.0,
+            "runtime_s": 3.798,
+            "reasons": []
+          },
+          {
+            "case": "case_15",
+            "legal": true,
+            "total_delay": 27648,
+            "baseline_delay": 27648,
+            "ratio": 1.0,
+            "runtime_s": 4.013,
+            "reasons": []
+          },
+          {
+            "case": "case_16",
+            "legal": true,
+            "total_delay": 37902,
+            "baseline_delay": 37902,
+            "ratio": 1.0,
+            "runtime_s": 5.11,
+            "reasons": []
+          },
+          {
+            "case": "case_17",
+            "legal": true,
+            "total_delay": 49554,
+            "baseline_delay": 49554,
+            "ratio": 1.0,
+            "runtime_s": 6.549,
+            "reasons": []
+          },
+          {
+            "case": "case_18",
+            "legal": true,
+            "total_delay": 53805,
+            "baseline_delay": 53805,
+            "ratio": 1.0,
+            "runtime_s": 8.199,
+            "reasons": []
+          },
+          {
+            "case": "case_19",
+            "legal": true,
+            "total_delay": 45488,
+            "baseline_delay": 45488,
+            "ratio": 1.0,
+            "runtime_s": 8.172,
+            "reasons": []
+          },
+          {
+            "case": "case_20",
+            "legal": true,
+            "total_delay": 51660,
+            "baseline_delay": 51660,
+            "ratio": 1.0,
+            "runtime_s": 8.079,
+            "reasons": []
+          }
+        ]
+      },
+      "source_run": "20261001T171253.322797Z-suite",
+      "incumbents": [
+        {
+          "case": "case_01",
+          "legal": true,
+          "delay": 240,
+          "sha256": "4dc529988bacf55df471330bc2196ff748e5822cdc2c3e22ed9e1bc5c1ca3db2",
+          "source_run": "20261001T171253.322797Z-suite",
+          "path": "dev/artifacts/incumbents/intro/case_01.sol.json",
+          "origin": "fresh official baseline reproduction",
+          "case_sha256": "cc44aff1a21f0d4854ced9d550e95d4a77f6f475b6be0f3eec0416b070625b8c"
+        },
+        {
+          "case": "case_02",
+          "legal": true,
+          "delay": 1190,
+          "sha256": "dbe6076c9f87368bae064aa5268f1bb0c5824798a53d02dfecba34b50660d45e",
+          "source_run": "20261001T171253.322797Z-suite",
+          "path": "dev/artifacts/incumbents/intro/case_02.sol.json",
+          "origin": "fresh official baseline reproduction",
+          "case_sha256": "169d1850ef77912297e3db307ff29c6b86db307e3ea846bafd6d771f147e848a"
+        },
+        {
+          "case": "case_03",
+          "legal": true,
+          "delay": 1757,
+          "sha256": "eadb82f2cbb59009d3f1c6f6ddf0136111ae6c30881ec63b9d900aa50d74a1ad",
+          "source_run": "20261001T171253.322797Z-suite",
+          "path": "dev/artifacts/incumbents/intro/case_03.sol.json",
+          "origin": "fresh official baseline reproduction",
+          "case_sha256": "192bf94aa004b19e166888ca61ae6b6cbc0900d0f4bb108b7421494e2e85c460"
+        },
+        {
+          "case": "case_04",
+          "legal": true,
+          "delay": 2162,
+          "sha256": "121f52885e120215ed4f4a9a19b886df32f8ad558c80acf44ce490f36350f42d",
+          "source_run": "20261001T171253.322797Z-suite",
+          "path": "dev/artifacts/incumbents/intro/case_04.sol.json",
+          "origin": "fresh official baseline reproduction",
+          "case_sha256": "27a5b017b31d7f5f15e11894bec5c7352fe66446a11106fb918a91140916cbd0"
+        },
+        {
+          "case": "case_05",
+          "legal": true,
+          "delay": 4197,
+          "sha256": "9661ea48006786ad8efbe53bc8c9821a02a6cc5da1bf56485c1d8d9a21cdf084",
+          "source_run": "20261001T171253.322797Z-suite",
+          "path": "dev/artifacts/incumbents/intro/case_05.sol.json",
+          "origin": "fresh official baseline reproduction",
+          "case_sha256": "bc8121afd69bf79056e4521147ee7b92f5c95714b3c49058dfce7ed0f578d43b"
+        },
+        {
+          "case": "case_06",
+          "legal": true,
+          "delay": 6155,
+          "sha256": "e44d70ef026cdb853cf687dea9f37700db07d73fc562882a31ea7e4ecc4f64ba",
+          "source_run": "20261001T171253.322797Z-suite",
+          "path": "dev/artifacts/incumbents/intro/case_06.sol.json",
+          "origin": "fresh official baseline reproduction",
+          "case_sha256": "b3b28f8640b5470534cc942036e7fd71ffb42f6638c366b5674eddd9499b9614"
+        },
+        {
+          "case": "case_07",
+          "legal": true,
+          "delay": 5855,
+          "sha256": "0746473a106ed64cb38a0baf4ccad16fa28e18990fd3aed1688814c96df47b5f",
+          "source_run": "20261001T171253.322797Z-suite",
+          "path": "dev/artifacts/incumbents/intro/case_07.sol.json",
+          "origin": "fresh official baseline reproduction",
+          "case_sha256": "ce99efb6e9dbb4e1d5a4891732b033636de49e734e027aff4db29aa744e556db"
+        },
+        {
+          "case": "case_08",
+          "legal": true,
+          "delay": 8549,
+          "sha256": "43fb40d15d279915bff8dad4e3acc872ecb0259144a90f29c30cdd37c1fb6682",
+          "source_run": "20261001T171253.322797Z-suite",
+          "path": "dev/artifacts/incumbents/intro/case_08.sol.json",
+          "origin": "fresh official baseline reproduction",
+          "case_sha256": "485c0189d09ddfd5ba716a4e8d2266674ea2f715855c7fbe9ca3bba09f55103f"
+        },
+        {
+          "case": "case_09",
+          "legal": true,
+          "delay": 9728,
+          "sha256": "163d72a57509e6212fa5bceec83d2980e4c51ba8b367523e1064b19e2a78baac",
+          "source_run": "20261001T171253.322797Z-suite",
+          "path": "dev/artifacts/incumbents/intro/case_09.sol.json",
+          "origin": "fresh official baseline reproduction",
+          "case_sha256": "343f80021db5f9b94c8701e93cc57af504aeaee4fb84849ffb4d171e13c2af6c"
+        },
+        {
+          "case": "case_10",
+          "legal": true,
+          "delay": 11969,
+          "sha256": "e0dd03093a801b5c18d70c8efb485cdff7460b5a98ac88ff52b94c6a3454f91f",
+          "source_run": "20261001T171253.322797Z-suite",
+          "path": "dev/artifacts/incumbents/intro/case_10.sol.json",
+          "origin": "fresh official baseline reproduction",
+          "case_sha256": "a4c94e920951032e8a2d28face6a24cbb9061c9c69d5852eddce4495adfd444d"
+        },
+        {
+          "case": "case_11",
+          "legal": true,
+          "delay": 14142,
+          "sha256": "ba113c45fd2a4a9d8b0d38136b7e50226489f2294d0f78d08c74e535478b7f66",
+          "source_run": "20261001T171253.322797Z-suite",
+          "path": "dev/artifacts/incumbents/intro/case_11.sol.json",
+          "origin": "fresh official baseline reproduction",
+          "case_sha256": "de941ab2da09af4b577b916440b4a5488f5a911c7f93b99cbeefe65f24378f99"
+        },
+        {
+          "case": "case_12",
+          "legal": true,
+          "delay": 18509,
+          "sha256": "87d3b87b6ea390ec694f0a8fb25dc2f4fa991c8f2f5d7d34f97a1b0192855f38",
+          "source_run": "20261001T171253.322797Z-suite",
+          "path": "dev/artifacts/incumbents/intro/case_12.sol.json",
+          "origin": "fresh official baseline reproduction",
+          "case_sha256": "2ed0461460276127a0777473b75c370bc005833f5645c4d836d9e41d8c3c7ecf"
+        },
+        {
+          "case": "case_13",
+          "legal": true,
+          "delay": 22599,
+          "sha256": "67f19236e91704511ce469e7c46227f021714c2bf2e8e9a639dfd8c9b0f3c361",
+          "source_run": "20261001T171253.322797Z-suite",
+          "path": "dev/artifacts/incumbents/intro/case_13.sol.json",
+          "origin": "fresh official baseline reproduction",
+          "case_sha256": "f413841a7b40da4ef52825684b9b3faa4ebabc74b0463c873f0aab8090c5c77e"
+        },
+        {
+          "case": "case_14",
+          "legal": true,
+          "delay": 24481,
+          "sha256": "a3f39820c1de7b917814ff615ab1ca5adad896a53ba647ca33a8c4d4aa9322be",
+          "source_run": "20261001T171253.322797Z-suite",
+          "path": "dev/artifacts/incumbents/intro/case_14.sol.json",
+          "origin": "fresh official baseline reproduction",
+          "case_sha256": "18a2f4f7453e613146247e88ce84880048142657c570c3d7a7787e265b2f2a40"
+        },
+        {
+          "case": "case_15",
+          "legal": true,
+          "delay": 27648,
+          "sha256": "f248360da04c099fa509f15a051acb43122ba498f4747c34db3eee24b10a5a03",
+          "source_run": "20261001T171253.322797Z-suite",
+          "path": "dev/artifacts/incumbents/intro/case_15.sol.json",
+          "origin": "fresh official baseline reproduction",
+          "case_sha256": "986db029f111f85749f2ddfaddd8aa897a7377ef7c72cb00c0b1bb88eb378e9d"
+        },
+        {
+          "case": "case_16",
+          "legal": true,
+          "delay": 37902,
+          "sha256": "c86d8a3ba8d193986243ac6be14f012e59e0381738897bcd54ca27ac9885374d",
+          "source_run": "20261001T171253.322797Z-suite",
+          "path": "dev/artifacts/incumbents/intro/case_16.sol.json",
+          "origin": "fresh official baseline reproduction",
+          "case_sha256": "80606ec42f5ae064b1c25222752ecaa01684f94f9eae7ba359b81209951ec62d"
+        },
+        {
+          "case": "case_17",
+          "legal": true,
+          "delay": 49554,
+          "sha256": "8d02fdd2661538b547b9d1d6d9345920975b51a20288b189dc5a74998a33b61a",
+          "source_run": "20261001T171253.322797Z-suite",
+          "path": "dev/artifacts/incumbents/intro/case_17.sol.json",
+          "origin": "fresh official baseline reproduction",
+          "case_sha256": "df56b2ecda8fdff6175df01d4e3a74f999fa7a289bd289e9763ea65a7c18add7"
+        },
+        {
+          "case": "case_18",
+          "legal": true,
+          "delay": 53805,
+          "sha256": "12412a31748846c4653a24aa839ed00414bc16bf46d881126eb4df5cd8ecf34f",
+          "source_run": "20261001T171253.322797Z-suite",
+          "path": "dev/artifacts/incumbents/intro/case_18.sol.json",
+          "origin": "fresh official baseline reproduction",
+          "case_sha256": "209f64bb32263e7e4db36f997d4113d08ba88b7bfd9b62f49a173c24080a0136"
+        },
+        {
+          "case": "case_19",
+          "legal": true,
+          "delay": 45488,
+          "sha256": "7786b629c113da66c29361bcf74b78c7f77ebc86e7b1444a54adc5bcbf6faa06",
+          "source_run": "20261001T171253.322797Z-suite",
+          "path": "dev/artifacts/incumbents/intro/case_19.sol.json",
+          "origin": "fresh official baseline reproduction",
+          "case_sha256": "97b2f17901d53d2dad2f102893ab4e687a194c219e39af985fd960104cf0a7b5"
+        },
+        {
+          "case": "case_20",
+          "legal": true,
+          "delay": 51660,
+          "sha256": "fc46b8e10dc1dd0353f32c7ac9f9e92a456fb2e7893ca88198b6a08bc8284428",
+          "source_run": "20261001T171253.322797Z-suite",
+          "path": "dev/artifacts/incumbents/intro/case_20.sol.json",
+          "origin": "fresh official baseline reproduction",
+          "case_sha256": "c701d3fc484a2d4a77c9e7bfdba030174a445c7e07ec2797d2f797d21b6241fb"
+        }
+      ]
+    },
+    "hard": {
+      "baseline_reproduction": {
+        "format": "m3d-leaderboard",
+        "complete": true,
+        "aggregate_score": 1.0,
+        "n_cases": 9,
+        "n_legal": 9,
+        "formula": "aggregate = geomean_c(baseline_total_c / submission_total_c); higher is better; baseline scores 1.0; all cases must be legal for a complete ranked submission (else aggregate = 0.0)",
+        "cases": [
+          {
+            "case": "case_01",
+            "legal": true,
+            "total_delay": 11938,
+            "baseline_delay": 11938,
+            "ratio": 1.0,
+            "runtime_s": 3.855,
+            "reasons": []
+          },
+          {
+            "case": "case_02",
+            "legal": true,
+            "total_delay": 18910,
+            "baseline_delay": 18910,
+            "ratio": 1.0,
+            "runtime_s": 5.415,
+            "reasons": []
+          },
+          {
+            "case": "case_03",
+            "legal": true,
+            "total_delay": 14724,
+            "baseline_delay": 14724,
+            "ratio": 1.0,
+            "runtime_s": 5.538,
+            "reasons": []
+          },
+          {
+            "case": "case_04",
+            "legal": true,
+            "total_delay": 18077,
+            "baseline_delay": 18077,
+            "ratio": 1.0,
+            "runtime_s": 10.27,
+            "reasons": []
+          },
+          {
+            "case": "case_05",
+            "legal": true,
+            "total_delay": 21051,
+            "baseline_delay": 21051,
+            "ratio": 1.0,
+            "runtime_s": 11.036,
+            "reasons": []
+          },
+          {
+            "case": "case_06",
+            "legal": true,
+            "total_delay": 27134,
+            "baseline_delay": 27134,
+            "ratio": 1.0,
+            "runtime_s": 10.765,
+            "reasons": []
+          },
+          {
+            "case": "case_07",
+            "legal": true,
+            "total_delay": 31341,
+            "baseline_delay": 31341,
+            "ratio": 1.0,
+            "runtime_s": 13.296,
+            "reasons": []
+          },
+          {
+            "case": "case_08",
+            "legal": true,
+            "total_delay": 30886,
+            "baseline_delay": 30886,
+            "ratio": 1.0,
+            "runtime_s": 19.88,
+            "reasons": []
+          },
+          {
+            "case": "case_09",
+            "legal": true,
+            "total_delay": 27802,
+            "baseline_delay": 27802,
+            "ratio": 1.0,
+            "runtime_s": 17.271,
+            "reasons": []
+          }
+        ]
+      },
+      "source_run": "20261001T171522.463214Z-suite",
+      "incumbents": [
+        {
+          "case": "case_01",
+          "legal": true,
+          "delay": 11938,
+          "sha256": "c54d48a91458c8ab1ebba0e1e3a7f5cc2deeaa8a32e6f403040046e8e3a86586",
+          "source_run": "20261001T171522.463214Z-suite",
+          "path": "dev/artifacts/incumbents/hard/case_01.sol.json",
+          "origin": "fresh official baseline reproduction",
+          "case_sha256": "685a165a7a15811dff12839e0dbe79752b889558213f760ad5f0df6139766f5d"
+        },
+        {
+          "case": "case_02",
+          "legal": true,
+          "delay": 18910,
+          "sha256": "5b9e8cfe94b8acd17c053d1fe973fe99d25863778c94631e90d85206c880773f",
+          "source_run": "20261001T171522.463214Z-suite",
+          "path": "dev/artifacts/incumbents/hard/case_02.sol.json",
+          "origin": "fresh official baseline reproduction",
+          "case_sha256": "1017b8aac77273a25186858bf39dd66293d56aecebfc7b0e1f5a19c66a2d6c2e"
+        },
+        {
+          "case": "case_03",
+          "legal": true,
+          "delay": 14724,
+          "sha256": "79e90e4a6d5842ea2b39930e2805a5ff383d00719a201de119295a4693070f49",
+          "source_run": "20261001T171522.463214Z-suite",
+          "path": "dev/artifacts/incumbents/hard/case_03.sol.json",
+          "origin": "fresh official baseline reproduction",
+          "case_sha256": "4783af0f84289f7d48d70b7428d2f7b8fbcdefaf2bdfca2bac237e874bd97858"
+        },
+        {
+          "case": "case_04",
+          "legal": true,
+          "delay": 18077,
+          "sha256": "7389750115ef767effc939b46fa6fa0b65e36e4080dceea9559c5cca11c5ef00",
+          "source_run": "20261001T171522.463214Z-suite",
+          "path": "dev/artifacts/incumbents/hard/case_04.sol.json",
+          "origin": "fresh official baseline reproduction",
+          "case_sha256": "06324939b75971e45caa9e7f19d824a254e0f61167dd6b279bbff612d77d96f1"
+        },
+        {
+          "case": "case_05",
+          "legal": true,
+          "delay": 21051,
+          "sha256": "8c0e127c63b922b3b7d2783e9b99d7079f0885d77197f81f73d70281963ef76f",
+          "source_run": "20261001T171522.463214Z-suite",
+          "path": "dev/artifacts/incumbents/hard/case_05.sol.json",
+          "origin": "fresh official baseline reproduction",
+          "case_sha256": "51e44c96f14e5d3229047d6ee5ba2aa0faee94fb208f3f9e716310a0620306a1"
+        },
+        {
+          "case": "case_06",
+          "legal": true,
+          "delay": 27134,
+          "sha256": "c9b70c700261d5e5a5c7b1090c0bbfd917711b18e4f3abe6d05c1a4ba6b4abe3",
+          "source_run": "20261001T171522.463214Z-suite",
+          "path": "dev/artifacts/incumbents/hard/case_06.sol.json",
+          "origin": "fresh official baseline reproduction",
+          "case_sha256": "612b2680497826836de4d9553d8dc95d53f1d46fe07858cfdb74e43ce5582cba"
+        },
+        {
+          "case": "case_07",
+          "legal": true,
+          "delay": 31341,
+          "sha256": "e2db20cf67d49e91082dda0f9d08debbfe44077f55c107015b9b210ae1608fe2",
+          "source_run": "20261001T171522.463214Z-suite",
+          "path": "dev/artifacts/incumbents/hard/case_07.sol.json",
+          "origin": "fresh official baseline reproduction",
+          "case_sha256": "e3475bed19f53670482b4b864a276c475b47e1cac7237d8fa26eeb48714de8f0"
+        },
+        {
+          "case": "case_08",
+          "legal": true,
+          "delay": 30886,
+          "sha256": "3f116c867d820398be735c9c0b85b769be900be3d44c11e51db9be669cb25233",
+          "source_run": "20261001T171522.463214Z-suite",
+          "path": "dev/artifacts/incumbents/hard/case_08.sol.json",
+          "origin": "fresh official baseline reproduction",
+          "case_sha256": "b1dbc8ed8aab7cbb457987f4b8a877b9c2adda8575b326d9822523f090cec1f2"
+        },
+        {
+          "case": "case_09",
+          "legal": true,
+          "delay": 27802,
+          "sha256": "668ddc450ba84b6d25dee8ffb4a2030330e29dd9eeda49979480861f44eb2c6b",
+          "source_run": "20261001T171522.463214Z-suite",
+          "path": "dev/artifacts/incumbents/hard/case_09.sol.json",
+          "origin": "fresh official baseline reproduction",
+          "case_sha256": "bcbd72a7bb47ec5c5f82428573ffabdb932594c4b574d552808851617b05f6c1"
+        }
+      ],
+      "public_comparison": {
+        "format": "m3d-leaderboard",
+        "complete": true,
+        "aggregate_score": 1.387366331135629,
+        "n_cases": 9,
+        "n_legal": 9,
+        "formula": "aggregate = geomean_c(baseline_total_c / submission_total_c); higher is better; baseline scores 1.0; all cases must be legal for a complete ranked submission (else aggregate = 0.0)",
+        "cases": [
+          {
+            "case": "case_01",
+            "legal": true,
+            "total_delay": 8666,
+            "baseline_delay": 11938,
+            "ratio": 1.3775675051927072,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_02",
+            "legal": true,
+            "total_delay": 13156,
+            "baseline_delay": 18910,
+            "ratio": 1.4373669808452416,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_03",
+            "legal": true,
+            "total_delay": 11074,
+            "baseline_delay": 14724,
+            "ratio": 1.3296008668954307,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_04",
+            "legal": true,
+            "total_delay": 13059,
+            "baseline_delay": 18077,
+            "ratio": 1.3842560686116854,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_05",
+            "legal": true,
+            "total_delay": 15211,
+            "baseline_delay": 21051,
+            "ratio": 1.3839326802971534,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_06",
+            "legal": true,
+            "total_delay": 19786,
+            "baseline_delay": 27134,
+            "ratio": 1.3713736985747498,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_07",
+            "legal": true,
+            "total_delay": 21295,
+            "baseline_delay": 31341,
+            "ratio": 1.4717539328480864,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_08",
+            "legal": true,
+            "total_delay": 21432,
+            "baseline_delay": 30886,
+            "ratio": 1.4411160880925717,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_09",
+            "legal": true,
+            "total_delay": 21418,
+            "baseline_delay": 27802,
+            "ratio": 1.298067046409562,
+            "runtime_s": null,
+            "reasons": []
+          }
+        ]
+      },
+      "reference_rescore": {
+        "format": "m3d-leaderboard",
+        "complete": true,
+        "aggregate_score": 1.0,
+        "n_cases": 9,
+        "n_legal": 9,
+        "formula": "aggregate = geomean_c(baseline_total_c / submission_total_c); higher is better; baseline scores 1.0; all cases must be legal for a complete ranked submission (else aggregate = 0.0)",
+        "cases": [
+          {
+            "case": "case_01",
+            "legal": true,
+            "total_delay": 11938,
+            "baseline_delay": 11938,
+            "ratio": 1.0,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_02",
+            "legal": true,
+            "total_delay": 18910,
+            "baseline_delay": 18910,
+            "ratio": 1.0,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_03",
+            "legal": true,
+            "total_delay": 14724,
+            "baseline_delay": 14724,
+            "ratio": 1.0,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_04",
+            "legal": true,
+            "total_delay": 18077,
+            "baseline_delay": 18077,
+            "ratio": 1.0,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_05",
+            "legal": true,
+            "total_delay": 21051,
+            "baseline_delay": 21051,
+            "ratio": 1.0,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_06",
+            "legal": true,
+            "total_delay": 27134,
+            "baseline_delay": 27134,
+            "ratio": 1.0,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_07",
+            "legal": true,
+            "total_delay": 31341,
+            "baseline_delay": 31341,
+            "ratio": 1.0,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_08",
+            "legal": true,
+            "total_delay": 30886,
+            "baseline_delay": 30886,
+            "ratio": 1.0,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_09",
+            "legal": true,
+            "total_delay": 27802,
+            "baseline_delay": 27802,
+            "ratio": 1.0,
+            "runtime_s": null,
+            "reasons": []
+          }
+        ]
+      },
+      "best_observed_in_this_audit": {
+        "method": "PR3 pathfinder_lns",
+        "aggregate": 1.387366331135629,
+        "note": "public output quality; not our solver or a claim of latest/global best"
+      }
+    }
+  },
+  "public_provenance": {
+    "pr": "https://github.com/partcleda/eda-3d-routing-challenge/pull/3",
+    "head": "4e21227867ee1f8f72c9f4d9ad446e05c20fe452",
+    "repository": "Taz33m/eda-3d-routing-challenge",
+    "state": "open",
+    "method": "pathfinder_lns",
+    "retrieved_utc": "2026-10-01T17:18:46.860836+00:00",
+    "description": "Adds `pathfinder_lns` to all six tiers. All 45 cases are legal under `m3d/checker.py`. Only `submissions/**` and the regenerated `LEADERBOARD.md` are changed.\n\n## Results\n\n| Tier | Legal | Aggregate | Total delay | Baseline delay |\n|---|:---:|---:|---:|---:|\n| hard | 9/9 | **1.3874** | 145,097 | 201,863 |\n| designs | 3/3 | **1.4328** | 209,561 | 307,923 |\n| congested | 4/4 | **1.3083** | 491,527 | 644,545 |\n| intro | 20/20 | **1.1508** | 342,012 | 397,590 |\n| scale | 8/8 | **1.1272** | 537,654 | 604,408 |\n| stress | 1/1 | **1.0911** | 1,049,344 | 1,144,904 |\n\nAggregate is the official geometric mean of baseline delay over submission delay (baseline = 1.0). Every route comes from this router's own runs; no other entry's routes are used as starting points.\n\n## Method\n\nA C++17 router, single-threaded per run.\n\n1. **Shortest-path trees.** The score sums every sink's driver-to-sink delay, so each net is grown as a shortest-path tree: sinks are attached one at a time by multi-source A\\* seeded with each tree vertex's delay from the driver.\n2. **Fanout-aware negotiation.** PathFinder-style negotiated congestion with cost `(w + h)\u00b7(1 + p\u00b7occ)` and gently capped pressure. Congestion terms are scaled per net by `sinks^-0.5`: a trunk vertex counts once per downstream sink, so single-sink nets yield the contested middle layers to high-fanout trunks.\n3. **Exact reroute.** Once legal, each net is rerouted to its exact shortest-path tree with every other net fixed, repeated until no net improves.\n4. **Large-neighbourhood search.** Pick a net far above its own lower bound, rip up the nets crossing a small window on its route, reroute the seed and then only the nets it now conflicts with, re-optimize each exactly, and keep the change if total delay does not increase.\n5. **Multi-start and continuation.** Several seeds per case; the best few distinct solutions are reloaded and searched further, partly with a faster search core (exact integer A\\* keys on a radix queue).\n\n## Runtime\n\n`runtime.json` is total compute: wall-clock seconds summed over every run tried for that case, on an 18-core laptop with runs in parallel. The hard entry has no `runtime.json`: `tests/test_leaderboard.py` pins the hard-tier Pareto frontier to the two reference entries, so any lower-delay entry with a runtime fails CI. Hard used about 30 core-hours in total.\n\n## Verification\n\n`python scripts/verify_submissions.py`, `python -m m3d.cli leaderboard-all --check` and `python -m unittest discover -s tests -q` (43 tests) all pass locally, and the same `submissions` workflow passes on the fork. Router source is available on request.\n",
+    "extra_source_paths": [],
+    "scope": "hard-tier route artifacts; no solver execution or reproduction",
+    "files": {
+      "submissions/hard/pathfinder_lns/case_01.sol.json": {
+        "url": "https://raw.githubusercontent.com/Taz33m/eda-3d-routing-challenge/4e21227867ee1f8f72c9f4d9ad446e05c20fe452/submissions/hard/pathfinder_lns/case_01.sol.json",
+        "sha256": "afc85979e54971d7348de713eff2d962ea14c171f1053a82f2e4ca02d2a10c60",
+        "git_blob": "7cab5ee568d200c5479e224f04bacf2b2a72a7b8"
+      },
+      "submissions/hard/pathfinder_lns/case_02.sol.json": {
+        "url": "https://raw.githubusercontent.com/Taz33m/eda-3d-routing-challenge/4e21227867ee1f8f72c9f4d9ad446e05c20fe452/submissions/hard/pathfinder_lns/case_02.sol.json",
+        "sha256": "e2290195b3da471f897d4ce7caf604fb1798e79a435b105416183a6ecb2372c8",
+        "git_blob": "ab57661a15a838bcdaed2c232409753c8112ec7d"
+      },
+      "submissions/hard/pathfinder_lns/case_03.sol.json": {
+        "url": "https://raw.githubusercontent.com/Taz33m/eda-3d-routing-challenge/4e21227867ee1f8f72c9f4d9ad446e05c20fe452/submissions/hard/pathfinder_lns/case_03.sol.json",
+        "sha256": "81e7edac970637d52ca6506279d4c8b349411bea36527ba4c1dcb99172c13904",
+        "git_blob": "1e60ecc8fb63e679aa5a245cc27a7e95f4138cda"
+      },
+      "submissions/hard/pathfinder_lns/case_04.sol.json": {
+        "url": "https://raw.githubusercontent.com/Taz33m/eda-3d-routing-challenge/4e21227867ee1f8f72c9f4d9ad446e05c20fe452/submissions/hard/pathfinder_lns/case_04.sol.json",
+        "sha256": "98c9675147c09c980be238ce4e45603d879a2bd84d14bdaee940190aa2030834",
+        "git_blob": "d5aa2b93e0470f3b354284137b2dd46fcaf56f73"
+      },
+      "submissions/hard/pathfinder_lns/case_05.sol.json": {
+        "url": "https://raw.githubusercontent.com/Taz33m/eda-3d-routing-challenge/4e21227867ee1f8f72c9f4d9ad446e05c20fe452/submissions/hard/pathfinder_lns/case_05.sol.json",
+        "sha256": "99f99445deed64ba19302ef6861ca5efd4895d27572319e673f169570234113e",
+        "git_blob": "9f70efabb263fd38ba70b9fa3d8c6f17f51818a6"
+      },
+      "submissions/hard/pathfinder_lns/case_06.sol.json": {
+        "url": "https://raw.githubusercontent.com/Taz33m/eda-3d-routing-challenge/4e21227867ee1f8f72c9f4d9ad446e05c20fe452/submissions/hard/pathfinder_lns/case_06.sol.json",
+        "sha256": "d54e15ed97954b2581aeec0b5563b2c74a13cbd7d663c91061fad548c1df8afb",
+        "git_blob": "d5387ee4173ebc0a7eea040dc7fe4640b8580271"
+      },
+      "submissions/hard/pathfinder_lns/case_07.sol.json": {
+        "url": "https://raw.githubusercontent.com/Taz33m/eda-3d-routing-challenge/4e21227867ee1f8f72c9f4d9ad446e05c20fe452/submissions/hard/pathfinder_lns/case_07.sol.json",
+        "sha256": "50d0b2e0f769e69f3c14d7c137cfe1c4fbde69e661a4931e1dfe3274567aad2a",
+        "git_blob": "562194580a25cdbd740ef7c1059e5dd1553b615b"
+      },
+      "submissions/hard/pathfinder_lns/case_08.sol.json": {
+        "url": "https://raw.githubusercontent.com/Taz33m/eda-3d-routing-challenge/4e21227867ee1f8f72c9f4d9ad446e05c20fe452/submissions/hard/pathfinder_lns/case_08.sol.json",
+        "sha256": "92f525870e48d22c64362a06fa94e7fa31551a6b298e556abf18148b93526a6e",
+        "git_blob": "268d1c4e5ea6f63bf8eaceb055a238ca43a48a86"
+      },
+      "submissions/hard/pathfinder_lns/case_09.sol.json": {
+        "url": "https://raw.githubusercontent.com/Taz33m/eda-3d-routing-challenge/4e21227867ee1f8f72c9f4d9ad446e05c20fe452/submissions/hard/pathfinder_lns/case_09.sol.json",
+        "sha256": "0ae09fe306507f649b14b3aebb7f88c1c6419d9fecdb0dab9b8c2a9df92a05ba",
+        "git_blob": "942d3b6d8340747770140edb1408e3a9afa29423"
+      },
+      "submissions/hard/pathfinder_lns/meta.json": {
+        "url": "https://raw.githubusercontent.com/Taz33m/eda-3d-routing-challenge/4e21227867ee1f8f72c9f4d9ad446e05c20fe452/submissions/hard/pathfinder_lns/meta.json",
+        "sha256": "9b6ce131bacd9f6960757ec638e134aa287a57bcd687fe50e1513cfe6a9adb6d",
+        "git_blob": "9552bd7e258b06e9e69312f71fbee799c8811edf"
+      }
+    }
+  }
+}

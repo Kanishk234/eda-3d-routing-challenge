@@ -1,0 +1,1308 @@
+{
+  "revision": "499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+  "tiers": {
+    "intro": {
+      "directory": "benchmarks",
+      "n_cases": 20,
+      "suite_sha256": "45fb2aa4ff4d456590364323075f774eb08211c93e29c2120ecb4a171882d2fa",
+      "cases": [
+        {
+          "name": "case_01",
+          "grid": {
+            "width": 16,
+            "height": 16,
+            "layers": 6
+          },
+          "n_vertices": 1536,
+          "n_nets": 6,
+          "n_pins": 14,
+          "seed": 741772126,
+          "delay": {
+            "layer_delay": [
+              6,
+              4,
+              2,
+              2,
+              4,
+              6
+            ],
+            "via_delay": 3
+          },
+          "baseline_delay": 240,
+          "case_sha256": "cc44aff1a21f0d4854ced9d550e95d4a77f6f475b6be0f3eec0416b070625b8c",
+          "reference_sha256": "4dc529988bacf55df471330bc2196ff748e5822cdc2c3e22ed9e1bc5c1ca3db2",
+          "instance_file": "case_01.json",
+          "reference_file": "reference/case_01.sol.json"
+        },
+        {
+          "name": "case_02",
+          "grid": {
+            "width": 20,
+            "height": 20,
+            "layers": 6
+          },
+          "n_vertices": 2400,
+          "n_nets": 13,
+          "n_pins": 42,
+          "seed": 529577928,
+          "delay": {
+            "layer_delay": [
+              6,
+              4,
+              2,
+              2,
+              4,
+              6
+            ],
+            "via_delay": 3
+          },
+          "baseline_delay": 1190,
+          "case_sha256": "169d1850ef77912297e3db307ff29c6b86db307e3ea846bafd6d771f147e848a",
+          "reference_sha256": "dbe6076c9f87368bae064aa5268f1bb0c5824798a53d02dfecba34b50660d45e",
+          "instance_file": "case_02.json",
+          "reference_file": "reference/case_02.sol.json"
+        },
+        {
+          "name": "case_03",
+          "grid": {
+            "width": 24,
+            "height": 24,
+            "layers": 6
+          },
+          "n_vertices": 3456,
+          "n_nets": 20,
+          "n_pins": 52,
+          "seed": 629102900,
+          "delay": {
+            "layer_delay": [
+              6,
+              4,
+              2,
+              2,
+              4,
+              6
+            ],
+            "via_delay": 3
+          },
+          "baseline_delay": 1757,
+          "case_sha256": "192bf94aa004b19e166888ca61ae6b6cbc0900d0f4bb108b7421494e2e85c460",
+          "reference_sha256": "eadb82f2cbb59009d3f1c6f6ddf0136111ae6c30881ec63b9d900aa50d74a1ad",
+          "instance_file": "case_03.json",
+          "reference_file": "reference/case_03.sol.json"
+        },
+        {
+          "name": "case_04",
+          "grid": {
+            "width": 28,
+            "height": 28,
+            "layers": 6
+          },
+          "n_vertices": 4704,
+          "n_nets": 27,
+          "n_pins": 62,
+          "seed": 794998562,
+          "delay": {
+            "layer_delay": [
+              6,
+              4,
+              2,
+              2,
+              4,
+              6
+            ],
+            "via_delay": 3
+          },
+          "baseline_delay": 2162,
+          "case_sha256": "27a5b017b31d7f5f15e11894bec5c7352fe66446a11106fb918a91140916cbd0",
+          "reference_sha256": "121f52885e120215ed4f4a9a19b886df32f8ad558c80acf44ce490f36350f42d",
+          "instance_file": "case_04.json",
+          "reference_file": "reference/case_04.sol.json"
+        },
+        {
+          "name": "case_05",
+          "grid": {
+            "width": 32,
+            "height": 32,
+            "layers": 6
+          },
+          "n_vertices": 6144,
+          "n_nets": 34,
+          "n_pins": 95,
+          "seed": 1687309476,
+          "delay": {
+            "layer_delay": [
+              6,
+              4,
+              2,
+              2,
+              4,
+              6
+            ],
+            "via_delay": 3
+          },
+          "baseline_delay": 4197,
+          "case_sha256": "bc8121afd69bf79056e4521147ee7b92f5c95714b3c49058dfce7ed0f578d43b",
+          "reference_sha256": "9661ea48006786ad8efbe53bc8c9821a02a6cc5da1bf56485c1d8d9a21cdf084",
+          "instance_file": "case_05.json",
+          "reference_file": "reference/case_05.sol.json"
+        },
+        {
+          "name": "case_06",
+          "grid": {
+            "width": 36,
+            "height": 36,
+            "layers": 6
+          },
+          "n_vertices": 7776,
+          "n_nets": 41,
+          "n_pins": 138,
+          "seed": 2072757730,
+          "delay": {
+            "layer_delay": [
+              6,
+              4,
+              2,
+              2,
+              4,
+              6
+            ],
+            "via_delay": 3
+          },
+          "baseline_delay": 6155,
+          "case_sha256": "b3b28f8640b5470534cc942036e7fd71ffb42f6638c366b5674eddd9499b9614",
+          "reference_sha256": "e44d70ef026cdb853cf687dea9f37700db07d73fc562882a31ea7e4ecc4f64ba",
+          "instance_file": "case_06.json",
+          "reference_file": "reference/case_06.sol.json"
+        },
+        {
+          "name": "case_07",
+          "grid": {
+            "width": 40,
+            "height": 40,
+            "layers": 6
+          },
+          "n_vertices": 9600,
+          "n_nets": 48,
+          "n_pins": 126,
+          "seed": 527901100,
+          "delay": {
+            "layer_delay": [
+              6,
+              4,
+              2,
+              2,
+              4,
+              6
+            ],
+            "via_delay": 3
+          },
+          "baseline_delay": 5855,
+          "case_sha256": "ce99efb6e9dbb4e1d5a4891732b033636de49e734e027aff4db29aa744e556db",
+          "reference_sha256": "0746473a106ed64cb38a0baf4ccad16fa28e18990fd3aed1688814c96df47b5f",
+          "instance_file": "case_07.json",
+          "reference_file": "reference/case_07.sol.json"
+        },
+        {
+          "name": "case_08",
+          "grid": {
+            "width": 44,
+            "height": 44,
+            "layers": 6
+          },
+          "n_vertices": 11616,
+          "n_nets": 55,
+          "n_pins": 155,
+          "seed": 904807500,
+          "delay": {
+            "layer_delay": [
+              6,
+              4,
+              2,
+              2,
+              4,
+              6
+            ],
+            "via_delay": 3
+          },
+          "baseline_delay": 8549,
+          "case_sha256": "485c0189d09ddfd5ba716a4e8d2266674ea2f715855c7fbe9ca3bba09f55103f",
+          "reference_sha256": "43fb40d15d279915bff8dad4e3acc872ecb0259144a90f29c30cdd37c1fb6682",
+          "instance_file": "case_08.json",
+          "reference_file": "reference/case_08.sol.json"
+        },
+        {
+          "name": "case_09",
+          "grid": {
+            "width": 48,
+            "height": 48,
+            "layers": 6
+          },
+          "n_vertices": 13824,
+          "n_nets": 62,
+          "n_pins": 182,
+          "seed": 1059990312,
+          "delay": {
+            "layer_delay": [
+              6,
+              4,
+              2,
+              2,
+              4,
+              6
+            ],
+            "via_delay": 3
+          },
+          "baseline_delay": 9728,
+          "case_sha256": "343f80021db5f9b94c8701e93cc57af504aeaee4fb84849ffb4d171e13c2af6c",
+          "reference_sha256": "163d72a57509e6212fa5bceec83d2980e4c51ba8b367523e1064b19e2a78baac",
+          "instance_file": "case_09.json",
+          "reference_file": "reference/case_09.sol.json"
+        },
+        {
+          "name": "case_10",
+          "grid": {
+            "width": 52,
+            "height": 52,
+            "layers": 6
+          },
+          "n_vertices": 16224,
+          "n_nets": 69,
+          "n_pins": 210,
+          "seed": 437484193,
+          "delay": {
+            "layer_delay": [
+              6,
+              4,
+              2,
+              2,
+              4,
+              6
+            ],
+            "via_delay": 3
+          },
+          "baseline_delay": 11969,
+          "case_sha256": "a4c94e920951032e8a2d28face6a24cbb9061c9c69d5852eddce4495adfd444d",
+          "reference_sha256": "e0dd03093a801b5c18d70c8efb485cdff7460b5a98ac88ff52b94c6a3454f91f",
+          "instance_file": "case_10.json",
+          "reference_file": "reference/case_10.sol.json"
+        },
+        {
+          "name": "case_11",
+          "grid": {
+            "width": 56,
+            "height": 56,
+            "layers": 6
+          },
+          "n_vertices": 18816,
+          "n_nets": 76,
+          "n_pins": 240,
+          "seed": 58496533,
+          "delay": {
+            "layer_delay": [
+              6,
+              4,
+              2,
+              2,
+              4,
+              6
+            ],
+            "via_delay": 3
+          },
+          "baseline_delay": 14142,
+          "case_sha256": "de941ab2da09af4b577b916440b4a5488f5a911c7f93b99cbeefe65f24378f99",
+          "reference_sha256": "ba113c45fd2a4a9d8b0d38136b7e50226489f2294d0f78d08c74e535478b7f66",
+          "instance_file": "case_11.json",
+          "reference_file": "reference/case_11.sol.json"
+        },
+        {
+          "name": "case_12",
+          "grid": {
+            "width": 60,
+            "height": 60,
+            "layers": 6
+          },
+          "n_vertices": 21600,
+          "n_nets": 83,
+          "n_pins": 286,
+          "seed": 1727429974,
+          "delay": {
+            "layer_delay": [
+              6,
+              4,
+              2,
+              2,
+              4,
+              6
+            ],
+            "via_delay": 3
+          },
+          "baseline_delay": 18509,
+          "case_sha256": "2ed0461460276127a0777473b75c370bc005833f5645c4d836d9e41d8c3c7ecf",
+          "reference_sha256": "87d3b87b6ea390ec694f0a8fb25dc2f4fa991c8f2f5d7d34f97a1b0192855f38",
+          "instance_file": "case_12.json",
+          "reference_file": "reference/case_12.sol.json"
+        },
+        {
+          "name": "case_13",
+          "grid": {
+            "width": 64,
+            "height": 64,
+            "layers": 6
+          },
+          "n_vertices": 24576,
+          "n_nets": 90,
+          "n_pins": 309,
+          "seed": 1381375653,
+          "delay": {
+            "layer_delay": [
+              6,
+              4,
+              2,
+              2,
+              4,
+              6
+            ],
+            "via_delay": 3
+          },
+          "baseline_delay": 22599,
+          "case_sha256": "f413841a7b40da4ef52825684b9b3faa4ebabc74b0463c873f0aab8090c5c77e",
+          "reference_sha256": "67f19236e91704511ce469e7c46227f021714c2bf2e8e9a639dfd8c9b0f3c361",
+          "instance_file": "case_13.json",
+          "reference_file": "reference/case_13.sol.json"
+        },
+        {
+          "name": "case_14",
+          "grid": {
+            "width": 68,
+            "height": 68,
+            "layers": 6
+          },
+          "n_vertices": 27744,
+          "n_nets": 97,
+          "n_pins": 326,
+          "seed": 70456201,
+          "delay": {
+            "layer_delay": [
+              6,
+              4,
+              2,
+              2,
+              4,
+              6
+            ],
+            "via_delay": 3
+          },
+          "baseline_delay": 24481,
+          "case_sha256": "18a2f4f7453e613146247e88ce84880048142657c570c3d7a7787e265b2f2a40",
+          "reference_sha256": "a3f39820c1de7b917814ff615ab1ca5adad896a53ba647ca33a8c4d4aa9322be",
+          "instance_file": "case_14.json",
+          "reference_file": "reference/case_14.sol.json"
+        },
+        {
+          "name": "case_15",
+          "grid": {
+            "width": 72,
+            "height": 72,
+            "layers": 6
+          },
+          "n_vertices": 31104,
+          "n_nets": 104,
+          "n_pins": 351,
+          "seed": 1114042973,
+          "delay": {
+            "layer_delay": [
+              6,
+              4,
+              2,
+              2,
+              4,
+              6
+            ],
+            "via_delay": 3
+          },
+          "baseline_delay": 27648,
+          "case_sha256": "986db029f111f85749f2ddfaddd8aa897a7377ef7c72cb00c0b1bb88eb378e9d",
+          "reference_sha256": "f248360da04c099fa509f15a051acb43122ba498f4747c34db3eee24b10a5a03",
+          "instance_file": "case_15.json",
+          "reference_file": "reference/case_15.sol.json"
+        },
+        {
+          "name": "case_16",
+          "grid": {
+            "width": 76,
+            "height": 76,
+            "layers": 6
+          },
+          "n_vertices": 34656,
+          "n_nets": 111,
+          "n_pins": 393,
+          "seed": 1842921720,
+          "delay": {
+            "layer_delay": [
+              6,
+              4,
+              2,
+              2,
+              4,
+              6
+            ],
+            "via_delay": 3
+          },
+          "baseline_delay": 37902,
+          "case_sha256": "80606ec42f5ae064b1c25222752ecaa01684f94f9eae7ba359b81209951ec62d",
+          "reference_sha256": "c86d8a3ba8d193986243ac6be14f012e59e0381738897bcd54ca27ac9885374d",
+          "instance_file": "case_16.json",
+          "reference_file": "reference/case_16.sol.json"
+        },
+        {
+          "name": "case_17",
+          "grid": {
+            "width": 80,
+            "height": 80,
+            "layers": 6
+          },
+          "n_vertices": 38400,
+          "n_nets": 118,
+          "n_pins": 469,
+          "seed": 1727577990,
+          "delay": {
+            "layer_delay": [
+              6,
+              4,
+              2,
+              2,
+              4,
+              6
+            ],
+            "via_delay": 3
+          },
+          "baseline_delay": 49554,
+          "case_sha256": "df56b2ecda8fdff6175df01d4e3a74f999fa7a289bd289e9763ea65a7c18add7",
+          "reference_sha256": "8d02fdd2661538b547b9d1d6d9345920975b51a20288b189dc5a74998a33b61a",
+          "instance_file": "case_17.json",
+          "reference_file": "reference/case_17.sol.json"
+        },
+        {
+          "name": "case_18",
+          "grid": {
+            "width": 84,
+            "height": 84,
+            "layers": 6
+          },
+          "n_vertices": 42336,
+          "n_nets": 125,
+          "n_pins": 503,
+          "seed": 449922073,
+          "delay": {
+            "layer_delay": [
+              6,
+              4,
+              2,
+              2,
+              4,
+              6
+            ],
+            "via_delay": 3
+          },
+          "baseline_delay": 53805,
+          "case_sha256": "209f64bb32263e7e4db36f997d4113d08ba88b7bfd9b62f49a173c24080a0136",
+          "reference_sha256": "12412a31748846c4653a24aa839ed00414bc16bf46d881126eb4df5cd8ecf34f",
+          "instance_file": "case_18.json",
+          "reference_file": "reference/case_18.sol.json"
+        },
+        {
+          "name": "case_19",
+          "grid": {
+            "width": 88,
+            "height": 88,
+            "layers": 6
+          },
+          "n_vertices": 46464,
+          "n_nets": 132,
+          "n_pins": 483,
+          "seed": 1107687350,
+          "delay": {
+            "layer_delay": [
+              6,
+              4,
+              2,
+              2,
+              4,
+              6
+            ],
+            "via_delay": 3
+          },
+          "baseline_delay": 45488,
+          "case_sha256": "97b2f17901d53d2dad2f102893ab4e687a194c219e39af985fd960104cf0a7b5",
+          "reference_sha256": "7786b629c113da66c29361bcf74b78c7f77ebc86e7b1444a54adc5bcbf6faa06",
+          "instance_file": "case_19.json",
+          "reference_file": "reference/case_19.sol.json"
+        },
+        {
+          "name": "case_20",
+          "grid": {
+            "width": 92,
+            "height": 92,
+            "layers": 6
+          },
+          "n_vertices": 50784,
+          "n_nets": 139,
+          "n_pins": 514,
+          "seed": 1248940432,
+          "delay": {
+            "layer_delay": [
+              6,
+              4,
+              2,
+              2,
+              4,
+              6
+            ],
+            "via_delay": 3
+          },
+          "baseline_delay": 51660,
+          "case_sha256": "c701d3fc484a2d4a77c9e7bfdba030174a445c7e07ec2797d2f797d21b6241fb",
+          "reference_sha256": "fc46b8e10dc1dd0353f32c7ac9f9e92a456fb2e7893ca88198b6a08bc8284428",
+          "instance_file": "case_20.json",
+          "reference_file": "reference/case_20.sol.json"
+        }
+      ]
+    },
+    "hard": {
+      "directory": "benchmarks_hard",
+      "n_cases": 9,
+      "suite_sha256": "7547781268583f8a0ca59f7f2d5d7f121936e85470dd8f36daa2856f7f094b94",
+      "cases": [
+        {
+          "name": "case_01",
+          "grid": {
+            "width": 24,
+            "height": 24,
+            "layers": 6
+          },
+          "n_vertices": 3456,
+          "n_nets": 62,
+          "n_pins": 196,
+          "seed": 1264516513,
+          "delay": {
+            "layer_delay": [
+              6,
+              4,
+              2,
+              2,
+              4,
+              6
+            ],
+            "via_delay": 3
+          },
+          "baseline_delay": 11938,
+          "case_sha256": "685a165a7a15811dff12839e0dbe79752b889558213f760ad5f0df6139766f5d",
+          "reference_sha256": "c54d48a91458c8ab1ebba0e1e3a7f5cc2deeaa8a32e6f403040046e8e3a86586",
+          "instance_file": "case_01.json",
+          "reference_file": "reference/case_01.sol.json"
+        },
+        {
+          "name": "case_02",
+          "grid": {
+            "width": 26,
+            "height": 26,
+            "layers": 6
+          },
+          "n_vertices": 4056,
+          "n_nets": 68,
+          "n_pins": 246,
+          "seed": 379027409,
+          "delay": {
+            "layer_delay": [
+              6,
+              4,
+              2,
+              2,
+              4,
+              6
+            ],
+            "via_delay": 3
+          },
+          "baseline_delay": 18910,
+          "case_sha256": "1017b8aac77273a25186858bf39dd66293d56aecebfc7b0e1f5a19c66a2d6c2e",
+          "reference_sha256": "5b9e8cfe94b8acd17c053d1fe973fe99d25863778c94631e90d85206c880773f",
+          "instance_file": "case_02.json",
+          "reference_file": "reference/case_02.sol.json"
+        },
+        {
+          "name": "case_03",
+          "grid": {
+            "width": 28,
+            "height": 28,
+            "layers": 6
+          },
+          "n_vertices": 4704,
+          "n_nets": 73,
+          "n_pins": 217,
+          "seed": 1559207362,
+          "delay": {
+            "layer_delay": [
+              6,
+              4,
+              2,
+              2,
+              4,
+              6
+            ],
+            "via_delay": 3
+          },
+          "baseline_delay": 14724,
+          "case_sha256": "4783af0f84289f7d48d70b7428d2f7b8fbcdefaf2bdfca2bac237e874bd97858",
+          "reference_sha256": "79e90e4a6d5842ea2b39930e2805a5ff383d00719a201de119295a4693070f49",
+          "instance_file": "case_03.json",
+          "reference_file": "reference/case_03.sol.json"
+        },
+        {
+          "name": "case_04",
+          "grid": {
+            "width": 30,
+            "height": 30,
+            "layers": 6
+          },
+          "n_vertices": 5400,
+          "n_nets": 78,
+          "n_pins": 244,
+          "seed": 159524408,
+          "delay": {
+            "layer_delay": [
+              6,
+              4,
+              2,
+              2,
+              4,
+              6
+            ],
+            "via_delay": 3
+          },
+          "baseline_delay": 18077,
+          "case_sha256": "06324939b75971e45caa9e7f19d824a254e0f61167dd6b279bbff612d77d96f1",
+          "reference_sha256": "7389750115ef767effc939b46fa6fa0b65e36e4080dceea9559c5cca11c5ef00",
+          "instance_file": "case_04.json",
+          "reference_file": "reference/case_04.sol.json"
+        },
+        {
+          "name": "case_05",
+          "grid": {
+            "width": 32,
+            "height": 32,
+            "layers": 6
+          },
+          "n_vertices": 6144,
+          "n_nets": 83,
+          "n_pins": 283,
+          "seed": 661958188,
+          "delay": {
+            "layer_delay": [
+              6,
+              4,
+              2,
+              2,
+              4,
+              6
+            ],
+            "via_delay": 3
+          },
+          "baseline_delay": 21051,
+          "case_sha256": "51e44c96f14e5d3229047d6ee5ba2aa0faee94fb208f3f9e716310a0620306a1",
+          "reference_sha256": "8c0e127c63b922b3b7d2783e9b99d7079f0885d77197f81f73d70281963ef76f",
+          "instance_file": "case_05.json",
+          "reference_file": "reference/case_05.sol.json"
+        },
+        {
+          "name": "case_06",
+          "grid": {
+            "width": 34,
+            "height": 34,
+            "layers": 6
+          },
+          "n_vertices": 6936,
+          "n_nets": 88,
+          "n_pins": 303,
+          "seed": 1393821884,
+          "delay": {
+            "layer_delay": [
+              6,
+              4,
+              2,
+              2,
+              4,
+              6
+            ],
+            "via_delay": 3
+          },
+          "baseline_delay": 27134,
+          "case_sha256": "612b2680497826836de4d9553d8dc95d53f1d46fe07858cfdb74e43ce5582cba",
+          "reference_sha256": "c9b70c700261d5e5a5c7b1090c0bbfd917711b18e4f3abe6d05c1a4ba6b4abe3",
+          "instance_file": "case_06.json",
+          "reference_file": "reference/case_06.sol.json"
+        },
+        {
+          "name": "case_07",
+          "grid": {
+            "width": 36,
+            "height": 36,
+            "layers": 6
+          },
+          "n_vertices": 7776,
+          "n_nets": 94,
+          "n_pins": 320,
+          "seed": 40327557,
+          "delay": {
+            "layer_delay": [
+              6,
+              4,
+              2,
+              2,
+              4,
+              6
+            ],
+            "via_delay": 3
+          },
+          "baseline_delay": 31341,
+          "case_sha256": "e3475bed19f53670482b4b864a276c475b47e1cac7237d8fa26eeb48714de8f0",
+          "reference_sha256": "e2db20cf67d49e91082dda0f9d08debbfe44077f55c107015b9b210ae1608fe2",
+          "instance_file": "case_07.json",
+          "reference_file": "reference/case_07.sol.json"
+        },
+        {
+          "name": "case_08",
+          "grid": {
+            "width": 38,
+            "height": 38,
+            "layers": 6
+          },
+          "n_vertices": 8664,
+          "n_nets": 99,
+          "n_pins": 326,
+          "seed": 411131539,
+          "delay": {
+            "layer_delay": [
+              6,
+              4,
+              2,
+              2,
+              4,
+              6
+            ],
+            "via_delay": 3
+          },
+          "baseline_delay": 30886,
+          "case_sha256": "b1dbc8ed8aab7cbb457987f4b8a877b9c2adda8575b326d9822523f090cec1f2",
+          "reference_sha256": "3f116c867d820398be735c9c0b85b769be900be3d44c11e51db9be669cb25233",
+          "instance_file": "case_08.json",
+          "reference_file": "reference/case_08.sol.json"
+        },
+        {
+          "name": "case_09",
+          "grid": {
+            "width": 40,
+            "height": 40,
+            "layers": 6
+          },
+          "n_vertices": 9600,
+          "n_nets": 104,
+          "n_pins": 323,
+          "seed": 1129825012,
+          "delay": {
+            "layer_delay": [
+              6,
+              4,
+              2,
+              2,
+              4,
+              6
+            ],
+            "via_delay": 3
+          },
+          "baseline_delay": 27802,
+          "case_sha256": "bcbd72a7bb47ec5c5f82428573ffabdb932594c4b574d552808851617b05f6c1",
+          "reference_sha256": "668ddc450ba84b6d25dee8ffb4a2030330e29dd9eeda49979480861f44eb2c6b",
+          "instance_file": "case_09.json",
+          "reference_file": "reference/case_09.sol.json"
+        }
+      ]
+    },
+    "scale": {
+      "directory": "benchmarks_scale",
+      "n_cases": 8,
+      "suite_sha256": "24a747b59119ffff9994f3883b300564797d0ad0fbf40ecca9b12b69b5011526",
+      "cases": [
+        {
+          "name": "case_01",
+          "grid": {
+            "width": 100,
+            "height": 100,
+            "layers": 6
+          },
+          "n_vertices": 60000,
+          "n_nets": 170,
+          "n_pins": 499,
+          "seed": 1813743792,
+          "delay": {
+            "layer_delay": [
+              6,
+              4,
+              2,
+              2,
+              4,
+              6
+            ],
+            "via_delay": 3
+          },
+          "baseline_delay": 45088,
+          "case_sha256": "86aecbc407f74b0988098c968efcb9849eb87e00306e8307dd28ef339e070458",
+          "reference_sha256": "12685eac18f97d78baf3c458f36e0c24207e1e89626df3547ebce8af2c727fb9",
+          "instance_file": "case_01.json",
+          "reference_file": "reference/case_01.sol.json"
+        },
+        {
+          "name": "case_02",
+          "grid": {
+            "width": 108,
+            "height": 108,
+            "layers": 6
+          },
+          "n_vertices": 69984,
+          "n_nets": 184,
+          "n_pins": 496,
+          "seed": 1967651581,
+          "delay": {
+            "layer_delay": [
+              6,
+              4,
+              2,
+              2,
+              4,
+              6
+            ],
+            "via_delay": 3
+          },
+          "baseline_delay": 51828,
+          "case_sha256": "e59beb3293a96da64871a1c3f5fd547d619470e178a7dd1ea6bc7aed0f90af39",
+          "reference_sha256": "758e98083c735eb6948b48b65e8f9f9fec994d24bab651944427b7966d1b231e",
+          "instance_file": "case_02.json",
+          "reference_file": "reference/case_02.sol.json"
+        },
+        {
+          "name": "case_03",
+          "grid": {
+            "width": 116,
+            "height": 116,
+            "layers": 6
+          },
+          "n_vertices": 80736,
+          "n_nets": 197,
+          "n_pins": 581,
+          "seed": 20424259,
+          "delay": {
+            "layer_delay": [
+              6,
+              4,
+              2,
+              2,
+              4,
+              6
+            ],
+            "via_delay": 3
+          },
+          "baseline_delay": 62452,
+          "case_sha256": "46732d04f041bd582d427ed0c0fece4ecbae4208cbd7b2c90380ef359f485b4c",
+          "reference_sha256": "dae1a253239254265ea44221aa03dd8a6ed17fe9db309d95209038e2155bcad3",
+          "instance_file": "case_03.json",
+          "reference_file": "reference/case_03.sol.json"
+        },
+        {
+          "name": "case_04",
+          "grid": {
+            "width": 124,
+            "height": 124,
+            "layers": 6
+          },
+          "n_vertices": 92256,
+          "n_nets": 211,
+          "n_pins": 602,
+          "seed": 676570752,
+          "delay": {
+            "layer_delay": [
+              6,
+              4,
+              2,
+              2,
+              4,
+              6
+            ],
+            "via_delay": 3
+          },
+          "baseline_delay": 66106,
+          "case_sha256": "c419a4d6d2aa7093c4ebf23a9e299a1dfe486cfa24e4eb167deb92f59c820a43",
+          "reference_sha256": "5f095450dc5a6e1c182379e003894c48d678dad9d6ec18cc2b9883286b6c28c4",
+          "instance_file": "case_04.json",
+          "reference_file": "reference/case_04.sol.json"
+        },
+        {
+          "name": "case_05",
+          "grid": {
+            "width": 132,
+            "height": 132,
+            "layers": 6
+          },
+          "n_vertices": 104544,
+          "n_nets": 224,
+          "n_pins": 638,
+          "seed": 972089372,
+          "delay": {
+            "layer_delay": [
+              6,
+              4,
+              2,
+              2,
+              4,
+              6
+            ],
+            "via_delay": 3
+          },
+          "baseline_delay": 74371,
+          "case_sha256": "0308afa080feaae6e605419820e329770d519b3a9842db78b2cf57e9527cf85d",
+          "reference_sha256": "915329b0b70cd0901bc9aff3f52066b334a7817e196d43fad04a460fe422a98b",
+          "instance_file": "case_05.json",
+          "reference_file": "reference/case_05.sol.json"
+        },
+        {
+          "name": "case_06",
+          "grid": {
+            "width": 140,
+            "height": 140,
+            "layers": 6
+          },
+          "n_vertices": 117600,
+          "n_nets": 238,
+          "n_pins": 690,
+          "seed": 1204220021,
+          "delay": {
+            "layer_delay": [
+              6,
+              4,
+              2,
+              2,
+              4,
+              6
+            ],
+            "via_delay": 3
+          },
+          "baseline_delay": 86553,
+          "case_sha256": "e3d6b3ac5e27caa6f519b16d1f2233bed3d80e14bc1dbc9d3f8850133c919b52",
+          "reference_sha256": "9662f8564c849ad07f43cfac2701065ccd364ca678e39e4b3a700935d04a9221",
+          "instance_file": "case_06.json",
+          "reference_file": "reference/case_06.sol.json"
+        },
+        {
+          "name": "case_07",
+          "grid": {
+            "width": 148,
+            "height": 148,
+            "layers": 6
+          },
+          "n_vertices": 131424,
+          "n_nets": 252,
+          "n_pins": 724,
+          "seed": 526003429,
+          "delay": {
+            "layer_delay": [
+              6,
+              4,
+              2,
+              2,
+              4,
+              6
+            ],
+            "via_delay": 3
+          },
+          "baseline_delay": 96835,
+          "case_sha256": "af966c99c83fe29ca64dbfa1862d6e95b43997ff09aeadd5b329a55fc0ead9ef",
+          "reference_sha256": "e621d16edc0d8d79e2fbf90966c687b9f5a98457cc896c5e93ca09c05f0c8e56",
+          "instance_file": "case_07.json",
+          "reference_file": "reference/case_07.sol.json"
+        },
+        {
+          "name": "case_08",
+          "grid": {
+            "width": 156,
+            "height": 156,
+            "layers": 6
+          },
+          "n_vertices": 146016,
+          "n_nets": 265,
+          "n_pins": 766,
+          "seed": 2022696048,
+          "delay": {
+            "layer_delay": [
+              6,
+              4,
+              2,
+              2,
+              4,
+              6
+            ],
+            "via_delay": 3
+          },
+          "baseline_delay": 121175,
+          "case_sha256": "dfa38773632df7d3560c51b443eb3a32f358ea64799caa1e6ee7ce5bd3e812c6",
+          "reference_sha256": "18fb8d4709e45b6ca650b65a8b34f163d4d5b2d6e9492ec6104be42b053a7597",
+          "instance_file": "case_08.json",
+          "reference_file": "reference/case_08.sol.json"
+        }
+      ]
+    },
+    "stress": {
+      "directory": "benchmarks_stress",
+      "n_cases": 1,
+      "suite_sha256": "e13d4a1fe3f253c13b27b59ab61145fa601d70f57364af5378bc6675f8efdf08",
+      "cases": [
+        {
+          "name": "case_01",
+          "grid": {
+            "width": 530,
+            "height": 530,
+            "layers": 6
+          },
+          "n_vertices": 1685400,
+          "n_nets": 901,
+          "n_pins": 2612,
+          "seed": 2096705775,
+          "delay": {
+            "layer_delay": [
+              6,
+              4,
+              2,
+              2,
+              4,
+              6
+            ],
+            "via_delay": 3
+          },
+          "baseline_delay": 1144904,
+          "case_sha256": "125f9d4d871a727418cafe4ce68dda4dc93a40c6c631daaf45fa9a9c73fae550",
+          "reference_sha256": "6d211a7cde0a421f106ca384c1eecbf967fac07bc3564e70647eb29c585d2721",
+          "instance_file": "case_01.json",
+          "reference_file": "reference/case_01.sol.json"
+        }
+      ]
+    },
+    "congested": {
+      "directory": "benchmarks_congested",
+      "n_cases": 4,
+      "suite_sha256": "a9b80c826c5f540be401dbd391eefec730d47a7e557c606232c30ca865f29bcd",
+      "cases": [
+        {
+          "name": "case_01",
+          "grid": {
+            "width": 64,
+            "height": 64,
+            "layers": 6
+          },
+          "n_vertices": 24576,
+          "n_nets": 166,
+          "n_pins": 531,
+          "seed": 570478951,
+          "delay": {
+            "layer_delay": [
+              6,
+              4,
+              2,
+              2,
+              4,
+              6
+            ],
+            "via_delay": 3
+          },
+          "baseline_delay": 71049,
+          "case_sha256": "74f8fb9b0a4fdf230227e676999da156bd2dfea8dcacb1f8ec3407086fe11d06",
+          "reference_sha256": "15cad742bd5434d28f89c0e0edebe1de7e0b8ba3904920c8a8d53907be95717b",
+          "instance_file": "case_01.json",
+          "reference_file": "reference/case_01.sol.json"
+        },
+        {
+          "name": "case_02",
+          "grid": {
+            "width": 88,
+            "height": 88,
+            "layers": 6
+          },
+          "n_vertices": 46464,
+          "n_nets": 229,
+          "n_pins": 726,
+          "seed": 2132093133,
+          "delay": {
+            "layer_delay": [
+              6,
+              4,
+              2,
+              2,
+              4,
+              6
+            ],
+            "via_delay": 3
+          },
+          "baseline_delay": 122534,
+          "case_sha256": "080b349aea6d22e149d25ca74603cec81331cace10e7731bc4d86a3a7f780740",
+          "reference_sha256": "13bf0f9a7f26514ee53f048e3d3d9b7dacc136cc0ab2ec20f207e7fb2a4fabf6",
+          "instance_file": "case_02.json",
+          "reference_file": "reference/case_02.sol.json"
+        },
+        {
+          "name": "case_03",
+          "grid": {
+            "width": 112,
+            "height": 112,
+            "layers": 6
+          },
+          "n_vertices": 75264,
+          "n_nets": 291,
+          "n_pins": 950,
+          "seed": 1716194395,
+          "delay": {
+            "layer_delay": [
+              6,
+              4,
+              2,
+              2,
+              4,
+              6
+            ],
+            "via_delay": 3
+          },
+          "baseline_delay": 216835,
+          "case_sha256": "e4ec45609bfbfb4c31b1b24d4d6ce5be4c4711210f39bb8e096331f66446546c",
+          "reference_sha256": "03bda07ae218a973a6313a2b06046139a9615d850ff3b1974506ed9f01765229",
+          "instance_file": "case_03.json",
+          "reference_file": "reference/case_03.sol.json"
+        },
+        {
+          "name": "case_04",
+          "grid": {
+            "width": 116,
+            "height": 116,
+            "layers": 6
+          },
+          "n_vertices": 80736,
+          "n_nets": 302,
+          "n_pins": 994,
+          "seed": 1350903584,
+          "delay": {
+            "layer_delay": [
+              6,
+              4,
+              2,
+              2,
+              4,
+              6
+            ],
+            "via_delay": 3
+          },
+          "baseline_delay": 234127,
+          "case_sha256": "c591114d5439e4dca0c30b2db15c072e9837461f2469fabc7fea8c753729cf01",
+          "reference_sha256": "fd4102108a5afeeef0d5b32b33a4b970fde38dbf474340af642f7ee4de56ad7d",
+          "instance_file": "case_04.json",
+          "reference_file": "reference/case_04.sol.json"
+        }
+      ]
+    },
+    "designs": {
+      "directory": "benchmarks_designs",
+      "n_cases": 3,
+      "suite_sha256": "4a298b4a7fa234e59a70b58f0b254dd4f8d16463fccebc98d6e159001c4f9dd3",
+      "cases": [
+        {
+          "name": "ctrl",
+          "grid": {
+            "width": 77,
+            "height": 77,
+            "layers": 6
+          },
+          "n_vertices": 35574,
+          "n_nets": 182,
+          "n_pins": 556,
+          "seed": 20260923,
+          "delay": {
+            "layer_delay": [
+              6,
+              4,
+              2,
+              2,
+              4,
+              6
+            ],
+            "via_delay": 3
+          },
+          "baseline_delay": 73148,
+          "case_sha256": "024ebda5df67cf2077542524a2bf6109bd40937c9ee901d7d8ec0abcf55402cb",
+          "reference_sha256": "73cb401821241bd9b219d8bf15ab91e4c8abee6be00b3cd76b0187a03e36c9fe",
+          "instance_file": "ctrl.json",
+          "reference_file": "reference/ctrl.sol.json"
+        },
+        {
+          "name": "int2float",
+          "grid": {
+            "width": 84,
+            "height": 84,
+            "layers": 6
+          },
+          "n_vertices": 42336,
+          "n_nets": 271,
+          "n_pins": 798,
+          "seed": 20260924,
+          "delay": {
+            "layer_delay": [
+              6,
+              4,
+              2,
+              2,
+              4,
+              6
+            ],
+            "via_delay": 3
+          },
+          "baseline_delay": 152284,
+          "case_sha256": "1d57b7e5b69292592184aa9368930490c5f7af477f4f739db3500a329d6fb16e",
+          "reference_sha256": "76346476d20b6c4c3350ea91fc152b583fdf2dfb4a785e24b573407afc003b7b",
+          "instance_file": "int2float.json",
+          "reference_file": "reference/int2float.sol.json"
+        },
+        {
+          "name": "router",
+          "grid": {
+            "width": 105,
+            "height": 105,
+            "layers": 6
+          },
+          "n_vertices": 66150,
+          "n_nets": 344,
+          "n_pins": 888,
+          "seed": 20260925,
+          "delay": {
+            "layer_delay": [
+              6,
+              4,
+              2,
+              2,
+              4,
+              6
+            ],
+            "via_delay": 3
+          },
+          "baseline_delay": 82491,
+          "case_sha256": "34096ab422d9b1cfff1c607bfc66e28a2a9ab43eeb1e0cd34e481162f017a98c",
+          "reference_sha256": "b478075ee3d2e180c6df1435918dc7bcb334f7a310445953b6dd9350e65c7b44",
+          "instance_file": "router.json",
+          "reference_file": "reference/router.sol.json"
+        }
+      ]
+    }
+  },
+  "total_cases": 45
+}

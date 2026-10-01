@@ -1,0 +1,1538 @@
+[
+  {
+    "run_id": "20261001T171253.322797Z-suite",
+    "started_utc": "20261001T171253.322797Z",
+    "upstream_revision": "499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+    "config": {
+      "mode": "suite",
+      "suite": "benchmarks",
+      "case": "case_01",
+      "budget": 180.0,
+      "router": "baseline"
+    },
+    "seed": null,
+    "seed_note": "official routers deterministic; input stores case seed",
+    "workers": 1,
+    "threads": 1,
+    "compiler_flags": null,
+    "warm_start": null,
+    "portfolio_runs": 1,
+    "steps": [
+      {
+        "command": [
+          "/home/younix/eda-3d-routing-challenge/.venv/bin/python",
+          "-m",
+          "m3d.cli",
+          "run-suite",
+          "--suite",
+          "benchmarks",
+          "--router",
+          "baseline",
+          "--out-dir",
+          "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261001T171253.322797Z-suite/routes"
+        ],
+        "cwd": "/home/younix/eda-3d-routing-challenge/dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+        "budget_s": 180.0,
+        "wall_s": 55.67600160295842,
+        "exit_code": 0,
+        "timeout": false,
+        "interrupted": false,
+        "log": "dev/artifacts/20261001T171253.322797Z-suite/run-suite.log",
+        "peak_rss_kib": 28572,
+        "user_cpu_s": 55.87,
+        "system_cpu_s": 1.33
+      },
+      {
+        "command": [
+          "/home/younix/eda-3d-routing-challenge/.venv/bin/python",
+          "-m",
+          "m3d.cli",
+          "score-suite",
+          "--suite",
+          "benchmarks",
+          "--submission-dir",
+          "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261001T171253.322797Z-suite/routes",
+          "--out",
+          "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261001T171253.322797Z-suite/score.json",
+          "--runtimes",
+          "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261001T171253.322797Z-suite/routes/runtime.json"
+        ],
+        "cwd": "/home/younix/eda-3d-routing-challenge/dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+        "budget_s": 180.0,
+        "wall_s": 0.3663423149846494,
+        "exit_code": 0,
+        "timeout": false,
+        "interrupted": false,
+        "log": "dev/artifacts/20261001T171253.322797Z-suite/score-suite.log",
+        "peak_rss_kib": 22656,
+        "user_cpu_s": 0.31,
+        "system_cpu_s": 0.02
+      }
+    ],
+    "outputs": {
+      "routes/case_01.sol.json": "4dc529988bacf55df471330bc2196ff748e5822cdc2c3e22ed9e1bc5c1ca3db2",
+      "routes/case_02.sol.json": "dbe6076c9f87368bae064aa5268f1bb0c5824798a53d02dfecba34b50660d45e",
+      "routes/case_03.sol.json": "eadb82f2cbb59009d3f1c6f6ddf0136111ae6c30881ec63b9d900aa50d74a1ad",
+      "routes/case_04.sol.json": "121f52885e120215ed4f4a9a19b886df32f8ad558c80acf44ce490f36350f42d",
+      "routes/case_05.sol.json": "9661ea48006786ad8efbe53bc8c9821a02a6cc5da1bf56485c1d8d9a21cdf084",
+      "routes/case_06.sol.json": "e44d70ef026cdb853cf687dea9f37700db07d73fc562882a31ea7e4ecc4f64ba",
+      "routes/case_07.sol.json": "0746473a106ed64cb38a0baf4ccad16fa28e18990fd3aed1688814c96df47b5f",
+      "routes/case_08.sol.json": "43fb40d15d279915bff8dad4e3acc872ecb0259144a90f29c30cdd37c1fb6682",
+      "routes/case_09.sol.json": "163d72a57509e6212fa5bceec83d2980e4c51ba8b367523e1064b19e2a78baac",
+      "routes/case_10.sol.json": "e0dd03093a801b5c18d70c8efb485cdff7460b5a98ac88ff52b94c6a3454f91f",
+      "routes/case_11.sol.json": "ba113c45fd2a4a9d8b0d38136b7e50226489f2294d0f78d08c74e535478b7f66",
+      "routes/case_12.sol.json": "87d3b87b6ea390ec694f0a8fb25dc2f4fa991c8f2f5d7d34f97a1b0192855f38",
+      "routes/case_13.sol.json": "67f19236e91704511ce469e7c46227f021714c2bf2e8e9a639dfd8c9b0f3c361",
+      "routes/case_14.sol.json": "a3f39820c1de7b917814ff615ab1ca5adad896a53ba647ca33a8c4d4aa9322be",
+      "routes/case_15.sol.json": "f248360da04c099fa509f15a051acb43122ba498f4747c34db3eee24b10a5a03",
+      "routes/case_16.sol.json": "c86d8a3ba8d193986243ac6be14f012e59e0381738897bcd54ca27ac9885374d",
+      "routes/case_17.sol.json": "8d02fdd2661538b547b9d1d6d9345920975b51a20288b189dc5a74998a33b61a",
+      "routes/case_18.sol.json": "12412a31748846c4653a24aa839ed00414bc16bf46d881126eb4df5cd8ecf34f",
+      "routes/case_19.sol.json": "7786b629c113da66c29361bcf74b78c7f77ebc86e7b1444a54adc5bcbf6faa06",
+      "routes/case_20.sol.json": "fc46b8e10dc1dd0353f32c7ac9f9e92a456fb2e7893ca88198b6a08bc8284428",
+      "routes/runtime.json": "4f41213a485aae37630b144f3dbe193c95afac47dc473fa317482fe0175ad38d"
+    },
+    "result": {
+      "format": "m3d-leaderboard",
+      "complete": true,
+      "aggregate_score": 1.0,
+      "n_cases": 20,
+      "n_legal": 20,
+      "formula": "aggregate = geomean_c(baseline_total_c / submission_total_c); higher is better; baseline scores 1.0; all cases must be legal for a complete ranked submission (else aggregate = 0.0)",
+      "cases": [
+        {
+          "case": "case_01",
+          "legal": true,
+          "total_delay": 240,
+          "baseline_delay": 240,
+          "ratio": 1.0,
+          "runtime_s": 0.015,
+          "reasons": []
+        },
+        {
+          "case": "case_02",
+          "legal": true,
+          "total_delay": 1190,
+          "baseline_delay": 1190,
+          "ratio": 1.0,
+          "runtime_s": 0.04,
+          "reasons": []
+        },
+        {
+          "case": "case_03",
+          "legal": true,
+          "total_delay": 1757,
+          "baseline_delay": 1757,
+          "ratio": 1.0,
+          "runtime_s": 0.094,
+          "reasons": []
+        },
+        {
+          "case": "case_04",
+          "legal": true,
+          "total_delay": 2162,
+          "baseline_delay": 2162,
+          "ratio": 1.0,
+          "runtime_s": 0.155,
+          "reasons": []
+        },
+        {
+          "case": "case_05",
+          "legal": true,
+          "total_delay": 4197,
+          "baseline_delay": 4197,
+          "ratio": 1.0,
+          "runtime_s": 0.283,
+          "reasons": []
+        },
+        {
+          "case": "case_06",
+          "legal": true,
+          "total_delay": 6155,
+          "baseline_delay": 6155,
+          "ratio": 1.0,
+          "runtime_s": 0.414,
+          "reasons": []
+        },
+        {
+          "case": "case_07",
+          "legal": true,
+          "total_delay": 5855,
+          "baseline_delay": 5855,
+          "ratio": 1.0,
+          "runtime_s": 0.559,
+          "reasons": []
+        },
+        {
+          "case": "case_08",
+          "legal": true,
+          "total_delay": 8549,
+          "baseline_delay": 8549,
+          "ratio": 1.0,
+          "runtime_s": 0.776,
+          "reasons": []
+        },
+        {
+          "case": "case_09",
+          "legal": true,
+          "total_delay": 9728,
+          "baseline_delay": 9728,
+          "ratio": 1.0,
+          "runtime_s": 0.92,
+          "reasons": []
+        },
+        {
+          "case": "case_10",
+          "legal": true,
+          "total_delay": 11969,
+          "baseline_delay": 11969,
+          "ratio": 1.0,
+          "runtime_s": 1.388,
+          "reasons": []
+        },
+        {
+          "case": "case_11",
+          "legal": true,
+          "total_delay": 14142,
+          "baseline_delay": 14142,
+          "ratio": 1.0,
+          "runtime_s": 1.809,
+          "reasons": []
+        },
+        {
+          "case": "case_12",
+          "legal": true,
+          "total_delay": 18509,
+          "baseline_delay": 18509,
+          "ratio": 1.0,
+          "runtime_s": 2.291,
+          "reasons": []
+        },
+        {
+          "case": "case_13",
+          "legal": true,
+          "total_delay": 22599,
+          "baseline_delay": 22599,
+          "ratio": 1.0,
+          "runtime_s": 4.467,
+          "reasons": []
+        },
+        {
+          "case": "case_14",
+          "legal": true,
+          "total_delay": 24481,
+          "baseline_delay": 24481,
+          "ratio": 1.0,
+          "runtime_s": 3.798,
+          "reasons": []
+        },
+        {
+          "case": "case_15",
+          "legal": true,
+          "total_delay": 27648,
+          "baseline_delay": 27648,
+          "ratio": 1.0,
+          "runtime_s": 4.013,
+          "reasons": []
+        },
+        {
+          "case": "case_16",
+          "legal": true,
+          "total_delay": 37902,
+          "baseline_delay": 37902,
+          "ratio": 1.0,
+          "runtime_s": 5.11,
+          "reasons": []
+        },
+        {
+          "case": "case_17",
+          "legal": true,
+          "total_delay": 49554,
+          "baseline_delay": 49554,
+          "ratio": 1.0,
+          "runtime_s": 6.549,
+          "reasons": []
+        },
+        {
+          "case": "case_18",
+          "legal": true,
+          "total_delay": 53805,
+          "baseline_delay": 53805,
+          "ratio": 1.0,
+          "runtime_s": 8.199,
+          "reasons": []
+        },
+        {
+          "case": "case_19",
+          "legal": true,
+          "total_delay": 45488,
+          "baseline_delay": 45488,
+          "ratio": 1.0,
+          "runtime_s": 8.172,
+          "reasons": []
+        },
+        {
+          "case": "case_20",
+          "legal": true,
+          "total_delay": 51660,
+          "baseline_delay": 51660,
+          "ratio": 1.0,
+          "runtime_s": 8.079,
+          "reasons": []
+        }
+      ]
+    },
+    "official_inputs_unchanged": true,
+    "changed_official_files": [],
+    "success": true,
+    "total_subprocess_wall_s": 56.04234391794307,
+    "methodology_notes": [
+      "Intro/hard runs overlapped for approximately 1.3 seconds; intro score is valid but its timing is not a fully isolated sample. First hard run was intentionally interrupted and excluded from timing/quality claims."
+    ],
+    "source": {
+      "revision": "d887a05b844f9aeda0f656ca4644c58969d41ec5",
+      "status": "M .gitignore\n?? dev/\n?? docs/BUGS.md\n?? docs/CLAIMS.md\n?? docs/DECISIONS.md\n?? docs/VERSIONS.md\n?? docs/WORKLOG.md\n?? docs/design/\n?? docs/evidence/\n?? docs/research/\n?? docs/summaries/",
+      "diff_sha256": "64fd77fed8ba632e3ec1322dfc433bbdcd8f1465ae8a03e1d46b3150174aab96",
+      "files_sha256": "5dd53dddda19255ee463383204d24c87a95e4d96ad18549a76f3bb83e9070cd6"
+    },
+    "manifest_path": "dev/artifacts/20261001T171253.322797Z-suite/manifest.json",
+    "manifest_sha256": "2d068f48deae886bae14b36735583774a1fd1009a2d2fb84968ef7ad4de7a0e8",
+    "machine": {
+      "hostname": "LAPTOP-C8RSJ5BT",
+      "os": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+      "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+      "cpu_count": 16,
+      "affinity_cpus": 16
+    }
+  },
+  {
+    "run_id": "20261001T171347.624859Z-suite",
+    "started_utc": "20261001T171347.624859Z",
+    "upstream_revision": "499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+    "config": {
+      "mode": "suite",
+      "suite": "benchmarks_hard",
+      "case": "case_01",
+      "budget": 600.0,
+      "router": "negotiated"
+    },
+    "seed": null,
+    "seed_note": "official routers deterministic; input stores case seed",
+    "workers": 1,
+    "threads": 1,
+    "compiler_flags": null,
+    "warm_start": null,
+    "portfolio_runs": 1,
+    "steps": [
+      {
+        "command": [
+          "/home/younix/eda-3d-routing-challenge/.venv/bin/python",
+          "-m",
+          "m3d.cli",
+          "run-suite",
+          "--suite",
+          "benchmarks_hard",
+          "--router",
+          "negotiated",
+          "--out-dir",
+          "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261001T171347.624859Z-suite/routes"
+        ],
+        "cwd": "/home/younix/eda-3d-routing-challenge/dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+        "budget_s": 600.0,
+        "wall_s": 45.20784702402307,
+        "exit_code": -15,
+        "timeout": false,
+        "interrupted": true,
+        "log": "dev/artifacts/20261001T171347.624859Z-suite/run-suite.log",
+        "peak_rss_kib": null,
+        "user_cpu_s": null,
+        "system_cpu_s": null
+      },
+      {
+        "command": [
+          "/home/younix/eda-3d-routing-challenge/.venv/bin/python",
+          "-m",
+          "m3d.cli",
+          "score-suite",
+          "--suite",
+          "benchmarks_hard",
+          "--submission-dir",
+          "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261001T171347.624859Z-suite/routes",
+          "--out",
+          "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261001T171347.624859Z-suite/score.json"
+        ],
+        "cwd": "/home/younix/eda-3d-routing-challenge/dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+        "budget_s": 600.0,
+        "wall_s": 0.11436330695869401,
+        "exit_code": 1,
+        "timeout": false,
+        "interrupted": false,
+        "log": "dev/artifacts/20261001T171347.624859Z-suite/score-suite.log",
+        "peak_rss_kib": 17644,
+        "user_cpu_s": 0.09,
+        "system_cpu_s": 0.0
+      }
+    ],
+    "outputs": {
+      "routes/case_01.sol.json": "c54d48a91458c8ab1ebba0e1e3a7f5cc2deeaa8a32e6f403040046e8e3a86586",
+      "routes/case_02.sol.json": "5b9e8cfe94b8acd17c053d1fe973fe99d25863778c94631e90d85206c880773f",
+      "routes/case_03.sol.json": "79e90e4a6d5842ea2b39930e2805a5ff383d00719a201de119295a4693070f49",
+      "routes/case_04.sol.json": "7389750115ef767effc939b46fa6fa0b65e36e4080dceea9559c5cca11c5ef00",
+      "routes/case_05.sol.json": "8c0e127c63b922b3b7d2783e9b99d7079f0885d77197f81f73d70281963ef76f"
+    },
+    "result": {
+      "format": "m3d-leaderboard",
+      "complete": false,
+      "aggregate_score": 0.0,
+      "n_cases": 9,
+      "n_legal": 5,
+      "formula": "aggregate = geomean_c(baseline_total_c / submission_total_c); higher is better; baseline scores 1.0; all cases must be legal for a complete ranked submission (else aggregate = 0.0)",
+      "cases": [
+        {
+          "case": "case_01",
+          "legal": true,
+          "total_delay": 11938,
+          "baseline_delay": 11938,
+          "ratio": 1.0,
+          "runtime_s": null,
+          "reasons": []
+        },
+        {
+          "case": "case_02",
+          "legal": true,
+          "total_delay": 18910,
+          "baseline_delay": 18910,
+          "ratio": 1.0,
+          "runtime_s": null,
+          "reasons": []
+        },
+        {
+          "case": "case_03",
+          "legal": true,
+          "total_delay": 14724,
+          "baseline_delay": 14724,
+          "ratio": 1.0,
+          "runtime_s": null,
+          "reasons": []
+        },
+        {
+          "case": "case_04",
+          "legal": true,
+          "total_delay": 18077,
+          "baseline_delay": 18077,
+          "ratio": 1.0,
+          "runtime_s": null,
+          "reasons": []
+        },
+        {
+          "case": "case_05",
+          "legal": true,
+          "total_delay": 21051,
+          "baseline_delay": 21051,
+          "ratio": 1.0,
+          "runtime_s": null,
+          "reasons": []
+        },
+        {
+          "case": "case_06",
+          "legal": false,
+          "total_delay": null,
+          "baseline_delay": 27134,
+          "ratio": null,
+          "runtime_s": null,
+          "reasons": [
+            "submission file missing"
+          ]
+        },
+        {
+          "case": "case_07",
+          "legal": false,
+          "total_delay": null,
+          "baseline_delay": 31341,
+          "ratio": null,
+          "runtime_s": null,
+          "reasons": [
+            "submission file missing"
+          ]
+        },
+        {
+          "case": "case_08",
+          "legal": false,
+          "total_delay": null,
+          "baseline_delay": 30886,
+          "ratio": null,
+          "runtime_s": null,
+          "reasons": [
+            "submission file missing"
+          ]
+        },
+        {
+          "case": "case_09",
+          "legal": false,
+          "total_delay": null,
+          "baseline_delay": 27802,
+          "ratio": null,
+          "runtime_s": null,
+          "reasons": [
+            "submission file missing"
+          ]
+        }
+      ]
+    },
+    "official_inputs_unchanged": true,
+    "changed_official_files": [],
+    "success": false,
+    "total_subprocess_wall_s": 45.32221033098176,
+    "methodology_notes": [
+      "Intro/hard runs overlapped for approximately 1.3 seconds; intro score is valid but its timing is not a fully isolated sample. First hard run was intentionally interrupted and excluded from timing/quality claims."
+    ],
+    "source": {
+      "revision": "d887a05b844f9aeda0f656ca4644c58969d41ec5",
+      "status": "M .gitignore\n?? dev/\n?? docs/BUGS.md\n?? docs/CLAIMS.md\n?? docs/DECISIONS.md\n?? docs/VERSIONS.md\n?? docs/WORKLOG.md\n?? docs/design/\n?? docs/evidence/\n?? docs/research/\n?? docs/summaries/",
+      "diff_sha256": "64fd77fed8ba632e3ec1322dfc433bbdcd8f1465ae8a03e1d46b3150174aab96",
+      "files_sha256": "5dd53dddda19255ee463383204d24c87a95e4d96ad18549a76f3bb83e9070cd6"
+    },
+    "manifest_path": "dev/artifacts/20261001T171347.624859Z-suite/manifest.json",
+    "manifest_sha256": "e0654aa2900e310e1f5de1e02b249c8745a8956535d72ad3865a95b0936fa93e",
+    "machine": {
+      "hostname": "LAPTOP-C8RSJ5BT",
+      "os": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+      "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+      "cpu_count": 16,
+      "affinity_cpus": 16
+    }
+  },
+  {
+    "run_id": "20261001T171522.463214Z-suite",
+    "started_utc": "20261001T171522.463214Z",
+    "upstream_revision": "499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+    "config": {
+      "mode": "suite",
+      "suite": "benchmarks_hard",
+      "case": "case_01",
+      "budget": 600.0,
+      "router": "negotiated"
+    },
+    "seed": null,
+    "seed_note": "official routers deterministic; input stores case seed",
+    "workers": 1,
+    "threads": 1,
+    "compiler_flags": null,
+    "warm_start": null,
+    "portfolio_runs": 1,
+    "steps": [
+      {
+        "command": [
+          "/home/younix/eda-3d-routing-challenge/.venv/bin/python",
+          "-m",
+          "m3d.cli",
+          "run-suite",
+          "--suite",
+          "benchmarks_hard",
+          "--router",
+          "negotiated",
+          "--out-dir",
+          "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261001T171522.463214Z-suite/routes"
+        ],
+        "cwd": "/home/younix/eda-3d-routing-challenge/dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+        "budget_s": 600.0,
+        "wall_s": 94.76544759899843,
+        "exit_code": 0,
+        "timeout": false,
+        "interrupted": false,
+        "log": "dev/artifacts/20261001T171522.463214Z-suite/run-suite.log",
+        "peak_rss_kib": 22080,
+        "user_cpu_s": 96.62,
+        "system_cpu_s": 0.9
+      },
+      {
+        "command": [
+          "/home/younix/eda-3d-routing-challenge/.venv/bin/python",
+          "-m",
+          "m3d.cli",
+          "score-suite",
+          "--suite",
+          "benchmarks_hard",
+          "--submission-dir",
+          "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261001T171522.463214Z-suite/routes",
+          "--out",
+          "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261001T171522.463214Z-suite/score.json",
+          "--runtimes",
+          "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261001T171522.463214Z-suite/routes/runtime.json"
+        ],
+        "cwd": "/home/younix/eda-3d-routing-challenge/dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+        "budget_s": 600.0,
+        "wall_s": 0.16451689798850566,
+        "exit_code": 0,
+        "timeout": false,
+        "interrupted": false,
+        "log": "dev/artifacts/20261001T171522.463214Z-suite/score-suite.log",
+        "peak_rss_kib": 18928,
+        "user_cpu_s": 0.12,
+        "system_cpu_s": 0.0
+      }
+    ],
+    "outputs": {
+      "routes/case_01.sol.json": "c54d48a91458c8ab1ebba0e1e3a7f5cc2deeaa8a32e6f403040046e8e3a86586",
+      "routes/case_02.sol.json": "5b9e8cfe94b8acd17c053d1fe973fe99d25863778c94631e90d85206c880773f",
+      "routes/case_03.sol.json": "79e90e4a6d5842ea2b39930e2805a5ff383d00719a201de119295a4693070f49",
+      "routes/case_04.sol.json": "7389750115ef767effc939b46fa6fa0b65e36e4080dceea9559c5cca11c5ef00",
+      "routes/case_05.sol.json": "8c0e127c63b922b3b7d2783e9b99d7079f0885d77197f81f73d70281963ef76f",
+      "routes/case_06.sol.json": "c9b70c700261d5e5a5c7b1090c0bbfd917711b18e4f3abe6d05c1a4ba6b4abe3",
+      "routes/case_07.sol.json": "e2db20cf67d49e91082dda0f9d08debbfe44077f55c107015b9b210ae1608fe2",
+      "routes/case_08.sol.json": "3f116c867d820398be735c9c0b85b769be900be3d44c11e51db9be669cb25233",
+      "routes/case_09.sol.json": "668ddc450ba84b6d25dee8ffb4a2030330e29dd9eeda49979480861f44eb2c6b",
+      "routes/runtime.json": "adadac8c3139cef332160f1d6f1296d70dcb8101c3a7c3396c5529724625f9d4"
+    },
+    "result": {
+      "format": "m3d-leaderboard",
+      "complete": true,
+      "aggregate_score": 1.0,
+      "n_cases": 9,
+      "n_legal": 9,
+      "formula": "aggregate = geomean_c(baseline_total_c / submission_total_c); higher is better; baseline scores 1.0; all cases must be legal for a complete ranked submission (else aggregate = 0.0)",
+      "cases": [
+        {
+          "case": "case_01",
+          "legal": true,
+          "total_delay": 11938,
+          "baseline_delay": 11938,
+          "ratio": 1.0,
+          "runtime_s": 3.855,
+          "reasons": []
+        },
+        {
+          "case": "case_02",
+          "legal": true,
+          "total_delay": 18910,
+          "baseline_delay": 18910,
+          "ratio": 1.0,
+          "runtime_s": 5.415,
+          "reasons": []
+        },
+        {
+          "case": "case_03",
+          "legal": true,
+          "total_delay": 14724,
+          "baseline_delay": 14724,
+          "ratio": 1.0,
+          "runtime_s": 5.538,
+          "reasons": []
+        },
+        {
+          "case": "case_04",
+          "legal": true,
+          "total_delay": 18077,
+          "baseline_delay": 18077,
+          "ratio": 1.0,
+          "runtime_s": 10.27,
+          "reasons": []
+        },
+        {
+          "case": "case_05",
+          "legal": true,
+          "total_delay": 21051,
+          "baseline_delay": 21051,
+          "ratio": 1.0,
+          "runtime_s": 11.036,
+          "reasons": []
+        },
+        {
+          "case": "case_06",
+          "legal": true,
+          "total_delay": 27134,
+          "baseline_delay": 27134,
+          "ratio": 1.0,
+          "runtime_s": 10.765,
+          "reasons": []
+        },
+        {
+          "case": "case_07",
+          "legal": true,
+          "total_delay": 31341,
+          "baseline_delay": 31341,
+          "ratio": 1.0,
+          "runtime_s": 13.296,
+          "reasons": []
+        },
+        {
+          "case": "case_08",
+          "legal": true,
+          "total_delay": 30886,
+          "baseline_delay": 30886,
+          "ratio": 1.0,
+          "runtime_s": 19.88,
+          "reasons": []
+        },
+        {
+          "case": "case_09",
+          "legal": true,
+          "total_delay": 27802,
+          "baseline_delay": 27802,
+          "ratio": 1.0,
+          "runtime_s": 17.271,
+          "reasons": []
+        }
+      ]
+    },
+    "official_inputs_unchanged": true,
+    "changed_official_files": [],
+    "success": true,
+    "total_subprocess_wall_s": 94.92996449698694,
+    "source": {
+      "revision": "d887a05b844f9aeda0f656ca4644c58969d41ec5",
+      "status": "M .gitignore\n?? dev/\n?? docs/BUGS.md\n?? docs/CLAIMS.md\n?? docs/DECISIONS.md\n?? docs/VERSIONS.md\n?? docs/WORKLOG.md\n?? docs/design/\n?? docs/evidence/\n?? docs/research/\n?? docs/summaries/",
+      "diff_sha256": "64fd77fed8ba632e3ec1322dfc433bbdcd8f1465ae8a03e1d46b3150174aab96",
+      "files_sha256": "5dd53dddda19255ee463383204d24c87a95e4d96ad18549a76f3bb83e9070cd6"
+    },
+    "manifest_path": "dev/artifacts/20261001T171522.463214Z-suite/manifest.json",
+    "manifest_sha256": "67308faf05c79d74d022e59477a99dad0f7fae615ed1ce01a415e30caf74f5d9",
+    "machine": {
+      "hostname": "LAPTOP-C8RSJ5BT",
+      "os": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+      "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+      "cpu_count": 16,
+      "affinity_cpus": 16
+    }
+  },
+  {
+    "run_id": "20261001T171845.570340Z-audit",
+    "started_utc": "20261001T171845.570340Z",
+    "upstream_revision": "499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+    "config": {
+      "mode": "audit",
+      "suite": "benchmarks_hard",
+      "case": "case_01",
+      "router": "negotiated",
+      "budget": 300.0,
+      "worker": false,
+      "out": null
+    },
+    "workers": 1,
+    "threads": 1,
+    "seed": null,
+    "compiler_flags": null,
+    "warm_start": null,
+    "portfolio_runs": 1,
+    "steps": [
+      {
+        "command": [
+          "/home/younix/eda-3d-routing-challenge/.venv/bin/python",
+          "/home/younix/eda-3d-routing-challenge/dev/phase1.py",
+          "audit",
+          "--worker",
+          "--out",
+          "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261001T171845.570340Z-audit",
+          "--suite",
+          "benchmarks_hard",
+          "--case",
+          "case_01",
+          "--router",
+          "negotiated",
+          "--budget",
+          "300.0"
+        ],
+        "cwd": "/home/younix/eda-3d-routing-challenge/dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+        "budget_s": 300.0,
+        "wall_s": 3.4762985589914024,
+        "exit_code": 0,
+        "timeout": false,
+        "interrupted": false,
+        "log": "dev/artifacts/20261001T171845.570340Z-audit/audit.log",
+        "peak_rss_kib": 25948,
+        "user_cpu_s": 0.13,
+        "system_cpu_s": 0.05
+      },
+      {
+        "command": [
+          "/home/younix/eda-3d-routing-challenge/.venv/bin/python",
+          "-m",
+          "m3d.cli",
+          "score-suite",
+          "--suite",
+          "benchmarks_hard",
+          "--submission-dir",
+          "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261001T171845.570340Z-audit/public-hard",
+          "--out",
+          "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261001T171845.570340Z-audit/public-score.json"
+        ],
+        "cwd": "/home/younix/eda-3d-routing-challenge/dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+        "budget_s": 60,
+        "wall_s": 0.1667289300239645,
+        "exit_code": 0,
+        "timeout": false,
+        "interrupted": false,
+        "log": "dev/artifacts/20261001T171845.570340Z-audit/public-score.log",
+        "peak_rss_kib": 18816,
+        "user_cpu_s": 0.14,
+        "system_cpu_s": 0.0
+      },
+      {
+        "command": [
+          "/home/younix/eda-3d-routing-challenge/.venv/bin/python",
+          "-m",
+          "m3d.cli",
+          "score-suite",
+          "--suite",
+          "benchmarks_hard",
+          "--submission-dir",
+          "/home/younix/eda-3d-routing-challenge/dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6/benchmarks_hard/reference",
+          "--out",
+          "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261001T171845.570340Z-audit/reference-score.json"
+        ],
+        "cwd": "/home/younix/eda-3d-routing-challenge/dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+        "budget_s": 60,
+        "wall_s": 0.16484381898771971,
+        "exit_code": 0,
+        "timeout": false,
+        "interrupted": false,
+        "log": "dev/artifacts/20261001T171845.570340Z-audit/reference-score.log",
+        "peak_rss_kib": 19016,
+        "user_cpu_s": 0.13,
+        "system_cpu_s": 0.01
+      }
+    ],
+    "outputs": {
+      "audit.resources.txt": "08aaebb80a49a73b6384748f364aebd4af9dfd47b123b212c0c3a6ceee42ccfc",
+      "audit.log": "08e77b3d348301c579f5ab136791fa726e19e54f16ca8c3e7e18468b1e5b89ed",
+      "reference-score.log": "f9d169da44f743da474cf59a1b34190a9fc833f61467c80182e2ec11b3d1a118",
+      "public-score.resources.txt": "4fb688293454b0aaa6ccec6fa0d97e0244d4099cd38e54ab135ce6d6903e9b0a",
+      "public-score.json": "1d97404a897cf8260d8a36c1d11de09d62c948262740b118c7bdca3e981a7545",
+      "reference-score.json": "c5a354ee50d67bc5e53ae4149bea2c4ff45dcc46fc0c2220e38c6c42ce771671",
+      "reference-score.resources.txt": "105ba31321d29c7fa4166fa63cbfecae6da30ba93f0169f94ae338c0e730255e",
+      "public-score.log": "1a909cc7fe27f07004967769cfb234a89b5195e6e0248862bde22836736b8bff",
+      "public-provenance.json": "6ae6bb4a5cec2f1d1754a3131543b967a9692aa819fec3bd1f01b3269dec1b28",
+      "public-hard/case_04.sol.json": "98c9675147c09c980be238ce4e45603d879a2bd84d14bdaee940190aa2030834",
+      "public-hard/case_09.sol.json": "0ae09fe306507f649b14b3aebb7f88c1c6419d9fecdb0dab9b8c2a9df92a05ba",
+      "public-hard/case_02.sol.json": "e2290195b3da471f897d4ce7caf604fb1798e79a435b105416183a6ecb2372c8",
+      "public-hard/meta.json": "9b6ce131bacd9f6960757ec638e134aa287a57bcd687fe50e1513cfe6a9adb6d",
+      "public-hard/case_07.sol.json": "50d0b2e0f769e69f3c14d7c137cfe1c4fbde69e661a4931e1dfe3274567aad2a",
+      "public-hard/case_05.sol.json": "99f99445deed64ba19302ef6861ca5efd4895d27572319e673f169570234113e",
+      "public-hard/case_08.sol.json": "92f525870e48d22c64362a06fa94e7fa31551a6b298e556abf18148b93526a6e",
+      "public-hard/case_06.sol.json": "d54e15ed97954b2581aeec0b5563b2c74a13cbd7d663c91061fad548c1df8afb",
+      "public-hard/case_03.sol.json": "81e7edac970637d52ca6506279d4c8b349411bea36527ba4c1dcb99172c13904",
+      "public-hard/case_01.sol.json": "afc85979e54971d7348de713eff2d962ea14c171f1053a82f2e4ca02d2a10c60",
+      "development-source/requirements.txt": "6cb7cda827686d26c70ebd360b359b0be8ebc8821f1a9ab6fcec5621f3c6c1c6",
+      "development-source/finish_phase0.py": "5399a22920b4229c3a0799103bef0b32b275a5040afcb9b2584815988ca2e700",
+      "development-source/measure.py": "567d13af7911c668243237ae39ad84fed9462715cc7a0c85ae9aae7f2970dbe2",
+      "development-source/capture_environment.py": "3670e74ad3d2e417ad3bd73ddbb52b93a988c3c68de19401b57baffb88b0a914",
+      "development-source/phase1.py": "7731250deaf89258b08fca696f002e33bd65c453f41cc647ff58df35981b8b69",
+      "development-source/toolchain_probe.cpp": "060e9ba22d27271f96a8c63a5192aea444f696d10f69060e625c412415c6ef49",
+      "development-source/setup.sh": "14233e92535d89ca2ab530ec6f34cf8a926c4df083f0826fe387271add98d6e4",
+      "development-source/README.md": "28e835a9da4fd6d121181125aec01fa65709b62fba474be7545a868ced394df6"
+    },
+    "official_inputs_unchanged": true,
+    "changed_official_files": [],
+    "success": true,
+    "total_subprocess_wall_s": 3.8078713080030866,
+    "source": {
+      "revision": "d887a05b844f9aeda0f656ca4644c58969d41ec5",
+      "status": "M .gitignore\n?? dev/\n?? docs/BUGS.md\n?? docs/CLAIMS.md\n?? docs/DECISIONS.md\n?? docs/VERSIONS.md\n?? docs/WORKLOG.md\n?? docs/design/\n?? docs/evidence/\n?? docs/research/\n?? docs/summaries/",
+      "diff_sha256": "64fd77fed8ba632e3ec1322dfc433bbdcd8f1465ae8a03e1d46b3150174aab96",
+      "files_sha256": "324f7db4322fffb61f17963094fb998cb13c65aadb63459336b1d71c0b263ba5"
+    },
+    "manifest_path": "dev/artifacts/20261001T171845.570340Z-audit/manifest.json",
+    "manifest_sha256": "8f895ab9beadda52b6c3484fe31c7fe71df1299aa14cb43d48307ab7a3660de0",
+    "machine": {
+      "hostname": "LAPTOP-C8RSJ5BT",
+      "os": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+      "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+      "cpu_count": 16,
+      "affinity_cpus": 16
+    }
+  },
+  {
+    "run_id": "20261001T171916.717830Z-profile",
+    "started_utc": "20261001T171916.717830Z",
+    "upstream_revision": "499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+    "config": {
+      "mode": "profile",
+      "suite": "benchmarks_hard",
+      "case": "case_01",
+      "router": "negotiated",
+      "budget": 180.0,
+      "worker": false,
+      "out": null
+    },
+    "workers": 1,
+    "threads": 1,
+    "seed": null,
+    "compiler_flags": null,
+    "warm_start": null,
+    "portfolio_runs": 1,
+    "steps": [
+      {
+        "command": [
+          "/home/younix/eda-3d-routing-challenge/.venv/bin/python",
+          "/home/younix/eda-3d-routing-challenge/dev/phase1.py",
+          "profile",
+          "--worker",
+          "--out",
+          "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261001T171916.717830Z-profile",
+          "--suite",
+          "benchmarks_hard",
+          "--case",
+          "case_01",
+          "--router",
+          "negotiated",
+          "--budget",
+          "180.0"
+        ],
+        "cwd": "/home/younix/eda-3d-routing-challenge/dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+        "budget_s": 180.0,
+        "wall_s": 13.210135150002316,
+        "exit_code": 0,
+        "timeout": false,
+        "interrupted": false,
+        "log": "dev/artifacts/20261001T171916.717830Z-profile/profile.log",
+        "peak_rss_kib": 26652,
+        "user_cpu_s": 13.52,
+        "system_cpu_s": 0.07
+      }
+    ],
+    "outputs": {
+      "profile.log": "26e06388ffea5e4446e98489aa44f8933d3aebb694cfe59526d52d360c0d8c12",
+      "profile.resources.txt": "15e2b4f83c51eed88199f7cca92505d709e9561ce8aa23e0f991f124da32d344",
+      "profile.json": "26e06388ffea5e4446e98489aa44f8933d3aebb694cfe59526d52d360c0d8c12",
+      "routing.pstats": "5ec8302942d2eb116317a6a5b68c1c34a43faa15b9552f9dde5cc206f4ecd2e4",
+      "case_01.sol.json": "c54d48a91458c8ab1ebba0e1e3a7f5cc2deeaa8a32e6f403040046e8e3a86586",
+      "development-source/requirements.txt": "6cb7cda827686d26c70ebd360b359b0be8ebc8821f1a9ab6fcec5621f3c6c1c6",
+      "development-source/finish_phase0.py": "5399a22920b4229c3a0799103bef0b32b275a5040afcb9b2584815988ca2e700",
+      "development-source/measure.py": "567d13af7911c668243237ae39ad84fed9462715cc7a0c85ae9aae7f2970dbe2",
+      "development-source/capture_environment.py": "3670e74ad3d2e417ad3bd73ddbb52b93a988c3c68de19401b57baffb88b0a914",
+      "development-source/phase1.py": "7731250deaf89258b08fca696f002e33bd65c453f41cc647ff58df35981b8b69",
+      "development-source/toolchain_probe.cpp": "060e9ba22d27271f96a8c63a5192aea444f696d10f69060e625c412415c6ef49",
+      "development-source/setup.sh": "14233e92535d89ca2ab530ec6f34cf8a926c4df083f0826fe387271add98d6e4",
+      "development-source/README.md": "28e835a9da4fd6d121181125aec01fa65709b62fba474be7545a868ced394df6"
+    },
+    "result": {
+      "case": "case_01",
+      "suite": "benchmarks_hard",
+      "router": "negotiated",
+      "legal": true,
+      "total_delay": 11938,
+      "ratio": 1.0,
+      "baseline_delay": 11938,
+      "router_stats": {
+        "iterations": 11,
+        "overused": 0,
+        "success": true
+      },
+      "stages": {
+        "load_s": 0.0013124690158292651,
+        "route_profiled_s": 13.108600794977974,
+        "check_s": 0.004217761044856161,
+        "save_json_s": 0.007658766990061849,
+        "reload_json_s": 0.001897932030260563
+      },
+      "search": {
+        "calls": 431,
+        "first_calls": 62,
+        "repeated_calls": 369,
+        "all_search_s": 13.071111009048764,
+        "repeated_search_s": 10.55606072593946,
+        "capacity_ignoring_probe_calls": 0
+      },
+      "hot_functions": [
+        {
+          "file": "negotiated.py",
+          "line": 88,
+          "function": "_route_net",
+          "primitive_calls": 431,
+          "calls": 431,
+          "self_s": 7.128636724000001,
+          "cumulative_s": 13.048205617
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<method 'get' of 'dict' objects>",
+          "primitive_calls": 30879147,
+          "calls": 30879147,
+          "self_s": 3.085844041,
+          "cumulative_s": 3.085844041
+        },
+        {
+          "file": "grid.py",
+          "line": 34,
+          "function": "neighbors",
+          "primitive_calls": 7378010,
+          "calls": 7378010,
+          "self_s": 0.962066445,
+          "cumulative_s": 1.135772401
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<built-in method builtins.len>",
+          "primitive_calls": 11868851,
+          "calls": 11868851,
+          "self_s": 0.7285083760000001,
+          "cumulative_s": 0.7285083760000001
+        },
+        {
+          "file": "grid.py",
+          "line": 53,
+          "function": "edge_key",
+          "primitive_calls": 5925183,
+          "calls": 5925183,
+          "self_s": 0.391051274,
+          "cumulative_s": 0.391051274
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<built-in method _heapq.heappop>",
+          "primitive_calls": 1313977,
+          "calls": 1313977,
+          "self_s": 0.39097983000000003,
+          "cumulative_s": 0.39097983000000003
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<built-in method _heapq.heappush>",
+          "primitive_calls": 1572433,
+          "calls": 1572433,
+          "self_s": 0.18153539400000002,
+          "cumulative_s": 0.18153539400000002
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<built-in method builtins.divmod>",
+          "primitive_calls": 2246708,
+          "calls": 2246708,
+          "self_s": 0.17412617700000002,
+          "cumulative_s": 0.17412617700000002
+        },
+        {
+          "file": "phase1.py",
+          "line": 78,
+          "function": "wrapped",
+          "primitive_calls": 431,
+          "calls": 431,
+          "self_s": 0.024102852,
+          "cumulative_s": 13.073082989000001
+        },
+        {
+          "file": "negotiated.py",
+          "line": 70,
+          "function": "_add",
+          "primitive_calls": 431,
+          "calls": 431,
+          "self_s": 0.010486344,
+          "cumulative_s": 0.012285057
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<method 'add' of 'set' objects>",
+          "primitive_calls": 61607,
+          "calls": 61607,
+          "self_s": 0.006551951,
+          "cumulative_s": 0.006551951
+        },
+        {
+          "file": "negotiated.py",
+          "line": 77,
+          "function": "_remove",
+          "primitive_calls": 369,
+          "calls": 369,
+          "self_s": 0.005299553,
+          "cumulative_s": 0.0072911830000000006
+        },
+        {
+          "file": "negotiated.py",
+          "line": 139,
+          "function": "run",
+          "primitive_calls": 1,
+          "calls": 1,
+          "self_s": 0.0052529000000000005,
+          "cumulative_s": 13.105477342
+        },
+        {
+          "file": "negotiated.py",
+          "line": 134,
+          "function": "_overused",
+          "primitive_calls": 12,
+          "calls": 12,
+          "self_s": 0.004437382,
+          "cumulative_s": 0.006098963000000001
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<method 'discard' of 'set' objects>",
+          "primitive_calls": 21992,
+          "calls": 21992,
+          "self_s": 0.002221456,
+          "cumulative_s": 0.002221456
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<method 'append' of 'list' objects>",
+          "primitive_calls": 12149,
+          "calls": 12149,
+          "self_s": 0.0014565880000000002,
+          "cumulative_s": 0.0014565880000000002
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<built-in method _heapq.heapify>",
+          "primitive_calls": 901,
+          "calls": 901,
+          "self_s": 0.000809634,
+          "cumulative_s": 0.000809634
+        },
+        {
+          "file": "grid.py",
+          "line": 28,
+          "function": "coord",
+          "primitive_calls": 3772,
+          "calls": 3772,
+          "self_s": 0.0007627770000000001,
+          "cumulative_s": 0.001182998
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<built-in method time.perf_counter>",
+          "primitive_calls": 862,
+          "calls": 862,
+          "self_s": 0.0007216820000000001,
+          "cumulative_s": 0.0007216820000000001
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<method 'items' of 'dict' objects>",
+          "primitive_calls": 455,
+          "calls": 455,
+          "self_s": 0.000234619,
+          "cumulative_s": 0.000234619
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<method 'pop' of 'dict' objects>",
+          "primitive_calls": 369,
+          "calls": 369,
+          "self_s": 0.000162942,
+          "cumulative_s": 0.000162942
+        },
+        {
+          "file": "negotiated.py",
+          "line": 62,
+          "function": "bbox",
+          "primitive_calls": 62,
+          "calls": 62,
+          "self_s": 9.0748e-05,
+          "cumulative_s": 0.00021212000000000002
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<built-in method builtins.min>",
+          "primitive_calls": 196,
+          "calls": 196,
+          "self_s": 5.4489000000000006e-05,
+          "cumulative_s": 5.4489000000000006e-05
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<method 'disable' of '_lsprof.Profiler' objects>",
+          "primitive_calls": 1,
+          "calls": 1,
+          "self_s": 3.2630000000000004e-05,
+          "cumulative_s": 3.2630000000000004e-05
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<built-in method builtins.max>",
+          "primitive_calls": 186,
+          "calls": 186,
+          "self_s": 2.5853e-05,
+          "cumulative_s": 2.5853e-05
+        }
+      ],
+      "timing_note": "cProfile/instrumentation overhead; cumulative timings overlap"
+    },
+    "input": {
+      "case": "benchmarks_hard/case_01.json",
+      "sha256": "685a165a7a15811dff12839e0dbe79752b889558213f760ad5f0df6139766f5d",
+      "case_seed": 1264516513
+    },
+    "official_inputs_unchanged": true,
+    "changed_official_files": [],
+    "success": true,
+    "total_subprocess_wall_s": 13.210135150002316,
+    "source": {
+      "revision": "d887a05b844f9aeda0f656ca4644c58969d41ec5",
+      "status": "M .gitignore\n?? dev/\n?? docs/BUGS.md\n?? docs/CLAIMS.md\n?? docs/DECISIONS.md\n?? docs/VERSIONS.md\n?? docs/WORKLOG.md\n?? docs/design/\n?? docs/evidence/\n?? docs/research/\n?? docs/summaries/",
+      "diff_sha256": "64fd77fed8ba632e3ec1322dfc433bbdcd8f1465ae8a03e1d46b3150174aab96",
+      "files_sha256": "324f7db4322fffb61f17963094fb998cb13c65aadb63459336b1d71c0b263ba5"
+    },
+    "manifest_path": "dev/artifacts/20261001T171916.717830Z-profile/manifest.json",
+    "manifest_sha256": "ae4c60728a67fe938d144d05672f82f4631ec20fedbe7985679370d2fc86c9b3",
+    "machine": {
+      "hostname": "LAPTOP-C8RSJ5BT",
+      "os": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+      "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+      "cpu_count": 16,
+      "affinity_cpus": 16
+    }
+  },
+  {
+    "run_id": "20261001T172009.598960Z-profile",
+    "started_utc": "20261001T172009.598960Z",
+    "upstream_revision": "499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+    "config": {
+      "mode": "profile",
+      "suite": "benchmarks_scale",
+      "case": "case_08",
+      "router": "baseline",
+      "budget": 300.0,
+      "worker": false,
+      "out": null
+    },
+    "workers": 1,
+    "threads": 1,
+    "seed": null,
+    "compiler_flags": null,
+    "warm_start": null,
+    "portfolio_runs": 1,
+    "steps": [
+      {
+        "command": [
+          "/home/younix/eda-3d-routing-challenge/.venv/bin/python",
+          "/home/younix/eda-3d-routing-challenge/dev/phase1.py",
+          "profile",
+          "--worker",
+          "--out",
+          "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261001T172009.598960Z-profile",
+          "--suite",
+          "benchmarks_scale",
+          "--case",
+          "case_08",
+          "--router",
+          "baseline",
+          "--budget",
+          "300.0"
+        ],
+        "cwd": "/home/younix/eda-3d-routing-challenge/dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+        "budget_s": 300.0,
+        "wall_s": 134.55515428300714,
+        "exit_code": 0,
+        "timeout": false,
+        "interrupted": false,
+        "log": "dev/artifacts/20261001T172009.598960Z-profile/profile.log",
+        "peak_rss_kib": 62536,
+        "user_cpu_s": 136.94,
+        "system_cpu_s": 1.54
+      }
+    ],
+    "outputs": {
+      "profile.log": "c3b356b063daa133ffe99d8917f18884324f5e1042eeab84076b4d3fadef4d78",
+      "profile.resources.txt": "05395a8b0c23634d064abc8db472c994c4312d5cb3923380abae14628e43fe67",
+      "profile.json": "c3b356b063daa133ffe99d8917f18884324f5e1042eeab84076b4d3fadef4d78",
+      "case_08.sol.json": "18fb8d4709e45b6ca650b65a8b34f163d4d5b2d6e9492ec6104be42b053a7597",
+      "routing.pstats": "04ee20fa4f68b4f06614dea017d18beb77a1e1d7fcd975436d5ac788571a9669",
+      "development-source/requirements.txt": "6cb7cda827686d26c70ebd360b359b0be8ebc8821f1a9ab6fcec5621f3c6c1c6",
+      "development-source/finish_phase0.py": "5399a22920b4229c3a0799103bef0b32b275a5040afcb9b2584815988ca2e700",
+      "development-source/measure.py": "567d13af7911c668243237ae39ad84fed9462715cc7a0c85ae9aae7f2970dbe2",
+      "development-source/capture_environment.py": "3670e74ad3d2e417ad3bd73ddbb52b93a988c3c68de19401b57baffb88b0a914",
+      "development-source/phase1.py": "7731250deaf89258b08fca696f002e33bd65c453f41cc647ff58df35981b8b69",
+      "development-source/toolchain_probe.cpp": "060e9ba22d27271f96a8c63a5192aea444f696d10f69060e625c412415c6ef49",
+      "development-source/setup.sh": "14233e92535d89ca2ab530ec6f34cf8a926c4df083f0826fe387271add98d6e4",
+      "development-source/README.md": "28e835a9da4fd6d121181125aec01fa65709b62fba474be7545a868ced394df6"
+    },
+    "result": {
+      "case": "case_08",
+      "suite": "benchmarks_scale",
+      "router": "baseline",
+      "legal": true,
+      "total_delay": 121175,
+      "ratio": 1.0,
+      "baseline_delay": 121175,
+      "router_stats": {
+        "routed_nets": 265,
+        "total_nets": 265,
+        "rip_ups": 0,
+        "ops": 265,
+        "success": true
+      },
+      "stages": {
+        "load_s": 0.002724873018451035,
+        "route_profiled_s": 134.01227814197773,
+        "check_s": 0.08691782597452402,
+        "save_json_s": 0.19033733499236405,
+        "reload_json_s": 0.05239975097356364
+      },
+      "search": {
+        "calls": 265,
+        "first_calls": 265,
+        "repeated_calls": 0,
+        "all_search_s": 133.94740643090336,
+        "repeated_search_s": 0.0,
+        "capacity_ignoring_probe_calls": 0
+      },
+      "hot_functions": [
+        {
+          "file": "baseline.py",
+          "line": 109,
+          "function": "_build_tree",
+          "primitive_calls": 265,
+          "calls": 265,
+          "self_s": 76.97546087900001,
+          "cumulative_s": 133.556832256
+        },
+        {
+          "file": "grid.py",
+          "line": 34,
+          "function": "neighbors",
+          "primitive_calls": 138097126,
+          "calls": 138097126,
+          "self_s": 17.646825076000002,
+          "cumulative_s": 20.925535592000003
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<method 'get' of 'dict' objects>",
+          "primitive_calls": 134669615,
+          "calls": 134669615,
+          "self_s": 16.213431935000003,
+          "cumulative_s": 16.213431935000003
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<built-in method _heapq.heappop>",
+          "primitive_calls": 23226198,
+          "calls": 23226198,
+          "self_s": 9.307547895,
+          "cumulative_s": 9.307547895
+        },
+        {
+          "file": "grid.py",
+          "line": 53,
+          "function": "edge_key",
+          "primitive_calls": 116625610,
+          "calls": 116625610,
+          "self_s": 7.443497388000001,
+          "cumulative_s": 7.443497388000001
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<built-in method builtins.divmod>",
+          "primitive_calls": 41799292,
+          "calls": 41799292,
+          "self_s": 3.2890801670000003,
+          "cumulative_s": 3.2890801670000003
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<built-in method _heapq.heappush>",
+          "primitive_calls": 23793280,
+          "calls": 23793280,
+          "self_s": 2.6651834030000003,
+          "cumulative_s": 2.6651834030000003
+        },
+        {
+          "file": "phase1.py",
+          "line": 78,
+          "function": "wrapped",
+          "primitive_calls": 265,
+          "calls": 265,
+          "self_s": 0.392175893,
+          "cumulative_s": 133.9498847
+        },
+        {
+          "file": "baseline.py",
+          "line": 190,
+          "function": "run",
+          "primitive_calls": 1,
+          "calls": 1,
+          "self_s": 0.020752856,
+          "cumulative_s": 134.012196468
+        },
+        {
+          "file": "grid.py",
+          "line": 28,
+          "function": "coord",
+          "primitive_calls": 56866,
+          "calls": 56866,
+          "self_s": 0.020364341,
+          "cumulative_s": 0.030733992
+        },
+        {
+          "file": "baseline.py",
+          "line": 105,
+          "function": "_forbidden_pins",
+          "primitive_calls": 265,
+          "calls": 265,
+          "self_s": 0.011569747,
+          "cumulative_s": 0.011569747
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<method 'add' of 'set' objects>",
+          "primitive_calls": 84415,
+          "calls": 84415,
+          "self_s": 0.009606773,
+          "cumulative_s": 0.009606773
+        },
+        {
+          "file": "baseline.py",
+          "line": 88,
+          "function": "_commit",
+          "primitive_calls": 265,
+          "calls": 265,
+          "self_s": 0.009359318,
+          "cumulative_s": 0.009359318
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<method 'append' of 'list' objects>",
+          "primitive_calls": 30613,
+          "calls": 30613,
+          "self_s": 0.0046228680000000005,
+          "cumulative_s": 0.0046228680000000005
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<built-in method time.perf_counter>",
+          "primitive_calls": 530,
+          "calls": 530,
+          "self_s": 0.0006377300000000001,
+          "cumulative_s": 0.0006377300000000001
+        },
+        {
+          "file": "baseline.py",
+          "line": 71,
+          "function": "bbox",
+          "primitive_calls": 265,
+          "calls": 265,
+          "self_s": 0.00056664,
+          "cumulative_s": 0.001316588
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<built-in method builtins.len>",
+          "primitive_calls": 505,
+          "calls": 505,
+          "self_s": 0.00046889,
+          "cumulative_s": 0.00046889
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<method 'discard' of 'set' objects>",
+          "primitive_calls": 501,
+          "calls": 501,
+          "self_s": 0.00039017,
+          "cumulative_s": 0.00039017
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<method 'popleft' of 'collections.deque' objects>",
+          "primitive_calls": 265,
+          "calls": 265,
+          "self_s": 0.00020441100000000002,
+          "cumulative_s": 0.00020441100000000002
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<built-in method builtins.max>",
+          "primitive_calls": 795,
+          "calls": 795,
+          "self_s": 0.000128896,
+          "cumulative_s": 0.000128896
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<built-in method builtins.min>",
+          "primitive_calls": 795,
+          "calls": 795,
+          "self_s": 0.000122673,
+          "cumulative_s": 0.000122673
+        },
+        {
+          "file": "baseline.py",
+          "line": 80,
+          "function": "<lambda>",
+          "primitive_calls": 265,
+          "calls": 265,
+          "self_s": 6.719400000000001e-05,
+          "cumulative_s": 0.001383782
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<method 'sort' of 'list' objects>",
+          "primitive_calls": 1,
+          "calls": 1,
+          "self_s": 6.3866e-05,
+          "cumulative_s": 0.0014476480000000002
+        },
+        {
+          "file": "<string>",
+          "line": 2,
+          "function": "__init__",
+          "primitive_calls": 265,
+          "calls": 265,
+          "self_s": 5.238e-05,
+          "cumulative_s": 5.238e-05
+        },
+        {
+          "file": "~",
+          "line": 0,
+          "function": "<method 'disable' of '_lsprof.Profiler' objects>",
+          "primitive_calls": 1,
+          "calls": 1,
+          "self_s": 3.2979000000000004e-05,
+          "cumulative_s": 3.2979000000000004e-05
+        }
+      ],
+      "timing_note": "cProfile/instrumentation overhead; cumulative timings overlap"
+    },
+    "input": {
+      "case": "benchmarks_scale/case_08.json",
+      "sha256": "dfa38773632df7d3560c51b443eb3a32f358ea64799caa1e6ee7ce5bd3e812c6",
+      "case_seed": 2022696048
+    },
+    "official_inputs_unchanged": true,
+    "changed_official_files": [],
+    "success": true,
+    "total_subprocess_wall_s": 134.55515428300714,
+    "source": {
+      "revision": "d887a05b844f9aeda0f656ca4644c58969d41ec5",
+      "status": "M .gitignore\n?? dev/\n?? docs/BUGS.md\n?? docs/CLAIMS.md\n?? docs/DECISIONS.md\n?? docs/VERSIONS.md\n?? docs/WORKLOG.md\n?? docs/design/\n?? docs/evidence/\n?? docs/research/\n?? docs/summaries/",
+      "diff_sha256": "64fd77fed8ba632e3ec1322dfc433bbdcd8f1465ae8a03e1d46b3150174aab96",
+      "files_sha256": "324f7db4322fffb61f17963094fb998cb13c65aadb63459336b1d71c0b263ba5"
+    },
+    "manifest_path": "dev/artifacts/20261001T172009.598960Z-profile/manifest.json",
+    "manifest_sha256": "bfbbd5816341a1ed939ad4960a4d7ae35a86887602eff500b0fa747e4664650f",
+    "machine": {
+      "hostname": "LAPTOP-C8RSJ5BT",
+      "os": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+      "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+      "cpu_count": 16,
+      "affinity_cpus": 16
+    }
+  }
+]
