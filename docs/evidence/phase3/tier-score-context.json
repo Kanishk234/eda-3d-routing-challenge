@@ -1,0 +1,65 @@
+{
+  "rows": [
+    {
+      "tier": "intro",
+      "score": 1.0504090271124256,
+      "geometric_mean_delay_reduction_fraction": 0.0479899028010069,
+      "stage_core_wall_s": 15.842526125139557,
+      "stage_budget_s": 2.0,
+      "mode": "polish",
+      "cap_reached_cases": 3,
+      "searches": 5392
+    },
+    {
+      "tier": "hard",
+      "score": 1.212967727395428,
+      "geometric_mean_delay_reduction_fraction": 0.17557575736390585,
+      "stage_core_wall_s": 18.22393328900216,
+      "stage_budget_s": 2.0,
+      "mode": "fanout_walk",
+      "cap_reached_cases": 9,
+      "searches": 44595
+    },
+    {
+      "tier": "scale",
+      "score": 1.0236861228944922,
+      "geometric_mean_delay_reduction_fraction": 0.023138071685019246,
+      "stage_core_wall_s": 16.18859593506204,
+      "stage_budget_s": 2.0,
+      "mode": "polish",
+      "cap_reached_cases": 8,
+      "searches": 1886
+    },
+    {
+      "tier": "congested",
+      "score": 1.031233699656949,
+      "geometric_mean_delay_reduction_fraction": 0.03028770264910785,
+      "stage_core_wall_s": 7.29363755293889,
+      "stage_budget_s": 2.0,
+      "mode": "polish",
+      "cap_reached_cases": 3,
+      "searches": 2202
+    },
+    {
+      "tier": "designs",
+      "score": 1.1215781534720441,
+      "geometric_mean_delay_reduction_fraction": 0.10839918118561542,
+      "stage_core_wall_s": 5.67244076897623,
+      "stage_budget_s": 2.0,
+      "mode": "polish",
+      "cap_reached_cases": 1,
+      "searches": 3051
+    },
+    {
+      "tier": "stress",
+      "score": 1.0026008508372637,
+      "geometric_mean_delay_reduction_fraction": 0.0025941039598078586,
+      "stage_core_wall_s": 60.05149722495116,
+      "stage_budget_s": 60.0,
+      "mode": "polish",
+      "cap_reached_cases": 1,
+      "searches": 87
+    }
+  ],
+  "note": "Scores use different tier baselines. Reduction is geometric-mean normalized reduction,not reduction of total tier delay. Recorded stage times omit warm-start generation;hard additionally inherits427.357s total recorded pipeline. These are initial outcomes,not achievable ceilings."
+}

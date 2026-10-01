@@ -13,3 +13,5 @@ Output follows model.py/FORMATS.md: version-1 m3d-submission, matching instance,
 Implemented wrapper: unique run directories; smoke candidate written then officially evaluated, accepted output atomically renamed. Previous runs survive timeout. Suite outputs stay isolated and are not automatically promoted. run_polish.py supports --resume-dir and preserves a validated pre-search checkpoint; completed candidates are officially checked before replacement.
 
 Resource-pricing variants:fanout scales search congestion prices only;compact attachment is heuristic3/4 driver seeding using integer-scaled priorities. Root-to-sink physical distances are accumulated separately and officially checked. Accepted-output resource metrics count each net vertex once(including via endpoints),edges and vias independently of delay.
+
+Initial tree validation uses compact local indices over each tree's sorted vertices. Adjacency/distance arrays scale with tree size rather than grid size per net. Global pins/owners remain dense and unchanged. Measured stage timers separate read(including initial validation) from optimization;whole-core deadline includes initialization.

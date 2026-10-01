@@ -30,3 +30,7 @@
 
 18. User requested all-tier participation. Expand intended scope to all six tiers, with each entry complete and officially checked independently. Use official reference warm starts explicitly attributed for initial scale/stress/congested/designs coverage; do not claim independent construction or reproduced reference runtime. Final freeze/regeneration/submission checks remain required.
 19. Combine fanout-priced negotiated groups with protected threshold walks. Matched development representatives/seeds:4 wins,4 ties,1 loss versus strict fanout descent;5/9 improve their starting incumbents. Fixed seed1 two-second full-hard stage yields1.212967727395428,4 improve/5 unchanged,all legal. Cap comparisons include different completed work; no uniform superiority or convergence claim.
+
+20. Retain tree-local initial validation after measured stress bottleneck. Matched stress seed1/5passes/60s from225241 routes:read44.143→0.424s,validation43.950→0.250s,searches72→252,legal delays1141896→1137194. Scope:single-case/single timing sample;official checker still validates accepted outputs. Physical search priorities and whole-core cap unchanged. No new unit-test claim.
+
+21. Retain fanout exploration for initial larger-tier coordinated stage:declared representatives scale01,congested01,designs-ctrl all improve and all beat fanout_walk at matched5s/seed1/100passes. Apply one fixed fanout config to full scale/congested/designs from original tier coverage routes,not per-case selected outputs. Single-seed screen limits remain;no broad superiority claim.

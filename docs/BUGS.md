@@ -31,3 +31,11 @@ Mode-aware report selection incorrectly retained soft-validation.json as destina
 Initial stress polish run20261001T225201.888682Z-exact-polish used2s core cap plus5s wrapper allowance. Process terminated at7.004s with no completed core result; wrapper correctly retained the officially legal reference checkpoint(delay1144904,ratio1.0) and marked success false. Do not count this as a successful solver run. Retrying with60s allows measurement of the large-case initialization/search overhead. Dense per-net validation allocates whole-grid adjacency/cost buffers; this is a suspected scaling cost from code inspection, not a measured profile attribution. Raw failed manifest/log retained.
 
 Stress followup:60s retry225241 completes successfully;official CLI confirms improved legal delay1141934. No watchdog change required to obtain initial coverage. Initialization/validation profiling remains next work;do not infer allocation speed from this result.
+
+## Stress profile needs larger completion envelope
+
+Instrumented stress profile225637 with20s core/25s outer cap did not complete;verified incumbent remained unchanged and run success false. Scale08/designs-router profiles completed with stage timers. Retrying stress at previously successful60s cap to measure read/validation/search separately;failure is not an improvement result or a measured stage attribution.
+
+Stress initialization cause measured and repaired:initial per-net whole-grid adjacency/cost allocation consumed43.950s validation in60s run225727. Tree-local compact indexing in225922 cuts validation to0.250s/read0.424s;legal improved output1137194 verified by official checker. Global vertex ownership/foreign-pin checking retained. Historical timeouts/results stay recorded;independent CLI rescore follows. No tests run this session.
+
+Coverage ancestry reporting initially assumed every ancestor config contains mode;historical Phase2 manifest omits it. Default historical ancestor to polish;rerun completes six official scores. Failure stopped report before writing;route outputs/scores unaffected.
