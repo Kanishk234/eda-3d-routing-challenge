@@ -8,9 +8,9 @@ from measure import ROOT, digest, save
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("screen", choices=["repeat", "budget", "fresh", "treecost"])
+    parser.add_argument("screen", choices=["repeat", "budget", "fresh", "treecost", "cycles"])
     args = parser.parse_args()
-    coverage = ROOT / "docs/evidence/phase3/tier-guided-coverage.json"
+    coverage = ROOT / "docs/evidence/phase3" / ("tier-followup-coverage.json" if args.screen == "cycles" else "tier-guided-coverage.json")
     entries = json.loads(coverage.read_text())
     starts = {r["tier"]: ROOT / "dev/artifacts" / r["run_id"] / "routes" for r in entries["rows"]}
     representatives = {"hard": "case_01", "congested": "case_01", "designs": "ctrl"}
@@ -19,15 +19,17 @@ def main():
         "budget": [("fanout_astar", 1, budget, 100) for budget in (5, 20)],
         "fresh": [("restart_astar", 1, 20, 5)],
         "treecost": [("treecost", 1, 5, 100)],
+        "cycles": [("fanout_astar", 1, 20, passes) for passes in (100, 1000)],
     }[args.screen]
     rows = []
     destination = ROOT / "docs/evidence/phase3" / ("guided-" + args.screen + "-screen.json")
+    if args.screen == "cycles": representatives = {"hard": ["case_01", "case_04", "case_07"]}
     report = {"screen": args.screen, "scope": {"representatives": representatives, "configs": configs},
               "warm_start_coverage_sha256": digest(coverage), "workers": 1,
               "portfolio_selection": False, "rows": rows,
               "limitations": "Development representatives only; no reserved hard08/09 tuning, no per-case selection, no full-tier score. Wall-time caps can change completed prefixes."}
     for mode, seed, budget, passes in configs:
-        for tier, case in representatives.items():
+        for tier, case in ([("hard", "case_01"), ("hard", "case_04"), ("hard", "case_07")] if args.screen == "cycles" else representatives.items()):
             before = set((ROOT / "dev/artifacts").glob("*-exact-polish/manifest.json"))
             subprocess.run([sys.executable, str(ROOT / "dev/run_polish.py"),
                             "--suite", "benchmarks_" + tier, "--case", case, "--mode", mode,

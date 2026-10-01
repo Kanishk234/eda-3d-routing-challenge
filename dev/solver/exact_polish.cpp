@@ -41,8 +41,9 @@ struct Engine {
     std::vector<I> dist;
     std::chrono::steady_clock::time_point deadline;
     std::uint64_t searches=0, expansions=0, accepted=0;
-    double read_s=0,validation_s=0,optimization_s=0;
-    bool timed_out=false;
+    double read_s=0,validation_s=0,optimization_s=0,search_reset_s=0,search_rebuild_s=0;
+    bool timed_out=false,work_exhausted=false;
+    std::uint64_t work_limit=0;
     bool ablation_mode=false;
     bool compact_groups=false,fanout_prices=false,astar_search=false,gap_order=false,discounted_groups=false;
     bool random_ties=false; std::uint64_t tie_seed=0;
@@ -58,6 +59,7 @@ struct Engine {
     std::uint64_t proposals=0,no_gain=0,too_many=0,attempts=0,failed=0,nonimproving=0;
 
     bool expired() {
+        if(work_limit && expansions>=work_limit) { work_exhausted=true; timed_out=true; return true; }
         if (stopped || std::chrono::steady_clock::now() >= deadline) {
             timed_out=true;
             return true;
@@ -181,10 +183,12 @@ struct Engine {
         ++searches;
         if(random_ties) tie_seed+=0x9e3779b97f4a7c15ULL;
         if(expired()) return false;
+        auto reset_start=std::chrono::steady_clock::now();
         std::fill(dist.begin(),dist.end(),INF);
         std::fill(parent.begin(),parent.end(),-1);
         std::vector<char> is_sink(vcount,0);
         for(int s:n.sinks) is_sink[s]=1;
+        search_reset_s+=std::chrono::duration<double>(std::chrono::steady_clock::now()-reset_start).count();
         int left=static_cast<int>(n.sinks.size());
         // Distance to the union of sink-layer rectangles in a relaxed graph.
         // Every horizontal edge there costs the cheapest physical layer cost.
@@ -218,6 +222,7 @@ struct Engine {
             auto [priority,rank,u]=q.top(); q.pop();
             if(priority!=add(dist[u],heuristic(u))) continue;
             I cost=dist[u];
+            if(work_limit && expansions>=work_limit) { expired(); return false; }
             ++expansions;
             if((expansions&1023)==0 && expired()) return false;
             if(is_sink[u]) { is_sink[u]=0; --left; }
@@ -235,6 +240,7 @@ struct Engine {
             });
         }
         if(left || expired()) return false;
+        auto rebuild_start=std::chrono::steady_clock::now();
         proposed=n; proposed.edges.clear(); proposed.delay=0;
         std::vector<char> in_tree(vcount,0);
         in_tree[n.root]=1;
@@ -258,6 +264,7 @@ struct Engine {
         proposed.vertices.clear();
         for(int v=0;v<vcount;++v) if(in_tree[v]) proposed.vertices.push_back(v);
         std::sort(proposed.edges.begin(),proposed.edges.end());
+        search_rebuild_s+=std::chrono::duration<double>(std::chrono::steady_clock::now()-rebuild_start).count();
         return true;
     }
     bool attach(const Net& n,Net& proposed,bool root_aware,int root_scale=4,
@@ -283,6 +290,7 @@ struct Engine {
             int found=-1;
             while(!q.empty()) {
                 auto [cost,u]=q.top();q.pop(); if(cost!=dist[u]) continue;
+                if(work_limit && expansions>=work_limit) { expired(); return false; }
                 ++expansions; if((expansions&1023)==0 && expired()) return false;
                 if(remaining[u]) {found=u;break;}
                 neighbors(u,[&](int v,I delay) {
@@ -554,6 +562,9 @@ struct Engine {
                  <<",\"negotiation_rounds\":"<<negotiation_rounds<<",\"conflicted_rounds\":"<<conflicted_rounds
                  <<",\"fresh_attempts\":"<<fresh_attempts<<",\"fresh_legal\":"<<fresh_legal
                  <<",\"read_s\":"<<read_s<<",\"validation_s\":"<<validation_s<<",\"optimization_s\":"<<optimization_s
+                 <<",\"search_reset_s\":"<<search_reset_s<<",\"search_rebuild_s\":"<<search_rebuild_s
+                 <<",\"work_limit\":"<<work_limit<<",\"work_exhausted\":"<<work_exhausted
+                 <<",\"expansions_per_second\":"<<(optimization_s>0?expansions/optimization_s:0)
                  <<",\"uphill_moves\":"<<uphill_moves
                  <<",\"selection_nodes\":"<<selection_nodes<<",\"selection_complete\":"<<selection_complete
                  <<",\"selection_partial\":"<<selection_partial
@@ -569,15 +580,20 @@ struct Engine {
 };
 int main(int argc,char**argv) {
     try {
-        if(argc!=5) throw std::runtime_error("usage: engine SECONDS SEED PASSES polish|search|repair");
+        if(argc!=5 && argc!=6) throw std::runtime_error("usage: engine SECONDS SEED PASSES polish|search|repair");
         double seconds=std::stod(argv[1]);
         if(!std::isfinite(seconds) || seconds<0 || seconds>600) throw std::runtime_error("invalid budget");
         auto seed=std::stoull(argv[2]); int passes=std::stoi(argv[3]);
-        if(passes<1 || passes>100) throw std::runtime_error("invalid passes");
+        if(passes<1 || passes>1000) throw std::runtime_error("invalid passes");
         bool search_only=std::string(argv[4])=="search";
         if(!search_only && std::string(argv[4])!="polish" && std::string(argv[4])!="repair" && std::string(argv[4])!="repairsoft" && std::string(argv[4])!="ablation" && std::string(argv[4])!="negotiated" && std::string(argv[4])!="explore" && std::string(argv[4])!="restart" && std::string(argv[4])!="select" && std::string(argv[4])!="wide" && std::string(argv[4])!="walk" && std::string(argv[4])!="descent" && std::string(argv[4])!="compact" && std::string(argv[4])!="fanout" && std::string(argv[4])!="restart_fanout" && std::string(argv[4])!="restart_compact" && std::string(argv[4])!="restart_polish" && std::string(argv[4])!="fanout_walk" && std::string(argv[4])!="fanout_descent" && std::string(argv[4])!="astar" && std::string(argv[4])!="fanout_astar" && std::string(argv[4])!="fanout_gap" && std::string(argv[4])!="fanout_astar_gap" && std::string(argv[4])!="restart_astar" && std::string(argv[4])!="treecost") throw std::runtime_error("invalid mode");
         std::signal(SIGINT,on_signal); std::signal(SIGTERM,on_signal);
         Engine engine;
+        if(argc==6) {
+            std::string limit=argv[5];
+            if(limit.empty() || limit.find_first_not_of("0123456789")!=std::string::npos) throw std::runtime_error("invalid work limit");
+            engine.work_limit=std::stoull(limit);
+        }
         engine.deadline=std::chrono::steady_clock::now()+std::chrono::duration_cast<std::chrono::steady_clock::duration>(std::chrono::duration<double>(seconds));
         auto read_start=std::chrono::steady_clock::now();
         engine.read(search_only);

@@ -302,5 +302,42 @@ class ExactKernel(unittest.TestCase):
         with self.assertRaises(ValueError):
             decode(inst,"M3DOUT1 1 2 0 0 0 0 0 2 2 0 1")
 
+
+class WorkAndAstarProperties(unittest.TestCase):
+    def test_astar_matches_independent_dijkstra_and_checker(self):
+        rng=random.Random(281)
+        for i in range(30):
+            a=(rng.randrange(1,4),rng.randrange(3),rng.randrange(2))
+            b=(a[0],a[1]+1,a[2])
+            inst,sub=make(5,4,[rng.randrange(1,10) for _ in range(2)],
+                          rng.randrange(1,8),(0,0,0),[(4,3,1),(4,0,0)],(a,b))
+            expected,_=reference(inst,(0,0,0),[(4,3,1),(4,0,0)],{a,b})
+            _,warm,_=core(inst,sub,seed=i)
+            for mode in ("polish","astar"):
+                run,out,stats=core(inst,warm,mode,seed=i)
+                self.assertEqual(run.returncode,0)
+                checked=check(inst,out)
+                self.assertTrue(checked.legal)
+                self.assertEqual(stats["net_delays"][0],expected)
+                self.assertEqual(checked.total_delay,stats["total_delay"])
+
+    def test_work_cap_is_exact_repeatable_and_preserves_legal_routes(self):
+        inst,sub=make(5,5,[6,2],3,(0,0,0),[(4,4,0)],own_edges=[
+            *(( (x,0,0),(x+1,0,0)) for x in range(4)),
+            *(( (4,y,0),(4,y+1,0)) for y in range(4))])
+        for mode in ("astar","fanout_astar","treecost","restart_astar","fanout_walk"):
+            for limit in (1,10,25,100):
+                outputs=[]
+                for wall in (2,5):
+                    run=subprocess.run([str(ENGINE),str(wall),"7","100",mode,str(limit)],
+                        input=encode(inst,sub),text=True,capture_output=True,timeout=8)
+                    self.assertEqual(run.returncode,0,run.stderr)
+                    out,stats=decode(inst,run.stdout)
+                    self.assertLessEqual(stats["expansions"],limit)
+                    self.assertTrue(check(inst,out).legal)
+                    self.assertEqual(check(inst,out).total_delay,stats["total_delay"])
+                    outputs.append(run.stdout)
+                self.assertEqual(*outputs)
+
 if __name__=="__main__":
     unittest.main(verbosity=2)
