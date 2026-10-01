@@ -1,6 +1,6 @@
 # Overview
 
-Goal: legal CPU routing trees with low total driver-to-sink delay and a reproducible route-only entry. Phases 0–2 complete; Phase 3 measured gates satisfied and optimization continuing. A verified compiled routing pipeline exists; current hard score1.205491. Best audited public artifact1.387394 remains higher.
+Goal: legal CPU routing trees with low total driver-to-sink delay and a reproducible route-only entry. Phases 0–2 complete; Phase 3 measured gates satisfied and optimization continuing. A verified compiled routing pipeline exists; current hard score1.209370. Best audited public artifact1.387394 remains higher.
 
 Authoritative pin: 499ad7e2a415a97e9ce9b3396b0477e75ebd13e6, retained for experiment comparability. Rules rechecked at newer upstream3d8948f; see CONTRACT.md. See CONTRACT.md, VERSIONS.md and evidence/phase0/. Supplied research is a hypothesis and historical audit, not new measured evidence.
 

@@ -1,0 +1,125 @@
+{
+  "scope": "representatives01/04/07,seed1,10s/case,5 fresh starts maximum;plateau warmstart retained only for safe fallback",
+  "methods": {
+    "restart-control-10s": {
+      "core_wall_s": 23.428396109025925,
+      "wrapper_wall_s": 25.019666341948323,
+      "cases": [
+        {
+          "case": "case_01",
+          "delay": 10854,
+          "before_delay": 10938,
+          "fresh_attempts": 5,
+          "fresh_legal_internal": 5,
+          "accepted_fresh": 1
+        },
+        {
+          "case": "case_04",
+          "delay": 16413,
+          "before_delay": 16597,
+          "fresh_attempts": 5,
+          "fresh_legal_internal": 3,
+          "accepted_fresh": 1
+        },
+        {
+          "case": "case_07",
+          "delay": 28111,
+          "before_delay": 28111,
+          "fresh_attempts": 3,
+          "fresh_legal_internal": 0,
+          "accepted_fresh": 0
+        }
+      ]
+    },
+    "restart-fanout-10s": {
+      "core_wall_s": 25.68171123205684,
+      "wrapper_wall_s": 27.133977441990282,
+      "cases": [
+        {
+          "case": "case_01",
+          "delay": 9996,
+          "before_delay": 10938,
+          "fresh_attempts": 5,
+          "fresh_legal_internal": 4,
+          "accepted_fresh": 1
+        },
+        {
+          "case": "case_04",
+          "delay": 15681,
+          "before_delay": 16597,
+          "fresh_attempts": 3,
+          "fresh_legal_internal": 1,
+          "accepted_fresh": 1
+        },
+        {
+          "case": "case_07",
+          "delay": 28111,
+          "before_delay": 28111,
+          "fresh_attempts": 2,
+          "fresh_legal_internal": 0,
+          "accepted_fresh": 0
+        }
+      ]
+    },
+    "restart-compact-10s": {
+      "core_wall_s": 26.93501065298915,
+      "wrapper_wall_s": 28.443961513985414,
+      "cases": [
+        {
+          "case": "case_01",
+          "delay": 10786,
+          "before_delay": 10938,
+          "fresh_attempts": 5,
+          "fresh_legal_internal": 5,
+          "accepted_fresh": 1
+        },
+        {
+          "case": "case_04",
+          "delay": 16597,
+          "before_delay": 16597,
+          "fresh_attempts": 3,
+          "fresh_legal_internal": 2,
+          "accepted_fresh": 0
+        },
+        {
+          "case": "case_07",
+          "delay": 28111,
+          "before_delay": 28111,
+          "fresh_attempts": 2,
+          "fresh_legal_internal": 1,
+          "accepted_fresh": 0
+        }
+      ]
+    },
+    "restart-polish-10s": {
+      "core_wall_s": 24.46770177106373,
+      "wrapper_wall_s": 26.072539206012152,
+      "cases": [
+        {
+          "case": "case_01",
+          "delay": 9682,
+          "before_delay": 10938,
+          "fresh_attempts": 5,
+          "fresh_legal_internal": 4,
+          "accepted_fresh": 135
+        },
+        {
+          "case": "case_04",
+          "delay": 15223,
+          "before_delay": 16597,
+          "fresh_attempts": 3,
+          "fresh_legal_internal": 1,
+          "accepted_fresh": 60
+        },
+        {
+          "case": "case_07",
+          "delay": 28111,
+          "before_delay": 28111,
+          "fresh_attempts": 2,
+          "fresh_legal_internal": 0,
+          "accepted_fresh": 0
+        }
+      ]
+    }
+  }
+}

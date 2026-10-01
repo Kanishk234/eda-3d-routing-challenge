@@ -29,3 +29,5 @@ Wide10s/100 cycles fixed seed1 hard9/9 legal1.1834968761196418,all improve vs1.1
 Threshold extra stage fixed seed1 hard1.1868734408645938,9/9 legal,6 improve/3 unchanged;official scorer.26 tests pass. Representative matched walk vs descent6 wins/3 regressions;counter includes equal-delay moves. Traced retained component pipeline228.868s excludes all screen/scorer costs;not fresh end-to-end.
 
 Fanout stage fixedseed1 hard9/9 legal1.2054914475674077,allimprove vs1.186873;officialrescore,28 checks. Compact groupconstruction rejected asdefault despiteoftenfewervertices. Traced retained component pipeline320.758s excludes experiments/scorers;no algorithm-speedup or fresh-reproducibility claim.
+
+- Fixed seed1 fanout restart-plus-polish stage yields official hard score1.2093700886234824,9/9 legal,one incremental improvement. Evidence restart-polish-validation.json and fresh-start-comparison.json;29 checks pass. Component generation cost407.192s excludes experiments. No independent-initialization reliability, global optimum, public-best, or final reproducibility claim.
