@@ -10,11 +10,11 @@ def main():
     import argparse
     parser=argparse.ArgumentParser()
     parser.add_argument("--label",default="repair-diagnostics")
-    parser.add_argument("--mode",choices=["repair","repairsoft"],default="repair")
+    parser.add_argument("--mode",choices=["repair","repairsoft","ablation"],default="repair")
     args=parser.parse_args()
     start=set((ROOT/'dev/artifacts').glob('*-exact-polish/manifest.json'))
     warm=ROOT/'dev/artifacts/20261001T212816.474321Z-exact-polish/routes'
-    for seed in (1,2,3):
+    for seed in ((1,) if args.mode=="ablation" else (1,2,3)):
         for number in range(1,8):
             subprocess.run([sys.executable,str(ROOT/'dev/run_polish.py'),
                 '--mode',args.mode,'--case',f'case_{number:02}',

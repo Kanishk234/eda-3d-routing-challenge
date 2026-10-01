@@ -95,7 +95,7 @@ def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument("--suite",choices=["benchmarks","benchmarks_hard"],default="benchmarks_hard")
     p.add_argument("--case")
-    p.add_argument("--mode",choices=["polish","repair","repairsoft"],default="polish")
+    p.add_argument("--mode",choices=["polish","repair","repairsoft","ablation"],default="polish")
     p.add_argument("--budget",type=float,default=10)
     p.add_argument("--seed",type=int,default=1)
     p.add_argument("--passes",type=int,default=5)

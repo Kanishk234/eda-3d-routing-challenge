@@ -40,6 +40,7 @@ struct Engine {
     std::chrono::steady_clock::time_point deadline;
     std::uint64_t searches=0, expansions=0, accepted=0;
     bool timed_out=false;
+    bool ablation_mode=false;
     std::uint64_t proposals=0,no_gain=0,too_many=0,attempts=0,failed=0,nonimproving=0;
 
     bool expired() {
@@ -202,6 +203,62 @@ struct Engine {
         std::sort(proposed.edges.begin(),proposed.edges.end());
         return true;
     }
+    bool attach(const Net& n,Net& proposed,bool root_aware) {
+        proposed=n; proposed.edges.clear(); proposed.delay=0;
+        std::vector<char> tree(vcount,0),remaining(vcount,0);
+        std::vector<I> rootdist(vcount,INF);
+        tree[n.root]=1; rootdist[n.root]=0;
+        for(int v:n.sinks) remaining[v]=1;
+        int left=static_cast<int>(n.sinks.size());
+        using Node=std::pair<I,int>;
+        while(left) {
+            if(expired()) return false;
+            ++searches;
+            std::fill(dist.begin(),dist.end(),INF);
+            std::fill(parent.begin(),parent.end(),-1);
+            std::priority_queue<Node,std::vector<Node>,std::greater<Node>> q;
+            for(int v=0;v<vcount;++v) if(tree[v]) {
+                dist[v]=root_aware?rootdist[v]:0; q.push({dist[v],v});
+            }
+            int found=-1;
+            while(!q.empty()) {
+                auto [cost,u]=q.top();q.pop(); if(cost!=dist[u]) continue;
+                ++expansions; if((expansions&1023)==0 && expired()) return false;
+                if(remaining[u]) {found=u;break;}
+                neighbors(u,[&](int v,I delay) {
+                    if(tree[v] || (owner[v]>=0 && owner[v]!=n.id) ||
+                       (pin_owner[v]>=0 && pin_owner[v]!=n.id)) return;
+                    I next=add(cost,delay);
+                    if(next<dist[v]) {dist[v]=next;parent[v]=u;q.push({next,v});}
+                });
+            }
+            if(found<0) return false;
+            std::vector<int> path; int v=found;
+            while(!tree[v]) {path.push_back(v);v=parent[v];if(v<0) return false;}
+            for(auto it=path.rbegin();it!=path.rend();++it) {
+                int next=*it;rootdist[next]=add(rootdist[v],weight(v,next));
+                proposed.edges.push_back(std::minmax(v,next));tree[next]=1;v=next;
+            }
+            remaining[found]=0;--left;
+        }
+        proposed.vertices.clear();
+        for(int v=0;v<vcount;++v) if(tree[v]) proposed.vertices.push_back(v);
+        for(int v:n.sinks) proposed.delay=add(proposed.delay,rootdist[v]);
+        return true;
+    }
+    void ablation() {
+        I exact_sum=0,attach_sum=0,root_sum=0; int completed=0;
+        std::cout.flush();
+        for(const Net& n:nets) {
+            Net exact,zero,aware;
+            if(!shortest(n,exact) || !attach(n,zero,false) || !attach(n,aware,true)) break;
+            if(aware.delay!=exact.delay) throw std::runtime_error("root-aware/exact discrepancy");
+            exact_sum=add(exact_sum,exact.delay);attach_sum=add(attach_sum,zero.delay);
+            root_sum=add(root_sum,aware.delay);++completed;
+        }
+        std::cerr<<"{\"completed_nets\":"<<completed<<",\"exact_delay\":"<<exact_sum
+                 <<",\"zero_attachment_delay\":"<<attach_sum<<",\"root_attachment_delay\":"<<root_sum<<"}\n";
+    }
     void polish(unsigned long long seed,int passes,bool search_only) {
         if(search_only) {
             Net replacement;
@@ -280,7 +337,7 @@ struct Engine {
         }
     }
     void output() {
-        std::cerr<<"{\"proposals\":"<<proposals<<",\"no_gain\":"<<no_gain
+        if(!ablation_mode) std::cerr<<"{\"proposals\":"<<proposals<<",\"no_gain\":"<<no_gain
                  <<",\"too_many\":"<<too_many<<",\"attempts\":"<<attempts
                  <<",\"failed\":"<<failed<<",\"nonimproving\":"<<nonimproving<<"}\n";
         I total=0; for(const Net& n:nets) total=add(total,n.delay);
@@ -300,12 +357,14 @@ int main(int argc,char**argv) {
         auto seed=std::stoull(argv[2]); int passes=std::stoi(argv[3]);
         if(passes<1 || passes>100) throw std::runtime_error("invalid passes");
         bool search_only=std::string(argv[4])=="search";
-        if(!search_only && std::string(argv[4])!="polish" && std::string(argv[4])!="repair" && std::string(argv[4])!="repairsoft") throw std::runtime_error("invalid mode");
+        if(!search_only && std::string(argv[4])!="polish" && std::string(argv[4])!="repair" && std::string(argv[4])!="repairsoft" && std::string(argv[4])!="ablation") throw std::runtime_error("invalid mode");
         std::signal(SIGINT,on_signal); std::signal(SIGTERM,on_signal);
         Engine engine;
         engine.deadline=std::chrono::steady_clock::now()+std::chrono::duration_cast<std::chrono::steady_clock::duration>(std::chrono::duration<double>(seconds));
         engine.read(search_only);
-        if(std::string(argv[4])=="repair" || std::string(argv[4])=="repairsoft")
+        engine.ablation_mode=std::string(argv[4])=="ablation";
+        if(engine.ablation_mode) engine.ablation();
+        else if(std::string(argv[4])=="repair" || std::string(argv[4])=="repairsoft")
             engine.repair(seed,passes,std::string(argv[4])=="repairsoft"?4:0);
         else engine.polish(seed,passes,search_only);
         engine.output();
