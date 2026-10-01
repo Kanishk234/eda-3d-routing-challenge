@@ -1,0 +1,97 @@
+{
+  "scope": {
+    "development_cases": [
+      1,
+      4,
+      7
+    ],
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "budget_s": 2.0,
+    "passes": 100
+  },
+  "warm_start": "dev/artifacts/20261001T224311.948014Z-exact-polish/routes",
+  "walk_report": "fanout-walk-screen.json",
+  "descent_report": "fanout-descent-screen.json",
+  "rows": [
+    {
+      "case": "case_01",
+      "seed": 1,
+      "before_delay": 9682,
+      "walk_delay": 9474,
+      "descent_delay": 9544,
+      "delta_walk_minus_descent": -70
+    },
+    {
+      "case": "case_04",
+      "seed": 1,
+      "before_delay": 14925,
+      "walk_delay": 14925,
+      "descent_delay": 14925,
+      "delta_walk_minus_descent": 0
+    },
+    {
+      "case": "case_07",
+      "seed": 1,
+      "before_delay": 25633,
+      "walk_delay": 25633,
+      "descent_delay": 25633,
+      "delta_walk_minus_descent": 0
+    },
+    {
+      "case": "case_01",
+      "seed": 2,
+      "before_delay": 9682,
+      "walk_delay": 9600,
+      "descent_delay": 9540,
+      "delta_walk_minus_descent": 60
+    },
+    {
+      "case": "case_04",
+      "seed": 2,
+      "before_delay": 14925,
+      "walk_delay": 14925,
+      "descent_delay": 14925,
+      "delta_walk_minus_descent": 0
+    },
+    {
+      "case": "case_07",
+      "seed": 2,
+      "before_delay": 25633,
+      "walk_delay": 25627,
+      "descent_delay": 25633,
+      "delta_walk_minus_descent": -6
+    },
+    {
+      "case": "case_01",
+      "seed": 3,
+      "before_delay": 9682,
+      "walk_delay": 9562,
+      "descent_delay": 9568,
+      "delta_walk_minus_descent": -6
+    },
+    {
+      "case": "case_04",
+      "seed": 3,
+      "before_delay": 14925,
+      "walk_delay": 14925,
+      "descent_delay": 14925,
+      "delta_walk_minus_descent": 0
+    },
+    {
+      "case": "case_07",
+      "seed": 3,
+      "before_delay": 25633,
+      "walk_delay": 25629,
+      "descent_delay": 25633,
+      "delta_walk_minus_descent": -4
+    }
+  ],
+  "wins": 4,
+  "ties": 4,
+  "losses": 1,
+  "note": "Matched per-run budget ceiling; strict descent sometimes exhausts passes early. No per-case selection. Development subset only."
+}

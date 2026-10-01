@@ -2,7 +2,7 @@
 
 Status: not started; earlier gates apply.
 
-- [ ] Freeze solver/config/submission tiers before final runs — pending, final scope unknown.
+- [ ] Freeze solver/config/submission tiers before final runs — pending, intended scope all six tiers; final configuration pending.
 - [ ] Official validation of every output and full-tier scores — pending.
 - [ ] Report runtime/memory/seeds/portfolio/restarts/warm starts/provenance — pending.
 - [ ] Confirm regeneration or disclose artifact limitations — pending.

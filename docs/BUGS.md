@@ -25,3 +25,9 @@ Phase2 audit: stale no-solver/unfinished-profile statements above describe earli
 ## Phase3 freezer overwrote comparison report(fixed)
 
 Mode-aware report selection incorrectly retained soft-validation.json as destination. Negotiated metadata overwrote sequential-soft metadata;route artifacts unchanged. Restored soft report from4bbf016,preserved negotiation report separately,corrected destination conditional. Both9-case official score artifacts retained. No solver result invalidation required.
+
+## Stress coverage: short outer watchdog exhausted
+
+Initial stress polish run20261001T225201.888682Z-exact-polish used2s core cap plus5s wrapper allowance. Process terminated at7.004s with no completed core result; wrapper correctly retained the officially legal reference checkpoint(delay1144904,ratio1.0) and marked success false. Do not count this as a successful solver run. Retrying with60s allows measurement of the large-case initialization/search overhead. Dense per-net validation allocates whole-grid adjacency/cost buffers; this is a suspected scaling cost from code inspection, not a measured profile attribution. Raw failed manifest/log retained.
+
+Stress followup:60s retry225241 completes successfully;official CLI confirms improved legal delay1141934. No watchdog change required to obtain initial coverage. Initialization/validation profiling remains next work;do not infer allocation speed from this result.
