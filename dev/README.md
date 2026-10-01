@@ -1,0 +1,46 @@
+# CPU development workspace
+
+Run in WSL Ubuntu at /home/younix/eda-3d-routing-challenge. This fork is the development checkout; never submit it wholesale. Origin points to Kanishk234's fork. No branch, commit, push or publication performed.
+
+## Setup and build
+
+```bash
+bash dev/setup.sh
+g++ -O3 -std=c++17 -Wall -Wextra -Wpedantic dev/toolchain_probe.cpp -o dev/artifacts/toolchain_probe
+dev/artifacts/toolchain_probe
+```
+
+Setup creates project .venv, installs an empty stdlib-only dependency file with networking disabled, and archives upstream 499ad7e2a415a97e9ce9b3396b0477e75ebd13e6 into dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6. This commit is already present; fetch official upstream first if a fresh clone lacks it. Do not silently update the pin. Python 3.12.3 and GCC 13.3.0 were tested. CMake and optional visualization dependencies are unnecessary. The probe checks the compiler; no compiled router exists.
+
+## Bounded commands
+
+```bash
+.venv/bin/python dev/measure.py tests --budget 180
+.venv/bin/python dev/measure.py smoke --suite benchmarks --case case_01 --budget 60
+.venv/bin/python dev/measure.py ci --budget 60
+# Phase 1 commands; not run in Phase 0:
+.venv/bin/python dev/measure.py suite --suite benchmarks --router baseline --budget 180
+.venv/bin/python dev/measure.py suite --suite benchmarks_hard --router negotiated --budget 600
+```
+
+Budget applies to each subprocess: suites have a routing cap and separate scoring cap, so maximum total can be twice the budget plus 5 seconds termination grace per step. Tests have one step; CI has two. Maximum permitted cap is 1,800 seconds. All runs are serial, one worker/thread, PYTHONHASHSEED=0 and OMP_NUM_THREADS=1. Declare the next-session run plan before the hard suite. Simple-baseline failure is not hard-tier infeasibility.
+
+Unique ignored dev/artifacts/<UTC-run-id>/ directories hold manifests, logs, resource records and routes. Official tools execute inside the pinned archive. Manifests retain revision/dirty identity, source/input/output hashes, config/commands, machine, workers, budgets, wall/CPU time, RSS and results. Smoke candidates are renamed to accepted case files only after official evaluate succeeds. Suite routes remain isolated until the full official score is reviewed. runtime.json records official per-case routing times; process measurements include startup/check/serialization.
+
+## Validate and recover
+
+Use the absolute output path printed by measure.py:
+
+```bash
+cd dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6
+../../../.venv/bin/python -m m3d.cli evaluate --case benchmarks/case_01.json --sol /ABSOLUTE/RUN/case_01.sol.json --suite benchmarks
+../../../.venv/bin/python -m m3d.cli score-suite --suite benchmarks_hard --submission-dir /ABSOLUTE/ROUTES --out /ABSOLUTE/RUN/rescore.json
+```
+
+Timeout/Ctrl-C terminates the child process group and preserves logs/manifests and earlier accepted runs. Resume Phase 0/1 with a new bounded run and the last validated output as a reference. Optimizer checkpoint/resume is not implemented; there is no command for an absent solver.
+
+capture_environment.py writes dated environment/inventory/GitHub snapshots into docs/evidence/phase0/. finish_phase0.py is a one-time audit expecting exactly the original five runs (two successful smokes and one timeout); adapt its run selection before rerunning after further experiments. Compact evidence is tracked; snapshots, binaries, routes and raw logs are ignored and must be retained/backed up separately.
+
+## Submission isolation
+
+Phase 5 needs a separate clean checkout based on then-current official upstream. Only submissions/<tier>/<method>/** and generated LEADERBOARD.md enter the submission diff. Never include dev/, development docs/, ignore changes or AGENTS.md. No submission checkout/method entry exists yet.
