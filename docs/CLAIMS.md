@@ -9,3 +9,7 @@ Established:
 - Current inventory 45 cases/six tiers with hashes; upstream HEAD matches research pin today.
 
 Not claimed: competitive gain, new best, tier result, global optimality, custom solver reproducibility/generalization, GPU speedup, matched public-entry comparison, or solver success on all cases. Research audit/bounds remain historical. Proposed shortest-path/negotiation/advanced repairs await implementation and evidence.
+
+## Phase 2 established claims
+
+Earlier not-claimed tier/custom-solver statements describe Phase0. Current evidence in phase2/comparison.json: all9 hard outputs legal, aggregate1.0466292119096317; all case delays improve over baseline. Repeated seed1/pass5 output hashes agree.13 kernel checks pass; independent official CLI rescore agrees. Baseline warm start required; no public warm starts, global optimality, speedup or unseen-case generalization claimed. Audited PR3 output1.387366 remains better.

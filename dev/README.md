@@ -10,7 +10,7 @@ g++ -O3 -std=c++17 -Wall -Wextra -Wpedantic dev/toolchain_probe.cpp -o dev/artif
 dev/artifacts/toolchain_probe
 ```
 
-Setup creates project .venv, installs an empty stdlib-only dependency file with networking disabled, and archives upstream 499ad7e2a415a97e9ce9b3396b0477e75ebd13e6 into dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6. This commit is already present; fetch official upstream first if a fresh clone lacks it. Do not silently update the pin. Python 3.12.3 and GCC 13.3.0 were tested. CMake and optional visualization dependencies are unnecessary. The probe checks the compiler; no compiled router exists.
+Setup creates project .venv, installs an empty stdlib-only dependency file with networking disabled, and archives upstream 499ad7e2a415a97e9ce9b3396b0477e75ebd13e6 into dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6. This commit is already present; fetch official upstream first if a fresh clone lacks it. Do not silently update the pin. Python 3.12.3 and GCC 13.3.0 were tested. CMake and optional visualization dependencies are unnecessary. The probe checks the compiler; the exact polisher is now implemented; commands below.
 
 ## Bounded commands
 
@@ -37,10 +37,23 @@ cd dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6
 ../../../.venv/bin/python -m m3d.cli score-suite --suite benchmarks_hard --submission-dir /ABSOLUTE/ROUTES --out /ABSOLUTE/RUN/rescore.json
 ```
 
-Timeout/Ctrl-C terminates the child process group and preserves logs/manifests and earlier accepted runs. Resume Phase 0/1 with a new bounded run and the last validated output as a reference. Optimizer checkpoint/resume is not implemented; there is no command for an absent solver.
+Timeout/Ctrl-C terminates the child process group and preserves logs/manifests and earlier accepted runs. Resume Phase 0/1 with a new bounded run and the last validated output as a reference. Exact polish recovery uses --resume-dir as documented below.
 
 capture_environment.py writes dated environment/inventory/GitHub snapshots into docs/evidence/phase0/. finish_phase0.py is a one-time audit expecting exactly the original five runs (two successful smokes and one timeout); adapt its run selection before rerunning after further experiments. Compact evidence is tracked; snapshots, binaries, routes and raw logs are ignored and must be retained/backed up separately.
 
 ## Submission isolation
 
 Phase 5 needs a separate clean checkout based on then-current official upstream. Only submissions/<tier>/<method>/** and generated LEADERBOARD.md enter the submission diff. Never include dev/, development docs/, ignore changes or AGENTS.md. No submission checkout/method entry exists yet.
+
+## Phase 2 build, run and resume
+
+```bash
+g++ -O3 -std=c++17 -Wall -Wextra -Wpedantic dev/solver/exact_polish.cpp -o dev/artifacts/build/exact_polish
+.venv/bin/python dev/test_exact.py > dev/artifacts/build/kernel-tests.log 2>&1
+.venv/bin/python dev/run_polish.py --budget 10 --seed 1 --passes 5
+.venv/bin/python dev/run_polish.py --case case_01 --budget 0
+.venv/bin/python dev/run_polish.py --case case_01 --resume-dir /ABSOLUTE/PREVIOUS/RUN/routes
+.venv/bin/python dev/finish_phase2.py
+```
+
+Baseline incumbents must first exist from Phase1 reproduction/finish_phase1.py. Fresh baseline generation cost is part of the pipeline. Budgets are per-case core caps; input processing/validation/wrapper overhead and up to5s watchdog grace are additional. Defaults10s,seed1,5passes,one worker. Core signal handling emits completed incumbent; abrupt failure preserves pre-search checkpoint. No coordinated repair yet. Phase2 evidence freezer expects all stored runs successful and repeat full-tier hashes equal; adapt run selection before future optimization, rather than applying it to different configs.

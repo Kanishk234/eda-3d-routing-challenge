@@ -1,0 +1,153 @@
+{
+  "upstream_revision": "499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+  "selected_run": "20261001T212816.474321Z-exact-polish",
+  "result": {
+    "format": "m3d-leaderboard",
+    "complete": true,
+    "aggregate_score": 1.0466292119096317,
+    "n_cases": 9,
+    "n_legal": 9,
+    "formula": "aggregate = geomean_c(baseline_total_c / submission_total_c); higher is better; baseline scores 1.0; all cases must be legal for a complete ranked submission (else aggregate = 0.0)",
+    "cases": [
+      {
+        "case": "case_01",
+        "legal": true,
+        "total_delay": 11614,
+        "baseline_delay": 11938,
+        "ratio": 1.0278973652488377,
+        "runtime_s": null,
+        "reasons": []
+      },
+      {
+        "case": "case_02",
+        "legal": true,
+        "total_delay": 17882,
+        "baseline_delay": 18910,
+        "ratio": 1.057487976736383,
+        "runtime_s": null,
+        "reasons": []
+      },
+      {
+        "case": "case_03",
+        "legal": true,
+        "total_delay": 14070,
+        "baseline_delay": 14724,
+        "ratio": 1.0464818763326227,
+        "runtime_s": null,
+        "reasons": []
+      },
+      {
+        "case": "case_04",
+        "legal": true,
+        "total_delay": 17173,
+        "baseline_delay": 18077,
+        "ratio": 1.0526407733069354,
+        "runtime_s": null,
+        "reasons": []
+      },
+      {
+        "case": "case_05",
+        "legal": true,
+        "total_delay": 20359,
+        "baseline_delay": 21051,
+        "ratio": 1.0339898816248343,
+        "runtime_s": null,
+        "reasons": []
+      },
+      {
+        "case": "case_06",
+        "legal": true,
+        "total_delay": 26188,
+        "baseline_delay": 27134,
+        "ratio": 1.0361234153047196,
+        "runtime_s": null,
+        "reasons": []
+      },
+      {
+        "case": "case_07",
+        "legal": true,
+        "total_delay": 29379,
+        "baseline_delay": 31341,
+        "ratio": 1.0667823955886857,
+        "runtime_s": null,
+        "reasons": []
+      },
+      {
+        "case": "case_08",
+        "legal": true,
+        "total_delay": 29562,
+        "baseline_delay": 30886,
+        "ratio": 1.0447872268452743,
+        "runtime_s": null,
+        "reasons": []
+      },
+      {
+        "case": "case_09",
+        "legal": true,
+        "total_delay": 26376,
+        "baseline_delay": 27802,
+        "ratio": 1.0540643008795876,
+        "runtime_s": null,
+        "reasons": []
+      }
+    ]
+  },
+  "official_rescore": {
+    "command": [
+      "/home/younix/eda-3d-routing-challenge/.venv/bin/python",
+      "-m",
+      "m3d.cli",
+      "score-suite",
+      "--suite",
+      "benchmarks_hard",
+      "--submission-dir",
+      "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261001T212816.474321Z-exact-polish/routes",
+      "--out",
+      "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261001T212816.474321Z-exact-polish/official-rescore.json"
+    ],
+    "cwd": "/home/younix/eda-3d-routing-challenge/dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+    "budget_s": 60,
+    "wall_s": 0.318394856993109,
+    "exit_code": 0,
+    "timeout": false,
+    "interrupted": false,
+    "log": "dev/artifacts/20261001T212816.474321Z-exact-polish/phase2-rescore.log",
+    "peak_rss_kib": 19096,
+    "user_cpu_s": 0.26,
+    "system_cpu_s": 0.02
+  },
+  "outputs": {
+    "routes/case_01.sol.json": "27390d7cc93f92e595e93aadc8a2dfeecc40b8e60ebad9332f2cb8c05f75736c",
+    "routes/case_02.sol.json": "6e3eb30fcb84e8c16d08ac89ddc6a2f56f23308bfbf3f12765e912a41dedb583",
+    "routes/case_03.sol.json": "6251837b375c508e6fac4e3bcd323f71dcf30e79c82564cea7bea8c99091517c",
+    "routes/case_04.sol.json": "388738199c090ed8dcef8981edfe4154fa31a90a28e3730bec4352cdf4c582e0",
+    "routes/case_05.sol.json": "00f2ebc176ad99b418aba262ed9220045936e01afa2f3e030c24a6ee145209a0",
+    "routes/case_06.sol.json": "0fdb8c48559108685e63b3a9e57a529c45540f17381099d22a58c78476aa6869",
+    "routes/case_07.sol.json": "20463c940ac23a7d76b0b838914258f913595c872e9d3ee5c090ff1262b75a36",
+    "routes/case_08.sol.json": "22dcb5d9a08607c106b633d6049fdc7574de2b777a661df670a5e0ba7209a6cd",
+    "routes/case_09.sol.json": "db3274c6d8ba03adf433e2aa89b9af6ef2fa4a4e07d42ba42651dcd1bc1f838c"
+  },
+  "kernel_tests": {
+    "log_sha256": "978acfa954ba51f657947af49efdcb6fa5fd7c2df11488bd4b15786f171f9579",
+    "log": "test_cheaper_layer_and_vias (__main__.ExactKernel.test_cheaper_layer_and_vias) ... ok\ntest_disconnected_tree_rejected (__main__.ExactKernel.test_disconnected_tree_rejected) ... ok\ntest_foreign_pin_and_via_endpoints (__main__.ExactKernel.test_foreign_pin_and_via_endpoints) ... ok\ntest_no_improvement_preserves_ownership_and_route (__main__.ExactKernel.test_no_improvement_preserves_ownership_and_route) ... ok\ntest_output_parser_rejects_truncation (__main__.ExactKernel.test_output_parser_rejects_truncation) ... ok\ntest_random_graph_costs_against_independent_dijkstra (__main__.ExactKernel.test_random_graph_costs_against_independent_dijkstra) ... ok\ntest_rejects_cycles_and_conflicts (__main__.ExactKernel.test_rejects_cycles_and_conflicts) ... ok\ntest_shared_routing_vertex_rejected (__main__.ExactKernel.test_shared_routing_vertex_rejected) ... ok\ntest_shared_trunk_counts_for_each_sink (__main__.ExactKernel.test_shared_trunk_counts_for_each_sink) ... ok\ntest_signal_keeps_complete_incumbent (__main__.ExactKernel.test_signal_keeps_complete_incumbent) ... ok\ntest_unroutable_foreign_column (__main__.ExactKernel.test_unroutable_foreign_column) ... ok\ntest_wide_integer_delays (__main__.ExactKernel.test_wide_integer_delays) ... ok\ntest_zero_budget_keeps_valid_incumbent (__main__.ExactKernel.test_zero_budget_keeps_valid_incumbent) ... ok\n\n----------------------------------------------------------------------\nRan 13 tests in 0.237s\n\nOK\n"
+  },
+  "budget_comparison": {
+    "shared_envelope_s": 600,
+    "workers": 1,
+    "baseline_generation_wall_s": 94.76544759899843,
+    "polish_core_wall_s": 1.2426595180877484,
+    "polish_wrapper_wall_s": 3.186315483006183,
+    "pipeline_wall_s": 97.95176308200462,
+    "baseline_score": 1.0,
+    "polished_score": 1.0466292119096317,
+    "note": "Same machine and common 600s routing envelope; paired baseline warm start reused. Baseline terminates normally and unused budget is not spent. No speedup or fresh independent pipeline timing claimed."
+  },
+  "limitations": [
+    "Baseline warm start required; no public warm starts.",
+    "Exact single-net paths with other nets fixed, not global optimality.",
+    "One selected seed/config; repeat checks are not portfolio selection.",
+    "No tuning on hard08/09; validation-only full-tier checks.",
+    "SIGKILL retains pre-search checkpoint; SIGTERM kernel emits completed incumbent.",
+    "Raw routes/logs/source snapshots ignored and require backup."
+  ]
+}

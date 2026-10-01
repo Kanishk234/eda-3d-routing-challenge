@@ -89,6 +89,7 @@ def run_core(case_dir, data, budget, seed, passes):
     return result,output.read_text()
 
 def main():
+    wrapper_start=time.perf_counter()
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument("--suite",choices=["benchmarks","benchmarks_hard"],default="benchmarks_hard")
     p.add_argument("--case")
@@ -115,6 +116,7 @@ def main():
                   "affinity_cpus":len(os.sched_getaffinity(0)),"meminfo":Path("/proc/meminfo").read_text()},
        "workers":1,"threads":1,"compiler_flags":BUILD_FLAGS,"binary_sha256":digest(ENGINE),
        "solver_sha256":digest(ROOT/"dev/solver/exact_polish.cpp"),
+       "compiler_version":subprocess.check_output(["g++","--version"],text=True).splitlines()[0],
        "warm_start":{"directory":str(incumbent),"origin":"validated baseline or explicit resumed incumbent"},
        "portfolio_runs":1,"cases":[],"outputs":{}}
     snapshot=out/"development-source"; snapshot.mkdir()
@@ -149,7 +151,9 @@ def main():
                 raise ValueError("per-net delay disagreement")
             candidate.save(str(temporary))
             reloaded=Submission.load(temporary)
-            if not check(inst,reloaded).legal: raise ValueError("serialization changed legality")
+            rechecked=check(inst,reloaded)
+            if not rechecked.legal or rechecked.total_delay!=checked.total_delay:
+                raise ValueError("serialization changed legality or delay")
             os.replace(temporary,destination)
             record.update(candidate_accepted=True,core=stats)
         except (ValueError,OSError) as exc:
@@ -168,6 +172,7 @@ def main():
     m["result"]=lb
     m["official_inputs_unchanged"]=all(digest(OFFICIAL/f)==h for f,h in official_hashes.items())
     m["success"]=ok and m["official_inputs_unchanged"] and len(scores)==len(cases)
+    m["wrapper_wall_s"]=time.perf_counter()-wrapper_start
     m["total_core_wall_s"]=sum(c["process"]["wall_s"] for c in m["cases"])
     save(out/"score.json",lb); save(out/"manifest.json",m)
     print("manifest:",out/"manifest.json")

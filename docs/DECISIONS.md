@@ -7,3 +7,5 @@
 5. Serial bounded workflow records provenance and verifies candidates before promotion. Stress baseline deferred; historical research scores/times not treated as new evidence.
 6. Reserve hard case_08–09 and generated seeds 9001–9003 before tuning. Future feasibility/generation protocol pending.
 7. Preserve original docs/M3D_ROUTING_RESEARCH.md; copy byte-identically into requested docs/research/ path.
+
+8. Phase2 uses official negotiated baseline plus original exact C++ single-net polish. Profiles justify compiling search. This is a reliable pipeline with explicit baseline cost, not independent construction. Common600s envelope comparisons use paired baseline reuse and disclose summed measurements. Keep hard08–09 validation-only.

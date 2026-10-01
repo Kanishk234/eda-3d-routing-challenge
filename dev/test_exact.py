@@ -116,6 +116,19 @@ class ExactKernel(unittest.TestCase):
         run,_,_=core(inst,sub,"polish")
         self.assertEqual(run.returncode,2)
 
+    def test_disconnected_tree_rejected(self):
+        inst,sub=make(4,1,[1],1,(0,0,0),[(3,0,0)],
+                      own_edges=[((0,0,0),(1,0,0)),((2,0,0),(3,0,0))])
+        run,_,_=core(inst,sub,"polish")
+        self.assertEqual(run.returncode,2)
+
+    def test_shared_routing_vertex_rejected(self):
+        inst,sub=make(3,2,[1],1,(0,0,0),[(2,0,0)],
+                      block=((1,0,0),(1,1,0)),
+                      own_edges=[((0,0,0),(1,0,0)),((1,0,0),(2,0,0))])
+        run,_,_=core(inst,sub,"polish")
+        self.assertEqual(run.returncode,2)
+
     def test_wide_integer_delays(self):
         own=[((0,0,0),(1,0,0)),((1,0,0),(2,0,0)),((2,0,0),(3,0,0)),
              ((3,0,0),(4,0,0))]

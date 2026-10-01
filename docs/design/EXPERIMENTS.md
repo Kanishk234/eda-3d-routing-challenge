@@ -11,3 +11,7 @@ Observed results reproduce one small case only: legal 240, ratio 1.0, two matchi
 Phase 1 onward: freeze inputs/config, finalize small/large representatives without tuning reserved validation cases, compare under matched hardware/budgets, report every case/failure, seeds and total restart/portfolio cost. Use official geometric mean only for complete tiers. Keep physical delay distinct from wirelength/occupancy/congestion. Label public warm starts separately.
 
 Wrapper offers bounded run-suite/score-suite and optional official per-case runtime.json; stage profiles, expansion counters and custom solver measurement remain unimplemented Phase 1/2 work. Avoid stress baseline without a separate explicit bounded plan.
+
+## Phase 2 update
+
+Phases1/2 are complete; earlier “unperformed” statements describe Phase0 only. Authoritative current evidence: docs/evidence/phase2/comparison.json and runs.json; PHASE2 summary covers checks, deterministic outputs, budgets, baseline provenance and limits.13 kernel checks pass and official CLI rescore confirms9/9 legal, aggregate1.046629. Baseline-plus-wrapper sum97.952s is a paired same-machine comparison within600s, not a fresh end-to-end timing or speedup. Generated validation seeds and final submission checks remain unperformed.

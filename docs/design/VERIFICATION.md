@@ -19,3 +19,7 @@ Unperformed: full baseline reproduction, participant-route audit/source inspecti
 Phase 2 fixtures must independently cover nonuniform costs, foreign-pin escape, shared vertices/via endpoint collision, cyclic/disconnected routes, shared-trunk sink sums, failed-repair ownership rollback, parser/serializer consistency, interruption checkpoint recovery. Compare kernel to independent small Dijkstra and hand-calculated costs; avoid formula-mirroring tests. No upstream expected results changed.
 
 Final review: git diff --check passes; no official code/data/submission/leaderboard changes; original research preserved. New development text reviewed for syntax/encoding/trailing whitespace. Pinned upstream HEAD has successful published CI run 36622967607; local results remain WSL-only.
+
+## Phase 2 update
+
+Phases1/2 are complete; earlier “unperformed” statements describe Phase0 only. Authoritative current evidence: docs/evidence/phase2/comparison.json and runs.json; PHASE2 summary covers checks, deterministic outputs, budgets, baseline provenance and limits.13 kernel checks pass and official CLI rescore confirms9/9 legal, aggregate1.046629. Baseline-plus-wrapper sum97.952s is a paired same-machine comparison within600s, not a fresh end-to-end timing or speedup. Generated validation seeds and final submission checks remain unperformed.

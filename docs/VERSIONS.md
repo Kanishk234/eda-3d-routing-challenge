@@ -13,3 +13,5 @@ Location: native WSL Ubuntu /home/younix/eda-3d-routing-challenge, Windows UNC \
 Setup/build/run commands in dev/README.md. One worker initially; tests 180 seconds; smoke/CI 60 seconds per subprocess. No long benchmark or costs.
 
 Sandbox exec/Node failed before launch; patch helper rejected UNC reparse point. Approved PowerShell writes/native WSL execution worked. Windows Git dubious-ownership refusal avoided via native WSL Git without global safe.directory changes.
+
+Phase2: same WSL/Python/GCC toolchain; exact_polish compiled with -O3 -std=c++17 -Wall -Wextra -Wpedantic. Binary/source/compiler identities are in phase2 run evidence. A compiled polisher now exists; earlier absence statements describe Phase0.
