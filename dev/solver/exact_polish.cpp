@@ -14,6 +14,7 @@
 #include <stdexcept>
 #include <string>
 #include <utility>
+#include <tuple>
 #include <vector>
 
 using I = std::int64_t;
@@ -41,6 +42,13 @@ struct Engine {
     std::uint64_t searches=0, expansions=0, accepted=0;
     bool timed_out=false;
     bool ablation_mode=false;
+    bool random_ties=false; std::uint64_t tie_seed=0;
+    std::uint64_t tie_rank(int v) const {
+        std::uint64_t x=static_cast<std::uint64_t>(v)+tie_seed+0x9e3779b97f4a7c15ULL;
+        x=(x^(x>>30))*0xbf58476d1ce4e5b9ULL;
+        x=(x^(x>>27))*0x94d049bb133111ebULL;
+        return x^(x>>31);
+    }
     std::uint64_t negotiation_rounds=0,conflicted_rounds=0;
     std::uint64_t proposals=0,no_gain=0,too_many=0,attempts=0,failed=0,nonimproving=0;
 
@@ -156,17 +164,18 @@ struct Engine {
     bool shortest(const Net& n,Net& proposed,bool ignore_owners=false,I occupancy_penalty=0,
                   const std::vector<int>* usage=nullptr,const std::vector<I>* history=nullptr,I present=0) {
         ++searches;
+        if(random_ties) tie_seed+=0x9e3779b97f4a7c15ULL;
         if(expired()) return false;
         std::fill(dist.begin(),dist.end(),INF);
         std::fill(parent.begin(),parent.end(),-1);
         std::vector<char> is_sink(vcount,0);
         for(int s:n.sinks) is_sink[s]=1;
         int left=static_cast<int>(n.sinks.size());
-        using Node=std::pair<I,int>;
+        using Node=std::tuple<I,std::uint64_t,int>;
         std::priority_queue<Node,std::vector<Node>,std::greater<Node>> q;
-        dist[n.root]=0; q.push({0,n.root});
+        dist[n.root]=0; q.push({0,random_ties?tie_rank(n.root):static_cast<std::uint64_t>(n.root),n.root});
         while(!q.empty() && left) {
-            auto [cost,u]=q.top(); q.pop();
+            auto [cost,rank,u]=q.top(); q.pop();
             if(cost!=dist[u]) continue;
             ++expansions;
             if((expansions&1023)==0 && expired()) return false;
@@ -177,7 +186,7 @@ struct Engine {
                 I extra=(ignore_owners && owner[v]>=0 && owner[v]!=n.id)?occupancy_penalty:0;
                 if(usage) extra=add(extra,add((*history)[v],static_cast<I>((*usage)[v])*present));
                 I next=add(add(cost,delay),extra);
-                if(next<dist[v]) { dist[v]=next; parent[v]=u; q.push({next,v}); }
+                if(next<dist[v]) { dist[v]=next; parent[v]=u; q.push({next,random_ties?tie_rank(v):static_cast<std::uint64_t>(v),v}); }
             });
         }
         if(left || expired()) return false;
@@ -295,11 +304,11 @@ struct Engine {
             if(!improved) break;
         }
     }
-    bool negotiate(const std::vector<int>& group,I& after) {
+    bool negotiate(const std::vector<int>& group,I& after,int max_rounds=12) {
         std::vector<int> usage(vcount,0);
         std::vector<I> history(vcount,0);
         for(int j:group) for(int v:nets[j].vertices) ++usage[v];
-        for(int iteration=0;iteration<12 && !expired();++iteration) {
+        for(int iteration=0;iteration<max_rounds && !expired();++iteration) {
             ++negotiation_rounds;
             for(int j:group) {
                 for(int v:nets[j].vertices) --usage[v];
@@ -367,6 +376,38 @@ struct Engine {
             if(!changed) break;
         }
     }
+    void restart(unsigned long long seed,int passes) {
+        random_ties=true;tie_seed=seed;
+        std::mt19937_64 rng(seed);
+        std::vector<int> group(nets.size());std::iota(group.begin(),group.end(),0);
+        for(int pass=0;pass<passes && !expired();++pass) {
+            for(std::size_t i=group.size();i>1;--i) std::swap(group[i-1],group[rng()%i]);
+            auto old_nets=nets;auto old_owner=owner;
+            I before=0;for(const Net& n:nets) before=add(before,n.delay);
+            std::fill(owner.begin(),owner.end(),-1);
+            for(Net& n:nets) {n.vertices.clear();n.edges.clear();n.delay=0;}
+            I after=0;
+            if(negotiate(group,after,100) && after<before) ++accepted;
+            else {nets=std::move(old_nets);owner=std::move(old_owner);}
+        }
+    }
+    void explore(unsigned long long seed,int passes) {
+        random_ties=true; tie_seed=seed;
+        std::mt19937_64 rng(seed);
+        std::vector<int> order(nets.size());std::iota(order.begin(),order.end(),0);
+        for(int pass=0;pass<passes && !expired();++pass) {
+            for(std::size_t i=order.size();i>1;--i) std::swap(order[i-1],order[rng()%i]);
+            for(int j:order) {
+                Net candidate;
+                if(!shortest(nets[j],candidate)) break;
+                if(candidate.delay>nets[j].delay) continue;
+                for(int v:nets[j].vertices) owner[v]=-1;
+                for(int v:candidate.vertices) owner[v]=nets[j].id;
+                nets[j]=std::move(candidate);
+            }
+            repair(seed+static_cast<unsigned long long>(pass),1,4,true);
+        }
+    }
     void output() {
         if(!ablation_mode) std::cerr<<"{\"proposals\":"<<proposals<<",\"no_gain\":"<<no_gain
                  <<",\"too_many\":"<<too_many<<",\"attempts\":"<<attempts
@@ -389,13 +430,15 @@ int main(int argc,char**argv) {
         auto seed=std::stoull(argv[2]); int passes=std::stoi(argv[3]);
         if(passes<1 || passes>100) throw std::runtime_error("invalid passes");
         bool search_only=std::string(argv[4])=="search";
-        if(!search_only && std::string(argv[4])!="polish" && std::string(argv[4])!="repair" && std::string(argv[4])!="repairsoft" && std::string(argv[4])!="ablation" && std::string(argv[4])!="negotiated") throw std::runtime_error("invalid mode");
+        if(!search_only && std::string(argv[4])!="polish" && std::string(argv[4])!="repair" && std::string(argv[4])!="repairsoft" && std::string(argv[4])!="ablation" && std::string(argv[4])!="negotiated" && std::string(argv[4])!="explore" && std::string(argv[4])!="restart") throw std::runtime_error("invalid mode");
         std::signal(SIGINT,on_signal); std::signal(SIGTERM,on_signal);
         Engine engine;
         engine.deadline=std::chrono::steady_clock::now()+std::chrono::duration_cast<std::chrono::steady_clock::duration>(std::chrono::duration<double>(seconds));
         engine.read(search_only);
         engine.ablation_mode=std::string(argv[4])=="ablation";
         if(engine.ablation_mode) engine.ablation();
+        else if(std::string(argv[4])=="restart") engine.restart(seed,passes);
+        else if(std::string(argv[4])=="explore") engine.explore(seed,passes);
         else if(std::string(argv[4])=="negotiated") engine.repair(seed,passes,4,true);
         else if(std::string(argv[4])=="repair" || std::string(argv[4])=="repairsoft")
             engine.repair(seed,passes,std::string(argv[4])=="repairsoft"?4:0);

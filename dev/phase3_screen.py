@@ -10,7 +10,7 @@ def main():
     import argparse
     parser=argparse.ArgumentParser()
     parser.add_argument("--label",default="repair-diagnostics")
-    parser.add_argument("--mode",choices=["repair","repairsoft","ablation","negotiated"],default="repair")
+    parser.add_argument("--mode",choices=["repair","repairsoft","ablation","negotiated","explore","restart"],default="repair")
     args=parser.parse_args()
     start=set((ROOT/'dev/artifacts').glob('*-exact-polish/manifest.json'))
     warm=ROOT/'dev/artifacts/20261001T212816.474321Z-exact-polish/routes'
@@ -28,7 +28,7 @@ def main():
                      'solver_sha256':m['solver_sha256'],'binary_sha256':m['binary_sha256'],
                      'source_identity':m['source']['files_sha256']})
     out=ROOT/'docs/evidence/phase3'; out.mkdir(exist_ok=True)
-    save(out/(args.label+'.json'),{'mode':args.mode,'scope':'hard01–07 only, seeds1–3,2s/case,5passes,max4 blocking nets',
+    save(out/(args.label+'.json'),{'mode':args.mode,'scope':'hard01–07 only; fixed mode,2s/case,5passes; per-row seeds and mode-specific neighborhood limits',
           'warm_start':str(warm.relative_to(ROOT)), 'workers':1,'rows':rows,
           'total_core_wall_s':sum(r['process']['wall_s'] for r in rows),
           'total_wrapper_wall_s':sum(r['wrapper_wall_s'] for r in rows),

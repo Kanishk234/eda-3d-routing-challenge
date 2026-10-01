@@ -217,6 +217,29 @@ class ExactKernel(unittest.TestCase):
         self.assertEqual(check(inst,out).total_delay,4)
         self.assertTrue(stats["budget_reached"])
 
+    def test_plateau_keeps_hand_calculated_shortest_delays(self):
+        inst,sub=make(5,1,[2],3,(0,0,0),[(2,0,0),(4,0,0)],
+            own_edges=[((0,0,0),(1,0,0)),((1,0,0),(2,0,0)),
+                       ((2,0,0),(3,0,0)),((3,0,0),(4,0,0))])
+        for seed in (1,2,3):
+            _,out,stats=core(inst,sub,"explore",seed=seed)
+            self.assertEqual(stats["total_delay"],12)
+            self.assertTrue(check(inst,out).legal)
+
+    def test_whole_restart_builds_cheaper_layer_tree(self):
+        path=[(x,0,0) for x in range(5)]+[(4,y,0) for y in range(1,5)]
+        inst,sub=make(5,5,[6,2],3,(0,0,0),[(4,4,0)],own_edges=list(zip(path,path[1:])))
+        _,out,stats=core(inst,sub,"restart")
+        self.assertEqual(stats["total_delay"],22)
+        self.assertTrue(check(inst,out).legal)
+
+    def test_whole_restart_zero_budget_preserves_route(self):
+        inst,sub=make(3,1,[2],3,(0,0,0),[(2,0,0)],
+                      own_edges=[((0,0,0),(1,0,0)),((1,0,0),(2,0,0))])
+        _,out,stats=core(inst,sub,"restart",budget=0)
+        self.assertEqual(check(inst,out).total_delay,4)
+        self.assertTrue(stats["budget_reached"])
+
     def test_output_parser_rejects_truncation(self):
         inst,_=make(3,1,[1],1,(0,0,0),[(2,0,0)])
         with self.assertRaises(ValueError):
