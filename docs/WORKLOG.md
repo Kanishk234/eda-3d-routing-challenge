@@ -49,3 +49,11 @@ Remaining: reconcile OVERVIEW/ARCHITECTURE/VERIFICATION/EXPERIMENTS/CLAIMS/PHASE
 Rebuilt C++17 polisher, added disconnected/resource-conflict fixtures (13 checks pass), compiler identity/wrapper wall measurement and exact reloaded-delay acceptance. Fresh full hard runs212729/212755/212816 reproduce earlier output hashes/score1.046629;9/9 legal and every case improves. Zero-budget212759 retains baseline; resume212819 retains accepted improvement. Independent official CLI score-suite executed by finish_phase2.py confirms aggregate; official hashes unchanged. Compact evidence/report in docs/evidence/phase2/, complete summaryPHASE2 and reconciled design/claims/readme. Shared600s routing envelope: paired baseline94.765s plus wrapper3.186s =97.952s; no speedup or fresh end-to-end claim.
 
 No coordinated optimizer, publication or Git commit. No running jobs. Raw artifacts ignored and require backup. Phases0–2 complete for baseline-plus-polish pipeline. Next: Phase3 controlled development on hard01–07, beginning coordinated blocker repair/congestion comparisons while retaining validated incumbent; hard08–09 remain validation-only.
+
+## 2026-10-01 — Authorized commits and Phase3 first screen
+
+User explicitly authorized local commits, overriding the session Git prohibition for this step. Earlier four commits already present: b806c93,c42c912,49d779e,04a429b. Created c3c32b2 for remaining Phase2 completion. Default sandbox Git write failed read-only; approved escalation succeeded. No push/publication.
+
+Implemented experimental max4-blocker group repair with full snapshot rollback, --mode repair and dev/phase3_screen.py.15 kernel checks pass.21 serial runs on hard01–07,seeds1–3,2s/case,5passes:all legal,none improved; core1.621s/wrapper11.576s. Saved compact evidence, negative result and in-progress summary. No validation tuning/public warm starts. Operator rejected as default; cause unmeasured. Phase3 remains active.
+
+No running jobs. Next concrete action: instrument proposal skip/repair/rejection outcomes and independent group transaction fixtures, then choose the next operator from measured failures. Root-aware/negotiation comparisons remain required. Current best hard score1.046629 unchanged. Commit experimental solver/tests/screen and documentation/evidence separately.

@@ -13,3 +13,5 @@ Not claimed: competitive gain, new best, tier result, global optimality, custom 
 ## Phase 2 established claims
 
 Earlier not-claimed tier/custom-solver statements describe Phase0. Current evidence in phase2/comparison.json: all9 hard outputs legal, aggregate1.0466292119096317; all case delays improve over baseline. Repeated seed1/pass5 output hashes agree.13 kernel checks pass; independent official CLI rescore agrees. Baseline warm start required; no public warm starts, global optimality, speedup or unseen-case generalization claimed. Audited PR3 output1.387366 remains better.
+
+Phase3 initial screen:21 development runs (hard01–07,seeds1–3) officially legal/nonworsening,0 improved. No full-tier aggregate, optimization gain or failure-cause claim.15 kernel checks pass; group transaction coverage remains limited.

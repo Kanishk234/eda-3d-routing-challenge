@@ -1,6 +1,6 @@
 # Phase 3 — Measured optimization
 
-Status: not started; earlier gates apply.
+Status: active. First blocker-group screen completed; no improvement. See PHASE3 summary and phase3/repair-screen.json.
 
 - [ ] Controlled root-aware/negotiation/legal reroute-polish comparisons — pending.
 - [ ] Use profiles/failures to choose subsequent methods — pending.

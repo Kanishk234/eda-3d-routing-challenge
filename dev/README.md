@@ -57,3 +57,12 @@ g++ -O3 -std=c++17 -Wall -Wextra -Wpedantic dev/solver/exact_polish.cpp -o dev/a
 ```
 
 Baseline incumbents must first exist from Phase1 reproduction/finish_phase1.py. Fresh baseline generation cost is part of the pipeline. Budgets are per-case core caps; input processing/validation/wrapper overhead and up to5s watchdog grace are additional. Defaults10s,seed1,5passes,one worker. Core signal handling emits completed incumbent; abrupt failure preserves pre-search checkpoint. No coordinated repair yet. Phase2 evidence freezer expects all stored runs successful and repeat full-tier hashes equal; adapt run selection before future optimization, rather than applying it to different configs.
+
+## Phase 3 experimental screen
+
+```bash
+.venv/bin/python dev/run_polish.py --mode repair --case case_01 --budget 2 --seed 1 --passes 5 --resume-dir dev/artifacts/20261001T212816.474321Z-exact-polish/routes
+.venv/bin/python dev/phase3_screen.py
+```
+
+Screen runs only hard01–07, seeds1–3, serially; preserves every manifest and makes no best-of selection. Initial repair operator showed no gain and is experimental. finish_phase2.py is a historical freezer and must not be run on mixed Phase3 manifests/configurations.

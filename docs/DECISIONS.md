@@ -9,3 +9,5 @@
 7. Preserve original docs/M3D_ROUTING_RESEARCH.md; copy byte-identically into requested docs/research/ path.
 
 8. Phase2 uses official negotiated baseline plus original exact C++ single-net polish. Profiles justify compiling search. This is a reliable pipeline with explicit baseline cost, not independent construction. Common600s envelope comparisons use paired baseline reuse and disclose summed measurements. Keep hard08–09 validation-only.
+
+9. Phase3 first screen rejects simple max4-blocker sequential repair as a default:0/21 development runs improve. Keep experimental implementation; collect failure counters before changing group size/search. Reserved cases08–09 untouched.
