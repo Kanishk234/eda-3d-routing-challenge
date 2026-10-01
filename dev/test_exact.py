@@ -240,6 +240,28 @@ class ExactKernel(unittest.TestCase):
         self.assertEqual(check(inst,out).total_delay,4)
         self.assertTrue(stats["budget_reached"])
 
+    def test_candidate_selection_improves_single_net(self):
+        path=[(x,0,0) for x in range(5)]+[(4,y,0) for y in range(1,5)]
+        inst,sub=make(5,5,[6,2],3,(0,0,0),[(4,4,0)],own_edges=list(zip(path,path[1:])))
+        _,out,stats=core(inst,sub,"select")
+        self.assertEqual(stats["total_delay"],22)
+        self.assertTrue(check(inst,out).legal)
+
+    def test_candidate_selection_preserves_zero_budget(self):
+        inst,sub=make(3,1,[2],3,(0,0,0),[(2,0,0)],
+                      own_edges=[((0,0,0),(1,0,0)),((1,0,0),(2,0,0))])
+        _,out,stats=core(inst,sub,"select",budget=0)
+        self.assertEqual(check(inst,out).total_delay,4)
+        self.assertTrue(stats["budget_reached"])
+
+    def test_wide_neighborhood_checkpoint(self):
+        inst,sub=make(3,1,[2],3,(0,0,0),[(2,0,0)],
+                      own_edges=[((0,0,0),(1,0,0)),((1,0,0),(2,0,0))])
+        for budget in (0,2):
+            _,out,stats=core(inst,sub,"wide",budget=budget)
+            self.assertEqual(check(inst,out).total_delay,4)
+            self.assertTrue(check(inst,out).legal)
+
     def test_output_parser_rejects_truncation(self):
         inst,_=make(3,1,[1],1,(0,0,0),[(2,0,0)])
         with self.assertRaises(ValueError):

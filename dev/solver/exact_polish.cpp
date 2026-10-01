@@ -15,6 +15,7 @@
 #include <string>
 #include <utility>
 #include <tuple>
+#include <functional>
 #include <vector>
 
 using I = std::int64_t;
@@ -50,6 +51,7 @@ struct Engine {
         return x^(x>>31);
     }
     std::uint64_t negotiation_rounds=0,conflicted_rounds=0;
+    std::uint64_t selection_nodes=0,selection_complete=0,selection_partial=0;
     std::uint64_t proposals=0,no_gain=0,too_many=0,attempts=0,failed=0,nonimproving=0;
 
     bool expired() {
@@ -331,7 +333,56 @@ struct Engine {
         }
         return false;
     }
-    void repair(unsigned long long seed,int passes,I penalty=0,bool negotiated=false) {
+    bool select_candidates(const std::vector<int>& group,I& after) {
+        std::vector<std::vector<Net>> choices(group.size());
+        std::vector<int> usage(vcount,0);
+        std::vector<I> history(vcount,0);
+        I best=0;
+        for(int j:group) { best=add(best,nets[j].delay); for(int v:nets[j].vertices) ++usage[v]; }
+        for(std::size_t k=0;k<group.size();++k) {
+            const Net& original=nets[group[k]]; choices[k].push_back(original);
+            for(int v:original.vertices) --usage[v];
+            for(int option=0;option<6 && !expired();++option) {
+                Net candidate;
+                if(!shortest(original,candidate,false,0,&usage,&history,option%3*2)) break;
+                bool duplicate=false;
+                for(const Net& other:choices[k]) if(other.edges==candidate.edges) duplicate=true;
+                if(!duplicate) choices[k].push_back(std::move(candidate));
+            }
+            for(int v:original.vertices) ++usage[v];
+            std::sort(choices[k].begin(),choices[k].end(),[](const Net& a,const Net& b){return a.delay<b.delay;});
+        }
+        std::vector<I> lower(group.size()+1,0);
+        for(std::size_t k=group.size();k>0;--k) lower[k-1]=add(lower[k],choices[k-1][0].delay);
+        std::vector<int> used(vcount,0),pick(group.size()),best_pick;
+        bool complete=true;
+        std::function<void(std::size_t,I)> visit=[&](std::size_t k,I cost) {
+            ++selection_nodes;
+            if(expired()) { complete=false; return; }
+            if(add(cost,lower[k])>=best) return;
+            if(k==group.size()) { best=cost;best_pick=pick;return; }
+            for(std::size_t c=0;c<choices[k].size();++c) {
+                const Net& candidate=choices[k][c]; bool conflict=false;
+                for(int v:candidate.vertices) if(used[v]) {conflict=true;break;}
+                if(conflict) continue;
+                for(int v:candidate.vertices) ++used[v];
+                pick[k]=static_cast<int>(c);
+                visit(k+1,add(cost,candidate.delay));
+                for(int v:candidate.vertices) --used[v];
+                if(!complete) break;
+            }
+        };
+        if(!expired()) visit(0,0); else complete=false;
+        if(complete) ++selection_complete;else ++selection_partial;
+        if(best_pick.empty()) return false;
+        after=best;
+        for(std::size_t k=0;k<group.size();++k) {
+            nets[group[k]]=std::move(choices[k][best_pick[k]]);
+            for(int v:nets[group[k]].vertices) owner[v]=nets[group[k]].id;
+        }
+        return true;
+    }
+    void repair(unsigned long long seed,int passes,I penalty=0,bool negotiated=false,bool selection=false,int max_blockers=4) {
         std::mt19937_64 rng(seed);
         std::vector<int> order(nets.size()); std::iota(order.begin(),order.end(),0);
         for(int pass=0;pass<passes && !expired();++pass) {
@@ -345,7 +396,7 @@ struct Engine {
                 std::set<int> blockers;
                 for(int v:ideal.vertices) if(owner[v]>=0 && owner[v]!=nets[index].id)
                     blockers.insert(owner[v]);
-                if(blockers.size()>4) { ++too_many; continue; }
+                if(blockers.size()>static_cast<std::size_t>(max_blockers)) { ++too_many; continue; }
                 ++attempts;
                 std::vector<int> group{index};
                 for(std::size_t j=0;j<nets.size();++j)
@@ -359,7 +410,8 @@ struct Engine {
                     for(int v:nets[j].vertices) owner[v]=-1;
                 }
                 bool legal=true; I after=0;
-                if(negotiated) legal=negotiate(group,after);
+                if(selection) legal=select_candidates(group,after);
+                else if(negotiated) legal=negotiate(group,after,max_blockers>4?24:12);
                 else for(int j:group) {
                     Net candidate;
                     if(!shortest(nets[j],candidate)) { legal=false; break; }
@@ -391,7 +443,7 @@ struct Engine {
             else {nets=std::move(old_nets);owner=std::move(old_owner);}
         }
     }
-    void explore(unsigned long long seed,int passes) {
+    void explore(unsigned long long seed,int passes,bool wide=false) {
         random_ties=true; tie_seed=seed;
         std::mt19937_64 rng(seed);
         std::vector<int> order(nets.size());std::iota(order.begin(),order.end(),0);
@@ -405,13 +457,15 @@ struct Engine {
                 for(int v:candidate.vertices) owner[v]=nets[j].id;
                 nets[j]=std::move(candidate);
             }
-            repair(seed+static_cast<unsigned long long>(pass),1,4,true);
+            repair(seed+static_cast<unsigned long long>(pass),1,4,true,false,wide?12:4);
         }
     }
     void output() {
         if(!ablation_mode) std::cerr<<"{\"proposals\":"<<proposals<<",\"no_gain\":"<<no_gain
                  <<",\"too_many\":"<<too_many<<",\"attempts\":"<<attempts
                  <<",\"negotiation_rounds\":"<<negotiation_rounds<<",\"conflicted_rounds\":"<<conflicted_rounds
+                 <<",\"selection_nodes\":"<<selection_nodes<<",\"selection_complete\":"<<selection_complete
+                 <<",\"selection_partial\":"<<selection_partial
                  <<",\"failed\":"<<failed<<",\"nonimproving\":"<<nonimproving<<"}\n";
         I total=0; for(const Net& n:nets) total=add(total,n.delay);
         std::cout<<"M3DOUT1 "<<nets.size()<<" "<<total<<" "<<timed_out<<" "
@@ -430,13 +484,17 @@ int main(int argc,char**argv) {
         auto seed=std::stoull(argv[2]); int passes=std::stoi(argv[3]);
         if(passes<1 || passes>100) throw std::runtime_error("invalid passes");
         bool search_only=std::string(argv[4])=="search";
-        if(!search_only && std::string(argv[4])!="polish" && std::string(argv[4])!="repair" && std::string(argv[4])!="repairsoft" && std::string(argv[4])!="ablation" && std::string(argv[4])!="negotiated" && std::string(argv[4])!="explore" && std::string(argv[4])!="restart") throw std::runtime_error("invalid mode");
+        if(!search_only && std::string(argv[4])!="polish" && std::string(argv[4])!="repair" && std::string(argv[4])!="repairsoft" && std::string(argv[4])!="ablation" && std::string(argv[4])!="negotiated" && std::string(argv[4])!="explore" && std::string(argv[4])!="restart" && std::string(argv[4])!="select" && std::string(argv[4])!="wide") throw std::runtime_error("invalid mode");
         std::signal(SIGINT,on_signal); std::signal(SIGTERM,on_signal);
         Engine engine;
         engine.deadline=std::chrono::steady_clock::now()+std::chrono::duration_cast<std::chrono::steady_clock::duration>(std::chrono::duration<double>(seconds));
         engine.read(search_only);
         engine.ablation_mode=std::string(argv[4])=="ablation";
         if(engine.ablation_mode) engine.ablation();
+        else if(std::string(argv[4])=="wide") engine.explore(seed,passes,true);
+        else if(std::string(argv[4])=="select") {
+            engine.random_ties=true;engine.tie_seed=seed;engine.repair(seed,passes,4,false,true);
+        }
         else if(std::string(argv[4])=="restart") engine.restart(seed,passes);
         else if(std::string(argv[4])=="explore") engine.explore(seed,passes);
         else if(std::string(argv[4])=="negotiated") engine.repair(seed,passes,4,true);

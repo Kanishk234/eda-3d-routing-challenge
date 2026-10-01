@@ -10,7 +10,7 @@ def main():
     import argparse
     parser=argparse.ArgumentParser()
     parser.add_argument("--label",default="repair-diagnostics")
-    parser.add_argument("--mode",choices=["repair","repairsoft","ablation","negotiated","explore","restart"],default="repair")
+    parser.add_argument("--mode",choices=["repair","repairsoft","ablation","negotiated","explore","restart","select","wide"],default="repair")
     args=parser.parse_args()
     start=set((ROOT/'dev/artifacts').glob('*-exact-polish/manifest.json'))
     warm=ROOT/'dev/artifacts/20261001T212816.474321Z-exact-polish/routes'
