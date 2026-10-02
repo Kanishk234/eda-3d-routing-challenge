@@ -1,0 +1,9 @@
+{
+  "previous_fixed_pipeline_score": 1.2375216859738483,
+  "whole_case_portfolio_score": 1.2491377321487542,
+  "followup_score": 1.25196491393671,
+  "followup_wrapper_wall_s": 32.59271374903619,
+  "known_total_optimizer_wall_s": 771.4416899150237,
+  "archive": "dev/incumbents/hard/20261002T024319.157302Z-exact-polish",
+  "limitations": "Explicit case portfolio followed by fixed seed4 adaptive10M stage. Missing earlier incoming raw ancestors and official reference generation costs are not measured. Available ancestor costs deduplicated within portfolio; screens and scoring separate."
+}

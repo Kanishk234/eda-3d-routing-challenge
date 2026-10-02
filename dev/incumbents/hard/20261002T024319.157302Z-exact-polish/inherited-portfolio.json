@@ -1,0 +1,268 @@
+{
+  "upstream_revision": "499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+  "suite": "benchmarks_hard",
+  "artifact_directory": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T024229.490164Z-case-portfolio",
+  "portfolio_selection": true,
+  "sources": [
+    {
+      "directory": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T023506.922949Z-exact-polish",
+      "manifest_sha256": "01665fa9a749affccc5fed3f33b46e2d8b19877ec89ee6077b701acfec4c8dea",
+      "score": 1.2375216859738483
+    },
+    {
+      "directory": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T022919.965005Z-exact-polish",
+      "manifest_sha256": "f3e6f1360bfd2a53715ad7a54251f75a846410ca492ee83a72c6086729be3106",
+      "score": 1.2333571857577519
+    }
+  ],
+  "cases": [
+    {
+      "case": "case_01",
+      "case_sha256": "685a165a7a15811dff12839e0dbe79752b889558213f760ad5f0df6139766f5d",
+      "total_delay": 9216,
+      "source_index": 1,
+      "source_run": "20261002T022919.965005Z-exact-polish",
+      "output_sha256": "bfd979a7646dff5259a7c46083e4311b37e6ea5e1438db58420e01de102b9004",
+      "candidate_delays": [
+        9450,
+        9216
+      ]
+    },
+    {
+      "case": "case_02",
+      "case_sha256": "1017b8aac77273a25186858bf39dd66293d56aecebfc7b0e1f5a19c66a2d6c2e",
+      "total_delay": 14748,
+      "source_index": 1,
+      "source_run": "20261002T022919.965005Z-exact-polish",
+      "output_sha256": "8c465b055b2651f94bfe0a815bb919c408ff8eb241d93c7fd2b5aed2f9d93cb9",
+      "candidate_delays": [
+        15578,
+        14748
+      ]
+    },
+    {
+      "case": "case_03",
+      "case_sha256": "4783af0f84289f7d48d70b7428d2f7b8fbcdefaf2bdfca2bac237e874bd97858",
+      "total_delay": 12044,
+      "source_index": 0,
+      "source_run": "20261002T023506.922949Z-exact-polish",
+      "output_sha256": "0f5652803ccfecceb1e882662a236541ffd27e1b7dbbb76690a3d2a5f0e4b27e",
+      "candidate_delays": [
+        12044,
+        12294
+      ]
+    },
+    {
+      "case": "case_04",
+      "case_sha256": "06324939b75971e45caa9e7f19d824a254e0f61167dd6b279bbff612d77d96f1",
+      "total_delay": 14293,
+      "source_index": 0,
+      "source_run": "20261002T023506.922949Z-exact-polish",
+      "output_sha256": "ec6b1468368c3890c5750a7b232632db3b1880fc45e53784bc3cf1287e2caf45",
+      "candidate_delays": [
+        14293,
+        14835
+      ]
+    },
+    {
+      "case": "case_05",
+      "case_sha256": "51e44c96f14e5d3229047d6ee5ba2aa0faee94fb208f3f9e716310a0620306a1",
+      "total_delay": 16775,
+      "source_index": 0,
+      "source_run": "20261002T023506.922949Z-exact-polish",
+      "output_sha256": "e87fba3b903398c5ff548c6bf86c869a8a596f522fc3105b81047979e10ccf1c",
+      "candidate_delays": [
+        16775,
+        16905
+      ]
+    },
+    {
+      "case": "case_06",
+      "case_sha256": "612b2680497826836de4d9553d8dc95d53f1d46fe07858cfdb74e43ce5582cba",
+      "total_delay": 22300,
+      "source_index": 0,
+      "source_run": "20261002T023506.922949Z-exact-polish",
+      "output_sha256": "65ab41ebe0cca7f9eb1555abf799a0adcbce3e06f991e12bcecca13de9625508",
+      "candidate_delays": [
+        22300,
+        22560
+      ]
+    },
+    {
+      "case": "case_07",
+      "case_sha256": "e3475bed19f53670482b4b864a276c475b47e1cac7237d8fa26eeb48714de8f0",
+      "total_delay": 24163,
+      "source_index": 0,
+      "source_run": "20261002T023506.922949Z-exact-polish",
+      "output_sha256": "f897887f928139c6ffe031260afdd83e5f6f58f2a46089f9f00b7ad205b71d37",
+      "candidate_delays": [
+        24163,
+        24747
+      ]
+    },
+    {
+      "case": "case_08",
+      "case_sha256": "b1dbc8ed8aab7cbb457987f4b8a877b9c2adda8575b326d9822523f090cec1f2",
+      "total_delay": 25304,
+      "source_index": 1,
+      "source_run": "20261002T022919.965005Z-exact-polish",
+      "output_sha256": "50d6bd090eeb6717818fb481f6638859533c67873d1b6e4b346c76501cfc69d2",
+      "candidate_delays": [
+        25412,
+        25304
+      ]
+    },
+    {
+      "case": "case_09",
+      "case_sha256": "bcbd72a7bb47ec5c5f82428573ffabdb932594c4b574d552808851617b05f6c1",
+      "total_delay": 23310,
+      "source_index": 0,
+      "source_run": "20261002T023506.922949Z-exact-polish",
+      "output_sha256": "5a091576faaad8d1987bdd50edfd116b798523c11028b85dc3aca156b4d079f3",
+      "candidate_delays": [
+        23310,
+        23626
+      ]
+    }
+  ],
+  "limitations": "Case portfolio, not a single fixed-seed solver run or same-budget algorithm comparison. Entire case routes are selected; no net splicing. Available generation ancestry is deduplicated; missing raw ancestors and reference generation costs remain unknown.",
+  "score": {
+    "format": "m3d-leaderboard",
+    "complete": true,
+    "aggregate_score": 1.2491377321487542,
+    "n_cases": 9,
+    "n_legal": 9,
+    "formula": "aggregate = geomean_c(baseline_total_c / submission_total_c); higher is better; baseline scores 1.0; all cases must be legal for a complete ranked submission (else aggregate = 0.0)",
+    "cases": [
+      {
+        "case": "case_01",
+        "legal": true,
+        "total_delay": 9216,
+        "baseline_delay": 11938,
+        "ratio": 1.2953559027777777,
+        "runtime_s": null,
+        "reasons": []
+      },
+      {
+        "case": "case_02",
+        "legal": true,
+        "total_delay": 14748,
+        "baseline_delay": 18910,
+        "ratio": 1.2822077569839978,
+        "runtime_s": null,
+        "reasons": []
+      },
+      {
+        "case": "case_03",
+        "legal": true,
+        "total_delay": 12044,
+        "baseline_delay": 14724,
+        "ratio": 1.2225174360677515,
+        "runtime_s": null,
+        "reasons": []
+      },
+      {
+        "case": "case_04",
+        "legal": true,
+        "total_delay": 14293,
+        "baseline_delay": 18077,
+        "ratio": 1.2647449800601693,
+        "runtime_s": null,
+        "reasons": []
+      },
+      {
+        "case": "case_05",
+        "legal": true,
+        "total_delay": 16775,
+        "baseline_delay": 21051,
+        "ratio": 1.254903129657228,
+        "runtime_s": null,
+        "reasons": []
+      },
+      {
+        "case": "case_06",
+        "legal": true,
+        "total_delay": 22300,
+        "baseline_delay": 27134,
+        "ratio": 1.2167713004484304,
+        "runtime_s": null,
+        "reasons": []
+      },
+      {
+        "case": "case_07",
+        "legal": true,
+        "total_delay": 24163,
+        "baseline_delay": 31341,
+        "ratio": 1.2970657617017753,
+        "runtime_s": null,
+        "reasons": []
+      },
+      {
+        "case": "case_08",
+        "legal": true,
+        "total_delay": 25304,
+        "baseline_delay": 30886,
+        "ratio": 1.2205975339867214,
+        "runtime_s": null,
+        "reasons": []
+      },
+      {
+        "case": "case_09",
+        "legal": true,
+        "total_delay": 23310,
+        "baseline_delay": 27802,
+        "ratio": 1.1927069927069927,
+        "runtime_s": null,
+        "reasons": []
+      }
+    ]
+  },
+  "known_ancestry_wrapper_wall_s": 738.8489761659876,
+  "known_ancestry_runs": {
+    "20261002T023506.922949Z-exact-polish": 22.114717836026102,
+    "20261002T022353.079439Z-exact-polish": 63.99542895401828,
+    "20261002T022919.965005Z-exact-polish": 19.521138629992492,
+    "20261002T002153.697116Z-exact-polish": 34.63133071298944,
+    "20261002T001045.804709Z-exact-polish": 18.680967826978303,
+    "20261002T000141.903840Z-exact-polish": 10.122704948007595,
+    "20261001T235301.888083Z-exact-polish": 9.28667595697334,
+    "20261001T234843.075364Z-exact-polish": 181.61026140500326,
+    "20261001T231330.371744Z-exact-polish": 46.29440652200719,
+    "20261001T225003.513464Z-exact-polish": 20.164739409985486,
+    "20261001T224311.948014Z-exact-polish": 86.4340669339872,
+    "20261001T223212.140484Z-exact-polish": 91.89035713800695,
+    "20261001T220917.515539Z-exact-polish": 19.999891070008744,
+    "20261001T220349.074348Z-exact-polish": 91.84528695000336,
+    "20261001T215550.921679Z-exact-polish": 10.837268401985057,
+    "20261001T214526.246570Z-exact-polish": 8.233417987008579,
+    "20261001T212816.474321Z-exact-polish": 3.186315483006183
+  },
+  "missing_ancestor_artifacts": [
+    "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T001313.450750Z-exact-polish/routes"
+  ],
+  "selection_wall_s": 0.5753293059533462,
+  "official_rescore_process": {
+    "command": [
+      "/home/younix/eda-3d-routing-challenge/.venv/bin/python",
+      "-m",
+      "m3d.cli",
+      "score-suite",
+      "--suite",
+      "benchmarks_hard",
+      "--submission-dir",
+      "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T024229.490164Z-case-portfolio/routes",
+      "--out",
+      "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T024229.490164Z-case-portfolio/official-rescore.json"
+    ],
+    "cwd": "/home/younix/eda-3d-routing-challenge/dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+    "budget_s": 180,
+    "wall_s": 0.31679194496246055,
+    "exit_code": 0,
+    "timeout": false,
+    "interrupted": false,
+    "log": "dev/artifacts/20261002T024229.490164Z-case-portfolio/official-rescore.log",
+    "peak_rss_kib": 18976,
+    "user_cpu_s": 0.29,
+    "system_cpu_s": 0.01
+  }
+}

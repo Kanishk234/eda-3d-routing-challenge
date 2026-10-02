@@ -31,7 +31,7 @@ def run(case, mode, budget, passes, seed, start, work_budget, negotiation):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("stage", choices=["recover", "cycles", "operators", "spatial"])
+    parser.add_argument("stage", choices=["recover", "cycles", "operators", "spatial", "hybrid"])
     parser.add_argument("--start", type=Path)
     parser.add_argument("--kernel", choices=["fanout_astar", "fanout_tight", "fanout_fine"], default="fanout_astar")
     parser.add_argument("--work-budget", type=int, default=0)
@@ -66,6 +66,8 @@ def main():
                    [(mode, 5, 1000, seed) for mode in
                     (args.kernel, *(args.kernel + "_" + op for op in (("diverse", "spatial") if args.stage == "spatial" else ("shuffle", "diverse", "adaptive"))))
                     for seed in (1, 2, 3)])
+    if args.stage == "hybrid":
+        configs=[(args.kernel+"_"+op,5,1000,seed) for op in ("diverse","adaptive","hybrid") for seed in (1,2,3)]
     if args.budget is not None:
         configs = [(mode, args.budget, passes, seed) for mode, _, passes, seed in configs]
     report["start"] = str(start)
@@ -97,10 +99,10 @@ def main():
                               "development_geomean": math.exp(sum(math.log(r["ratio"]) for r in records)/len(records)),
                               "delays": {r["case"]: r["total_delay"] for r in records}})
         report["development_summaries"] = summaries
-        if args.stage in ("operators", "spatial"):
+        if args.stage in ("operators", "spatial", "hybrid"):
             comparisons = []
-            for mode in (args.kernel + "_" + op for op in (("diverse", "spatial") if args.stage == "spatial" else ("shuffle", "diverse", "adaptive"))):
-                for control in ((args.kernel, args.kernel + "_diverse") if args.stage == "spatial" else (args.kernel, args.kernel + "_shuffle")):
+            for mode in (args.kernel + "_" + op for op in (("hybrid",) if args.stage == "hybrid" else (("diverse", "spatial") if args.stage == "spatial" else ("shuffle", "diverse", "adaptive")))):
+                for control in ((args.kernel+"_diverse",args.kernel+"_adaptive") if args.stage == "hybrid" else ((args.kernel, args.kernel + "_diverse") if args.stage == "spatial" else (args.kernel, args.kernel + "_shuffle"))):
                     if mode == control:
                         continue
                     counts = {"wins": 0, "ties": 0, "losses": 0}

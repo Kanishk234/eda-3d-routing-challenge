@@ -42,8 +42,11 @@ def main():
             if not parent.exists():
                 break
             ancestor = json.loads(parent.read_text())
+        portfolio_path = origin.parent / "portfolio.json"
+        inherited_portfolio = json.loads(portfolio_path.read_text()) if portfolio_path.exists() else None
         ancestry_available = origin.exists()
         reference_ancestor = (origin == OFFICIAL / suite / "reference") if ancestry_available else None
+        if inherited_portfolio: reference_ancestor = None
         rows.append({"tier": "intro" if suite == "benchmarks" else suite.removeprefix("benchmarks_"),
                      "run_id": m["run_id"], "manifest_sha256": digest(manifest_path),
                      "source_identity": m["source"]["files_sha256"],
@@ -52,6 +55,8 @@ def main():
                      "official_reference_warm_start": official_reference,
                      "official_reference_ancestor": reference_ancestor,
                      "initial_route_artifact_available": ancestry_available,
+                     "inherited_case_portfolio": inherited_portfolio,
+                     "known_total_optimizer_wall_s": sum(x["wrapper_wall_s"] for x in chain) + (inherited_portfolio["known_ancestry_wrapper_wall_s"] if inherited_portfolio else 0),
                      "attribution": "Official challenge reference routes followed by local optimization" if reference_ancestor else ("Locally validated pipeline; see ancestor manifests" if ancestry_available else "Inherited archive; older artifacts unavailable, consult original coverage evidence"),
                      "optimizer_chain": list(reversed(chain)),
                      "recorded_optimizer_chain_wall_s": sum(x["wrapper_wall_s"] for x in chain),
@@ -63,7 +68,7 @@ def main():
         print(rows[-1]["tier"], score["aggregate_score"], flush=True)
     args.out.parent.mkdir(parents=True, exist_ok=True)
     save(args.out, {"upstream_revision": REVISION, "rows": rows,
-                    "portfolio_selection": False,
+                    "portfolio_selection": any(r["inherited_case_portfolio"] is not None for r in rows),
                     "limitations": "Separate tier scores, no cross-tier aggregate. Reference warm starts are attributed and their generation cost was not reproduced. Stage timings exclude inherited generation, experiments and rescorers. No final freeze or end-to-end regeneration claim."})
 
 

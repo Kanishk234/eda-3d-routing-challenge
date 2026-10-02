@@ -1,0 +1,91 @@
+{
+ "format": "m3d-leaderboard",
+ "complete": true,
+ "aggregate_score": 1.25196491393671,
+ "n_cases": 9,
+ "n_legal": 9,
+ "formula": "aggregate = geomean_c(baseline_total_c / submission_total_c); higher is better; baseline scores 1.0; all cases must be legal for a complete ranked submission (else aggregate = 0.0)",
+ "cases": [
+  {
+   "case": "case_01",
+   "legal": true,
+   "total_delay": 9186,
+   "baseline_delay": 11938,
+   "ratio": 1.2995863270193773,
+   "runtime_s": null,
+   "reasons": []
+  },
+  {
+   "case": "case_02",
+   "legal": true,
+   "total_delay": 14672,
+   "baseline_delay": 18910,
+   "ratio": 1.2888495092693566,
+   "runtime_s": null,
+   "reasons": []
+  },
+  {
+   "case": "case_03",
+   "legal": true,
+   "total_delay": 12012,
+   "baseline_delay": 14724,
+   "ratio": 1.2257742257742257,
+   "runtime_s": null,
+   "reasons": []
+  },
+  {
+   "case": "case_04",
+   "legal": true,
+   "total_delay": 14289,
+   "baseline_delay": 18077,
+   "ratio": 1.2650990272237386,
+   "runtime_s": null,
+   "reasons": []
+  },
+  {
+   "case": "case_05",
+   "legal": true,
+   "total_delay": 16705,
+   "baseline_delay": 21051,
+   "ratio": 1.2601616282550134,
+   "runtime_s": null,
+   "reasons": []
+  },
+  {
+   "case": "case_06",
+   "legal": true,
+   "total_delay": 22288,
+   "baseline_delay": 27134,
+   "ratio": 1.2174264178033023,
+   "runtime_s": null,
+   "reasons": []
+  },
+  {
+   "case": "case_07",
+   "legal": true,
+   "total_delay": 24087,
+   "baseline_delay": 31341,
+   "ratio": 1.3011583011583012,
+   "runtime_s": null,
+   "reasons": []
+  },
+  {
+   "case": "case_08",
+   "legal": true,
+   "total_delay": 25302,
+   "baseline_delay": 30886,
+   "ratio": 1.2206940162832978,
+   "runtime_s": null,
+   "reasons": []
+  },
+  {
+   "case": "case_09",
+   "legal": true,
+   "total_delay": 23286,
+   "baseline_delay": 27802,
+   "ratio": 1.1939362707206047,
+   "runtime_s": null,
+   "reasons": []
+  }
+ ]
+}

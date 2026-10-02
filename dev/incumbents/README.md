@@ -12,3 +12,5 @@ not a claim of complete end-to-end regeneration. No competition submission
 entry is created by this development archive.
 
 Use this directory's `routes/` as `--resume-dir` for further optimization.
+
+Latest hard archive `20261002T024319.157302Z-exact-polish` scores **1.25196491393671**. It continues an explicit two-pipeline whole-case portfolio, then fixed seed4 adaptive10M optimization. Byte-identical routes, original source/manifest/rescore and inherited portfolio provenance are preserved; older missing ancestors are not regenerated.

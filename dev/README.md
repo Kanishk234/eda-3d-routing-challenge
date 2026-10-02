@@ -289,3 +289,13 @@ Use a new label for subsequent stages. `--hard-start` names a run directory with
 ```bash
 .venv/bin/python dev/compare_local_routes.py LEFT_ROUTES RIGHT_ROUTES --out NEW_REPORT.json
 ```
+
+Experimental `fanout_fine_hybrid` composes diverse corridor proposals with adaptive blocker groups. The repeated-seed5M development screen loses to adaptive alone overall; keep it optional. Run matched controls with `neighborhood_screen.py hybrid`.
+
+Select complete legal case outputs from explicit local complete runs:
+
+```bash
+.venv/bin/python dev/select_case_portfolio.py RUN_A RUN_B --suite benchmarks_hard --out NEW_REPORT.json
+```
+
+This creates a separate `*-case-portfolio/routes` directory and portfolio provenance, not a fabricated single solver-run manifest. Official hashes/checking and independent CLI scoring guard every selected case. Resume through `run_polish.py --resume-dir` and disclose both pipelines' effort. Do not mix individual nets independently.
