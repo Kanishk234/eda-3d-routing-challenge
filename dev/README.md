@@ -376,3 +376,32 @@ Screens: `.venv/bin/python dev/hard_neutral_screen.py --work-budget 10000000 --o
 `--mode restart_fine` performs bounded whole-case reconstruction with fine pricing/tight A*,keeps the incumbent on failure or loss;rejected after matched screen losses. No rejected candidate pool retained.
 
 Screens `.venv/bin/python dev/fresh_fine_screen.py` and `.venv/bin/python dev/eligibility_screen.py`;fixed followup `.venv/bin/python dev/eligibility_followup.py`. These scripts freeze coverage paths/configuration and refuse existing report destinations;inspect and choose new report names before rerunning. Current selected outputs and limitations: docs/summaries/ELIGIBILITY_REPAIR.md.
+
+## Optional independent CPU prototypes
+
+Install the pinned exact-selection dependency in the project venv:
+
+```bash
+.venv/bin/python -m pip install -r dev/requirements-exact.txt
+```
+
+Fresh constructor and reservation-first branch prototype have separate CLIs:
+
+```bash
+.venv/bin/python dev/component_router.py --help
+.venv/bin/python dev/branch_repair.py --help
+.venv/bin/python dev/generate_tree_candidates.py --help
+.venv/bin/python dev/select_tree_pool.py --help
+```
+
+Use new artifact directories for every run. Plans in dev/configs/ declare starts,budgets and candidate sources. Candidate generators may return trees conflicting across nets; these are not valid submissions. Exact selection retains a legal base and whole-case official verification gates accepted output. OPTIMAL refers only to the supplied pool. Results/rejections/active jobs: docs/research/CPU_EXPLORATION.md and docs/WORKLOG.md. No competitor route starts permitted. New focused checks are test_branch_repair.py,test_component_router.py,test_tree_pool.py andtest_candidate_trees.py. Keep source and inputs frozen during experiments.
+
+Static conflict search: `.venv/bin/python dev/exact_pair_repair.py dev/configs/hard-static-cbs-followup.json --out dev/artifacts/UNIQUE-DIRECTORY`. Python prototype uses exact single-net physical lower bounds and static vertex exclusions; it preserves the legal incumbent on limits. It is separate from the compiled production engine. Optional CP-SAT experiments require `.venv/bin/pip install -r dev/requirements-exact.txt`.
+
+Resume all tiers: `.venv/bin/python dev/continue_portfolio.py dev/configs/independent-continuation.json --out dev/artifacts/UNIQUE-DIRECTORY`. This uses own canonical runs; two workers, seeds7/8,40M expansions/case. Create `STOP` inside the output directory to stop between stages. Outputs are independently rescored, with no automatic canonical promotion.
+
+Adaptive candidate pricing prototype: `.venv/bin/python dev/adaptive_price_pool.py dev/configs/hard-lp-price-pool.json --out dev/artifacts/UNIQUE-DIR`. Only a development-case screen; finite-pool LP prices and CP-SAT selection do not certify global optimality. Screens so far add no quality gain.
+
+Dynamic chain prototype: `.venv/bin/python dev/ejection_chain.py dev/configs/hard-chain-neutral.json --out dev/artifacts/UNIQUE-DIR`. Python implementation dynamically displaces whole nets, reserves processed replacements, protects all foreign pins, and rolls back failed/limited chains. Own incumbents only; neutral moves preserve physical total. Independent official checks gate every acceptance. Public code review: docs/research/PUBLIC_SOURCE_REVIEW.md.
+
+CPU AI probes: see docs/research/AI_ROUTING_EXPERIMENTS.md. `learned_fresh_order.py` trains an own synthetic fresh ordering policy; `rest_proposals.py` evaluates original licensed pretrained REST geometry with exact routing/official checking. Optional CPU dependencies are in requirements-ai.txt; pinned source/weights fetched with fetch_rest_model.py into ignored artifacts. Neither probe has demonstrated an official-tier improvement. Current canonical45-route checkpoint is tier-independent-third-coverage.json. User-run grouped commit commands: docs/COMMIT_PLAN.md.

@@ -561,3 +561,98 @@ Three rounds, seeds4/5/6, 20M expansions per case,60s safety cap, two independen
 Older missing ancestors and reference-generation costs remain unknown. Phase3 continues; final regeneration/freeze/submission preparation remain pending. User handles publication.
 
 Next: review completed continuation rounds and preserve improvements; prototype partial-branch rerouting after profiling whole-net group failures.
+
+# Continued independent search and branch diagnostic
+
+User explicitly requests no competitor route reuse. Active continuation uses own previous routes and official references only; no competitor inputs. Background session69273: running, 2 completed rounds of3, two workers, seeds4/5/6,20M expansions/case and60s safety. Full rounds independently scored; canonical archived selection remains the prior checkpoint until promotion.
+
+Latest completed tier scores: intro1.105459813, hard1.2750451772, scale1.054700694, congested1.1183636275, designs1.2609710418, stress1.0223817688.
+
+Added read-only branch edge diagnostic; first-round hard9case routes legal,29319cutedges,zero improving adjacent existing-tree exchanges. Does not rule out longer paths or coordinated branch perturbations. Primary cost-distance practical sections reread and scope recorded in BRANCH_REPAIR_NEXT.md. No solver/wrapper/binary mutation during frozen background batch; no new performance claim from diagnostic.
+
+Next: finish/review round3, independently validate/preserve best suites,then prototype targeted blocking-subtree reconnection with exact downstream-delay accounting. Progress dev/artifacts/20261002-ongoing-downstream-portfolio/progress.json; log /tmp/ongoing-downstream-portfolio.log. No publication.
+
+# Independent branch, fresh construction and exact allocation experiments
+
+Completed prior3round continuation independently rescored45/45legal and promoted/archive-restored45original hashes. Scoresintro1.1061128731511995,hard1.2750451771602498,scale1.0556333736295613,congested1.1206198680014967,designs1.263465209032435,stress1.0227598787235601. No competitor routes per user constraint.
+
+New prototype results/scope/commands in docs/research/CPU_EXPLORATION.md. Branch18trialsallties;fresh component variant3/3medium losses;not adopted. Optional CP-SAT own4parent pool giveshard4delay/congested2delay,designsunchanged,allcasesrestrictedOPTIMAL andindependentlyCLIlegal. Reporterrelative-path failure repaired/rerun;failedrawartifact retained. Installed optionalpinnedOR-Tools inproject.venv.9newfocusedchecks pass;historical49checksnotrerun.
+
+Activejob78837 generates individual priced candidate trees then exactpool selectswholecase routes. Log/tmp/expanded-tree-pool.log,planshard-priced-candidates.json/hard-expanded-tree-pool.json. Fixedall9case config,no08/09tuning. Sourcefrozen;globalacceptancependingofficialwhole-suitechecks. Nextreview candidate coverage/restrictedgaps,archive gains if any,then research/generate alternative tree geometry. No publication;rootPDFuntouched.
+
+Expanded priced-SPT pool session78837completed:3548candidatevariables,all9casesrestrictedOPTIMAL,zeroadditionalgain beyond4-unit parentfusion. Nextactivejob90585generatesroot-attachment sharing variants(scales8/12/16,penalties2/8)then combinesallownoptionsforglobalCP-SAT. Sourcefrozenwhilejobactive;log/tmp/attachment-tree-pool.log.10newfocusedchecks nowpass. No competitor inputs;no further scoreclaimpendingofficial whole-suiteevaluation.
+
+# CPU exploration checkpoint: exact geometry and conflict search
+
+Canonical45/45 legal selection is now tier-exact-pool-coverage.json: intro1.106112873,hard1.275071137,scale1.055633374,congested1.120622705,designs1.263465209,stress1.022759879. All archived route hashes restored and matched. Finite own-tree candidate selection adds4 hard/2 congested physical-delay units beyond completed seeds4/5/6 continuation. No competitor routes used.
+
+Completed alternative algorithms: reservation-first partial branches versus whole-net repairs (no gain); fresh component-merging versus star construction (all6 medium runs legal but lose own incumbent); new priced/attachment catalogs (no gain beyond own saved-tree pool); restricted exact path/arborescence corridors (no gains, strict6 solves UNKNOWN); static vertex-conflict branching with exact rooted-tree bounds. CBS200K screen proves1/6 restricted optima;2M followup proves4/6,remaining2 work-limited,zero gains. Exactness is restricted to chosen graph/group,not global. Reports under docs/evidence/phase3/hard-static-cbs*.json and hard-exact-*.json; detailed research CPU_EXPLORATION.md.24 new focused checks rerun and pass,git diff --check passes. Historical49 checks not rerun. No final freeze/full regeneration or submission claimed. Changes remain local,uncommitted; no publication.
+
+## Actual running jobs at this checkpoint
+Only dev/artifacts/20261002-independent-continuation/progress.json is running: seeds7/8,40M expansions per case,60s safety,all45cases,two independent tier workers. Session7734; log /tmp/independent-continuation.log; plan dev/configs/independent-continuation.json. Each completed round officially rescored; canonical selection not automatically edited. Source/wrappers/binary/input coverage frozen. STOP file in that output folder stops between stages. All branch/component/pool/exact-geometry/CBS jobs mentioned earlier are complete. Do not treat their historical running notes as current.
+
+Next: inspect continuation results and archive/promote only officially verified improvements. For new geometry search, broaden groups/corridors rather than spending further effort on four locally certified CBS groups. Two unresolved groups still have lower-bound headroom; no achievable score claim. Missing older/reference-generation runtime ancestry remains unknown.
+
+# Independent continuation preserved; broader conflict-search screen
+
+Seeds7/8 continuation complete: all45 canonical routes independently scored legal, six new archives preserved and45 restored route hashes matched. Current tier-independent-continuation-coverage.json scores intro1.108328671906247,hard1.280425383219671,scale1.0572944934978141,congested1.125891351448877,designs1.2698343087082986,stress1.0243447669934704. Provenance/added effort retained; no competitor route inputs. Canonical selection updated only after completed official checks. Older archives retained.
+
+Broader CBS repair screen on hard01/04/07: up to4nets,margin2,1M/group, matched lexicographic physical-distance/occupancy tie options. Neither variant improves delay; both prove2/6 restricted optima,4 limited. Tie avoidance reduces one proven group518910→13520 expansions but is not a general speedup claim. Read primary ICBS paper and implemented equal-physical-cost conflict bypass preserving original constraints. Bypass6group screen:260/224/533/285 bypasses in unresolved groups,zero gains;2other groups restricted OPTIMAL. Retain as experimental,not adopted quality improvement. Frozen source snapshots,reports,method limitations in CPU_EXPLORATION.md.26 focused prototype checks pass together;git diff --check passes. Historical engine suite not rerun. No publication/commits; root PDF untouched.
+
+## Running jobs now
+Only dev/artifacts/20261002-independent-continuation-next/progress.json remains active: two all-tier rounds,seeds9/10,40M/case,60s safety,two workers. Session48906; /tmp/independent-continuation-next.log; dev/configs/independent-continuation-next.json. Source/binary/wrappers/input coverage frozen. Each complete round independently rescored; no automatic canonical promotion. STOP file stops between stages. All CBS/bypass jobs and previous seed7/8 batch are complete. Seed9 hard stage1.28136705263571 already officially checked; this live result has not replaced canonical archive.
+
+Next: preserve verified next-round improvements; investigate global construction/packing methods instead of repeating exhausted local repair families. Phase3 remains active; final freeze/regeneration/submission pending. Missing older/reference generation runtimes remain unknown. Timing overlaps with two native workers mean no Python wall-speed comparisons claimed.
+
+# Status check: seeds9/10 finished
+
+Both rounds complete, all12 tier stages finished,45/45 final routes independently legal. Latest scores intro1.109143294,hard1.283555829,scale1.058162531,congested1.128731480,designs1.273527794,stress1.025484302. Evidence dev/artifacts/20261002-independent-continuation-next/round-2-coverage.json. New scores have not yet replaced canonical archived selection. No optimization jobs from this batch remain running. Next: archive/restoration checkpoint and investigate broader packing proposals. No new implementation or tests in this status-only turn.
+
+# Public-source review and adaptive global candidate experiments
+
+User requested research through all forks/PRs,including Taz33m. Public API inventory23forks,26PRs,all advertised branches,34deduplicated fetched trees;18distinct non-toolkit code blobs and35changed metadata/docs. Also inspected unchanged Taz33m entry metadata and linked IrwinJam/m3d-router source/LICENSE. Inventory and honest scope limitations in public-source-audit.json and PUBLIC_SOURCE_REVIEW.md. Some entrants publish only routes/method descriptions. One PR26 diffHTTP422;full recursive tree succeeds. No external source copied/executed;no competitor route inputs. Own fork excluded as competitive source. Core findings: dynamic chains,neutral geometry,slow fresh negotiation,per-sink pruning; CPU ceiling not established.
+
+Latest seeds9/10 results now canonical archived/restored45hashes: intro1.109143294,hard1.283555829,scale1.058162531,congested1.128731480,designs1.273527794,stress1.025484302. Independent coverage tier-independent-next-coverage.json and independent-next-restoration.json. Source/provenance/previous selections retained.
+
+Implemented independent adaptive tree-pool pricing: six subgradient rounds and twelve LP-dual rounds on hard01/04/07. Generated alternatives for every net;allfinite-pool CP selections OPTIMAL,zero gains. LP objective remains incumbent within numerical tolerance. Multi-sink oracle heuristic;no global bound or rounding guarantee. Evidence hard-adaptive-price-pool.json and hard-lp-price-pool.json. Implemented independent dynamic whole-net chain prototype inspired by reviewed concepts; initial3Mscreen saves2hard07 units in a single-net move only,not evidence coordinated chains help. Matched20M strict/neutral seed2 followup is active.33focused checks pass together;git diff --check passes. Historical engine checks not rerun. Root PDF untouched,no commits/publication.
+
+## Actual running jobs
+1. dev/artifacts/20261002-independent-continuation-third/progress.json: seeds11/12/13,50M/case,60s safety,two all-tier workers. Session27771;log /tmp/independent-continuation-third.log. One full round completed as of this checkpoint,second in progress. Frozen production source/wrappers/binary/coverage;STOP file stops between stages. No automatic canonical promotion.
+2. Session79549: sequential matched Python strict then neutral chain screens,each hard01/04/07,seed2,20M/case,60s safety,cap8. Plans hard-chain-strict.json/hard-chain-neutral.json;logs /tmp/hard-chain-followup.log; progress respective artifact folders20261002-hard-chain-strict/neutral. Source frozen;no full-tier claim from three cases.
+All adaptive-pool,initial chain,and API fetch jobs are complete. Concurrent prototype/native work invalidates isolated wall-speed comparisons;work budgets remain explicit.
+
+Next: finish matched chain comparison and full-round native rescoring;preserve only independently verified improvements. Then prioritize slow compiled fresh negotiation and complementary neutral tree geometry from our own starts. Final freeze/regeneration/submission remain pending;older runtime ancestry unknown.
+
+Checkpoint refresh: native seeds11/12 complete (two full rounds);seed13 still running. Strict chain followup complete and saved to hard-chain-strict.json;neutral counterpart currently running. Session79549 now executing neutral stage. Compare both only after neutral completion.
+
+# AI-routing research side question
+
+User's question steers ongoing research; optimization jobs continue. Primary learned-neighborhood selection and learned net-ordering sources inspected; CPU-scale learned search policy proposed in LEARNED_SEARCH_NEXT.md. Model should choose net/group/operator while exact routing/checking handles legality and score. No model training,GPU dependency or benefit claim yet; telemetry and independent train/validation separation needed. Actual current jobs unchanged: native third continuation2/3rounds complete,seed13 running; strict chain followup complete,neutral followup running. No new checks run in this research/status addition.
+
+# Basin/pretrained-AI clarification and completed chain comparison
+
+User asks whether own-incumbent-only training can perpetuate a bad basin and whether pretrained online AI could offer broader priors. Primary existing learned-routing implementations found in EDA-AI; HubRouter input/training README inspected. No pretrained checkpoint/hosted endpoint compatible with our objective/3D legality verified. General model proposals and global construction policy are separate possible experiments; no new AI training/dependency/service calls. LEARNED_SEARCH_NEXT.md records broad exploration and transfer limitations.
+
+Matched strict/neutral dynamic-chain followup complete:hard01/04 zero gains in both;hard07two delay units from a single-net move in both. Neutral variant accepts49/47/55equal-delay changes but yields no additional physical gain. Evidence hard-chain-strict.json/hard-chain-neutral.json. No coordinated-chain quality benefit established. Only native third continuation remains running:2complete rounds,seed13active at latest check. All source/production freezes retained;canonical archives still seeds9/10 checkpoint. Next inspect pretrained compatibility and slow fresh generation,whilepreserving completed native improvements. No extra tests in this question turn.
+
+# CPU AI experiments and third-round canonical checkpoint
+
+User authorized actual AI exploration and asked about uncommitted files. Latest AGENTS Git policy reserves commits/publication for user; grouped exact commands in docs/COMMIT_PLAN.md. No Git commit/push performed. Root supplied PDF unchanged and excluded.
+
+Own learned fresh-ordering experiment:24synthetic training layouts,nine with feasible sampled teacher;24held-out layouts. Learned11legal,random12legal;paired7wins2ties2losses on eleven jointly legal layouts. No official-tier benefit established. Source/tests/models/compact evidence preserved. No incumbent geometry training. Not adopted.
+
+Original licensed pretrained REST source and five-terminal weights downloaded with exact blob/SHA256 manifest; CU-SD license retained. Optional CPU-only PyTorch2.8.0+cpu installed into project venv; requirements-ai.txt and install evidence recorded. Actual third-party actor executed on CPU; this is a change from earlier review-only status. No competitor route inputs. Restricted weights-only loader required known NumPy scalar/dtype allowlist; first failed attempt retained. Three hard cases01/04/07 produced104/130/150 neural calls,all finite-pool selections OPTIMAL and all officially legal;zero gains. No global optimum or general AI failure claim. AI_ROUTING_EXPERIMENTS.md records reproduction and next broader construction experiment.
+
+Seeds11/12/13 continuation complete and now canonical: intro1.110558440493,hard1.287513731040,scale1.060105782450,congested1.131633440080,designs1.277391968648,stress1.027335702236. All45 independently legal;all45 restored route hashes match immutable inventories. Added portfolio effort disclosed,older/reference generation cost unknown. Canonical pointer tier-independent-third-coverage.json. Source/route archives retained.
+
+Verification:88 development tests passed together in11.877s,including three neural-proposal physical-cost/limit tests and three learned-fresh tests;git diff --check passes. Official full-suite checks belong to completed native output evaluation; final freeze/regeneration/submission pending. Final routes and algorithm experiments remain separate claims.
+
+## Actual running jobs
+
+Session32650: dev/continue_portfolio.py with dev/configs/independent-continuation-fourth.json; seeds14/15,50M/case,60s safety,two workers across six tiers. Log /tmp/independent-continuation-fourth.log; progress dev/artifacts/20261002-independent-continuation-fourth/progress.json. Frozen production source/wrappers/binary/input coverage; STOP file stops between stages. No automatic promotion. All earlier native,chain,learned-order and REST probes are complete.
+
+Next: officially rescore/preserve completed continuation rounds; broaden fresh feasible training corpus and evaluate congestion-dependent global construction decisions under matched work budgets. REST tie-corridor adaptation and current toy learned ordering are not adopted as improvements. Phase3 active.
+
+# Local commit authorization
+
+User explicitly requests that the agent create the four prepared commits locally; user will push. This overrides the default Git policy for these local commits. Reviewed groups exclude supplied PDF, ignored models/builds/venv/scratch; index initially empty. No implementation changes or new tests in this commit-only turn. Previous verification:88development tests,45legal canonical outputs,archive hashes matched. Fourth continuation status at commit preparation: complete, 2 completed rounds. Exact commits will be reported in the conversation. No push/publication.

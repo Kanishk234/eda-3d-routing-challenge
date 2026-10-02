@@ -7,4 +7,4 @@ Status: measured operator gates satisfied; continued optimization before final f
 - [x] Retained methods per-case,seeds1–3,held-out08/09 fixed-config validation;regressions disclosed.
 - [x] Plain repair and unnecessary attachment replacement rejected with evidence.
 
-Current hard1.261189538560553 and all45selected route artifacts are available here; all six tier scores improved in tier-eligibility-followup-coverage.json. Concurrent recovery/neighbor experiments are a separate preserved history. New composed operators must be measured from current incumbents before retention. Final freeze/regeneration/submission remain pending.
+Current hard1.287513731040157; all45 selected routes independently legal in tier-independent-third-coverage.json. All six scores improved in seeds11/12/13 continuation. Phase3 continues; final freeze/regeneration/submission remain pending.

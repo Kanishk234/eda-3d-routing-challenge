@@ -63,3 +63,10 @@ A read_s-only edit was briefly saved while the screen binary was already running
 ## Nested portfolio generation costs in basic recombination reports
 
 The basic recombination CLI stopped at an inherited portfolio and omitted its known optimizer-stage cost dictionary. Its physical routes/scores were unaffected;the reported known ancestry cost could undercount available recorded stages. Updated CLI to inherit/deduplicate recorded portfolio costs and missing-ancestor markers,with cycle protection. Historical reports remain byte-original and are partial cost records;do not reinterpret them as total generation costs. Archive-sweep helper already inherited these dictionaries. New output costs still exclude unmeasured reference generation and unrecovered historical artifacts;selection cost remains separate.
+
+## Prototype pool reporter relative output path
+
+Initial CP-SAT selection completed but measurement helper rejected relative log path against absolute workspace root. No parent or canonical routes changed; partial raw artifact retained. Normalize output path at CLI entry; fresh rerun independently checks allhard9cases and preserves complete portfolio report. Physical solve logic unaffected.
+
+### Exact-pool ancestry reporter compatibility
+New exact-pool manifests recorded ancestry as a run-cost dictionary without the pre-summed aggregate field. report_tiers now accepts either representation and sums the dictionary when needed. Initial archive attempt failed before writing archives; rerun successfully rescored all45 routes and archived/restored both improved hard/congested runs. No evaluator or benchmark input changed.
