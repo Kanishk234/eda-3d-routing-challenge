@@ -51,3 +51,7 @@ Coverage ancestry reporting initially assumed every ancestor config contains mod
 ## Merged neighborhood checks: seed argument omitted (fixed)
 
 The existing crossing property check looped over three seed labels without passing the seed to the engine. It therefore repeated the default seed. Pass the actual seed and include all nine composed neighborhood modes in the existing crossing and fixed-work rollback/determinism checks. All32 focused checks pass. This affected test coverage only; experiment wrappers already passed their recorded seeds, so no official route results are invalidated.
+
+## Archived incumbent ancestry availability
+
+Continuing a tracked archive can reach an original warm-start path absent from this checkout. The coverage reporter previously classified that as a known locally generated origin. Record artifact availability and unknown reference ancestry explicitly when the chain stops at a missing artifact; retain original incoming coverage evidence for the longer recorded chain. Route hashes, legality and physical scores are unaffected.

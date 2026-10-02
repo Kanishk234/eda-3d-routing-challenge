@@ -42,7 +42,8 @@ def main():
             if not parent.exists():
                 break
             ancestor = json.loads(parent.read_text())
-        reference_ancestor = origin == OFFICIAL / suite / "reference"
+        ancestry_available = origin.exists()
+        reference_ancestor = (origin == OFFICIAL / suite / "reference") if ancestry_available else None
         rows.append({"tier": "intro" if suite == "benchmarks" else suite.removeprefix("benchmarks_"),
                      "run_id": m["run_id"], "manifest_sha256": digest(manifest_path),
                      "source_identity": m["source"]["files_sha256"],
@@ -50,7 +51,8 @@ def main():
                      "warm_start": m["warm_start"],
                      "official_reference_warm_start": official_reference,
                      "official_reference_ancestor": reference_ancestor,
-                     "attribution": "Official challenge reference routes followed by local optimization" if reference_ancestor else "Locally validated pipeline; see ancestor manifests",
+                     "initial_route_artifact_available": ancestry_available,
+                     "attribution": "Official challenge reference routes followed by local optimization" if reference_ancestor else ("Locally validated pipeline; see ancestor manifests" if ancestry_available else "Inherited archive; older artifacts unavailable, consult original coverage evidence"),
                      "optimizer_chain": list(reversed(chain)),
                      "recorded_optimizer_chain_wall_s": sum(x["wrapper_wall_s"] for x in chain),
                      "initial_route_source": str(origin),

@@ -1,6 +1,6 @@
 # Phase 3 — in progress
 
-All six tiers are active optimization objectives. Current selected outputs are locally available and independently checked45/45legal in tier-merged-neighborhood-coverage.json; adaptive hard1.233357,congested1.094145. See ALL_TIER_ADVANCE.md for all scores. Concurrent neighborhood work from d4032d4 has been integrated; new combination checks are recorded separately. Incoming236cc84 preserves a separate higher hard result1.234984, freshly official-rescored9/9legal. Historical recovery availability limits below describe the other checkout, not this checkout.
+All six tiers remain active optimization objectives. Latest45/45legal selected outputs are independently scored in tier-adaptive-all-tiers-coverage.json; hard1.237522. See ADAPTIVE_ALL_TIERS.md for scores, costs and ancestry limits. Both concurrent commits are integrated. Historical missing-artifact statements below concern the other checkout or older incoming ancestors, not current selected outputs.
 
 ## Latest: recovered incumbents and diverse neighborhoods
 

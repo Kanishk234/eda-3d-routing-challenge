@@ -328,3 +328,18 @@ Fixed seed1 adaptive full-hard stage20261002T022919.965005Z-exact-polish complet
 ## Integrate second concurrent push236cc84
 
 Fetched the newly reported push and merged spatial-repair prototype, matched-screen evidence and preserved hard incumbent archive. Solver changes merge cleanly; WORKLOG/OVERVIEW conflicts resolved preserving both histories and actual six-tier availability. Incoming spatial screens regress versus controls, so retain experimental mode only. Fresh official pinned CLI rescore verifies incoming archived hard routes9/9legal,score1.234984066216333, above our separate adaptive1.2333571857577519. Preserve both pipelines and provenance; no per-case portfolio silently selected. Other five tier incumbents unchanged. Combined C++ warning-free and all32 focused checks pass, including composed spatial modes through the shared mode list. No running jobs; next action compare/continue the two legal hard pipelines and measure neighborhood operators across the other tiers. Final freeze/regeneration/submission remain pending. User PDF preserved; local merge only, no push/publication.
+
+## Continue adaptive optimization on all six tiers
+
+Extended advance_all_tiers.py with explicit mode/single-stage/seed/work caps and preserved hard-start directory. Starting hard uses incoming local archive1.234984; other five use existing selected routes. Fixed adaptive fine seed1/5M expansions/1000cycles/60s cap,serial,schedules hard2/1/1,congested2/4/4,others2/2/2. Independent CLI confirms45/45legal; all six scores improve.
+
+intro 1.0955758162466702, 14 improve/6 unchanged; run 20261002T023420.807032Z-exact-polish.
+hard 1.2375216859738483, 7 improve/2 unchanged; run 20261002T023506.922949Z-exact-polish.
+scale 1.0427841747061612, 8 improve/0 unchanged; run 20261002T023529.212154Z-exact-polish.
+congested 1.0956995301333292, 4 improve/0 unchanged; run 20261002T023556.952369Z-exact-polish.
+designs 1.2264569927913178, 3 improve/0 unchanged; run 20261002T023612.135172Z-exact-polish.
+stress 1.0205499844007666, 1 improve/0 unchanged; run 20261002T023621.680402Z-exact-polish.
+
+Added wrapper effort 139.726s; inherited generation, prior screens and rescorers separate. Adaptive-all-tier reports retain source/config/case/output hashes and all unchanged cases. Stress gains just2delay units. Archived ancestor availability now explicit in coverage reporter rather than labeling missing origin as known local generation; scores/hashes unaffected. Python syntax inspection and git diff --check pass; no new solver changes/tests this chunk.
+
+Added generic official local-route comparison helper: adaptive versus incoming fine-diverse totals164235/163669 hide9972/10538 opposing per-net savings. This diagnoses distinct packing, not legal splicing. Proposed transactional donor groups/composed diverse-adaptive screen in NEXT_EXPERIMENTS. Relaxed bounds refreshed; not jointly achievable score targets. No running jobs. Next concrete action: implement optional composed diverse/adaptive proposals and compare against both controls at matched work on01/04/07,seeds1–3,then fixed validation if retained. Final freeze/regeneration/submission pending; user PDF untouched; local commits authorized, no publication.

@@ -277,3 +277,15 @@ Use a new report destination for every run; `--work-budget 20000000` supplies
 the second declared comparison. Outputs are independently checked through the
 pinned official checker/scorer by the wrapper before acceptance. Development
 comparisons are not full-tier scores.
+
+Continue a fixed adaptive stage across all six tiers, using the preserved incoming hard run:
+
+```bash
+.venv/bin/python dev/advance_all_tiers.py --coverage docs/evidence/phase3/tier-merged-neighborhood-coverage.json --label adaptive-all-tiers --single-stage --mode fanout_fine_adaptive --seed 1 --work-budget 5000000 --hard-start dev/incumbents/hard/20261002T022353.079439Z-exact-polish
+```
+
+Use a new label for subsequent stages. `--hard-start` names a run directory with manifest and routes. Older archived ancestors may be unavailable; the new report states that limitation. Compare local routing patterns without combining their nets:
+
+```bash
+.venv/bin/python dev/compare_local_routes.py LEFT_ROUTES RIGHT_ROUTES --out NEW_REPORT.json
+```

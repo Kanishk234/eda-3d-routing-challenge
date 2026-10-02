@@ -2,13 +2,20 @@
 import argparse,json,re,subprocess,sys
 from pathlib import Path
 from measure import ROOT,digest,save
+from run_polish import NEIGHBORHOOD_MODES
 
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--coverage',type=Path,default=ROOT/'docs/evidence/phase3/tier-schedule-coverage.json')
     parser.add_argument('--label',default='all-tier-advance')
+    parser.add_argument('--mode',choices=['fanout_fine',*NEIGHBORHOOD_MODES],default='fanout_fine')
+    parser.add_argument('--single-stage',action='store_true')
+    parser.add_argument('--seed',type=int,default=1)
+    parser.add_argument('--work-budget',type=int,default=5000000)
+    parser.add_argument('--hard-start',type=Path,help='Explicit preserved hard run directory, including manifest and routes')
     args=parser.parse_args()
+    if args.work_budget<=0: parser.error('work budget must be positive')
     if not re.fullmatch(r'[a-z0-9-]+',args.label): parser.error('label must use lowercase letters, digits and hyphens')
     coverage=args.coverage
     destination=ROOT/'docs/evidence/phase3'/(args.label+'.json')
@@ -16,24 +23,31 @@ def main():
     if destination.exists() or score_report.exists(): parser.error('use a new label to preserve prior evidence')
     starting=json.loads(coverage.read_text())['rows']
     selected={r['tier']:r['run_id'] for r in starting}
+    locations={tier:ROOT/'dev/artifacts'/run for tier,run in selected.items()}
+    if args.hard_start:
+        archive=args.hard_start.resolve()
+        manifest=json.loads((archive/'manifest.json').read_text())
+        if manifest['config']['suite']!='benchmarks_hard': parser.error('hard start must be a hard-tier run')
+        selected['hard']=manifest['run_id']; locations['hard']=archive
     schedules={'hard':(2,1,1),'congested':(2,4,4)}
-    report={'input_coverage_sha256':digest(coverage),'workers':1,'scope':'All six separately scored tiers. Two bounded stages; fixed configs per tier, no public warm starts or per-case candidate selection.',
+    report={'input_coverage_sha256':digest(coverage),'workers':1,'scope':'All six separately scored tiers. Declared bounded stages; fixed configs per tier, no public warm starts or per-case candidate selection.',
             'rows':[],'selected_runs':selected,'limitations':'Incremental incumbent improvement, not fresh generation or a globally optimal score claim. All experiments/stages count toward total search effort.'}
     stages=[(1,5000000,('intro','scale','designs','stress')),(2,10000000,('intro','hard','scale','congested','designs','stress'))]
+    if args.single_stage: stages=[(args.seed,args.work_budget,('intro','hard','scale','congested','designs','stress'))]
     for seed,work,tiers in stages:
         for tier in tiers:
             previous=selected[tier];cfg=schedules.get(tier,(2,2,2))
             suite='benchmarks' if tier=='intro' else 'benchmarks_'+tier
             before=set((ROOT/'dev/artifacts').glob('*-exact-polish/manifest.json'))
-            command=[sys.executable,str(ROOT/'dev/run_polish.py'),'--suite',suite,'--resume-dir',str(ROOT/'dev/artifacts'/previous/'routes'),
-                '--mode','fanout_fine','--seed',str(seed),'--passes','1000','--budget','60','--work-budget',str(work),
+            command=[sys.executable,str(ROOT/'dev/run_polish.py'),'--suite',suite,'--resume-dir',str(locations[tier]/'routes'),
+                '--mode',args.mode,'--seed',str(seed),'--passes','1000','--budget','60','--work-budget',str(work),
                 '--present-initial',str(cfg[0]),'--present-step',str(cfg[1]),'--history-step',str(cfg[2])]
             subprocess.run(command,check=True)
             paths=set((ROOT/'dev/artifacts').glob('*-exact-polish/manifest.json'))-before
             assert len(paths)==1;path=paths.pop();m=json.loads(path.read_text())
             assert m['success'] and m['result']['complete'] and m['official_inputs_unchanged']
             assert all(c['total_delay']<=c['before_delay'] for c in m['cases'])
-            selected[tier]=m['run_id']
+            selected[tier]=m['run_id']; locations[tier]=path.parent
             report['rows'].append({'tier':tier,'previous_run':previous,'run_id':m['run_id'],'manifest_sha256':digest(path),
                 'config':m['config'],'score':m['result'],'cases':[{**c,'core':{k:v for k,v in c.get('core',{}).items() if k!='net_delays'}} for c in m['cases']],'wrapper_wall_s':m['wrapper_wall_s'],
                 'source_identity':m['source']['files_sha256']})

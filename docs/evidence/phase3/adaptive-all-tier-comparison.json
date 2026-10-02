@@ -1,0 +1,48 @@
+{
+  "rows": [
+    {
+      "tier": "intro",
+      "score": 1.0955758162466702,
+      "run_id": "20261002T023420.807032Z-exact-polish",
+      "improved": 14,
+      "unchanged": 6
+    },
+    {
+      "tier": "hard",
+      "score": 1.2375216859738483,
+      "run_id": "20261002T023506.922949Z-exact-polish",
+      "improved": 7,
+      "unchanged": 2
+    },
+    {
+      "tier": "scale",
+      "score": 1.0427841747061612,
+      "run_id": "20261002T023529.212154Z-exact-polish",
+      "improved": 8,
+      "unchanged": 0
+    },
+    {
+      "tier": "congested",
+      "score": 1.0956995301333292,
+      "run_id": "20261002T023556.952369Z-exact-polish",
+      "improved": 4,
+      "unchanged": 0
+    },
+    {
+      "tier": "designs",
+      "score": 1.2264569927913178,
+      "run_id": "20261002T023612.135172Z-exact-polish",
+      "improved": 3,
+      "unchanged": 0
+    },
+    {
+      "tier": "stress",
+      "score": 1.0205499844007666,
+      "run_id": "20261002T023621.680402Z-exact-polish",
+      "improved": 1,
+      "unchanged": 0
+    }
+  ],
+  "added_wrapper_wall_s": 139.72636905504623,
+  "limitations": "Sequential incumbent stages; no matched-control full-tier superiority claim. Hard starts from preserved incoming fine-diverse archive with unavailable older raw ancestors; original coverage evidence retains its longer recorded chain. Other tier starts from current local outputs. No public warm starts or case/seed portfolio."
+}
