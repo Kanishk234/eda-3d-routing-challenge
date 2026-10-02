@@ -1,0 +1,429 @@
+{
+  "screens": [
+    {
+      "budget": "5m",
+      "modes": [
+        {
+          "mode": "fanout_fine",
+          "legal": 9,
+          "cases": 9,
+          "core_wall_s": 17.21380159596447,
+          "cpu_s": 17.78,
+          "expansions": [
+            5000000,
+            5000000,
+            5000000,
+            5000000,
+            5000000,
+            5000000,
+            5000000,
+            5000000,
+            5000000
+          ],
+          "attempts": 1791,
+          "failed": 165,
+          "nonimproving": 1600,
+          "group_gains": 26,
+          "delays": [
+            {
+              "case": "case_01",
+              "delay": 9608
+            },
+            {
+              "case": "case_04",
+              "delay": 14429
+            },
+            {
+              "case": "case_07",
+              "delay": 24371
+            },
+            {
+              "case": "case_01",
+              "delay": 9608
+            },
+            {
+              "case": "case_04",
+              "delay": 14429
+            },
+            {
+              "case": "case_07",
+              "delay": 24263
+            },
+            {
+              "case": "case_01",
+              "delay": 9608
+            },
+            {
+              "case": "case_04",
+              "delay": 14433
+            },
+            {
+              "case": "case_07",
+              "delay": 24283
+            }
+          ]
+        },
+        {
+          "mode": "fanout_fine_diverse",
+          "legal": 9,
+          "cases": 9,
+          "core_wall_s": 17.483444640005473,
+          "cpu_s": 17.85,
+          "expansions": [
+            5000000,
+            5000000,
+            5000000,
+            5000000,
+            5000000,
+            5000000,
+            5000000,
+            5000000,
+            5000000
+          ],
+          "attempts": 1323,
+          "failed": 138,
+          "nonimproving": 1144,
+          "group_gains": 41,
+          "delays": [
+            {
+              "case": "case_01",
+              "delay": 9592
+            },
+            {
+              "case": "case_04",
+              "delay": 14419
+            },
+            {
+              "case": "case_07",
+              "delay": 24275
+            },
+            {
+              "case": "case_01",
+              "delay": 9592
+            },
+            {
+              "case": "case_04",
+              "delay": 14417
+            },
+            {
+              "case": "case_07",
+              "delay": 24303
+            },
+            {
+              "case": "case_01",
+              "delay": 9606
+            },
+            {
+              "case": "case_04",
+              "delay": 14415
+            },
+            {
+              "case": "case_07",
+              "delay": 24365
+            }
+          ]
+        },
+        {
+          "mode": "fanout_fine_spatial",
+          "legal": 9,
+          "cases": 9,
+          "core_wall_s": 17.475425760960206,
+          "cpu_s": 17.74,
+          "expansions": [
+            5000000,
+            5000000,
+            5000000,
+            5000000,
+            5000000,
+            5000000,
+            5000000,
+            5000000,
+            5000000
+          ],
+          "attempts": 131,
+          "failed": 89,
+          "nonimproving": 40,
+          "group_gains": 2,
+          "delays": [
+            {
+              "case": "case_01",
+              "delay": 9616
+            },
+            {
+              "case": "case_04",
+              "delay": 14433
+            },
+            {
+              "case": "case_07",
+              "delay": 24271
+            },
+            {
+              "case": "case_01",
+              "delay": 9616
+            },
+            {
+              "case": "case_04",
+              "delay": 14433
+            },
+            {
+              "case": "case_07",
+              "delay": 24413
+            },
+            {
+              "case": "case_01",
+              "delay": 9572
+            },
+            {
+              "case": "case_04",
+              "delay": 14433
+            },
+            {
+              "case": "case_07",
+              "delay": 24413
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "mode": "fanout_fine_diverse",
+          "control": "fanout_fine",
+          "wins": 7,
+          "ties": 0,
+          "losses": 2,
+          "geomean_delay_ratio": 1.0005827490139318
+        },
+        {
+          "mode": "fanout_fine_spatial",
+          "control": "fanout_fine",
+          "wins": 2,
+          "ties": 1,
+          "losses": 6,
+          "geomean_delay_ratio": 0.9993495631863546
+        },
+        {
+          "mode": "fanout_fine_spatial",
+          "control": "fanout_fine_diverse",
+          "wins": 2,
+          "ties": 0,
+          "losses": 7,
+          "geomean_delay_ratio": 0.9987675323917062
+        }
+      ],
+      "total_wrapper_wall_s": 66.57828838506248
+    },
+    {
+      "budget": "20m",
+      "modes": [
+        {
+          "mode": "fanout_fine",
+          "legal": 9,
+          "cases": 9,
+          "core_wall_s": 68.63599846302532,
+          "cpu_s": 70.96,
+          "expansions": [
+            20000000,
+            20000000,
+            20000000,
+            20000000,
+            20000000,
+            20000000,
+            20000000,
+            20000000,
+            20000000
+          ],
+          "attempts": 7175,
+          "failed": 623,
+          "nonimproving": 6480,
+          "group_gains": 72,
+          "delays": [
+            {
+              "case": "case_01",
+              "delay": 9578
+            },
+            {
+              "case": "case_04",
+              "delay": 14429
+            },
+            {
+              "case": "case_07",
+              "delay": 24169
+            },
+            {
+              "case": "case_01",
+              "delay": 9606
+            },
+            {
+              "case": "case_04",
+              "delay": 14429
+            },
+            {
+              "case": "case_07",
+              "delay": 24193
+            },
+            {
+              "case": "case_01",
+              "delay": 9566
+            },
+            {
+              "case": "case_04",
+              "delay": 14429
+            },
+            {
+              "case": "case_07",
+              "delay": 24185
+            }
+          ]
+        },
+        {
+          "mode": "fanout_fine_diverse",
+          "legal": 9,
+          "cases": 9,
+          "core_wall_s": 65.99783618812216,
+          "cpu_s": 67.65,
+          "expansions": [
+            20000000,
+            20000000,
+            20000000,
+            20000000,
+            20000000,
+            20000000,
+            20000000,
+            20000000,
+            20000000
+          ],
+          "attempts": 5349,
+          "failed": 516,
+          "nonimproving": 4724,
+          "group_gains": 109,
+          "delays": [
+            {
+              "case": "case_01",
+              "delay": 9506
+            },
+            {
+              "case": "case_04",
+              "delay": 14293
+            },
+            {
+              "case": "case_07",
+              "delay": 24163
+            },
+            {
+              "case": "case_01",
+              "delay": 9588
+            },
+            {
+              "case": "case_04",
+              "delay": 14403
+            },
+            {
+              "case": "case_07",
+              "delay": 24245
+            },
+            {
+              "case": "case_01",
+              "delay": 9536
+            },
+            {
+              "case": "case_04",
+              "delay": 14403
+            },
+            {
+              "case": "case_07",
+              "delay": 24197
+            }
+          ]
+        },
+        {
+          "mode": "fanout_fine_spatial",
+          "legal": 9,
+          "cases": 9,
+          "core_wall_s": 63.41817675193306,
+          "cpu_s": 65.4,
+          "expansions": [
+            20000000,
+            20000000,
+            20000000,
+            20000000,
+            20000000,
+            20000000,
+            20000000,
+            20000000,
+            20000000
+          ],
+          "attempts": 564,
+          "failed": 315,
+          "nonimproving": 232,
+          "group_gains": 17,
+          "delays": [
+            {
+              "case": "case_01",
+              "delay": 9592
+            },
+            {
+              "case": "case_04",
+              "delay": 14433
+            },
+            {
+              "case": "case_07",
+              "delay": 24243
+            },
+            {
+              "case": "case_01",
+              "delay": 9532
+            },
+            {
+              "case": "case_04",
+              "delay": 14433
+            },
+            {
+              "case": "case_07",
+              "delay": 24411
+            },
+            {
+              "case": "case_01",
+              "delay": 9506
+            },
+            {
+              "case": "case_04",
+              "delay": 14375
+            },
+            {
+              "case": "case_07",
+              "delay": 24413
+            }
+          ]
+        }
+      ],
+      "comparisons": [
+        {
+          "mode": "fanout_fine_diverse",
+          "control": "fanout_fine",
+          "wins": 7,
+          "ties": 0,
+          "losses": 2,
+          "geomean_delay_ratio": 1.0025860790300927
+        },
+        {
+          "mode": "fanout_fine_spatial",
+          "control": "fanout_fine",
+          "wins": 3,
+          "ties": 0,
+          "losses": 6,
+          "geomean_delay_ratio": 0.9993723120569108
+        },
+        {
+          "mode": "fanout_fine_spatial",
+          "control": "fanout_fine_diverse",
+          "wins": 3,
+          "ties": 0,
+          "losses": 6,
+          "geomean_delay_ratio": 0.9967945226445885
+        }
+      ],
+      "total_wrapper_wall_s": 211.63536676275544
+    }
+  ],
+  "limitations": "Same search expansion caps are not identical CPU work. Group sizes capped13; actual histogram not instrumented. Group acceptance counts exclude per-net explore changes. Available local starts, not missing GitHub-best outputs. No public warm starts or per-case seed portfolio. Full-tier followup adds search effort."
+}

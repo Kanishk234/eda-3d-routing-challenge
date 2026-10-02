@@ -1,0 +1,110 @@
+{
+  "incoming_commit": "236cc84ca83a91d183451c1d57140d0291daad1e",
+  "official_revision": "499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+  "archive": "dev/incumbents/hard/20261002T022353.079439Z-exact-polish",
+  "output_hash_checks": {
+    "routes/case_01.sol.json": true,
+    "routes/case_02.sol.json": true,
+    "routes/case_03.sol.json": true,
+    "routes/case_04.sol.json": true,
+    "routes/case_05.sol.json": true,
+    "routes/case_06.sol.json": true,
+    "routes/case_07.sol.json": true,
+    "routes/case_08.sol.json": true,
+    "routes/case_09.sol.json": true
+  },
+  "official_rescore": {
+    "format": "m3d-leaderboard",
+    "complete": true,
+    "aggregate_score": 1.234984066216333,
+    "n_cases": 9,
+    "n_legal": 9,
+    "formula": "aggregate = geomean_c(baseline_total_c / submission_total_c); higher is better; baseline scores 1.0; all cases must be legal for a complete ranked submission (else aggregate = 0.0)",
+    "cases": [
+      {
+        "case": "case_01",
+        "legal": true,
+        "total_delay": 9506,
+        "baseline_delay": 11938,
+        "ratio": 1.2558384178413633,
+        "runtime_s": null,
+        "reasons": []
+      },
+      {
+        "case": "case_02",
+        "legal": true,
+        "total_delay": 15590,
+        "baseline_delay": 18910,
+        "ratio": 1.2129570237331624,
+        "runtime_s": null,
+        "reasons": []
+      },
+      {
+        "case": "case_03",
+        "legal": true,
+        "total_delay": 12054,
+        "baseline_delay": 14724,
+        "ratio": 1.2215032354405178,
+        "runtime_s": null,
+        "reasons": []
+      },
+      {
+        "case": "case_04",
+        "legal": true,
+        "total_delay": 14293,
+        "baseline_delay": 18077,
+        "ratio": 1.2647449800601693,
+        "runtime_s": null,
+        "reasons": []
+      },
+      {
+        "case": "case_05",
+        "legal": true,
+        "total_delay": 16781,
+        "baseline_delay": 21051,
+        "ratio": 1.2544544425242834,
+        "runtime_s": null,
+        "reasons": []
+      },
+      {
+        "case": "case_06",
+        "legal": true,
+        "total_delay": 22328,
+        "baseline_delay": 27134,
+        "ratio": 1.2152454317448944,
+        "runtime_s": null,
+        "reasons": []
+      },
+      {
+        "case": "case_07",
+        "legal": true,
+        "total_delay": 24163,
+        "baseline_delay": 31341,
+        "ratio": 1.2970657617017753,
+        "runtime_s": null,
+        "reasons": []
+      },
+      {
+        "case": "case_08",
+        "legal": true,
+        "total_delay": 25574,
+        "baseline_delay": 30886,
+        "ratio": 1.2077109564401345,
+        "runtime_s": null,
+        "reasons": []
+      },
+      {
+        "case": "case_09",
+        "legal": true,
+        "total_delay": 23380,
+        "baseline_delay": 27802,
+        "ratio": 1.1891360136869118,
+        "runtime_s": null,
+        "reasons": []
+      }
+    ]
+  },
+  "focused_checks": 32,
+  "test_log_sha256": "153f60bd88b419f21a1902de69678dc967391983de23a507dac4551915689793",
+  "limitations": "Preserved incoming result, not regenerated ancestors. Separate adaptive pipeline retained; no case portfolio selected."
+}

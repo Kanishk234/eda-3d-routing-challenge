@@ -1,7 +1,13 @@
 # Ranked optimization experiments
 
-Latest research priority: implement an original spatial-neighborhood negotiated
-repair prototype, compared with fine control and fine-diverse blocker groups.
+Latest measurement: whole-net spatial prototype screened at5M/20M expansions
+on hard01/04/07,seeds1–3 against fine and fine-diverse. It loses6/9 versus
+fine at both budgets; keep experimental. Fine-diverse wins7/9 at both caps,
+selected for frozen full-hard validation. See spatial-comparison.json and
+spatial-5m/20m-screen.json. Next spatial revision should measure group sizes
+and try smaller/randomized groups or preserve branches at region boundaries;
+current detour-sum ranking favors larger nested regions. These are hypotheses.
+The original research motivation follows.
 Reubalink metadata/commit history reports window LNS and negotiated repair in
 ripped windows, but no custom source is published. Independently checked final
 routes score1.362234; predecessor1.267187. Our recorded one-sink total is better,

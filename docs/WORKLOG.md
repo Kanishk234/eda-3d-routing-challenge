@@ -244,6 +244,65 @@ Downloaded18 pinned route JSONs for analysis only; no external code execution/co
 
 Added spatial full-net neighborhood experiment plan to NEXT_EXPERIMENTS and research notes: sample proposed4/8/12 XY boxes using only our incumbent/detour bounds, bounded touching-net groups, reuse transactional fine/tight negotiation, frozen external nets/pins, strict physical acceptance. Compare fine/fine-diverse/spatial at5M/20M work and60s safety caps, same starts/seeds/schedules on01/04/07, fixed08/09 only after selection. Window boundary-preserving topology repair and component merging are later hypotheses; no claim to know their unpublished settings. No jobs running, commits or publication. Next action: implement and measure spatial-group prototype; preserve current local routes and immutable reports.
 
+## Requested push, spatial comparison, and selected hard improvement
+
+User explicitly requested pushing resolved work before continuing. Read AGENTS,
+inspected diff/index, fetched origin/main: base38b3a49 still current, no
+unmerged files or whitespace errors. Committed integrated neighborhood kernels,
+tools and research/evidence as d4032d4 and pushed main successfully. Backup
+stash retained. No leaderboard/submission changes or competition publication.
+
+Implemented optional spatial group modes for all three fanout kernels. Own
+incumbent/detour-ranked target and seeded random vertex anchor4/8/12 XY
+boxes across layers. Rank touching neighbors by relaxed-delay excess,cap12
+neighbors+target; choose greatest neighbor excess. Whole-tree negotiation may
+leave the box; external owners/foreign pins frozen. Existing transaction
+rollback/strict physical acceptance reused. Ranking favors large nested boxes;
+no actual group-size histogram instrumented. No public warm starts/geometry
+or per-net competitor gaps guide routing. No external code copied/executed.
+
+Matched serial fine/fine-diverse/spatial screens on01/04/07,seeds1–3 at5M
+and20M expansions,60s safety cap,1000cycles,schedule2/1/1,same frozen
+recovered starts:54/54 official-legal, all exact work caps reached. Diverse
+beats fine7/9 at both budgets,2 losses; relative geomeans1.000583/1.002586.
+Spatial vs fine2wins/1tie/6loss at5M,3wins/6loss at20M. Spatial retained only
+experimental. Spatial5M131 repairs/2gains/89fail/40nonimproving;20M564/17/315/232.
+Screens cost278.214s wrapper, excluding inherited generation/build/scorers.
+Reports spatial-5m-screen.json,spatial-20m-screen.json,spatial-comparison.json.
+
+Frozen fine-diverse/seed1/20M/1000cycles/60s/2/1/1 full-hard followup from
+recovered1.227449: run20261002T022353.079439Z-exact-polish,all9 improve,9/9
+legal,score1.234984066216333 independently official CLI rescored. Relative
+previous recorded GitHub1.230658:+0.35156%,six case gains/three regressions
+(01/02/08); do not claim all improve that historical baseline. Reserved08/09
+validated only after selection; no tuning afterward. Core62.106s/wrapper63.995s,
+peak4736KiB; full stage allcases20M expansions. Ancestry+hashes retained in
+fine-diverse-hard-coverage.json. Additional search effort does not establish
+same-budget whole-tier superiority; no best-of-cases or seeds selection.
+
+Compilation warning-free, Python syntax inspection and git diff --check pass.
+No unit tests added/run. Latest available routes are this full-stage routes
+directory; other-tier historical artifacts remain missing. New experiment
+changes remain uncommitted after requested pre-work checkpoint push. No jobs
+running. Next action: instrument group sizes and try bounded smaller/randomized
+spatial groups or boundary-preserving branch repair; retain fine-diverse and
+current best. Final freeze, other-tier artifact recovery/regeneration and
+submission preparation remain pending.
+
+## Publish remaining experiment work
+
+User requested pushing all remaining work. Fetched origin/main; HEAD aligned
+with d4032d4, no unmerged entries and git diff --check clean. Preserved latest
+full-hard routes, original manifest, independent rescore and development-source
+snapshot under dev/incumbents/hard/20261002T022353.079439Z-exact-polish.
+Verified every copied route against original output SHA256; narrow ignore
+exception includes these route files. This avoids losing the current1.234984
+result with ignored scratch artifacts. Ancestor reconstruction remains a
+separate limitation; no binaries/bulk scratch logs or competition entry added.
+Commit/push all solver, experiment, evidence, documentation and incumbent
+archive changes as requested. No new optimization or unit-test runs. No jobs
+running; next action remains smaller spatial groups or branch repair.
+
 ## Optimize every tier and inspect concurrent work
 
 User clarified the objective: maximize each separately scored tier, independent of current public PRs. Extended fine pricing/tight search to intro/scale/designs/stress with fixed seed1/5M expansions, then applied seed2/10M to all six tiers.1000cycles/60s safety caps; serial workers, no public warm starts or undisclosed per-case selection. Hard schedule2/1/1,congested2/4/4,others2/2/2. Ten stages add319.189s wrapper effort; ancestry remains explicit.
@@ -265,3 +324,7 @@ Combined C++ builds warning-free. All32 focused checks pass, expanded to all nin
 Matched merged fine-neighborhood screen on hard01/04/07, seeds1–3,5M expansions/1000cycles/60s safety cap, schedule2/1/1:36/36 legal,87.360s wrapper effort. Against control shuffle6wins/3ties, diverse5wins/4ties, adaptive6wins/3ties, no losses in these comparisons. Adaptive has the largest across-trial geometric delay ratio1.0017884; individual best results differ by seed/mode. Evidence merged-fine-neighborhood-screen.json. Pilot gains are not a full-tier score or a universal default recommendation. Next step: fixed seed1 adaptive full-hard stage, independent scoring, then broader tier measurements and spatial-neighborhood prototype. User PDF remains untouched/untracked; no publication.
 
 Fixed seed1 adaptive full-hard stage20261002T022919.965005Z-exact-polish completed:9/9 legal,8 improve/1 unchanged,score1.2333571857577519 versus1.2312958441734672. Added wrapper effort 19.521138629992492s, separate from inherited generation and87.360s screen. Configuration5M expansions/1000cycles/60s safety cap,schedule2/1/1. Held-out08/09 were evaluated after selection and both improve; no held-out tuning. Independent six-tier coverage is tier-merged-neighborhood-coverage.json; other five selected runs unchanged. No jobs running after rescoring. Next action: measure these optional neighborhoods outside hard, then prototype spatial full-net repair. Final freeze/regeneration/submission remain pending.
+
+## Integrate second concurrent push236cc84
+
+Fetched the newly reported push and merged spatial-repair prototype, matched-screen evidence and preserved hard incumbent archive. Solver changes merge cleanly; WORKLOG/OVERVIEW conflicts resolved preserving both histories and actual six-tier availability. Incoming spatial screens regress versus controls, so retain experimental mode only. Fresh official pinned CLI rescore verifies incoming archived hard routes9/9legal,score1.234984066216333, above our separate adaptive1.2333571857577519. Preserve both pipelines and provenance; no per-case portfolio silently selected. Other five tier incumbents unchanged. Combined C++ warning-free and all32 focused checks pass, including composed spatial modes through the shared mode list. No running jobs; next action compare/continue the two legal hard pipelines and measure neighborhood operators across the other tiers. Final freeze/regeneration/submission remain pending. User PDF preserved; local merge only, no push/publication.
