@@ -1,0 +1,665 @@
+{
+  "repository": "THOMACHAYAN/eda-3d-routing-challenge",
+  "branch": "reubalink-hard",
+  "upstream_revision": "499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+  "suite_sha256": "7547781268583f8a0ca59f7f2d5d7f121936e85470dd8f36daa2856f7f094b94",
+  "our_coverage_sha256": "388ff6440849be54affe121c4fbcf335bdee9ba2cfac68c8ae36080b3e01b741",
+  "our_recorded_score": 1.2306575756801885,
+  "custom_solver_source_found_in_inspected_branches": false,
+  "external_code_executed": false,
+  "public_routes_used_as_warm_starts": false,
+  "revisions": [
+    {
+      "revision": "ca3cb1de2c046546f2ed8fca14576f6056b8488d",
+      "method_self_report": "shortest-path trees, fanout-scaled PathFinder negotiation, exact per-net reroute, then window LNS. Routes are from this run; no other entry's routes were copied.",
+      "metadata_sha256": "6b0c25b0563d7ec0c4d8100f621f58be67e630d3b62f4554b44d66e3d160c345",
+      "score": {
+        "format": "m3d-leaderboard",
+        "complete": true,
+        "aggregate_score": 1.2671868111635183,
+        "n_cases": 9,
+        "n_legal": 9,
+        "formula": "aggregate = geomean_c(baseline_total_c / submission_total_c); higher is better; baseline scores 1.0; all cases must be legal for a complete ranked submission (else aggregate = 0.0)",
+        "cases": [
+          {
+            "case": "case_01",
+            "legal": true,
+            "total_delay": 9202,
+            "baseline_delay": 11938,
+            "ratio": 1.297326668115627,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_02",
+            "legal": true,
+            "total_delay": 14560,
+            "baseline_delay": 18910,
+            "ratio": 1.2987637362637363,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_03",
+            "legal": true,
+            "total_delay": 11880,
+            "baseline_delay": 14724,
+            "ratio": 1.2393939393939395,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_04",
+            "legal": true,
+            "total_delay": 14365,
+            "baseline_delay": 18077,
+            "ratio": 1.258405847546119,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_05",
+            "legal": true,
+            "total_delay": 16665,
+            "baseline_delay": 21051,
+            "ratio": 1.2631863186318633,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_06",
+            "legal": true,
+            "total_delay": 21890,
+            "baseline_delay": 27134,
+            "ratio": 1.239561443581544,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_07",
+            "legal": true,
+            "total_delay": 23703,
+            "baseline_delay": 31341,
+            "ratio": 1.3222376914314644,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_08",
+            "legal": true,
+            "total_delay": 23958,
+            "baseline_delay": 30886,
+            "ratio": 1.289172718924785,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_09",
+            "legal": true,
+            "total_delay": 23146,
+            "baseline_delay": 27802,
+            "ratio": 1.2011578674500993,
+            "runtime_s": null,
+            "reasons": []
+          }
+        ]
+      },
+      "total_delay": 159369
+    },
+    {
+      "revision": "d9cddc4cc365290f4c6f4d1752f460c46e03ddbe",
+      "method_self_report": "shortest-path trees, fanout-scaled PathFinder negotiation, exact per-net reroute, window LNS, then negotiated repair inside ripped windows. Routes are from this run; no other entry's routes were copied.",
+      "metadata_sha256": "fe7c3effc4499ed96642020b3e722f4d0e645a84054b73411e77bc67d081a979",
+      "score": {
+        "format": "m3d-leaderboard",
+        "complete": true,
+        "aggregate_score": 1.362234270749783,
+        "n_cases": 9,
+        "n_legal": 9,
+        "formula": "aggregate = geomean_c(baseline_total_c / submission_total_c); higher is better; baseline scores 1.0; all cases must be legal for a complete ranked submission (else aggregate = 0.0)",
+        "cases": [
+          {
+            "case": "case_01",
+            "legal": true,
+            "total_delay": 8708,
+            "baseline_delay": 11938,
+            "ratio": 1.3709232889297198,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_02",
+            "legal": true,
+            "total_delay": 13388,
+            "baseline_delay": 18910,
+            "ratio": 1.412458918434419,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_03",
+            "legal": true,
+            "total_delay": 11260,
+            "baseline_delay": 14724,
+            "ratio": 1.3076376554174067,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_04",
+            "legal": true,
+            "total_delay": 13477,
+            "baseline_delay": 18077,
+            "ratio": 1.341322252726868,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_05",
+            "legal": true,
+            "total_delay": 15617,
+            "baseline_delay": 21051,
+            "ratio": 1.3479541525260934,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_06",
+            "legal": true,
+            "total_delay": 20006,
+            "baseline_delay": 27134,
+            "ratio": 1.3562931120663801,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_07",
+            "legal": true,
+            "total_delay": 21697,
+            "baseline_delay": 31341,
+            "ratio": 1.4444854127298705,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_08",
+            "legal": true,
+            "total_delay": 21996,
+            "baseline_delay": 30886,
+            "ratio": 1.4041643935260957,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_09",
+            "legal": true,
+            "total_delay": 21676,
+            "baseline_delay": 27802,
+            "ratio": 1.282616718951836,
+            "runtime_s": null,
+            "reasons": []
+          }
+        ]
+      },
+      "total_delay": 147825
+    }
+  ],
+  "cases": [
+    {
+      "case": "case_01",
+      "case_sha256": "685a165a7a15811dff12839e0dbe79752b889558213f760ad5f0df6139766f5d",
+      "our_recorded_delay": 9252,
+      "public": [
+        {
+          "revision": "ca3cb1de2c046546f2ed8fca14576f6056b8488d",
+          "legal": true,
+          "delay": 9202,
+          "ratio": 1.297326668115627,
+          "output_sha256": "7aef8ba24de647dc4555067ab3f9f7bd5dd82c2d2c38515970dc0d9140d3311b",
+          "resources": {
+            "net_vertex_uses": 1913,
+            "edges": 1851,
+            "vias": 396
+          }
+        },
+        {
+          "revision": "d9cddc4cc365290f4c6f4d1752f460c46e03ddbe",
+          "legal": true,
+          "delay": 8708,
+          "ratio": 1.3709232889297198,
+          "output_sha256": "599794eb5747fb008950ea32e6e46eab9cb534c95485f13652e5ddd285f36605",
+          "resources": {
+            "net_vertex_uses": 1857,
+            "edges": 1795,
+            "vias": 385
+          }
+        }
+      ]
+    },
+    {
+      "case": "case_02",
+      "case_sha256": "1017b8aac77273a25186858bf39dd66293d56aecebfc7b0e1f5a19c66a2d6c2e",
+      "our_recorded_delay": 14794,
+      "public": [
+        {
+          "revision": "ca3cb1de2c046546f2ed8fca14576f6056b8488d",
+          "legal": true,
+          "delay": 14560,
+          "ratio": 1.2987637362637363,
+          "output_sha256": "88865365a99c0d9f4bcb542dff77c6855036fba755a303901b8b4286a2318d91",
+          "resources": {
+            "net_vertex_uses": 2590,
+            "edges": 2522,
+            "vias": 525
+          }
+        },
+        {
+          "revision": "d9cddc4cc365290f4c6f4d1752f460c46e03ddbe",
+          "legal": true,
+          "delay": 13388,
+          "ratio": 1.412458918434419,
+          "output_sha256": "6fac5ae850b49f4fba9c0c166fb1c8d4203e7f886763a30a275377d3b00f2cae",
+          "resources": {
+            "net_vertex_uses": 2424,
+            "edges": 2356,
+            "vias": 484
+          }
+        }
+      ]
+    },
+    {
+      "case": "case_03",
+      "case_sha256": "4783af0f84289f7d48d70b7428d2f7b8fbcdefaf2bdfca2bac237e874bd97858",
+      "our_recorded_delay": 12326,
+      "public": [
+        {
+          "revision": "ca3cb1de2c046546f2ed8fca14576f6056b8488d",
+          "legal": true,
+          "delay": 11880,
+          "ratio": 1.2393939393939395,
+          "output_sha256": "04a4238e12be7ed1b1a7a605764291cc2fce8b068779bee5b8cfa1c4f9243ccf",
+          "resources": {
+            "net_vertex_uses": 2603,
+            "edges": 2530,
+            "vias": 459
+          }
+        },
+        {
+          "revision": "d9cddc4cc365290f4c6f4d1752f460c46e03ddbe",
+          "legal": true,
+          "delay": 11260,
+          "ratio": 1.3076376554174067,
+          "output_sha256": "6024c4f44004a19e5ec0fd1ff464c14fcf075a03c7c56c57d295e19c54b6883f",
+          "resources": {
+            "net_vertex_uses": 2495,
+            "edges": 2422,
+            "vias": 445
+          }
+        }
+      ]
+    },
+    {
+      "case": "case_04",
+      "case_sha256": "06324939b75971e45caa9e7f19d824a254e0f61167dd6b279bbff612d77d96f1",
+      "our_recorded_delay": 14881,
+      "public": [
+        {
+          "revision": "ca3cb1de2c046546f2ed8fca14576f6056b8488d",
+          "legal": true,
+          "delay": 14365,
+          "ratio": 1.258405847546119,
+          "output_sha256": "8a4003c240deeed7e897c9c687f5e2982459390187663eee2d2260e09e3dfe6a",
+          "resources": {
+            "net_vertex_uses": 2984,
+            "edges": 2906,
+            "vias": 530
+          }
+        },
+        {
+          "revision": "d9cddc4cc365290f4c6f4d1752f460c46e03ddbe",
+          "legal": true,
+          "delay": 13477,
+          "ratio": 1.341322252726868,
+          "output_sha256": "1f19e8bb517dfb8c27d0d178266f751c661e299464e58c71e2ccebe23fda964d",
+          "resources": {
+            "net_vertex_uses": 2882,
+            "edges": 2804,
+            "vias": 507
+          }
+        }
+      ]
+    },
+    {
+      "case": "case_05",
+      "case_sha256": "51e44c96f14e5d3229047d6ee5ba2aa0faee94fb208f3f9e716310a0620306a1",
+      "our_recorded_delay": 16949,
+      "public": [
+        {
+          "revision": "ca3cb1de2c046546f2ed8fca14576f6056b8488d",
+          "legal": true,
+          "delay": 16665,
+          "ratio": 1.2631863186318633,
+          "output_sha256": "8fdf7b67a1de60549b864092cd19c8b6beaaf6ad800e33e38213883da166df37",
+          "resources": {
+            "net_vertex_uses": 3270,
+            "edges": 3187,
+            "vias": 616
+          }
+        },
+        {
+          "revision": "d9cddc4cc365290f4c6f4d1752f460c46e03ddbe",
+          "legal": true,
+          "delay": 15617,
+          "ratio": 1.3479541525260934,
+          "output_sha256": "cad5010734dcf1dffee8ba61bfaa02db1a093aac2c101abdbacb4f45d83908c7",
+          "resources": {
+            "net_vertex_uses": 3061,
+            "edges": 2978,
+            "vias": 581
+          }
+        }
+      ]
+    },
+    {
+      "case": "case_06",
+      "case_sha256": "612b2680497826836de4d9553d8dc95d53f1d46fe07858cfdb74e43ce5582cba",
+      "our_recorded_delay": 22584,
+      "public": [
+        {
+          "revision": "ca3cb1de2c046546f2ed8fca14576f6056b8488d",
+          "legal": true,
+          "delay": 21890,
+          "ratio": 1.239561443581544,
+          "output_sha256": "98e57b6961003c73b8437bc979d16acc4384cf367be1f3f18e49ee5fe3c29164",
+          "resources": {
+            "net_vertex_uses": 3997,
+            "edges": 3909,
+            "vias": 687
+          }
+        },
+        {
+          "revision": "d9cddc4cc365290f4c6f4d1752f460c46e03ddbe",
+          "legal": true,
+          "delay": 20006,
+          "ratio": 1.3562931120663801,
+          "output_sha256": "f6a1461d5557501886ca5d3b3a5518066d23918dd407de2c1c1047e6e52b44dd",
+          "resources": {
+            "net_vertex_uses": 3802,
+            "edges": 3714,
+            "vias": 618
+          }
+        }
+      ]
+    },
+    {
+      "case": "case_07",
+      "case_sha256": "e3475bed19f53670482b4b864a276c475b47e1cac7237d8fa26eeb48714de8f0",
+      "our_recorded_delay": 24747,
+      "public": [
+        {
+          "revision": "ca3cb1de2c046546f2ed8fca14576f6056b8488d",
+          "legal": true,
+          "delay": 23703,
+          "ratio": 1.3222376914314644,
+          "output_sha256": "671e24ba7e915ee49de14bf0ac6f136a3d2ab551fd07da398ae7242b41e6b544",
+          "resources": {
+            "net_vertex_uses": 4403,
+            "edges": 4309,
+            "vias": 773
+          }
+        },
+        {
+          "revision": "d9cddc4cc365290f4c6f4d1752f460c46e03ddbe",
+          "legal": true,
+          "delay": 21697,
+          "ratio": 1.4444854127298705,
+          "output_sha256": "1146f74c6559bd28bcdcd3c8406a60fd9dd4f78074f714242de5e444736fb919",
+          "resources": {
+            "net_vertex_uses": 4264,
+            "edges": 4170,
+            "vias": 709
+          }
+        }
+      ]
+    },
+    {
+      "case": "case_08",
+      "case_sha256": "b1dbc8ed8aab7cbb457987f4b8a877b9c2adda8575b326d9822523f090cec1f2",
+      "our_recorded_delay": 25346,
+      "public": [
+        {
+          "revision": "ca3cb1de2c046546f2ed8fca14576f6056b8488d",
+          "legal": true,
+          "delay": 23958,
+          "ratio": 1.289172718924785,
+          "output_sha256": "d24dce3d444d7581b6b22b86b9c495d1337881c81c55cf67a12fb5367f093810",
+          "resources": {
+            "net_vertex_uses": 4858,
+            "edges": 4759,
+            "vias": 800
+          }
+        },
+        {
+          "revision": "d9cddc4cc365290f4c6f4d1752f460c46e03ddbe",
+          "legal": true,
+          "delay": 21996,
+          "ratio": 1.4041643935260957,
+          "output_sha256": "5643aa3719c53ffab8b7c75caa60699580e584dbf5bf11543ea1f1f50d19f883",
+          "resources": {
+            "net_vertex_uses": 4595,
+            "edges": 4496,
+            "vias": 726
+          }
+        }
+      ]
+    },
+    {
+      "case": "case_09",
+      "case_sha256": "bcbd72a7bb47ec5c5f82428573ffabdb932594c4b574d552808851617b05f6c1",
+      "our_recorded_delay": 23666,
+      "public": [
+        {
+          "revision": "ca3cb1de2c046546f2ed8fca14576f6056b8488d",
+          "legal": true,
+          "delay": 23146,
+          "ratio": 1.2011578674500993,
+          "output_sha256": "f760d1a8d47274bfa91e7612e9aa9f5cd2453700649762349e6e7a4c5ca2ec06",
+          "resources": {
+            "net_vertex_uses": 4575,
+            "edges": 4471,
+            "vias": 751
+          }
+        },
+        {
+          "revision": "d9cddc4cc365290f4c6f4d1752f460c46e03ddbe",
+          "legal": true,
+          "delay": 21676,
+          "ratio": 1.282616718951836,
+          "output_sha256": "12103bcdabe9898190eb5f52c2d6cb0c3c11bee73c22bc993ddc19a597ae2e26",
+          "resources": {
+            "net_vertex_uses": 4443,
+            "edges": 4339,
+            "vias": 697
+          }
+        }
+      ]
+    }
+  ],
+  "largest_positive_net_gaps": [
+    {
+      "case": "case_07",
+      "net": 9,
+      "sinks": 6,
+      "our_delay": 926,
+      "public_delay": 488,
+      "gap": 438
+    },
+    {
+      "case": "case_02",
+      "net": 57,
+      "sinks": 6,
+      "our_delay": 859,
+      "public_delay": 509,
+      "gap": 350
+    },
+    {
+      "case": "case_06",
+      "net": 80,
+      "sinks": 6,
+      "our_delay": 882,
+      "public_delay": 542,
+      "gap": 340
+    },
+    {
+      "case": "case_03",
+      "net": 44,
+      "sinks": 4,
+      "our_delay": 660,
+      "public_delay": 338,
+      "gap": 322
+    },
+    {
+      "case": "case_07",
+      "net": 58,
+      "sinks": 6,
+      "our_delay": 893,
+      "public_delay": 573,
+      "gap": 320
+    },
+    {
+      "case": "case_07",
+      "net": 46,
+      "sinks": 6,
+      "our_delay": 952,
+      "public_delay": 640,
+      "gap": 312
+    },
+    {
+      "case": "case_08",
+      "net": 36,
+      "sinks": 2,
+      "our_delay": 471,
+      "public_delay": 159,
+      "gap": 312
+    },
+    {
+      "case": "case_02",
+      "net": 4,
+      "sinks": 4,
+      "our_delay": 612,
+      "public_delay": 306,
+      "gap": 306
+    },
+    {
+      "case": "case_08",
+      "net": 78,
+      "sinks": 6,
+      "our_delay": 752,
+      "public_delay": 474,
+      "gap": 278
+    },
+    {
+      "case": "case_07",
+      "net": 26,
+      "sinks": 6,
+      "our_delay": 818,
+      "public_delay": 566,
+      "gap": 252
+    },
+    {
+      "case": "case_08",
+      "net": 72,
+      "sinks": 6,
+      "our_delay": 848,
+      "public_delay": 596,
+      "gap": 252
+    },
+    {
+      "case": "case_09",
+      "net": 94,
+      "sinks": 6,
+      "our_delay": 962,
+      "public_delay": 710,
+      "gap": 252
+    },
+    {
+      "case": "case_06",
+      "net": 2,
+      "sinks": 5,
+      "our_delay": 674,
+      "public_delay": 434,
+      "gap": 240
+    },
+    {
+      "case": "case_08",
+      "net": 18,
+      "sinks": 5,
+      "our_delay": 646,
+      "public_delay": 406,
+      "gap": 240
+    },
+    {
+      "case": "case_08",
+      "net": 19,
+      "sinks": 6,
+      "our_delay": 882,
+      "public_delay": 642,
+      "gap": 240
+    },
+    {
+      "case": "case_06",
+      "net": 73,
+      "sinks": 4,
+      "our_delay": 544,
+      "public_delay": 310,
+      "gap": 234
+    },
+    {
+      "case": "case_04",
+      "net": 6,
+      "sinks": 6,
+      "our_delay": 679,
+      "public_delay": 451,
+      "gap": 228
+    },
+    {
+      "case": "case_06",
+      "net": 12,
+      "sinks": 5,
+      "our_delay": 664,
+      "public_delay": 440,
+      "gap": 224
+    },
+    {
+      "case": "case_06",
+      "net": 63,
+      "sinks": 5,
+      "our_delay": 714,
+      "public_delay": 490,
+      "gap": 224
+    },
+    {
+      "case": "case_08",
+      "net": 44,
+      "sinks": 6,
+      "our_delay": 841,
+      "public_delay": 619,
+      "gap": 222
+    }
+  ],
+  "limitations": "Methods/timing from metadata and commit messages are author reports. Only output legality/delay are recomputed. Method and additional search effort are confounded. Our comparison uses recorded per-net results, not a fresh reproduction of our GitHub-best run. No inference of an exact implementation or global optimum from output trees.",
+  "gap_by_sink_count": {
+    "one_sink": {
+      "nets": 434,
+      "our_delay": 35071,
+      "public_delay": 36257,
+      "positive_gap": 3300
+    },
+    "multiple_sinks": {
+      "nets": 315,
+      "our_delay": 129474,
+      "public_delay": 111568,
+      "positive_gap": 19236
+    }
+  }
+}

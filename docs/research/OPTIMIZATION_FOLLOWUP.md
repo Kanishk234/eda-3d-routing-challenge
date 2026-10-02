@@ -1,5 +1,79 @@
 # Alternative optimization research — October 1, 2026
 
+## Reubalink source/output inspection
+
+Inspected THOMACHAYAN/eda-3d-routing-challenge branches main and reubalink-hard,
+submission PR10, metadata, and commit history. No custom solver source was found
+in either branch; the submission changes only leaderboard/route JSON/metadata.
+Do not mistake the inherited m3d/negotiated.py baseline for their custom solver.
+No separate public routing repository was found in the author's repository list.
+Method details are author reports, not inspected implementation behavior.
+
+Sources:
+- https://github.com/THOMACHAYAN/eda-3d-routing-challenge/blob/d9cddc4cc365290f4c6f4d1752f460c46e03ddbe/submissions/hard/reubalink/meta.json
+- https://github.com/THOMACHAYAN/eda-3d-routing-challenge/commit/d9cddc4cc365290f4c6f4d1752f460c46e03ddbe
+- https://github.com/THOMACHAYAN/eda-3d-routing-challenge/commit/ca3cb1de2c046546f2ed8fca14576f6056b8488d
+- https://github.com/partcleda/eda-3d-routing-challenge/pull/10
+
+Reported progression: detour-ranked LNS from official negotiated_x2 reference
+1.0511→1.1503; conflict-based pair search reaches about1.2049; gradient-boosted
+ranking of groups skipped by pair search reaches1.2060; shortest-path trees,
+fanout-priced negotiation, exact per-net rerouting and window LNS reach1.2672;
+negotiated repair inside ripped windows reaches1.3622. Final commit explicitly
+says it started from five-hour routes; total final generation/runtime/hardware
+are not provided. These are not controlled ablations and do not prove that any
+one operator caused an observed increment. No training implementation or window
+sizes, boundary rules, acceptance policy or exact negotiation schedule available.
+
+Downloaded only the two final published route revisions, pinned by full SHA.
+Original dev/inspect_reubalink.py independently reloads/checks/scores all18
+outputs using our immutable official archive. Observed aggregates:
+ca3cb1d1.2671868111635183,total159369;
+d9cddc4c1.362234270749783,total147825;both9/9legal.
+All9 cases improve between revisions. Final routes collectively use1370 fewer
+net vertices/edges and385 fewer vias. This does not establish minimizing resource
+use as a reliable score surrogate; the coordinated physical objective improved.
+Case/input/output hashes and checker results in reubalink-inspection.json.
+No competitor code executed/copied; no public route used as a warm start.
+
+Comparison to our recorded GitHub-best1.2306575756801885:
+434 one-sink nets total ours35071 versus theirs36257;
+315 multiple-sink nets total ours129474 versus theirs111568.
+Signed overall gap16720, multi-sink gap17906, one-sink advantage1186.
+This is an artifact/objective comparison, not matched runtime or a fresh
+reproduction of our unavailable GitHub-best raw routes. It supports further
+multi-sink/topology experiments without proving a global packing explanation.
+
+Recommended next original experiment: spatially selected neighborhoods using
+our own incumbent and relaxed net bounds. Sample XY boxes of width4/8/12
+across all layers; rank boxes by detour of touching multi-sink nets. These sizes
+are proposed screens, not recovered competitor settings. Select a bounded
+number of nets touching a box, release their complete trees, and reuse our
+transactional fine-price/tight-A* negotiated repair with external nets/pins
+fixed. Full-net rebuilding avoids ambiguous boundary reconnection in the first
+prototype; it is spatial neighborhood selection, not a claim to reproduce
+strict within-window repair. Preserve the previous legal incumbent on failure
+or nonimprovement; exact polish can follow legal rebuilding.
+
+Compare fine control, fine-diverse blocker groups, and spatial groups on declared
+hard01/04/07,seeds1–3,matched5M and20M expansion caps with60s safety ceiling,
+same frozen starts and2/1/1 schedule. Report legal delay/gain, failure and
+nonimproving counts, expansions, actual CPU/wall time, group size and all
+regressions. Do not use public route geometry or per-net gaps to select our
+case-specific neighborhoods. Reserve08/09 for subsequent fixed-config validation.
+Only after this prototype has evidence consider strict-window repair retaining
+outside branches: every cut boundary component/terminal and downstream sink
+weight must be accounted for, and reconnections must remain acyclic. Keep
+whole-window rejection/rollback and official physical scoring.
+
+Second hypothesis: a congestion-aware component-merging tree constructor with
+unit sink weights and once-per-net vertex prices could supply more compact
+shared trunks to spatial repair. Earlier greedy treecost rejection does not
+evaluate that full construction. ML ordering is lower priority: the author's
+reported ML increment is small and confounded, and no training data/model is
+published. No new algorithm implementation, gains, tests or score from this
+research session.
+
 Goal: escape routing geometry inherited from the official baseline and improve hard-tier delay. Literature is a source of hypotheses, not evidence of gains on this challenge.
 
 ## Primary sources inspected
@@ -102,3 +176,27 @@ Pricing experiment result: fine units win4/6 matched case/seed comparisons, tie1
 ### Full DATE PDF now supplied and read
 
 The user provided a root PDF after the IEEE stamp link also failed/418. Strict pypdf parsing succeeds on all7pages; metadata matches11539267. Read the complete extracted text. This supersedes the earlier abstract-only access status. See DATE2026_VIA_CONGESTION.md and date-paper-integrity.json for hash, access scope and method-transfer cautions. CUGR cost-model reuse is explicitly stated in the full text. The exact construction/DP/search concerns and the distinction between industrial overflow/via results and our sink-delay scoring are now documented. No licensed PDF/text included in commits.
+
+## October 1 handoff research: next experiments, not measured gains
+
+Inspected current local engine and retained guided-budget evidence, the MAPF-LNS2 author repository/source and paper, CUGR author paper/repository, and Held/Perner cost-distance paper. No external code copied or executed. Challenge repository landing page was accessible; PR pages and the previously inspected IrwinJam source failed through browsing, so public standings/source changes were not refreshed.
+
+Submission clarification: all three tracked hard entries identify Anthropic (reference). Local LEADERBOARD.md lists negotiated_x2 at 1.0168, negotiated at 1.0, and negotiated_fast incomplete (8/9). Our recorded hard best is 1.220250233796514 in tier-followup-coverage.json, not in submissions/. This checkout has no .venv, dev/upstream, or dev/artifacts; prior best route files and raw provenance must be recovered or regenerated before optimization. Recorded scores are historical official evaluations, not fresh rescores this session.
+
+Evidence for changing repair proposals: repair() selects blockers of one ideal tree, inserts blockers in net-index order, and negotiate() retains that group order across rounds. History is reset per repair call. In the retained hard01 five-second guided run, 2033 attempts include 1935 nonimproving legal repairs and 91 failures; the twenty-second run stops after about 5.29 seconds at the 100-cycle ceiling with the same delay9292. This does not prove optimality or imply that extra cycles alone help.
+
+Ranked proposals:
+
+1. Adaptive neighborhood selection: alternate ideal-tree blockers, transitive blocker groups, spatial hotspots, and random groups; use bounded group sizes and reward actual physical-delay reduction per search cost. Cache unsuccessful proposals only while relevant local ownership remains unchanged. Repeated failures can trigger a different group rather than another identical repair. MAPF-LNS2 combines neighborhood strategies and tracks their success; transfer static dependency selection, not time-dependent collision semantics. Sources: https://github.com/Jiaoyang-Li/MAPF-LNS2 ; https://raw.githubusercontent.com/Jiaoyang-Li/MAPF-LNS2/master/src/LNS.cpp ; https://researchmgt.monash.edu/ws/portalfiles/portal/409305616/408475878_oa.pdf . Source main branch is mutable, not a pinned reproducibility input.
+
+2. Diverse corridor proposals: generate several improving/near-improving ideal trees using explicit penalties for previously chosen corridor vertices, different transit layers, and alternative displaced owners. Rank by predicted target gain and measured relocation cost of blockers. Current six candidate variants mainly change prices/ties against the same usage map; richer candidates could address the earlier weak finite-selection results. Diversity helps only if compatible legal combinations lower total physical delay.
+
+3. Restricted static conflict-based search for 2–6 nets: independently compute exact driver-rooted trees with frozen external owners; when two trees share vertexv, branch on forbidding v for one net or the other, then replan that net. Rooted shortest-path trees minimize summed sink distance in each fixed allowed graph, providing a local bound. Exhaustive completed search can certify the chosen frozen-net subproblem; timeouts cannot. Enforce strict node/time caps and preserve incumbent. Mechanism source: https://ojs.aaai.org/index.php/SOCS/article/view/18222 . This adaptation removes all time dimensions and is not a reproduced MAPF solver.
+
+4. Stronger exact A* heuristic: current heuristic charges every horizontal step at the cheapest layer, even if reaching that layer needs extra vias. For each static sink-layer rectangle, minimize over transit layerk: XY-distance-to-rectangle*layer_delay[k] + via_delay*(abs(z-k)+abs(k-goal_z)). This is distance to the same goal set in the obstacle-free layered graph, hence a consistent lower bound with nonnegative congestion charges. Minimum over actual sinks is tighter but more expensive. Prove/check implementation independently and compare expansions, overhead, and final legal delay; no speedup measured yet.
+
+5. Tree topology with resource prices: implement a genuine component-merging candidate constructor with unit sink weights and vertex-capacity prices, rather than treating the rejected greedy treecost prototype as a test of the full paper. Paper reports stronger results on large-fanout instances, but its physical/bifurcation models differ. All challenge sink weights remain1, bifurcation penalties remain0. Source: https://arxiv.org/html/2503.04419v1 . Prioritize after cheaper neighborhood experiments.
+
+6. Coarse corridor search for scale/stress: CUGR plans on a coarsened 3D graph, then searches fine grids in proposed boxes. Adapt for candidate generation with widening/full-grid fallback; unrestricted exactness is not preserved by corridor clipping alone. Source: https://cwpui.com/doc/c10.pdf ; https://github.com/cuhk-eda/cu-gr . SPRoute source repository https://github.com/asyncvlsi/SPRoute supports parallel global routing, but its README warns current code differs from publication versions. First parallelize independent seeds/cases after measuring RAM; measure total portfolio cost.
+
+Suggested experiment order after artifact recovery: controlled 100-vs-1000-cycle screen at fixed budgets; randomized repair order; adaptive/diverse groups; restricted conflict-based repair; stronger heuristic; component construction. Use hard01/04/07 and declared congested/design representatives, seeds1–3, matched starts and budgets, held-out hard08/09 only after selection. Track proposals, failed/nonimproving repairs, group size, gain per CPU second, expansions, peak RAM, and official legality/delay. Current congested/design runs still improve with longer caps, so larger bounded budgets there have more direct evidence than hard-only brute-force extension. No new score, implementation, test, or advantage claim from this research session.

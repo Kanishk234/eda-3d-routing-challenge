@@ -1,0 +1,83 @@
+{
+  "upstream_revision": "499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+  "recovery_run": "20261002T000437.356671Z-exact-polish",
+  "selected_run": "20261002T001313.450750Z-exact-polish",
+  "recovery_manifest_sha256": "73915e575c102274b08e0551f1e330f02656ad5b5ed7566208b2f37152a9ba8b",
+  "selected_manifest_sha256": "a3cd5a9a3466a08f08decc1242a630fc82887dcf26891b5f64e73f170f9b3f19",
+  "historical_coverage_sha256": "072bad64b1531c592c1ec3b76c539316e8e6ac9e786c642d986d5132417ec069",
+  "recovery_score": 1.2152861382477105,
+  "historical_score": 1.220250233796514,
+  "new_score": 1.2274487880088916,
+  "score_gain_vs_historical_percent": 0.5899244280397342,
+  "score_gain_vs_recovery_percent": 1.0008054381923648,
+  "all_legal": true,
+  "cases": [
+    {
+      "case": "case_01",
+      "recovery_delay": 9806,
+      "historical_delay": 9364,
+      "new_delay": 9616,
+      "output_sha256": "48ec27b83326719088deea3a72ed5ef3d1b52d37241916f9a60fcc83538cf692"
+    },
+    {
+      "case": "case_02",
+      "recovery_delay": 15634,
+      "historical_delay": 14812,
+      "new_delay": 15624,
+      "output_sha256": "8840d36b02cc5e664431d3e4e82e356e913f074ac68426cc114c0a9f9ceaf323"
+    },
+    {
+      "case": "case_03",
+      "recovery_delay": 12222,
+      "historical_delay": 12328,
+      "new_delay": 12096,
+      "output_sha256": "83e16d59dd9ba1e2e72f492ebfe87309c05f81710c8d97cadea4d38c2e35f95a"
+    },
+    {
+      "case": "case_04",
+      "recovery_delay": 14457,
+      "historical_delay": 14895,
+      "new_delay": 14433,
+      "output_sha256": "8c038fb16f163353287f09f5ad1f287458b412c1b3defac337eeb17e54500be1"
+    },
+    {
+      "case": "case_05",
+      "recovery_delay": 17197,
+      "historical_delay": 17129,
+      "new_delay": 16983,
+      "output_sha256": "5f62aa3d574dc5f443e8ed8c79790e82b0138e9067d5af217f70ce7040ad490e"
+    },
+    {
+      "case": "case_06",
+      "recovery_delay": 22706,
+      "historical_delay": 22828,
+      "new_delay": 22384,
+      "output_sha256": "ab03b9ea43a5536e2531acc52a50bf3b3085635c07b716b3f7f2503c9740a632"
+    },
+    {
+      "case": "case_07",
+      "recovery_delay": 24895,
+      "historical_delay": 25613,
+      "new_delay": 24417,
+      "output_sha256": "7197bf00f817650d9f762a0d802fc421b5a14a3a50152d996613b0be43d23f3c"
+    },
+    {
+      "case": "case_08",
+      "recovery_delay": 25676,
+      "historical_delay": 25478,
+      "new_delay": 25598,
+      "output_sha256": "514fbfa2fe986429504c965dcc9b95e485fd739d3598fd6f8bb4643435d40493"
+    },
+    {
+      "case": "case_09",
+      "recovery_delay": 23626,
+      "historical_delay": 23694,
+      "new_delay": 23434,
+      "output_sha256": "303f6fa55429e931534f4b25255b8398dea4a5044a712e247f2034700c3261f1"
+    }
+  ],
+  "optimizer_chain_wrapper_s": 363.7562653119676,
+  "screen_wrapper_s": 260.8442549670581,
+  "peak_selected_core_rss_kib": 4736,
+  "limitations": "Official reference warm starts, generation cost unmeasured. New recovery chain, not regeneration of historical outputs. Historical route files unavailable here. Six cases improve vs historical, three regress; all improve vs recovery. Whole-tier extra-stage score is not a matched whole-tier algorithm comparison. Matched operator evidence uses development01/04/07 only. Time caps can change completed prefixes; no new unit tests or unseen-case results. No final freeze/submission/publication."
+}

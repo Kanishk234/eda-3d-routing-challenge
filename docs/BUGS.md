@@ -1,5 +1,13 @@
 # Bugs and limitations
 
+Latest recovery comparison initially reused the historical
+neighborhood-comparison.json filename. Detected during final diff review;
+restored that file byte-for-byte from the initially clean HEAD and retained the
+new report as recovered-neighborhood-comparison.json. Updated only latest
+references, preserving historical wide-screen references. Route artifacts,
+manifests, scores and solver behavior were unaffected. Screen harness protects
+its named reports from overwrites; ad hoc reports also need unique destinations.
+
 ## 2026-10-01 — Pre-existing unclosed-file warnings (observed)
 
 Unchanged tests print ResourceWarnings in tests/test_leaderboard.py:24 and m3d/cli.py:251,321. Cause: open(...).read()/json.load(open(...)) without context managers. All 43 tests pass; no affected delay/legality result observed. No upstream fix made. Context-manager fix would belong to separate toolkit work. Evidence: 20261001T165828.977754Z-tests/tests.log.
