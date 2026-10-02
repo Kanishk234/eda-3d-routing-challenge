@@ -42,6 +42,8 @@ struct Engine {
     NegotiationConfig negotiation;
     int group_limit=13;
     bool repair_first=false;
+    bool accept_equal=false;
+    std::uint64_t neutral_moves=0;
     int polish_order=0;
     std::uint64_t polish_attempts=0,polish_completed=0,polish_improvements=0;
     int w,h,l,vcount,wh;
@@ -681,15 +683,25 @@ struct Engine {
                     after=add(after,candidate.delay); nets[j]=std::move(candidate);
                 }
                 bool accept_uphill=uphill && legal && after>=before && after-before<=before/100 && rng()%4==0;
+                bool geometry_changed=false;
+                if(accept_equal && legal && after==before) {
+                    for(std::size_t k=0;k<group.size();++k) {
+                        auto a=nets[group[k]].edges,b=old[k].edges;
+                        std::sort(a.begin(),a.end());std::sort(b.begin(),b.end());
+                        if(a!=b) {geometry_changed=true;break;}
+                    }
+                }
+                bool accept_neutral=accept_equal && legal && after==before && geometry_changed;
                 if(adaptive_groups) {
                     double reward=legal && after<before?100.0*static_cast<double>(before-after)/static_cast<double>(before):0;
                     neighborhood_weights[strategy]=0.9*neighborhood_weights[strategy]+0.1*(0.1+reward);
                     if(reward>0) ++neighborhood_gains[strategy];
                 }
-                if(legal && (after<before || accept_uphill)) {
+                if(legal && (after<before || accept_uphill || accept_neutral)) {
                     if(used_donor && after<before) ++donor_gains;
                     ++accepted; changed=true;
                     if(accept_uphill) ++uphill_moves;
+                    if(accept_neutral) ++neutral_moves;
                     current=add(current-before,after);
                     if(uphill && current<best) { best=current;best_nets=nets;best_owner=owner; }
                 }
@@ -783,6 +795,7 @@ struct Engine {
                  <<",\"snapshot_s\":"<<snapshot_s<<",\"negotiation_setup_s\":"<<negotiation_setup_s<<",\"negotiation_scan_s\":"<<negotiation_scan_s
                  <<",\"work_limit\":"<<work_limit<<",\"work_exhausted\":"<<work_exhausted
                  <<",\"expansions_per_second\":"<<(optimization_s>0?expansions/optimization_s:0)
+                 <<",\"accept_equal\":"<<accept_equal<<",\"neutral_moves\":"<<neutral_moves
                  <<",\"uphill_moves\":"<<uphill_moves
                  <<",\"selection_nodes\":"<<selection_nodes<<",\"selection_complete\":"<<selection_complete
                  <<",\"selection_partial\":"<<selection_partial
@@ -841,6 +854,10 @@ int main(int argc,char**argv) {
             else if(key=="repair_first") {
                 if(number>1) throw std::runtime_error("repair_first must be0or1");
                 engine.repair_first=number!=0;
+            }
+            else if(key=="accept_equal") {
+                if(number>1) throw std::runtime_error("accept_equal must be0or1");
+                engine.accept_equal=number!=0;
             }
             else if(key=="group_limit") {
                 if(number<2 || number>13) throw std::runtime_error("group limit outside 2..13");

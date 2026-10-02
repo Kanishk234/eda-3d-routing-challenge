@@ -356,3 +356,9 @@ Inventory: `.venv/bin/python dev/route_diversity_inventory.py --out NEW.json`. F
 `dev/diversity_screen.py` uses the frozen inventory evidence for three-seed matched current/alternate/donor continuations. `dev/recombination_archive_screen.py` checks the recorded candidate pool and chooses a best pair per case; no rerouting or public warm starts.
 
 Generic exact two-parent combination: `.venv/bin/python dev/recombine_routes.py BASE_RUN DONOR_RUN --suite benchmarks_designs --out NEW_REPORT.json`. Full inputs and output are officially checked; each chosen net uses one complete original legal tree. Directed displacement dependencies reduce to minimum-weight closure/max-flow. This is exact only within the two candidate sets,not globally optimal routing. `.venv/bin/python dev/test_recombination.py` compares the closure routine against exhaustive independent subsets on200random graphs and forced-dependency examples.
+
+### Equal-delay group moves
+
+`--accept-equal` allows a legal group replacement with exactly the same physical total delay only if at least one tree's sorted edge set changes. Default remains false. Group transactions restore failed/expired candidates; ordinary exploration therefore stays physically nonincreasing. Legacy uphill modes still retain their best snapshot when composed with this option. `neutral_moves` counts these accepted geometry changes separately; adaptive rewards still depend on strict delay improvement.
+
+Matched screens: `.venv/bin/python dev/neutral_screen.py` (3M) and `.venv/bin/python dev/neutral_screen.py --work-budget 10000000 --out NEW_REPORT.json` compare strict/neutral adaptive on designsctrl/congested01,seeds1–3,current group3 and tier schedules. Reports refuse overwrite; compare physical delay,not the count of neutral moves alone.

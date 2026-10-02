@@ -1,5 +1,5 @@
 {
-  "coverage": "docs/evidence/phase3/tier-diversity-recombination-coverage.json",
+  "coverage": "docs/evidence/phase3/tier-neutral-followup-coverage.json",
   "tiers": [
     {
       "tier": "intro",
@@ -47,36 +47,48 @@
     },
     {
       "tier": "congested",
-      "run_id": "20261002T043638.522140Z-exact-polish",
-      "score": 1.0988489911881147,
-      "archive": "dev/incumbents/congested/20261002T043638.522140Z-exact-polish.tar.gz",
-      "archive_sha256": "52e7208afabb6f65503bf107998f7df8a87b095e2d8904869987fa668a3fa679",
+      "run_id": "20261002T160544.333875Z-exact-polish",
+      "score": 1.100430490710471,
+      "archive": "dev/incumbents/congested/20261002T160544.333875Z-exact-polish.tar.gz",
+      "archive_sha256": "4b63160040a8dc5c6709b66464f511e2dc9cf0110f16b4d32615b6845f4b7051",
       "selection_context": {
-        "screen": "docs/evidence/phase3/diversity-screen.json",
-        "stage": "docs/evidence/phase3/diversity-followup.json",
-        "recombination": "docs/evidence/phase3/congested-archive-recombination.json",
-        "scope": "Adaptive full-tier continuation followed by exact restricted two-parent recombination; best candidate pair per case; zero-budget checkpoint preserves routes.",
+        "screen": "docs/evidence/phase3/neutral-long-screen.json",
+        "short_screen": "docs/evidence/phase3/neutral-screen.json",
+        "stage": "docs/evidence/phase3/neutral-followup.json",
+        "scope": "Fixed seed1 adaptive with equal-delay geometry changes,group3,10M per case. Selected from repeated development seeds;added full-tier effort is separate from matched pilot.",
         "previous_selection_context": {
-          "stage": "docs/evidence/phase3/conflict-window-all-tiers.json",
-          "configuration": "Fixed conflict-window seed1,3M work; retained per-tier caps/schedules. Added continuation effort,not matched full-tier superiority.",
-          "previous_selection_context": null
+          "screen": "docs/evidence/phase3/diversity-screen.json",
+          "stage": "docs/evidence/phase3/diversity-followup.json",
+          "recombination": "docs/evidence/phase3/congested-archive-recombination.json",
+          "scope": "Adaptive full-tier continuation followed by exact restricted two-parent recombination; best candidate pair per case; zero-budget checkpoint preserves routes.",
+          "previous_selection_context": {
+            "stage": "docs/evidence/phase3/conflict-window-all-tiers.json",
+            "configuration": "Fixed conflict-window seed1,3M work; retained per-tier caps/schedules. Added continuation effort,not matched full-tier superiority.",
+            "previous_selection_context": null
+          }
         }
       }
     },
     {
       "tier": "designs",
-      "run_id": "20261002T043025.770962Z-exact-polish",
-      "score": 1.2309315470922892,
-      "archive": "dev/incumbents/designs/20261002T043025.770962Z-exact-polish.tar.gz",
-      "archive_sha256": "8c4e756c9f1af41c9a6c8be1f4255f1ff4cc7f9e53d2ea3935669fcb16da9756",
+      "run_id": "20261002T160535.393832Z-exact-polish",
+      "score": 1.233660171993183,
+      "archive": "dev/incumbents/designs/20261002T160535.393832Z-exact-polish.tar.gz",
+      "archive_sha256": "6f1e60f59c224763cbee8b9058d8278be72bfc0dfc344ad42779a26d5e98d401",
       "selection_context": {
-        "screen": "docs/evidence/phase3/diversity-screen.json",
-        "stage": "docs/evidence/phase3/diversity-followup.json",
-        "scope": "Fixed seed1 donor full-tier continuation; no donor-labelled accepted moves in this full stage. Ordinary repair/polish gains.",
+        "screen": "docs/evidence/phase3/neutral-long-screen.json",
+        "short_screen": "docs/evidence/phase3/neutral-screen.json",
+        "stage": "docs/evidence/phase3/neutral-followup.json",
+        "scope": "Fixed seed1 adaptive with equal-delay geometry changes,group3,10M per case. Selected from repeated development seeds;added full-tier effort is separate from matched pilot.",
         "previous_selection_context": {
-          "stage": "docs/evidence/phase3/conflict-window-all-tiers.json",
-          "configuration": "Fixed conflict-window seed1,3M work; retained per-tier caps/schedules. Added continuation effort,not matched full-tier superiority.",
-          "previous_selection_context": null
+          "screen": "docs/evidence/phase3/diversity-screen.json",
+          "stage": "docs/evidence/phase3/diversity-followup.json",
+          "scope": "Fixed seed1 donor full-tier continuation; no donor-labelled accepted moves in this full stage. Ordinary repair/polish gains.",
+          "previous_selection_context": {
+            "stage": "docs/evidence/phase3/conflict-window-all-tiers.json",
+            "configuration": "Fixed conflict-window seed1,3M work; retained per-tier caps/schedules. Added continuation effort,not matched full-tier superiority.",
+            "previous_selection_context": null
+          }
         }
       }
     },
@@ -109,5 +121,5 @@
     }
   ],
   "limitations": "Selected outputs/source/provenance preserved; older missing raw ancestors and reference-generation costs remain unreproduced.",
-  "coverage_sha256": "120338d8da603ee89bcd1acaf211a968a798e9637e8a074bd3acdc4d84bdb712"
+  "coverage_sha256": "9d6f9b837e143964ef226f6315217290ff2cdc4d8b3116e1c730dac516ad4e72"
 }

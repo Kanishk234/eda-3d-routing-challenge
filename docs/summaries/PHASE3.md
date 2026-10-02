@@ -232,3 +232,19 @@ Current selected scores: intro1.098317782147403,hard1.256997693901798,scale1.047
 Next concrete action: optional neutral group acceptance only when geometry changes,with best legal checkpoint retained; compare against strict-improvement controls on designs/congested repeated seeds. This can explore equal-delay plateaus without uphill submitted scores. Candidate-pool/branch alternatives remain ranked in research notes.
 
 No optimization jobs running. PDF untouched;local commits authorized,no push/publication.
+
+# Neutral geometry moves and score interpretation
+
+Official liveREADME inspected2026-10-02 ranks separately per tier. Aggregate means geometric mean of case ratios within that tier;there is no official combined six-tier aggregate. Runtime/Pareto comparison remains separate. Source https://github.com/partcleda/eda-3d-routing-challenge#leaderboard;local scorer/leaderboard-all also inspected. No private all-tier metric is presented as official.
+
+Added accept_equal0/1(default0),wrapper --accept-equal. Accept a legal equal-total-delay group only when at least one sorted tree edge set changes. Reject identical no-ops;rollback failed/expired candidates. Ordinary exploration stays physically nonincreasing,thus retains best score. Legacy uphill modes still restore their best snapshot. neutral_moves counted separately;accepted_replacements now includes neutral moves when enabled. Adaptive rewards still use strict physical gain. No tabu or cycle-prevention claim.
+
+Warning-free build;38focused checks pass,including default/explicit0identity,invalid2rejection,crossing neutral moves,work1/20/100/1000checkpoints,repetition and official legality/nonworsening. Source/wrapper frozen through timing runs.
+
+Two matched designsctrl/congested01 screens,seeds1–3,group3,schedules2/2/2 and2/4/4:12legal outputs at3M,18.106s wrapper;12legal at10M,37.201s. Every output reaches exact declared expansion cap. At3M:designs1win/1tie/1loss,ratio0.999988697;congested2wins/1loss,ratio0.999967020. Both rejected at this budget. At10M:designs2wins/1loss,ratio1.000667555;congested3wins,ratio1.000418665. Retain optional mode at longer budgets for these tiers;no universal/default claim. Neutral counts3M31/72,10M97/223 are exploratory activity,not improvement evidence by themselves. Equal expansion work is not equal CPU cost.
+
+Fixed seed1 full7case neutral10M continuation adds20.547s wrapper;all7improve. Designs116neutral+32strict group moves,congested160neutral+30strict group moves;single-net polish also contributes. Designs1.233660171993183;congested1.100430490710471. No matched full-tier superiority claim;added effort and pilot costs separate from historical generation. Otherfour selected outputs unchanged:intro1.098317782147403,hard1.256997693901798,scale1.0479000969718766,stress1.02137484120527. PinnedCLI independently confirms45/45legal in tier-neutral-followup-coverage.json. Canonical selection,newcompactarchives and restored original hashes retained. Missingolderancestors/reference-generation limitations remain;no finalfreeze/globalbest/end-to-end regeneration claim.
+
+Next concrete action:matched longer-budget hard01/04/07screen with strict controls before any hard full-tier adoption;record regressions and neutral cycles,consider short tabu history if geometry cycling wastes work. Keep reserved08/09 out of operator selection.
+
+No optimization jobs running. PDF untouched;local commits authorized,no push/publication.
