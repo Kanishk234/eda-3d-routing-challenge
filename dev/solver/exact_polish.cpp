@@ -36,7 +36,9 @@ struct Net {
     std::vector<std::pair<int,int>> edges;
     I delay=0;
 };
+struct NegotiationConfig { I present_initial=2,present_step=2,history_step=2; };
 struct Engine {
+    NegotiationConfig negotiation;
     int w,h,l,vcount,wh;
     I via;
     I price_units=1;
@@ -391,8 +393,8 @@ struct Engine {
             for(int j:group) {
                 for(int v:nets[j].vertices) --usage[v];
                 Net candidate;
-                bool routed=(compact_groups || discounted_groups)?attach(nets[j],candidate,true,compact_groups?3:4,&usage,&history,2+2*iteration):
-                    shortest(nets[j],candidate,false,0,&usage,&history,2+2*iteration);
+                bool routed=(compact_groups || discounted_groups)?attach(nets[j],candidate,true,compact_groups?3:4,&usage,&history,add(negotiation.present_initial,multiply(negotiation.present_step,iteration))):
+                    shortest(nets[j],candidate,false,0,&usage,&history,add(negotiation.present_initial,multiply(negotiation.present_step,iteration)));
                 if(!routed) return false;
                 nets[j]=std::move(candidate);
                 for(int v:nets[j].vertices) ++usage[v];
@@ -400,7 +402,7 @@ struct Engine {
             auto scan_start=std::chrono::steady_clock::now();
             bool conflict=false;
             for(int v=0;v<vcount;++v) if(usage[v]>1) {
-                conflict=true;history[v]=add(history[v],2*(usage[v]-1));
+                conflict=true;history[v]=add(history[v],multiply(negotiation.history_step,usage[v]-1));
             }
             negotiation_scan_s+=std::chrono::duration<double>(std::chrono::steady_clock::now()-scan_start).count();
             if(conflict) { ++conflicted_rounds; continue; }
@@ -583,6 +585,7 @@ struct Engine {
                  <<",\"fresh_attempts\":"<<fresh_attempts<<",\"fresh_legal\":"<<fresh_legal
                  <<",\"read_s\":"<<read_s<<",\"validation_s\":"<<validation_s<<",\"optimization_s\":"<<optimization_s
                  <<",\"search_reset_s\":"<<search_reset_s<<",\"search_rebuild_s\":"<<search_rebuild_s
+                 <<",\"present_initial\":"<<negotiation.present_initial<<",\"present_step\":"<<negotiation.present_step<<",\"history_step\":"<<negotiation.history_step
                  <<",\"price_units\":"<<price_units
                  <<",\"snapshot_s\":"<<snapshot_s<<",\"negotiation_setup_s\":"<<negotiation_setup_s<<",\"negotiation_scan_s\":"<<negotiation_scan_s
                  <<",\"work_limit\":"<<work_limit<<",\"work_exhausted\":"<<work_exhausted
@@ -602,7 +605,7 @@ struct Engine {
 };
 int main(int argc,char**argv) {
     try {
-        if(argc!=5 && argc!=6) throw std::runtime_error("usage: engine SECONDS SEED PASSES polish|search|repair");
+        if(argc<5) throw std::runtime_error("usage: engine SECONDS SEED PASSES polish|search|repair");
         double seconds=std::stod(argv[1]);
         if(!std::isfinite(seconds) || seconds<0 || seconds>600) throw std::runtime_error("invalid budget");
         auto seed=std::stoull(argv[2]); int passes=std::stoi(argv[3]);
@@ -611,10 +614,24 @@ int main(int argc,char**argv) {
         if(!search_only && std::string(argv[4])!="polish" && std::string(argv[4])!="repair" && std::string(argv[4])!="repairsoft" && std::string(argv[4])!="ablation" && std::string(argv[4])!="negotiated" && std::string(argv[4])!="explore" && std::string(argv[4])!="restart" && std::string(argv[4])!="select" && std::string(argv[4])!="wide" && std::string(argv[4])!="walk" && std::string(argv[4])!="descent" && std::string(argv[4])!="compact" && std::string(argv[4])!="fanout" && std::string(argv[4])!="restart_fanout" && std::string(argv[4])!="restart_compact" && std::string(argv[4])!="restart_polish" && std::string(argv[4])!="fanout_walk" && std::string(argv[4])!="fanout_descent" && std::string(argv[4])!="astar" && std::string(argv[4])!="fanout_astar" && std::string(argv[4])!="fanout_gap" && std::string(argv[4])!="fanout_astar_gap" && std::string(argv[4])!="restart_astar" && std::string(argv[4])!="treecost" && std::string(argv[4])!="fanout_tight" && std::string(argv[4])!="astar_tight" && std::string(argv[4])!="fanout_fine") throw std::runtime_error("invalid mode");
         std::signal(SIGINT,on_signal); std::signal(SIGTERM,on_signal);
         Engine engine;
-        if(argc==6) {
+        if(argc>=6) {
             std::string limit=argv[5];
             if(limit.empty() || limit.find_first_not_of("0123456789")!=std::string::npos) throw std::runtime_error("invalid work limit");
             engine.work_limit=std::stoull(limit);
+        }
+        std::set<std::string> config_keys;
+        for(int i=6;i<argc;++i) {
+            std::string arg=argv[i]; auto split=arg.find('=');
+            if(split==std::string::npos) throw std::runtime_error("expected key=value config");
+            std::string key=arg.substr(0,split),value=arg.substr(split+1);
+            if(!config_keys.insert(key).second || value.empty() || value.find_first_not_of("0123456789")!=std::string::npos)
+                throw std::runtime_error("invalid or duplicate config");
+            I number=std::stoll(value);
+            if(number>64) throw std::runtime_error("config outside 0..64");
+            if(key=="present_initial") engine.negotiation.present_initial=number;
+            else if(key=="present_step") engine.negotiation.present_step=number;
+            else if(key=="history_step") engine.negotiation.history_step=number;
+            else throw std::runtime_error("unknown config key");
         }
         engine.deadline=std::chrono::steady_clock::now()+std::chrono::duration_cast<std::chrono::steady_clock::duration>(std::chrono::duration<double>(seconds));
         auto read_start=std::chrono::steady_clock::now();

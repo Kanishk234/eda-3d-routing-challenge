@@ -59,11 +59,13 @@ def decode(inst, text):
             "accepted_replacements":accepted,"searches":searches,"expansions":expansions,
             "net_delays":delays}
 
-def run_core(case_dir, data, budget, seed, passes, mode="polish",work_budget=0):
+def run_core(case_dir, data, budget, seed, passes, mode="polish",work_budget=0,negotiation=None):
     case_dir.mkdir(parents=True)
     source=case_dir/"input.txt"; output=case_dir/"output.txt"; resources=case_dir/"resources.txt"
     source.write_text(data)
     command=[str(ENGINE),str(budget),str(seed),str(passes),mode,str(work_budget)]
+    if negotiation:
+        command += [f"{key}={value}" for key,value in sorted(negotiation.items())]
     measured=["/usr/bin/time","-f","%e %U %S %M","-o",str(resources),*command]
     start=time.perf_counter()
     interrupted=external_timeout=False
@@ -103,12 +105,15 @@ def main():
     p.add_argument("--mode",choices=["polish","repair","repairsoft","ablation","negotiated","explore","restart","select","wide","walk","descent","compact","fanout","restart_fanout","restart_compact","restart_polish","fanout_walk","fanout_descent","astar","fanout_astar","fanout_gap","fanout_astar_gap","restart_astar","treecost","fanout_tight","astar_tight","fanout_fine"],default="polish")
     p.add_argument("--budget",type=float,default=10)
     p.add_argument("--work-budget",type=int,default=0,help="maximum expanded vertices; 0 disables; wall budget remains a safety cap")
+    for key in ("present_initial","present_step","history_step"):
+        p.add_argument("--"+key.replace("_","-"),type=int,default=2)
     p.add_argument("--seed",type=int,default=1)
     p.add_argument("--passes",type=int,default=5)
     p.add_argument("--resume-dir",type=Path)
     a=p.parse_args()
     if Path(sys.prefix).resolve()!=(ROOT/".venv").resolve(): p.error("use project .venv")
     if not 0<=a.work_budget<2**64 or not 0<=a.budget<=600 or not 1<=a.passes<=1000 or not 0<=a.seed<2**64: p.error("invalid config")
+    if any(not 0<=getattr(a,k)<=64 for k in ("present_initial","present_step","history_step")): p.error("schedule values must be 0..64")
     if not ENGINE.is_file(): p.error("compile dev/solver/exact_polish.cpp first")
     tier="intro" if a.suite=="benchmarks" else a.suite.removeprefix("benchmarks_")
     incumbent=(a.resume_dir or ROOT/"dev/artifacts/incumbents"/tier).resolve()
@@ -146,7 +151,7 @@ def main():
         destination=out/"routes"/warm.name
         temporary=destination.with_suffix(".json.tmp")
         old.save(str(temporary)); os.replace(temporary,destination)
-        result,raw=run_core(out/c["name"],encode(inst,old),a.budget,a.seed,a.passes,a.mode,a.work_budget)
+        result,raw=run_core(out/c["name"],encode(inst,old),a.budget,a.seed,a.passes,a.mode,a.work_budget,{k:getattr(a,k) for k in ("present_initial","present_step","history_step")})
         record={"case":c["name"],"case_sha256":digest(OFFICIAL/a.suite/c["instance_file"]),
                 "case_seed":inst.seed,"warm_start_sha256":digest(warm),"before_delay":previous.total_delay,"before_resources":route_resources(old),
                 "process":result,"candidate_accepted":False,"error":None}

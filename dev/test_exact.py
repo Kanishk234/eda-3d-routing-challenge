@@ -321,6 +321,18 @@ class WorkAndAstarProperties(unittest.TestCase):
                 self.assertEqual(stats["net_delays"][0],expected)
                 self.assertEqual(checked.total_delay,stats["total_delay"])
 
+    def test_schedule_parser_defaults_and_rejections(self):
+        inst,sub=make(3,1,[1],1,(0,0,0),[(2,0,0)],own_edges=[((0,0,0),(1,0,0)),((1,0,0),(2,0,0))])
+        base=[str(ENGINE),"2","1","100","fanout_fine","100"]
+        def invoke(args):
+            return subprocess.run(base+args,input=encode(inst,sub),text=True,capture_output=True,timeout=5)
+        old=invoke([]); explicit=invoke(["present_initial=2","present_step=2","history_step=2"])
+        self.assertEqual(old.returncode,0);self.assertEqual(explicit.returncode,0)
+        self.assertEqual(old.stdout,explicit.stdout)
+        for args in (["unknown=1"],["history_step=-1"],["present_step=65"],["present_initial="],
+                     ["history_step=2","history_step=3"],["present_step=999999999999999999999999"],["history_step"]):
+            self.assertEqual(invoke(args).returncode,2)
+
     def test_work_cap_is_exact_repeatable_and_preserves_legal_routes(self):
         inst,sub=make(5,5,[6,2],3,(0,0,0),[(4,4,0)],own_edges=[
             *(( (x,0,0),(x+1,0,0)) for x in range(4)),
