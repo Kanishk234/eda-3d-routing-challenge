@@ -45,7 +45,7 @@ def minimum_closure(costs,dependencies):
     assert optimum==flow-sum(-c for c in costs if c<0)
     return selected,{'minimum_delta':optimum,'max_flow':flow,'finite_infinity':infinity}
 
-def recombine(inst,base,donor):
+def recombine(inst,base,donor,prefer_donor=False):
     a=check(inst,base);b=check(inst,donor);assert a.legal and b.legal
     original={r.net:r for r in base.routes};alternate={r.net:r for r in donor.routes};ids=sorted(original);assert ids==sorted(alternate)
     index={j:k for k,j in enumerate(ids)};owner={}
@@ -61,7 +61,13 @@ def recombine(inst,base,donor):
             other=owner.get(v)
             if other is not None and other!=index[j]:dependencies.add((index[j],other))
     da={n.net:n.delay for n in a.nets};db={n.net:n.delay for n in b.nets};costs=[db[j]-da[j] for j in ids]
-    chosen,certificate=minimum_closure(costs,dependencies)
+    scale=len(costs)+1 if prefer_donor else 1
+    weighted=[c*scale-int(prefer_donor) for c in costs]
+    chosen,certificate=minimum_closure(weighted,dependencies)
+    certificate['weighted_minimum_delta']=certificate['minimum_delta']
+    certificate['minimum_delta']=sum(costs[k] for k in chosen)
+    certificate['primary_scale']=scale
+    certificate['prefer_donor']=prefer_donor
     result=Submission(inst.name,[alternate[j] if index[j] in chosen else original[j] for j in ids]);checked=check(inst,result)
     assert checked.legal and checked.total_delay==a.total_delay+certificate['minimum_delta']
     assert checked.total_delay<=min(a.total_delay,b.total_delay)

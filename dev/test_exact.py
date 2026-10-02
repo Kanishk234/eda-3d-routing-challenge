@@ -257,6 +257,23 @@ class ExactKernel(unittest.TestCase):
             self.assertLessEqual(counters["neutral_moves"],stats["accepted_replacements"])
         self.assertGreater(neutral,0)
 
+    def test_weighted_repair_sampling_defaults_caps_and_repetition(self):
+        path=[(x,0,0) for x in range(5)]+[(4,y,0) for y in range(1,5)]
+        inst,sub=make(5,5,[6,2],3,(0,0,0),[(4,4,0)],own_edges=list(zip(path,path[1:])))
+        data=encode(inst,sub);cmd=[str(ENGINE),"5","1","5","fanout_fine_adaptive","1000"]
+        default=subprocess.run(cmd,input=data,text=True,capture_output=True,timeout=8)
+        explicit=subprocess.run(cmd+["repair_sampling=0"],input=data,text=True,capture_output=True,timeout=8)
+        self.assertEqual(default.stdout,explicit.stdout)
+        bad=subprocess.run(cmd+["repair_sampling=3"],input=data,text=True,capture_output=True,timeout=8)
+        self.assertNotEqual(bad.returncode,0)
+        for mode in (1,2):
+            for limit in (1,20,1000):
+                call=cmd[:-1]+[str(limit),"repair_sampling="+str(mode),"repair_first=1","accept_equal=1"]
+                runs=[subprocess.run(call,input=data,text=True,capture_output=True,timeout=8) for _ in range(2)]
+                self.assertEqual(runs[0].returncode,0);self.assertEqual(runs[0].stdout,runs[1].stdout)
+                out,stats=decode(inst,runs[0].stdout);checked=check(inst,out)
+                self.assertTrue(checked.legal);self.assertLessEqual(checked.total_delay,48);self.assertLessEqual(stats["expansions"],limit)
+
     def test_negotiated_zero_budget_keeps_checkpoint(self):
         inst,sub=make(3,1,[2],3,(0,0,0),[(2,0,0)],
                       own_edges=[((0,0,0),(1,0,0)),((1,0,0),(2,0,0))])

@@ -362,3 +362,9 @@ Generic exact two-parent combination: `.venv/bin/python dev/recombine_routes.py 
 `--accept-equal` allows a legal group replacement with exactly the same physical total delay only if at least one tree's sorted edge set changes. Default remains false. Group transactions restore failed/expired candidates; ordinary exploration therefore stays physically nonincreasing. Legacy uphill modes still retain their best snapshot when composed with this option. `neutral_moves` counts these accepted geometry changes separately; adaptive rewards still depend on strict delay improvement.
 
 Matched screens: `.venv/bin/python dev/neutral_screen.py` (3M) and `.venv/bin/python dev/neutral_screen.py --work-budget 10000000 --out NEW_REPORT.json` compare strict/neutral adaptive on designsctrl/congested01,seeds1–3,current group3 and tier schedules. Reports refuse overwrite; compare physical delay,not the count of neutral moves alone.
+
+## Sampling and iterative fusion experiments
+
+`run_polish.py --repair-sampling 0|1|2`:0 unique shuffled seed sweep(default),1 repeated relaxed-delay-gap weighting,2 gap divided by route footprint. Both weighted modes remain experimental after losses. `--accept-equal` enables existing changed-geometry neutral moves;default strict.
+
+Screens: `.venv/bin/python dev/hard_neutral_screen.py --work-budget 10000000 --out PATH`, `.venv/bin/python dev/weighted_seed_screen.py --work-budget 10000000 --out PATH`. Inspect script defaults/source coverage before reuse. `dev/neutral_fusion_screen.py` uses its frozen archive inventory and fixed report path;retain source snapshot before changing inputs. The recombination API's `prefer_donor=True` is an experimental secondary label preference; CLI/default fusion remains strict. Latest canonical outputs are `dev/incumbents/selected.json`;score evidence and limitations in docs/summaries/SAMPLING_FUSION.md.

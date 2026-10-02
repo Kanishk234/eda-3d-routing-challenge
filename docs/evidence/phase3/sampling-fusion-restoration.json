@@ -1,0 +1,6 @@
+{
+  "selection_sha256": "0e2849469dabd041eb2d05cf3e54e52ee909c4c79090733c52cf3013b3ffbb29",
+  "restoration_root": "/tmp/routing-sampling-fusion-restoration-20261002T1625",
+  "verified_routes": 45,
+  "method": "Archive/member hashes verified on restore; all45 restored manifest route hashes match originals."
+}

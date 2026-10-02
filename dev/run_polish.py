@@ -113,6 +113,7 @@ def main():
         p.add_argument("--"+key.replace("_","-"),type=int,default=2)
     p.add_argument("--polish-order",type=int,choices=[0,1,2],default=0,help="0=random,1=delay excess/XY box area,2=relative delay excess")
     p.add_argument("--repair-first",action="store_true")
+    p.add_argument("--repair-sampling",type=int,choices=[0,1,2],default=0,help="0=shuffled sweep,1=gap-weighted repeated seeds,2=gap/route footprint")
     p.add_argument("--accept-equal",action="store_true",help="Accept legal equal-delay group replacements only when tree geometry changes")
     p.add_argument("--group-limit",type=int,default=13)
     p.add_argument("--seed",type=int,default=1)
@@ -169,7 +170,7 @@ def main():
             if not donor_checked.legal: raise RuntimeError("illegal donor route")
             data+=encode(inst,alternate)
             donor_metadata={"donor_path":str(donor_path.resolve()),"donor_sha256":digest(donor_path),"donor_delay":donor_checked.total_delay}
-        result,raw=run_core(out/c["name"],data,a.budget,a.seed,a.passes,a.mode,a.work_budget,{**{k:getattr(a,k) for k in ("present_initial","present_step","history_step","group_limit")},"repair_first":int(a.repair_first),"polish_order":a.polish_order,"accept_equal":int(a.accept_equal)})
+        result,raw=run_core(out/c["name"],data,a.budget,a.seed,a.passes,a.mode,a.work_budget,{**{k:getattr(a,k) for k in ("present_initial","present_step","history_step","group_limit")},"repair_first":int(a.repair_first),"polish_order":a.polish_order,"accept_equal":int(a.accept_equal),"repair_sampling":a.repair_sampling})
         record={**donor_metadata,"case":c["name"],"case_sha256":digest(OFFICIAL/a.suite/c["instance_file"]),
                 "case_seed":inst.seed,"warm_start_sha256":digest(warm),"before_delay":previous.total_delay,"before_resources":route_resources(old),
                 "process":result,"candidate_accepted":False,"error":None}

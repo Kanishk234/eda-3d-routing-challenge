@@ -43,6 +43,7 @@ struct Engine {
     int group_limit=13;
     bool repair_first=false;
     bool accept_equal=false;
+    int repair_sampling=0;
     std::uint64_t neutral_moves=0;
     int polish_order=0;
     std::uint64_t polish_attempts=0,polish_completed=0,polish_improvements=0;
@@ -527,12 +528,23 @@ struct Engine {
         if(uphill) {best_nets=nets;best_owner=owner;}
         std::vector<int> order(nets.size()); std::iota(order.begin(),order.end(),0);
         std::vector<I> bounds(nets.size());
-        if(gap_order || spatial_groups) for(std::size_t j=0;j<nets.size();++j) bounds[j]=relaxed_delay(nets[j]);
+        if(gap_order || spatial_groups || repair_sampling) for(std::size_t j=0;j<nets.size();++j) bounds[j]=relaxed_delay(nets[j]);
         for(int pass=0;pass<passes && !expired();++pass) {
             for(std::size_t i=order.size();i>1;--i) std::swap(order[i-1],order[rng()%i]);
             if(gap_order || spatial_groups) std::stable_sort(order.begin(),order.end(),[&](int a,int b){return nets[a].delay-bounds[a]>nets[b].delay-bounds[b];});
+            auto seeds=order;
+            if(repair_sampling) {
+                std::vector<double> weights(nets.size());
+                for(std::size_t j=0;j<nets.size();++j) {
+                    double gap=static_cast<double>(std::max<I>(0,nets[j].delay-bounds[j]));
+                    double divisor=repair_sampling==2?static_cast<double>(std::max<std::size_t>(1,nets[j].vertices.size())):1.0;
+                    weights[j]=0.01+gap/divisor;
+                }
+                std::discrete_distribution<int> pick(weights.begin(),weights.end());
+                for(int& j:seeds) j=pick(group_rng);
+            }
             bool changed=false;
-            for(int index:order) {
+            for(int index:seeds) {
                 if(expired()) break;
                 ++proposals;
                 std::vector<int> group{index};
@@ -795,6 +807,7 @@ struct Engine {
                  <<",\"snapshot_s\":"<<snapshot_s<<",\"negotiation_setup_s\":"<<negotiation_setup_s<<",\"negotiation_scan_s\":"<<negotiation_scan_s
                  <<",\"work_limit\":"<<work_limit<<",\"work_exhausted\":"<<work_exhausted
                  <<",\"expansions_per_second\":"<<(optimization_s>0?expansions/optimization_s:0)
+                 <<",\"repair_sampling\":"<<repair_sampling
                  <<",\"accept_equal\":"<<accept_equal<<",\"neutral_moves\":"<<neutral_moves
                  <<",\"uphill_moves\":"<<uphill_moves
                  <<",\"selection_nodes\":"<<selection_nodes<<",\"selection_complete\":"<<selection_complete
@@ -854,6 +867,10 @@ int main(int argc,char**argv) {
             else if(key=="repair_first") {
                 if(number>1) throw std::runtime_error("repair_first must be0or1");
                 engine.repair_first=number!=0;
+            }
+            else if(key=="repair_sampling") {
+                if(number>2) throw std::runtime_error("repair_sampling must be0..2");
+                engine.repair_sampling=static_cast<int>(number);
             }
             else if(key=="accept_equal") {
                 if(number>1) throw std::runtime_error("accept_equal must be0or1");

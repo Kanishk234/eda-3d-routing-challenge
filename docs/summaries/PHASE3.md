@@ -248,3 +248,7 @@ Fixed seed1 full7case neutral10M continuation adds20.547s wrapper;all7improve. D
 Next concrete action:matched longer-budget hard01/04/07screen with strict controls before any hard full-tier adoption;record regressions and neutral cycles,consider short tabu history if geometry cycling wastes work. Keep reserved08/09 out of operator selection.
 
 No optimization jobs running. PDF untouched;local commits authorized,no push/publication.
+
+## Sampling/fusion follow-up
+
+See SAMPLING_FUSION.md. Weighted seeds and donor-preferring fusion ties did not earn adoption. Hard neutral continuation and strict congested fusion plus existing neutral continuation improve three tiers;45/45selected routes independently legal and archived/restored. Phase3 continues;final freeze and regeneration remain pending.

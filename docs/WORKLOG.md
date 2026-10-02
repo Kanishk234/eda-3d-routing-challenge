@@ -487,3 +487,15 @@ Fixed seed1 full7case neutral10M continuation adds20.547s wrapper;all7improve. D
 Next concrete action:matched longer-budget hard01/04/07screen with strict controls before any hard full-tier adoption;record regressions and neutral cycles,consider short tabu history if geometry cycling wastes work. Keep reserved08/09 out of operator selection.
 
 No optimization jobs running. PDF untouched;local commits authorized,no push/publication.
+
+# Weighted seeds, hard neutral exploration and iterative fusion
+
+Completed checkpoint detailed in docs/summaries/SAMPLING_FUSION.md and docs/research/SAMPLING_AND_FUSION_FOLLOWUP.md. Read primary MAPF reevaluation, SAT net selection, fusion/graph-cut sources with reading scope documented;no third-party source copied. Repair sampling0/1/2 defaults0 and preserves unique group membership. Matched weighted trials reject adoption on both tested tiers. Optional donor-preference closure tie-breaking passes exhaustive lexicographic checks but adds no scored gain. Strict iterative fusion saves10delay on congested03.
+
+Hard neutral10M matched pilot5wins/4losses;fixed full9case continuation improves7/unchanged2. Designs/congested retained shuffled neutral continuation improvesall7. Added full-stage wrapper20.242s hard and22.282s others;pilot47.293s hard/44.347s weighted and42.819s fusion selection separate from historical generation/rescorers. All engine/wrapper versions frozen during each timing run.
+
+Latest independent pinned CLI45/45legal: intro1.098317782147403,hard1.258790632279399,scale1.0479000969718766,congested1.1021197794267317,designs1.2361933015773814,stress1.02137484120527. Coverage tier-sampling-fusion-followup-coverage.json;canonical selected.json updated with history. Three new compact archives and45restored route hashes verified.39engine checks/3closure checks pass;warning-free build and Python syntax checks. Missing older ancestors/reference generation remain unknown;no final freeze/regeneration/global-best claim.
+
+Next concrete action: profile eligible blocker-group formation and repair cost,then compare bounded diversified fresh candidate generation against incumbent continuation under matched effort. SAT compatibility selection and partial-branch repair remain unimplemented research options.
+
+No optimization jobs running. Root PDF untouched. Local commits authorized;user pushes/publication.
