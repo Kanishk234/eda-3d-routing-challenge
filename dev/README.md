@@ -1,5 +1,60 @@
 # CPU development workspace
 
+## Recovery and neighborhood experiments
+
+Neighborhood operators now compose with each search/pricing family:
+`fanout_astar_{shuffle,diverse,adaptive}`,
+`fanout_tight_{shuffle,diverse,adaptive}`, and
+`fanout_fine_{shuffle,diverse,adaptive}`. Tight uses the cached layer-aware
+lookahead; fine additionally uses16-unit physical/congestion priorities.
+Corridor penalties share those units. Work-budget and present/history schedule
+arguments apply to all combinations. These combinations are implemented but
+have not been benchmarked; recorded scores remain results of earlier binaries.
+
+The comparison harness accepts `--kernel`, `--work-budget`, `--budget`,
+schedule flags, and a new `--out` destination. For a matched fixed-work screen
+from the locally available recovered hard routes:
+
+```bash
+.venv/bin/python dev/neighborhood_screen.py operators --kernel fanout_fine --work-budget 5000000 --budget 60 --present-initial 2 --present-step 1 --history-step 1 --start dev/artifacts/20261002T001313.450750Z-exact-polish/routes --out docs/evidence/phase3/combined-fine-neighborhood-screen.json
+```
+
+This compares fine alone and its three neighborhood operators on01/04/07,
+seeds1–3, with the same work cap/schedule/starts. Expanded vertices do not
+represent equal CPU work across different operators. Existing report files
+cannot be overwritten. GitHub-best1.230658 routes remain unavailable locally;
+the example starts from the recovered1.227449 pipeline.
+
+If ignored historical routes are missing, `dev/neighborhood_screen.py recover`
+creates a new hard-tier pipeline from attributed official reference routes,
+using fixed seed1, fanout A*, 20 seconds/case, and at most1000 cycles. It does
+not recreate the historical optimization chain or claim its score. Run
+`bash dev/setup.sh` and compile the engine first.
+
+```bash
+.venv/bin/python dev/neighborhood_screen.py recover
+.venv/bin/python dev/neighborhood_screen.py cycles --start dev/artifacts/RECOVERY_RUN/routes
+.venv/bin/python dev/neighborhood_screen.py operators --start dev/artifacts/RECOVERY_RUN/routes
+```
+
+These serial screens reserve hard08/09 for subsequent fixed-config validation.
+Cycle screening compares100/1000 cycles at10 seconds, seed1, on01/04/07.
+Operator screening compares unchanged fanout_astar, fanout_astar_shuffle,
+fanout_astar_diverse, and fanout_astar_adaptive at5 seconds/1000 cycles,
+seeds1–3, on the same frozen01/04/07 routes. Existing report names are protected
+against accidental overwrite. All candidates pass the official checker and
+physical-delay agreement before acceptance; raw routes/manifests remain ignored.
+
+Shuffle randomizes negotiation order each round. Diverse adds two proposal
+searches with cumulative corridor penalties, selecting an improving proposal
+with fewer displaced owners, then lower delay. Adaptive mixes direct blockers,
+transitive blockers, and groups augmented with three random nets, capped at13
+nets. Weights reward fractional physical-delay improvements, with an exploration
+floor; this initial implementation does not normalize rewards by CPU cost.
+Both diverse/adaptive also shuffle repair order; compare against shuffle to
+separate their additional mechanisms. Experimental modes preserve strict
+physical improvement and full transaction rollback; defaults are unchanged.
+
 Run in WSL Ubuntu at /home/younix/eda-3d-routing-challenge. This fork is the development checkout; never submit it wholesale. Origin points to Kanishk234's fork. No branch, commit, push or publication performed.
 
 ## Setup and build

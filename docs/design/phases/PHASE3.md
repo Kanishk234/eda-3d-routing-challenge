@@ -7,4 +7,4 @@ Status: measured operator gates satisfied; continued optimization before final f
 - [x] Retained methods per-case,seeds1–3,held-out08/09 fixed-config validation;regressions disclosed.
 - [x] Plain repair and unnecessary attachment replacement rejected with evidence.
 
-Current verified hard1.220250. Highest checked public artifact1.387394(closedPR11),highest open1.387366(PR3). Optimization continues before Phase4 freeze. User requested all-tier coverage; broad initial evaluation now uses exact polish and attributed official reference warm starts outside intro/hard. See summary/evidence for current results and limitations.
+Current hard1.2333571857577519 and all45selected route artifacts are available here; all six tier scores improved in tier-merged-neighborhood-coverage.json. Concurrent recovery/neighbor experiments are a separate preserved history. New composed operators must be measured from current incumbents before retention. Final freeze/regeneration/submission remain pending.

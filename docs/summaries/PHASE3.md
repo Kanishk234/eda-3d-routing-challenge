@@ -1,5 +1,35 @@
 # Phase 3 — in progress
 
+All six tiers are active optimization objectives. Current selected outputs are locally available and independently checked45/45legal in tier-merged-neighborhood-coverage.json; hard1.231296,congested1.094145. See ALL_TIER_ADVANCE.md for all scores. Concurrent neighborhood work from d4032d4 has been integrated; new combination checks are recorded separately. Historical recovery availability limits below describe the other checkout, not this checkout.
+
+## Latest: recovered incumbents and diverse neighborhoods
+
+Restored .venv/pinned archive and rebuilt C++17 engine after ignored historical
+artifacts were missing. A new fixed20s/1000cycles/seed1 fanout A* run from
+official hard references gives1.215286,9/9 legal. This is a new assisted recovery
+pipeline, not regeneration of historical routes.
+
+Implemented optional shuffled negotiation order, two corridor-repulsion
+proposals, and adaptive direct/transitive/random repair groups. Matched hard
+01/04/07, seeds1–3,5s screens: shuffle wins7/9 versus original; diverse9/9;
+adaptive5/9 with two ties/two losses. Diverse beats shuffle6/9 and loses3/9.
+All36 screen outputs legal. Six10s100vs1000cycle runs all hit time caps;
+two delays identical and the third differs by8, so no causal cycle-limit gain.
+
+Selected fixed seed1 diverse20s/1000cycle stage from recovered routes, without
+per-case seed/config selection. Run20261002T001313.450750Z-exact-polish is
+officially legal9/9 and independently rescored1.2274487880088916. All9 improve
+over recovery; versus historical1.220250,6 improve/3 regress, score up0.5899%.
+Two-stage wrapper sum363.756s excludes reference generation and260.844s screens,
+plus separate scorers; selected stage core180.437s/wrapper182.321s. No speedup
+or unit-test claim. Source/config/route hashes and ancestry in
+neighborhood-hard-coverage.json and recovered-neighborhood-comparison.json.
+
+Current hard artifacts exist locally; other tiers' old routes remain unavailable.
+Final freeze/regeneration/submission checks remain pending. Next measured work:
+combine corridor diversity with localized random/transitive groups, retaining a
+matched shuffle/diverse control and protected held-out08/09 validation.
+
 First controlled operator screen: shortest-path blocker-group repair. Start from the validated Phase2 routes, propose exact driver-rooted trees ignoring routing ownership while retaining foreign-pin protection, identify up to4 blocking nets, release the group transactionally, sequentially reroute it and accept only a legal group with lower total physical delay. Failed/expired attempts restore the full ownership snapshot and old group trees. The Python official checker remains the acceptance boundary.
 
 Screen hard01–07 only, seeds1/2/3,2s/case,5passes,one worker:21/21 outputs legal,0 improvements. Core wall sum1.621s, wrapper wall sum11.576s. No portfolio selection, validation-case use or full-tier score claim.15 kernel checks pass; targeted group success/rollback coverage is still limited and should expand before retaining this operator. Evidence: docs/evidence/phase3/repair-screen.json; raw source snapshots/manifests/routes remain ignored.

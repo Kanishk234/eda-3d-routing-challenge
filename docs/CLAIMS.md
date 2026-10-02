@@ -1,5 +1,19 @@
 # Claims — 2026-10-01
 
+After GitHub synchronization: best recorded hard1.2306575756801885 and
+congested1.090605391888499 in tier-schedule-coverage.json,45/45 recorded legal.
+Their raw route artifacts are not present locally. Combined solver compiles;
+these historical scores are not a new evaluation of the merged implementation.
+
+Local recovered hard result:1.2274487880088916,9/9 legal, independently official CLI rescored
+in neighborhood-hard-coverage.json. New official-reference-assisted two-stage
+recovery/diverse pipeline; historical artifacts unavailable, so not historical
+regeneration. All9 improve versus recovery1.215286;6 improve/3 regress versus
+recorded historical1.220250, aggregate rises0.5899%. Matched development
+diverse9/9 wins against original and6/9 versus shuffle; adaptive mixed.
+No whole-tier matched algorithm-speed comparison, new unit checks, global
+optimality, unseen-case generalization, updated public-best, or submission claim.
+
 Established:
 - Unchanged pinned upstream passes 43 tests on WSL Python 3.12.3 (20261001T165828.977754Z-tests). Other matrix variants not tested.
 - Intro/case_01 official baseline legal 240, ratio 1.0; two runs yield identical bytes (20261001T165835.673740Z-smoke, 20261001T165954.462184Z-smoke). One case, not a tier/custom solver claim.

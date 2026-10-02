@@ -1,5 +1,13 @@
 # Bugs and limitations
 
+Latest recovery comparison initially reused the historical
+neighborhood-comparison.json filename. Detected during final diff review;
+restored that file byte-for-byte from the initially clean HEAD and retained the
+new report as recovered-neighborhood-comparison.json. Updated only latest
+references, preserving historical wide-screen references. Route artifacts,
+manifests, scores and solver behavior were unaffected. Screen harness protects
+its named reports from overwrites; ad hoc reports also need unique destinations.
+
 ## 2026-10-01 — Pre-existing unclosed-file warnings (observed)
 
 Unchanged tests print ResourceWarnings in tests/test_leaderboard.py:24 and m3d/cli.py:251,321. Cause: open(...).read()/json.load(open(...)) without context managers. All 43 tests pass; no affected delay/legality result observed. No upstream fix made. Context-manager fix would belong to separate toolkit work. Evidence: 20261001T165828.977754Z-tests/tests.log.
@@ -39,3 +47,7 @@ Instrumented stress profile225637 with20s core/25s outer cap did not complete;ve
 Stress initialization cause measured and repaired:initial per-net whole-grid adjacency/cost allocation consumed43.950s validation in60s run225727. Tree-local compact indexing in225922 cuts validation to0.250s/read0.424s;legal improved output1137194 verified by official checker. Global vertex ownership/foreign-pin checking retained. Historical timeouts/results stay recorded;independent CLI rescore follows. No tests run this session.
 
 Coverage ancestry reporting initially assumed every ancestor config contains mode;historical Phase2 manifest omits it. Default historical ancestor to polish;rerun completes six official scores. Failure stopped report before writing;route outputs/scores unaffected.
+
+## Merged neighborhood checks: seed argument omitted (fixed)
+
+The existing crossing property check looped over three seed labels without passing the seed to the engine. It therefore repeated the default seed. Pass the actual seed and include all nine composed neighborhood modes in the existing crossing and fixed-work rollback/determinism checks. All32 focused checks pass. This affected test coverage only; experiment wrappers already passed their recorded seeds, so no official route results are invalidated.

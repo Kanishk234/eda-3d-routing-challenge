@@ -1,6 +1,7 @@
 // Exact single-net shortest-path rerouting. Original implementation; C++17.
 // Official JSON/checking remains in Python. Input is a versioned integer bridge.
 #include <algorithm>
+#include <array>
 #include <chrono>
 #include <cmath>
 #include <csignal>
@@ -54,6 +55,10 @@ struct Engine {
     bool ablation_mode=false;
     bool compact_groups=false,fanout_prices=false,astar_search=false,tight_heuristic=false,gap_order=false,discounted_groups=false;
     bool random_ties=false; std::uint64_t tie_seed=0;
+    bool shuffled_groups=false,diverse_proposals=false,adaptive_groups=false;
+    std::mt19937_64 group_rng{0};
+    std::array<double,3> neighborhood_weights{{1,1,1}};
+    std::array<std::uint64_t,3> neighborhood_attempts{{0,0,0}},neighborhood_gains{{0,0,0}};
     std::uint64_t tie_rank(int v) const {
         std::uint64_t x=static_cast<std::uint64_t>(v)+tie_seed+0x9e3779b97f4a7c15ULL;
         x=(x^(x>>30))*0xbf58476d1ce4e5b9ULL;
@@ -186,7 +191,8 @@ struct Engine {
         }
     }
     bool shortest(const Net& n,Net& proposed,bool ignore_owners=false,I occupancy_penalty=0,
-                  const std::vector<int>* usage=nullptr,const std::vector<I>* history=nullptr,I present=0) {
+                  const std::vector<int>* usage=nullptr,const std::vector<I>* history=nullptr,I present=0,
+                  const std::vector<I>* corridor_prices=nullptr) {
         ++searches;
         if(random_ties) tie_seed+=0x9e3779b97f4a7c15ULL;
         if(expired()) return false;
@@ -246,6 +252,7 @@ struct Engine {
                 if((!ignore_owners && owner[v]>=0 && owner[v]!=n.id) ||
                    (pin_owner[v]>=0 && pin_owner[v]!=n.id)) return;
                 I extra=(ignore_owners && owner[v]>=0 && owner[v]!=n.id)?multiply(occupancy_penalty,price_units):0;
+                if(corridor_prices) extra=add(extra,multiply((*corridor_prices)[v],price_units));
                 if(usage) {
                     I price=add((*history)[v],static_cast<I>((*usage)[v])*present);
                     I divisor=fanout_prices?static_cast<I>(std::ceil(std::sqrt(static_cast<double>(n.sinks.size())))):1;
@@ -388,9 +395,11 @@ struct Engine {
         std::vector<I> history(vcount,0);
         for(int j:group) for(int v:nets[j].vertices) ++usage[v];
         negotiation_setup_s+=std::chrono::duration<double>(std::chrono::steady_clock::now()-setup_start).count();
+        auto routing_order=group;
         for(int iteration=0;iteration<max_rounds && !expired();++iteration) {
             ++negotiation_rounds;
-            for(int j:group) {
+            if(shuffled_groups) std::shuffle(routing_order.begin(),routing_order.end(),group_rng);
+            for(int j:routing_order) {
                 for(int v:nets[j].vertices) --usage[v];
                 Net candidate;
                 bool routed=(compact_groups || discounted_groups)?attach(nets[j],candidate,true,compact_groups?3:4,&usage,&history,add(negotiation.present_initial,multiply(negotiation.present_step,iteration))):
@@ -492,6 +501,23 @@ struct Engine {
                 if(expired()) break;
                 ++proposals; Net ideal;
                 if(!shortest(nets[index],ideal,true,penalty)) break;
+                if(diverse_proposals) {
+                    std::vector<I> prices(vcount,0);
+                    Net previous=ideal;
+                    auto merit=[&](const Net& candidate) {
+                        std::set<int> displaced;
+                        for(int v:candidate.vertices) if(owner[v]>=0 && owner[v]!=candidate.id) displaced.insert(owner[v]);
+                        return std::make_pair(displaced.size(),candidate.delay);
+                    };
+                    for(int option=0;option<2 && !expired();++option) {
+                        for(int v:previous.vertices) prices[v]=add(prices[v],4);
+                        Net alternate;
+                        if(!shortest(nets[index],alternate,true,penalty,nullptr,nullptr,0,&prices)) break;
+                        if(alternate.delay<nets[index].delay &&
+                           (ideal.delay>=nets[index].delay || merit(alternate)<merit(ideal))) ideal=alternate;
+                        previous=std::move(alternate);
+                    }
+                }
                 if(ideal.delay>=nets[index].delay) { ++no_gain; continue; }
                 std::set<int> blockers;
                 for(int v:ideal.vertices) if(owner[v]>=0 && owner[v]!=nets[index].id)
@@ -501,6 +527,32 @@ struct Engine {
                 std::vector<int> group{index};
                 for(std::size_t j=0;j<nets.size();++j)
                     if(blockers.count(nets[j].id)) group.push_back(static_cast<int>(j));
+                int strategy=0;
+                if(adaptive_groups) {
+                    std::discrete_distribution<int> choose(neighborhood_weights.begin(),neighborhood_weights.end());
+                    strategy=choose(group_rng);
+                    if(strategy==1) {
+                        // Include dependencies of displaced nets, not just the target's blockers.
+                        for(std::size_t k=1;k<group.size() && group.size()<static_cast<std::size_t>(max_blockers+1) && !expired();++k) {
+                            Net dependency;
+                            if(!shortest(nets[group[k]],dependency,true,penalty)) break;
+                            for(int v:dependency.vertices) if(owner[v]>=0) {
+                                auto found=std::find_if(nets.begin(),nets.end(),[&](const Net& n){return n.id==owner[v];});
+                                int candidate=static_cast<int>(found-nets.begin());
+                                if(std::find(group.begin(),group.end(),candidate)==group.end()) group.push_back(candidate);
+                                if(group.size()>=static_cast<std::size_t>(max_blockers+1)) break;
+                            }
+                        }
+                    } else if(strategy==2) {
+                        auto additions=order;std::shuffle(additions.begin(),additions.end(),group_rng);
+                        std::size_t target=std::min(group.size()+3,static_cast<std::size_t>(max_blockers+1));
+                        for(int candidate:additions) {
+                            if(group.size()>=target) break;
+                            if(std::find(group.begin(),group.end(),candidate)==group.end()) group.push_back(candidate);
+                        }
+                    }
+                    ++neighborhood_attempts[strategy];
+                }
                 // Full transaction snapshot makes all failed/expired repairs reversible.
                 auto snapshot_start=std::chrono::steady_clock::now();
                 auto old_owner=owner;
@@ -521,6 +573,11 @@ struct Engine {
                     after=add(after,candidate.delay); nets[j]=std::move(candidate);
                 }
                 bool accept_uphill=uphill && legal && after>=before && after-before<=before/100 && rng()%4==0;
+                if(adaptive_groups) {
+                    double reward=legal && after<before?100.0*static_cast<double>(before-after)/static_cast<double>(before):0;
+                    neighborhood_weights[strategy]=0.9*neighborhood_weights[strategy]+0.1*(0.1+reward);
+                    if(reward>0) ++neighborhood_gains[strategy];
+                }
                 if(legal && (after<before || accept_uphill)) {
                     ++accepted; changed=true;
                     if(accept_uphill) ++uphill_moves;
@@ -593,6 +650,8 @@ struct Engine {
                  <<",\"uphill_moves\":"<<uphill_moves
                  <<",\"selection_nodes\":"<<selection_nodes<<",\"selection_complete\":"<<selection_complete
                  <<",\"selection_partial\":"<<selection_partial
+                 <<",\"neighborhood_attempts\":["<<neighborhood_attempts[0]<<","<<neighborhood_attempts[1]<<","<<neighborhood_attempts[2]<<"]"
+                 <<",\"neighborhood_gains\":["<<neighborhood_gains[0]<<","<<neighborhood_gains[1]<<","<<neighborhood_gains[2]<<"]"
                  <<",\"failed\":"<<failed<<",\"nonimproving\":"<<nonimproving<<"}\n";
         I total=0; for(const Net& n:nets) total=add(total,n.delay);
         std::cout<<"M3DOUT1 "<<nets.size()<<" "<<total<<" "<<timed_out<<" "
@@ -610,8 +669,14 @@ int main(int argc,char**argv) {
         if(!std::isfinite(seconds) || seconds<0 || seconds>600) throw std::runtime_error("invalid budget");
         auto seed=std::stoull(argv[2]); int passes=std::stoi(argv[3]);
         if(passes<1 || passes>1000) throw std::runtime_error("invalid passes");
+        const std::string mode=argv[4];
+        const auto split=mode.rfind('_');
+        const std::string kernel=split==std::string::npos?mode:mode.substr(0,split);
+        const std::string operation=split==std::string::npos?"":mode.substr(split+1);
+        const bool neighborhood_mode=(kernel=="fanout_astar" || kernel=="fanout_tight" || kernel=="fanout_fine") &&
+                                     (operation=="shuffle" || operation=="diverse" || operation=="adaptive");
         bool search_only=std::string(argv[4])=="search";
-        if(!search_only && std::string(argv[4])!="polish" && std::string(argv[4])!="repair" && std::string(argv[4])!="repairsoft" && std::string(argv[4])!="ablation" && std::string(argv[4])!="negotiated" && std::string(argv[4])!="explore" && std::string(argv[4])!="restart" && std::string(argv[4])!="select" && std::string(argv[4])!="wide" && std::string(argv[4])!="walk" && std::string(argv[4])!="descent" && std::string(argv[4])!="compact" && std::string(argv[4])!="fanout" && std::string(argv[4])!="restart_fanout" && std::string(argv[4])!="restart_compact" && std::string(argv[4])!="restart_polish" && std::string(argv[4])!="fanout_walk" && std::string(argv[4])!="fanout_descent" && std::string(argv[4])!="astar" && std::string(argv[4])!="fanout_astar" && std::string(argv[4])!="fanout_gap" && std::string(argv[4])!="fanout_astar_gap" && std::string(argv[4])!="restart_astar" && std::string(argv[4])!="treecost" && std::string(argv[4])!="fanout_tight" && std::string(argv[4])!="astar_tight" && std::string(argv[4])!="fanout_fine") throw std::runtime_error("invalid mode");
+        if(!search_only && !neighborhood_mode && std::string(argv[4])!="polish" && std::string(argv[4])!="repair" && std::string(argv[4])!="repairsoft" && std::string(argv[4])!="ablation" && std::string(argv[4])!="negotiated" && std::string(argv[4])!="explore" && std::string(argv[4])!="restart" && std::string(argv[4])!="select" && std::string(argv[4])!="wide" && std::string(argv[4])!="walk" && std::string(argv[4])!="descent" && std::string(argv[4])!="compact" && std::string(argv[4])!="fanout" && std::string(argv[4])!="restart_fanout" && std::string(argv[4])!="restart_compact" && std::string(argv[4])!="restart_polish" && std::string(argv[4])!="fanout_walk" && std::string(argv[4])!="fanout_descent" && std::string(argv[4])!="astar" && std::string(argv[4])!="fanout_astar" && std::string(argv[4])!="fanout_gap" && std::string(argv[4])!="fanout_astar_gap" && std::string(argv[4])!="restart_astar" && std::string(argv[4])!="treecost" && std::string(argv[4])!="fanout_tight" && std::string(argv[4])!="astar_tight" && std::string(argv[4])!="fanout_fine") throw std::runtime_error("invalid mode");
         std::signal(SIGINT,on_signal); std::signal(SIGTERM,on_signal);
         Engine engine;
         if(argc>=6) {
@@ -639,7 +704,16 @@ int main(int argc,char**argv) {
         engine.read_s=std::chrono::duration<double>(std::chrono::steady_clock::now()-read_start).count();
         auto optimization_start=std::chrono::steady_clock::now();
         engine.ablation_mode=std::string(argv[4])=="ablation";
-        if(std::string(argv[4])=="fanout_fine") {engine.price_units=16;engine.tight_heuristic=true;engine.astar_search=true;engine.fanout_prices=true;engine.explore(seed,passes,true);}
+        if(neighborhood_mode) {
+            engine.astar_search=true;engine.fanout_prices=true;
+            engine.tight_heuristic=kernel=="fanout_tight" || kernel=="fanout_fine";
+            engine.price_units=kernel=="fanout_fine"?16:1;
+            engine.shuffled_groups=true;engine.group_rng.seed(seed^0x6a09e667f3bcc909ULL);
+            engine.diverse_proposals=operation=="diverse";
+            engine.adaptive_groups=operation=="adaptive";
+            engine.explore(seed,passes,true);
+        }
+        else if(std::string(argv[4])=="fanout_fine") {engine.price_units=16;engine.tight_heuristic=true;engine.astar_search=true;engine.fanout_prices=true;engine.explore(seed,passes,true);}
         else if(std::string(argv[4])=="astar_tight") {engine.tight_heuristic=true;engine.astar_search=true;engine.polish(seed,passes,false);}
         else if(std::string(argv[4])=="fanout_tight") {engine.tight_heuristic=true;engine.astar_search=true;engine.fanout_prices=true;engine.explore(seed,passes,true);}
         else if(std::string(argv[4])=="treecost") {engine.discounted_groups=true;engine.astar_search=true;engine.fanout_prices=true;engine.explore(seed,passes,true);}

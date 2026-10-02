@@ -1,5 +1,18 @@
 # Ranked optimization experiments
 
+Latest research priority: implement an original spatial-neighborhood negotiated
+repair prototype, compared with fine control and fine-diverse blocker groups.
+Reubalink metadata/commit history reports window LNS and negotiated repair in
+ripped windows, but no custom source is published. Independently checked final
+routes score1.362234; predecessor1.267187. Our recorded one-sink total is better,
+but multi-sink total is17906 worse, supporting coordinated branching/trunk work.
+See reubalink-inspection.json and OPTIMIZATION_FOLLOWUP.md for provenance,
+limits, proposed4/8/12 XY boxes, full-net transactional repair, and fixed5M/20M
+development comparisons. This is a proposed experiment, not a retained operator
+or a claim to reproduce their implementation. Avoid tuning on08/09 or importing
+public output geometry/warm starts. Larger budgets and method changes are
+confounded in their score progression; no five-hour search performance claim.
+
 Current evidence: hard-gap-diagnosis.json, work-budget-profile.json, guided-cycles-screen.json under docs/evidence/phase3. Rankings are hypotheses, not predicted numeric gains. Tune on declared development cases; report held-out hard08/09 only after configuration selection. Final all45-case reporting must not drive another tuning round.
 
 | Rank | Experiment | Expected benefit | Cost and acceptance evidence |

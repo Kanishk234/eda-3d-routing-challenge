@@ -5,7 +5,7 @@ import subprocess
 import signal
 import time
 import unittest
-from run_polish import ENGINE, encode, decode, Instance, Submission, NetRoute, check
+from run_polish import ENGINE, encode, decode, Instance, Submission, NetRoute, check, NEIGHBORHOOD_MODES
 from m3d.model import Pin, Net
 
 def make(w,h,delays,via,root,sinks,block=None,own_edges=None):
@@ -204,11 +204,12 @@ class ExactKernel(unittest.TestCase):
                                   NetRoute(1,list(zip(vertical,vertical[1:])))])
         before=check(inst,sub)
         self.assertTrue(before.legal)
-        for seed in (1,2,3):
-            run,out,stats=core(inst,sub,"negotiated")
-            self.assertEqual(run.returncode,0)
-            self.assertTrue(check(inst,out).legal)
-            self.assertLessEqual(stats["total_delay"],before.total_delay)
+        for mode in ["negotiated",*NEIGHBORHOOD_MODES]:
+            for seed in (1,2,3):
+                run,out,stats=core(inst,sub,mode,seed=seed)
+                self.assertEqual(run.returncode,0)
+                self.assertTrue(check(inst,out).legal)
+                self.assertLessEqual(stats["total_delay"],before.total_delay)
 
     def test_negotiated_zero_budget_keeps_checkpoint(self):
         inst,sub=make(3,1,[2],3,(0,0,0),[(2,0,0)],
@@ -337,7 +338,7 @@ class WorkAndAstarProperties(unittest.TestCase):
         inst,sub=make(5,5,[6,2],3,(0,0,0),[(4,4,0)],own_edges=[
             *(( (x,0,0),(x+1,0,0)) for x in range(4)),
             *(( (4,y,0),(4,y+1,0)) for y in range(4))])
-        for mode in ("astar","fanout_astar","fanout_tight","fanout_fine","treecost","restart_astar","fanout_walk"):
+        for mode in ["astar","fanout_astar","fanout_tight","fanout_fine","treecost","restart_astar","fanout_walk",*NEIGHBORHOOD_MODES]:
             for limit in (1,10,25,100):
                 outputs=[]
                 for wall in (2,5):

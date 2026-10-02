@@ -1,5 +1,26 @@
 # Architecture
 
+After GitHub integration, each shuffle/diverse/adaptive neighborhood operator
+can use legacy fanout A*, cached tight lookahead, or fine16-unit pricing.
+All families retain the shared expansion ceiling and negotiation schedule
+configuration. Corridor prices are checked/scaled in the same units as
+physical costs before queue insertion; physical tree scoring stays unscaled.
+The screen harness forwards the selected kernel, work/time budgets and schedule
+to controls and candidates equally, with separately named protected reports.
+Combined families are compiled but have no new benchmark/unit-test evidence.
+
+Neighborhood experiments add optional seeded negotiation-order shuffling,
+two repelled-corridor ideal-tree proposals, and adaptive direct/transitive/random
+groups. Corridor penalties are nonnegative search costs only; target proposals
+must lower physical delay and selected group replacements must lower total
+physical delay. Transitive groups inspect displaced nets' ideal routes; random
+groups add at most three nets. Both are capped at13 nets with full ownership/tree
+rollback. Adaptive weights reward fractional group-delay reduction with a small
+exploration floor, not reduction per CPU second. Separate group RNG avoids
+altering legacy-mode RNG initialization. Accepted pass ceiling is1000; defaults
+remain bounded. Official output checking and serialization agreement are still
+required; latest modes have benchmark evidence, not new unit-test evidence.
+
 Setup, measurement, official verification and C++ exact single-net polish are implemented. See PHASE2 summary.
 
 Immutable evaluation boundary: exact Git archive dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6. All 198 archived files verified against pinned Git blobs; wrapper hashes inputs before/after. Development in dev/, engine in dev/solver/, bulk outputs under ignored dev/artifacts/. Never edit scorer/benchmarks to improve results.

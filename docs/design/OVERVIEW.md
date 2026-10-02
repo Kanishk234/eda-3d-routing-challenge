@@ -1,6 +1,8 @@
 # Overview
 
-Goal: legal CPU routing trees with low total driver-to-sink delay and a reproducible route-only entry. Phases 0–2 complete; Phase 3 measured gates satisfied and optimization continuing. A verified compiled routing pipeline exists; current hard score1.231296. Best audited public artifact1.387394 remains higher.
+Goal: maximize each of six official tier scores with legal routing trees and prepare a reproducible route-only entry. Phases0–2 are complete; Phase3 optimization continues. Current hard score1.2333571857577519. All45 selected route artifacts are available in this checkout; current scores, paths and hashes are in docs/evidence/phase3/tier-merged-neighborhood-coverage.json.
+
+The concurrent checkout recovered a separate hard pipeline at1.2274487880088916 because its historical ignored artifacts were unavailable. Preserve that recovery evidence and ancestry; it is not regeneration of our current outputs. Its availability limitation does not apply to this checkout. Public audit/research comparisons are historical evidence, not stopping targets.
 
 Authoritative pin: 499ad7e2a415a97e9ce9b3396b0477e75ebd13e6, retained for experiment comparability. Rules rechecked at newer upstream3d8948f; see CONTRACT.md. See CONTRACT.md, VERSIONS.md and evidence/phase0/. Supplied research is a hypothesis and historical audit, not new measured evidence.
 

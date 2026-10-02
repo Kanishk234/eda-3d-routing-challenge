@@ -1,0 +1,68 @@
+{
+  "coverage_sha256": "1a8d10aaf55bcda94aeb5d1ab5f43ca141aa591892aa891fa7631a06ba7f8b0c",
+  "control_binary_sha256": "7dafd44da368df525283d7cb2b1e309aee68aa723e5572c1ba9f6e101cafa5d3",
+  "merged_binary_sha256": "d9b870038605beee98b0f39a8d987daa95b184ccb3b43c37dd3021afeba9a43a",
+  "cases": [
+    {
+      "tier": "intro",
+      "case": "case_01",
+      "case_sha256": "cc44aff1a21f0d4854ced9d550e95d4a77f6f475b6be0f3eec0416b070625b8c",
+      "warm_sha256": "d801d142bedaf64d8c3f57b6f7e1704cfa20650f3006b955bb540f2e4f4a5230",
+      "delay": 206,
+      "expansions": 1000000,
+      "stdout_identical": true
+    },
+    {
+      "tier": "hard",
+      "case": "case_01",
+      "case_sha256": "685a165a7a15811dff12839e0dbe79752b889558213f760ad5f0df6139766f5d",
+      "warm_sha256": "c1df710fb37362334ea012691754f64ac168b7e617354f98025dd620c2fa2712",
+      "delay": 9252,
+      "expansions": 1000000,
+      "stdout_identical": true
+    },
+    {
+      "tier": "scale",
+      "case": "case_01",
+      "case_sha256": "86aecbc407f74b0988098c968efcb9849eb87e00306e8307dd28ef339e070458",
+      "warm_sha256": "4ea9f3cca6dc76b24d943c25bff4909f66da885d310efdf8692d0d4975b7eafb",
+      "delay": 43070,
+      "expansions": 1000000,
+      "stdout_identical": true
+    },
+    {
+      "tier": "congested",
+      "case": "case_01",
+      "case_sha256": "74f8fb9b0a4fdf230227e676999da156bd2dfea8dcacb1f8ec3407086fe11d06",
+      "warm_sha256": "b87ea8280fc64292e36c23491364860a8c0a0f9c472b4aeca4d781cdf9b198d5",
+      "delay": 61035,
+      "expansions": 1000000,
+      "stdout_identical": true
+    },
+    {
+      "tier": "designs",
+      "case": "ctrl",
+      "case_sha256": "024ebda5df67cf2077542524a2bf6109bd40937c9ee901d7d8ec0abcf55402cb",
+      "warm_sha256": "1c9c26cfb5cadfd2810707fc4c65edf94718ecda0654f1215f23fecf7fbd03a5",
+      "delay": 59390,
+      "expansions": 1000000,
+      "stdout_identical": true
+    },
+    {
+      "tier": "stress",
+      "case": "case_01",
+      "case_sha256": "125f9d4d871a727418cafe4ce68dda4dc93a40c6c631daaf45fa9a9c73fae550",
+      "warm_sha256": "bf2ac8825e8d55dacac1d377af58371fd709870d8f727cf2a720be34090ff0d8",
+      "delay": 1121852,
+      "expansions": 1000000,
+      "stdout_identical": true
+    }
+  ],
+  "tests": {
+    "command": ".venv/bin/python dev/test_exact.py",
+    "passed": 32,
+    "log": "test_attachment_ablation_matches_independent_shortest_cost (__main__.ExactKernel.test_attachment_ablation_matches_independent_shortest_cost) ... ok\ntest_candidate_selection_improves_single_net (__main__.ExactKernel.test_candidate_selection_improves_single_net) ... ok\ntest_candidate_selection_preserves_zero_budget (__main__.ExactKernel.test_candidate_selection_preserves_zero_budget) ... ok\ntest_cheaper_layer_and_vias (__main__.ExactKernel.test_cheaper_layer_and_vias) ... ok\ntest_disconnected_tree_rejected (__main__.ExactKernel.test_disconnected_tree_rejected) ... ok\ntest_foreign_pin_and_via_endpoints (__main__.ExactKernel.test_foreign_pin_and_via_endpoints) ... ok\ntest_fresh_price_variants_checkpoint_and_physical_cost (__main__.ExactKernel.test_fresh_price_variants_checkpoint_and_physical_cost) ... ok\ntest_group_cost_variants_preserve_physical_delay (__main__.ExactKernel.test_group_cost_variants_preserve_physical_delay) ... ok\ntest_group_repair_is_legal_and_nonworsening (__main__.ExactKernel.test_group_repair_is_legal_and_nonworsening) ... ok\ntest_group_repair_zero_budget_retains_incumbent (__main__.ExactKernel.test_group_repair_zero_budget_retains_incumbent) ... ok\ntest_negotiated_group_crossing_stays_legal (__main__.ExactKernel.test_negotiated_group_crossing_stays_legal) ... ok\ntest_negotiated_zero_budget_keeps_checkpoint (__main__.ExactKernel.test_negotiated_zero_budget_keeps_checkpoint) ... ok\ntest_no_improvement_preserves_ownership_and_route (__main__.ExactKernel.test_no_improvement_preserves_ownership_and_route) ... ok\ntest_output_parser_rejects_truncation (__main__.ExactKernel.test_output_parser_rejects_truncation) ... ok\ntest_plateau_keeps_hand_calculated_shortest_delays (__main__.ExactKernel.test_plateau_keeps_hand_calculated_shortest_delays) ... ok\ntest_random_graph_costs_against_independent_dijkstra (__main__.ExactKernel.test_random_graph_costs_against_independent_dijkstra) ... ok\ntest_rejects_cycles_and_conflicts (__main__.ExactKernel.test_rejects_cycles_and_conflicts) ... ok\ntest_resource_counts_do_not_duplicate_shared_trunk (__main__.ExactKernel.test_resource_counts_do_not_duplicate_shared_trunk) ... ok\ntest_shared_routing_vertex_rejected (__main__.ExactKernel.test_shared_routing_vertex_rejected) ... ok\ntest_shared_trunk_counts_for_each_sink (__main__.ExactKernel.test_shared_trunk_counts_for_each_sink) ... ok\ntest_signal_keeps_complete_incumbent (__main__.ExactKernel.test_signal_keeps_complete_incumbent) ... ok\ntest_soft_repair_reports_physical_shared_trunk_delay (__main__.ExactKernel.test_soft_repair_reports_physical_shared_trunk_delay) ... ok\ntest_threshold_walk_keeps_best_legal_checkpoint (__main__.ExactKernel.test_threshold_walk_keeps_best_legal_checkpoint) ... ok\ntest_unroutable_foreign_column (__main__.ExactKernel.test_unroutable_foreign_column) ... ok\ntest_whole_restart_builds_cheaper_layer_tree (__main__.ExactKernel.test_whole_restart_builds_cheaper_layer_tree) ... ok\ntest_whole_restart_zero_budget_preserves_route (__main__.ExactKernel.test_whole_restart_zero_budget_preserves_route) ... ok\ntest_wide_integer_delays (__main__.ExactKernel.test_wide_integer_delays) ... ok\ntest_wide_neighborhood_checkpoint (__main__.ExactKernel.test_wide_neighborhood_checkpoint) ... ok\ntest_zero_budget_keeps_valid_incumbent (__main__.ExactKernel.test_zero_budget_keeps_valid_incumbent) ... ok\ntest_astar_matches_independent_dijkstra_and_checker (__main__.WorkAndAstarProperties.test_astar_matches_independent_dijkstra_and_checker) ... ok\ntest_schedule_parser_defaults_and_rejections (__main__.WorkAndAstarProperties.test_schedule_parser_defaults_and_rejections) ... ok\ntest_work_cap_is_exact_repeatable_and_preserves_legal_routes (__main__.WorkAndAstarProperties.test_work_cap_is_exact_repeatable_and_preserves_legal_routes) ... ok\n\n----------------------------------------------------------------------\nRan 32 tests in 0.972s\n\nOK\n",
+    "source_sha256": "0b61f0fcfe283ecac94224e0243a8a5fbe2306fe2d2588d362029fe957db547e"
+  },
+  "limitations": "One representative per tier, unchanged fanout_fine preset, fixed1M expansions. Does not prove equivalence of every config or optimality of neighborhood operators."
+}

@@ -1,5 +1,15 @@
 # Verification
 
+Latest neighborhood session:60 officially checked case outputs (9 recovery,
+6 cycle screen,36 operator screen,9 fixed full-tier followup), all legal and
+nonworsening against their explicit starts. Core total/per-net delay and saved
+JSON reloading agree with the pinned official checker. Independent official CLI
+rescoring confirms recovery1.215286 and selected hard1.227449. Official input
+hashes unchanged; C++ compilation has no warnings; git diff --check passes.
+No unit tests added/run; historical29 checks do not cover the new operators.
+Final submission/regeneration checks remain pending. Evidence:
+recovery-operators.json, neighborhood-hard-coverage.json, recovered-neighborhood-comparison.json.
+
 Authority: CONTRACT.md; commands: dev/README.md.
 
 Performed Phase 0:
