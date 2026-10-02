@@ -26,6 +26,10 @@ I add(I a, I b) {
     if (b < 0 || a < 0 || a > INF-b) throw std::runtime_error("delay overflow");
     return a+b;
 }
+I multiply(I value,I scale) {
+    if(value<0 || scale<0 || (scale && value>INF/scale)) throw std::runtime_error("priority overflow");
+    return value*scale;
+}
 struct Net {
     int id, root;
     std::vector<int> sinks, vertices;
@@ -35,6 +39,7 @@ struct Net {
 struct Engine {
     int w,h,l,vcount,wh;
     I via;
+    I price_units=1;
     std::vector<I> layer;
     std::vector<Net> nets;
     std::vector<int> owner,pin_owner,parent;
@@ -227,7 +232,7 @@ struct Engine {
         };
         using Node=std::tuple<I,std::uint64_t,int,I>;
         std::priority_queue<Node,std::vector<Node>,std::greater<Node>> q;
-        dist[n.root]=0; q.push({heuristic(n.root),random_ties?tie_rank(n.root):static_cast<std::uint64_t>(n.root),n.root,0});
+        dist[n.root]=0; q.push({multiply(heuristic(n.root),price_units),random_ties?tie_rank(n.root):static_cast<std::uint64_t>(n.root),n.root,0});
         while(!q.empty() && left) {
             auto [priority,rank,u,cost]=q.top(); q.pop();
             if(cost!=dist[u]) continue;
@@ -238,14 +243,14 @@ struct Engine {
             neighbors(u,[&](int v,I delay){
                 if((!ignore_owners && owner[v]>=0 && owner[v]!=n.id) ||
                    (pin_owner[v]>=0 && pin_owner[v]!=n.id)) return;
-                I extra=(ignore_owners && owner[v]>=0 && owner[v]!=n.id)?occupancy_penalty:0;
+                I extra=(ignore_owners && owner[v]>=0 && owner[v]!=n.id)?multiply(occupancy_penalty,price_units):0;
                 if(usage) {
                     I price=add((*history)[v],static_cast<I>((*usage)[v])*present);
                     I divisor=fanout_prices?static_cast<I>(std::ceil(std::sqrt(static_cast<double>(n.sinks.size())))):1;
-                    extra=add(extra,price/divisor);
+                    extra=add(extra,multiply(price,price_units)/divisor);
                 }
-                I next=add(add(cost,delay),extra);
-                if(next<dist[v]) { dist[v]=next; parent[v]=u; q.push({add(next,heuristic(v)),random_ties?tie_rank(v):static_cast<std::uint64_t>(v),v,next}); }
+                I next=add(add(cost,multiply(delay,price_units)),extra);
+                if(next<dist[v]) { dist[v]=next; parent[v]=u; q.push({add(next,multiply(heuristic(v),price_units)),random_ties?tie_rank(v):static_cast<std::uint64_t>(v),v,next}); }
             });
         }
         if(left || expired()) return false;
@@ -578,6 +583,7 @@ struct Engine {
                  <<",\"fresh_attempts\":"<<fresh_attempts<<",\"fresh_legal\":"<<fresh_legal
                  <<",\"read_s\":"<<read_s<<",\"validation_s\":"<<validation_s<<",\"optimization_s\":"<<optimization_s
                  <<",\"search_reset_s\":"<<search_reset_s<<",\"search_rebuild_s\":"<<search_rebuild_s
+                 <<",\"price_units\":"<<price_units
                  <<",\"snapshot_s\":"<<snapshot_s<<",\"negotiation_setup_s\":"<<negotiation_setup_s<<",\"negotiation_scan_s\":"<<negotiation_scan_s
                  <<",\"work_limit\":"<<work_limit<<",\"work_exhausted\":"<<work_exhausted
                  <<",\"expansions_per_second\":"<<(optimization_s>0?expansions/optimization_s:0)
@@ -602,7 +608,7 @@ int main(int argc,char**argv) {
         auto seed=std::stoull(argv[2]); int passes=std::stoi(argv[3]);
         if(passes<1 || passes>1000) throw std::runtime_error("invalid passes");
         bool search_only=std::string(argv[4])=="search";
-        if(!search_only && std::string(argv[4])!="polish" && std::string(argv[4])!="repair" && std::string(argv[4])!="repairsoft" && std::string(argv[4])!="ablation" && std::string(argv[4])!="negotiated" && std::string(argv[4])!="explore" && std::string(argv[4])!="restart" && std::string(argv[4])!="select" && std::string(argv[4])!="wide" && std::string(argv[4])!="walk" && std::string(argv[4])!="descent" && std::string(argv[4])!="compact" && std::string(argv[4])!="fanout" && std::string(argv[4])!="restart_fanout" && std::string(argv[4])!="restart_compact" && std::string(argv[4])!="restart_polish" && std::string(argv[4])!="fanout_walk" && std::string(argv[4])!="fanout_descent" && std::string(argv[4])!="astar" && std::string(argv[4])!="fanout_astar" && std::string(argv[4])!="fanout_gap" && std::string(argv[4])!="fanout_astar_gap" && std::string(argv[4])!="restart_astar" && std::string(argv[4])!="treecost" && std::string(argv[4])!="fanout_tight" && std::string(argv[4])!="astar_tight") throw std::runtime_error("invalid mode");
+        if(!search_only && std::string(argv[4])!="polish" && std::string(argv[4])!="repair" && std::string(argv[4])!="repairsoft" && std::string(argv[4])!="ablation" && std::string(argv[4])!="negotiated" && std::string(argv[4])!="explore" && std::string(argv[4])!="restart" && std::string(argv[4])!="select" && std::string(argv[4])!="wide" && std::string(argv[4])!="walk" && std::string(argv[4])!="descent" && std::string(argv[4])!="compact" && std::string(argv[4])!="fanout" && std::string(argv[4])!="restart_fanout" && std::string(argv[4])!="restart_compact" && std::string(argv[4])!="restart_polish" && std::string(argv[4])!="fanout_walk" && std::string(argv[4])!="fanout_descent" && std::string(argv[4])!="astar" && std::string(argv[4])!="fanout_astar" && std::string(argv[4])!="fanout_gap" && std::string(argv[4])!="fanout_astar_gap" && std::string(argv[4])!="restart_astar" && std::string(argv[4])!="treecost" && std::string(argv[4])!="fanout_tight" && std::string(argv[4])!="astar_tight" && std::string(argv[4])!="fanout_fine") throw std::runtime_error("invalid mode");
         std::signal(SIGINT,on_signal); std::signal(SIGTERM,on_signal);
         Engine engine;
         if(argc==6) {
@@ -616,7 +622,8 @@ int main(int argc,char**argv) {
         engine.read_s=std::chrono::duration<double>(std::chrono::steady_clock::now()-read_start).count();
         auto optimization_start=std::chrono::steady_clock::now();
         engine.ablation_mode=std::string(argv[4])=="ablation";
-        if(std::string(argv[4])=="astar_tight") {engine.tight_heuristic=true;engine.astar_search=true;engine.polish(seed,passes,false);}
+        if(std::string(argv[4])=="fanout_fine") {engine.price_units=16;engine.tight_heuristic=true;engine.astar_search=true;engine.fanout_prices=true;engine.explore(seed,passes,true);}
+        else if(std::string(argv[4])=="astar_tight") {engine.tight_heuristic=true;engine.astar_search=true;engine.polish(seed,passes,false);}
         else if(std::string(argv[4])=="fanout_tight") {engine.tight_heuristic=true;engine.astar_search=true;engine.fanout_prices=true;engine.explore(seed,passes,true);}
         else if(std::string(argv[4])=="treecost") {engine.discounted_groups=true;engine.astar_search=true;engine.fanout_prices=true;engine.explore(seed,passes,true);}
         else if(std::string(argv[4])=="fanout_astar_gap") {engine.gap_order=true;engine.astar_search=true;engine.fanout_prices=true;engine.explore(seed,passes,true);}

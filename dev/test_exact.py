@@ -325,7 +325,7 @@ class WorkAndAstarProperties(unittest.TestCase):
         inst,sub=make(5,5,[6,2],3,(0,0,0),[(4,4,0)],own_edges=[
             *(( (x,0,0),(x+1,0,0)) for x in range(4)),
             *(( (4,y,0),(4,y+1,0)) for y in range(4))])
-        for mode in ("astar","fanout_astar","fanout_tight","treecost","restart_astar","fanout_walk"):
+        for mode in ("astar","fanout_astar","fanout_tight","fanout_fine","treecost","restart_astar","fanout_walk"):
             for limit in (1,10,25,100):
                 outputs=[]
                 for wall in (2,5):
