@@ -1,0 +1,21 @@
+{
+  "path": "An_Adaptive_Cost-based_Via_and_Congestion_Co-optimization_Framework_for_VLSI_Global_Routing.pdf",
+  "bytes": 390900,
+  "sha256": "8def9e934f4fd06969809868c3d5f23ca5a35dec8c3d89593635851326228c9e",
+  "reader": "pypdf6.1.1",
+  "strict": true,
+  "encrypted": false,
+  "pages": 7,
+  "text_chars_per_page": [
+    5570,
+    4708,
+    6717,
+    5555,
+    4815,
+    5938,
+    3365
+  ],
+  "title": "An Adaptive Cost-based Via and Congestion Co-optimization Framework for VLSI Global Routing",
+  "article_id": "11539267",
+  "limitations": "Parser and text integrity check only; no licensed PDF/text committed, no pixel-by-pixel visual comparison."
+}

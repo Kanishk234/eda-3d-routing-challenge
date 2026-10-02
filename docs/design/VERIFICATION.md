@@ -31,3 +31,5 @@ All45selectedoutputs independentlyofficialCLIrescored in tier-followup-coverage.
 ## A* and work-budget properties
 
 User-requested focused suite now passes31 tests. New checks cover30 random small layered/foreign-pin instances comparing A* and ordinary shortest costs with independent coordinate Dijkstra and the official checker;20 mode/work-cap combinations compare complete stdout under2s/5s safety caps, enforce expansion ceilings and legal rollback. Existing tests retain timeout/rollback/serializer coverage. Large stress fixed10M runs also yield identical stdout across30s/45s safety caps. Evidence:work-budget-profile.json. This does not establish all-config determinism or explicit internal owner consistency after every accepted move; that instrumentation remains pending.
+
+Schedule configuration:32 focused tests pass. New parser property checks implicit versus explicit defaults give identical stdout; unknown, negative, oversized, duplicate and malformed keys are rejected. Prior random shortest-cost, work-cap, timeout and legal rollback tests retained. Evidence schedule-comparison.json. No upstream expected results modified.

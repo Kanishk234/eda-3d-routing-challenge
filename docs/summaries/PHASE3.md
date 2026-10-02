@@ -121,3 +121,9 @@ Hard now1.2300004741250727 afterfixedlong-cyclefull-tierstage(1.229451)andoption
 Confirmed prior PathFinder/CUGR/cost-distance coverage; reviewed NTHU algorithm sections and PD-II/DAS objectives/pseudocode. DATE paper identified through the user's IEEE ID; only official programme abstract accessible, both conference PDF links404. Research notes distinguish reading from implementation.
 
 Original16-unit price experiment preserves finer fractional congestion penalties with checked scaled priorities and unscaled physical delays. Matched5M representative trials:4wins/1tie/1loss. Fixed seed1 full hard/congested stages improve all13 incumbents. Official selected-tier report45/45 legal: hard1.230324,congested1.088060,others unchanged.31 focused tests pass. Next: configurable history/present schedules and controlled small tuning sweep; final freeze/regeneration/submission remain pending.
+
+## Explicit negotiation schedules and complete DATE reading
+
+Added bounded local-negotiation config with existing defaults preserved. Four schedules on declared hard/congested case01, seeds1–3,5M expansions select2/1/1 forhard and2/4/4 forcongested;both beat default3/3 within their representative tier. Fixed seed1 full-tier stages yieldhard1.230658 andcongested1.090605. Independentselected-tierreport45/45legal;32focusedtests pass.
+
+User PDF parses all7pages and full text was read. Research analysis notes explicit CUGR cost reuse, adaptive via-discount/A* consistency requirements, directed backward costs and incomplete printed search specification. No source/model blindly imported; licensed PDF remains uncommitted. Next:broader development robustness and nonlinear-price/coordinated-topology experiment. Final freeze/regeneration/submission still pending.

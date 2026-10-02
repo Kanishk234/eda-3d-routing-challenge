@@ -50,3 +50,6 @@ Fanout stage fixedseed1 hard9/9 legal1.2054914475674077,allimprove vs1.186873;of
 
 - Current hard1.2303243121958916 and congested1.08805956745537 after optional fine-price stage; all13 cases improve their preceding incumbents. Other four selected tiers unchanged; independently rescored45/45 legal in tier-pricing-coverage.json. Matched representative screen4wins/1tie/1loss; no universal superiority claim.31 focused checks pass, including fine-mode work-cap rollback/repetition.
 - DATE11539267 identified and official abstract read; full text remains inaccessible. No claim of implementing or reproducing that paper. Six-link coverage and source-access limits in OPTIMIZATION_FOLLOWUP.md.
+
+- Current hard1.2306575756801885 and congested1.090605391888499 after fixed tier-specific schedule stages. Independent tier-schedule-coverage.json verifies45/45selected outputs legal;otherfourtiers unchanged. Hard7gains/2unchanged,congested4gains.32focusedtests pass. No universal tuning optimum or fresh-generation runtime claim.
+- User DATE PDF strict-parses all7pages and full extracted text was read. Source hash/content identity in date-paper-integrity.json; no pixel-level integrity or paper-implementation reproduction claim. Earlier abstract-only access status is superseded.

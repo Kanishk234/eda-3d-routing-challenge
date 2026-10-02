@@ -190,3 +190,12 @@ Tighter physical lookahead is optional:use `--mode fanout_tight` for negotiated 
 `dev/search_kernel_screen.py --control PATH` compares a rebuilt637a829 control binary with the current engine serially atfixed5M expansions. Treat those outputs as development measurements;this script doesnotcreatecompleteentries.
 
 Price-resolution experiment: `--mode fanout_fine` combines tight lookahead with16 search units per physical unit. Compare against `fanout_tight` at matching work budgets. Defaults retain original units. `dev/pricing_screen.py` runs the declared hard/congested case01 comparison on seeds1–3 serially and records manifests; it does not select complete entries or use held-out cases for tuning.
+
+Explicit local-negotiation schedule example:
+
+```bash
+.venv/bin/python dev/run_polish.py --suite benchmarks_hard --resume-dir dev/artifacts/20261002T000141.903840Z-exact-polish/routes --mode fanout_fine --budget 60 --passes 1000 --work-budget 5000000 --present-initial 2 --present-step 1 --history-step 1
+.venv/bin/python dev/schedule_screen.py
+```
+
+Defaults2/2/2 preserve prior behavior; values are bounded0..64. These settings control negotiated repair groups, not whole-instance restart/candidate algorithms. Optional PDF reader requirements are in dev/requirements-research.txt.

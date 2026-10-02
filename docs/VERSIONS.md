@@ -15,3 +15,5 @@ Setup/build/run commands in dev/README.md. One worker initially; tests 180 secon
 Sandbox exec/Node failed before launch; patch helper rejected UNC reparse point. Approved PowerShell writes/native WSL execution worked. Windows Git dubious-ownership refusal avoided via native WSL Git without global safe.directory changes.
 
 Phase2: same WSL/Python/GCC toolchain; exact_polish compiled with -O3 -std=c++17 -Wall -Wextra -Wpedantic. Binary/source/compiler identities are in phase2 run evidence. A compiled polisher now exists; earlier absence statements describe Phase0.
+
+Optional research reader installed in the project .venv: pypdf6.1.1, pinned in dev/requirements-research.txt. It is for user-provided PDF validation/text extraction only; solver and official scoring do not depend on it. No system Python installation changed.

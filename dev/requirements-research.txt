@@ -1,0 +1,2 @@
+# Optional local PDF inspection; not a solver or submission dependency.
+pypdf==6.1.1
