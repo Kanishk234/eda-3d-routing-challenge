@@ -48,3 +48,13 @@ Additional profiles measure repair owner-copy time and negotiated-group setup/co
 Experimental `fanout_fine` uses16 integer search units per physical unit in shortest search. Physical moves, occupied-resource penalties and A* bounds are all scaled consistently; congestion history/present price is scaled before fanout division. Thus fractional penalties survive to1/16 resolution. The physical predecessor-tree delay accumulator remains unscaled. Priority multiplication rejects overflow. Compact/discounted attach modes retain their existing units; fine mode uses shortest-based group routing only.
 
 Negotiated local repair now uses `NegotiationConfig`:present_initial/present_step/history_step, defaults2/2/2. Present cost in round i is initial+step*i; excess vertex use increments history by history_step per extra owner. Engine accepts `key=value` fields after optional WORK_LIMIT; wrapper exposes `--present-initial`, `--present-step`, `--history-step`. Each is bounded0..64; duplicates, malformed values and unknown engine keys fail before loading routes. Defaults preserve prior behavior. These fields apply to local negotiated repairs, not the separate whole-instance restart schedule or finite candidate generation. Mode presets remain for historical reproducibility; this is the first explicit-config migration, not removal of the entire mode chain.
+
+Spatial prototype selects whole nets by regions, rather than clipping branches.
+The selected target is detour-ranked; a seeded random vertex anchors nested
+4/8/12 XY boxes spanning all layers. Up to12 touching neighbors ranked by
+relaxed-delay excess join the target; region score sums their excess. This
+ranking tends to choose large boxes; it is not normalized by group size.
+External ownership and all foreign pins remain blocked; existing transaction
+snapshots restore failed, expired and nonimproving repairs. Fine-diverse
+outperforms this prototype on matched development screens; no strict-window
+repair, boundary stitching or unpublished competitor reproduction implemented.

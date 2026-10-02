@@ -20,3 +20,5 @@ AGENTS.md
 
 dev/artifacts/
 dev/upstream/
+
+!dev/incumbents/hard/*/routes/*.sol.json

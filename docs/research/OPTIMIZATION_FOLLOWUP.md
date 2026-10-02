@@ -200,3 +200,26 @@ Ranked proposals:
 6. Coarse corridor search for scale/stress: CUGR plans on a coarsened 3D graph, then searches fine grids in proposed boxes. Adapt for candidate generation with widening/full-grid fallback; unrestricted exactness is not preserved by corridor clipping alone. Source: https://cwpui.com/doc/c10.pdf ; https://github.com/cuhk-eda/cu-gr . SPRoute source repository https://github.com/asyncvlsi/SPRoute supports parallel global routing, but its README warns current code differs from publication versions. First parallelize independent seeds/cases after measuring RAM; measure total portfolio cost.
 
 Suggested experiment order after artifact recovery: controlled 100-vs-1000-cycle screen at fixed budgets; randomized repair order; adaptive/diverse groups; restricted conflict-based repair; stronger heuristic; component construction. Use hard01/04/07 and declared congested/design representatives, seeds1–3, matched starts and budgets, held-out hard08/09 only after selection. Track proposals, failed/nonimproving repairs, group size, gain per CPU second, expansions, peak RAM, and official legality/delay. Current congested/design runs still improve with longer caps, so larger bounded budgets there have more direct evidence than hard-only brute-force extension. No new score, implementation, test, or advantage claim from this research session.
+
+### Spatial prototype measured
+
+Original full-tree spatial selection implemented and screened against fine and
+fine-diverse on hard01/04/07,seeds1–3,5M/20M expansions,60s safety cap,
+schedule2/1/1, same available local incumbent.54/54 outputs official-legal;
+all hit exact work caps. Fine-diverse wins7/9 versus fine at each cap, relative
+development geomean1.000583/1.002586. Spatial wins2/ties1/loses6 at5M and
+wins3/loses6 at20M versus fine; relative geomean0.999350/0.999372. Spatial
+versus diverse wins2/loses7 then wins3/loses6. No tuning on08/09.
+
+Spatial repair counts:5M131 attempts/2 gains/89 failures/40 nonimprovements;
+20M564/17/315/232. Diverse1323/41/138/1144 then5349/109/516/4724. These
+are group counters, separate from per-net exploration. Actual group-size
+histogram was not instrumented; maximum13. Total wrapper screen cost278.214s
+excludes inherited incumbent generation, compilation, final stage and scorers.
+Equal expansions are not equal CPU work; timings recorded.
+
+Keep spatial optional; do not claim spatial LNS in general failed. Nested
+boxes scored by a nonnegative detour sum favor larger groups. Smaller or
+randomized groups, boundary-preserving repair and shared-trunk construction
+remain unmeasured options. Neither public geometry nor per-net competitor gaps
+were used to choose moves. Fine-diverse selected for fixed all-hard followup.

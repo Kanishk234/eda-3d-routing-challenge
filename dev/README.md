@@ -254,3 +254,26 @@ Explicit local-negotiation schedule example:
 ```
 
 Defaults2/2/2 preserve prior behavior; values are bounded0..64. These settings control negotiated repair groups, not whole-instance restart/candidate algorithms. Optional PDF reader requirements are in dev/requirements-research.txt.
+
+## Spatial group prototype
+
+Optional `{fanout_astar,fanout_tight,fanout_fine}_spatial` modes select a
+random incumbent vertex of a detour-ranked target, examine centered4/8/12 XY
+regions across all layers, and take up to12 touching neighbors ranked by
+physical excess over the obstacle-free bound. Choose the region with greatest
+neighbor excess (ties favor the smaller region). Rebuild whole trees with
+shuffled negotiation; external ownership and foreign pins remain frozen.
+Replacement routes may leave the region. Strict physical improvement and
+transaction rollback protect the incumbent. This is an original group-selection
+prototype, not a reproduction of an unpublished entrant solver.
+
+Matched screen (hard01/04/07,seeds1–3,fine/fine-diverse/spatial):
+
+```bash
+.venv/bin/python dev/neighborhood_screen.py spatial --kernel fanout_fine --work-budget 5000000 --budget 60 --present-initial 2 --present-step 1 --history-step 1 --start dev/artifacts/20261002T001313.450750Z-exact-polish/routes --out docs/evidence/phase3/NEW-spatial-screen.json
+```
+
+Use a new report destination for every run; `--work-budget 20000000` supplies
+the second declared comparison. Outputs are independently checked through the
+pinned official checker/scorer by the wrapper before acceptance. Development
+comparisons are not full-tier scores.

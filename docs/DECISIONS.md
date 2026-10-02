@@ -56,3 +56,23 @@
 34. Raise accepted cycle ceiling to1000 without changing bounded defaults. New matched10s screen100vs1000 hits wall cap in all six runs; two case delays identical, third differs by8 with unequal completed search counts. No causal cycle-limit improvement claim. Reserve hard08/09 for fixed-config followup, not screening.
 
 35. Compose neighborhood operators with astar/tight/fine kernels explicitly rather than replacing legacy presets. Forward equal declared work/time/schedule controls to the screen baseline and variants; use a fresh report path. All physical costs and corridor penalties share fine pricing units. New combinations require measured screening before retention; historical operator/price results do not establish gains for the combined methods.
+
+36. User explicitly authorized committing/pushing before further experiments.
+Fetched origin/main; no new remote changes or unmerged entries. Committed the
+integrated solver, original tools and compact evidence as d4032d4 and pushed
+to origin/main. Existing submission reference files/leaderboard untouched.
+37. Evaluate spatial selection with whole-tree rebuilding first, using bounded
+13-net transactions and existing fine/tight negotiation. Spatial boxes select
+groups rather than restrict replacement geometry. Score regions by own relaxed
+detour bounds; no public routes or public per-net gaps guide moves. Compare
+three modes on hard01/04/07,seeds1–3,5M/20M expansions,60s safety cap and
+schedule2/1/1, identical available local starts. Preserve08/09 for frozen
+validation. Expanded vertices equalize search work, not CPU cost.
+38. Retain fine-diverse for frozen full-hard followup after two matched screens:
+7/9 wins and2/9 losses versus fine at both5M and20M expansions. Spatial
+prototype loses6/9 at both budgets (one5M tie); retain only as experimental
+mode, not selected/default. The detour-sum window ranking favors larger nested
+regions;13-net groups and whole-tree rebuilding may impede repair. This does
+not reject boundary-preserving window repair or establish another entrant's
+method. Freeze fine-diverse/seed1/20M/1000cycles/60s/schedule2/1/1 for all nine
+cases from the same available1.227449 incumbent, without per-case selection.

@@ -162,3 +162,19 @@ Original16-unit price experiment preserves finer fractional congestion penalties
 Added bounded local-negotiation config with existing defaults preserved. Four schedules on declared hard/congested case01, seeds1–3,5M expansions select2/1/1 forhard and2/4/4 forcongested;both beat default3/3 within their representative tier. Fixed seed1 full-tier stages yieldhard1.230658 andcongested1.090605. Independentselected-tierreport45/45legal;32focusedtests pass.
 
 User PDF parses all7pages and full text was read. Research analysis notes explicit CUGR cost reuse, adaptive via-discount/A* consistency requirements, directed backward costs and incomplete printed search specification. No source/model blindly imported; licensed PDF remains uncommitted. Next:broader development robustness and nonlinear-price/coordinated-topology experiment. Final freeze/regeneration/submission still pending.
+
+## Spatial followup and current hard best
+
+Requested integration checkpoint pushed as d4032d4. Original whole-net spatial
+group prototype evaluated against fine and fine-diverse at5M/20M expansions
+on01/04/07,seeds1–3. All54 legal; spatial loses6/9 at each cap versus fine,
+so remains experimental. Fine-diverse wins7/9 at each cap, selected for fixed
+full-hard seed1/20M stage including reserved08/09.
+
+Current recorded and available hard best1.234984066216333,9/9legal, independent
+CLI score agreement. All improve recovered start; six improve/three regress
+against former recorded GitHub best,aggregate+0.35156%. Core62.106s,wrapper
+63.995s,peak4736KiB; tuning wrapper278.214s separate from inherited generation
+and scorers. Evidence: spatial-comparison.json and fine-diverse-hard-coverage.json.
+No public warm starts, per-case portfolio, full regeneration or same-budget
+whole-tier superiority claim. Final freeze/other-tier recovery remain pending.

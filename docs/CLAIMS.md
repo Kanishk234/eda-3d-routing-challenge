@@ -67,3 +67,12 @@ Fanout stage fixedseed1 hard9/9 legal1.2054914475674077,allimprove vs1.186873;of
 
 - Current hard1.2306575756801885 and congested1.090605391888499 after fixed tier-specific schedule stages. Independent tier-schedule-coverage.json verifies45/45selected outputs legal;otherfourtiers unchanged. Hard7gains/2unchanged,congested4gains.32focusedtests pass. No universal tuning optimum or fresh-generation runtime claim.
 - User DATE PDF strict-parses all7pages and full extracted text was read. Source hash/content identity in date-paper-integrity.json; no pixel-level integrity or paper-implementation reproduction claim. Earlier abstract-only access status is superseded.
+
+- Fixed fine-diverse followup hard1.234984066216333,9/9 legal, official CLI
+  agreement: fine-diverse-hard-coverage.json. All improve available1.227449;
+  versus recorded GitHub1.230658,six improve/three regress,+0.35156%aggregate.
+  Adds20M expansions/case; no same-budget full-tier superiority/regeneration.
+- Fine-diverse beats fine7/9 at both5M/20M on01/04/07,seeds1–3; spatial
+  loses6/9 at both budgets. All54 legal, exact work caps reached. Evidence:
+  spatial-comparison.json and two screen manifests. Scope is sampled cases,
+  not universal operator superiority or rejection of spatial LNS generally.
