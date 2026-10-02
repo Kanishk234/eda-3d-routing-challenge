@@ -1,0 +1,4 @@
+# Optional CPU neural probe; core solver does not require PyTorch.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.8.0+cpu
+numpy==2.5.3

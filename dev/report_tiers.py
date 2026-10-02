@@ -56,7 +56,7 @@ def main():
                      "official_reference_ancestor": reference_ancestor,
                      "initial_route_artifact_available": ancestry_available,
                      "inherited_case_portfolio": inherited_portfolio,
-                     "known_total_optimizer_wall_s": sum(x["wrapper_wall_s"] for x in chain) + (inherited_portfolio["known_ancestry_wrapper_wall_s"] if inherited_portfolio else 0),
+                     "known_total_optimizer_wall_s": sum(x["wrapper_wall_s"] for x in chain) + (inherited_portfolio.get("known_ancestry_wrapper_wall_s",sum(inherited_portfolio.get("known_ancestry_runs",{}).values())) if inherited_portfolio else 0),
                      "attribution": "Official challenge reference routes followed by local optimization" if reference_ancestor else ("Locally validated pipeline; see ancestor manifests" if ancestry_available else "Inherited archive; older artifacts unavailable, consult original coverage evidence"),
                      "optimizer_chain": list(reversed(chain)),
                      "recorded_optimizer_chain_wall_s": sum(x["wrapper_wall_s"] for x in chain),
