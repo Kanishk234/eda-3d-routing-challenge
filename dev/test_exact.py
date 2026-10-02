@@ -212,6 +212,26 @@ class ExactKernel(unittest.TestCase):
                 self.assertTrue(check(inst,out).legal)
                 self.assertLessEqual(stats["total_delay"],before.total_delay)
 
+    def test_seed_first_window_work_checkpoint_repetition(self):
+        pins=[Pin(0,0,0,0,2,0),Pin(1,0,0,4,2,0),
+              Pin(2,1,0,2,0,0),Pin(3,1,0,2,4,0)]
+        inst=Instance("crossing",5,5,2,[2,1],2,[],pins,[Net(0,0,[1]),Net(1,2,[3])])
+        horizontal=[(0,2,0),(0,2,1),(1,2,1),(2,2,1),(3,2,1),(4,2,1),(4,2,0)]
+        vertical=[(2,y,0) for y in range(5)]
+        sub=Submission(inst.name,[NetRoute(0,list(zip(horizontal,horizontal[1:]))),
+                                  NetRoute(1,list(zip(vertical,vertical[1:])))])
+        before=check(inst,sub).total_delay
+        for limit in (1,20,100,1000):
+            cmd=[str(ENGINE),"5","1","5","fanout_fine_window",str(limit),"repair_first=1"]
+            runs=[subprocess.run(cmd,input=encode(inst,sub),text=True,capture_output=True,timeout=8) for _ in range(2)]
+            self.assertEqual(runs[0].returncode,0)
+            self.assertEqual(runs[0].stdout,runs[1].stdout)
+            out,stats=decode(inst,runs[0].stdout)
+            checked=check(inst,out)
+            self.assertTrue(checked.legal)
+            self.assertLessEqual(checked.total_delay,before)
+            self.assertLessEqual(stats["expansions"],limit)
+
     def test_negotiated_zero_budget_keeps_checkpoint(self):
         inst,sub=make(3,1,[2],3,(0,0,0),[(2,0,0)],
                       own_edges=[((0,0,0),(1,0,0)),((1,0,0),(2,0,0))])

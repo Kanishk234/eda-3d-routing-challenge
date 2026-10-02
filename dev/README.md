@@ -336,3 +336,9 @@ Stress has one case: this pilot has no held-out stress validation and must be de
 ```
 
 The repeated-seed stress/scale01 pilot declares selection before running:atleast2of3wins and geometric delay ratio>1versusrandom order. Stress has no separate held-out case. Full-tier validation and all generation costs remain separate.
+
+### Seed-first whole-net window experiment
+
+`--mode fanout_fine_window` (also astar/tight kernels) uses existing4/8/12 XY window selection across all layers, frees selected whole nets, routes the seed with outside ownership blocked, then negotiates remaining nets with the seed fixed. Exact fixed-owner polish follows. Outer transaction rolls back failures, interruptions and nonimproving total delay. Replacement routes may leave the selection window; unselected nets remain fixed. This is an independent prototype, not a reproduction of unavailable pathfinder_lns source or partial-branch stitching.
+
+Screen: `.venv/bin/python dev/window_seed_first_screen.py` uses current frozen hard incumbents,01/04/07,seeds1–3,3M expansions and schedule2/1/1. Refuses to overwrite evidence. All trial effort counts, including controls and rejected attempts.

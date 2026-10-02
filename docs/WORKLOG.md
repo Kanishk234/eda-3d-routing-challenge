@@ -412,3 +412,32 @@ Independent pinned CLI validates all45 selected routes: intro1.0974025183797085,
 Next: measure actual per-net search effort to refine scheduling; compare targeted partial-branch repairs against retained whole-net controls before full-tier adoption. Final freeze and submission remain pending.
 
 No source edits during active runs. User PDF untouched; local commits authorized, no push or publication. No jobs remain after archival checks.
+
+## Correct current pathfinder_lns tier mapping
+
+
+Live PR3 head c2d9d9f583d2f332ebb84d22592ee511f6e56e33, updated2026-10-02T00:55:12Z, closed at inspection. Author-reported tier scores: intro1.1514,hard1.3884,scale1.1277,stress1.0914,congested1.3111,designs1.4354. Current outputs were not independently rescored in this check. Corrects earlier chat mapping: congested is not ahead, designs has1.4354 rather than stress. No global leaderboard supremacy claim.
+
+Description: incremental root-distance-seeded A*, fanout-scaled negotiated congestion, exact fixed-owner reroute, seed-net excess-bound priority, small-window rip-up, seed-first routing and conflict-driven repair, nonincreasing physical acceptance, continuation of several distinct solutions, integer radix queue. Hard runtime author-reported34core-hours; cannot compare algorithm efficiency with our short recent passes. No compiled solver source in recursive submission tree; author offers source on request. No contact made and no routes imported as warm starts.
+
+Our whole-net adaptive blocker groups differ from the described window-selected conflict-driven reconstruction. Next concrete experiment: select a small window around a detoured seed branch, free affected whole nets transactionally, route the seed first, repair displaced nets, exact-polish and accept only nonworse total physical delay. Compare against existing adaptive controls with matched work and repeated seeds; retain diverse local incumbents for continuation. This remains a proposed experiment, not implemented evidence. Partial branches require an additional coherent tree/boundary contract.
+
+Source: https://github.com/partcleda/eda-3d-routing-challenge/pull/3 . Snapshot: docs/evidence/phase3/pathfinder-lns-current-description.json.
+
+Read-only public API inspection; no solver runs or background jobs. Scores remain independently verified local incumbents from previous checkpoint.
+
+# Seed-first whole-net window repair
+
+Independent prototype uses existing4/8/12 XY windows across all layers to select whole nets. Route the seed first, freeze its ownership, negotiate the remaining selected nets, then exact-polish every net. Replacement paths can leave the selection window; external nets and all foreign terminals remain protected. Outer snapshot restores failed, expired or nonimproving transactions. This is not partial-branch stitching or a reproduction of unavailable competitor source.
+
+Warning-free build;37 focused checks pass, including new crossing work-cap/checkpoint repetition at1/20/100/1000 expansions with repair-first enabled. Existing crossing checks now include window kernels. Source/engine wrapper frozen during timing runs.
+
+Matched hard01/04/07,seeds1–3,3M expansions each,schedule2/1/1:18 officially legal trials,all reach exactworkcap;window2wins/6ties/1loss versus adaptive,geometric delay ratio1.00007837. Adaptive851 attempts/3acceptedgrouprepairs versus window107/2. Screen wrapper30.267s. Keep experimental,not universal/default. No unseen-case superiority or CPU speed claim.
+
+Fixed seed1 full9case window3M continuation costs12.098s wrapper and improves06by34delay,07by10;seven unchanged including reserved08/09. Hard1.256758876094034. Critically, zero accepted window repairs in this stage: gains came from ordinary single-net polish. Do not attribute full-tier gain to the new operator. Added continuation effort is separate from the matched screen.
+
+Pinned CLI independently verifies45/45 selected outputs in tier-window-followup-coverage.json. Otherfive scores unchanged. Canonical selection stores scope,ancestry,archive hashes;original source/manifests/routes retained. Missing older ancestors/reference-generation cost remain unknown; no final freeze or complete regeneration claim.
+
+Next concrete experiment: target windows around seed ideal-path conflicts rather than random incumbent vertices, compare conflict-driven group expansion and retained adaptive controls. Existing window scoring favors large nested boxes; partial branches need a coherent boundary/tree contract. Keep multi-start distinct-basin continuation as a separate direction.
+
+No running optimization jobs; archive restoration checked separately. PDF untouched, no push/publication.

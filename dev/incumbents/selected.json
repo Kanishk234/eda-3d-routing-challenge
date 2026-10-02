@@ -1,6 +1,6 @@
 {
-  "coverage": "docs/evidence/phase3/tier-polish-order-followup-coverage.json",
-  "coverage_sha256": "168081d430c47489f10d4dde12c577ef0cd2c259bc1910528b9582ebc69f71f6",
+  "coverage": "docs/evidence/phase3/tier-window-followup-coverage.json",
+  "coverage_sha256": "130d0b0354b4973570cbe4ba335a2e78d0a3c4d3aa4eb158645836cd80ff79bf",
   "tiers": [
     {
       "tier": "intro",
@@ -11,10 +11,15 @@
     },
     {
       "tier": "hard",
-      "run_id": "20261002T032906.935646Z-exact-polish",
-      "score": 1.2564870553234753,
-      "archive": "dev/incumbents/hard/20261002T032906.935646Z-exact-polish.tar.gz",
-      "archive_sha256": "595ed30b0208e998230909c1b543639851a730d36a3472c35c3c74e006e24443"
+      "run_id": "20261002T041703.423261Z-exact-polish",
+      "score": 1.256758876094034,
+      "archive": "dev/incumbents/hard/20261002T041703.423261Z-exact-polish.tar.gz",
+      "archive_sha256": "b0724cf03bd3c0377630e3555ae4371b387561192ec293117dfc188460388ed2",
+      "selection_context": {
+        "screen": "docs/evidence/phase3/window-seed-first-screen.json",
+        "configuration": "Fixed seed1,fanout_fine_window,3M expansions per case,group13,schedule2/1/1",
+        "scope": "All nine cases; full-stage gains come from ordinary single-net polish, zero accepted window repairs. Mixed pilot supports experimental status only."
+      }
     },
     {
       "tier": "scale",

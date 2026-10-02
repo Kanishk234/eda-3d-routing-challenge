@@ -59,6 +59,7 @@ struct Engine {
     bool ablation_mode=false;
     bool compact_groups=false,fanout_prices=false,astar_search=false,tight_heuristic=false,gap_order=false,discounted_groups=false;
     bool random_ties=false; std::uint64_t tie_seed=0;
+    bool seed_first_groups=false;
     bool shuffled_groups=false,diverse_proposals=false,adaptive_groups=false,spatial_groups=false;
     std::mt19937_64 group_rng{0};
     std::array<double,3> neighborhood_weights{{1,1,1}};
@@ -430,6 +431,29 @@ struct Engine {
         }
         return false;
     }
+    bool seed_first_repair(const std::vector<int>& group,I& after,int rounds) {
+        // Outer transaction owns rollback, including expired/incomplete repairs.
+        int seed=group.front(); Net candidate;
+        if(!shortest(nets[seed],candidate)) return false;
+        nets[seed]=std::move(candidate);
+        for(int v:nets[seed].vertices) owner[v]=nets[seed].id;
+        std::vector<int> displaced(group.begin()+1,group.end());
+        I remainder=0;
+        if(!negotiate(displaced,remainder,rounds)) return false;
+        // Exact fixed-owner polish; a failed search rolls the transaction back.
+        after=0;
+        for(int j:group) {
+            Net improved;
+            if(!shortest(nets[j],improved)) return false;
+            if(improved.delay<=nets[j].delay) {
+                for(int v:nets[j].vertices) owner[v]=-1;
+                for(int v:improved.vertices) owner[v]=improved.id;
+                nets[j]=std::move(improved);
+            }
+            after=add(after,nets[j].delay);
+        }
+        return true;
+    }
     bool select_candidates(const std::vector<int>& group,I& after) {
         std::vector<std::vector<Net>> choices(group.size());
         std::vector<int> usage(vcount,0);
@@ -619,7 +643,8 @@ struct Engine {
                     for(int v:nets[j].vertices) owner[v]=-1;
                 }
                 bool legal=true; I after=0;
-                if(selection) legal=select_candidates(group,after);
+                if(seed_first_groups) legal=seed_first_repair(group,after,repair_rounds);
+                else if(selection) legal=select_candidates(group,after);
                 else if(negotiated) legal=negotiate(group,after,repair_rounds);
                 else for(int j:group) {
                     Net candidate;
@@ -759,7 +784,7 @@ int main(int argc,char**argv) {
         const std::string kernel=split==std::string::npos?mode:mode.substr(0,split);
         const std::string operation=split==std::string::npos?"":mode.substr(split+1);
         const bool neighborhood_mode=(kernel=="fanout_astar" || kernel=="fanout_tight" || kernel=="fanout_fine") &&
-                                     (operation=="shuffle" || operation=="diverse" || operation=="adaptive" || operation=="spatial" || operation=="hybrid" || operation=="donor");
+                                     (operation=="shuffle" || operation=="diverse" || operation=="adaptive" || operation=="spatial" || operation=="hybrid" || operation=="donor" || operation=="window");
         bool search_only=std::string(argv[4])=="search";
         if(!search_only && !neighborhood_mode && std::string(argv[4])!="polish" && std::string(argv[4])!="repair" && std::string(argv[4])!="repairsoft" && std::string(argv[4])!="ablation" && std::string(argv[4])!="negotiated" && std::string(argv[4])!="explore" && std::string(argv[4])!="restart" && std::string(argv[4])!="select" && std::string(argv[4])!="wide" && std::string(argv[4])!="walk" && std::string(argv[4])!="descent" && std::string(argv[4])!="compact" && std::string(argv[4])!="fanout" && std::string(argv[4])!="restart_fanout" && std::string(argv[4])!="restart_compact" && std::string(argv[4])!="restart_polish" && std::string(argv[4])!="fanout_walk" && std::string(argv[4])!="fanout_descent" && std::string(argv[4])!="astar" && std::string(argv[4])!="fanout_astar" && std::string(argv[4])!="fanout_gap" && std::string(argv[4])!="fanout_astar_gap" && std::string(argv[4])!="restart_astar" && std::string(argv[4])!="treecost" && std::string(argv[4])!="fanout_tight" && std::string(argv[4])!="astar_tight" && std::string(argv[4])!="fanout_fine") throw std::runtime_error("invalid mode");
         std::signal(SIGINT,on_signal); std::signal(SIGTERM,on_signal);
@@ -819,7 +844,8 @@ int main(int argc,char**argv) {
             engine.shuffled_groups=true;engine.group_rng.seed(seed^0x6a09e667f3bcc909ULL);
             engine.diverse_proposals=operation=="diverse" || operation=="hybrid";
             engine.adaptive_groups=operation=="adaptive" || operation=="hybrid" || operation=="donor";
-            engine.spatial_groups=operation=="spatial";
+            engine.spatial_groups=operation=="spatial" || operation=="window";
+            engine.seed_first_groups=operation=="window";
             engine.explore(seed,passes,true);
         }
         else if(std::string(argv[4])=="fanout_fine") {engine.price_units=16;engine.tight_heuristic=true;engine.astar_search=true;engine.fanout_prices=true;engine.explore(seed,passes,true);}
