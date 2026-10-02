@@ -8,7 +8,7 @@ from pathlib import Path
 from measure import ROOT, OFFICIAL, digest, save
 
 
-def run(case, mode, budget, passes, seed, start, work_budget, negotiation):
+def run(case, mode, budget, passes, seed, start, work_budget, negotiation, donor=None):
     before = set((ROOT / "dev/artifacts").glob("*-exact-polish/manifest.json"))
     command = [sys.executable, str(ROOT / "dev/run_polish.py"), "--mode", mode,
                "--budget", str(budget), "--passes", str(passes), "--seed", str(seed),
@@ -16,6 +16,8 @@ def run(case, mode, budget, passes, seed, start, work_budget, negotiation):
     command += ["--work-budget", str(work_budget)]
     for key, value in negotiation.items():
         command += ["--" + key.replace("_", "-"), str(value)]
+    if mode.endswith("_donor"):
+        command += ["--donor-dir",str(donor)]
     if case:
         command += ["--case", case]
     subprocess.run(command, check=True)
@@ -31,8 +33,9 @@ def run(case, mode, budget, passes, seed, start, work_budget, negotiation):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("stage", choices=["recover", "cycles", "operators", "spatial", "hybrid"])
+    parser.add_argument("stage", choices=["recover", "cycles", "operators", "spatial", "hybrid", "donor"])
     parser.add_argument("--start", type=Path)
+    parser.add_argument("--donor-dir",type=Path)
     parser.add_argument("--kernel", choices=["fanout_astar", "fanout_tight", "fanout_fine"], default="fanout_astar")
     parser.add_argument("--work-budget", type=int, default=0)
     parser.add_argument("--budget", type=float, help="per-case wall safety cap; stage defaults are20/10/5 seconds")
@@ -42,6 +45,7 @@ def main():
     args = parser.parse_args()
     if not 0 <= args.work_budget < 2**64 or (args.budget is not None and not 0 <= args.budget <= 600):
         parser.error("invalid budget")
+    if args.stage=="donor" and (not args.donor_dir or args.kernel!="fanout_fine"): parser.error("donor screen requires fine kernel and explicit donor directory")
     negotiation = {key: getattr(args, key) for key in ("present_initial", "present_step", "history_step")}
     if any(not 0 <= value <= 64 for value in negotiation.values()):
         parser.error("schedule values must be0..64")
@@ -68,15 +72,18 @@ def main():
                     for seed in (1, 2, 3)])
     if args.stage == "hybrid":
         configs=[(args.kernel+"_"+op,5,1000,seed) for op in ("diverse","adaptive","hybrid") for seed in (1,2,3)]
+    if args.stage == "donor":
+        configs=[(args.kernel+"_"+op,5,1000,seed) for op in ("adaptive","donor") for seed in (1,2,3)]
     if args.budget is not None:
         configs = [(mode, args.budget, passes, seed) for mode, _, passes, seed in configs]
+    report["donor_directory"] = str(args.donor_dir) if args.donor_dir else None
     report["start"] = str(start)
     report["start_hashes"] = {p.name: digest(p) for p in start.glob("*.sol.json")}
     report["configs"] = configs
     save(destination, report)
     for mode, budget, passes, seed in configs:
         for case in cases:
-            path, manifest = run(case, mode, budget, passes, seed, start, args.work_budget, negotiation)
+            path, manifest = run(case, mode, budget, passes, seed, start, args.work_budget, negotiation,args.donor_dir)
             report["rows"].append({"run_id": manifest["run_id"], "manifest_sha256": digest(path),
                                    "source_identity": manifest["source"]["files_sha256"],
                                    "source_revision": manifest["source"]["revision"],
@@ -117,6 +124,14 @@ def main():
                     comparisons.append({"mode": mode, "control": control, **counts,
                                         "geomean_delay_ratio": math.exp(sum(map(math.log, ratios))/len(ratios))})
             report["matched_comparisons"] = comparisons
+    if args.stage == "donor":
+        counts={"wins":0,"ties":0,"losses":0};ratios=[]
+        for seed in (1,2,3):
+            control=next(s for s in summaries if s["mode"]==args.kernel+"_adaptive" and s["seed"]==seed)
+            candidate=next(s for s in summaries if s["mode"]==args.kernel+"_donor" and s["seed"]==seed)
+            for case,delay in candidate["delays"].items():
+                old=control["delays"][case];counts["wins" if delay<old else "losses" if delay>old else "ties"]+=1;ratios.append(old/delay)
+        report["matched_comparisons"]=[{**counts,"geomean_delay_ratio":math.exp(sum(map(math.log,ratios))/len(ratios))}]
     save(destination, report)
     print("report:", destination)
 

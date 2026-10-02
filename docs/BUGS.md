@@ -55,3 +55,7 @@ The existing crossing property check looped over three seed labels without passi
 ## Archived incumbent ancestry availability
 
 Continuing a tracked archive can reach an original warm-start path absent from this checkout. The coverage reporter previously classified that as a known locally generated origin. Record artifact availability and unknown reference ancestry explicitly when the chain stops at a missing artifact; retain original incoming coverage evidence for the longer recorded chain. Route hashes, legality and physical scores are unaffected.
+
+## Donor screen source snapshot instrumentation mismatch
+
+A read_s-only edit was briefly saved while the screen binary was already running, then reverted without recompilation. Affected run IDs and actual compiled source hash are explicitly listed in donor-neighborhood-screen.json. All trials used the same binary; routes/priorities/work counts are unaffected. Original manifests/snapshots remain intact. Affected snapshots contain an uncompiled timer edit and alone do not reproduce that exact binary; use the recorded actual compiled source hash. The actual read_s metric excludes donor parsing; wrapper/core wall measurements include it. Freeze source during active experiments, including instrumentation edits.

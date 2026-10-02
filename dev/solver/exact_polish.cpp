@@ -44,7 +44,7 @@ struct Engine {
     I via;
     I price_units=1;
     std::vector<I> layer;
-    std::vector<Net> nets;
+    std::vector<Net> nets, donor_nets;
     std::vector<int> owner,pin_owner,parent;
     std::vector<I> dist,heuristic_table;
     std::chrono::steady_clock::time_point deadline;
@@ -551,6 +551,16 @@ struct Engine {
                         previous=std::move(alternate);
                     }
                 }
+                if(!donor_nets.empty()) {
+                    const Net& donor=donor_nets[index];
+                    auto merit=[&](const Net& candidate) {
+                        std::set<int> displaced;
+                        for(int v:candidate.vertices) if(owner[v]>=0 && owner[v]!=candidate.id) displaced.insert(owner[v]);
+                        return std::make_pair(displaced.size(),candidate.delay);
+                    };
+                    if(donor.delay<nets[index].delay &&
+                       (ideal.delay>=nets[index].delay || merit(donor)<merit(ideal))) ideal=donor;
+                }
                 if(ideal.delay>=nets[index].delay) { ++no_gain; continue; }
                 std::set<int> blockers;
                 for(int v:ideal.vertices) if(owner[v]>=0 && owner[v]!=nets[index].id)
@@ -708,7 +718,7 @@ int main(int argc,char**argv) {
         const std::string kernel=split==std::string::npos?mode:mode.substr(0,split);
         const std::string operation=split==std::string::npos?"":mode.substr(split+1);
         const bool neighborhood_mode=(kernel=="fanout_astar" || kernel=="fanout_tight" || kernel=="fanout_fine") &&
-                                     (operation=="shuffle" || operation=="diverse" || operation=="adaptive" || operation=="spatial" || operation=="hybrid");
+                                     (operation=="shuffle" || operation=="diverse" || operation=="adaptive" || operation=="spatial" || operation=="hybrid" || operation=="donor");
         bool search_only=std::string(argv[4])=="search";
         if(!search_only && !neighborhood_mode && std::string(argv[4])!="polish" && std::string(argv[4])!="repair" && std::string(argv[4])!="repairsoft" && std::string(argv[4])!="ablation" && std::string(argv[4])!="negotiated" && std::string(argv[4])!="explore" && std::string(argv[4])!="restart" && std::string(argv[4])!="select" && std::string(argv[4])!="wide" && std::string(argv[4])!="walk" && std::string(argv[4])!="descent" && std::string(argv[4])!="compact" && std::string(argv[4])!="fanout" && std::string(argv[4])!="restart_fanout" && std::string(argv[4])!="restart_compact" && std::string(argv[4])!="restart_polish" && std::string(argv[4])!="fanout_walk" && std::string(argv[4])!="fanout_descent" && std::string(argv[4])!="astar" && std::string(argv[4])!="fanout_astar" && std::string(argv[4])!="fanout_gap" && std::string(argv[4])!="fanout_astar_gap" && std::string(argv[4])!="restart_astar" && std::string(argv[4])!="treecost" && std::string(argv[4])!="fanout_tight" && std::string(argv[4])!="astar_tight" && std::string(argv[4])!="fanout_fine") throw std::runtime_error("invalid mode");
         std::signal(SIGINT,on_signal); std::signal(SIGTERM,on_signal);
@@ -736,6 +746,16 @@ int main(int argc,char**argv) {
         auto read_start=std::chrono::steady_clock::now();
         engine.read(search_only);
         engine.read_s=std::chrono::duration<double>(std::chrono::steady_clock::now()-read_start).count();
+        if(operation=="donor") {
+            Engine alternate; alternate.deadline=engine.deadline; alternate.read(false);
+            if(alternate.w!=engine.w || alternate.h!=engine.h || alternate.l!=engine.l ||
+               alternate.layer!=engine.layer || alternate.via!=engine.via || alternate.nets.size()!=engine.nets.size())
+                throw std::runtime_error("donor instance mismatch");
+            for(std::size_t j=0;j<engine.nets.size();++j)
+                if(alternate.nets[j].id!=engine.nets[j].id || alternate.nets[j].root!=engine.nets[j].root || alternate.nets[j].sinks!=engine.nets[j].sinks)
+                    throw std::runtime_error("donor terminals mismatch");
+            engine.donor_nets=std::move(alternate.nets);
+        }
         auto optimization_start=std::chrono::steady_clock::now();
         engine.ablation_mode=std::string(argv[4])=="ablation";
         if(neighborhood_mode) {
@@ -744,7 +764,7 @@ int main(int argc,char**argv) {
             engine.price_units=kernel=="fanout_fine"?16:1;
             engine.shuffled_groups=true;engine.group_rng.seed(seed^0x6a09e667f3bcc909ULL);
             engine.diverse_proposals=operation=="diverse" || operation=="hybrid";
-            engine.adaptive_groups=operation=="adaptive" || operation=="hybrid";
+            engine.adaptive_groups=operation=="adaptive" || operation=="hybrid" || operation=="donor";
             engine.spatial_groups=operation=="spatial";
             engine.explore(seed,passes,true);
         }

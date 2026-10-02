@@ -1,0 +1,5591 @@
+{
+  "upstream_revision": "499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+  "rows": [
+    {
+      "tier": "intro",
+      "run_id": "20261002T023420.807032Z-exact-polish",
+      "manifest_sha256": "dc7f816b0f66a047a5f600c1d5f992cde6ca9c56f4623001d6a5e7e28e18d9e6",
+      "source_identity": "3f38c35408f32d0771a3f24b367821f36bdb503e5b06758880a7b29ecdc20389",
+      "config": {
+        "suite": "benchmarks",
+        "case": null,
+        "mode": "fanout_fine_adaptive",
+        "budget": 60.0,
+        "work_budget": 5000000,
+        "present_initial": 2,
+        "present_step": 2,
+        "history_step": 2,
+        "seed": 1,
+        "passes": 1000,
+        "resume_dir": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T002033.150869Z-exact-polish/routes"
+      },
+      "score": {
+        "format": "m3d-leaderboard",
+        "complete": true,
+        "aggregate_score": 1.0955758162466702,
+        "n_cases": 20,
+        "n_legal": 20,
+        "formula": "aggregate = geomean_c(baseline_total_c / submission_total_c); higher is better; baseline scores 1.0; all cases must be legal for a complete ranked submission (else aggregate = 0.0)",
+        "cases": [
+          {
+            "case": "case_01",
+            "legal": true,
+            "total_delay": 206,
+            "baseline_delay": 240,
+            "ratio": 1.1650485436893203,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_02",
+            "legal": true,
+            "total_delay": 1030,
+            "baseline_delay": 1190,
+            "ratio": 1.1553398058252426,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_03",
+            "legal": true,
+            "total_delay": 1623,
+            "baseline_delay": 1757,
+            "ratio": 1.0825631546518792,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_04",
+            "legal": true,
+            "total_delay": 2042,
+            "baseline_delay": 2162,
+            "ratio": 1.058765915768854,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_05",
+            "legal": true,
+            "total_delay": 3879,
+            "baseline_delay": 4197,
+            "ratio": 1.0819798917246712,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_06",
+            "legal": true,
+            "total_delay": 5521,
+            "baseline_delay": 6155,
+            "ratio": 1.1148342691541386,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_07",
+            "legal": true,
+            "total_delay": 5425,
+            "baseline_delay": 5855,
+            "ratio": 1.07926267281106,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_08",
+            "legal": true,
+            "total_delay": 7831,
+            "baseline_delay": 8549,
+            "ratio": 1.091686885455242,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_09",
+            "legal": true,
+            "total_delay": 8306,
+            "baseline_delay": 9728,
+            "ratio": 1.1712015410546592,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_10",
+            "legal": true,
+            "total_delay": 11045,
+            "baseline_delay": 11969,
+            "ratio": 1.0836577636939793,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_11",
+            "legal": true,
+            "total_delay": 12858,
+            "baseline_delay": 14142,
+            "ratio": 1.099860009332711,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_12",
+            "legal": true,
+            "total_delay": 16797,
+            "baseline_delay": 18509,
+            "ratio": 1.1019229624337679,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_13",
+            "legal": true,
+            "total_delay": 20883,
+            "baseline_delay": 22599,
+            "ratio": 1.0821721017095245,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_14",
+            "legal": true,
+            "total_delay": 22411,
+            "baseline_delay": 24481,
+            "ratio": 1.0923653562982465,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_15",
+            "legal": true,
+            "total_delay": 25742,
+            "baseline_delay": 27648,
+            "ratio": 1.0740424209463135,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_16",
+            "legal": true,
+            "total_delay": 35068,
+            "baseline_delay": 37902,
+            "ratio": 1.080814417702749,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_17",
+            "legal": true,
+            "total_delay": 45922,
+            "baseline_delay": 49554,
+            "ratio": 1.0790906319411175,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_18",
+            "legal": true,
+            "total_delay": 49755,
+            "baseline_delay": 53805,
+            "ratio": 1.0813988543864939,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_19",
+            "legal": true,
+            "total_delay": 42294,
+            "baseline_delay": 45488,
+            "ratio": 1.0755189861446068,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_20",
+            "legal": true,
+            "total_delay": 48348,
+            "baseline_delay": 51660,
+            "ratio": 1.0685033507073716,
+            "runtime_s": null,
+            "reasons": []
+          }
+        ]
+      },
+      "warm_start": {
+        "directory": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T002033.150869Z-exact-polish/routes",
+        "origin": "validated baseline or explicit resumed incumbent"
+      },
+      "official_reference_warm_start": false,
+      "official_reference_ancestor": false,
+      "initial_route_artifact_available": true,
+      "inherited_case_portfolio": null,
+      "known_total_optimizer_wall_s": 184.1095011680154,
+      "attribution": "Locally validated pipeline; see ancestor manifests",
+      "optimizer_chain": [
+        {
+          "run_id": "20261001T225037.404983Z-exact-polish",
+          "mode": "polish",
+          "wrapper_wall_s": 20.387601818016265
+        },
+        {
+          "run_id": "20261002T001849.269427Z-exact-polish",
+          "mode": "fanout_fine",
+          "wrapper_wall_s": 42.42393137700856
+        },
+        {
+          "run_id": "20261002T002033.150869Z-exact-polish",
+          "mode": "fanout_fine",
+          "wrapper_wall_s": 77.75948483799584
+        },
+        {
+          "run_id": "20261002T023420.807032Z-exact-polish",
+          "mode": "fanout_fine_adaptive",
+          "wrapper_wall_s": 43.53848313499475
+        }
+      ],
+      "recorded_optimizer_chain_wall_s": 184.1095011680154,
+      "initial_route_source": "/home/younix/eda-3d-routing-challenge/dev/artifacts/incumbents/intro",
+      "wrapper_wall_s": 43.53848313499475,
+      "core_wall_s": 38.47586254501948,
+      "peak_core_rss_kib": 6316,
+      "cases": [
+        {
+          "case": "case_01",
+          "case_sha256": "cc44aff1a21f0d4854ced9d550e95d4a77f6f475b6be0f3eec0416b070625b8c",
+          "case_seed": 741772126,
+          "warm_start_sha256": "d801d142bedaf64d8c3f57b6f7e1704cfa20650f3006b955bb540f2e4f4a5230",
+          "before_delay": 206,
+          "before_resources": {
+            "net_vertex_uses": 87,
+            "edges": 81,
+            "vias": 22
+          },
+          "process": {
+            "command": [
+              "/home/younix/eda-3d-routing-challenge/dev/artifacts/build/exact_polish",
+              "60.0",
+              "1",
+              "1000",
+              "fanout_fine_adaptive",
+              "5000000",
+              "history_step=2",
+              "present_initial=2",
+              "present_step=2"
+            ],
+            "cwd": "/home/younix/eda-3d-routing-challenge",
+            "budget_s": 60.0,
+            "external_cap_s": 65.0,
+            "wall_s": 0.5176039570360444,
+            "exit_code": 0,
+            "interrupted": false,
+            "external_timeout": false,
+            "peak_rss_kib": 4096,
+            "user_cpu_s": 0.49,
+            "system_cpu_s": 0.0,
+            "repair_counters": {
+              "proposals": 6000,
+              "no_gain": 6000,
+              "too_many": 0,
+              "attempts": 0,
+              "negotiation_rounds": 0,
+              "conflicted_rounds": 0,
+              "fresh_attempts": 0,
+              "fresh_legal": 0,
+              "read_s": 0.000172826,
+              "validation_s": 7.2757e-05,
+              "optimization_s": 0.48613,
+              "search_reset_s": 0.00619481,
+              "search_rebuild_s": 0.0257563,
+              "present_initial": 2,
+              "present_step": 2,
+              "history_step": 2,
+              "price_units": 16,
+              "snapshot_s": 0,
+              "negotiation_setup_s": 0,
+              "negotiation_scan_s": 0,
+              "work_limit": 5000000,
+              "work_exhausted": 0,
+              "expansions_per_second": 2420610.0,
+              "uphill_moves": 0,
+              "selection_nodes": 0,
+              "selection_complete": 0,
+              "selection_partial": 0,
+              "neighborhood_attempts": [
+                0,
+                0,
+                0
+              ],
+              "neighborhood_gains": [
+                0,
+                0,
+                0
+              ],
+              "failed": 0,
+              "nonimproving": 0
+            }
+          },
+          "candidate_accepted": true,
+          "error": null,
+          "core": {
+            "total_delay": 206,
+            "budget_reached": false,
+            "accepted_replacements": 0,
+            "searches": 12000,
+            "expansions": 1176731
+          },
+          "resources": {
+            "net_vertex_uses": 87,
+            "edges": 81,
+            "vias": 22
+          },
+          "legal": true,
+          "total_delay": 206,
+          "ratio": 1.1650485436893203,
+          "output_sha256": "42ba6d788aba90fe9e4783b1659a9b999a0941ef35bbc80c6267404ea2d0e338"
+        },
+        {
+          "case": "case_02",
+          "case_sha256": "169d1850ef77912297e3db307ff29c6b86db307e3ea846bafd6d771f147e848a",
+          "case_seed": 529577928,
+          "warm_start_sha256": "235c568af80fd4d35caf6b89f6c10637c4a3227efba70df95904cd40f97d3372",
+          "before_delay": 1030,
+          "before_resources": {
+            "net_vertex_uses": 279,
+            "edges": 266,
+            "vias": 80
+          },
+          "process": {
+            "command": [
+              "/home/younix/eda-3d-routing-challenge/dev/artifacts/build/exact_polish",
+              "60.0",
+              "1",
+              "1000",
+              "fanout_fine_adaptive",
+              "5000000",
+              "history_step=2",
+              "present_initial=2",
+              "present_step=2"
+            ],
+            "cwd": "/home/younix/eda-3d-routing-challenge",
+            "budget_s": 60.0,
+            "external_cap_s": 65.0,
+            "wall_s": 1.9239652879768983,
+            "exit_code": 0,
+            "interrupted": false,
+            "external_timeout": false,
+            "peak_rss_kib": 4096,
+            "user_cpu_s": 1.9,
+            "system_cpu_s": 0.0,
+            "repair_counters": {
+              "proposals": 10725,
+              "no_gain": 10725,
+              "too_many": 0,
+              "attempts": 0,
+              "negotiation_rounds": 0,
+              "conflicted_rounds": 0,
+              "fresh_attempts": 0,
+              "fresh_legal": 0,
+              "read_s": 0.000544254,
+              "validation_s": 0.000252749,
+              "optimization_s": 1.88313,
+              "search_reset_s": 0.0194613,
+              "search_rebuild_s": 0.0815446,
+              "present_initial": 2,
+              "present_step": 2,
+              "history_step": 2,
+              "price_units": 16,
+              "snapshot_s": 0,
+              "negotiation_setup_s": 0,
+              "negotiation_scan_s": 0,
+              "work_limit": 5000000,
+              "work_exhausted": 1,
+              "expansions_per_second": 2655150.0,
+              "uphill_moves": 0,
+              "selection_nodes": 0,
+              "selection_complete": 0,
+              "selection_partial": 0,
+              "neighborhood_attempts": [
+                0,
+                0,
+                0
+              ],
+              "neighborhood_gains": [
+                0,
+                0,
+                0
+              ],
+              "failed": 0,
+              "nonimproving": 0
+            }
+          },
+          "candidate_accepted": true,
+          "error": null,
+          "core": {
+            "total_delay": 1030,
+            "budget_reached": true,
+            "accepted_replacements": 0,
+            "searches": 21460,
+            "expansions": 5000000
+          },
+          "resources": {
+            "net_vertex_uses": 267,
+            "edges": 254,
+            "vias": 80
+          },
+          "legal": true,
+          "total_delay": 1030,
+          "ratio": 1.1553398058252426,
+          "output_sha256": "386d6e8c62c404518a1cffeee37fdcc342b58da5d15dc7abef835e78fc5f4fdb"
+        },
+        {
+          "case": "case_03",
+          "case_sha256": "192bf94aa004b19e166888ca61ae6b6cbc0900d0f4bb108b7421494e2e85c460",
+          "case_seed": 629102900,
+          "warm_start_sha256": "397c33495c86a7ffe0388c33b94104cb7f6ff7352c4db29acea52d4306cfc783",
+          "before_delay": 1631,
+          "before_resources": {
+            "net_vertex_uses": 542,
+            "edges": 522,
+            "vias": 109
+          },
+          "process": {
+            "command": [
+              "/home/younix/eda-3d-routing-challenge/dev/artifacts/build/exact_polish",
+              "60.0",
+              "1",
+              "1000",
+              "fanout_fine_adaptive",
+              "5000000",
+              "history_step=2",
+              "present_initial=2",
+              "present_step=2"
+            ],
+            "cwd": "/home/younix/eda-3d-routing-challenge",
+            "budget_s": 60.0,
+            "external_cap_s": 65.0,
+            "wall_s": 2.0783586500328965,
+            "exit_code": 0,
+            "interrupted": false,
+            "external_timeout": false,
+            "peak_rss_kib": 4352,
+            "user_cpu_s": 2.06,
+            "system_cpu_s": 0.01,
+            "repair_counters": {
+              "proposals": 11162,
+              "no_gain": 11130,
+              "too_many": 0,
+              "attempts": 31,
+              "negotiation_rounds": 106,
+              "conflicted_rounds": 75,
+              "fresh_attempts": 0,
+              "fresh_legal": 0,
+              "read_s": 0.00126844,
+              "validation_s": 0.000560301,
+              "optimization_s": 2.05151,
+              "search_reset_s": 0.0338115,
+              "search_rebuild_s": 0.110302,
+              "present_initial": 2,
+              "present_step": 2,
+              "history_step": 2,
+              "price_units": 16,
+              "snapshot_s": 2.0833e-05,
+              "negotiation_setup_s": 4.4041e-05,
+              "negotiation_scan_s": 0.000198494,
+              "work_limit": 5000000,
+              "work_exhausted": 1,
+              "expansions_per_second": 2437230.0,
+              "uphill_moves": 0,
+              "selection_nodes": 0,
+              "selection_complete": 0,
+              "selection_partial": 0,
+              "neighborhood_attempts": [
+                11,
+                8,
+                12
+              ],
+              "neighborhood_gains": [
+                1,
+                0,
+                1
+              ],
+              "failed": 0,
+              "nonimproving": 29
+            }
+          },
+          "candidate_accepted": true,
+          "error": null,
+          "core": {
+            "total_delay": 1623,
+            "budget_reached": true,
+            "accepted_replacements": 2,
+            "searches": 22694,
+            "expansions": 5000000
+          },
+          "resources": {
+            "net_vertex_uses": 548,
+            "edges": 528,
+            "vias": 105
+          },
+          "legal": true,
+          "total_delay": 1623,
+          "ratio": 1.0825631546518792,
+          "output_sha256": "4519fe21e78344791b6d85429a96ce699d35f22bd7e18dea145b07dc8af19e7c"
+        },
+        {
+          "case": "case_04",
+          "case_sha256": "27a5b017b31d7f5f15e11894bec5c7352fe66446a11106fb918a91140916cbd0",
+          "case_seed": 794998562,
+          "warm_start_sha256": "e4e7d6e98087576c220842806425dc1176df29da2922028da162dc261c9086cd",
+          "before_delay": 2042,
+          "before_resources": {
+            "net_vertex_uses": 795,
+            "edges": 768,
+            "vias": 140
+          },
+          "process": {
+            "command": [
+              "/home/younix/eda-3d-routing-challenge/dev/artifacts/build/exact_polish",
+              "60.0",
+              "1",
+              "1000",
+              "fanout_fine_adaptive",
+              "5000000",
+              "history_step=2",
+              "present_initial=2",
+              "present_step=2"
+            ],
+            "cwd": "/home/younix/eda-3d-routing-challenge",
+            "budget_s": 60.0,
+            "external_cap_s": 65.0,
+            "wall_s": 1.9346841889782809,
+            "exit_code": 0,
+            "interrupted": false,
+            "external_timeout": false,
+            "peak_rss_kib": 4352,
+            "user_cpu_s": 1.93,
+            "system_cpu_s": 0.0,
+            "repair_counters": {
+              "proposals": 9122,
+              "no_gain": 9121,
+              "too_many": 0,
+              "attempts": 0,
+              "negotiation_rounds": 0,
+              "conflicted_rounds": 0,
+              "fresh_attempts": 0,
+              "fresh_legal": 0,
+              "read_s": 0.000726586,
+              "validation_s": 0.000338605,
+              "optimization_s": 1.91076,
+              "search_reset_s": 0.0336328,
+              "search_rebuild_s": 0.0980811,
+              "present_initial": 2,
+              "present_step": 2,
+              "history_step": 2,
+              "price_units": 16,
+              "snapshot_s": 0,
+              "negotiation_setup_s": 0,
+              "negotiation_scan_s": 0,
+              "work_limit": 5000000,
+              "work_exhausted": 1,
+              "expansions_per_second": 2616770.0,
+              "uphill_moves": 0,
+              "selection_nodes": 0,
+              "selection_complete": 0,
+              "selection_partial": 0,
+              "neighborhood_attempts": [
+                0,
+                0,
+                0
+              ],
+              "neighborhood_gains": [
+                0,
+                0,
+                0
+              ],
+              "failed": 0,
+              "nonimproving": 0
+            }
+          },
+          "candidate_accepted": true,
+          "error": null,
+          "core": {
+            "total_delay": 2042,
+            "budget_reached": true,
+            "accepted_replacements": 0,
+            "searches": 18248,
+            "expansions": 5000000
+          },
+          "resources": {
+            "net_vertex_uses": 795,
+            "edges": 768,
+            "vias": 140
+          },
+          "legal": true,
+          "total_delay": 2042,
+          "ratio": 1.058765915768854,
+          "output_sha256": "d0038bdf5bd68d8419ea4f51c6f2192b439f6b3aac29c946b6cf8e3bcb14e4c6"
+        },
+        {
+          "case": "case_05",
+          "case_sha256": "bc8121afd69bf79056e4521147ee7b92f5c95714b3c49058dfce7ed0f578d43b",
+          "case_seed": 1687309476,
+          "warm_start_sha256": "0e049a9f2955bbccde74b8d2d6f8d5c79b3a34ed7551b9baf92c5e12b5b9e16f",
+          "before_delay": 3879,
+          "before_resources": {
+            "net_vertex_uses": 1249,
+            "edges": 1215,
+            "vias": 234
+          },
+          "process": {
+            "command": [
+              "/home/younix/eda-3d-routing-challenge/dev/artifacts/build/exact_polish",
+              "60.0",
+              "1",
+              "1000",
+              "fanout_fine_adaptive",
+              "5000000",
+              "history_step=2",
+              "present_initial=2",
+              "present_step=2"
+            ],
+            "cwd": "/home/younix/eda-3d-routing-challenge",
+            "budget_s": 60.0,
+            "external_cap_s": 65.0,
+            "wall_s": 1.8273812290281057,
+            "exit_code": 0,
+            "interrupted": false,
+            "external_timeout": false,
+            "peak_rss_kib": 4608,
+            "user_cpu_s": 1.86,
+            "system_cpu_s": 0.0,
+            "repair_counters": {
+              "proposals": 1380,
+              "no_gain": 1177,
+              "too_many": 0,
+              "attempts": 202,
+              "negotiation_rounds": 827,
+              "conflicted_rounds": 625,
+              "fresh_attempts": 0,
+              "fresh_legal": 0,
+              "read_s": 0.00110479,
+              "validation_s": 0.000569243,
+              "optimization_s": 1.80585,
+              "search_reset_s": 0.0133673,
+              "search_rebuild_s": 0.0409763,
+              "present_initial": 2,
+              "present_step": 2,
+              "history_step": 2,
+              "price_units": 16,
+              "snapshot_s": 0.000252386,
+              "negotiation_setup_s": 0.0006575,
+              "negotiation_scan_s": 0.002544,
+              "work_limit": 5000000,
+              "work_exhausted": 1,
+              "expansions_per_second": 2768780.0,
+              "uphill_moves": 0,
+              "selection_nodes": 0,
+              "selection_complete": 0,
+              "selection_partial": 0,
+              "neighborhood_attempts": [
+                73,
+                64,
+                65
+              ],
+              "neighborhood_gains": [
+                0,
+                0,
+                0
+              ],
+              "failed": 0,
+              "nonimproving": 202
+            }
+          },
+          "candidate_accepted": true,
+          "error": null,
+          "core": {
+            "total_delay": 3879,
+            "budget_reached": true,
+            "accepted_replacements": 0,
+            "searches": 5473,
+            "expansions": 5000000
+          },
+          "resources": {
+            "net_vertex_uses": 1254,
+            "edges": 1220,
+            "vias": 235
+          },
+          "legal": true,
+          "total_delay": 3879,
+          "ratio": 1.0819798917246712,
+          "output_sha256": "10437da21d622ae807d07dc6acde7721ebe3fc95ddba80a9d42366afb38b402a"
+        },
+        {
+          "case": "case_06",
+          "case_sha256": "b3b28f8640b5470534cc942036e7fd71ffb42f6638c366b5674eddd9499b9614",
+          "case_seed": 2072757730,
+          "warm_start_sha256": "c5e59ec7fbb029c26b21de8e091829c79b02f9a6a839fa4be80bb20058888d4a",
+          "before_delay": 5521,
+          "before_resources": {
+            "net_vertex_uses": 1579,
+            "edges": 1538,
+            "vias": 283
+          },
+          "process": {
+            "command": [
+              "/home/younix/eda-3d-routing-challenge/dev/artifacts/build/exact_polish",
+              "60.0",
+              "1",
+              "1000",
+              "fanout_fine_adaptive",
+              "5000000",
+              "history_step=2",
+              "present_initial=2",
+              "present_step=2"
+            ],
+            "cwd": "/home/younix/eda-3d-routing-challenge",
+            "budget_s": 60.0,
+            "external_cap_s": 65.0,
+            "wall_s": 1.9749335899832658,
+            "exit_code": 0,
+            "interrupted": false,
+            "external_timeout": false,
+            "peak_rss_kib": 4736,
+            "user_cpu_s": 2.01,
+            "system_cpu_s": 0.01,
+            "repair_counters": {
+              "proposals": 1136,
+              "no_gain": 948,
+              "too_many": 0,
+              "attempts": 188,
+              "negotiation_rounds": 775,
+              "conflicted_rounds": 587,
+              "fresh_attempts": 0,
+              "fresh_legal": 0,
+              "read_s": 0.00150828,
+              "validation_s": 0.000768457,
+              "optimization_s": 1.94088,
+              "search_reset_s": 0.0178241,
+              "search_rebuild_s": 0.0498357,
+              "present_initial": 2,
+              "present_step": 2,
+              "history_step": 2,
+              "price_units": 16,
+              "snapshot_s": 0.000277378,
+              "negotiation_setup_s": 0.00113529,
+              "negotiation_scan_s": 0.00327546,
+              "work_limit": 5000000,
+              "work_exhausted": 1,
+              "expansions_per_second": 2576150.0,
+              "uphill_moves": 0,
+              "selection_nodes": 0,
+              "selection_complete": 0,
+              "selection_partial": 0,
+              "neighborhood_attempts": [
+                70,
+                56,
+                62
+              ],
+              "neighborhood_gains": [
+                0,
+                0,
+                0
+              ],
+              "failed": 1,
+              "nonimproving": 187
+            }
+          },
+          "candidate_accepted": true,
+          "error": null,
+          "core": {
+            "total_delay": 5521,
+            "budget_reached": true,
+            "accepted_replacements": 0,
+            "searches": 5219,
+            "expansions": 5000000
+          },
+          "resources": {
+            "net_vertex_uses": 1582,
+            "edges": 1541,
+            "vias": 285
+          },
+          "legal": true,
+          "total_delay": 5521,
+          "ratio": 1.1148342691541386,
+          "output_sha256": "50602e9c7d3a6c32b28e69b74cf40deab322fc8e9d7ad86abe3828e5489e3763"
+        },
+        {
+          "case": "case_07",
+          "case_sha256": "ce99efb6e9dbb4e1d5a4891732b033636de49e734e027aff4db29aa744e556db",
+          "case_seed": 527901100,
+          "warm_start_sha256": "393635019ded9d85598283ea015fd4ec5d3ec67d9f707227614c9245c7191eb0",
+          "before_delay": 5425,
+          "before_resources": {
+            "net_vertex_uses": 1654,
+            "edges": 1606,
+            "vias": 268
+          },
+          "process": {
+            "command": [
+              "/home/younix/eda-3d-routing-challenge/dev/artifacts/build/exact_polish",
+              "60.0",
+              "1",
+              "1000",
+              "fanout_fine_adaptive",
+              "5000000",
+              "history_step=2",
+              "present_initial=2",
+              "present_step=2"
+            ],
+            "cwd": "/home/younix/eda-3d-routing-challenge",
+            "budget_s": 60.0,
+            "external_cap_s": 65.0,
+            "wall_s": 1.92424562695669,
+            "exit_code": 0,
+            "interrupted": false,
+            "external_timeout": false,
+            "peak_rss_kib": 4736,
+            "user_cpu_s": 1.98,
+            "system_cpu_s": 0.01,
+            "repair_counters": {
+              "proposals": 2561,
+              "no_gain": 2219,
+              "too_many": 0,
+              "attempts": 342,
+              "negotiation_rounds": 972,
+              "conflicted_rounds": 630,
+              "fresh_attempts": 0,
+              "fresh_legal": 0,
+              "read_s": 0.00171903,
+              "validation_s": 0.000793452,
+              "optimization_s": 1.91286,
+              "search_reset_s": 0.0342541,
+              "search_rebuild_s": 0.0758502,
+              "present_initial": 2,
+              "present_step": 2,
+              "history_step": 2,
+              "price_units": 16,
+              "snapshot_s": 0.00062236,
+              "negotiation_setup_s": 0.00170904,
+              "negotiation_scan_s": 0.0049488,
+              "work_limit": 5000000,
+              "work_exhausted": 1,
+              "expansions_per_second": 2613890.0,
+              "uphill_moves": 0,
+              "selection_nodes": 0,
+              "selection_complete": 0,
+              "selection_partial": 0,
+              "neighborhood_attempts": [
+                124,
+                98,
+                120
+              ],
+              "neighborhood_gains": [
+                0,
+                0,
+                0
+              ],
+              "failed": 1,
+              "nonimproving": 341
+            }
+          },
+          "candidate_accepted": true,
+          "error": null,
+          "core": {
+            "total_delay": 5425,
+            "budget_reached": true,
+            "accepted_replacements": 0,
+            "searches": 8807,
+            "expansions": 5000000
+          },
+          "resources": {
+            "net_vertex_uses": 1656,
+            "edges": 1608,
+            "vias": 270
+          },
+          "legal": true,
+          "total_delay": 5425,
+          "ratio": 1.07926267281106,
+          "output_sha256": "46bbccba9dec0b680821f5c9514e12a05ee7ed292569b5b9e7a6383708bef1c9"
+        },
+        {
+          "case": "case_08",
+          "case_sha256": "485c0189d09ddfd5ba716a4e8d2266674ea2f715855c7fbe9ca3bba09f55103f",
+          "case_seed": 904807500,
+          "warm_start_sha256": "296607a4b7367ff0aeb679d61091ac2edfead9a9190c48ed69aa6114f1f854bd",
+          "before_delay": 7843,
+          "before_resources": {
+            "net_vertex_uses": 2252,
+            "edges": 2197,
+            "vias": 351
+          },
+          "process": {
+            "command": [
+              "/home/younix/eda-3d-routing-challenge/dev/artifacts/build/exact_polish",
+              "60.0",
+              "1",
+              "1000",
+              "fanout_fine_adaptive",
+              "5000000",
+              "history_step=2",
+              "present_initial=2",
+              "present_step=2"
+            ],
+            "cwd": "/home/younix/eda-3d-routing-challenge",
+            "budget_s": 60.0,
+            "external_cap_s": 65.0,
+            "wall_s": 2.025626196002122,
+            "exit_code": 0,
+            "interrupted": false,
+            "external_timeout": false,
+            "peak_rss_kib": 4864,
+            "user_cpu_s": 2.04,
+            "system_cpu_s": 0.01,
+            "repair_counters": {
+              "proposals": 989,
+              "no_gain": 790,
+              "too_many": 0,
+              "attempts": 199,
+              "negotiation_rounds": 750,
+              "conflicted_rounds": 551,
+              "fresh_attempts": 0,
+              "fresh_legal": 0,
+              "read_s": 0.00198859,
+              "validation_s": 0.00095874,
+              "optimization_s": 1.96035,
+              "search_reset_s": 0.0228036,
+              "search_rebuild_s": 0.0504608,
+              "present_initial": 2,
+              "present_step": 2,
+              "history_step": 2,
+              "price_units": 16,
+              "snapshot_s": 0.000506705,
+              "negotiation_setup_s": 0.00166637,
+              "negotiation_scan_s": 0.00458344,
+              "work_limit": 5000000,
+              "work_exhausted": 1,
+              "expansions_per_second": 2550560.0,
+              "uphill_moves": 0,
+              "selection_nodes": 0,
+              "selection_complete": 0,
+              "selection_partial": 0,
+              "neighborhood_attempts": [
+                74,
+                71,
+                54
+              ],
+              "neighborhood_gains": [
+                1,
+                0,
+                1
+              ],
+              "failed": 1,
+              "nonimproving": 196
+            }
+          },
+          "candidate_accepted": true,
+          "error": null,
+          "core": {
+            "total_delay": 7831,
+            "budget_reached": true,
+            "accepted_replacements": 2,
+            "searches": 4347,
+            "expansions": 5000000
+          },
+          "resources": {
+            "net_vertex_uses": 2274,
+            "edges": 2219,
+            "vias": 357
+          },
+          "legal": true,
+          "total_delay": 7831,
+          "ratio": 1.091686885455242,
+          "output_sha256": "a509172bf7ebdfbe2e72ac4fcd2e397ac42d81a69bf3b93e92549e90db19ddf4"
+        },
+        {
+          "case": "case_09",
+          "case_sha256": "343f80021db5f9b94c8701e93cc57af504aeaee4fb84849ffb4d171e13c2af6c",
+          "case_seed": 1059990312,
+          "warm_start_sha256": "8a85759c3e1a542dbac4f0654025c6d4a587db8a0a39267926e6f3366c90c3b8",
+          "before_delay": 8308,
+          "before_resources": {
+            "net_vertex_uses": 2459,
+            "edges": 2397,
+            "vias": 354
+          },
+          "process": {
+            "command": [
+              "/home/younix/eda-3d-routing-challenge/dev/artifacts/build/exact_polish",
+              "60.0",
+              "1",
+              "1000",
+              "fanout_fine_adaptive",
+              "5000000",
+              "history_step=2",
+              "present_initial=2",
+              "present_step=2"
+            ],
+            "cwd": "/home/younix/eda-3d-routing-challenge",
+            "budget_s": 60.0,
+            "external_cap_s": 65.0,
+            "wall_s": 1.6258498249808326,
+            "exit_code": 0,
+            "interrupted": false,
+            "external_timeout": false,
+            "peak_rss_kib": 4864,
+            "user_cpu_s": 1.66,
+            "system_cpu_s": 0.0,
+            "repair_counters": {
+              "proposals": 1568,
+              "no_gain": 1476,
+              "too_many": 0,
+              "attempts": 91,
+              "negotiation_rounds": 544,
+              "conflicted_rounds": 453,
+              "fresh_attempts": 0,
+              "fresh_legal": 0,
+              "read_s": 0.00265621,
+              "validation_s": 0.00122263,
+              "optimization_s": 1.57439,
+              "search_reset_s": 0.0232872,
+              "search_rebuild_s": 0.0517757,
+              "present_initial": 2,
+              "present_step": 2,
+              "history_step": 2,
+              "price_units": 16,
+              "snapshot_s": 0.00087492,
+              "negotiation_setup_s": 0.00071451,
+              "negotiation_scan_s": 0.00337629,
+              "work_limit": 5000000,
+              "work_exhausted": 1,
+              "expansions_per_second": 3175840.0,
+              "uphill_moves": 0,
+              "selection_nodes": 0,
+              "selection_complete": 0,
+              "selection_partial": 0,
+              "neighborhood_attempts": [
+                32,
+                26,
+                33
+              ],
+              "neighborhood_gains": [
+                1,
+                0,
+                0
+              ],
+              "failed": 0,
+              "nonimproving": 90
+            }
+          },
+          "candidate_accepted": true,
+          "error": null,
+          "core": {
+            "total_delay": 8306,
+            "budget_reached": true,
+            "accepted_replacements": 1,
+            "searches": 4918,
+            "expansions": 5000000
+          },
+          "resources": {
+            "net_vertex_uses": 2455,
+            "edges": 2393,
+            "vias": 354
+          },
+          "legal": true,
+          "total_delay": 8306,
+          "ratio": 1.1712015410546592,
+          "output_sha256": "5109a16c19966199f141dabee6e32e85ae956b3c12ca935992611ca79433da18"
+        },
+        {
+          "case": "case_10",
+          "case_sha256": "a4c94e920951032e8a2d28face6a24cbb9061c9c69d5852eddce4495adfd444d",
+          "case_seed": 437484193,
+          "warm_start_sha256": "ffa3e5f7bfa91a2d60d9df1ca445a6eb2f92e2c1992da2f34cbd4bf241165a45",
+          "before_delay": 11067,
+          "before_resources": {
+            "net_vertex_uses": 3135,
+            "edges": 3066,
+            "vias": 457
+          },
+          "process": {
+            "command": [
+              "/home/younix/eda-3d-routing-challenge/dev/artifacts/build/exact_polish",
+              "60.0",
+              "1",
+              "1000",
+              "fanout_fine_adaptive",
+              "5000000",
+              "history_step=2",
+              "present_initial=2",
+              "present_step=2"
+            ],
+            "cwd": "/home/younix/eda-3d-routing-challenge",
+            "budget_s": 60.0,
+            "external_cap_s": 65.0,
+            "wall_s": 1.7257073810324073,
+            "exit_code": 0,
+            "interrupted": false,
+            "external_timeout": false,
+            "peak_rss_kib": 4992,
+            "user_cpu_s": 1.86,
+            "system_cpu_s": 0.01,
+            "repair_counters": {
+              "proposals": 287,
+              "no_gain": 214,
+              "too_many": 0,
+              "attempts": 73,
+              "negotiation_rounds": 302,
+              "conflicted_rounds": 229,
+              "fresh_attempts": 0,
+              "fresh_legal": 0,
+              "read_s": 0.00392526,
+              "validation_s": 0.00121343,
+              "optimization_s": 1.69441,
+              "search_reset_s": 0.0140482,
+              "search_rebuild_s": 0.0298025,
+              "present_initial": 2,
+              "present_step": 2,
+              "history_step": 2,
+              "price_units": 16,
+              "snapshot_s": 0.000222484,
+              "negotiation_setup_s": 0.000753757,
+              "negotiation_scan_s": 0.00234399,
+              "work_limit": 5000000,
+              "work_exhausted": 1,
+              "expansions_per_second": 2950880.0,
+              "uphill_moves": 0,
+              "selection_nodes": 0,
+              "selection_complete": 0,
+              "selection_partial": 0,
+              "neighborhood_attempts": [
+                19,
+                33,
+                21
+              ],
+              "neighborhood_gains": [
+                0,
+                2,
+                1
+              ],
+              "failed": 1,
+              "nonimproving": 69
+            }
+          },
+          "candidate_accepted": true,
+          "error": null,
+          "core": {
+            "total_delay": 11045,
+            "budget_reached": true,
+            "accepted_replacements": 3,
+            "searches": 2119,
+            "expansions": 5000000
+          },
+          "resources": {
+            "net_vertex_uses": 3141,
+            "edges": 3072,
+            "vias": 455
+          },
+          "legal": true,
+          "total_delay": 11045,
+          "ratio": 1.0836577636939793,
+          "output_sha256": "e41002f1f583ee7d577b0d6392075163a0e52d0b35c92b31e4d958fca30ee8a9"
+        },
+        {
+          "case": "case_11",
+          "case_sha256": "de941ab2da09af4b577b916440b4a5488f5a911c7f93b99cbeefe65f24378f99",
+          "case_seed": 58496533,
+          "warm_start_sha256": "cc0c9e50f987453021c8477b5005f96aa53b8518018e345d3f504e879a0e4da9",
+          "before_delay": 12872,
+          "before_resources": {
+            "net_vertex_uses": 3954,
+            "edges": 3878,
+            "vias": 548
+          },
+          "process": {
+            "command": [
+              "/home/younix/eda-3d-routing-challenge/dev/artifacts/build/exact_polish",
+              "60.0",
+              "1",
+              "1000",
+              "fanout_fine_adaptive",
+              "5000000",
+              "history_step=2",
+              "present_initial=2",
+              "present_step=2"
+            ],
+            "cwd": "/home/younix/eda-3d-routing-challenge",
+            "budget_s": 60.0,
+            "external_cap_s": 65.0,
+            "wall_s": 1.9764917789725587,
+            "exit_code": 0,
+            "interrupted": false,
+            "external_timeout": false,
+            "peak_rss_kib": 5184,
+            "user_cpu_s": 2.08,
+            "system_cpu_s": 0.02,
+            "repair_counters": {
+              "proposals": 836,
+              "no_gain": 673,
+              "too_many": 0,
+              "attempts": 163,
+              "negotiation_rounds": 552,
+              "conflicted_rounds": 389,
+              "fresh_attempts": 0,
+              "fresh_legal": 0,
+              "read_s": 0.00365543,
+              "validation_s": 0.00169174,
+              "optimization_s": 1.93262,
+              "search_reset_s": 0.0319301,
+              "search_rebuild_s": 0.063369,
+              "present_initial": 2,
+              "present_step": 2,
+              "history_step": 2,
+              "price_units": 16,
+              "snapshot_s": 0.000591518,
+              "negotiation_setup_s": 0.00256657,
+              "negotiation_scan_s": 0.00549683,
+              "work_limit": 5000000,
+              "work_exhausted": 1,
+              "expansions_per_second": 2587170.0,
+              "uphill_moves": 0,
+              "selection_nodes": 0,
+              "selection_complete": 0,
+              "selection_partial": 0,
+              "neighborhood_attempts": [
+                49,
+                57,
+                57
+              ],
+              "neighborhood_gains": [
+                0,
+                1,
+                2
+              ],
+              "failed": 0,
+              "nonimproving": 160
+            }
+          },
+          "candidate_accepted": true,
+          "error": null,
+          "core": {
+            "total_delay": 12858,
+            "budget_reached": true,
+            "accepted_replacements": 3,
+            "searches": 3772,
+            "expansions": 5000000
+          },
+          "resources": {
+            "net_vertex_uses": 3963,
+            "edges": 3887,
+            "vias": 548
+          },
+          "legal": true,
+          "total_delay": 12858,
+          "ratio": 1.099860009332711,
+          "output_sha256": "0bcc40737b08ac338014e4d4aaed642254409083cc172a27d0393ebc44d58d21"
+        },
+        {
+          "case": "case_12",
+          "case_sha256": "2ed0461460276127a0777473b75c370bc005833f5645c4d836d9e41d8c3c7ecf",
+          "case_seed": 1727429974,
+          "warm_start_sha256": "daaff2874db01627e0eeeabb091b44ec79f026fbc3a152eb4b33c48b21a7eb60",
+          "before_delay": 16825,
+          "before_resources": {
+            "net_vertex_uses": 4379,
+            "edges": 4296,
+            "vias": 661
+          },
+          "process": {
+            "command": [
+              "/home/younix/eda-3d-routing-challenge/dev/artifacts/build/exact_polish",
+              "60.0",
+              "1",
+              "1000",
+              "fanout_fine_adaptive",
+              "5000000",
+              "history_step=2",
+              "present_initial=2",
+              "present_step=2"
+            ],
+            "cwd": "/home/younix/eda-3d-routing-challenge",
+            "budget_s": 60.0,
+            "external_cap_s": 65.0,
+            "wall_s": 1.8757569120498374,
+            "exit_code": 0,
+            "interrupted": false,
+            "external_timeout": false,
+            "peak_rss_kib": 4848,
+            "user_cpu_s": 1.88,
+            "system_cpu_s": 0.01,
+            "repair_counters": {
+              "proposals": 217,
+              "no_gain": 171,
+              "too_many": 0,
+              "attempts": 46,
+              "negotiation_rounds": 215,
+              "conflicted_rounds": 169,
+              "fresh_attempts": 0,
+              "fresh_legal": 0,
+              "read_s": 0.00516848,
+              "validation_s": 0.00248261,
+              "optimization_s": 1.83827,
+              "search_reset_s": 0.0114995,
+              "search_rebuild_s": 0.0271498,
+              "present_initial": 2,
+              "present_step": 2,
+              "history_step": 2,
+              "price_units": 16,
+              "snapshot_s": 0.000195503,
+              "negotiation_setup_s": 0.00459491,
+              "negotiation_scan_s": 0.00232946,
+              "work_limit": 5000000,
+              "work_exhausted": 1,
+              "expansions_per_second": 2719960.0,
+              "uphill_moves": 0,
+              "selection_nodes": 0,
+              "selection_complete": 0,
+              "selection_partial": 0,
+              "neighborhood_attempts": [
+                15,
+                17,
+                14
+              ],
+              "neighborhood_gains": [
+                0,
+                2,
+                1
+              ],
+              "failed": 1,
+              "nonimproving": 42
+            }
+          },
+          "candidate_accepted": true,
+          "error": null,
+          "core": {
+            "total_delay": 16797,
+            "budget_reached": true,
+            "accepted_replacements": 3,
+            "searches": 1327,
+            "expansions": 5000000
+          },
+          "resources": {
+            "net_vertex_uses": 4349,
+            "edges": 4266,
+            "vias": 655
+          },
+          "legal": true,
+          "total_delay": 16797,
+          "ratio": 1.1019229624337679,
+          "output_sha256": "8580a5132d0b7e411bcc3facda6cab8870246c6427a4abd9f8607b8c5163fa5b"
+        },
+        {
+          "case": "case_13",
+          "case_sha256": "f413841a7b40da4ef52825684b9b3faa4ebabc74b0463c873f0aab8090c5c77e",
+          "case_seed": 1381375653,
+          "warm_start_sha256": "be7611ba8e598dcf1b1191318c130b3bed0050dc3276ee9e011beb6e2737c3ae",
+          "before_delay": 20933,
+          "before_resources": {
+            "net_vertex_uses": 5036,
+            "edges": 4946,
+            "vias": 711
+          },
+          "process": {
+            "command": [
+              "/home/younix/eda-3d-routing-challenge/dev/artifacts/build/exact_polish",
+              "60.0",
+              "1",
+              "1000",
+              "fanout_fine_adaptive",
+              "5000000",
+              "history_step=2",
+              "present_initial=2",
+              "present_step=2"
+            ],
+            "cwd": "/home/younix/eda-3d-routing-challenge",
+            "budget_s": 60.0,
+            "external_cap_s": 65.0,
+            "wall_s": 2.0757136259926483,
+            "exit_code": 0,
+            "interrupted": false,
+            "external_timeout": false,
+            "peak_rss_kib": 5216,
+            "user_cpu_s": 2.1,
+            "system_cpu_s": 0.02,
+            "repair_counters": {
+              "proposals": 66,
+              "no_gain": 35,
+              "too_many": 0,
+              "attempts": 31,
+              "negotiation_rounds": 155,
+              "conflicted_rounds": 125,
+              "fresh_attempts": 0,
+              "fresh_legal": 0,
+              "read_s": 0.00455262,
+              "validation_s": 0.00234238,
+              "optimization_s": 2.05743,
+              "search_reset_s": 0.0135096,
+              "search_rebuild_s": 0.0278365,
+              "present_initial": 2,
+              "present_step": 2,
+              "history_step": 2,
+              "price_units": 16,
+              "snapshot_s": 0.000197931,
+              "negotiation_setup_s": 0.00236578,
+              "negotiation_scan_s": 0.00663019,
+              "work_limit": 5000000,
+              "work_exhausted": 1,
+              "expansions_per_second": 2430220.0,
+              "uphill_moves": 0,
+              "selection_nodes": 0,
+              "selection_complete": 0,
+              "selection_partial": 0,
+              "neighborhood_attempts": [
+                11,
+                6,
+                14
+              ],
+              "neighborhood_gains": [
+                1,
+                1,
+                3
+              ],
+              "failed": 1,
+              "nonimproving": 25
+            }
+          },
+          "candidate_accepted": true,
+          "error": null,
+          "core": {
+            "total_delay": 20883,
+            "budget_reached": true,
+            "accepted_replacements": 5,
+            "searches": 1018,
+            "expansions": 5000000
+          },
+          "resources": {
+            "net_vertex_uses": 5022,
+            "edges": 4932,
+            "vias": 723
+          },
+          "legal": true,
+          "total_delay": 20883,
+          "ratio": 1.0821721017095245,
+          "output_sha256": "d32254e6247b76c620411c967c1e92069203a5e037f1b33926123d9ea806e457"
+        },
+        {
+          "case": "case_14",
+          "case_sha256": "18a2f4f7453e613146247e88ce84880048142657c570c3d7a7787e265b2f2a40",
+          "case_seed": 70456201,
+          "warm_start_sha256": "6661a817108bcc3a5d2a5b46c3a02ac2ccb8af8b14287ca45ba7488723d51243",
+          "before_delay": 22427,
+          "before_resources": {
+            "net_vertex_uses": 5662,
+            "edges": 5565,
+            "vias": 761
+          },
+          "process": {
+            "command": [
+              "/home/younix/eda-3d-routing-challenge/dev/artifacts/build/exact_polish",
+              "60.0",
+              "1",
+              "1000",
+              "fanout_fine_adaptive",
+              "5000000",
+              "history_step=2",
+              "present_initial=2",
+              "present_step=2"
+            ],
+            "cwd": "/home/younix/eda-3d-routing-challenge",
+            "budget_s": 60.0,
+            "external_cap_s": 65.0,
+            "wall_s": 2.0277866830001585,
+            "exit_code": 0,
+            "interrupted": false,
+            "external_timeout": false,
+            "peak_rss_kib": 5632,
+            "user_cpu_s": 2.06,
+            "system_cpu_s": 0.0,
+            "repair_counters": {
+              "proposals": 186,
+              "no_gain": 135,
+              "too_many": 0,
+              "attempts": 51,
+              "negotiation_rounds": 214,
+              "conflicted_rounds": 163,
+              "fresh_attempts": 0,
+              "fresh_legal": 0,
+              "read_s": 0.0062282,
+              "validation_s": 0.00278061,
+              "optimization_s": 1.99612,
+              "search_reset_s": 0.0201319,
+              "search_rebuild_s": 0.0381748,
+              "present_initial": 2,
+              "present_step": 2,
+              "history_step": 2,
+              "price_units": 16,
+              "snapshot_s": 0.000368548,
+              "negotiation_setup_s": 0.00222195,
+              "negotiation_scan_s": 0.00373431,
+              "work_limit": 5000000,
+              "work_exhausted": 1,
+              "expansions_per_second": 2504860.0,
+              "uphill_moves": 0,
+              "selection_nodes": 0,
+              "selection_complete": 0,
+              "selection_partial": 0,
+              "neighborhood_attempts": [
+                18,
+                16,
+                17
+              ],
+              "neighborhood_gains": [
+                2,
+                0,
+                4
+              ],
+              "failed": 1,
+              "nonimproving": 44
+            }
+          },
+          "candidate_accepted": true,
+          "error": null,
+          "core": {
+            "total_delay": 22411,
+            "budget_reached": true,
+            "accepted_replacements": 6,
+            "searches": 1381,
+            "expansions": 5000000
+          },
+          "resources": {
+            "net_vertex_uses": 5617,
+            "edges": 5520,
+            "vias": 762
+          },
+          "legal": true,
+          "total_delay": 22411,
+          "ratio": 1.0923653562982465,
+          "output_sha256": "f830b2e28b23dbde0dd034ea374bfac328f26a68e05ee82902bb1244da0cda24"
+        },
+        {
+          "case": "case_15",
+          "case_sha256": "986db029f111f85749f2ddfaddd8aa897a7377ef7c72cb00c0b1bb88eb378e9d",
+          "case_seed": 1114042973,
+          "warm_start_sha256": "a64f2fba19f57cbda0b42e1292a5e9a4bddd2dc41150cf8b2bf4ecaacf63cd38",
+          "before_delay": 25840,
+          "before_resources": {
+            "net_vertex_uses": 6670,
+            "edges": 6566,
+            "vias": 905
+          },
+          "process": {
+            "command": [
+              "/home/younix/eda-3d-routing-challenge/dev/artifacts/build/exact_polish",
+              "60.0",
+              "1",
+              "1000",
+              "fanout_fine_adaptive",
+              "5000000",
+              "history_step=2",
+              "present_initial=2",
+              "present_step=2"
+            ],
+            "cwd": "/home/younix/eda-3d-routing-challenge",
+            "budget_s": 60.0,
+            "external_cap_s": 65.0,
+            "wall_s": 2.0766888860380277,
+            "exit_code": 0,
+            "interrupted": false,
+            "external_timeout": false,
+            "peak_rss_kib": 5548,
+            "user_cpu_s": 2.06,
+            "system_cpu_s": 0.02,
+            "repair_counters": {
+              "proposals": 111,
+              "no_gain": 75,
+              "too_many": 0,
+              "attempts": 36,
+              "negotiation_rounds": 173,
+              "conflicted_rounds": 137,
+              "fresh_attempts": 0,
+              "fresh_legal": 0,
+              "read_s": 0.00601309,
+              "validation_s": 0.00300563,
+              "optimization_s": 2.01979,
+              "search_reset_s": 0.0203456,
+              "search_rebuild_s": 0.0376609,
+              "present_initial": 2,
+              "present_step": 2,
+              "history_step": 2,
+              "price_units": 16,
+              "snapshot_s": 0.000354048,
+              "negotiation_setup_s": 0.00632283,
+              "negotiation_scan_s": 0.0043135,
+              "work_limit": 5000000,
+              "work_exhausted": 1,
+              "expansions_per_second": 2475500.0,
+              "uphill_moves": 0,
+              "selection_nodes": 0,
+              "selection_complete": 0,
+              "selection_partial": 0,
+              "neighborhood_attempts": [
+                11,
+                14,
+                11
+              ],
+              "neighborhood_gains": [
+                0,
+                3,
+                4
+              ],
+              "failed": 1,
+              "nonimproving": 28
+            }
+          },
+          "candidate_accepted": true,
+          "error": null,
+          "core": {
+            "total_delay": 25742,
+            "budget_reached": true,
+            "accepted_replacements": 7,
+            "searches": 1274,
+            "expansions": 5000000
+          },
+          "resources": {
+            "net_vertex_uses": 6661,
+            "edges": 6557,
+            "vias": 893
+          },
+          "legal": true,
+          "total_delay": 25742,
+          "ratio": 1.0740424209463135,
+          "output_sha256": "2d363ecaa667ada945dbab96c4e3b83f673d0e2f1b6e7c8cb35393ea3ecbe4ff"
+        },
+        {
+          "case": "case_16",
+          "case_sha256": "80606ec42f5ae064b1c25222752ecaa01684f94f9eae7ba359b81209951ec62d",
+          "case_seed": 1842921720,
+          "warm_start_sha256": "ce2fee6ecf2344fc33e35972e3bc17e46a5cb0353164e0ce9c93153705c80a0b",
+          "before_delay": 35174,
+          "before_resources": {
+            "net_vertex_uses": 7719,
+            "edges": 7608,
+            "vias": 1011
+          },
+          "process": {
+            "command": [
+              "/home/younix/eda-3d-routing-challenge/dev/artifacts/build/exact_polish",
+              "60.0",
+              "1",
+              "1000",
+              "fanout_fine_adaptive",
+              "5000000",
+              "history_step=2",
+              "present_initial=2",
+              "present_step=2"
+            ],
+            "cwd": "/home/younix/eda-3d-routing-challenge",
+            "budget_s": 60.0,
+            "external_cap_s": 65.0,
+            "wall_s": 2.127771836996544,
+            "exit_code": 0,
+            "interrupted": false,
+            "external_timeout": false,
+            "peak_rss_kib": 5680,
+            "user_cpu_s": 2.12,
+            "system_cpu_s": 0.02,
+            "repair_counters": {
+              "proposals": 44,
+              "no_gain": 21,
+              "too_many": 0,
+              "attempts": 23,
+              "negotiation_rounds": 99,
+              "conflicted_rounds": 76,
+              "fresh_attempts": 0,
+              "fresh_legal": 0,
+              "read_s": 0.00725271,
+              "validation_s": 0.00370562,
+              "optimization_s": 2.07391,
+              "search_reset_s": 0.0144105,
+              "search_rebuild_s": 0.028496,
+              "present_initial": 2,
+              "present_step": 2,
+              "history_step": 2,
+              "price_units": 16,
+              "snapshot_s": 0.000200707,
+              "negotiation_setup_s": 0.00413486,
+              "negotiation_scan_s": 0.002106,
+              "work_limit": 5000000,
+              "work_exhausted": 1,
+              "expansions_per_second": 2410900.0,
+              "uphill_moves": 0,
+              "selection_nodes": 0,
+              "selection_complete": 0,
+              "selection_partial": 0,
+              "neighborhood_attempts": [
+                7,
+                11,
+                5
+              ],
+              "neighborhood_gains": [
+                1,
+                2,
+                1
+              ],
+              "failed": 1,
+              "nonimproving": 18
+            }
+          },
+          "candidate_accepted": true,
+          "error": null,
+          "core": {
+            "total_delay": 35068,
+            "budget_reached": true,
+            "accepted_replacements": 4,
+            "searches": 789,
+            "expansions": 5000000
+          },
+          "resources": {
+            "net_vertex_uses": 7741,
+            "edges": 7630,
+            "vias": 1002
+          },
+          "legal": true,
+          "total_delay": 35068,
+          "ratio": 1.080814417702749,
+          "output_sha256": "3c11d326bd76ac42ccdb9354ca49182e70f6ad50b7bf2c81c518186670ba5ff3"
+        },
+        {
+          "case": "case_17",
+          "case_sha256": "df56b2ecda8fdff6175df01d4e3a74f999fa7a289bd289e9763ea65a7c18add7",
+          "case_seed": 1727577990,
+          "warm_start_sha256": "367ecea7c266f1f6e66d99175242f11125a3f875c7aa27fb148c5174b27dd9ed",
+          "before_delay": 46050,
+          "before_resources": {
+            "net_vertex_uses": 8888,
+            "edges": 8770,
+            "vias": 1296
+          },
+          "process": {
+            "command": [
+              "/home/younix/eda-3d-routing-challenge/dev/artifacts/build/exact_polish",
+              "60.0",
+              "1",
+              "1000",
+              "fanout_fine_adaptive",
+              "5000000",
+              "history_step=2",
+              "present_initial=2",
+              "present_step=2"
+            ],
+            "cwd": "/home/younix/eda-3d-routing-challenge",
+            "budget_s": 60.0,
+            "external_cap_s": 65.0,
+            "wall_s": 2.076368549023755,
+            "exit_code": 0,
+            "interrupted": false,
+            "external_timeout": false,
+            "peak_rss_kib": 5800,
+            "user_cpu_s": 2.05,
+            "system_cpu_s": 0.02,
+            "repair_counters": {
+              "proposals": 23,
+              "no_gain": 12,
+              "too_many": 0,
+              "attempts": 11,
+              "negotiation_rounds": 55,
+              "conflicted_rounds": 44,
+              "fresh_attempts": 0,
+              "fresh_legal": 0,
+              "read_s": 0.0105992,
+              "validation_s": 0.00435976,
+              "optimization_s": 2.04006,
+              "search_reset_s": 0.0102826,
+              "search_rebuild_s": 0.0201102,
+              "present_initial": 2,
+              "present_step": 2,
+              "history_step": 2,
+              "price_units": 16,
+              "snapshot_s": 0.000189085,
+              "negotiation_setup_s": 0.00206272,
+              "negotiation_scan_s": 0.00138861,
+              "work_limit": 5000000,
+              "work_exhausted": 1,
+              "expansions_per_second": 2450910.0,
+              "uphill_moves": 0,
+              "selection_nodes": 0,
+              "selection_complete": 0,
+              "selection_partial": 0,
+              "neighborhood_attempts": [
+                6,
+                1,
+                4
+              ],
+              "neighborhood_gains": [
+                1,
+                0,
+                2
+              ],
+              "failed": 1,
+              "nonimproving": 7
+            }
+          },
+          "candidate_accepted": true,
+          "error": null,
+          "core": {
+            "total_delay": 45922,
+            "budget_reached": true,
+            "accepted_replacements": 3,
+            "searches": 469,
+            "expansions": 5000000
+          },
+          "resources": {
+            "net_vertex_uses": 8904,
+            "edges": 8786,
+            "vias": 1308
+          },
+          "legal": true,
+          "total_delay": 45922,
+          "ratio": 1.0790906319411175,
+          "output_sha256": "126991057d6cbec74b57f6c8ff454b3e99839ec2fa8c87cc6fdc7b0b872a10c4"
+        },
+        {
+          "case": "case_18",
+          "case_sha256": "209f64bb32263e7e4db36f997d4113d08ba88b7bfd9b62f49a173c24080a0136",
+          "case_seed": 449922073,
+          "warm_start_sha256": "17ebabb19044d58a3ce3b0369912d42047a6b19daf04ade508d0e2cb6e4f43e1",
+          "before_delay": 49985,
+          "before_resources": {
+            "net_vertex_uses": 10487,
+            "edges": 10362,
+            "vias": 1411
+          },
+          "process": {
+            "command": [
+              "/home/younix/eda-3d-routing-challenge/dev/artifacts/build/exact_polish",
+              "60.0",
+              "1",
+              "1000",
+              "fanout_fine_adaptive",
+              "5000000",
+              "history_step=2",
+              "present_initial=2",
+              "present_step=2"
+            ],
+            "cwd": "/home/younix/eda-3d-routing-challenge",
+            "budget_s": 60.0,
+            "external_cap_s": 65.0,
+            "wall_s": 2.2788092449773103,
+            "exit_code": 0,
+            "interrupted": false,
+            "external_timeout": false,
+            "peak_rss_kib": 6036,
+            "user_cpu_s": 2.22,
+            "system_cpu_s": 0.02,
+            "repair_counters": {
+              "proposals": 15,
+              "no_gain": 8,
+              "too_many": 0,
+              "attempts": 7,
+              "negotiation_rounds": 54,
+              "conflicted_rounds": 47,
+              "fresh_attempts": 0,
+              "fresh_legal": 0,
+              "read_s": 0.00964233,
+              "validation_s": 0.00474272,
+              "optimization_s": 2.20928,
+              "search_reset_s": 0.0148776,
+              "search_rebuild_s": 0.0273204,
+              "present_initial": 2,
+              "present_step": 2,
+              "history_step": 2,
+              "price_units": 16,
+              "snapshot_s": 0.000376839,
+              "negotiation_setup_s": 0.00213743,
+              "negotiation_scan_s": 0.00158183,
+              "work_limit": 5000000,
+              "work_exhausted": 1,
+              "expansions_per_second": 2263180.0,
+              "uphill_moves": 0,
+              "selection_nodes": 0,
+              "selection_complete": 0,
+              "selection_partial": 0,
+              "neighborhood_attempts": [
+                2,
+                3,
+                2
+              ],
+              "neighborhood_gains": [
+                1,
+                1,
+                2
+              ],
+              "failed": 1,
+              "nonimproving": 2
+            }
+          },
+          "candidate_accepted": true,
+          "error": null,
+          "core": {
+            "total_delay": 49755,
+            "budget_reached": true,
+            "accepted_replacements": 4,
+            "searches": 595,
+            "expansions": 5000000
+          },
+          "resources": {
+            "net_vertex_uses": 10689,
+            "edges": 10564,
+            "vias": 1403
+          },
+          "legal": true,
+          "total_delay": 49755,
+          "ratio": 1.0813988543864939,
+          "output_sha256": "0d9dd8b7460ba1530f3385cfd52b42034e7f59da80d9ebc4ddd93ff59719cea6"
+        },
+        {
+          "case": "case_19",
+          "case_sha256": "97b2f17901d53d2dad2f102893ab4e687a194c219e39af985fd960104cf0a7b5",
+          "case_seed": 1107687350,
+          "warm_start_sha256": "07ee9998e7cdc37b083aa1e7334d937d2215bfecf81b69e770ced55c07b43394",
+          "before_delay": 42542,
+          "before_resources": {
+            "net_vertex_uses": 9583,
+            "edges": 9451,
+            "vias": 1213
+          },
+          "process": {
+            "command": [
+              "/home/younix/eda-3d-routing-challenge/dev/artifacts/build/exact_polish",
+              "60.0",
+              "1",
+              "1000",
+              "fanout_fine_adaptive",
+              "5000000",
+              "history_step=2",
+              "present_initial=2",
+              "present_step=2"
+            ],
+            "cwd": "/home/younix/eda-3d-routing-challenge",
+            "budget_s": 60.0,
+            "external_cap_s": 65.0,
+            "wall_s": 2.0776421649497934,
+            "exit_code": 0,
+            "interrupted": false,
+            "external_timeout": false,
+            "peak_rss_kib": 6136,
+            "user_cpu_s": 2.07,
+            "system_cpu_s": 0.03,
+            "repair_counters": {
+              "proposals": 9,
+              "no_gain": 5,
+              "too_many": 0,
+              "attempts": 4,
+              "negotiation_rounds": 34,
+              "conflicted_rounds": 30,
+              "fresh_attempts": 0,
+              "fresh_legal": 0,
+              "read_s": 0.0137539,
+              "validation_s": 0.00605231,
+              "optimization_s": 2.0365,
+              "search_reset_s": 0.015965,
+              "search_rebuild_s": 0.0244574,
+              "present_initial": 2,
+              "present_step": 2,
+              "history_step": 2,
+              "price_units": 16,
+              "snapshot_s": 0.000299947,
+              "negotiation_setup_s": 0.00228097,
+              "negotiation_scan_s": 0.00103608,
+              "work_limit": 5000000,
+              "work_exhausted": 1,
+              "expansions_per_second": 2455200.0,
+              "uphill_moves": 0,
+              "selection_nodes": 0,
+              "selection_complete": 0,
+              "selection_partial": 0,
+              "neighborhood_attempts": [
+                1,
+                3,
+                0
+              ],
+              "neighborhood_gains": [
+                0,
+                2,
+                0
+              ],
+              "failed": 1,
+              "nonimproving": 1
+            }
+          },
+          "candidate_accepted": true,
+          "error": null,
+          "core": {
+            "total_delay": 42294,
+            "budget_reached": true,
+            "accepted_replacements": 2,
+            "searches": 478,
+            "expansions": 5000000
+          },
+          "resources": {
+            "net_vertex_uses": 9549,
+            "edges": 9417,
+            "vias": 1201
+          },
+          "legal": true,
+          "total_delay": 42294,
+          "ratio": 1.0755189861446068,
+          "output_sha256": "5ae13c7e6584047eb45fbbbd8b2e014cf6c77e69103d150cbd08e565882072ba"
+        },
+        {
+          "case": "case_20",
+          "case_sha256": "c701d3fc484a2d4a77c9e7bfdba030174a445c7e07ec2797d2f797d21b6241fb",
+          "case_seed": 1248940432,
+          "warm_start_sha256": "ab3262c02b8547b6df500bad57c7bc8ec2ac66b05f037cbe38dfb3b5c0f2409d",
+          "before_delay": 48446,
+          "before_resources": {
+            "net_vertex_uses": 10547,
+            "edges": 10408,
+            "vias": 1301
+          },
+          "process": {
+            "command": [
+              "/home/younix/eda-3d-routing-challenge/dev/artifacts/build/exact_polish",
+              "60.0",
+              "1",
+              "1000",
+              "fanout_fine_adaptive",
+              "5000000",
+              "history_step=2",
+              "present_initial=2",
+              "present_step=2"
+            ],
+            "cwd": "/home/younix/eda-3d-routing-challenge",
+            "budget_s": 60.0,
+            "external_cap_s": 65.0,
+            "wall_s": 2.3244769310113043,
+            "exit_code": 0,
+            "interrupted": false,
+            "external_timeout": false,
+            "peak_rss_kib": 6316,
+            "user_cpu_s": 2.33,
+            "system_cpu_s": 0.08,
+            "repair_counters": {
+              "proposals": 7,
+              "no_gain": 4,
+              "too_many": 0,
+              "attempts": 2,
+              "negotiation_rounds": 23,
+              "conflicted_rounds": 21,
+              "fresh_attempts": 0,
+              "fresh_legal": 0,
+              "read_s": 0.0102891,
+              "validation_s": 0.00529677,
+              "optimization_s": 2.30199,
+              "search_reset_s": 0.0186948,
+              "search_rebuild_s": 0.0237156,
+              "present_initial": 2,
+              "present_step": 2,
+              "history_step": 2,
+              "price_units": 16,
+              "snapshot_s": 0.000204608,
+              "negotiation_setup_s": 0.0014235,
+              "negotiation_scan_s": 0.00144678,
+              "work_limit": 5000000,
+              "work_exhausted": 1,
+              "expansions_per_second": 2172040.0,
+              "uphill_moves": 0,
+              "selection_nodes": 0,
+              "selection_complete": 0,
+              "selection_partial": 0,
+              "neighborhood_attempts": [
+                0,
+                1,
+                1
+              ],
+              "neighborhood_gains": [
+                0,
+                0,
+                0
+              ],
+              "failed": 0,
+              "nonimproving": 2
+            }
+          },
+          "candidate_accepted": true,
+          "error": null,
+          "core": {
+            "total_delay": 48348,
+            "budget_reached": true,
+            "accepted_replacements": 0,
+            "searches": 436,
+            "expansions": 5000000
+          },
+          "resources": {
+            "net_vertex_uses": 10366,
+            "edges": 10227,
+            "vias": 1290
+          },
+          "legal": true,
+          "total_delay": 48348,
+          "ratio": 1.0685033507073716,
+          "output_sha256": "1573b8b42753262d74b53e7c8426f2e911e1fd30fcb13f03168e2c025e24fcf4"
+        }
+      ],
+      "outputs": {
+        "routes/case_01.sol.json": "42ba6d788aba90fe9e4783b1659a9b999a0941ef35bbc80c6267404ea2d0e338",
+        "routes/case_02.sol.json": "386d6e8c62c404518a1cffeee37fdcc342b58da5d15dc7abef835e78fc5f4fdb",
+        "routes/case_03.sol.json": "4519fe21e78344791b6d85429a96ce699d35f22bd7e18dea145b07dc8af19e7c",
+        "routes/case_04.sol.json": "d0038bdf5bd68d8419ea4f51c6f2192b439f6b3aac29c946b6cf8e3bcb14e4c6",
+        "routes/case_05.sol.json": "10437da21d622ae807d07dc6acde7721ebe3fc95ddba80a9d42366afb38b402a",
+        "routes/case_06.sol.json": "50602e9c7d3a6c32b28e69b74cf40deab322fc8e9d7ad86abe3828e5489e3763",
+        "routes/case_07.sol.json": "46bbccba9dec0b680821f5c9514e12a05ee7ed292569b5b9e7a6383708bef1c9",
+        "routes/case_08.sol.json": "a509172bf7ebdfbe2e72ac4fcd2e397ac42d81a69bf3b93e92549e90db19ddf4",
+        "routes/case_09.sol.json": "5109a16c19966199f141dabee6e32e85ae956b3c12ca935992611ca79433da18",
+        "routes/case_10.sol.json": "e41002f1f583ee7d577b0d6392075163a0e52d0b35c92b31e4d958fca30ee8a9",
+        "routes/case_11.sol.json": "0bcc40737b08ac338014e4d4aaed642254409083cc172a27d0393ebc44d58d21",
+        "routes/case_12.sol.json": "8580a5132d0b7e411bcc3facda6cab8870246c6427a4abd9f8607b8c5163fa5b",
+        "routes/case_13.sol.json": "d32254e6247b76c620411c967c1e92069203a5e037f1b33926123d9ea806e457",
+        "routes/case_14.sol.json": "f830b2e28b23dbde0dd034ea374bfac328f26a68e05ee82902bb1244da0cda24",
+        "routes/case_15.sol.json": "2d363ecaa667ada945dbab96c4e3b83f673d0e2f1b6e7c8cb35393ea3ecbe4ff",
+        "routes/case_16.sol.json": "3c11d326bd76ac42ccdb9354ca49182e70f6ad50b7bf2c81c518186670ba5ff3",
+        "routes/case_17.sol.json": "126991057d6cbec74b57f6c8ff454b3e99839ec2fa8c87cc6fdc7b0b872a10c4",
+        "routes/case_18.sol.json": "0d9dd8b7460ba1530f3385cfd52b42034e7f59da80d9ebc4ddd93ff59719cea6",
+        "routes/case_19.sol.json": "5ae13c7e6584047eb45fbbbd8b2e014cf6c77e69103d150cbd08e565882072ba",
+        "routes/case_20.sol.json": "1573b8b42753262d74b53e7c8426f2e911e1fd30fcb13f03168e2c025e24fcf4"
+      },
+      "official_rescore": {
+        "command": [
+          "/home/younix/eda-3d-routing-challenge/.venv/bin/python",
+          "-m",
+          "m3d.cli",
+          "score-suite",
+          "--suite",
+          "benchmarks",
+          "--submission-dir",
+          "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T023420.807032Z-exact-polish/routes",
+          "--out",
+          "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T023420.807032Z-exact-polish/coverage-rescore.json"
+        ],
+        "cwd": "/home/younix/eda-3d-routing-challenge/dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+        "budget_s": 180,
+        "wall_s": 0.7181003920268267,
+        "exit_code": 0,
+        "timeout": false,
+        "interrupted": false,
+        "log": "dev/artifacts/20261002T023420.807032Z-exact-polish/coverage-rescore.log",
+        "peak_rss_kib": 23876,
+        "user_cpu_s": 0.62,
+        "system_cpu_s": 0.07
+      }
+    },
+    {
+      "tier": "hard",
+      "run_id": "20261002T031034.943763Z-exact-polish",
+      "manifest_sha256": "88c118bdade230d3b73800400230e046821826356e548a1410e353bd0388cf4d",
+      "source_identity": "786851914ccf19296446e4eff25dba4bba5f00d4895a44b8e88fd1519c6cc232",
+      "config": {
+        "suite": "benchmarks_hard",
+        "case": null,
+        "donor_dir": "dev/artifacts/20261002T022919.965005Z-exact-polish/routes",
+        "mode": "fanout_fine_donor",
+        "budget": 60.0,
+        "work_budget": 5000000,
+        "present_initial": 2,
+        "present_step": 1,
+        "history_step": 1,
+        "seed": 1,
+        "passes": 1000,
+        "resume_dir": "dev/incumbents/hard/20261002T024319.157302Z-exact-polish/routes"
+      },
+      "score": {
+        "format": "m3d-leaderboard",
+        "complete": true,
+        "aggregate_score": 1.2543945794120073,
+        "n_cases": 9,
+        "n_legal": 9,
+        "formula": "aggregate = geomean_c(baseline_total_c / submission_total_c); higher is better; baseline scores 1.0; all cases must be legal for a complete ranked submission (else aggregate = 0.0)",
+        "cases": [
+          {
+            "case": "case_01",
+            "legal": true,
+            "total_delay": 9160,
+            "baseline_delay": 11938,
+            "ratio": 1.3032751091703056,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_02",
+            "legal": true,
+            "total_delay": 14616,
+            "baseline_delay": 18910,
+            "ratio": 1.2937876299945266,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_03",
+            "legal": true,
+            "total_delay": 12008,
+            "baseline_delay": 14724,
+            "ratio": 1.2261825449700199,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_04",
+            "legal": true,
+            "total_delay": 14289,
+            "baseline_delay": 18077,
+            "ratio": 1.2650990272237386,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_05",
+            "legal": true,
+            "total_delay": 16661,
+            "baseline_delay": 21051,
+            "ratio": 1.2634895864593962,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_06",
+            "legal": true,
+            "total_delay": 22282,
+            "baseline_delay": 27134,
+            "ratio": 1.217754241091464,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_07",
+            "legal": true,
+            "total_delay": 23949,
+            "baseline_delay": 31341,
+            "ratio": 1.3086558937742703,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_08",
+            "legal": true,
+            "total_delay": 25302,
+            "baseline_delay": 30886,
+            "ratio": 1.2206940162832978,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_09",
+            "legal": true,
+            "total_delay": 23244,
+            "baseline_delay": 27802,
+            "ratio": 1.1960936155567028,
+            "runtime_s": null,
+            "reasons": []
+          }
+        ]
+      },
+      "warm_start": {
+        "directory": "/home/younix/eda-3d-routing-challenge/dev/incumbents/hard/20261002T024319.157302Z-exact-polish/routes",
+        "origin": "validated baseline or explicit resumed incumbent"
+      },
+      "official_reference_warm_start": false,
+      "official_reference_ancestor": null,
+      "initial_route_artifact_available": true,
+      "inherited_case_portfolio": {
+        "upstream_revision": "499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+        "suite": "benchmarks_hard",
+        "artifact_directory": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T024229.490164Z-case-portfolio",
+        "portfolio_selection": true,
+        "sources": [
+          {
+            "directory": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T023506.922949Z-exact-polish",
+            "manifest_sha256": "01665fa9a749affccc5fed3f33b46e2d8b19877ec89ee6077b701acfec4c8dea",
+            "score": 1.2375216859738483
+          },
+          {
+            "directory": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T022919.965005Z-exact-polish",
+            "manifest_sha256": "f3e6f1360bfd2a53715ad7a54251f75a846410ca492ee83a72c6086729be3106",
+            "score": 1.2333571857577519
+          }
+        ],
+        "cases": [
+          {
+            "case": "case_01",
+            "case_sha256": "685a165a7a15811dff12839e0dbe79752b889558213f760ad5f0df6139766f5d",
+            "total_delay": 9216,
+            "source_index": 1,
+            "source_run": "20261002T022919.965005Z-exact-polish",
+            "output_sha256": "bfd979a7646dff5259a7c46083e4311b37e6ea5e1438db58420e01de102b9004",
+            "candidate_delays": [
+              9450,
+              9216
+            ]
+          },
+          {
+            "case": "case_02",
+            "case_sha256": "1017b8aac77273a25186858bf39dd66293d56aecebfc7b0e1f5a19c66a2d6c2e",
+            "total_delay": 14748,
+            "source_index": 1,
+            "source_run": "20261002T022919.965005Z-exact-polish",
+            "output_sha256": "8c465b055b2651f94bfe0a815bb919c408ff8eb241d93c7fd2b5aed2f9d93cb9",
+            "candidate_delays": [
+              15578,
+              14748
+            ]
+          },
+          {
+            "case": "case_03",
+            "case_sha256": "4783af0f84289f7d48d70b7428d2f7b8fbcdefaf2bdfca2bac237e874bd97858",
+            "total_delay": 12044,
+            "source_index": 0,
+            "source_run": "20261002T023506.922949Z-exact-polish",
+            "output_sha256": "0f5652803ccfecceb1e882662a236541ffd27e1b7dbbb76690a3d2a5f0e4b27e",
+            "candidate_delays": [
+              12044,
+              12294
+            ]
+          },
+          {
+            "case": "case_04",
+            "case_sha256": "06324939b75971e45caa9e7f19d824a254e0f61167dd6b279bbff612d77d96f1",
+            "total_delay": 14293,
+            "source_index": 0,
+            "source_run": "20261002T023506.922949Z-exact-polish",
+            "output_sha256": "ec6b1468368c3890c5750a7b232632db3b1880fc45e53784bc3cf1287e2caf45",
+            "candidate_delays": [
+              14293,
+              14835
+            ]
+          },
+          {
+            "case": "case_05",
+            "case_sha256": "51e44c96f14e5d3229047d6ee5ba2aa0faee94fb208f3f9e716310a0620306a1",
+            "total_delay": 16775,
+            "source_index": 0,
+            "source_run": "20261002T023506.922949Z-exact-polish",
+            "output_sha256": "e87fba3b903398c5ff548c6bf86c869a8a596f522fc3105b81047979e10ccf1c",
+            "candidate_delays": [
+              16775,
+              16905
+            ]
+          },
+          {
+            "case": "case_06",
+            "case_sha256": "612b2680497826836de4d9553d8dc95d53f1d46fe07858cfdb74e43ce5582cba",
+            "total_delay": 22300,
+            "source_index": 0,
+            "source_run": "20261002T023506.922949Z-exact-polish",
+            "output_sha256": "65ab41ebe0cca7f9eb1555abf799a0adcbce3e06f991e12bcecca13de9625508",
+            "candidate_delays": [
+              22300,
+              22560
+            ]
+          },
+          {
+            "case": "case_07",
+            "case_sha256": "e3475bed19f53670482b4b864a276c475b47e1cac7237d8fa26eeb48714de8f0",
+            "total_delay": 24163,
+            "source_index": 0,
+            "source_run": "20261002T023506.922949Z-exact-polish",
+            "output_sha256": "f897887f928139c6ffe031260afdd83e5f6f58f2a46089f9f00b7ad205b71d37",
+            "candidate_delays": [
+              24163,
+              24747
+            ]
+          },
+          {
+            "case": "case_08",
+            "case_sha256": "b1dbc8ed8aab7cbb457987f4b8a877b9c2adda8575b326d9822523f090cec1f2",
+            "total_delay": 25304,
+            "source_index": 1,
+            "source_run": "20261002T022919.965005Z-exact-polish",
+            "output_sha256": "50d6bd090eeb6717818fb481f6638859533c67873d1b6e4b346c76501cfc69d2",
+            "candidate_delays": [
+              25412,
+              25304
+            ]
+          },
+          {
+            "case": "case_09",
+            "case_sha256": "bcbd72a7bb47ec5c5f82428573ffabdb932594c4b574d552808851617b05f6c1",
+            "total_delay": 23310,
+            "source_index": 0,
+            "source_run": "20261002T023506.922949Z-exact-polish",
+            "output_sha256": "5a091576faaad8d1987bdd50edfd116b798523c11028b85dc3aca156b4d079f3",
+            "candidate_delays": [
+              23310,
+              23626
+            ]
+          }
+        ],
+        "limitations": "Case portfolio, not a single fixed-seed solver run or same-budget algorithm comparison. Entire case routes are selected; no net splicing. Available generation ancestry is deduplicated; missing raw ancestors and reference generation costs remain unknown.",
+        "score": {
+          "format": "m3d-leaderboard",
+          "complete": true,
+          "aggregate_score": 1.2491377321487542,
+          "n_cases": 9,
+          "n_legal": 9,
+          "formula": "aggregate = geomean_c(baseline_total_c / submission_total_c); higher is better; baseline scores 1.0; all cases must be legal for a complete ranked submission (else aggregate = 0.0)",
+          "cases": [
+            {
+              "case": "case_01",
+              "legal": true,
+              "total_delay": 9216,
+              "baseline_delay": 11938,
+              "ratio": 1.2953559027777777,
+              "runtime_s": null,
+              "reasons": []
+            },
+            {
+              "case": "case_02",
+              "legal": true,
+              "total_delay": 14748,
+              "baseline_delay": 18910,
+              "ratio": 1.2822077569839978,
+              "runtime_s": null,
+              "reasons": []
+            },
+            {
+              "case": "case_03",
+              "legal": true,
+              "total_delay": 12044,
+              "baseline_delay": 14724,
+              "ratio": 1.2225174360677515,
+              "runtime_s": null,
+              "reasons": []
+            },
+            {
+              "case": "case_04",
+              "legal": true,
+              "total_delay": 14293,
+              "baseline_delay": 18077,
+              "ratio": 1.2647449800601693,
+              "runtime_s": null,
+              "reasons": []
+            },
+            {
+              "case": "case_05",
+              "legal": true,
+              "total_delay": 16775,
+              "baseline_delay": 21051,
+              "ratio": 1.254903129657228,
+              "runtime_s": null,
+              "reasons": []
+            },
+            {
+              "case": "case_06",
+              "legal": true,
+              "total_delay": 22300,
+              "baseline_delay": 27134,
+              "ratio": 1.2167713004484304,
+              "runtime_s": null,
+              "reasons": []
+            },
+            {
+              "case": "case_07",
+              "legal": true,
+              "total_delay": 24163,
+              "baseline_delay": 31341,
+              "ratio": 1.2970657617017753,
+              "runtime_s": null,
+              "reasons": []
+            },
+            {
+              "case": "case_08",
+              "legal": true,
+              "total_delay": 25304,
+              "baseline_delay": 30886,
+              "ratio": 1.2205975339867214,
+              "runtime_s": null,
+              "reasons": []
+            },
+            {
+              "case": "case_09",
+              "legal": true,
+              "total_delay": 23310,
+              "baseline_delay": 27802,
+              "ratio": 1.1927069927069927,
+              "runtime_s": null,
+              "reasons": []
+            }
+          ]
+        },
+        "known_ancestry_wrapper_wall_s": 738.8489761659876,
+        "known_ancestry_runs": {
+          "20261002T023506.922949Z-exact-polish": 22.114717836026102,
+          "20261002T022353.079439Z-exact-polish": 63.99542895401828,
+          "20261002T022919.965005Z-exact-polish": 19.521138629992492,
+          "20261002T002153.697116Z-exact-polish": 34.63133071298944,
+          "20261002T001045.804709Z-exact-polish": 18.680967826978303,
+          "20261002T000141.903840Z-exact-polish": 10.122704948007595,
+          "20261001T235301.888083Z-exact-polish": 9.28667595697334,
+          "20261001T234843.075364Z-exact-polish": 181.61026140500326,
+          "20261001T231330.371744Z-exact-polish": 46.29440652200719,
+          "20261001T225003.513464Z-exact-polish": 20.164739409985486,
+          "20261001T224311.948014Z-exact-polish": 86.4340669339872,
+          "20261001T223212.140484Z-exact-polish": 91.89035713800695,
+          "20261001T220917.515539Z-exact-polish": 19.999891070008744,
+          "20261001T220349.074348Z-exact-polish": 91.84528695000336,
+          "20261001T215550.921679Z-exact-polish": 10.837268401985057,
+          "20261001T214526.246570Z-exact-polish": 8.233417987008579,
+          "20261001T212816.474321Z-exact-polish": 3.186315483006183
+        },
+        "missing_ancestor_artifacts": [
+          "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T001313.450750Z-exact-polish/routes"
+        ],
+        "selection_wall_s": 0.5753293059533462,
+        "official_rescore_process": {
+          "command": [
+            "/home/younix/eda-3d-routing-challenge/.venv/bin/python",
+            "-m",
+            "m3d.cli",
+            "score-suite",
+            "--suite",
+            "benchmarks_hard",
+            "--submission-dir",
+            "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T024229.490164Z-case-portfolio/routes",
+            "--out",
+            "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T024229.490164Z-case-portfolio/official-rescore.json"
+          ],
+          "cwd": "/home/younix/eda-3d-routing-challenge/dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+          "budget_s": 180,
+          "wall_s": 0.31679194496246055,
+          "exit_code": 0,
+          "timeout": false,
+          "interrupted": false,
+          "log": "dev/artifacts/20261002T024229.490164Z-case-portfolio/official-rescore.log",
+          "peak_rss_kib": 18976,
+          "user_cpu_s": 0.29,
+          "system_cpu_s": 0.01
+        }
+      },
+      "known_total_optimizer_wall_s": 787.7357904730598,
+      "attribution": "Locally validated pipeline; see ancestor manifests",
+      "optimizer_chain": [
+        {
+          "run_id": "20261002T024319.157302Z-exact-polish",
+          "mode": "fanout_fine_adaptive",
+          "wrapper_wall_s": 32.59271374903619
+        },
+        {
+          "run_id": "20261002T031034.943763Z-exact-polish",
+          "mode": "fanout_fine_donor",
+          "wrapper_wall_s": 16.294100558036007
+        }
+      ],
+      "recorded_optimizer_chain_wall_s": 48.8868143070722,
+      "initial_route_source": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T024229.490164Z-case-portfolio/routes",
+      "wrapper_wall_s": 16.294100558036007,
+      "core_wall_s": 14.417015716957394,
+      "peak_core_rss_kib": 4864,
+      "cases": [
+        {
+          "donor_path": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T022919.965005Z-exact-polish/routes/case_01.sol.json",
+          "donor_sha256": "bfd979a7646dff5259a7c46083e4311b37e6ea5e1438db58420e01de102b9004",
+          "donor_delay": 9216,
+          "case": "case_01",
+          "case_sha256": "685a165a7a15811dff12839e0dbe79752b889558213f760ad5f0df6139766f5d",
+          "case_seed": 1264516513,
+          "warm_start_sha256": "30f419015acb45b25584a395eacdf12b294bb6e60a53168f2a0e3ffdb754efb7",
+          "before_delay": 9186,
+          "before_resources": {
+            "net_vertex_uses": 1904,
+            "edges": 1842,
+            "vias": 391
+          },
+          "process": {
+            "command": [
+              "/home/younix/eda-3d-routing-challenge/dev/artifacts/build/exact_polish",
+              "60.0",
+              "1",
+              "1000",
+              "fanout_fine_donor",
+              "5000000",
+              "history_step=1",
+              "present_initial=2",
+              "present_step=1"
+            ],
+            "cwd": "/home/younix/eda-3d-routing-challenge",
+            "budget_s": 60.0,
+            "external_cap_s": 65.0,
+            "wall_s": 1.8294586180127226,
+            "exit_code": 0,
+            "interrupted": false,
+            "external_timeout": false,
+            "peak_rss_kib": 4480,
+            "user_cpu_s": 1.82,
+            "system_cpu_s": 0.02,
+            "repair_counters": {
+              "proposals": 977,
+              "no_gain": 609,
+              "too_many": 0,
+              "attempts": 368,
+              "negotiation_rounds": 2799,
+              "conflicted_rounds": 2461,
+              "fresh_attempts": 0,
+              "fresh_legal": 0,
+              "read_s": 0.00159684,
+              "validation_s": 0.000821933,
+              "optimization_s": 1.78255,
+              "search_reset_s": 0.0240915,
+              "search_rebuild_s": 0.0930955,
+              "present_initial": 2,
+              "present_step": 1,
+              "history_step": 1,
+              "price_units": 16,
+              "snapshot_s": 0.000230572,
+              "negotiation_setup_s": 0.000661835,
+              "negotiation_scan_s": 0.00501655,
+              "work_limit": 5000000,
+              "work_exhausted": 1,
+              "expansions_per_second": 2804960.0,
+              "uphill_moves": 0,
+              "selection_nodes": 0,
+              "selection_complete": 0,
+              "selection_partial": 0,
+              "neighborhood_attempts": [
+                123,
+                118,
+                127
+              ],
+              "neighborhood_gains": [
+                1,
+                2,
+                2
+              ],
+              "failed": 31,
+              "nonimproving": 332
+            }
+          },
+          "candidate_accepted": true,
+          "error": null,
+          "core": {
+            "total_delay": 9160,
+            "budget_reached": true,
+            "accepted_replacements": 5,
+            "searches": 18174,
+            "expansions": 5000000
+          },
+          "resources": {
+            "net_vertex_uses": 1913,
+            "edges": 1851,
+            "vias": 392
+          },
+          "legal": true,
+          "total_delay": 9160,
+          "ratio": 1.3032751091703056,
+          "output_sha256": "81e536d6b96caf223d7662a5a9546533077a5310fa8374f259fe10a4ca1758e4"
+        },
+        {
+          "donor_path": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T022919.965005Z-exact-polish/routes/case_02.sol.json",
+          "donor_sha256": "8c465b055b2651f94bfe0a815bb919c408ff8eb241d93c7fd2b5aed2f9d93cb9",
+          "donor_delay": 14748,
+          "case": "case_02",
+          "case_sha256": "1017b8aac77273a25186858bf39dd66293d56aecebfc7b0e1f5a19c66a2d6c2e",
+          "case_seed": 379027409,
+          "warm_start_sha256": "6edc6a8bf3a186dbd1491917041d2a9d6ed87c2799dcc72b224c2ad0c420bc05",
+          "before_delay": 14672,
+          "before_resources": {
+            "net_vertex_uses": 2439,
+            "edges": 2371,
+            "vias": 515
+          },
+          "process": {
+            "command": [
+              "/home/younix/eda-3d-routing-challenge/dev/artifacts/build/exact_polish",
+              "60.0",
+              "1",
+              "1000",
+              "fanout_fine_donor",
+              "5000000",
+              "history_step=1",
+              "present_initial=2",
+              "present_step=1"
+            ],
+            "cwd": "/home/younix/eda-3d-routing-challenge",
+            "budget_s": 60.0,
+            "external_cap_s": 65.0,
+            "wall_s": 1.574896096950397,
+            "exit_code": 0,
+            "interrupted": false,
+            "external_timeout": false,
+            "peak_rss_kib": 4480,
+            "user_cpu_s": 1.62,
+            "system_cpu_s": 0.0,
+            "repair_counters": {
+              "proposals": 217,
+              "no_gain": 114,
+              "too_many": 3,
+              "attempts": 100,
+              "negotiation_rounds": 1324,
+              "conflicted_rounds": 1253,
+              "fresh_attempts": 0,
+              "fresh_legal": 0,
+              "read_s": 0.00210102,
+              "validation_s": 0.00110074,
+              "optimization_s": 1.56246,
+              "search_reset_s": 0.0178061,
+              "search_rebuild_s": 0.0616898,
+              "present_initial": 2,
+              "present_step": 1,
+              "history_step": 1,
+              "price_units": 16,
+              "snapshot_s": 7.9801e-05,
+              "negotiation_setup_s": 0.000229121,
+              "negotiation_scan_s": 0.00279293,
+              "work_limit": 5000000,
+              "work_exhausted": 1,
+              "expansions_per_second": 3200080.0,
+              "uphill_moves": 0,
+              "selection_nodes": 0,
+              "selection_complete": 0,
+              "selection_partial": 0,
+              "neighborhood_attempts": [
+                33,
+                34,
+                33
+              ],
+              "neighborhood_gains": [
+                2,
+                0,
+                3
+              ],
+              "failed": 30,
+              "nonimproving": 65
+            }
+          },
+          "candidate_accepted": true,
+          "error": null,
+          "core": {
+            "total_delay": 14616,
+            "budget_reached": true,
+            "accepted_replacements": 5,
+            "searches": 11556,
+            "expansions": 5000000
+          },
+          "resources": {
+            "net_vertex_uses": 2434,
+            "edges": 2366,
+            "vias": 513
+          },
+          "legal": true,
+          "total_delay": 14616,
+          "ratio": 1.2937876299945266,
+          "output_sha256": "630e9606f7371c1ae0e2708b1582ac00ceb7111f3c89149a4bd08f0d1d6dc3f6"
+        },
+        {
+          "donor_path": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T022919.965005Z-exact-polish/routes/case_03.sol.json",
+          "donor_sha256": "316ce1c8b4b3a0f939f5d2c25a353510ec88923accf54b209bd149a1cf4e50a4",
+          "donor_delay": 12294,
+          "case": "case_03",
+          "case_sha256": "4783af0f84289f7d48d70b7428d2f7b8fbcdefaf2bdfca2bac237e874bd97858",
+          "case_seed": 1559207362,
+          "warm_start_sha256": "3236dd6ffcd44dba54bbcae198ddb1a684aae8b214084dea7d84e5ff7e0d7535",
+          "before_delay": 12012,
+          "before_resources": {
+            "net_vertex_uses": 2496,
+            "edges": 2423,
+            "vias": 466
+          },
+          "process": {
+            "command": [
+              "/home/younix/eda-3d-routing-challenge/dev/artifacts/build/exact_polish",
+              "60.0",
+              "1",
+              "1000",
+              "fanout_fine_donor",
+              "5000000",
+              "history_step=1",
+              "present_initial=2",
+              "present_step=1"
+            ],
+            "cwd": "/home/younix/eda-3d-routing-challenge",
+            "budget_s": 60.0,
+            "external_cap_s": 65.0,
+            "wall_s": 1.6236410349956714,
+            "exit_code": 0,
+            "interrupted": false,
+            "external_timeout": false,
+            "peak_rss_kib": 4480,
+            "user_cpu_s": 1.61,
+            "system_cpu_s": 0.01,
+            "repair_counters": {
+              "proposals": 251,
+              "no_gain": 118,
+              "too_many": 0,
+              "attempts": 133,
+              "negotiation_rounds": 1344,
+              "conflicted_rounds": 1230,
+              "fresh_attempts": 0,
+              "fresh_legal": 0,
+              "read_s": 0.00159516,
+              "validation_s": 0.000815105,
+              "optimization_s": 1.5687,
+              "search_reset_s": 0.0173821,
+              "search_rebuild_s": 0.0552185,
+              "present_initial": 2,
+              "present_step": 1,
+              "history_step": 1,
+              "price_units": 16,
+              "snapshot_s": 0.000102877,
+              "negotiation_setup_s": 0.000266291,
+              "negotiation_scan_s": 0.00298316,
+              "work_limit": 5000000,
+              "work_exhausted": 1,
+              "expansions_per_second": 3187360.0,
+              "uphill_moves": 0,
+              "selection_nodes": 0,
+              "selection_complete": 0,
+              "selection_partial": 0,
+              "neighborhood_attempts": [
+                46,
+                47,
+                40
+              ],
+              "neighborhood_gains": [
+                0,
+                1,
+                1
+              ],
+              "failed": 20,
+              "nonimproving": 111
+            }
+          },
+          "candidate_accepted": true,
+          "error": null,
+          "core": {
+            "total_delay": 12008,
+            "budget_reached": true,
+            "accepted_replacements": 2,
+            "searches": 11342,
+            "expansions": 5000000
+          },
+          "resources": {
+            "net_vertex_uses": 2491,
+            "edges": 2418,
+            "vias": 462
+          },
+          "legal": true,
+          "total_delay": 12008,
+          "ratio": 1.2261825449700199,
+          "output_sha256": "0fd8ed7d58a9b540ce10e1372ae29c06cccdf9420e7eb32d3eb946f388d57e99"
+        },
+        {
+          "donor_path": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T022919.965005Z-exact-polish/routes/case_04.sol.json",
+          "donor_sha256": "d552569d7d92996bfb6d873bbda00ad694829903a0ef10ad847932c3bb39e95b",
+          "donor_delay": 14835,
+          "case": "case_04",
+          "case_sha256": "06324939b75971e45caa9e7f19d824a254e0f61167dd6b279bbff612d77d96f1",
+          "case_seed": 159524408,
+          "warm_start_sha256": "8a394c0c0494d5cd4a242b69c2dab0d5e3a5d0642aea545ac5586478bf07bcc8",
+          "before_delay": 14289,
+          "before_resources": {
+            "net_vertex_uses": 2930,
+            "edges": 2852,
+            "vias": 531
+          },
+          "process": {
+            "command": [
+              "/home/younix/eda-3d-routing-challenge/dev/artifacts/build/exact_polish",
+              "60.0",
+              "1",
+              "1000",
+              "fanout_fine_donor",
+              "5000000",
+              "history_step=1",
+              "present_initial=2",
+              "present_step=1"
+            ],
+            "cwd": "/home/younix/eda-3d-routing-challenge",
+            "budget_s": 60.0,
+            "external_cap_s": 65.0,
+            "wall_s": 1.5728445290005766,
+            "exit_code": 0,
+            "interrupted": false,
+            "external_timeout": false,
+            "peak_rss_kib": 4608,
+            "user_cpu_s": 1.61,
+            "system_cpu_s": 0.0,
+            "repair_counters": {
+              "proposals": 98,
+              "no_gain": 41,
+              "too_many": 0,
+              "attempts": 57,
+              "negotiation_rounds": 718,
+              "conflicted_rounds": 675,
+              "fresh_attempts": 0,
+              "fresh_legal": 0,
+              "read_s": 0.00227217,
+              "validation_s": 0.00120718,
+              "optimization_s": 1.56158,
+              "search_reset_s": 0.013037,
+              "search_rebuild_s": 0.0447021,
+              "present_initial": 2,
+              "present_step": 1,
+              "history_step": 1,
+              "price_units": 16,
+              "snapshot_s": 6.5863e-05,
+              "negotiation_setup_s": 0.000266727,
+              "negotiation_scan_s": 0.00317101,
+              "work_limit": 5000000,
+              "work_exhausted": 1,
+              "expansions_per_second": 3201900.0,
+              "uphill_moves": 0,
+              "selection_nodes": 0,
+              "selection_complete": 0,
+              "selection_partial": 0,
+              "neighborhood_attempts": [
+                19,
+                19,
+                19
+              ],
+              "neighborhood_gains": [
+                0,
+                0,
+                0
+              ],
+              "failed": 15,
+              "nonimproving": 42
+            }
+          },
+          "candidate_accepted": true,
+          "error": null,
+          "core": {
+            "total_delay": 14289,
+            "budget_reached": true,
+            "accepted_replacements": 0,
+            "searches": 6715,
+            "expansions": 5000000
+          },
+          "resources": {
+            "net_vertex_uses": 2921,
+            "edges": 2843,
+            "vias": 529
+          },
+          "legal": true,
+          "total_delay": 14289,
+          "ratio": 1.2650990272237386,
+          "output_sha256": "5aadb69886dd424ca13da3207ea0c70501c9feb43d997de4f11b43a597ec947c"
+        },
+        {
+          "donor_path": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T022919.965005Z-exact-polish/routes/case_05.sol.json",
+          "donor_sha256": "c63ecbdc2f67ac8ffe379bab8bb3def2b1037618dce31379caec9ea286b6eab6",
+          "donor_delay": 16905,
+          "case": "case_05",
+          "case_sha256": "51e44c96f14e5d3229047d6ee5ba2aa0faee94fb208f3f9e716310a0620306a1",
+          "case_seed": 661958188,
+          "warm_start_sha256": "08e3157a6bfb18965be9f13ed79e7eaec73c701959fe4e988a8d40021d1ff1c0",
+          "before_delay": 16705,
+          "before_resources": {
+            "net_vertex_uses": 3146,
+            "edges": 3063,
+            "vias": 590
+          },
+          "process": {
+            "command": [
+              "/home/younix/eda-3d-routing-challenge/dev/artifacts/build/exact_polish",
+              "60.0",
+              "1",
+              "1000",
+              "fanout_fine_donor",
+              "5000000",
+              "history_step=1",
+              "present_initial=2",
+              "present_step=1"
+            ],
+            "cwd": "/home/younix/eda-3d-routing-challenge",
+            "budget_s": 60.0,
+            "external_cap_s": 65.0,
+            "wall_s": 1.5725775529863313,
+            "exit_code": 0,
+            "interrupted": false,
+            "external_timeout": false,
+            "peak_rss_kib": 4608,
+            "user_cpu_s": 1.59,
+            "system_cpu_s": 0.0,
+            "repair_counters": {
+              "proposals": 95,
+              "no_gain": 38,
+              "too_many": 0,
+              "attempts": 57,
+              "negotiation_rounds": 724,
+              "conflicted_rounds": 679,
+              "fresh_attempts": 0,
+              "fresh_legal": 0,
+              "read_s": 0.00198838,
+              "validation_s": 0.00103065,
+              "optimization_s": 1.53607,
+              "search_reset_s": 0.0155642,
+              "search_rebuild_s": 0.0431924,
+              "present_initial": 2,
+              "present_step": 1,
+              "history_step": 1,
+              "price_units": 16,
+              "snapshot_s": 6.5394e-05,
+              "negotiation_setup_s": 0.000287892,
+              "negotiation_scan_s": 0.00218154,
+              "work_limit": 5000000,
+              "work_exhausted": 1,
+              "expansions_per_second": 3255060.0,
+              "uphill_moves": 0,
+              "selection_nodes": 0,
+              "selection_complete": 0,
+              "selection_partial": 0,
+              "neighborhood_attempts": [
+                20,
+                22,
+                15
+              ],
+              "neighborhood_gains": [
+                2,
+                1,
+                0
+              ],
+              "failed": 13,
+              "nonimproving": 41
+            }
+          },
+          "candidate_accepted": true,
+          "error": null,
+          "core": {
+            "total_delay": 16661,
+            "budget_reached": true,
+            "accepted_replacements": 3,
+            "searches": 6518,
+            "expansions": 5000000
+          },
+          "resources": {
+            "net_vertex_uses": 3134,
+            "edges": 3051,
+            "vias": 592
+          },
+          "legal": true,
+          "total_delay": 16661,
+          "ratio": 1.2634895864593962,
+          "output_sha256": "dec71c9e46f5458a46c4b7e8d447dbc531384bf6febd891a2217fa85da098a10"
+        },
+        {
+          "donor_path": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T022919.965005Z-exact-polish/routes/case_06.sol.json",
+          "donor_sha256": "623231d0d1682725662a6d35c94d187808124e8a71357922e4ccbc097f602cb3",
+          "donor_delay": 22560,
+          "case": "case_06",
+          "case_sha256": "612b2680497826836de4d9553d8dc95d53f1d46fe07858cfdb74e43ce5582cba",
+          "case_seed": 1393821884,
+          "warm_start_sha256": "3dbdbee786f4de09b03433d9fc2fb9337a0b9c1cc3c4ebfd67f4b980d078966d",
+          "before_delay": 22288,
+          "before_resources": {
+            "net_vertex_uses": 3848,
+            "edges": 3760,
+            "vias": 663
+          },
+          "process": {
+            "command": [
+              "/home/younix/eda-3d-routing-challenge/dev/artifacts/build/exact_polish",
+              "60.0",
+              "1",
+              "1000",
+              "fanout_fine_donor",
+              "5000000",
+              "history_step=1",
+              "present_initial=2",
+              "present_step=1"
+            ],
+            "cwd": "/home/younix/eda-3d-routing-challenge",
+            "budget_s": 60.0,
+            "external_cap_s": 65.0,
+            "wall_s": 1.6252446009893902,
+            "exit_code": 0,
+            "interrupted": false,
+            "external_timeout": false,
+            "peak_rss_kib": 4736,
+            "user_cpu_s": 1.7,
+            "system_cpu_s": 0.0,
+            "repair_counters": {
+              "proposals": 81,
+              "no_gain": 30,
+              "too_many": 0,
+              "attempts": 51,
+              "negotiation_rounds": 643,
+              "conflicted_rounds": 601,
+              "fresh_attempts": 0,
+              "fresh_legal": 0,
+              "read_s": 0.00310321,
+              "validation_s": 0.00163993,
+              "optimization_s": 1.59878,
+              "search_reset_s": 0.0152588,
+              "search_rebuild_s": 0.0460944,
+              "present_initial": 2,
+              "present_step": 1,
+              "history_step": 1,
+              "price_units": 16,
+              "snapshot_s": 7.3276e-05,
+              "negotiation_setup_s": 0.000444239,
+              "negotiation_scan_s": 0.00205,
+              "work_limit": 5000000,
+              "work_exhausted": 1,
+              "expansions_per_second": 3127390.0,
+              "uphill_moves": 0,
+              "selection_nodes": 0,
+              "selection_complete": 0,
+              "selection_partial": 0,
+              "neighborhood_attempts": [
+                16,
+                17,
+                18
+              ],
+              "neighborhood_gains": [
+                0,
+                0,
+                2
+              ],
+              "failed": 10,
+              "nonimproving": 39
+            }
+          },
+          "candidate_accepted": true,
+          "error": null,
+          "core": {
+            "total_delay": 22282,
+            "budget_reached": true,
+            "accepted_replacements": 2,
+            "searches": 5264,
+            "expansions": 5000000
+          },
+          "resources": {
+            "net_vertex_uses": 3854,
+            "edges": 3766,
+            "vias": 663
+          },
+          "legal": true,
+          "total_delay": 22282,
+          "ratio": 1.217754241091464,
+          "output_sha256": "29564507e6bf1db079d8a36ff0ae8cc2da74808122af85f12b066fb08e24c599"
+        },
+        {
+          "donor_path": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T022919.965005Z-exact-polish/routes/case_07.sol.json",
+          "donor_sha256": "795174ddc213f8437a96e5423261da63ce1a48ce9112cadb44e7a6f17e513a91",
+          "donor_delay": 24747,
+          "case": "case_07",
+          "case_sha256": "e3475bed19f53670482b4b864a276c475b47e1cac7237d8fa26eeb48714de8f0",
+          "case_seed": 40327557,
+          "warm_start_sha256": "6d5e25ba945fc6e3e8b621e4f7df3e0335be7e6f90d440d5ee7331d454854d22",
+          "before_delay": 24087,
+          "before_resources": {
+            "net_vertex_uses": 4310,
+            "edges": 4216,
+            "vias": 745
+          },
+          "process": {
+            "command": [
+              "/home/younix/eda-3d-routing-challenge/dev/artifacts/build/exact_polish",
+              "60.0",
+              "1",
+              "1000",
+              "fanout_fine_donor",
+              "5000000",
+              "history_step=1",
+              "present_initial=2",
+              "present_step=1"
+            ],
+            "cwd": "/home/younix/eda-3d-routing-challenge",
+            "budget_s": 60.0,
+            "external_cap_s": 65.0,
+            "wall_s": 1.5229689159896225,
+            "exit_code": 0,
+            "interrupted": false,
+            "external_timeout": false,
+            "peak_rss_kib": 4736,
+            "user_cpu_s": 1.65,
+            "system_cpu_s": 0.0,
+            "repair_counters": {
+              "proposals": 73,
+              "no_gain": 25,
+              "too_many": 5,
+              "attempts": 43,
+              "negotiation_rounds": 526,
+              "conflicted_rounds": 493,
+              "fresh_attempts": 0,
+              "fresh_legal": 0,
+              "read_s": 0.00315082,
+              "validation_s": 0.00170676,
+              "optimization_s": 1.48516,
+              "search_reset_s": 0.0142048,
+              "search_rebuild_s": 0.0409903,
+              "present_initial": 2,
+              "present_step": 1,
+              "history_step": 1,
+              "price_units": 16,
+              "snapshot_s": 6.866e-05,
+              "negotiation_setup_s": 0.000229136,
+              "negotiation_scan_s": 0.00173989,
+              "work_limit": 5000000,
+              "work_exhausted": 1,
+              "expansions_per_second": 3366640.0,
+              "uphill_moves": 0,
+              "selection_nodes": 0,
+              "selection_complete": 0,
+              "selection_partial": 0,
+              "neighborhood_attempts": [
+                12,
+                16,
+                15
+              ],
+              "neighborhood_gains": [
+                2,
+                2,
+                3
+              ],
+              "failed": 11,
+              "nonimproving": 25
+            }
+          },
+          "candidate_accepted": true,
+          "error": null,
+          "core": {
+            "total_delay": 23949,
+            "budget_reached": true,
+            "accepted_replacements": 7,
+            "searches": 4846,
+            "expansions": 5000000
+          },
+          "resources": {
+            "net_vertex_uses": 4302,
+            "edges": 4208,
+            "vias": 741
+          },
+          "legal": true,
+          "total_delay": 23949,
+          "ratio": 1.3086558937742703,
+          "output_sha256": "d37c4b0f4c49661a950c07f52ed7df20b753b2bbf300620e19b1facc35eefc3e"
+        },
+        {
+          "donor_path": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T022919.965005Z-exact-polish/routes/case_08.sol.json",
+          "donor_sha256": "50d6bd090eeb6717818fb481f6638859533c67873d1b6e4b346c76501cfc69d2",
+          "donor_delay": 25304,
+          "case": "case_08",
+          "case_sha256": "b1dbc8ed8aab7cbb457987f4b8a877b9c2adda8575b326d9822523f090cec1f2",
+          "case_seed": 411131539,
+          "warm_start_sha256": "4e5387d0d381d68cc5735a6a02b7837460fe969d6095acfc227c39878b62b424",
+          "before_delay": 25302,
+          "before_resources": {
+            "net_vertex_uses": 4649,
+            "edges": 4550,
+            "vias": 747
+          },
+          "process": {
+            "command": [
+              "/home/younix/eda-3d-routing-challenge/dev/artifacts/build/exact_polish",
+              "60.0",
+              "1",
+              "1000",
+              "fanout_fine_donor",
+              "5000000",
+              "history_step=1",
+              "present_initial=2",
+              "present_step=1"
+            ],
+            "cwd": "/home/younix/eda-3d-routing-challenge",
+            "budget_s": 60.0,
+            "external_cap_s": 65.0,
+            "wall_s": 1.4722299129934981,
+            "exit_code": 0,
+            "interrupted": false,
+            "external_timeout": false,
+            "peak_rss_kib": 4736,
+            "user_cpu_s": 1.61,
+            "system_cpu_s": 0.0,
+            "repair_counters": {
+              "proposals": 115,
+              "no_gain": 55,
+              "too_many": 10,
+              "attempts": 50,
+              "negotiation_rounds": 695,
+              "conflicted_rounds": 657,
+              "fresh_attempts": 0,
+              "fresh_legal": 0,
+              "read_s": 0.00341125,
+              "validation_s": 0.00188241,
+              "optimization_s": 1.45324,
+              "search_reset_s": 0.0160628,
+              "search_rebuild_s": 0.0420799,
+              "present_initial": 2,
+              "present_step": 1,
+              "history_step": 1,
+              "price_units": 16,
+              "snapshot_s": 0.000115769,
+              "negotiation_setup_s": 0.000229726,
+              "negotiation_scan_s": 0.00256562,
+              "work_limit": 5000000,
+              "work_exhausted": 1,
+              "expansions_per_second": 3440580.0,
+              "uphill_moves": 0,
+              "selection_nodes": 0,
+              "selection_complete": 0,
+              "selection_partial": 0,
+              "neighborhood_attempts": [
+                17,
+                16,
+                17
+              ],
+              "neighborhood_gains": [
+                0,
+                0,
+                0
+              ],
+              "failed": 13,
+              "nonimproving": 37
+            }
+          },
+          "candidate_accepted": true,
+          "error": null,
+          "core": {
+            "total_delay": 25302,
+            "budget_reached": true,
+            "accepted_replacements": 0,
+            "searches": 5451,
+            "expansions": 5000000
+          },
+          "resources": {
+            "net_vertex_uses": 4664,
+            "edges": 4565,
+            "vias": 746
+          },
+          "legal": true,
+          "total_delay": 25302,
+          "ratio": 1.2206940162832978,
+          "output_sha256": "d2f1360a2969cb356d9871659f20a542c40d34a83aadd3dfffd5a8e0afc261d7"
+        },
+        {
+          "donor_path": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T022919.965005Z-exact-polish/routes/case_09.sol.json",
+          "donor_sha256": "9451d2b5d10ab2e08a0302ac9146f5113ce181bb6939328a814785e8faa96487",
+          "donor_delay": 23626,
+          "case": "case_09",
+          "case_sha256": "bcbd72a7bb47ec5c5f82428573ffabdb932594c4b574d552808851617b05f6c1",
+          "case_seed": 1129825012,
+          "warm_start_sha256": "242344187f14d226cc8116ee0e27ea43f9d38c366d21cf0d2250b2faad50cd5e",
+          "before_delay": 23286,
+          "before_resources": {
+            "net_vertex_uses": 4550,
+            "edges": 4446,
+            "vias": 735
+          },
+          "process": {
+            "command": [
+              "/home/younix/eda-3d-routing-challenge/dev/artifacts/build/exact_polish",
+              "60.0",
+              "1",
+              "1000",
+              "fanout_fine_donor",
+              "5000000",
+              "history_step=1",
+              "present_initial=2",
+              "present_step=1"
+            ],
+            "cwd": "/home/younix/eda-3d-routing-challenge",
+            "budget_s": 60.0,
+            "external_cap_s": 65.0,
+            "wall_s": 1.6231544550391845,
+            "exit_code": 0,
+            "interrupted": false,
+            "external_timeout": false,
+            "peak_rss_kib": 4864,
+            "user_cpu_s": 1.71,
+            "system_cpu_s": 0.0,
+            "repair_counters": {
+              "proposals": 81,
+              "no_gain": 34,
+              "too_many": 0,
+              "attempts": 47,
+              "negotiation_rounds": 483,
+              "conflicted_rounds": 439,
+              "fresh_attempts": 0,
+              "fresh_legal": 0,
+              "read_s": 0.00268204,
+              "validation_s": 0.0013514,
+              "optimization_s": 1.60548,
+              "search_reset_s": 0.0148429,
+              "search_rebuild_s": 0.0408879,
+              "present_initial": 2,
+              "present_step": 1,
+              "history_step": 1,
+              "price_units": 16,
+              "snapshot_s": 7.7134e-05,
+              "negotiation_setup_s": 0.000273793,
+              "negotiation_scan_s": 0.00210741,
+              "work_limit": 5000000,
+              "work_exhausted": 1,
+              "expansions_per_second": 3114330.0,
+              "uphill_moves": 0,
+              "selection_nodes": 0,
+              "selection_complete": 0,
+              "selection_partial": 0,
+              "neighborhood_attempts": [
+                17,
+                13,
+                17
+              ],
+              "neighborhood_gains": [
+                1,
+                0,
+                3
+              ],
+              "failed": 4,
+              "nonimproving": 39
+            }
+          },
+          "candidate_accepted": true,
+          "error": null,
+          "core": {
+            "total_delay": 23244,
+            "budget_reached": true,
+            "accepted_replacements": 4,
+            "searches": 4266,
+            "expansions": 5000000
+          },
+          "resources": {
+            "net_vertex_uses": 4546,
+            "edges": 4442,
+            "vias": 737
+          },
+          "legal": true,
+          "total_delay": 23244,
+          "ratio": 1.1960936155567028,
+          "output_sha256": "a2fd0e3a867840934f40bed8d44f65eb3460e9d2622fad895556497e2467501c"
+        }
+      ],
+      "outputs": {
+        "routes/case_01.sol.json": "81e536d6b96caf223d7662a5a9546533077a5310fa8374f259fe10a4ca1758e4",
+        "routes/case_02.sol.json": "630e9606f7371c1ae0e2708b1582ac00ceb7111f3c89149a4bd08f0d1d6dc3f6",
+        "routes/case_03.sol.json": "0fd8ed7d58a9b540ce10e1372ae29c06cccdf9420e7eb32d3eb946f388d57e99",
+        "routes/case_04.sol.json": "5aadb69886dd424ca13da3207ea0c70501c9feb43d997de4f11b43a597ec947c",
+        "routes/case_05.sol.json": "dec71c9e46f5458a46c4b7e8d447dbc531384bf6febd891a2217fa85da098a10",
+        "routes/case_06.sol.json": "29564507e6bf1db079d8a36ff0ae8cc2da74808122af85f12b066fb08e24c599",
+        "routes/case_07.sol.json": "d37c4b0f4c49661a950c07f52ed7df20b753b2bbf300620e19b1facc35eefc3e",
+        "routes/case_08.sol.json": "d2f1360a2969cb356d9871659f20a542c40d34a83aadd3dfffd5a8e0afc261d7",
+        "routes/case_09.sol.json": "a2fd0e3a867840934f40bed8d44f65eb3460e9d2622fad895556497e2467501c"
+      },
+      "official_rescore": {
+        "command": [
+          "/home/younix/eda-3d-routing-challenge/.venv/bin/python",
+          "-m",
+          "m3d.cli",
+          "score-suite",
+          "--suite",
+          "benchmarks_hard",
+          "--submission-dir",
+          "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T031034.943763Z-exact-polish/routes",
+          "--out",
+          "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T031034.943763Z-exact-polish/coverage-rescore.json"
+        ],
+        "cwd": "/home/younix/eda-3d-routing-challenge/dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+        "budget_s": 180,
+        "wall_s": 0.26611709903227165,
+        "exit_code": 0,
+        "timeout": false,
+        "interrupted": false,
+        "log": "dev/artifacts/20261002T031034.943763Z-exact-polish/coverage-rescore.log",
+        "peak_rss_kib": 18984,
+        "user_cpu_s": 0.23,
+        "system_cpu_s": 0.02
+      }
+    },
+    {
+      "tier": "scale",
+      "run_id": "20261002T023529.212154Z-exact-polish",
+      "manifest_sha256": "9cadf3985c621ddc3d9de408cc22fea7759d366a78ef8104a595f001b53b2da7",
+      "source_identity": "72927a491ca8a69d491281353f3776af3a7e3262c5fab2660a54c341c4220100",
+      "config": {
+        "suite": "benchmarks_scale",
+        "case": null,
+        "mode": "fanout_fine_adaptive",
+        "budget": 60.0,
+        "work_budget": 5000000,
+        "present_initial": 2,
+        "present_step": 2,
+        "history_step": 2,
+        "seed": 1,
+        "passes": 1000,
+        "resume_dir": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T002229.334302Z-exact-polish/routes"
+      },
+      "score": {
+        "format": "m3d-leaderboard",
+        "complete": true,
+        "aggregate_score": 1.0427841747061612,
+        "n_cases": 8,
+        "n_legal": 8,
+        "formula": "aggregate = geomean_c(baseline_total_c / submission_total_c); higher is better; baseline scores 1.0; all cases must be legal for a complete ranked submission (else aggregate = 0.0)",
+        "cases": [
+          {
+            "case": "case_01",
+            "legal": true,
+            "total_delay": 43002,
+            "baseline_delay": 45088,
+            "ratio": 1.0485093716571323,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_02",
+            "legal": true,
+            "total_delay": 49714,
+            "baseline_delay": 51828,
+            "ratio": 1.042523232892143,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_03",
+            "legal": true,
+            "total_delay": 59792,
+            "baseline_delay": 62452,
+            "ratio": 1.0444875568637946,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_04",
+            "legal": true,
+            "total_delay": 62380,
+            "baseline_delay": 66106,
+            "ratio": 1.0597306829111894,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_05",
+            "legal": true,
+            "total_delay": 70949,
+            "baseline_delay": 74371,
+            "ratio": 1.0482318284965257,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_06",
+            "legal": true,
+            "total_delay": 84237,
+            "baseline_delay": 86553,
+            "ratio": 1.0274938566188254,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_07",
+            "legal": true,
+            "total_delay": 92791,
+            "baseline_delay": 96835,
+            "ratio": 1.0435818128913363,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_08",
+            "legal": true,
+            "total_delay": 117863,
+            "baseline_delay": 121175,
+            "ratio": 1.0281004216760137,
+            "runtime_s": null,
+            "reasons": []
+          }
+        ]
+      },
+      "warm_start": {
+        "directory": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T002229.334302Z-exact-polish/routes",
+        "origin": "validated baseline or explicit resumed incumbent"
+      },
+      "official_reference_warm_start": false,
+      "official_reference_ancestor": true,
+      "initial_route_artifact_available": true,
+      "inherited_case_portfolio": null,
+      "known_total_optimizer_wall_s": 168.47368185099913,
+      "attribution": "Official challenge reference routes followed by local optimization",
+      "optimizer_chain": [
+        {
+          "run_id": "20261001T225113.352679Z-exact-polish",
+          "mode": "polish",
+          "wrapper_wall_s": 24.051397647010162
+        },
+        {
+          "run_id": "20261001T230148.803499Z-exact-polish",
+          "mode": "fanout",
+          "wrapper_wall_s": 49.092739615996834
+        },
+        {
+          "run_id": "20261002T001932.829560Z-exact-polish",
+          "mode": "fanout_fine",
+          "wrapper_wall_s": 25.244959216972347
+        },
+        {
+          "run_id": "20261002T002229.334302Z-exact-polish",
+          "mode": "fanout_fine",
+          "wrapper_wall_s": 43.73065537301591
+        },
+        {
+          "run_id": "20261002T023529.212154Z-exact-polish",
+          "mode": "fanout_fine_adaptive",
+          "wrapper_wall_s": 26.353929998003878
+        }
+      ],
+      "recorded_optimizer_chain_wall_s": 168.47368185099913,
+      "initial_route_source": "/home/younix/eda-3d-routing-challenge/dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6/benchmarks_scale/reference",
+      "wrapper_wall_s": 26.353929998003878,
+      "core_wall_s": 17.400170719018206,
+      "peak_core_rss_kib": 10508,
+      "cases": [
+        {
+          "case": "case_01",
+          "case_sha256": "86aecbc407f74b0988098c968efcb9849eb87e00306e8307dd28ef339e070458",
+          "case_seed": 1813743792,
+          "warm_start_sha256": "4ea9f3cca6dc76b24d943c25bff4909f66da885d310efdf8692d0d4975b7eafb",
+          "before_delay": 43212,
+          "before_resources": {
+            "net_vertex_uses": 11842,
+            "edges": 11672,
+            "vias": 1332
+          },
+          "process": {
+            "command": [
+              "/home/younix/eda-3d-routing-challenge/dev/artifacts/build/exact_polish",
+              "60.0",
+              "1",
+              "1000",
+              "fanout_fine_adaptive",
+              "5000000",
+              "history_step=2",
+              "present_initial=2",
+              "present_step=2"
+            ],
+            "cwd": "/home/younix/eda-3d-routing-challenge",
+            "budget_s": 60.0,
+            "external_cap_s": 65.0,
+            "wall_s": 2.2264428000198677,
+            "exit_code": 0,
+            "interrupted": false,
+            "external_timeout": false,
+            "peak_rss_kib": 6824,
+            "user_cpu_s": 2.19,
+            "system_cpu_s": 0.02,
+            "repair_counters": {
+              "proposals": 25,
+              "no_gain": 11,
+              "too_many": 0,
+              "attempts": 14,
+              "negotiation_rounds": 70,
+              "conflicted_rounds": 56,
+              "fresh_attempts": 0,
+              "fresh_legal": 0,
+              "read_s": 0.0129873,
+              "validation_s": 0.00746198,
+              "optimization_s": 2.18051,
+              "search_reset_s": 0.0244693,
+              "search_rebuild_s": 0.0391942,
+              "present_initial": 2,
+              "present_step": 2,
+              "history_step": 2,
+              "price_units": 16,
+              "snapshot_s": 0.000515672,
+              "negotiation_setup_s": 0.00460264,
+              "negotiation_scan_s": 0.00295161,
+              "work_limit": 5000000,
+              "work_exhausted": 1,
+              "expansions_per_second": 2293040.0,
+              "uphill_moves": 0,
+              "selection_nodes": 0,
+              "selection_complete": 0,
+              "selection_partial": 0,
+              "neighborhood_attempts": [
+                2,
+                3,
+                9
+              ],
+              "neighborhood_gains": [
+                1,
+                0,
+                6
+              ],
+              "failed": 1,
+              "nonimproving": 6
+            }
+          },
+          "candidate_accepted": true,
+          "error": null,
+          "core": {
+            "total_delay": 43002,
+            "budget_reached": true,
+            "accepted_replacements": 7,
+            "searches": 732,
+            "expansions": 5000000
+          },
+          "resources": {
+            "net_vertex_uses": 11824,
+            "edges": 11654,
+            "vias": 1331
+          },
+          "legal": true,
+          "total_delay": 43002,
+          "ratio": 1.0485093716571323,
+          "output_sha256": "0d5f9c72c684d71dfdfcbcfada5e553c1e23161e4dd2be94aebb3f9809acdd3f"
+        },
+        {
+          "case": "case_02",
+          "case_sha256": "e59beb3293a96da64871a1c3f5fd547d619470e178a7dd1ea6bc7aed0f90af39",
+          "case_seed": 1967651581,
+          "warm_start_sha256": "eb3a390cfda73cc8333d526ccae46bcee1d0098ffbc96079013bd6a95e5e0cc5",
+          "before_delay": 49790,
+          "before_resources": {
+            "net_vertex_uses": 14443,
+            "edges": 14259,
+            "vias": 1508
+          },
+          "process": {
+            "command": [
+              "/home/younix/eda-3d-routing-challenge/dev/artifacts/build/exact_polish",
+              "60.0",
+              "1",
+              "1000",
+              "fanout_fine_adaptive",
+              "5000000",
+              "history_step=2",
+              "present_initial=2",
+              "present_step=2"
+            ],
+            "cwd": "/home/younix/eda-3d-routing-challenge",
+            "budget_s": 60.0,
+            "external_cap_s": 65.0,
+            "wall_s": 2.2255304970312864,
+            "exit_code": 0,
+            "interrupted": false,
+            "external_timeout": false,
+            "peak_rss_kib": 7228,
+            "user_cpu_s": 2.22,
+            "system_cpu_s": 0.02,
+            "repair_counters": {
+              "proposals": 10,
+              "no_gain": 4,
+              "too_many": 0,
+              "attempts": 6,
+              "negotiation_rounds": 37,
+              "conflicted_rounds": 31,
+              "fresh_attempts": 0,
+              "fresh_legal": 0,
+              "read_s": 0.0201533,
+              "validation_s": 0.00851486,
+              "optimization_s": 2.1741,
+              "search_reset_s": 0.0245265,
+              "search_rebuild_s": 0.0339098,
+              "present_initial": 2,
+              "present_step": 2,
+              "history_step": 2,
+              "price_units": 16,
+              "snapshot_s": 0.00020969,
+              "negotiation_setup_s": 0.00547776,
+              "negotiation_scan_s": 0.00176828,
+              "work_limit": 5000000,
+              "work_exhausted": 1,
+              "expansions_per_second": 2299800.0,
+              "uphill_moves": 0,
+              "selection_nodes": 0,
+              "selection_complete": 0,
+              "selection_partial": 0,
+              "neighborhood_attempts": [
+                2,
+                2,
+                2
+              ],
+              "neighborhood_gains": [
+                0,
+                1,
+                1
+              ],
+              "failed": 1,
+              "nonimproving": 3
+            }
+          },
+          "candidate_accepted": true,
+          "error": null,
+          "core": {
+            "total_delay": 49714,
+            "budget_reached": true,
+            "accepted_replacements": 2,
+            "searches": 531,
+            "expansions": 5000000
+          },
+          "resources": {
+            "net_vertex_uses": 14371,
+            "edges": 14187,
+            "vias": 1504
+          },
+          "legal": true,
+          "total_delay": 49714,
+          "ratio": 1.042523232892143,
+          "output_sha256": "a1f42d52e61b4adf177f10312224a70935d97a78a6c593fc506ee725d378c7d7"
+        },
+        {
+          "case": "case_03",
+          "case_sha256": "46732d04f041bd582d427ed0c0fece4ecbae4208cbd7b2c90380ef359f485b4c",
+          "case_seed": 20424259,
+          "warm_start_sha256": "3df03f7ef4ffbe155e1d0ba1251bd146f7047f293d2a86973badf6846853e008",
+          "before_delay": 59984,
+          "before_resources": {
+            "net_vertex_uses": 15744,
+            "edges": 15547,
+            "vias": 1558
+          },
+          "process": {
+            "command": [
+              "/home/younix/eda-3d-routing-challenge/dev/artifacts/build/exact_polish",
+              "60.0",
+              "1",
+              "1000",
+              "fanout_fine_adaptive",
+              "5000000",
+              "history_step=2",
+              "present_initial=2",
+              "present_step=2"
+            ],
+            "cwd": "/home/younix/eda-3d-routing-challenge",
+            "budget_s": 60.0,
+            "external_cap_s": 65.0,
+            "wall_s": 2.1742806900292635,
+            "exit_code": 0,
+            "interrupted": false,
+            "external_timeout": false,
+            "peak_rss_kib": 7808,
+            "user_cpu_s": 2.2,
+            "system_cpu_s": 0.01,
+            "repair_counters": {
+              "proposals": 16,
+              "no_gain": 11,
+              "too_many": 0,
+              "attempts": 5,
+              "negotiation_rounds": 31,
+              "conflicted_rounds": 26,
+              "fresh_attempts": 0,
+              "fresh_legal": 0,
+              "read_s": 0.0181404,
+              "validation_s": 0.00887314,
+              "optimization_s": 2.10679,
+              "search_reset_s": 0.0230651,
+              "search_rebuild_s": 0.0303996,
+              "present_initial": 2,
+              "present_step": 2,
+              "history_step": 2,
+              "price_units": 16,
+              "snapshot_s": 0.000465976,
+              "negotiation_setup_s": 0.00226638,
+              "negotiation_scan_s": 0.0016477,
+              "work_limit": 5000000,
+              "work_exhausted": 1,
+              "expansions_per_second": 2373270.0,
+              "uphill_moves": 0,
+              "selection_nodes": 0,
+              "selection_complete": 0,
+              "selection_partial": 0,
+              "neighborhood_attempts": [
+                2,
+                2,
+                1
+              ],
+              "neighborhood_gains": [
+                0,
+                0,
+                0
+              ],
+              "failed": 1,
+              "nonimproving": 4
+            }
+          },
+          "candidate_accepted": true,
+          "error": null,
+          "core": {
+            "total_delay": 59792,
+            "budget_reached": true,
+            "accepted_replacements": 0,
+            "searches": 405,
+            "expansions": 5000000
+          },
+          "resources": {
+            "net_vertex_uses": 15702,
+            "edges": 15505,
+            "vias": 1550
+          },
+          "legal": true,
+          "total_delay": 59792,
+          "ratio": 1.0444875568637946,
+          "output_sha256": "717a2d475741e311ab669bc49229a650a6c33c95ab5eeac29fd423238608fc9f"
+        },
+        {
+          "case": "case_04",
+          "case_sha256": "c419a4d6d2aa7093c4ebf23a9e299a1dfe486cfa24e4eb167deb92f59c820a43",
+          "case_seed": 676570752,
+          "warm_start_sha256": "05c3051175cbf9dccfa3c749babb5b212a0d10417030c008bf915f17e20ba093",
+          "before_delay": 62624,
+          "before_resources": {
+            "net_vertex_uses": 17794,
+            "edges": 17583,
+            "vias": 1857
+          },
+          "process": {
+            "command": [
+              "/home/younix/eda-3d-routing-challenge/dev/artifacts/build/exact_polish",
+              "60.0",
+              "1",
+              "1000",
+              "fanout_fine_adaptive",
+              "5000000",
+              "history_step=2",
+              "present_initial=2",
+              "present_step=2"
+            ],
+            "cwd": "/home/younix/eda-3d-routing-challenge",
+            "budget_s": 60.0,
+            "external_cap_s": 65.0,
+            "wall_s": 2.1725637150229886,
+            "exit_code": 0,
+            "interrupted": false,
+            "external_timeout": false,
+            "peak_rss_kib": 8240,
+            "user_cpu_s": 2.22,
+            "system_cpu_s": 0.02,
+            "repair_counters": {
+              "proposals": 19,
+              "no_gain": 10,
+              "too_many": 0,
+              "attempts": 9,
+              "negotiation_rounds": 41,
+              "conflicted_rounds": 32,
+              "fresh_attempts": 0,
+              "fresh_legal": 0,
+              "read_s": 0.0171567,
+              "validation_s": 0.00895471,
+              "optimization_s": 2.13168,
+              "search_reset_s": 0.031378,
+              "search_rebuild_s": 0.0358945,
+              "present_initial": 2,
+              "present_step": 2,
+              "history_step": 2,
+              "price_units": 16,
+              "snapshot_s": 0.000354399,
+              "negotiation_setup_s": 0.00694561,
+              "negotiation_scan_s": 0.00277173,
+              "work_limit": 5000000,
+              "work_exhausted": 1,
+              "expansions_per_second": 2345570.0,
+              "uphill_moves": 0,
+              "selection_nodes": 0,
+              "selection_complete": 0,
+              "selection_partial": 0,
+              "neighborhood_attempts": [
+                5,
+                3,
+                1
+              ],
+              "neighborhood_gains": [
+                1,
+                1,
+                0
+              ],
+              "failed": 1,
+              "nonimproving": 6
+            }
+          },
+          "candidate_accepted": true,
+          "error": null,
+          "core": {
+            "total_delay": 62380,
+            "budget_reached": true,
+            "accepted_replacements": 2,
+            "searches": 454,
+            "expansions": 5000000
+          },
+          "resources": {
+            "net_vertex_uses": 17819,
+            "edges": 17608,
+            "vias": 1843
+          },
+          "legal": true,
+          "total_delay": 62380,
+          "ratio": 1.0597306829111894,
+          "output_sha256": "3ad79b961de44550fc2d6b23e49362df5b08893cd5766392c2f99b4b949cfb07"
+        },
+        {
+          "case": "case_05",
+          "case_sha256": "0308afa080feaae6e605419820e329770d519b3a9842db78b2cf57e9527cf85d",
+          "case_seed": 972089372,
+          "warm_start_sha256": "98ad57dd06ffc975ae4ad63bf74d69cfefbf72ac5b46aac09d163b45de0940e0",
+          "before_delay": 71081,
+          "before_resources": {
+            "net_vertex_uses": 19771,
+            "edges": 19547,
+            "vias": 1817
+          },
+          "process": {
+            "command": [
+              "/home/younix/eda-3d-routing-challenge/dev/artifacts/build/exact_polish",
+              "60.0",
+              "1",
+              "1000",
+              "fanout_fine_adaptive",
+              "5000000",
+              "history_step=2",
+              "present_initial=2",
+              "present_step=2"
+            ],
+            "cwd": "/home/younix/eda-3d-routing-challenge",
+            "budget_s": 60.0,
+            "external_cap_s": 65.0,
+            "wall_s": 2.1237020129919983,
+            "exit_code": 0,
+            "interrupted": false,
+            "external_timeout": false,
+            "peak_rss_kib": 8572,
+            "user_cpu_s": 2.19,
+            "system_cpu_s": 0.02,
+            "repair_counters": {
+              "proposals": 24,
+              "no_gain": 19,
+              "too_many": 0,
+              "attempts": 5,
+              "negotiation_rounds": 21,
+              "conflicted_rounds": 16,
+              "fresh_attempts": 0,
+              "fresh_legal": 0,
+              "read_s": 0.0258168,
+              "validation_s": 0.00957006,
+              "optimization_s": 2.07882,
+              "search_reset_s": 0.0295543,
+              "search_rebuild_s": 0.0350055,
+              "present_initial": 2,
+              "present_step": 2,
+              "history_step": 2,
+              "price_units": 16,
+              "snapshot_s": 0.000925797,
+              "negotiation_setup_s": 0.00552598,
+              "negotiation_scan_s": 0.001584,
+              "work_limit": 5000000,
+              "work_exhausted": 1,
+              "expansions_per_second": 2405210.0,
+              "uphill_moves": 0,
+              "selection_nodes": 0,
+              "selection_complete": 0,
+              "selection_partial": 0,
+              "neighborhood_attempts": [
+                2,
+                3,
+                0
+              ],
+              "neighborhood_gains": [
+                0,
+                1,
+                0
+              ],
+              "failed": 1,
+              "nonimproving": 3
+            }
+          },
+          "candidate_accepted": true,
+          "error": null,
+          "core": {
+            "total_delay": 70949,
+            "budget_reached": true,
+            "accepted_replacements": 1,
+            "searches": 428,
+            "expansions": 5000000
+          },
+          "resources": {
+            "net_vertex_uses": 19737,
+            "edges": 19513,
+            "vias": 1809
+          },
+          "legal": true,
+          "total_delay": 70949,
+          "ratio": 1.0482318284965257,
+          "output_sha256": "d3a093dd045583261c4fa7441955e9a45ae71debab161f896cff7a41d2706c01"
+        },
+        {
+          "case": "case_06",
+          "case_sha256": "e3d6b3ac5e27caa6f519b16d1f2233bed3d80e14bc1dbc9d3f8850133c919b52",
+          "case_seed": 1204220021,
+          "warm_start_sha256": "125f872f6a3e4ea02aa9a4a1870c33bfc19d4c2b5dd6cfd3b5f462db37d0379b",
+          "before_delay": 84317,
+          "before_resources": {
+            "net_vertex_uses": 23054,
+            "edges": 22816,
+            "vias": 1977
+          },
+          "process": {
+            "command": [
+              "/home/younix/eda-3d-routing-challenge/dev/artifacts/build/exact_polish",
+              "60.0",
+              "1",
+              "1000",
+              "fanout_fine_adaptive",
+              "5000000",
+              "history_step=2",
+              "present_initial=2",
+              "present_step=2"
+            ],
+            "cwd": "/home/younix/eda-3d-routing-challenge",
+            "budget_s": 60.0,
+            "external_cap_s": 65.0,
+            "wall_s": 2.1244133369764313,
+            "exit_code": 0,
+            "interrupted": false,
+            "external_timeout": false,
+            "peak_rss_kib": 9060,
+            "user_cpu_s": 2.28,
+            "system_cpu_s": 0.02,
+            "repair_counters": {
+              "proposals": 15,
+              "no_gain": 7,
+              "too_many": 0,
+              "attempts": 8,
+              "negotiation_rounds": 38,
+              "conflicted_rounds": 30,
+              "fresh_attempts": 0,
+              "fresh_legal": 0,
+              "read_s": 0.0251025,
+              "validation_s": 0.0102266,
+              "optimization_s": 2.07164,
+              "search_reset_s": 0.0371389,
+              "search_rebuild_s": 0.0413731,
+              "present_initial": 2,
+              "present_step": 2,
+              "history_step": 2,
+              "price_units": 16,
+              "snapshot_s": 0.0010798,
+              "negotiation_setup_s": 0.00829533,
+              "negotiation_scan_s": 0.0032017,
+              "work_limit": 5000000,
+              "work_exhausted": 1,
+              "expansions_per_second": 2413550.0,
+              "uphill_moves": 0,
+              "selection_nodes": 0,
+              "selection_complete": 0,
+              "selection_partial": 0,
+              "neighborhood_attempts": [
+                4,
+                2,
+                2
+              ],
+              "neighborhood_gains": [
+                0,
+                1,
+                0
+              ],
+              "failed": 1,
+              "nonimproving": 6
+            }
+          },
+          "candidate_accepted": true,
+          "error": null,
+          "core": {
+            "total_delay": 84237,
+            "budget_reached": true,
+            "accepted_replacements": 1,
+            "searches": 460,
+            "expansions": 5000000
+          },
+          "resources": {
+            "net_vertex_uses": 23028,
+            "edges": 22790,
+            "vias": 1965
+          },
+          "legal": true,
+          "total_delay": 84237,
+          "ratio": 1.0274938566188254,
+          "output_sha256": "382b2f24923f9f05a6dab4fa4b7660c54ffb83ee8fc8b8b4e9b9aeab82afed91"
+        },
+        {
+          "case": "case_07",
+          "case_sha256": "af966c99c83fe29ca64dbfa1862d6e95b43997ff09aeadd5b329a55fc0ead9ef",
+          "case_seed": 526003429,
+          "warm_start_sha256": "92635307287ab9e36640a384d2b308101d940f072bf3da99675750f1c7d5fd01",
+          "before_delay": 92875,
+          "before_resources": {
+            "net_vertex_uses": 24630,
+            "edges": 24378,
+            "vias": 2172
+          },
+          "process": {
+            "command": [
+              "/home/younix/eda-3d-routing-challenge/dev/artifacts/build/exact_polish",
+              "60.0",
+              "1",
+              "1000",
+              "fanout_fine_adaptive",
+              "5000000",
+              "history_step=2",
+              "present_initial=2",
+              "present_step=2"
+            ],
+            "cwd": "/home/younix/eda-3d-routing-challenge",
+            "budget_s": 60.0,
+            "external_cap_s": 65.0,
+            "wall_s": 2.2769284779787995,
+            "exit_code": 0,
+            "interrupted": false,
+            "external_timeout": false,
+            "peak_rss_kib": 9820,
+            "user_cpu_s": 2.31,
+            "system_cpu_s": 0.01,
+            "repair_counters": {
+              "proposals": 1,
+              "no_gain": 0,
+              "too_many": 0,
+              "attempts": 1,
+              "negotiation_rounds": 9,
+              "conflicted_rounds": 8,
+              "fresh_attempts": 0,
+              "fresh_legal": 0,
+              "read_s": 0.0260266,
+              "validation_s": 0.0109214,
+              "optimization_s": 2.23192,
+              "search_reset_s": 0.0368138,
+              "search_rebuild_s": 0.0383565,
+              "present_initial": 2,
+              "present_step": 2,
+              "history_step": 2,
+              "price_units": 16,
+              "snapshot_s": 8.2879e-05,
+              "negotiation_setup_s": 0.00388915,
+              "negotiation_scan_s": 0.000953667,
+              "work_limit": 5000000,
+              "work_exhausted": 1,
+              "expansions_per_second": 2240220.0,
+              "uphill_moves": 0,
+              "selection_nodes": 0,
+              "selection_complete": 0,
+              "selection_partial": 0,
+              "neighborhood_attempts": [
+                0,
+                1,
+                0
+              ],
+              "neighborhood_gains": [
+                0,
+                0,
+                0
+              ],
+              "failed": 1,
+              "nonimproving": 0
+            }
+          },
+          "candidate_accepted": true,
+          "error": null,
+          "core": {
+            "total_delay": 92791,
+            "budget_reached": true,
+            "accepted_replacements": 0,
+            "searches": 371,
+            "expansions": 5000000
+          },
+          "resources": {
+            "net_vertex_uses": 24597,
+            "edges": 24345,
+            "vias": 2175
+          },
+          "legal": true,
+          "total_delay": 92791,
+          "ratio": 1.0435818128913363,
+          "output_sha256": "df5fa06c5711884d14f67e4b37510a9ab431b96861be1c86664bf196b416c44a"
+        },
+        {
+          "case": "case_08",
+          "case_sha256": "dfa38773632df7d3560c51b443eb3a32f358ea64799caa1e6ee7ce5bd3e812c6",
+          "case_seed": 2022696048,
+          "warm_start_sha256": "35721700d579ed5d90fca3dae12e16ea522a43b1b2112574915b99f665303501",
+          "before_delay": 117983,
+          "before_resources": {
+            "net_vertex_uses": 30473,
+            "edges": 30208,
+            "vias": 2628
+          },
+          "process": {
+            "command": [
+              "/home/younix/eda-3d-routing-challenge/dev/artifacts/build/exact_polish",
+              "60.0",
+              "1",
+              "1000",
+              "fanout_fine_adaptive",
+              "5000000",
+              "history_step=2",
+              "present_initial=2",
+              "present_step=2"
+            ],
+            "cwd": "/home/younix/eda-3d-routing-challenge",
+            "budget_s": 60.0,
+            "external_cap_s": 65.0,
+            "wall_s": 2.0763091889675707,
+            "exit_code": 0,
+            "interrupted": false,
+            "external_timeout": false,
+            "peak_rss_kib": 10508,
+            "user_cpu_s": 2.07,
+            "system_cpu_s": 0.03,
+            "repair_counters": {
+              "proposals": 9,
+              "no_gain": 5,
+              "too_many": 0,
+              "attempts": 4,
+              "negotiation_rounds": 13,
+              "conflicted_rounds": 9,
+              "fresh_attempts": 0,
+              "fresh_legal": 0,
+              "read_s": 0.0465931,
+              "validation_s": 0.0207404,
+              "optimization_s": 1.99119,
+              "search_reset_s": 0.0383935,
+              "search_rebuild_s": 0.0513186,
+              "present_initial": 2,
+              "present_step": 2,
+              "history_step": 2,
+              "price_units": 16,
+              "snapshot_s": 0.00129862,
+              "negotiation_setup_s": 0.00506606,
+              "negotiation_scan_s": 0.00177901,
+              "work_limit": 5000000,
+              "work_exhausted": 1,
+              "expansions_per_second": 2511060.0,
+              "uphill_moves": 0,
+              "selection_nodes": 0,
+              "selection_complete": 0,
+              "selection_partial": 0,
+              "neighborhood_attempts": [
+                1,
+                2,
+                1
+              ],
+              "neighborhood_gains": [
+                0,
+                0,
+                0
+              ],
+              "failed": 1,
+              "nonimproving": 3
+            }
+          },
+          "candidate_accepted": true,
+          "error": null,
+          "core": {
+            "total_delay": 117863,
+            "budget_reached": true,
+            "accepted_replacements": 0,
+            "searches": 363,
+            "expansions": 5000000
+          },
+          "resources": {
+            "net_vertex_uses": 30431,
+            "edges": 30166,
+            "vias": 2622
+          },
+          "legal": true,
+          "total_delay": 117863,
+          "ratio": 1.0281004216760137,
+          "output_sha256": "4eac6c17021783bcedbfe37208e589a0bf971fb9ea0af5e9cfde3c3f423a70b7"
+        }
+      ],
+      "outputs": {
+        "routes/case_01.sol.json": "0d5f9c72c684d71dfdfcbcfada5e553c1e23161e4dd2be94aebb3f9809acdd3f",
+        "routes/case_02.sol.json": "a1f42d52e61b4adf177f10312224a70935d97a78a6c593fc506ee725d378c7d7",
+        "routes/case_03.sol.json": "717a2d475741e311ab669bc49229a650a6c33c95ab5eeac29fd423238608fc9f",
+        "routes/case_04.sol.json": "3ad79b961de44550fc2d6b23e49362df5b08893cd5766392c2f99b4b949cfb07",
+        "routes/case_05.sol.json": "d3a093dd045583261c4fa7441955e9a45ae71debab161f896cff7a41d2706c01",
+        "routes/case_06.sol.json": "382b2f24923f9f05a6dab4fa4b7660c54ffb83ee8fc8b8b4e9b9aeab82afed91",
+        "routes/case_07.sol.json": "df5fa06c5711884d14f67e4b37510a9ab431b96861be1c86664bf196b416c44a",
+        "routes/case_08.sol.json": "4eac6c17021783bcedbfe37208e589a0bf971fb9ea0af5e9cfde3c3f423a70b7"
+      },
+      "official_rescore": {
+        "command": [
+          "/home/younix/eda-3d-routing-challenge/.venv/bin/python",
+          "-m",
+          "m3d.cli",
+          "score-suite",
+          "--suite",
+          "benchmarks_scale",
+          "--submission-dir",
+          "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T023529.212154Z-exact-polish/routes",
+          "--out",
+          "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T023529.212154Z-exact-polish/coverage-rescore.json"
+        ],
+        "cwd": "/home/younix/eda-3d-routing-challenge/dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+        "budget_s": 180,
+        "wall_s": 1.2707898869994096,
+        "exit_code": 0,
+        "timeout": false,
+        "interrupted": false,
+        "log": "dev/artifacts/20261002T023529.212154Z-exact-polish/coverage-rescore.log",
+        "peak_rss_kib": 41720,
+        "user_cpu_s": 1.15,
+        "system_cpu_s": 0.11
+      }
+    },
+    {
+      "tier": "congested",
+      "run_id": "20261002T023556.952369Z-exact-polish",
+      "manifest_sha256": "1b8cbd7db7efb33415e44e839cad7fae00cb7299fb3776116455d96d3fad380a",
+      "source_identity": "0bfd0e5abd09933911fb269b4284cd9586f34b6cf3605ec496dc875a1a413f99",
+      "config": {
+        "suite": "benchmarks_congested",
+        "case": null,
+        "mode": "fanout_fine_adaptive",
+        "budget": 60.0,
+        "work_budget": 5000000,
+        "present_initial": 2,
+        "present_step": 4,
+        "history_step": 4,
+        "seed": 1,
+        "passes": 1000,
+        "resume_dir": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T002313.240222Z-exact-polish/routes"
+      },
+      "score": {
+        "format": "m3d-leaderboard",
+        "complete": true,
+        "aggregate_score": 1.0956995301333292,
+        "n_cases": 4,
+        "n_legal": 4,
+        "formula": "aggregate = geomean_c(baseline_total_c / submission_total_c); higher is better; baseline scores 1.0; all cases must be legal for a complete ranked submission (else aggregate = 0.0)",
+        "cases": [
+          {
+            "case": "case_01",
+            "legal": true,
+            "total_delay": 61021,
+            "baseline_delay": 71049,
+            "ratio": 1.164336867635732,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_02",
+            "legal": true,
+            "total_delay": 112898,
+            "baseline_delay": 122534,
+            "ratio": 1.0853513791209766,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_03",
+            "legal": true,
+            "total_delay": 201423,
+            "baseline_delay": 216835,
+            "ratio": 1.0765155915660078,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_04",
+            "legal": true,
+            "total_delay": 220981,
+            "baseline_delay": 234127,
+            "ratio": 1.059489277358687,
+            "runtime_s": null,
+            "reasons": []
+          }
+        ]
+      },
+      "warm_start": {
+        "directory": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T002313.240222Z-exact-polish/routes",
+        "origin": "validated baseline or explicit resumed incumbent"
+      },
+      "official_reference_warm_start": false,
+      "official_reference_ancestor": true,
+      "initial_route_artifact_available": true,
+      "inherited_case_portfolio": null,
+      "known_total_optimizer_wall_s": 286.00216291006655,
+      "attribution": "Official challenge reference routes followed by local optimization",
+      "optimizer_chain": [
+        {
+          "run_id": "20261001T225138.640344Z-exact-polish",
+          "mode": "polish",
+          "wrapper_wall_s": 12.820642165024765
+        },
+        {
+          "run_id": "20261001T230240.338860Z-exact-polish",
+          "mode": "fanout",
+          "wrapper_wall_s": 25.455756760027725
+        },
+        {
+          "run_id": "20261001T231417.800514Z-exact-polish",
+          "mode": "fanout_astar",
+          "wrapper_wall_s": 23.496090208995156
+        },
+        {
+          "run_id": "20261001T232629.746653Z-exact-polish",
+          "mode": "fanout_astar",
+          "wrapper_wall_s": 83.6551800770103
+        },
+        {
+          "run_id": "20261001T232900.916803Z-exact-polish",
+          "mode": "restart_astar",
+          "wrapper_wall_s": 84.00084879499627
+        },
+        {
+          "run_id": "20261002T000215.838363Z-exact-polish",
+          "mode": "fanout_fine",
+          "wrapper_wall_s": 7.94247098400956
+        },
+        {
+          "run_id": "20261002T001141.164841Z-exact-polish",
+          "mode": "fanout_fine",
+          "wrapper_wall_s": 13.296067696996033
+        },
+        {
+          "run_id": "20261002T002313.240222Z-exact-polish",
+          "mode": "fanout_fine",
+          "wrapper_wall_s": 21.507743681024294
+        },
+        {
+          "run_id": "20261002T023556.952369Z-exact-polish",
+          "mode": "fanout_fine_adaptive",
+          "wrapper_wall_s": 13.827362541982438
+        }
+      ],
+      "recorded_optimizer_chain_wall_s": 286.00216291006655,
+      "initial_route_source": "/home/younix/eda-3d-routing-challenge/dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6/benchmarks_congested/reference",
+      "wrapper_wall_s": 13.827362541982438,
+      "core_wall_s": 8.164412638987415,
+      "peak_core_rss_kib": 7564,
+      "cases": [
+        {
+          "case": "case_01",
+          "case_sha256": "74f8fb9b0a4fdf230227e676999da156bd2dfea8dcacb1f8ec3407086fe11d06",
+          "case_seed": 570478951,
+          "warm_start_sha256": "b87ea8280fc64292e36c23491364860a8c0a0f9c472b4aeca4d781cdf9b198d5",
+          "before_delay": 61149,
+          "before_resources": {
+            "net_vertex_uses": 11634,
+            "edges": 11468,
+            "vias": 1582
+          },
+          "process": {
+            "command": [
+              "/home/younix/eda-3d-routing-challenge/dev/artifacts/build/exact_polish",
+              "60.0",
+              "1",
+              "1000",
+              "fanout_fine_adaptive",
+              "5000000",
+              "history_step=4",
+              "present_initial=2",
+              "present_step=4"
+            ],
+            "cwd": "/home/younix/eda-3d-routing-challenge",
+            "budget_s": 60.0,
+            "external_cap_s": 65.0,
+            "wall_s": 2.080408028967213,
+            "exit_code": 0,
+            "interrupted": false,
+            "external_timeout": false,
+            "peak_rss_kib": 5336,
+            "user_cpu_s": 2.08,
+            "system_cpu_s": 0.0,
+            "repair_counters": {
+              "proposals": 25,
+              "no_gain": 8,
+              "too_many": 1,
+              "attempts": 16,
+              "negotiation_rounds": 163,
+              "conflicted_rounds": 151,
+              "fresh_attempts": 0,
+              "fresh_legal": 0,
+              "read_s": 0.0122921,
+              "validation_s": 0.00566432,
+              "optimization_s": 2.007,
+              "search_reset_s": 0.0241234,
+              "search_rebuild_s": 0.0523757,
+              "present_initial": 2,
+              "present_step": 4,
+              "history_step": 4,
+              "price_units": 16,
+              "snapshot_s": 0.00011327,
+              "negotiation_setup_s": 0.000622363,
+              "negotiation_scan_s": 0.00239992,
+              "work_limit": 5000000,
+              "work_exhausted": 1,
+              "expansions_per_second": 2491290.0,
+              "uphill_moves": 0,
+              "selection_nodes": 0,
+              "selection_complete": 0,
+              "selection_partial": 0,
+              "neighborhood_attempts": [
+                7,
+                5,
+                4
+              ],
+              "neighborhood_gains": [
+                1,
+                1,
+                0
+              ],
+              "failed": 5,
+              "nonimproving": 9
+            }
+          },
+          "candidate_accepted": true,
+          "error": null,
+          "core": {
+            "total_delay": 61021,
+            "budget_reached": true,
+            "accepted_replacements": 2,
+            "searches": 2005,
+            "expansions": 5000000
+          },
+          "resources": {
+            "net_vertex_uses": 11616,
+            "edges": 11450,
+            "vias": 1579
+          },
+          "legal": true,
+          "total_delay": 61021,
+          "ratio": 1.164336867635732,
+          "output_sha256": "f1d28483e9e2635d2d0c55c46158c98b62d9c7831a0e898c76698808ef5b9508"
+        },
+        {
+          "case": "case_02",
+          "case_sha256": "080b349aea6d22e149d25ca74603cec81331cace10e7731bc4d86a3a7f780740",
+          "case_seed": 2132093133,
+          "warm_start_sha256": "657b645f86e27d82a52d2d7abddc68dc033eb57e6623f3307417f9e69476682d",
+          "before_delay": 113018,
+          "before_resources": {
+            "net_vertex_uses": 20185,
+            "edges": 19956,
+            "vias": 2499
+          },
+          "process": {
+            "command": [
+              "/home/younix/eda-3d-routing-challenge/dev/artifacts/build/exact_polish",
+              "60.0",
+              "1",
+              "1000",
+              "fanout_fine_adaptive",
+              "5000000",
+              "history_step=4",
+              "present_initial=2",
+              "present_step=4"
+            ],
+            "cwd": "/home/younix/eda-3d-routing-challenge",
+            "budget_s": 60.0,
+            "external_cap_s": 65.0,
+            "wall_s": 2.0753150079981424,
+            "exit_code": 0,
+            "interrupted": false,
+            "external_timeout": false,
+            "peak_rss_kib": 6124,
+            "user_cpu_s": 2.07,
+            "system_cpu_s": 0.01,
+            "repair_counters": {
+              "proposals": 29,
+              "no_gain": 9,
+              "too_many": 4,
+              "attempts": 16,
+              "negotiation_rounds": 83,
+              "conflicted_rounds": 67,
+              "fresh_attempts": 0,
+              "fresh_legal": 0,
+              "read_s": 0.0253765,
+              "validation_s": 0.0126602,
+              "optimization_s": 2.02148,
+              "search_reset_s": 0.0250297,
+              "search_rebuild_s": 0.0435758,
+              "present_initial": 2,
+              "present_step": 4,
+              "history_step": 4,
+              "price_units": 16,
+              "snapshot_s": 0.000550954,
+              "negotiation_setup_s": 0.00188636,
+              "negotiation_scan_s": 0.00272549,
+              "work_limit": 5000000,
+              "work_exhausted": 1,
+              "expansions_per_second": 2473430.0,
+              "uphill_moves": 0,
+              "selection_nodes": 0,
+              "selection_complete": 0,
+              "selection_partial": 0,
+              "neighborhood_attempts": [
+                6,
+                5,
+                5
+              ],
+              "neighborhood_gains": [
+                1,
+                0,
+                1
+              ],
+              "failed": 1,
+              "nonimproving": 13
+            }
+          },
+          "candidate_accepted": true,
+          "error": null,
+          "core": {
+            "total_delay": 112898,
+            "budget_reached": true,
+            "accepted_replacements": 2,
+            "searches": 1030,
+            "expansions": 5000000
+          },
+          "resources": {
+            "net_vertex_uses": 20213,
+            "edges": 19984,
+            "vias": 2501
+          },
+          "legal": true,
+          "total_delay": 112898,
+          "ratio": 1.0853513791209766,
+          "output_sha256": "bac9acff1665cc40dc6c1bd2937a0dc52bb5f75fee4477678a2b287c9ed77dec"
+        },
+        {
+          "case": "case_03",
+          "case_sha256": "e4ec45609bfbfb4c31b1b24d4d6ce5be4c4711210f39bb8e096331f66446546c",
+          "case_seed": 1716194395,
+          "warm_start_sha256": "0f5bc79d5ff35b1c84cd6a3bb7ad29a1b2e9b100e4935506dd391cb13050fe1d",
+          "before_delay": 201687,
+          "before_resources": {
+            "net_vertex_uses": 34563,
+            "edges": 34272,
+            "vias": 4031
+          },
+          "process": {
+            "command": [
+              "/home/younix/eda-3d-routing-challenge/dev/artifacts/build/exact_polish",
+              "60.0",
+              "1",
+              "1000",
+              "fanout_fine_adaptive",
+              "5000000",
+              "history_step=4",
+              "present_initial=2",
+              "present_step=4"
+            ],
+            "cwd": "/home/younix/eda-3d-routing-challenge",
+            "budget_s": 60.0,
+            "external_cap_s": 65.0,
+            "wall_s": 2.0791566090192646,
+            "exit_code": 0,
+            "interrupted": false,
+            "external_timeout": false,
+            "peak_rss_kib": 7424,
+            "user_cpu_s": 2.04,
+            "system_cpu_s": 0.04,
+            "repair_counters": {
+              "proposals": 4,
+              "no_gain": 1,
+              "too_many": 1,
+              "attempts": 2,
+              "negotiation_rounds": 18,
+              "conflicted_rounds": 16,
+              "fresh_attempts": 0,
+              "fresh_legal": 0,
+              "read_s": 0.0320823,
+              "validation_s": 0.0161401,
+              "optimization_s": 2.02674,
+              "search_reset_s": 0.0252427,
+              "search_rebuild_s": 0.0468132,
+              "present_initial": 2,
+              "present_step": 4,
+              "history_step": 4,
+              "price_units": 16,
+              "snapshot_s": 0.0006803,
+              "negotiation_setup_s": 0.00218291,
+              "negotiation_scan_s": 0.000927669,
+              "work_limit": 5000000,
+              "work_exhausted": 1,
+              "expansions_per_second": 2467020.0,
+              "uphill_moves": 0,
+              "selection_nodes": 0,
+              "selection_complete": 0,
+              "selection_partial": 0,
+              "neighborhood_attempts": [
+                0,
+                1,
+                1
+              ],
+              "neighborhood_gains": [
+                0,
+                0,
+                0
+              ],
+              "failed": 1,
+              "nonimproving": 1
+            }
+          },
+          "candidate_accepted": true,
+          "error": null,
+          "core": {
+            "total_delay": 201423,
+            "budget_reached": true,
+            "accepted_replacements": 0,
+            "searches": 523,
+            "expansions": 5000000
+          },
+          "resources": {
+            "net_vertex_uses": 34617,
+            "edges": 34326,
+            "vias": 4033
+          },
+          "legal": true,
+          "total_delay": 201423,
+          "ratio": 1.0765155915660078,
+          "output_sha256": "10ebeef02d47872fc663eff2d6fe5f18d2ac8ea23bafbd5e0057a4b7344d89b6"
+        },
+        {
+          "case": "case_04",
+          "case_sha256": "c591114d5439e4dca0c30b2db15c072e9837461f2469fabc7fea8c753729cf01",
+          "case_seed": 1350903584,
+          "warm_start_sha256": "a8b84c8a9ddab5948bddcfc9bb3dc607a1cda048fa1e0bc9fe710c5e77db72a8",
+          "before_delay": 221249,
+          "before_resources": {
+            "net_vertex_uses": 36732,
+            "edges": 36430,
+            "vias": 4186
+          },
+          "process": {
+            "command": [
+              "/home/younix/eda-3d-routing-challenge/dev/artifacts/build/exact_polish",
+              "60.0",
+              "1",
+              "1000",
+              "fanout_fine_adaptive",
+              "5000000",
+              "history_step=4",
+              "present_initial=2",
+              "present_step=4"
+            ],
+            "cwd": "/home/younix/eda-3d-routing-challenge",
+            "budget_s": 60.0,
+            "external_cap_s": 65.0,
+            "wall_s": 1.9295329930027947,
+            "exit_code": 0,
+            "interrupted": false,
+            "external_timeout": false,
+            "peak_rss_kib": 7564,
+            "user_cpu_s": 1.92,
+            "system_cpu_s": 0.04,
+            "repair_counters": {
+              "proposals": 6,
+              "no_gain": 1,
+              "too_many": 1,
+              "attempts": 4,
+              "negotiation_rounds": 37,
+              "conflicted_rounds": 34,
+              "fresh_attempts": 0,
+              "fresh_legal": 0,
+              "read_s": 0.0444359,
+              "validation_s": 0.0226142,
+              "optimization_s": 1.8477,
+              "search_reset_s": 0.0335913,
+              "search_rebuild_s": 0.0696177,
+              "present_initial": 2,
+              "present_step": 4,
+              "history_step": 4,
+              "price_units": 16,
+              "snapshot_s": 0.00105546,
+              "negotiation_setup_s": 0.00579809,
+              "negotiation_scan_s": 0.002397,
+              "work_limit": 5000000,
+              "work_exhausted": 1,
+              "expansions_per_second": 2706060.0,
+              "uphill_moves": 0,
+              "selection_nodes": 0,
+              "selection_complete": 0,
+              "selection_partial": 0,
+              "neighborhood_attempts": [
+                0,
+                2,
+                2
+              ],
+              "neighborhood_gains": [
+                0,
+                1,
+                1
+              ],
+              "failed": 2,
+              "nonimproving": 0
+            }
+          },
+          "candidate_accepted": true,
+          "error": null,
+          "core": {
+            "total_delay": 220981,
+            "budget_reached": true,
+            "accepted_replacements": 2,
+            "searches": 766,
+            "expansions": 5000000
+          },
+          "resources": {
+            "net_vertex_uses": 36737,
+            "edges": 36435,
+            "vias": 4175
+          },
+          "legal": true,
+          "total_delay": 220981,
+          "ratio": 1.059489277358687,
+          "output_sha256": "157ae7ffaf6b01f72195db6336dc5f042ed80a7fbf59d9b0a86af454434b73cc"
+        }
+      ],
+      "outputs": {
+        "routes/case_01.sol.json": "f1d28483e9e2635d2d0c55c46158c98b62d9c7831a0e898c76698808ef5b9508",
+        "routes/case_02.sol.json": "bac9acff1665cc40dc6c1bd2937a0dc52bb5f75fee4477678a2b287c9ed77dec",
+        "routes/case_03.sol.json": "10ebeef02d47872fc663eff2d6fe5f18d2ac8ea23bafbd5e0057a4b7344d89b6",
+        "routes/case_04.sol.json": "157ae7ffaf6b01f72195db6336dc5f042ed80a7fbf59d9b0a86af454434b73cc"
+      },
+      "official_rescore": {
+        "command": [
+          "/home/younix/eda-3d-routing-challenge/.venv/bin/python",
+          "-m",
+          "m3d.cli",
+          "score-suite",
+          "--suite",
+          "benchmarks_congested",
+          "--submission-dir",
+          "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T023556.952369Z-exact-polish/routes",
+          "--out",
+          "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T023556.952369Z-exact-polish/coverage-rescore.json"
+        ],
+        "cwd": "/home/younix/eda-3d-routing-challenge/dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+        "budget_s": 180,
+        "wall_s": 0.9202283610356972,
+        "exit_code": 0,
+        "timeout": false,
+        "interrupted": false,
+        "log": "dev/artifacts/20261002T023556.952369Z-exact-polish/coverage-rescore.log",
+        "peak_rss_kib": 44604,
+        "user_cpu_s": 0.81,
+        "system_cpu_s": 0.1
+      }
+    },
+    {
+      "tier": "designs",
+      "run_id": "20261002T023612.135172Z-exact-polish",
+      "manifest_sha256": "ba230f514d66685056a19d78aec5d81e33848f5a1e1f5597330d2b66c27813fd",
+      "source_identity": "a8fc6514e38a0e90d730f3497fb522d1b16fae27a09e3aa0f28d43949b95da3c",
+      "config": {
+        "suite": "benchmarks_designs",
+        "case": null,
+        "mode": "fanout_fine_adaptive",
+        "budget": 60.0,
+        "work_budget": 5000000,
+        "present_initial": 2,
+        "present_step": 2,
+        "history_step": 2,
+        "seed": 1,
+        "passes": 1000,
+        "resume_dir": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T002335.637690Z-exact-polish/routes"
+      },
+      "score": {
+        "format": "m3d-leaderboard",
+        "complete": true,
+        "aggregate_score": 1.2264569927913178,
+        "n_cases": 3,
+        "n_legal": 3,
+        "formula": "aggregate = geomean_c(baseline_total_c / submission_total_c); higher is better; baseline scores 1.0; all cases must be legal for a complete ranked submission (else aggregate = 0.0)",
+        "cases": [
+          {
+            "case": "ctrl",
+            "legal": true,
+            "total_delay": 59390,
+            "baseline_delay": 73148,
+            "ratio": 1.2316551608014816,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "int2float",
+            "legal": true,
+            "total_delay": 109856,
+            "baseline_delay": 152284,
+            "ratio": 1.386214681036994,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "router",
+            "legal": true,
+            "total_delay": 76343,
+            "baseline_delay": 82491,
+            "ratio": 1.080531286430976,
+            "runtime_s": null,
+            "reasons": []
+          }
+        ]
+      },
+      "warm_start": {
+        "directory": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T002335.637690Z-exact-polish/routes",
+        "origin": "validated baseline or explicit resumed incumbent"
+      },
+      "official_reference_warm_start": false,
+      "official_reference_ancestor": true,
+      "initial_route_artifact_available": true,
+      "inherited_case_portfolio": null,
+      "known_total_optimizer_wall_s": 139.95974916702835,
+      "attribution": "Official challenge reference routes followed by local optimization",
+      "optimizer_chain": [
+        {
+          "run_id": "20261001T225152.699204Z-exact-polish",
+          "mode": "polish",
+          "wrapper_wall_s": 9.06007198500447
+        },
+        {
+          "run_id": "20261001T230307.084109Z-exact-polish",
+          "mode": "fanout",
+          "wrapper_wall_s": 18.393332402978558
+        },
+        {
+          "run_id": "20261001T231442.109038Z-exact-polish",
+          "mode": "fanout_astar",
+          "wrapper_wall_s": 17.132815924007446
+        },
+        {
+          "run_id": "20261001T232756.705387Z-exact-polish",
+          "mode": "fanout_astar",
+          "wrapper_wall_s": 61.965817156014964
+        },
+        {
+          "run_id": "20261002T001959.135826Z-exact-polish",
+          "mode": "fanout_fine",
+          "wrapper_wall_s": 9.01648148096865
+        },
+        {
+          "run_id": "20261002T002335.637690Z-exact-polish",
+          "mode": "fanout_fine",
+          "wrapper_wall_s": 15.031920574023388
+        },
+        {
+          "run_id": "20261002T023612.135172Z-exact-polish",
+          "mode": "fanout_fine_adaptive",
+          "wrapper_wall_s": 9.359309644030873
+        }
+      ],
+      "recorded_optimizer_chain_wall_s": 139.95974916702835,
+      "initial_route_source": "/home/younix/eda-3d-routing-challenge/dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6/benchmarks_designs/reference",
+      "wrapper_wall_s": 9.359309644030873,
+      "core_wall_s": 5.980129187984858,
+      "peak_core_rss_kib": 6844,
+      "cases": [
+        {
+          "case": "ctrl",
+          "case_sha256": "024ebda5df67cf2077542524a2bf6109bd40937c9ee901d7d8ec0abcf55402cb",
+          "case_seed": 20260923,
+          "warm_start_sha256": "1c9c26cfb5cadfd2810707fc4c65edf94718ecda0654f1215f23fecf7fbd03a5",
+          "before_delay": 59464,
+          "before_resources": {
+            "net_vertex_uses": 15141,
+            "edges": 14959,
+            "vias": 2087
+          },
+          "process": {
+            "command": [
+              "/home/younix/eda-3d-routing-challenge/dev/artifacts/build/exact_polish",
+              "60.0",
+              "1",
+              "1000",
+              "fanout_fine_adaptive",
+              "5000000",
+              "history_step=2",
+              "present_initial=2",
+              "present_step=2"
+            ],
+            "cwd": "/home/younix/eda-3d-routing-challenge",
+            "budget_s": 60.0,
+            "external_cap_s": 65.0,
+            "wall_s": 2.0769751549814828,
+            "exit_code": 0,
+            "interrupted": false,
+            "external_timeout": false,
+            "peak_rss_kib": 5560,
+            "user_cpu_s": 2.12,
+            "system_cpu_s": 0.02,
+            "repair_counters": {
+              "proposals": 4,
+              "no_gain": 0,
+              "too_many": 1,
+              "attempts": 3,
+              "negotiation_rounds": 42,
+              "conflicted_rounds": 39,
+              "fresh_attempts": 0,
+              "fresh_legal": 0,
+              "read_s": 0.013814,
+              "validation_s": 0.00694078,
+              "optimization_s": 2.02598,
+              "search_reset_s": 0.013104,
+              "search_rebuild_s": 0.0301039,
+              "present_initial": 2,
+              "present_step": 2,
+              "history_step": 2,
+              "price_units": 16,
+              "snapshot_s": 0.00018455,
+              "negotiation_setup_s": 0.00126089,
+              "negotiation_scan_s": 0.000925112,
+              "work_limit": 5000000,
+              "work_exhausted": 1,
+              "expansions_per_second": 2467940.0,
+              "uphill_moves": 0,
+              "selection_nodes": 0,
+              "selection_complete": 0,
+              "selection_partial": 0,
+              "neighborhood_attempts": [
+                1,
+                2,
+                0
+              ],
+              "neighborhood_gains": [
+                0,
+                0,
+                0
+              ],
+              "failed": 1,
+              "nonimproving": 2
+            }
+          },
+          "candidate_accepted": true,
+          "error": null,
+          "core": {
+            "total_delay": 59390,
+            "budget_reached": true,
+            "accepted_replacements": 0,
+            "searches": 632,
+            "expansions": 5000000
+          },
+          "resources": {
+            "net_vertex_uses": 15149,
+            "edges": 14967,
+            "vias": 2084
+          },
+          "legal": true,
+          "total_delay": 59390,
+          "ratio": 1.2316551608014816,
+          "output_sha256": "1f61731dc32804d2db1b8ac6eb76ec3262606d30fb8699e83a0fe064d1114f96"
+        },
+        {
+          "case": "int2float",
+          "case_sha256": "1d57b7e5b69292592184aa9368930490c5f7af477f4f739db3500a329d6fb16e",
+          "case_seed": 20260924,
+          "warm_start_sha256": "a222062708feb573db05cbdbdd997ff57f89dfbfe8c47c8e332b5ff41d010168",
+          "before_delay": 110404,
+          "before_resources": {
+            "net_vertex_uses": 24131,
+            "edges": 23860,
+            "vias": 3192
+          },
+          "process": {
+            "command": [
+              "/home/younix/eda-3d-routing-challenge/dev/artifacts/build/exact_polish",
+              "60.0",
+              "1",
+              "1000",
+              "fanout_fine_adaptive",
+              "5000000",
+              "history_step=2",
+              "present_initial=2",
+              "present_step=2"
+            ],
+            "cwd": "/home/younix/eda-3d-routing-challenge",
+            "budget_s": 60.0,
+            "external_cap_s": 65.0,
+            "wall_s": 1.9795399639988318,
+            "exit_code": 0,
+            "interrupted": false,
+            "external_timeout": false,
+            "peak_rss_kib": 5888,
+            "user_cpu_s": 2.04,
+            "system_cpu_s": 0.01,
+            "repair_counters": {
+              "proposals": 4,
+              "no_gain": 0,
+              "too_many": 0,
+              "attempts": 4,
+              "negotiation_rounds": 66,
+              "conflicted_rounds": 64,
+              "fresh_attempts": 0,
+              "fresh_legal": 0,
+              "read_s": 0.0264146,
+              "validation_s": 0.0116841,
+              "optimization_s": 1.92044,
+              "search_reset_s": 0.0181016,
+              "search_rebuild_s": 0.0423076,
+              "present_initial": 2,
+              "present_step": 2,
+              "history_step": 2,
+              "price_units": 16,
+              "snapshot_s": 0.000249663,
+              "negotiation_setup_s": 0.00125273,
+              "negotiation_scan_s": 0.00201749,
+              "work_limit": 5000000,
+              "work_exhausted": 1,
+              "expansions_per_second": 2603570.0,
+              "uphill_moves": 0,
+              "selection_nodes": 0,
+              "selection_complete": 0,
+              "selection_partial": 0,
+              "neighborhood_attempts": [
+                1,
+                2,
+                1
+              ],
+              "neighborhood_gains": [
+                0,
+                0,
+                0
+              ],
+              "failed": 3,
+              "nonimproving": 1
+            }
+          },
+          "candidate_accepted": true,
+          "error": null,
+          "core": {
+            "total_delay": 109856,
+            "budget_reached": true,
+            "accepted_replacements": 0,
+            "searches": 835,
+            "expansions": 5000000
+          },
+          "resources": {
+            "net_vertex_uses": 24077,
+            "edges": 23806,
+            "vias": 3171
+          },
+          "legal": true,
+          "total_delay": 109856,
+          "ratio": 1.386214681036994,
+          "output_sha256": "40a3d2238b013f451ae10d3b64e3be90a352bbdaa290fb374cd2b9f55b4d4440"
+        },
+        {
+          "case": "router",
+          "case_sha256": "34096ab422d9b1cfff1c607bfc66e28a2a9ab43eeb1e0cd34e481162f017a98c",
+          "case_seed": 20260925,
+          "warm_start_sha256": "e02a141ea2ab3772d40e79b147feb204286c90aec049ae9bf68f30eaac6e2e71",
+          "before_delay": 76387,
+          "before_resources": {
+            "net_vertex_uses": 22926,
+            "edges": 22582,
+            "vias": 2712
+          },
+          "process": {
+            "command": [
+              "/home/younix/eda-3d-routing-challenge/dev/artifacts/build/exact_polish",
+              "60.0",
+              "1",
+              "1000",
+              "fanout_fine_adaptive",
+              "5000000",
+              "history_step=2",
+              "present_initial=2",
+              "present_step=2"
+            ],
+            "cwd": "/home/younix/eda-3d-routing-challenge",
+            "budget_s": 60.0,
+            "external_cap_s": 65.0,
+            "wall_s": 1.9236140690045431,
+            "exit_code": 0,
+            "interrupted": false,
+            "external_timeout": false,
+            "peak_rss_kib": 6844,
+            "user_cpu_s": 1.97,
+            "system_cpu_s": 0.03,
+            "repair_counters": {
+              "proposals": 15,
+              "no_gain": 7,
+              "too_many": 0,
+              "attempts": 7,
+              "negotiation_rounds": 71,
+              "conflicted_rounds": 64,
+              "fresh_attempts": 0,
+              "fresh_legal": 0,
+              "read_s": 0.0251804,
+              "validation_s": 0.0108102,
+              "optimization_s": 1.83442,
+              "search_reset_s": 0.0342562,
+              "search_rebuild_s": 0.0478068,
+              "present_initial": 2,
+              "present_step": 2,
+              "history_step": 2,
+              "price_units": 16,
+              "snapshot_s": 0.000831667,
+              "negotiation_setup_s": 0.00483894,
+              "negotiation_scan_s": 0.00316591,
+              "work_limit": 5000000,
+              "work_exhausted": 1,
+              "expansions_per_second": 2725650.0,
+              "uphill_moves": 0,
+              "selection_nodes": 0,
+              "selection_complete": 0,
+              "selection_partial": 0,
+              "neighborhood_attempts": [
+                2,
+                3,
+                2
+              ],
+              "neighborhood_gains": [
+                0,
+                0,
+                0
+              ],
+              "failed": 0,
+              "nonimproving": 7
+            }
+          },
+          "candidate_accepted": true,
+          "error": null,
+          "core": {
+            "total_delay": 76343,
+            "budget_reached": true,
+            "accepted_replacements": 0,
+            "searches": 962,
+            "expansions": 5000000
+          },
+          "resources": {
+            "net_vertex_uses": 22938,
+            "edges": 22594,
+            "vias": 2713
+          },
+          "legal": true,
+          "total_delay": 76343,
+          "ratio": 1.080531286430976,
+          "output_sha256": "156358b01a12086b746ae2da85e84e8953d75eb5348939dfd22809e8e7e65327"
+        }
+      ],
+      "outputs": {
+        "routes/ctrl.sol.json": "1f61731dc32804d2db1b8ac6eb76ec3262606d30fb8699e83a0fe064d1114f96",
+        "routes/int2float.sol.json": "40a3d2238b013f451ae10d3b64e3be90a352bbdaa290fb374cd2b9f55b4d4440",
+        "routes/router.sol.json": "156358b01a12086b746ae2da85e84e8953d75eb5348939dfd22809e8e7e65327"
+      },
+      "official_rescore": {
+        "command": [
+          "/home/younix/eda-3d-routing-challenge/.venv/bin/python",
+          "-m",
+          "m3d.cli",
+          "score-suite",
+          "--suite",
+          "benchmarks_designs",
+          "--submission-dir",
+          "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T023612.135172Z-exact-polish/routes",
+          "--out",
+          "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T023612.135172Z-exact-polish/coverage-rescore.json"
+        ],
+        "cwd": "/home/younix/eda-3d-routing-challenge/dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+        "budget_s": 180,
+        "wall_s": 0.46873911400325596,
+        "exit_code": 0,
+        "timeout": false,
+        "interrupted": false,
+        "log": "dev/artifacts/20261002T023612.135172Z-exact-polish/coverage-rescore.log",
+        "peak_rss_kib": 35464,
+        "user_cpu_s": 0.43,
+        "system_cpu_s": 0.03
+      }
+    },
+    {
+      "tier": "stress",
+      "run_id": "20261002T023621.680402Z-exact-polish",
+      "manifest_sha256": "740884606b7022abf16e968f7ab11c94d1690e9552e8ba5666a3962c2b06765e",
+      "source_identity": "4317bde3f977ac62a397c2b1192a856d5fffcc8117141f57a5e2f799567e96ea",
+      "config": {
+        "suite": "benchmarks_stress",
+        "case": null,
+        "mode": "fanout_fine_adaptive",
+        "budget": 60.0,
+        "work_budget": 5000000,
+        "present_initial": 2,
+        "present_step": 2,
+        "history_step": 2,
+        "seed": 1,
+        "passes": 1000,
+        "resume_dir": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T002350.849915Z-exact-polish/routes"
+      },
+      "score": {
+        "format": "m3d-leaderboard",
+        "complete": true,
+        "aggregate_score": 1.0205499844007666,
+        "n_cases": 1,
+        "n_legal": 1,
+        "formula": "aggregate = geomean_c(baseline_total_c / submission_total_c); higher is better; baseline scores 1.0; all cases must be legal for a complete ranked submission (else aggregate = 0.0)",
+        "cases": [
+          {
+            "case": "case_01",
+            "legal": true,
+            "total_delay": 1121850,
+            "baseline_delay": 1144904,
+            "ratio": 1.0205499844007666,
+            "runtime_s": null,
+            "reasons": []
+          }
+        ]
+      },
+      "warm_start": {
+        "directory": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T002350.849915Z-exact-polish/routes",
+        "origin": "validated baseline or explicit resumed incumbent"
+      },
+      "official_reference_warm_start": false,
+      "official_reference_ancestor": true,
+      "initial_route_artifact_available": true,
+      "inherited_case_portfolio": null,
+      "known_total_optimizer_wall_s": 248.9630006950465,
+      "attribution": "Official challenge reference routes followed by local optimization",
+      "optimizer_chain": [
+        {
+          "run_id": "20261001T225241.212774Z-exact-polish",
+          "mode": "polish",
+          "wrapper_wall_s": 78.91786831105128
+        },
+        {
+          "run_id": "20261001T230938.706316Z-exact-polish",
+          "mode": "astar",
+          "wrapper_wall_s": 79.00618297996698
+        },
+        {
+          "run_id": "20261001T234215.165836Z-exact-polish",
+          "mode": "fanout_astar",
+          "wrapper_wall_s": 16.664260477002244
+        },
+        {
+          "run_id": "20261002T002008.302938Z-exact-polish",
+          "mode": "fanout_fine",
+          "wrapper_wall_s": 23.737090404029004
+        },
+        {
+          "run_id": "20261002T002350.849915Z-exact-polish",
+          "mode": "fanout_fine",
+          "wrapper_wall_s": 26.1050326229888
+        },
+        {
+          "run_id": "20261002T023621.680402Z-exact-polish",
+          "mode": "fanout_fine_adaptive",
+          "wrapper_wall_s": 24.532565900008194
+        }
+      ],
+      "recorded_optimizer_chain_wall_s": 248.9630006950465,
+      "initial_route_source": "/home/younix/eda-3d-routing-challenge/dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6/benchmarks_stress/reference",
+      "wrapper_wall_s": 24.532565900008194,
+      "core_wall_s": 3.180185816017911,
+      "peak_core_rss_kib": 46032,
+      "cases": [
+        {
+          "case": "case_01",
+          "case_sha256": "125f9d4d871a727418cafe4ce68dda4dc93a40c6c631daaf45fa9a9c73fae550",
+          "case_seed": 2096705775,
+          "warm_start_sha256": "bf2ac8825e8d55dacac1d377af58371fd709870d8f727cf2a720be34090ff0d8",
+          "before_delay": 1121852,
+          "before_resources": {
+            "net_vertex_uses": 302172,
+            "edges": 301271,
+            "vias": 14677
+          },
+          "process": {
+            "command": [
+              "/home/younix/eda-3d-routing-challenge/dev/artifacts/build/exact_polish",
+              "60.0",
+              "1",
+              "1000",
+              "fanout_fine_adaptive",
+              "5000000",
+              "history_step=2",
+              "present_initial=2",
+              "present_step=2"
+            ],
+            "cwd": "/home/younix/eda-3d-routing-challenge",
+            "budget_s": 60.0,
+            "external_cap_s": 65.0,
+            "wall_s": 3.180185816017911,
+            "exit_code": 0,
+            "interrupted": false,
+            "external_timeout": false,
+            "peak_rss_kib": 46032,
+            "user_cpu_s": 3.09,
+            "system_cpu_s": 0.13,
+            "repair_counters": {
+              "proposals": 0,
+              "no_gain": 0,
+              "too_many": 0,
+              "attempts": 0,
+              "negotiation_rounds": 0,
+              "conflicted_rounds": 0,
+              "fresh_attempts": 0,
+              "fresh_legal": 0,
+              "read_s": 0.385052,
+              "validation_s": 0.184183,
+              "optimization_s": 2.69925,
+              "search_reset_s": 0.0852785,
+              "search_rebuild_s": 0.0690244,
+              "present_initial": 2,
+              "present_step": 2,
+              "history_step": 2,
+              "price_units": 16,
+              "snapshot_s": 0,
+              "negotiation_setup_s": 0,
+              "negotiation_scan_s": 0,
+              "work_limit": 5000000,
+              "work_exhausted": 1,
+              "expansions_per_second": 1852370.0,
+              "uphill_moves": 0,
+              "selection_nodes": 0,
+              "selection_complete": 0,
+              "selection_partial": 0,
+              "neighborhood_attempts": [
+                0,
+                0,
+                0
+              ],
+              "neighborhood_gains": [
+                0,
+                0,
+                0
+              ],
+              "failed": 0,
+              "nonimproving": 0
+            }
+          },
+          "candidate_accepted": true,
+          "error": null,
+          "core": {
+            "total_delay": 1121850,
+            "budget_reached": true,
+            "accepted_replacements": 0,
+            "searches": 32,
+            "expansions": 5000000
+          },
+          "resources": {
+            "net_vertex_uses": 302209,
+            "edges": 301308,
+            "vias": 14677
+          },
+          "legal": true,
+          "total_delay": 1121850,
+          "ratio": 1.0205499844007666,
+          "output_sha256": "7426c07e7a90f91e22487b41b3fdc27ab768f633fd2b823e94f465913c6e0834"
+        }
+      ],
+      "outputs": {
+        "routes/case_01.sol.json": "7426c07e7a90f91e22487b41b3fdc27ab768f633fd2b823e94f465913c6e0834"
+      },
+      "official_rescore": {
+        "command": [
+          "/home/younix/eda-3d-routing-challenge/.venv/bin/python",
+          "-m",
+          "m3d.cli",
+          "score-suite",
+          "--suite",
+          "benchmarks_stress",
+          "--submission-dir",
+          "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T023621.680402Z-exact-polish/routes",
+          "--out",
+          "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T023621.680402Z-exact-polish/coverage-rescore.json"
+        ],
+        "cwd": "/home/younix/eda-3d-routing-challenge/dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+        "budget_s": 180,
+        "wall_s": 2.7302263249875978,
+        "exit_code": 0,
+        "timeout": false,
+        "interrupted": false,
+        "log": "dev/artifacts/20261002T023621.680402Z-exact-polish/coverage-rescore.log",
+        "peak_rss_kib": 243408,
+        "user_cpu_s": 2.33,
+        "system_cpu_s": 0.41
+      }
+    }
+  ],
+  "portfolio_selection": true,
+  "limitations": "Separate tier scores, no cross-tier aggregate. Reference warm starts are attributed and their generation cost was not reproduced. Stage timings exclude inherited generation, experiments and rescorers. No final freeze or end-to-end regeneration claim."
+}

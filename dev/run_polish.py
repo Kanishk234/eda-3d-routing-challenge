@@ -105,7 +105,8 @@ def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument("--suite",choices=["benchmarks","benchmarks_hard","benchmarks_scale","benchmarks_stress","benchmarks_congested","benchmarks_designs"],default="benchmarks_hard")
     p.add_argument("--case")
-    p.add_argument("--mode",choices=["polish","repair","repairsoft","ablation","negotiated","explore","restart","select","wide","walk","descent","compact","fanout","restart_fanout","restart_compact","restart_polish","fanout_walk","fanout_descent","astar","fanout_astar","fanout_gap","fanout_astar_gap","restart_astar","treecost","fanout_tight","astar_tight","fanout_fine"]+NEIGHBORHOOD_MODES,default="polish")
+    p.add_argument("--donor-dir",type=Path,help="Explicit local alternate route directory for donor proposals")
+    p.add_argument("--mode",choices=["polish","repair","repairsoft","ablation","negotiated","explore","restart","select","wide","walk","descent","compact","fanout","restart_fanout","restart_compact","restart_polish","fanout_walk","fanout_descent","astar","fanout_astar","fanout_gap","fanout_astar_gap","restart_astar","treecost","fanout_tight","astar_tight","fanout_fine"]+NEIGHBORHOOD_MODES+["fanout_fine_donor"],default="polish")
     p.add_argument("--budget",type=float,default=10)
     p.add_argument("--work-budget",type=int,default=0,help="maximum expanded vertices; 0 disables; wall budget remains a safety cap")
     for key in ("present_initial","present_step","history_step"):
@@ -114,6 +115,7 @@ def main():
     p.add_argument("--passes",type=int,default=5)
     p.add_argument("--resume-dir",type=Path)
     a=p.parse_args()
+    if (a.mode=="fanout_fine_donor") != (a.donor_dir is not None): p.error("donor mode requires --donor-dir; other modes do not accept it")
     if Path(sys.prefix).resolve()!=(ROOT/".venv").resolve(): p.error("use project .venv")
     if not 0<=a.work_budget<2**64 or not 0<=a.budget<=600 or not 1<=a.passes<=1000 or not 0<=a.seed<2**64: p.error("invalid config")
     if any(not 0<=getattr(a,k)<=64 for k in ("present_initial","present_step","history_step")): p.error("schedule values must be 0..64")
@@ -128,7 +130,7 @@ def main():
     (out/"routes").mkdir()
     source=source_identity()
     m={"run_id":out.name,"started_utc":stamp,"upstream_revision":REVISION,"source":source,
-       "config":{**vars(a),"resume_dir":str(a.resume_dir) if a.resume_dir else None},
+       "config":{**vars(a),"resume_dir":str(a.resume_dir) if a.resume_dir else None,"donor_dir":str(a.donor_dir) if a.donor_dir else None},
        "machine":{"hostname":platform.node(),"os":platform.platform(),"python":sys.version,
                   "affinity_cpus":len(os.sched_getaffinity(0)),"meminfo":Path("/proc/meminfo").read_text()},
        "workers":1,"threads":1,"compiler_flags":BUILD_FLAGS,"binary_sha256":digest(ENGINE),
@@ -154,8 +156,16 @@ def main():
         destination=out/"routes"/warm.name
         temporary=destination.with_suffix(".json.tmp")
         old.save(str(temporary)); os.replace(temporary,destination)
-        result,raw=run_core(out/c["name"],encode(inst,old),a.budget,a.seed,a.passes,a.mode,a.work_budget,{k:getattr(a,k) for k in ("present_initial","present_step","history_step")})
-        record={"case":c["name"],"case_sha256":digest(OFFICIAL/a.suite/c["instance_file"]),
+        data=encode(inst,old)
+        donor_metadata={}
+        if a.donor_dir:
+            donor_path=a.donor_dir/(c["name"]+".sol.json")
+            alternate=Submission.load(donor_path); donor_checked=check(inst,alternate)
+            if not donor_checked.legal: raise RuntimeError("illegal donor route")
+            data+=encode(inst,alternate)
+            donor_metadata={"donor_path":str(donor_path.resolve()),"donor_sha256":digest(donor_path),"donor_delay":donor_checked.total_delay}
+        result,raw=run_core(out/c["name"],data,a.budget,a.seed,a.passes,a.mode,a.work_budget,{k:getattr(a,k) for k in ("present_initial","present_step","history_step")})
+        record={**donor_metadata,"case":c["name"],"case_sha256":digest(OFFICIAL/a.suite/c["instance_file"]),
                 "case_seed":inst.seed,"warm_start_sha256":digest(warm),"before_delay":previous.total_delay,"before_resources":route_resources(old),
                 "process":result,"candidate_accepted":False,"error":None}
         try:

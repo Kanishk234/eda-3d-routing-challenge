@@ -1,0 +1,17 @@
+{
+  "screen_matched_comparisons": [
+    {
+      "wins": 5,
+      "ties": 0,
+      "losses": 4,
+      "geomean_delay_ratio": 1.0006622545265833
+    }
+  ],
+  "screen_wrapper_wall_s": 42.639358579181135,
+  "full_hard_score": 1.2543945794120073,
+  "previous_hard_score": 1.25196491393671,
+  "improved_cases": 7,
+  "unchanged_cases": 2,
+  "full_stage_wrapper_wall_s": 16.294100558036007,
+  "limitations": "Fixed seed1/5M additional incumbent stage; mixed matched pilot, not universal default or matched full-tier superiority. Donor-generated routes come from our own earlier adaptive pipeline whose generation is already part of the inherited case portfolio. Original missing incoming ancestors remain unmeasured. No donor-selection activity counters yet. read_s excludes donor parsing; wrapper/core wall times include it. Screen snapshot caveat recorded separately."
+}

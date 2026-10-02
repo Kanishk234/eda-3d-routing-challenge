@@ -14,3 +14,5 @@ entry is created by this development archive.
 Use this directory's `routes/` as `--resume-dir` for further optimization.
 
 Latest hard archive `20261002T024319.157302Z-exact-polish` scores **1.25196491393671**. It continues an explicit two-pipeline whole-case portfolio, then fixed seed4 adaptive10M optimization. Byte-identical routes, original source/manifest/rescore and inherited portfolio provenance are preserved; older missing ancestors are not regenerated.
+
+Latest hard result **1.2543945794120073** is preserved compactly as `20261002T031034.943763Z-exact-polish.tar.gz`, with member hashes in its `.gz.json` companion. It adds a fixed donor-guided stage to the disclosed case-portfolio pipeline. Extraction instructions are in dev/README.md.

@@ -322,6 +322,27 @@ class WorkAndAstarProperties(unittest.TestCase):
                 self.assertEqual(stats["net_delays"][0],expected)
                 self.assertEqual(checked.total_delay,stats["total_delay"])
 
+    def test_donor_input_validation_work_cap_and_repeatability(self):
+        path=[(x,0,0) for x in range(5)]+[(4,y,0) for y in range(1,5)]
+        inst,sub=make(5,5,[6,2],3,(0,0,0),[(4,4,0)],own_edges=list(zip(path,path[1:])))
+        _,donor,_=core(inst,sub)
+        data=encode(inst,sub)+encode(inst,donor)
+        for seed in (1,2,3):
+            for limit in (1,25,100):
+                outputs=[]
+                for budget in (2,5):
+                    run=subprocess.run([str(ENGINE),str(budget),str(seed),"1000","fanout_fine_donor",str(limit)],input=data,text=True,capture_output=True,timeout=8)
+                    self.assertEqual(run.returncode,0)
+                    result,stats=decode(inst,run.stdout)
+                    self.assertTrue(check(inst,result).legal)
+                    self.assertLessEqual(stats["expansions"],limit)
+                    self.assertLessEqual(stats["total_delay"],check(inst,sub).total_delay)
+                    outputs.append(run.stdout)
+                self.assertEqual(*outputs)
+        for invalid in (encode(inst,sub),encode(inst,sub)+encode(inst,donor).replace("M3DIN1 5 5", "M3DIN1 6 5",1)):
+            run=subprocess.run([str(ENGINE),"2","1","100","fanout_fine_donor","100"],input=invalid,text=True,capture_output=True,timeout=5)
+            self.assertEqual(run.returncode,2)
+
     def test_schedule_parser_defaults_and_rejections(self):
         inst,sub=make(3,1,[1],1,(0,0,0),[(2,0,0)],own_edges=[((0,0,0),(1,0,0)),((1,0,0),(2,0,0))])
         base=[str(ENGINE),"2","1","100","fanout_fine","100"]

@@ -299,3 +299,13 @@ Select complete legal case outputs from explicit local complete runs:
 ```
 
 This creates a separate `*-case-portfolio/routes` directory and portfolio provenance, not a fabricated single solver-run manifest. Official hashes/checking and independent CLI scoring guard every selected case. Resume through `run_polish.py --resume-dir` and disclose both pipelines' effort. Do not mix individual nets independently.
+
+`fanout_fine_donor` accepts `--donor-dir LOCAL_ROUTES`. Both solutions are officially validated against the same case; the engine independently validates donor trees and matching dimensions, delays and terminals. An improving donor tree can suggest a smaller blocker group than the ordinary ideal path. The group is fully rerouted by existing transactional negotiation; the donor tree is not blindly inserted or guaranteed to survive repair. All external owners/pins remain frozen, and failed/worse repairs roll back.
+
+Preserve a completed run compactly with byte-identical routes and source:
+
+```bash
+.venv/bin/python dev/archive_incumbent.py RUN_DIR --out dev/incumbents/hard/RUN_ID.tar.gz
+```
+
+The archive is checked by reading every member back and comparing original bytes. Extract into an empty directory with `tar -xzf ARCHIVE.tar.gz -C DESTINATION`; the archived run directory contains `routes/` for resuming. It preserves outputs, not missing generation ancestors.
