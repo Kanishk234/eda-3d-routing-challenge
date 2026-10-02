@@ -499,3 +499,17 @@ Latest independent pinned CLI45/45legal: intro1.098317782147403,hard1.2587906322
 Next concrete action: profile eligible blocker-group formation and repair cost,then compare bounded diversified fresh candidate generation against incumbent continuation under matched effort. SAT compatibility selection and partial-branch repair remain unimplemented research options.
 
 No optimization jobs running. Root PDF untouched. Local commits authorized;user pushes/publication.
+
+# Eligibility-aware blocker avoidance
+
+Profiled existing selected-stage timer/counter records;owner snapshots below0.14percent of optimization,frequent over-cap proposals onscale/designs/congested. Research primary ILS perturbation/acceptance sections and linkage-learning abstract;scope in ELIGIBILITY_AND_RESTARTS.md,no third-party source copied.
+
+Added restart_fine with tight A*/16-unit pricing;matched18legal10M trials lose9/9 versus neutral adaptive,47.187s wrapper. Some hard legal rebuilt candidates but no incumbent improvement;larger cases incomplete rollback. Keep experimental.
+
+Added escape operator:only on improving over-cap ideals,at most two alternative searches penalize blocking owners' full route vertices. Match18legal10M trials:hard3ties(no alternatives),designs2wins/1loss,ratio1.0007174712;congested3wins,ratio1.0017954082.45.449s wrapper. Optional retention,default unchanged. Full seed1 fixed45case continuation adds109.720s,38improve/7unchanged,all six aggregates improve. Intro/stress fallbackneverexecutes,gainsordinarypolish/repair;otherstage gains also mixed.
+
+PinnedCLI confirms45/45legal: intro1.0999131603791024,hard1.261189538560553,scale1.049271427751818,congested1.1038276065797619,designs1.2385083709435054,stress1.021438627356866. tier-eligibility-followup-coverage.json;selected.json preserves contexts,6newcompactarchives retain originals,45restoredroutehashesmatch.40focused checks pass,warning-free build,Python syntax/diffchecks. Initial over-cap test fixture did not invoke branch;corrected geometry makes it execute without changing solver/evaluator. All timed runs frozen core/wrapper.
+
+Next concrete action: matched scale01 repeated-seed escape/adaptive comparison,then fixed configuration validation on08;measure recovered-proposal physical acceptance before penalty tuning. Research smaller structured perturbations instead of immediate further full restarts. Final freeze/regeneration remain pending;missingolderancestors/referencegenerationlimitations retained.
+
+No running jobs. Root PDF untouched. Local commit authorized,no push/publication.

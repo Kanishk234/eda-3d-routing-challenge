@@ -94,3 +94,7 @@ cases from the same available1.227449 incumbent, without per-case selection.
 46. Reject gap-weighted repeated seed sampling on designs/congested after matched10M screens:designs6losses;congested1win/5losses across both modes. Keep default unique shuffled sweep and experimental flags only. Hard neutral remains optional after5wins/4losses;retain improved fixed full-tier outputs with added effort disclosed.
 
 47. Retain strict iterative two-parent closure fusion for the observed10delay congested gain. Donor-preferring lexicographic labels preserve restricted physical optimality but add no scored gain here;keep experimental. Frozen archive pool and bounded sweeps are disclosed;no full-pool/global optimum claim.
+
+48. Reject fine-pricing whole-case restarts after9matched losses despite5legal hard rebuilds. Keep bounded transactional experiment available;no candidate pool claim. Profiles favor investigating over-cap proposals before owner-snapshot work for these selected runs.
+
+49. Keep escape fallback optional afterdesigns2wins/1loss andcongested3wins;adaptive default unchanged. Penalize blocker owner geometry only on over-cap improving ideals;retain exact physical acceptance and rollback. Full45case improvements are added-effort results,not matched whole-tier superiority;intro/stress fallbackinactive.

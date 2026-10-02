@@ -1,105 +1,130 @@
 {
-  "coverage": "docs/evidence/phase3/tier-sampling-fusion-followup-coverage.json",
+  "coverage": "docs/evidence/phase3/tier-eligibility-followup-coverage.json",
   "tiers": [
     {
       "tier": "intro",
-      "run_id": "20261002T042219.409990Z-exact-polish",
-      "score": 1.098317782147403,
-      "archive": "dev/incumbents/intro/20261002T042219.409990Z-exact-polish.tar.gz",
-      "archive_sha256": "9ca3211e5298c9522e02c73c681040f20a207a18fd5b2aefaf7f77c31663cb36",
+      "run_id": "20261002T163851.054709Z-exact-polish",
+      "score": 1.0999131603791024,
+      "archive": "dev/incumbents/intro/20261002T163851.054709Z-exact-polish.tar.gz",
+      "archive_sha256": "039f4ab76afe23b7d409b91e05e3157c3625e131a802a570ef07e28c81cf6012",
       "selection_context": {
-        "stage": "docs/evidence/phase3/conflict-window-all-tiers.json",
-        "configuration": "Fixed conflict-window seed1,3M work; retained per-tier caps/schedules. Added continuation effort,not matched full-tier superiority.",
-        "previous_selection_context": null
+        "screen": "docs/evidence/phase3/eligibility-screen.json",
+        "stage": "docs/evidence/phase3/eligibility-followup.json",
+        "scope": "Fixed seed1 fine escape10M continuation. Designs/congested optional after matched pilot;other tiers exploratory. Added effort,not matched full-tier superiority. Physical gains also include ordinary polish/repair.",
+        "previous_selection_context": {
+          "stage": "docs/evidence/phase3/conflict-window-all-tiers.json",
+          "configuration": "Fixed conflict-window seed1,3M work; retained per-tier caps/schedules. Added continuation effort,not matched full-tier superiority.",
+          "previous_selection_context": null
+        }
       }
     },
     {
       "tier": "hard",
-      "run_id": "20261002T161526.816648Z-exact-polish",
-      "score": 1.258790632279399,
-      "archive": "dev/incumbents/hard/20261002T161526.816648Z-exact-polish.tar.gz",
-      "archive_sha256": "30fb3345d7d93f6d47a67fffe248c4af96eb2569a0c5ac81f6cdf73d71d211c9",
+      "run_id": "20261002T163929.376758Z-exact-polish",
+      "score": 1.261189538560553,
+      "archive": "dev/incumbents/hard/20261002T163929.376758Z-exact-polish.tar.gz",
+      "archive_sha256": "5b74096e402628f39799d8b5c35f375b7ebef01a04fa445a2b4caac0710cf55e",
       "selection_context": {
-        "stage": "docs/evidence/phase3/hard-neutral-screen.json",
-        "scope": "Hard neutral pilot5wins/4losses; fixed seed1 full9case neutral10M continuation,7improve/2unchanged. Reserved08/09 excluded from selection.",
+        "screen": "docs/evidence/phase3/eligibility-screen.json",
+        "stage": "docs/evidence/phase3/eligibility-followup.json",
+        "scope": "Fixed seed1 fine escape10M continuation. Designs/congested optional after matched pilot;other tiers exploratory. Added effort,not matched full-tier superiority. Physical gains also include ordinary polish/repair.",
         "previous_selection_context": {
-          "stage": "docs/evidence/phase3/conflict-window-all-tiers.json",
-          "configuration": "Fixed conflict-window seed1,3M work; retained per-tier caps/schedules. Added continuation effort,not matched full-tier superiority.",
+          "stage": "docs/evidence/phase3/hard-neutral-screen.json",
+          "scope": "Hard neutral pilot5wins/4losses; fixed seed1 full9case neutral10M continuation,7improve/2unchanged. Reserved08/09 excluded from selection.",
           "previous_selection_context": {
-            "screen": "docs/evidence/phase3/window-seed-first-screen.json",
-            "configuration": "Fixed seed1,fanout_fine_window,3M expansions per case,group13,schedule2/1/1",
-            "scope": "All nine cases; full-stage gains come from ordinary single-net polish, zero accepted window repairs. Mixed pilot supports experimental status only."
+            "stage": "docs/evidence/phase3/conflict-window-all-tiers.json",
+            "configuration": "Fixed conflict-window seed1,3M work; retained per-tier caps/schedules. Added continuation effort,not matched full-tier superiority.",
+            "previous_selection_context": {
+              "screen": "docs/evidence/phase3/window-seed-first-screen.json",
+              "configuration": "Fixed seed1,fanout_fine_window,3M expansions per case,group13,schedule2/1/1",
+              "scope": "All nine cases; full-stage gains come from ordinary single-net polish, zero accepted window repairs. Mixed pilot supports experimental status only."
+            }
           }
         }
       }
     },
     {
       "tier": "scale",
-      "run_id": "20261002T042302.150638Z-exact-polish",
-      "score": 1.0479000969718766,
-      "archive": "dev/incumbents/scale/20261002T042302.150638Z-exact-polish.tar.gz",
-      "archive_sha256": "4e6e186b6967d77f95b0a548ad1512ed68fda8ed5156fa72cf6f82b72e01e524",
+      "run_id": "20261002T163946.669091Z-exact-polish",
+      "score": 1.049271427751818,
+      "archive": "dev/incumbents/scale/20261002T163946.669091Z-exact-polish.tar.gz",
+      "archive_sha256": "bf83ed697677c6de881e890b78e06cd915a8111deb1ef49b3e70d4867a93f84b",
       "selection_context": {
-        "stage": "docs/evidence/phase3/conflict-window-all-tiers.json",
-        "configuration": "Fixed conflict-window seed1,3M work; retained per-tier caps/schedules. Added continuation effort,not matched full-tier superiority.",
+        "screen": "docs/evidence/phase3/eligibility-screen.json",
+        "stage": "docs/evidence/phase3/eligibility-followup.json",
+        "scope": "Fixed seed1 fine escape10M continuation. Designs/congested optional after matched pilot;other tiers exploratory. Added effort,not matched full-tier superiority. Physical gains also include ordinary polish/repair.",
         "previous_selection_context": {
-          "screen": "docs/evidence/phase3/repair-schedule-screen.json",
-          "configuration": "Original polish-first adaptive,group3,seed3,3M work",
-          "selection_scope": "Seed chosen from scale01 development;fixed full8case evaluation afterward;no per-case seed portfolio"
+          "stage": "docs/evidence/phase3/conflict-window-all-tiers.json",
+          "configuration": "Fixed conflict-window seed1,3M work; retained per-tier caps/schedules. Added continuation effort,not matched full-tier superiority.",
+          "previous_selection_context": {
+            "screen": "docs/evidence/phase3/repair-schedule-screen.json",
+            "configuration": "Original polish-first adaptive,group3,seed3,3M work",
+            "selection_scope": "Seed chosen from scale01 development;fixed full8case evaluation afterward;no per-case seed portfolio"
+          }
         }
       }
     },
     {
       "tier": "congested",
-      "run_id": "20261002T162446.265563Z-exact-polish",
-      "score": 1.1021197794267317,
-      "archive": "dev/incumbents/congested/20261002T162446.265563Z-exact-polish.tar.gz",
-      "archive_sha256": "e7be681148371756f9047693fa02905f5d5b3e5319b1db883fabb4169f62f1ee",
+      "run_id": "20261002T164011.751136Z-exact-polish",
+      "score": 1.1038276065797619,
+      "archive": "dev/incumbents/congested/20261002T164011.751136Z-exact-polish.tar.gz",
+      "archive_sha256": "d8b8eb82ff9864263140d5db525a1f934cce618dfc237ccdaa6546a05313654c",
       "selection_context": {
-        "stage": "docs/evidence/phase3/sampling-fusion-followup.json",
-        "scope": "Fixed seed1 adaptive neutral10M continuation; added effort, not matched full-tier superiority. Weighted sampling rejected; shuffled seeds retained.",
+        "screen": "docs/evidence/phase3/eligibility-screen.json",
+        "stage": "docs/evidence/phase3/eligibility-followup.json",
+        "scope": "Fixed seed1 fine escape10M continuation. Designs/congested optional after matched pilot;other tiers exploratory. Added effort,not matched full-tier superiority. Physical gains also include ordinary polish/repair.",
         "previous_selection_context": {
-          "screen": "docs/evidence/phase3/neutral-long-screen.json",
-          "short_screen": "docs/evidence/phase3/neutral-screen.json",
-          "stage": "docs/evidence/phase3/neutral-followup.json",
-          "scope": "Fixed seed1 adaptive with equal-delay geometry changes,group3,10M per case. Selected from repeated development seeds;added full-tier effort is separate from matched pilot.",
+          "stage": "docs/evidence/phase3/sampling-fusion-followup.json",
+          "scope": "Fixed seed1 adaptive neutral10M continuation; added effort, not matched full-tier superiority. Weighted sampling rejected; shuffled seeds retained.",
           "previous_selection_context": {
-            "screen": "docs/evidence/phase3/diversity-screen.json",
-            "stage": "docs/evidence/phase3/diversity-followup.json",
-            "recombination": "docs/evidence/phase3/congested-archive-recombination.json",
-            "scope": "Adaptive full-tier continuation followed by exact restricted two-parent recombination; best candidate pair per case; zero-budget checkpoint preserves routes.",
+            "screen": "docs/evidence/phase3/neutral-long-screen.json",
+            "short_screen": "docs/evidence/phase3/neutral-screen.json",
+            "stage": "docs/evidence/phase3/neutral-followup.json",
+            "scope": "Fixed seed1 adaptive with equal-delay geometry changes,group3,10M per case. Selected from repeated development seeds;added full-tier effort is separate from matched pilot.",
             "previous_selection_context": {
-              "stage": "docs/evidence/phase3/conflict-window-all-tiers.json",
-              "configuration": "Fixed conflict-window seed1,3M work; retained per-tier caps/schedules. Added continuation effort,not matched full-tier superiority.",
-              "previous_selection_context": null
+              "screen": "docs/evidence/phase3/diversity-screen.json",
+              "stage": "docs/evidence/phase3/diversity-followup.json",
+              "recombination": "docs/evidence/phase3/congested-archive-recombination.json",
+              "scope": "Adaptive full-tier continuation followed by exact restricted two-parent recombination; best candidate pair per case; zero-budget checkpoint preserves routes.",
+              "previous_selection_context": {
+                "stage": "docs/evidence/phase3/conflict-window-all-tiers.json",
+                "configuration": "Fixed conflict-window seed1,3M work; retained per-tier caps/schedules. Added continuation effort,not matched full-tier superiority.",
+                "previous_selection_context": null
+              }
             }
-          }
-        },
-        "fusion": "docs/evidence/phase3/neutral-fusion-screen.json; strict iterative closure gains10delay before continuation. Donor-preferring tie-break adds no scored benefit."
+          },
+          "fusion": "docs/evidence/phase3/neutral-fusion-screen.json; strict iterative closure gains10delay before continuation. Donor-preferring tie-break adds no scored benefit."
+        }
       }
     },
     {
       "tier": "designs",
-      "run_id": "20261002T162437.398583Z-exact-polish",
-      "score": 1.2361933015773814,
-      "archive": "dev/incumbents/designs/20261002T162437.398583Z-exact-polish.tar.gz",
-      "archive_sha256": "42c86b0eb4212db7860b9a5e169aad379154643c32779d8c748a83c08efd18b5",
+      "run_id": "20261002T164022.756160Z-exact-polish",
+      "score": 1.2385083709435054,
+      "archive": "dev/incumbents/designs/20261002T164022.756160Z-exact-polish.tar.gz",
+      "archive_sha256": "570f779ac033f94fe3ea16beb83219ceb84769b2d4fc4b6d753dc4fe20d101c8",
       "selection_context": {
-        "stage": "docs/evidence/phase3/sampling-fusion-followup.json",
-        "scope": "Fixed seed1 adaptive neutral10M continuation; added effort, not matched full-tier superiority. Weighted sampling rejected; shuffled seeds retained.",
+        "screen": "docs/evidence/phase3/eligibility-screen.json",
+        "stage": "docs/evidence/phase3/eligibility-followup.json",
+        "scope": "Fixed seed1 fine escape10M continuation. Designs/congested optional after matched pilot;other tiers exploratory. Added effort,not matched full-tier superiority. Physical gains also include ordinary polish/repair.",
         "previous_selection_context": {
-          "screen": "docs/evidence/phase3/neutral-long-screen.json",
-          "short_screen": "docs/evidence/phase3/neutral-screen.json",
-          "stage": "docs/evidence/phase3/neutral-followup.json",
-          "scope": "Fixed seed1 adaptive with equal-delay geometry changes,group3,10M per case. Selected from repeated development seeds;added full-tier effort is separate from matched pilot.",
+          "stage": "docs/evidence/phase3/sampling-fusion-followup.json",
+          "scope": "Fixed seed1 adaptive neutral10M continuation; added effort, not matched full-tier superiority. Weighted sampling rejected; shuffled seeds retained.",
           "previous_selection_context": {
-            "screen": "docs/evidence/phase3/diversity-screen.json",
-            "stage": "docs/evidence/phase3/diversity-followup.json",
-            "scope": "Fixed seed1 donor full-tier continuation; no donor-labelled accepted moves in this full stage. Ordinary repair/polish gains.",
+            "screen": "docs/evidence/phase3/neutral-long-screen.json",
+            "short_screen": "docs/evidence/phase3/neutral-screen.json",
+            "stage": "docs/evidence/phase3/neutral-followup.json",
+            "scope": "Fixed seed1 adaptive with equal-delay geometry changes,group3,10M per case. Selected from repeated development seeds;added full-tier effort is separate from matched pilot.",
             "previous_selection_context": {
-              "stage": "docs/evidence/phase3/conflict-window-all-tiers.json",
-              "configuration": "Fixed conflict-window seed1,3M work; retained per-tier caps/schedules. Added continuation effort,not matched full-tier superiority.",
-              "previous_selection_context": null
+              "screen": "docs/evidence/phase3/diversity-screen.json",
+              "stage": "docs/evidence/phase3/diversity-followup.json",
+              "scope": "Fixed seed1 donor full-tier continuation; no donor-labelled accepted moves in this full stage. Ordinary repair/polish gains.",
+              "previous_selection_context": {
+                "stage": "docs/evidence/phase3/conflict-window-all-tiers.json",
+                "configuration": "Fixed conflict-window seed1,3M work; retained per-tier caps/schedules. Added continuation effort,not matched full-tier superiority.",
+                "previous_selection_context": null
+              }
             }
           }
         }
@@ -107,32 +132,37 @@
     },
     {
       "tier": "stress",
-      "run_id": "20261002T042338.677086Z-exact-polish",
-      "score": 1.02137484120527,
-      "archive": "dev/incumbents/stress/20261002T042338.677086Z-exact-polish.tar.gz",
-      "archive_sha256": "45aa4f1fb7fa224f48381e5b125bd24b52db6f0f26713d7ada50335d687a8d48",
+      "run_id": "20261002T164032.716433Z-exact-polish",
+      "score": 1.021438627356866,
+      "archive": "dev/incumbents/stress/20261002T164032.716433Z-exact-polish.tar.gz",
+      "archive_sha256": "7be12602c2da67be2efd0de007ca01f2f3eb21ec5054978fe377ef03c193aac9",
       "selection_context": {
-        "stage": "docs/evidence/phase3/conflict-window-all-tiers.json",
-        "configuration": "Fixed conflict-window seed1,3M work; retained per-tier caps/schedules. Added continuation effort,not matched full-tier superiority.",
+        "screen": "docs/evidence/phase3/eligibility-screen.json",
+        "stage": "docs/evidence/phase3/eligibility-followup.json",
+        "scope": "Fixed seed1 fine escape10M continuation. Designs/congested optional after matched pilot;other tiers exploratory. Added effort,not matched full-tier superiority. Physical gains also include ordinary polish/repair.",
         "previous_selection_context": {
-          "screen": "docs/evidence/phase3/polish-order-screen.json",
-          "configuration": "Area-normalized excess-delay ordering; fixed seed1 3M pilot then20M continuation,group13",
-          "scope": "Chosen ordering from three matched seeds; stress has one case and no held-out validation. Larger continuation adds search effort, not a matched-budget comparison.",
-          "screen_wrapper_wall_s": 225.48264092003228,
-          "continuation_wrapper_wall_s": 32.68367733195191,
+          "stage": "docs/evidence/phase3/conflict-window-all-tiers.json",
+          "configuration": "Fixed conflict-window seed1,3M work; retained per-tier caps/schedules. Added continuation effort,not matched full-tier superiority.",
           "previous_selection_context": {
-            "screen": "docs/evidence/phase3/repair-schedule-screen.json",
-            "screen_sha256": "55ebe3d8305978cf50dcb59cea6573922c923d2cf8993eda5d2fd0ba7a4a63dd",
-            "selected_label": "control",
-            "selected_seed": 3,
-            "stress_candidates_tried": 9,
-            "scope": "Best legal stress output across tested scheduling/seed candidates, not a repair-first improvement. Stress has no separate held-out case.",
-            "total_screen_wrapper_wall_s": 219.38891770900227
+            "screen": "docs/evidence/phase3/polish-order-screen.json",
+            "configuration": "Area-normalized excess-delay ordering; fixed seed1 3M pilot then20M continuation,group13",
+            "scope": "Chosen ordering from three matched seeds; stress has one case and no held-out validation. Larger continuation adds search effort, not a matched-budget comparison.",
+            "screen_wrapper_wall_s": 225.48264092003228,
+            "continuation_wrapper_wall_s": 32.68367733195191,
+            "previous_selection_context": {
+              "screen": "docs/evidence/phase3/repair-schedule-screen.json",
+              "screen_sha256": "55ebe3d8305978cf50dcb59cea6573922c923d2cf8993eda5d2fd0ba7a4a63dd",
+              "selected_label": "control",
+              "selected_seed": 3,
+              "stress_candidates_tried": 9,
+              "scope": "Best legal stress output across tested scheduling/seed candidates, not a repair-first improvement. Stress has no separate held-out case.",
+              "total_screen_wrapper_wall_s": 219.38891770900227
+            }
           }
         }
       }
     }
   ],
   "limitations": "Selected outputs/source/provenance preserved; older missing raw ancestors and reference-generation costs remain unreproduced.",
-  "coverage_sha256": "327fbcaa5b961ef0efeb24d29eecd406e749b20872bbc594222d8e202c3b2828"
+  "coverage_sha256": "8fe3b74c9933945dd1bffd05b5690cff318cc8af3507cce5989610b93261a24f"
 }

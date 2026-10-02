@@ -65,6 +65,8 @@ struct Engine {
     bool conflict_windows=false;
     bool seed_first_groups=false;
     bool shuffled_groups=false,diverse_proposals=false,adaptive_groups=false,spatial_groups=false;
+    bool eligibility_proposals=false;
+    std::uint64_t eligibility_searches=0,eligibility_recovered=0;
     std::mt19937_64 group_rng{0};
     std::array<double,3> neighborhood_weights{{1,1,1}};
     std::array<std::uint64_t,3> neighborhood_attempts{{0,0,0}},neighborhood_gains{{0,0,0}};
@@ -626,6 +628,32 @@ struct Engine {
                         previous=std::move(alternate);
                     }
                 }
+                if(eligibility_proposals && ideal.delay<nets[index].delay) {
+                    auto displaced=[&](const Net& candidate) {
+                        std::set<int> ids;
+                        for(int v:candidate.vertices) if(owner[v]>=0 && owner[v]!=candidate.id) ids.insert(owner[v]);
+                        return ids;
+                    };
+                    auto blockers=displaced(ideal);
+                    if(blockers.size()>static_cast<std::size_t>(max_blockers)) {
+                        std::vector<I> prices(vcount,0);
+                        Net previous=ideal;
+                        for(int option=0;option<2 && !expired();++option) {
+                            auto avoid=displaced(previous);
+                            for(const Net& n:nets) if(avoid.count(n.id))
+                                for(int v:n.vertices) prices[v]=add(prices[v],4);
+                            Net alternate; ++eligibility_searches;
+                            if(!shortest(nets[index],alternate,true,penalty,nullptr,nullptr,0,&prices)) break;
+                            auto next=displaced(alternate);
+                            if(alternate.delay<nets[index].delay &&
+                               std::make_pair(next.size(),alternate.delay)<std::make_pair(blockers.size(),ideal.delay)) {
+                                ideal=alternate;blockers=next;
+                            }
+                            previous=std::move(alternate);
+                            if(blockers.size()<=static_cast<std::size_t>(max_blockers)) {++eligibility_recovered;break;}
+                        }
+                    }
+                }
                 if(!donor_nets.empty()) {
                     const Net& donor=donor_nets[index];
                     auto merit=[&](const Net& candidate) {
@@ -807,6 +835,7 @@ struct Engine {
                  <<",\"snapshot_s\":"<<snapshot_s<<",\"negotiation_setup_s\":"<<negotiation_setup_s<<",\"negotiation_scan_s\":"<<negotiation_scan_s
                  <<",\"work_limit\":"<<work_limit<<",\"work_exhausted\":"<<work_exhausted
                  <<",\"expansions_per_second\":"<<(optimization_s>0?expansions/optimization_s:0)
+                 <<",\"eligibility_searches\":"<<eligibility_searches<<",\"eligibility_recovered\":"<<eligibility_recovered
                  <<",\"repair_sampling\":"<<repair_sampling
                  <<",\"accept_equal\":"<<accept_equal<<",\"neutral_moves\":"<<neutral_moves
                  <<",\"uphill_moves\":"<<uphill_moves
@@ -838,9 +867,9 @@ int main(int argc,char**argv) {
         const std::string kernel=split==std::string::npos?mode:mode.substr(0,split);
         const std::string operation=split==std::string::npos?"":mode.substr(split+1);
         const bool neighborhood_mode=(kernel=="fanout_astar" || kernel=="fanout_tight" || kernel=="fanout_fine") &&
-                                     (operation=="shuffle" || operation=="diverse" || operation=="adaptive" || operation=="spatial" || operation=="hybrid" || operation=="donor" || operation=="window" || operation=="conflict");
+                                     (operation=="escape" || operation=="shuffle" || operation=="diverse" || operation=="adaptive" || operation=="spatial" || operation=="hybrid" || operation=="donor" || operation=="window" || operation=="conflict");
         bool search_only=std::string(argv[4])=="search";
-        if(!search_only && !neighborhood_mode && std::string(argv[4])!="polish" && std::string(argv[4])!="repair" && std::string(argv[4])!="repairsoft" && std::string(argv[4])!="ablation" && std::string(argv[4])!="negotiated" && std::string(argv[4])!="explore" && std::string(argv[4])!="restart" && std::string(argv[4])!="select" && std::string(argv[4])!="wide" && std::string(argv[4])!="walk" && std::string(argv[4])!="descent" && std::string(argv[4])!="compact" && std::string(argv[4])!="fanout" && std::string(argv[4])!="restart_fanout" && std::string(argv[4])!="restart_compact" && std::string(argv[4])!="restart_polish" && std::string(argv[4])!="fanout_walk" && std::string(argv[4])!="fanout_descent" && std::string(argv[4])!="astar" && std::string(argv[4])!="fanout_astar" && std::string(argv[4])!="fanout_gap" && std::string(argv[4])!="fanout_astar_gap" && std::string(argv[4])!="restart_astar" && std::string(argv[4])!="treecost" && std::string(argv[4])!="fanout_tight" && std::string(argv[4])!="astar_tight" && std::string(argv[4])!="fanout_fine") throw std::runtime_error("invalid mode");
+        if(!search_only && !neighborhood_mode && std::string(argv[4])!="polish" && std::string(argv[4])!="repair" && std::string(argv[4])!="repairsoft" && std::string(argv[4])!="ablation" && std::string(argv[4])!="negotiated" && std::string(argv[4])!="explore" && std::string(argv[4])!="restart" && std::string(argv[4])!="select" && std::string(argv[4])!="wide" && std::string(argv[4])!="walk" && std::string(argv[4])!="descent" && std::string(argv[4])!="compact" && std::string(argv[4])!="fanout" && std::string(argv[4])!="restart_fanout" && std::string(argv[4])!="restart_compact" && std::string(argv[4])!="restart_polish" && std::string(argv[4])!="fanout_walk" && std::string(argv[4])!="fanout_descent" && std::string(argv[4])!="astar" && std::string(argv[4])!="fanout_astar" && std::string(argv[4])!="fanout_gap" && std::string(argv[4])!="fanout_astar_gap" && std::string(argv[4])!="restart_fine" && std::string(argv[4])!="restart_astar" && std::string(argv[4])!="treecost" && std::string(argv[4])!="fanout_tight" && std::string(argv[4])!="astar_tight" && std::string(argv[4])!="fanout_fine") throw std::runtime_error("invalid mode");
         std::signal(SIGINT,on_signal); std::signal(SIGTERM,on_signal);
         Engine engine;
         if(argc>=6) {
@@ -905,7 +934,8 @@ int main(int argc,char**argv) {
             engine.price_units=kernel=="fanout_fine"?16:1;
             engine.shuffled_groups=true;engine.group_rng.seed(seed^0x6a09e667f3bcc909ULL);
             engine.diverse_proposals=operation=="diverse" || operation=="hybrid";
-            engine.adaptive_groups=operation=="adaptive" || operation=="hybrid" || operation=="donor";
+            engine.eligibility_proposals=operation=="escape";
+            engine.adaptive_groups=operation=="escape" || operation=="adaptive" || operation=="hybrid" || operation=="donor";
             engine.spatial_groups=operation=="spatial" || operation=="window";
             engine.seed_first_groups=operation=="window" || operation=="conflict";
             engine.conflict_windows=operation=="conflict";
@@ -917,6 +947,7 @@ int main(int argc,char**argv) {
         else if(std::string(argv[4])=="fanout_tight") {engine.tight_heuristic=true;engine.astar_search=true;engine.fanout_prices=true;engine.explore(seed,passes,true);}
         else if(std::string(argv[4])=="treecost") {engine.discounted_groups=true;engine.astar_search=true;engine.fanout_prices=true;engine.explore(seed,passes,true);}
         else if(std::string(argv[4])=="fanout_astar_gap") {engine.gap_order=true;engine.astar_search=true;engine.fanout_prices=true;engine.explore(seed,passes,true);}
+        else if(std::string(argv[4])=="restart_fine") {engine.price_units=16;engine.tight_heuristic=true;engine.astar_search=true;engine.fanout_prices=true;engine.restart(seed,passes,true);}
         else if(std::string(argv[4])=="restart_astar") {engine.astar_search=true;engine.fanout_prices=true;engine.restart(seed,passes,true);}
         else if(std::string(argv[4])=="fanout_gap") {engine.gap_order=true;engine.fanout_prices=true;engine.explore(seed,passes,true);}
         else if(std::string(argv[4])=="astar") {engine.astar_search=true;engine.polish(seed,passes,false);}

@@ -252,3 +252,7 @@ No optimization jobs running. PDF untouched;local commits authorized,no push/pub
 ## Sampling/fusion follow-up
 
 See SAMPLING_FUSION.md. Weighted seeds and donor-preferring fusion ties did not earn adoption. Hard neutral continuation and strict congested fusion plus existing neutral continuation improve three tiers;45/45selected routes independently legal and archived/restored. Phase3 continues;final freeze and regeneration remain pending.
+
+## Eligibility-aware repair
+
+See ELIGIBILITY_REPAIR.md. Fine full-case restarts rejected after matched losses;over-cap blocker avoidance optional after designs/congested pilot gains. Added fixed all45case stage improves38cases/all6scores;independently legal and archived/restored.40focused checks pass. Phase3 continues;freeze/regeneration/submission pending.

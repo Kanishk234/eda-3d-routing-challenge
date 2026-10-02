@@ -290,12 +290,36 @@ class ExactKernel(unittest.TestCase):
             self.assertEqual(stats["total_delay"],12)
             self.assertTrue(check(inst,out).legal)
 
+    def test_escape_recovers_over_cap_proposal_with_legal_rollback(self):
+        pins=[Pin(0,0,0,0,7,0),Pin(1,0,0,6,7,0)]
+        nets=[Net(0,0,[1])]
+        path=[(0,7,0),(0,7,1),*[(x,7,1) for x in range(1,7)],(6,7,0)]
+        routes=[NetRoute(0,list(zip(path,path[1:])))]
+        for nid,x in enumerate((1,3,5),1):
+            base=len(pins);pins.extend([Pin(base,nid,0,x,1,0),Pin(base+1,nid,0,x,13,0)])
+            nets.append(Net(nid,base,[base+1]));routes.append(NetRoute(nid,[((x,y,0),(x,y+1,0)) for y in range(1,13)]))
+        inst=Instance("escape",7,15,2,[1,2],10,[],pins,nets);sub=Submission(inst.name,routes)
+        self.assertTrue(check(inst,sub).legal)
+        for limit in (1,20,100,1000,10000):
+            outputs=[]
+            for wall in (2,5):
+                run=subprocess.run([str(ENGINE),str(wall),"1","10","fanout_fine_escape",str(limit),"group_limit=3","repair_first=1"],input=encode(inst,sub),text=True,capture_output=True,timeout=8)
+                self.assertEqual(run.returncode,0,run.stderr);out,stats=decode(inst,run.stdout)
+                checked=check(inst,out);self.assertTrue(checked.legal);self.assertEqual(checked.total_delay,stats["total_delay"])
+                self.assertLessEqual(checked.total_delay,check(inst,sub).total_delay);self.assertLessEqual(stats["expansions"],limit)
+                if limit==10000:
+                    counters=json.loads(run.stderr.splitlines()[-1]);self.assertGreater(counters['eligibility_searches'],0)
+                    self.assertGreater(counters['eligibility_recovered'],0)
+                outputs.append(run.stdout)
+            self.assertEqual(*outputs)
+
     def test_whole_restart_builds_cheaper_layer_tree(self):
         path=[(x,0,0) for x in range(5)]+[(4,y,0) for y in range(1,5)]
         inst,sub=make(5,5,[6,2],3,(0,0,0),[(4,4,0)],own_edges=list(zip(path,path[1:])))
-        _,out,stats=core(inst,sub,"restart")
-        self.assertEqual(stats["total_delay"],22)
-        self.assertTrue(check(inst,out).legal)
+        for mode in ("restart","restart_fine"):
+            _,out,stats=core(inst,sub,mode)
+            self.assertEqual(stats["total_delay"],22)
+            self.assertTrue(check(inst,out).legal)
 
     def test_whole_restart_zero_budget_preserves_route(self):
         inst,sub=make(3,1,[2],3,(0,0,0),[(2,0,0)],
@@ -469,7 +493,7 @@ class WorkAndAstarProperties(unittest.TestCase):
         inst,sub=make(5,5,[6,2],3,(0,0,0),[(4,4,0)],own_edges=[
             *(( (x,0,0),(x+1,0,0)) for x in range(4)),
             *(( (4,y,0),(4,y+1,0)) for y in range(4))])
-        for mode in ["astar","fanout_astar","fanout_tight","fanout_fine","treecost","restart_astar","fanout_walk",*NEIGHBORHOOD_MODES]:
+        for mode in ["astar","fanout_astar","fanout_tight","fanout_fine","treecost","restart_astar","restart_fine","fanout_walk",*NEIGHBORHOOD_MODES]:
             for limit in (1,10,25,100):
                 outputs=[]
                 for wall in (2,5):

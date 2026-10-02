@@ -368,3 +368,11 @@ Matched screens: `.venv/bin/python dev/neutral_screen.py` (3M) and `.venv/bin/py
 `run_polish.py --repair-sampling 0|1|2`:0 unique shuffled seed sweep(default),1 repeated relaxed-delay-gap weighting,2 gap divided by route footprint. Both weighted modes remain experimental after losses. `--accept-equal` enables existing changed-geometry neutral moves;default strict.
 
 Screens: `.venv/bin/python dev/hard_neutral_screen.py --work-budget 10000000 --out PATH`, `.venv/bin/python dev/weighted_seed_screen.py --work-budget 10000000 --out PATH`. Inspect script defaults/source coverage before reuse. `dev/neutral_fusion_screen.py` uses its frozen archive inventory and fixed report path;retain source snapshot before changing inputs. The recombination API's `prefer_donor=True` is an experimental secondary label preference; CLI/default fusion remains strict. Latest canonical outputs are `dev/incumbents/selected.json`;score evidence and limitations in docs/summaries/SAMPLING_FUSION.md.
+
+### Over-cap blocker avoidance
+
+`--mode fanout_fine_escape` adds at most two alternative proposals when an improving ideal needs more blockers than the configured group cap. It penalizes whole blocking-owner trees,then uses ordinary adaptive repair/physical acceptance. Experimental optional after designs/congested matched gains;default unchanged. Counters `eligibility_searches`/`eligibility_recovered` are not accepted-move counts. The astar/tight kernels also expose escape and have focused checks but no matched benchmark evidence.
+
+`--mode restart_fine` performs bounded whole-case reconstruction with fine pricing/tight A*,keeps the incumbent on failure or loss;rejected after matched screen losses. No rejected candidate pool retained.
+
+Screens `.venv/bin/python dev/fresh_fine_screen.py` and `.venv/bin/python dev/eligibility_screen.py`;fixed followup `.venv/bin/python dev/eligibility_followup.py`. These scripts freeze coverage paths/configuration and refuse existing report destinations;inspect and choose new report names before rerunning. Current selected outputs and limitations: docs/summaries/ELIGIBILITY_REPAIR.md.
