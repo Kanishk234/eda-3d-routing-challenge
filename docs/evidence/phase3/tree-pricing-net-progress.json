@@ -1,0 +1,1100 @@
+{
+  "before_sha256": "8fe3b74c9933945dd1bffd05b5690cff318cc8af3507cce5989610b93261a24f",
+  "after_sha256": "0b3d6a8b9f2f8ceec13f8ab5a908471c308db3e103dc035dcbbfb4825eff6f6b",
+  "source_sha256": "ca70cd17b37ecbdbfc805b998405b939cce5a8b957dc881b44803752f64df838",
+  "cases": [
+    {
+      "tier": "intro",
+      "case": "case_01",
+      "case_sha256": "cc44aff1a21f0d4854ced9d550e95d4a77f6f475b6be0f3eec0416b070625b8c",
+      "before_run": "20261002T163851.054709Z-exact-polish",
+      "after_run": "20261002T175859.707296Z-exact-polish",
+      "before_output_sha256": "42ba6d788aba90fe9e4783b1659a9b999a0941ef35bbc80c6267404ea2d0e338",
+      "after_output_sha256": "42ba6d788aba90fe9e4783b1659a9b999a0941ef35bbc80c6267404ea2d0e338",
+      "before_delay": 206,
+      "after_delay": 206
+    },
+    {
+      "tier": "intro",
+      "case": "case_02",
+      "case_sha256": "169d1850ef77912297e3db307ff29c6b86db307e3ea846bafd6d771f147e848a",
+      "before_run": "20261002T163851.054709Z-exact-polish",
+      "after_run": "20261002T175859.707296Z-exact-polish",
+      "before_output_sha256": "9586cf1d902bf2eb25c1f364ff5c2f5c042510c0eda8a4810aa1b861be1a895a",
+      "after_output_sha256": "9586cf1d902bf2eb25c1f364ff5c2f5c042510c0eda8a4810aa1b861be1a895a",
+      "before_delay": 1030,
+      "after_delay": 1030
+    },
+    {
+      "tier": "intro",
+      "case": "case_03",
+      "case_sha256": "192bf94aa004b19e166888ca61ae6b6cbc0900d0f4bb108b7421494e2e85c460",
+      "before_run": "20261002T163851.054709Z-exact-polish",
+      "after_run": "20261002T175859.707296Z-exact-polish",
+      "before_output_sha256": "44e6915564598e6a1579f90851d3a7c3693c715ce777d77d5f3272d60dda9be5",
+      "after_output_sha256": "44e6915564598e6a1579f90851d3a7c3693c715ce777d77d5f3272d60dda9be5",
+      "before_delay": 1623,
+      "after_delay": 1623
+    },
+    {
+      "tier": "intro",
+      "case": "case_04",
+      "case_sha256": "27a5b017b31d7f5f15e11894bec5c7352fe66446a11106fb918a91140916cbd0",
+      "before_run": "20261002T163851.054709Z-exact-polish",
+      "after_run": "20261002T175859.707296Z-exact-polish",
+      "before_output_sha256": "01c0f6a37b127dc53ef5b5a5b1448b11a79690a0d2c850355bbb274c19ebd9bb",
+      "after_output_sha256": "4902f65412f3bb96e64f56a94cfda5c51cff62571b717eac525477b80925e0c9",
+      "before_delay": 2042,
+      "after_delay": 2042
+    },
+    {
+      "tier": "intro",
+      "case": "case_05",
+      "case_sha256": "bc8121afd69bf79056e4521147ee7b92f5c95714b3c49058dfce7ed0f578d43b",
+      "before_run": "20261002T163851.054709Z-exact-polish",
+      "after_run": "20261002T175859.707296Z-exact-polish",
+      "before_output_sha256": "46f571bd833a19588f9de0f8ca960e58d24b6f2eea2a4dfada5191559360e1ba",
+      "after_output_sha256": "c38285b7dc389cb1963310b0cc362ed7f872af8332376067c362725cf10c481e",
+      "before_delay": 3859,
+      "after_delay": 3853
+    },
+    {
+      "tier": "intro",
+      "case": "case_06",
+      "case_sha256": "b3b28f8640b5470534cc942036e7fd71ffb42f6638c366b5674eddd9499b9614",
+      "before_run": "20261002T163851.054709Z-exact-polish",
+      "after_run": "20261002T175859.707296Z-exact-polish",
+      "before_output_sha256": "a897ddc8b8dee12edebd253c127daddef979cd500190f8530da0eb553711ccf2",
+      "after_output_sha256": "dec495e5c4bd28088c4844d7e82ee43cc3a4c19b0115ee7c755cd577ef2cb945",
+      "before_delay": 5401,
+      "after_delay": 5397
+    },
+    {
+      "tier": "intro",
+      "case": "case_07",
+      "case_sha256": "ce99efb6e9dbb4e1d5a4891732b033636de49e734e027aff4db29aa744e556db",
+      "before_run": "20261002T163851.054709Z-exact-polish",
+      "after_run": "20261002T175859.707296Z-exact-polish",
+      "before_output_sha256": "81a2fd7b6ffd79bae3621c459de78d58d5290eee6cd1e77e330419bad2046fd8",
+      "after_output_sha256": "ac14c01bd6f136f8533d9bc23644a0d9b8817893e7d6db4240fe4f167b136c18",
+      "before_delay": 5421,
+      "after_delay": 5421
+    },
+    {
+      "tier": "intro",
+      "case": "case_08",
+      "case_sha256": "485c0189d09ddfd5ba716a4e8d2266674ea2f715855c7fbe9ca3bba09f55103f",
+      "before_run": "20261002T163851.054709Z-exact-polish",
+      "after_run": "20261002T175859.707296Z-exact-polish",
+      "before_output_sha256": "a2d2dd4c41493219ab008bc5fb4afb52460bb775f94bac33ec939a8f681207b9",
+      "after_output_sha256": "d0bc406f4ea1ce037bbd2f39ebdca7b7b5962bba14a4d9c3ab325e9733c73ac9",
+      "before_delay": 7807,
+      "after_delay": 7783
+    },
+    {
+      "tier": "intro",
+      "case": "case_09",
+      "case_sha256": "343f80021db5f9b94c8701e93cc57af504aeaee4fb84849ffb4d171e13c2af6c",
+      "before_run": "20261002T163851.054709Z-exact-polish",
+      "after_run": "20261002T175859.707296Z-exact-polish",
+      "before_output_sha256": "8f3e662ae1073ccb5270fa728da5b69e62cfa84dc23a4cfdedffd70b632a9b56",
+      "after_output_sha256": "7c326c186a3b5479b10622e66518126a1a52000291008a843deb169fe3b8b69a",
+      "before_delay": 8288,
+      "after_delay": 8288
+    },
+    {
+      "tier": "intro",
+      "case": "case_10",
+      "case_sha256": "a4c94e920951032e8a2d28face6a24cbb9061c9c69d5852eddce4495adfd444d",
+      "before_run": "20261002T163851.054709Z-exact-polish",
+      "after_run": "20261002T175859.707296Z-exact-polish",
+      "before_output_sha256": "1163b6e560b6e1ed7f7f17625b8e9b6922766f8e49977f069d3cdcab6e1db24c",
+      "after_output_sha256": "ec9e2a44223640628063e24e6ca38ab3856c5a80370b2d826def1021e8205498",
+      "before_delay": 10997,
+      "after_delay": 10911
+    },
+    {
+      "tier": "intro",
+      "case": "case_11",
+      "case_sha256": "de941ab2da09af4b577b916440b4a5488f5a911c7f93b99cbeefe65f24378f99",
+      "before_run": "20261002T163851.054709Z-exact-polish",
+      "after_run": "20261002T175859.707296Z-exact-polish",
+      "before_output_sha256": "85b0ea30f9bd061ba645be0d10e44e8ebf0462a0aae69cd57c20030c4f036ae8",
+      "after_output_sha256": "badf06f22e7818b498a5c55028a70d2fdbf269be4989a28b8197669523351565",
+      "before_delay": 12804,
+      "after_delay": 12788
+    },
+    {
+      "tier": "intro",
+      "case": "case_12",
+      "case_sha256": "2ed0461460276127a0777473b75c370bc005833f5645c4d836d9e41d8c3c7ecf",
+      "before_run": "20261002T163851.054709Z-exact-polish",
+      "after_run": "20261002T175859.707296Z-exact-polish",
+      "before_output_sha256": "ebc54b080bda73adc964849a70e3e097d8dbea5b38c9106dd5cfebf43cafaf36",
+      "after_output_sha256": "e7e21ce2587d008f8a05db4cc26ff4b53a0aa76e2d42c94a658f6be64d58695e",
+      "before_delay": 16785,
+      "after_delay": 16737
+    },
+    {
+      "tier": "intro",
+      "case": "case_13",
+      "case_sha256": "f413841a7b40da4ef52825684b9b3faa4ebabc74b0463c873f0aab8090c5c77e",
+      "before_run": "20261002T163851.054709Z-exact-polish",
+      "after_run": "20261002T175859.707296Z-exact-polish",
+      "before_output_sha256": "3713c60d3a06d1b4e991b6dfe0fcdb15bb6189a74e3a4553ed3efaf749f54d88",
+      "after_output_sha256": "ccf3cdb4ba4c4bcf1e85abbc7676a22d2d857dfa5c8ab3282a417f2ad39d27d4",
+      "before_delay": 20775,
+      "after_delay": 20473
+    },
+    {
+      "tier": "intro",
+      "case": "case_14",
+      "case_sha256": "18a2f4f7453e613146247e88ce84880048142657c570c3d7a7787e265b2f2a40",
+      "before_run": "20261002T163851.054709Z-exact-polish",
+      "after_run": "20261002T175859.707296Z-exact-polish",
+      "before_output_sha256": "83f7d282fff969ac1dc93883e338da8dcb4e61dbe38c6a972730d3c65f03491f",
+      "after_output_sha256": "c8770c005359ae85fd173fc9c12709499c67f027d40f5b03a9413d24abb519cb",
+      "before_delay": 22345,
+      "after_delay": 22301
+    },
+    {
+      "tier": "intro",
+      "case": "case_15",
+      "case_sha256": "986db029f111f85749f2ddfaddd8aa897a7377ef7c72cb00c0b1bb88eb378e9d",
+      "before_run": "20261002T163851.054709Z-exact-polish",
+      "after_run": "20261002T175859.707296Z-exact-polish",
+      "before_output_sha256": "1b007d9b3de08c5e16bc867b1e0d7734c3853257324650d281ed32282b1eaaab",
+      "after_output_sha256": "904ed7f832cd060353a44568e693d611c7401f408263119ba379f21f3d381132",
+      "before_delay": 25620,
+      "after_delay": 25504
+    },
+    {
+      "tier": "intro",
+      "case": "case_16",
+      "case_sha256": "80606ec42f5ae064b1c25222752ecaa01684f94f9eae7ba359b81209951ec62d",
+      "before_run": "20261002T163851.054709Z-exact-polish",
+      "after_run": "20261002T175859.707296Z-exact-polish",
+      "before_output_sha256": "fc4dfb3231b8bec2cd8cb810e7926afc673f7458d7636e21c9849f7c3ba86844",
+      "after_output_sha256": "d3719d113ee6972d508794d8259f1e80589d1e6d5723aef6cbcb172c3ca56a62",
+      "before_delay": 34954,
+      "after_delay": 34864
+    },
+    {
+      "tier": "intro",
+      "case": "case_17",
+      "case_sha256": "df56b2ecda8fdff6175df01d4e3a74f999fa7a289bd289e9763ea65a7c18add7",
+      "before_run": "20261002T163851.054709Z-exact-polish",
+      "after_run": "20261002T175859.707296Z-exact-polish",
+      "before_output_sha256": "8c742e24bdabc4745b6501b6d26ee7e1e3946339f7d131c87dedc7abf13c7cdc",
+      "after_output_sha256": "47840398e66b43e361a250adde2a5eb1cd41721504ee6979cc2866672ea039a2",
+      "before_delay": 45802,
+      "after_delay": 45728
+    },
+    {
+      "tier": "intro",
+      "case": "case_18",
+      "case_sha256": "209f64bb32263e7e4db36f997d4113d08ba88b7bfd9b62f49a173c24080a0136",
+      "before_run": "20261002T163851.054709Z-exact-polish",
+      "after_run": "20261002T175859.707296Z-exact-polish",
+      "before_output_sha256": "eef40ddbf7817e2d07e5744392a748d6ae358f525208e2593cbe95e288d67308",
+      "after_output_sha256": "7e7a8c61609d9e7efecedca10691b2c4cece71ca28e28b1be9a3a00bb4440b11",
+      "before_delay": 49333,
+      "after_delay": 49077
+    },
+    {
+      "tier": "intro",
+      "case": "case_19",
+      "case_sha256": "97b2f17901d53d2dad2f102893ab4e687a194c219e39af985fd960104cf0a7b5",
+      "before_run": "20261002T163851.054709Z-exact-polish",
+      "after_run": "20261002T175859.707296Z-exact-polish",
+      "before_output_sha256": "284c78c42d82457f6dec123be5be73be91cc70d9b7940380ad8fbd4c5eacf546",
+      "after_output_sha256": "028a5bfe60530d16433be72ca94c6701d150c26e6b24962b98d39e0bdd7f1fce",
+      "before_delay": 42092,
+      "after_delay": 41944
+    },
+    {
+      "tier": "intro",
+      "case": "case_20",
+      "case_sha256": "c701d3fc484a2d4a77c9e7bfdba030174a445c7e07ec2797d2f797d21b6241fb",
+      "before_run": "20261002T163851.054709Z-exact-polish",
+      "after_run": "20261002T175859.707296Z-exact-polish",
+      "before_output_sha256": "e16f5045a058c587a60c78bb1f4e77ef4931f277126f2bcf04b848eb1c05e151",
+      "after_output_sha256": "4f19e98a8b5b88175f14183b2560bd64da5b93477275fe22f661e98e612f288e",
+      "before_delay": 48128,
+      "after_delay": 48080
+    },
+    {
+      "tier": "hard",
+      "case": "case_01",
+      "case_sha256": "685a165a7a15811dff12839e0dbe79752b889558213f760ad5f0df6139766f5d",
+      "before_run": "20261002T163929.376758Z-exact-polish",
+      "after_run": "20261002T180119.652477Z-exact-polish",
+      "before_output_sha256": "62f0001d0cbd0b5cd41bc4beda14f273bae555acd37df74a76e0493a2973e8e6",
+      "after_output_sha256": "6dcb052e475d39f7808721ed6cabb61ce44867f96a08d4e13531de2dd1d41702",
+      "before_delay": 9124,
+      "after_delay": 9118
+    },
+    {
+      "tier": "hard",
+      "case": "case_02",
+      "case_sha256": "1017b8aac77273a25186858bf39dd66293d56aecebfc7b0e1f5a19c66a2d6c2e",
+      "before_run": "20261002T163929.376758Z-exact-polish",
+      "after_run": "20261002T180119.652477Z-exact-polish",
+      "before_output_sha256": "13699cb9732c525d505bb2b1ac3a568f521b38bcdac45d973cc2686da82cf24d",
+      "after_output_sha256": "bfab9828897925867a9dee55f9ed84adcc60d670e804505035f45730f0dafc6b",
+      "before_delay": 14510,
+      "after_delay": 14400
+    },
+    {
+      "tier": "hard",
+      "case": "case_03",
+      "case_sha256": "4783af0f84289f7d48d70b7428d2f7b8fbcdefaf2bdfca2bac237e874bd97858",
+      "before_run": "20261002T163929.376758Z-exact-polish",
+      "after_run": "20261002T180119.652477Z-exact-polish",
+      "before_output_sha256": "5bd4e1c1b28025a34437e209daa46df0259c7521c357cccab9f0f8f696f0388a",
+      "after_output_sha256": "8071a305f1d27f832abe4179ab8c52cbfa094334470d9c181df12540aee1fa97",
+      "before_delay": 11908,
+      "after_delay": 11872
+    },
+    {
+      "tier": "hard",
+      "case": "case_04",
+      "case_sha256": "06324939b75971e45caa9e7f19d824a254e0f61167dd6b279bbff612d77d96f1",
+      "before_run": "20261002T163929.376758Z-exact-polish",
+      "after_run": "20261002T180119.652477Z-exact-polish",
+      "before_output_sha256": "3a27d3f9f39acbbd15084fb7840cd0ed0f70bd8349b876f854c50f9e11b8739a",
+      "after_output_sha256": "55b2d1f7f987161a4ee4f0021fd247ad7fe685c8721ee08047df215af8e20b87",
+      "before_delay": 14237,
+      "after_delay": 14219
+    },
+    {
+      "tier": "hard",
+      "case": "case_05",
+      "case_sha256": "51e44c96f14e5d3229047d6ee5ba2aa0faee94fb208f3f9e716310a0620306a1",
+      "before_run": "20261002T163929.376758Z-exact-polish",
+      "after_run": "20261002T180119.652477Z-exact-polish",
+      "before_output_sha256": "ab7dfd3734aee8ec9654b4a4d9bb707828ec0843cf34494269bad9423ec0a2ba",
+      "after_output_sha256": "fc1f9faa21e84951fa9ceb59d0dfaa5afc795a9bb4d0d02118bb6c62ae03e99e",
+      "before_delay": 16631,
+      "after_delay": 16595
+    },
+    {
+      "tier": "hard",
+      "case": "case_06",
+      "case_sha256": "612b2680497826836de4d9553d8dc95d53f1d46fe07858cfdb74e43ce5582cba",
+      "before_run": "20261002T163929.376758Z-exact-polish",
+      "after_run": "20261002T180119.652477Z-exact-polish",
+      "before_output_sha256": "e5bcff3b7af130e61941dcbcc9d99affb2d736a4c0f6ee963e508b28017f693c",
+      "after_output_sha256": "04757302c1ef1ade4a9e9472b2971a5fa9b373f4087f142447545807149ea1dc",
+      "before_delay": 22120,
+      "after_delay": 22068
+    },
+    {
+      "tier": "hard",
+      "case": "case_07",
+      "case_sha256": "e3475bed19f53670482b4b864a276c475b47e1cac7237d8fa26eeb48714de8f0",
+      "before_run": "20261002T163929.376758Z-exact-polish",
+      "after_run": "20261002T180119.652477Z-exact-polish",
+      "before_output_sha256": "f9bcd32e50e6154a8a76f76844a5deb5d00bbe237ffd7ffcf31e4428b9379d02",
+      "after_output_sha256": "9b00628ff659e82b7f1f59fc5de861079bb8fabb28e3ec712e00f3b421115418",
+      "before_delay": 23779,
+      "after_delay": 23423
+    },
+    {
+      "tier": "hard",
+      "case": "case_08",
+      "case_sha256": "b1dbc8ed8aab7cbb457987f4b8a877b9c2adda8575b326d9822523f090cec1f2",
+      "before_run": "20261002T163929.376758Z-exact-polish",
+      "after_run": "20261002T180119.652477Z-exact-polish",
+      "before_output_sha256": "3d6c45c7db642cf899f854c8c97d3d72d1ff264626fb5f75896b44b8a8808c91",
+      "after_output_sha256": "5472d40511d278bf23e3c6e39d0b49453e69a262d97012007bf75db981c3775d",
+      "before_delay": 25236,
+      "after_delay": 25122
+    },
+    {
+      "tier": "hard",
+      "case": "case_09",
+      "case_sha256": "bcbd72a7bb47ec5c5f82428573ffabdb932594c4b574d552808851617b05f6c1",
+      "before_run": "20261002T163929.376758Z-exact-polish",
+      "after_run": "20261002T180119.652477Z-exact-polish",
+      "before_output_sha256": "edfdec0a79e62af55ca883fedeab753b3322a64f75690dd3420fd67adfeecf82",
+      "after_output_sha256": "25e0d56a931acea66608209107b5bea07681f3f660e67cc28ad781aea80c1a00",
+      "before_delay": 23092,
+      "after_delay": 22998
+    },
+    {
+      "tier": "scale",
+      "case": "case_01",
+      "case_sha256": "86aecbc407f74b0988098c968efcb9849eb87e00306e8307dd28ef339e070458",
+      "before_run": "20261002T163946.669091Z-exact-polish",
+      "after_run": "20261002T180228.462985Z-exact-polish",
+      "before_output_sha256": "055391be3379839aeb03a532922e38a18ada5b984451b8b1a20f75960303eebd",
+      "after_output_sha256": "928e24ed17b608d4cc3ee6b3d81720f684208c76f1f49ac7b8b22cb18afbf2d2",
+      "before_delay": 42780,
+      "after_delay": 42670
+    },
+    {
+      "tier": "scale",
+      "case": "case_02",
+      "case_sha256": "e59beb3293a96da64871a1c3f5fd547d619470e178a7dd1ea6bc7aed0f90af39",
+      "before_run": "20261002T163946.669091Z-exact-polish",
+      "after_run": "20261002T180228.462985Z-exact-polish",
+      "before_output_sha256": "9b2e62964ed81fb98a76178507f01e04e00d936df604bacdbe2fc9466b2e6c25",
+      "after_output_sha256": "9941c61772e6c0ba7f7974af5304462fa9e99dd29dafc43524992214e501aca3",
+      "before_delay": 49004,
+      "after_delay": 48874
+    },
+    {
+      "tier": "scale",
+      "case": "case_03",
+      "case_sha256": "46732d04f041bd582d427ed0c0fece4ecbae4208cbd7b2c90380ef359f485b4c",
+      "before_run": "20261002T163946.669091Z-exact-polish",
+      "after_run": "20261002T180228.462985Z-exact-polish",
+      "before_output_sha256": "811c54a3ae125bf30a5fbe64a197b5a897c0e79c8387d1a92e0acf0d66725737",
+      "after_output_sha256": "964ea088cd5501face43d7db1dbdf3207a55cbd165efff3f674e24e04cf214d6",
+      "before_delay": 59506,
+      "after_delay": 59302
+    },
+    {
+      "tier": "scale",
+      "case": "case_04",
+      "case_sha256": "c419a4d6d2aa7093c4ebf23a9e299a1dfe486cfa24e4eb167deb92f59c820a43",
+      "before_run": "20261002T163946.669091Z-exact-polish",
+      "after_run": "20261002T180228.462985Z-exact-polish",
+      "before_output_sha256": "527ea81e2c2c912f640c317789c6452434b901e938f6c4dd8acc4e07376ee5b3",
+      "after_output_sha256": "d56029c6ed3318f1860fb23a8ca3ae9c6ae1bf5b5c915985166c3df0e45e2ecf",
+      "before_delay": 61918,
+      "after_delay": 61756
+    },
+    {
+      "tier": "scale",
+      "case": "case_05",
+      "case_sha256": "0308afa080feaae6e605419820e329770d519b3a9842db78b2cf57e9527cf85d",
+      "before_run": "20261002T163946.669091Z-exact-polish",
+      "after_run": "20261002T180228.462985Z-exact-polish",
+      "before_output_sha256": "40764fdced2ba1a5c69129cb37bc0a175c36bb99dcf32314da1d678bc0ac7eab",
+      "after_output_sha256": "0e21f5d0dea9f3140e718bffee0a0df278c8c9263bb3fce4e98fdf751b81d6b0",
+      "before_delay": 70753,
+      "after_delay": 70549
+    },
+    {
+      "tier": "scale",
+      "case": "case_06",
+      "case_sha256": "e3d6b3ac5e27caa6f519b16d1f2233bed3d80e14bc1dbc9d3f8850133c919b52",
+      "before_run": "20261002T163946.669091Z-exact-polish",
+      "after_run": "20261002T180228.462985Z-exact-polish",
+      "before_output_sha256": "b7bdf5ade03508fdf4c0ec7ec98f6ab15abfc5b1c6a77b627dcf07d22e347702",
+      "after_output_sha256": "b02ab747d95ef3ece16007313aa47022909b54dd56451cf3533e1bdc49fd95df",
+      "before_delay": 83819,
+      "after_delay": 83641
+    },
+    {
+      "tier": "scale",
+      "case": "case_07",
+      "case_sha256": "af966c99c83fe29ca64dbfa1862d6e95b43997ff09aeadd5b329a55fc0ead9ef",
+      "before_run": "20261002T163946.669091Z-exact-polish",
+      "after_run": "20261002T180228.462985Z-exact-polish",
+      "before_output_sha256": "d089c57bf3d606ed8583dde9d7d0da35e84721e458b4f06ed0a2a8cad0eb2301",
+      "after_output_sha256": "7fb59088be7ffb014c8f7805739a3e2c736225f4e71dd29d8d7f6e93fd3d45a9",
+      "before_delay": 92121,
+      "after_delay": 91917
+    },
+    {
+      "tier": "scale",
+      "case": "case_08",
+      "case_sha256": "dfa38773632df7d3560c51b443eb3a32f358ea64799caa1e6ee7ce5bd3e812c6",
+      "before_run": "20261002T163946.669091Z-exact-polish",
+      "after_run": "20261002T180228.462985Z-exact-polish",
+      "before_output_sha256": "aad858c14ed80c3390b3b6eb8ddf31bf8f8bd22cc948cd185c3f8fe90e463c2e",
+      "after_output_sha256": "f7e0bbfea966008a316b03d7c8b1025b23de0651651a2e959ed2d8bdcb71f4d7",
+      "before_delay": 117529,
+      "after_delay": 117481
+    },
+    {
+      "tier": "congested",
+      "case": "case_01",
+      "case_sha256": "74f8fb9b0a4fdf230227e676999da156bd2dfea8dcacb1f8ec3407086fe11d06",
+      "before_run": "20261002T164011.751136Z-exact-polish",
+      "after_run": "20261002T180339.095936Z-exact-polish",
+      "before_output_sha256": "523441bb4521747b321f7ac99aa3ae97eca77cfd0d59aec29421234dc88bb1ae",
+      "after_output_sha256": "8fa28e6e8b06291c2425d3a519e4af49a395d076287eb71e2f365429fa8fe374",
+      "before_delay": 60129,
+      "after_delay": 59387
+    },
+    {
+      "tier": "congested",
+      "case": "case_02",
+      "case_sha256": "080b349aea6d22e149d25ca74603cec81331cace10e7731bc4d86a3a7f780740",
+      "before_run": "20261002T164011.751136Z-exact-polish",
+      "after_run": "20261002T180339.095936Z-exact-polish",
+      "before_output_sha256": "cdb46ef99cd70eb2f773e1b2d50ac11cab9d92c1d360b74bb3ab7352445d8fa2",
+      "after_output_sha256": "6b9000e77f3715fec8378de28e66aa908218847cae9d7361466acfb2c7cff29a",
+      "before_delay": 112346,
+      "after_delay": 111764
+    },
+    {
+      "tier": "congested",
+      "case": "case_03",
+      "case_sha256": "e4ec45609bfbfb4c31b1b24d4d6ce5be4c4711210f39bb8e096331f66446546c",
+      "before_run": "20261002T164011.751136Z-exact-polish",
+      "after_run": "20261002T180339.095936Z-exact-polish",
+      "before_output_sha256": "2f2e84a4182b586b94cc4c830f2e179c3578bb9fa07c747a564e7422dc238f06",
+      "after_output_sha256": "4e8076e572aad15ecc4c8f1ed559d373c11e6d41e4e1302c0ccefafb22a61e07",
+      "before_delay": 200391,
+      "after_delay": 199539
+    },
+    {
+      "tier": "congested",
+      "case": "case_04",
+      "case_sha256": "c591114d5439e4dca0c30b2db15c072e9837461f2469fabc7fea8c753729cf01",
+      "before_run": "20261002T164011.751136Z-exact-polish",
+      "after_run": "20261002T180339.095936Z-exact-polish",
+      "before_output_sha256": "0847086bd54d4eff5741b6da1e19846270fb091e0eb258f8c7d1a93dc20d35e6",
+      "after_output_sha256": "f7346fd707852d8e3ddd7b3b60b8cff2a1aad7eaf5f05f8c1ceec7a9d30819e4",
+      "before_delay": 219923,
+      "after_delay": 218611
+    },
+    {
+      "tier": "designs",
+      "case": "ctrl",
+      "case_sha256": "024ebda5df67cf2077542524a2bf6109bd40937c9ee901d7d8ec0abcf55402cb",
+      "before_run": "20261002T164022.756160Z-exact-polish",
+      "after_run": "20261002T180412.604703Z-exact-polish",
+      "before_output_sha256": "616cb19245cfa1592bac2da6f5000d074846032ba458f6ce91022070df974322",
+      "after_output_sha256": "884bb8aa5f713acfe60f6eec26675cc616ff7fdba79b4946789b6e1d4c6d0ec8",
+      "before_delay": 58514,
+      "after_delay": 57868
+    },
+    {
+      "tier": "designs",
+      "case": "int2float",
+      "case_sha256": "1d57b7e5b69292592184aa9368930490c5f7af477f4f739db3500a329d6fb16e",
+      "before_run": "20261002T164022.756160Z-exact-polish",
+      "after_run": "20261002T180412.604703Z-exact-polish",
+      "before_output_sha256": "485b79742bb3c56284b54b7660d26e5c8b5a9ec1c0a9bcd4af645b0f043e11a5",
+      "after_output_sha256": "5c5515edb58678a7bbc64ce6655c95531ff1f3c8c5cfa48e82c443bb71f228d0",
+      "before_delay": 108776,
+      "after_delay": 107202
+    },
+    {
+      "tier": "designs",
+      "case": "router",
+      "case_sha256": "34096ab422d9b1cfff1c607bfc66e28a2a9ab43eeb1e0cd34e481162f017a98c",
+      "before_run": "20261002T164022.756160Z-exact-polish",
+      "after_run": "20261002T180412.604703Z-exact-polish",
+      "before_output_sha256": "44ad8b487856998323fd0938758d534f71aefcc2932125ccf37920f57611daf4",
+      "after_output_sha256": "906088d8dd1be0cf86484bed62433cdf2c802d2ad14df47f3a516ae1fe5955ca",
+      "before_delay": 75993,
+      "after_delay": 75707
+    },
+    {
+      "tier": "stress",
+      "case": "case_01",
+      "case_sha256": "125f9d4d871a727418cafe4ce68dda4dc93a40c6c631daaf45fa9a9c73fae550",
+      "before_run": "20261002T164032.716433Z-exact-polish",
+      "after_run": "20261002T180437.390831Z-exact-polish",
+      "before_output_sha256": "7c3c5d07a6a0a8082b85cfd713041158eab500d2059133255c8f5842c6fd1f4d",
+      "after_output_sha256": "da4c840af433685d2d99a219e033c6e5921b6f4532c737e0a315b35c1957ac03",
+      "before_delay": 1120874,
+      "after_delay": 1120652
+    }
+  ],
+  "groups": {
+    "intro:fanout1": {
+      "nets": 764,
+      "improved_nets": 75,
+      "regressed_nets": 24,
+      "before_delay": 66698,
+      "after_delay": 66344,
+      "before_vertices": 28156,
+      "after_vertices": 28096
+    },
+    "intro:fanout2-4": {
+      "nets": 420,
+      "improved_nets": 59,
+      "regressed_nets": 18,
+      "before_delay": 114095,
+      "after_delay": 113581,
+      "before_vertices": 28150,
+      "after_vertices": 28192
+    },
+    "intro:fanout5-8": {
+      "nets": 266,
+      "improved_nets": 39,
+      "regressed_nets": 9,
+      "before_delay": 184519,
+      "after_delay": 184125,
+      "before_vertices": 30274,
+      "after_vertices": 30233
+    },
+    "hard:fanout5-8": {
+      "nets": 130,
+      "improved_nets": 20,
+      "regressed_nets": 11,
+      "before_delay": 71282,
+      "after_delay": 70628,
+      "before_vertices": 9302,
+      "after_vertices": 9271
+    },
+    "hard:fanout1": {
+      "nets": 434,
+      "improved_nets": 41,
+      "regressed_nets": 30,
+      "before_delay": 36589,
+      "after_delay": 36609,
+      "before_vertices": 10867,
+      "after_vertices": 10861
+    },
+    "hard:fanout2-4": {
+      "nets": 185,
+      "improved_nets": 31,
+      "regressed_nets": 18,
+      "before_delay": 52766,
+      "after_delay": 52578,
+      "before_vertices": 10043,
+      "after_vertices": 10006
+    },
+    "scale:fanout1": {
+      "nets": 1147,
+      "improved_nets": 138,
+      "regressed_nets": 29,
+      "before_delay": 187629,
+      "after_delay": 186965,
+      "before_vertices": 81346,
+      "after_vertices": 81292
+    },
+    "scale:fanout2-4": {
+      "nets": 441,
+      "improved_nets": 52,
+      "regressed_nets": 12,
+      "before_delay": 235514,
+      "after_delay": 235084,
+      "before_vertices": 52327,
+      "after_vertices": 52011
+    },
+    "scale:fanout5-8": {
+      "nets": 153,
+      "improved_nets": 12,
+      "regressed_nets": 3,
+      "before_delay": 154287,
+      "after_delay": 154141,
+      "before_vertices": 23127,
+      "after_vertices": 23259
+    },
+    "congested:fanout2-4": {
+      "nets": 232,
+      "improved_nets": 69,
+      "regressed_nets": 25,
+      "before_delay": 184216,
+      "after_delay": 183128,
+      "before_vertices": 32525,
+      "after_vertices": 32464
+    },
+    "congested:fanout1": {
+      "nets": 581,
+      "improved_nets": 87,
+      "regressed_nets": 32,
+      "before_delay": 121805,
+      "after_delay": 121883,
+      "before_vertices": 38129,
+      "after_vertices": 38163
+    },
+    "congested:fanout5-8": {
+      "nets": 175,
+      "improved_nets": 55,
+      "regressed_nets": 12,
+      "before_delay": 286768,
+      "after_delay": 284290,
+      "before_vertices": 32341,
+      "after_vertices": 32238
+    },
+    "designs:fanout1": {
+      "nets": 579,
+      "improved_nets": 141,
+      "regressed_nets": 52,
+      "before_delay": 100271,
+      "after_delay": 99453,
+      "before_vertices": 34666,
+      "after_vertices": 34560
+    },
+    "designs:fanout2-4": {
+      "nets": 200,
+      "improved_nets": 51,
+      "regressed_nets": 23,
+      "before_delay": 77068,
+      "after_delay": 76514,
+      "before_vertices": 19691,
+      "after_vertices": 19626
+    },
+    "designs:fanout5-8": {
+      "nets": 4,
+      "improved_nets": 3,
+      "regressed_nets": 0,
+      "before_delay": 3977,
+      "after_delay": 3833,
+      "before_vertices": 642,
+      "after_vertices": 642
+    },
+    "designs:fanout9+": {
+      "nets": 14,
+      "improved_nets": 10,
+      "regressed_nets": 4,
+      "before_delay": 61967,
+      "after_delay": 60977,
+      "before_vertices": 6812,
+      "after_vertices": 6753
+    },
+    "stress:fanout1": {
+      "nets": 571,
+      "improved_nets": 7,
+      "regressed_nets": 0,
+      "before_delay": 323517,
+      "after_delay": 323449,
+      "before_vertices": 145569,
+      "after_vertices": 145567
+    },
+    "stress:fanout2-4": {
+      "nets": 249,
+      "improved_nets": 10,
+      "regressed_nets": 0,
+      "before_delay": 543202,
+      "after_delay": 543084,
+      "before_vertices": 120550,
+      "after_vertices": 120582
+    },
+    "stress:fanout5-8": {
+      "nets": 81,
+      "improved_nets": 4,
+      "regressed_nets": 0,
+      "before_delay": 254155,
+      "after_delay": 254119,
+      "before_vertices": 35929,
+      "after_vertices": 35665
+    }
+  },
+  "largest_net_gains": [
+    {
+      "tier": "congested",
+      "case": "case_03",
+      "net": 47,
+      "fanout": 6,
+      "physical_gain": 450
+    },
+    {
+      "tier": "designs",
+      "case": "int2float",
+      "net": 119,
+      "fanout": 31,
+      "physical_gain": 404
+    },
+    {
+      "tier": "hard",
+      "case": "case_07",
+      "net": 58,
+      "fanout": 6,
+      "physical_gain": 290
+    },
+    {
+      "tier": "designs",
+      "case": "int2float",
+      "net": 246,
+      "fanout": 31,
+      "physical_gain": 204
+    },
+    {
+      "tier": "congested",
+      "case": "case_01",
+      "net": 136,
+      "fanout": 4,
+      "physical_gain": 182
+    },
+    {
+      "tier": "designs",
+      "case": "int2float",
+      "net": 86,
+      "fanout": 19,
+      "physical_gain": 162
+    },
+    {
+      "tier": "designs",
+      "case": "int2float",
+      "net": 247,
+      "fanout": 29,
+      "physical_gain": 138
+    },
+    {
+      "tier": "congested",
+      "case": "case_04",
+      "net": 292,
+      "fanout": 6,
+      "physical_gain": 130
+    },
+    {
+      "tier": "congested",
+      "case": "case_04",
+      "net": 27,
+      "fanout": 6,
+      "physical_gain": 128
+    },
+    {
+      "tier": "congested",
+      "case": "case_04",
+      "net": 45,
+      "fanout": 3,
+      "physical_gain": 122
+    },
+    {
+      "tier": "congested",
+      "case": "case_01",
+      "net": 87,
+      "fanout": 3,
+      "physical_gain": 114
+    },
+    {
+      "tier": "congested",
+      "case": "case_03",
+      "net": 229,
+      "fanout": 6,
+      "physical_gain": 114
+    },
+    {
+      "tier": "congested",
+      "case": "case_03",
+      "net": 196,
+      "fanout": 5,
+      "physical_gain": 110
+    },
+    {
+      "tier": "congested",
+      "case": "case_02",
+      "net": 159,
+      "fanout": 6,
+      "physical_gain": 108
+    },
+    {
+      "tier": "congested",
+      "case": "case_01",
+      "net": 32,
+      "fanout": 6,
+      "physical_gain": 106
+    },
+    {
+      "tier": "congested",
+      "case": "case_04",
+      "net": 240,
+      "fanout": 5,
+      "physical_gain": 102
+    },
+    {
+      "tier": "congested",
+      "case": "case_04",
+      "net": 284,
+      "fanout": 6,
+      "physical_gain": 100
+    },
+    {
+      "tier": "designs",
+      "case": "int2float",
+      "net": 152,
+      "fanout": 2,
+      "physical_gain": 100
+    },
+    {
+      "tier": "hard",
+      "case": "case_07",
+      "net": 9,
+      "fanout": 6,
+      "physical_gain": 96
+    },
+    {
+      "tier": "hard",
+      "case": "case_08",
+      "net": 93,
+      "fanout": 6,
+      "physical_gain": 96
+    },
+    {
+      "tier": "congested",
+      "case": "case_01",
+      "net": 116,
+      "fanout": 4,
+      "physical_gain": 96
+    },
+    {
+      "tier": "congested",
+      "case": "case_04",
+      "net": 285,
+      "fanout": 5,
+      "physical_gain": 96
+    },
+    {
+      "tier": "congested",
+      "case": "case_04",
+      "net": 78,
+      "fanout": 5,
+      "physical_gain": 92
+    },
+    {
+      "tier": "hard",
+      "case": "case_09",
+      "net": 10,
+      "fanout": 4,
+      "physical_gain": 88
+    },
+    {
+      "tier": "intro",
+      "case": "case_13",
+      "net": 42,
+      "fanout": 3,
+      "physical_gain": 86
+    },
+    {
+      "tier": "designs",
+      "case": "ctrl",
+      "net": 124,
+      "fanout": 8,
+      "physical_gain": 86
+    },
+    {
+      "tier": "congested",
+      "case": "case_04",
+      "net": 59,
+      "fanout": 6,
+      "physical_gain": 84
+    },
+    {
+      "tier": "designs",
+      "case": "ctrl",
+      "net": 19,
+      "fanout": 4,
+      "physical_gain": 84
+    },
+    {
+      "tier": "hard",
+      "case": "case_02",
+      "net": 4,
+      "fanout": 4,
+      "physical_gain": 82
+    },
+    {
+      "tier": "congested",
+      "case": "case_02",
+      "net": 39,
+      "fanout": 4,
+      "physical_gain": 82
+    }
+  ],
+  "largest_net_regressions": [
+    {
+      "tier": "congested",
+      "case": "case_03",
+      "net": 243,
+      "fanout": 2,
+      "physical_gain": -172
+    },
+    {
+      "tier": "congested",
+      "case": "case_01",
+      "net": 162,
+      "fanout": 5,
+      "physical_gain": -122
+    },
+    {
+      "tier": "hard",
+      "case": "case_07",
+      "net": 57,
+      "fanout": 3,
+      "physical_gain": -116
+    },
+    {
+      "tier": "congested",
+      "case": "case_04",
+      "net": 32,
+      "fanout": 1,
+      "physical_gain": -88
+    },
+    {
+      "tier": "congested",
+      "case": "case_03",
+      "net": 236,
+      "fanout": 2,
+      "physical_gain": -86
+    },
+    {
+      "tier": "congested",
+      "case": "case_04",
+      "net": 149,
+      "fanout": 2,
+      "physical_gain": -78
+    },
+    {
+      "tier": "congested",
+      "case": "case_01",
+      "net": 144,
+      "fanout": 5,
+      "physical_gain": -74
+    },
+    {
+      "tier": "congested",
+      "case": "case_04",
+      "net": 56,
+      "fanout": 1,
+      "physical_gain": -72
+    },
+    {
+      "tier": "congested",
+      "case": "case_01",
+      "net": 30,
+      "fanout": 1,
+      "physical_gain": -64
+    },
+    {
+      "tier": "congested",
+      "case": "case_04",
+      "net": 190,
+      "fanout": 1,
+      "physical_gain": -62
+    },
+    {
+      "tier": "designs",
+      "case": "int2float",
+      "net": 109,
+      "fanout": 1,
+      "physical_gain": -62
+    },
+    {
+      "tier": "congested",
+      "case": "case_03",
+      "net": 144,
+      "fanout": 3,
+      "physical_gain": -54
+    },
+    {
+      "tier": "designs",
+      "case": "int2float",
+      "net": 266,
+      "fanout": 14,
+      "physical_gain": -54
+    },
+    {
+      "tier": "hard",
+      "case": "case_02",
+      "net": 43,
+      "fanout": 6,
+      "physical_gain": -52
+    },
+    {
+      "tier": "designs",
+      "case": "int2float",
+      "net": 43,
+      "fanout": 1,
+      "physical_gain": -52
+    },
+    {
+      "tier": "hard",
+      "case": "case_09",
+      "net": 84,
+      "fanout": 1,
+      "physical_gain": -48
+    },
+    {
+      "tier": "congested",
+      "case": "case_01",
+      "net": 58,
+      "fanout": 1,
+      "physical_gain": -46
+    },
+    {
+      "tier": "designs",
+      "case": "int2float",
+      "net": 44,
+      "fanout": 1,
+      "physical_gain": -46
+    },
+    {
+      "tier": "congested",
+      "case": "case_03",
+      "net": 280,
+      "fanout": 1,
+      "physical_gain": -44
+    },
+    {
+      "tier": "congested",
+      "case": "case_04",
+      "net": 168,
+      "fanout": 1,
+      "physical_gain": -44
+    },
+    {
+      "tier": "intro",
+      "case": "case_13",
+      "net": 20,
+      "fanout": 5,
+      "physical_gain": -40
+    },
+    {
+      "tier": "hard",
+      "case": "case_08",
+      "net": 22,
+      "fanout": 4,
+      "physical_gain": -40
+    },
+    {
+      "tier": "congested",
+      "case": "case_02",
+      "net": 68,
+      "fanout": 4,
+      "physical_gain": -40
+    },
+    {
+      "tier": "congested",
+      "case": "case_04",
+      "net": 270,
+      "fanout": 1,
+      "physical_gain": -40
+    },
+    {
+      "tier": "congested",
+      "case": "case_03",
+      "net": 60,
+      "fanout": 2,
+      "physical_gain": -38
+    },
+    {
+      "tier": "congested",
+      "case": "case_03",
+      "net": 272,
+      "fanout": 1,
+      "physical_gain": -36
+    },
+    {
+      "tier": "congested",
+      "case": "case_01",
+      "net": 154,
+      "fanout": 6,
+      "physical_gain": -32
+    },
+    {
+      "tier": "congested",
+      "case": "case_02",
+      "net": 89,
+      "fanout": 1,
+      "physical_gain": -32
+    },
+    {
+      "tier": "designs",
+      "case": "int2float",
+      "net": 213,
+      "fanout": 1,
+      "physical_gain": -32
+    },
+    {
+      "tier": "intro",
+      "case": "case_08",
+      "net": 46,
+      "fanout": 4,
+      "physical_gain": -30
+    }
+  ],
+  "limitations": "Observed legal per-net differences after additional search and tuning. Nets can regress while total delay improves. Group totals do not prove operator causality,independent improvement potential or unseen-case generalization."
+}

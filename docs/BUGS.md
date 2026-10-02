@@ -59,3 +59,7 @@ Continuing a tracked archive can reach an original warm-start path absent from t
 ## Donor screen source snapshot instrumentation mismatch
 
 A read_s-only edit was briefly saved while the screen binary was already running, then reverted without recompilation. Affected run IDs and actual compiled source hash are explicitly listed in donor-neighborhood-screen.json. All trials used the same binary; routes/priorities/work counts are unaffected. Original manifests/snapshots remain intact. Affected snapshots contain an uncompiled timer edit and alone do not reproduce that exact binary; use the recorded actual compiled source hash. The actual read_s metric excludes donor parsing; wrapper/core wall measurements include it. Freeze source during active experiments, including instrumentation edits.
+
+## Nested portfolio generation costs in basic recombination reports
+
+The basic recombination CLI stopped at an inherited portfolio and omitted its known optimizer-stage cost dictionary. Its physical routes/scores were unaffected;the reported known ancestry cost could undercount available recorded stages. Updated CLI to inherit/deduplicate recorded portfolio costs and missing-ancestor markers,with cycle protection. Historical reports remain byte-original and are partial cost records;do not reinterpret them as total generation costs. Archive-sweep helper already inherited these dictionaries. New output costs still exclude unmeasured reference generation and unrecovered historical artifacts;selection cost remains separate.

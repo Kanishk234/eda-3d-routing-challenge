@@ -37,6 +37,43 @@ struct Net {
     std::vector<std::pair<int,int>> edges;
     I delay=0;
 };
+// Number of sinks whose unique root path uses each vertex of a coherent tree.
+std::vector<int> downstream_counts(const Net& n) {
+    if(n.vertices.empty()) return {}; // Fresh construction has no old component.
+    auto local=[&](int v) {
+        auto it=std::lower_bound(n.vertices.begin(),n.vertices.end(),v);
+        if(it==n.vertices.end() || *it!=v) throw std::runtime_error("missing flow vertex");
+        return static_cast<int>(it-n.vertices.begin());
+    };
+    std::vector<std::vector<int>> links(n.vertices.size());
+    for(auto [a,b]:n.edges) {int u=local(a),v=local(b);links[u].push_back(v);links[v].push_back(u);}
+    int root=local(n.root);
+    std::vector<int> parent(n.vertices.size(),-1),order{root},counts(n.vertices.size(),0);
+    parent[root]=root;
+    for(std::size_t k=0;k<order.size();++k) for(int v:links[order[k]]) if(parent[v]<0) {
+        parent[v]=order[k];order.push_back(v);
+    }
+    if(order.size()!=n.vertices.size() || n.edges.size()+1!=order.size()) throw std::runtime_error("invalid flow tree");
+    for(int sink:n.sinks) ++counts[local(sink)];
+    for(std::size_t k=order.size();k>1;--k) {
+        int u=order[k-1],p=parent[u];
+        if(counts[p]>static_cast<int>(n.sinks.size())-counts[u]) throw std::runtime_error("sink count overflow");
+        counts[p]+=counts[u];
+    }
+    if(counts[root]!=static_cast<int>(n.sinks.size())) throw std::runtime_error("invalid sink flow");
+    return counts;
+}
+std::vector<int> canonical_geometry(const std::vector<Net>& nets) {
+    std::vector<int> state;
+    for(const Net& n:nets) {
+        state.push_back(n.id);state.push_back(n.root);state.push_back(static_cast<int>(n.edges.size()));
+        auto edges=n.edges;
+        for(auto& e:edges) if(e.first>e.second) std::swap(e.first,e.second);
+        std::sort(edges.begin(),edges.end());
+        for(auto [a,b]:edges) {state.push_back(a);state.push_back(b);}
+    }
+    return state;
+}
 struct NegotiationConfig { I present_initial=2,present_step=2,history_step=2; };
 struct Engine {
     NegotiationConfig negotiation;
@@ -67,11 +104,26 @@ struct Engine {
     bool shuffled_groups=false,diverse_proposals=false,adaptive_groups=false,spatial_groups=false;
     bool eligibility_proposals=false;
     std::uint64_t eligibility_searches=0,eligibility_recovered=0;
+    std::uint64_t eligibility_attempts=0,eligibility_strict=0,eligibility_neutral=0,eligibility_failed=0,eligibility_nonimproving=0;
+    I eligibility_gain=0;
+    I escape_penalty=4;
+    int escape_options=2;
+    bool escape_direct=false;
+    int tree_prices=0;
+    int neutral_tabu=0;
+    std::vector<std::vector<int>> neutral_history;
+    std::uint64_t neutral_tabu_rejections=0,neutral_history_peak_bytes=0;
+    double neutral_tabu_s=0;
+    std::vector<int> sink_flow,flow_touched;
+    std::uint64_t flow_builds=0,flow_shared_vertices=0;
+    double flow_setup_s=0;
     std::mt19937_64 group_rng{0};
     std::array<double,3> neighborhood_weights{{1,1,1}};
     std::array<std::uint64_t,3> neighborhood_attempts{{0,0,0}},neighborhood_gains{{0,0,0}};
+    std::uint64_t large_group_attempts=0,large_group_strict=0;
+    I large_group_gain=0;
     std::uint64_t donor_eligible=0,donor_selected=0,donor_gains=0;
-    std::array<std::uint64_t,15> group_sizes{};
+    std::array<std::uint64_t,65> group_sizes{};
     std::uint64_t tie_rank(int v) const {
         std::uint64_t x=static_cast<std::uint64_t>(v)+tie_seed+0x9e3779b97f4a7c15ULL;
         x=(x^(x>>30))*0xbf58476d1ce4e5b9ULL;
@@ -209,6 +261,19 @@ struct Engine {
         ++searches;
         if(random_ties) tie_seed+=0x9e3779b97f4a7c15ULL;
         if(expired()) return false;
+        if(usage && tree_prices) {
+            auto flow_start=std::chrono::steady_clock::now();
+            if(sink_flow.empty()) sink_flow.assign(vcount,0);
+            for(int v:flow_touched) sink_flow[v]=0;
+            flow_touched.clear();
+            auto counts=downstream_counts(n);
+            for(std::size_t k=0;k<counts.size();++k) {
+                sink_flow[n.vertices[k]]=counts[k];flow_touched.push_back(n.vertices[k]);
+                if(counts[k]>1) ++flow_shared_vertices;
+            }
+            ++flow_builds;
+            flow_setup_s+=std::chrono::duration<double>(std::chrono::steady_clock::now()-flow_start).count();
+        }
         auto reset_start=std::chrono::steady_clock::now();
         std::fill(dist.begin(),dist.end(),INF);
         std::fill(parent.begin(),parent.end(),-1);
@@ -269,6 +334,8 @@ struct Engine {
                 if(usage) {
                     I price=add((*history)[v],static_cast<I>((*usage)[v])*present);
                     I divisor=fanout_prices?static_cast<I>(std::ceil(std::sqrt(static_cast<double>(n.sinks.size())))):1;
+                    if(tree_prices && sink_flow[v]>0) divisor=sink_flow[v];
+                    else if(tree_prices==1) divisor=1;
                     extra=add(extra,multiply(price,price_units)/divisor);
                 }
                 I next=add(add(cost,multiply(delay,price_units)),extra);
@@ -531,6 +598,7 @@ struct Engine {
         std::vector<int> order(nets.size()); std::iota(order.begin(),order.end(),0);
         std::vector<I> bounds(nets.size());
         if(gap_order || spatial_groups || repair_sampling) for(std::size_t j=0;j<nets.size();++j) bounds[j]=relaxed_delay(nets[j]);
+        if(neutral_history.empty()) remember_neutral_state();
         for(int pass=0;pass<passes && !expired();++pass) {
             for(std::size_t i=order.size();i>1;--i) std::swap(order[i-1],order[rng()%i]);
             if(gap_order || spatial_groups) std::stable_sort(order.begin(),order.end(),[&](int a,int b){return nets[a].delay-bounds[a]>nets[b].delay-bounds[b];});
@@ -550,7 +618,7 @@ struct Engine {
                 if(expired()) break;
                 ++proposals;
                 std::vector<int> group{index};
-                bool used_donor=false;
+                bool used_donor=false,used_escape=false;
                 if(conflict_windows) {
                     Net ideal;
                     if(!shortest(nets[index],ideal,true,penalty)) break;
@@ -638,10 +706,10 @@ struct Engine {
                     if(blockers.size()>static_cast<std::size_t>(max_blockers)) {
                         std::vector<I> prices(vcount,0);
                         Net previous=ideal;
-                        for(int option=0;option<2 && !expired();++option) {
+                        for(int option=0;option<escape_options && !expired();++option) {
                             auto avoid=displaced(previous);
                             for(const Net& n:nets) if(avoid.count(n.id))
-                                for(int v:n.vertices) prices[v]=add(prices[v],4);
+                                for(int v:n.vertices) prices[v]=add(prices[v],escape_penalty);
                             Net alternate; ++eligibility_searches;
                             if(!shortest(nets[index],alternate,true,penalty,nullptr,nullptr,0,&prices)) break;
                             auto next=displaced(alternate);
@@ -650,7 +718,7 @@ struct Engine {
                                 ideal=alternate;blockers=next;
                             }
                             previous=std::move(alternate);
-                            if(blockers.size()<=static_cast<std::size_t>(max_blockers)) {++eligibility_recovered;break;}
+                            if(blockers.size()<=static_cast<std::size_t>(max_blockers)) {++eligibility_recovered;used_escape=true;break;}
                         }
                     }
                 }
@@ -676,7 +744,7 @@ struct Engine {
                 }
                 if(spatial_groups) ++attempts;
                 int strategy=0;
-                if(adaptive_groups) {
+                if(adaptive_groups && !(used_escape && escape_direct)) {
                     std::discrete_distribution<int> choose(neighborhood_weights.begin(),neighborhood_weights.end());
                     strategy=choose(group_rng);
                     if(strategy==1) {
@@ -701,6 +769,8 @@ struct Engine {
                     }
                     ++neighborhood_attempts[strategy];
                 }
+                if(group.size()>13) ++large_group_attempts;
+                if(used_escape) ++eligibility_attempts;
                 ++group_sizes[std::min(group.size(),group_sizes.size()-1)];
                 // Full transaction snapshot makes all failed/expired repairs reversible.
                 auto snapshot_start=std::chrono::steady_clock::now();
@@ -731,6 +801,11 @@ struct Engine {
                         if(a!=b) {geometry_changed=true;break;}
                     }
                 }
+                if(neutral_tabu && geometry_changed) {
+                    auto start=std::chrono::steady_clock::now();auto state=canonical_geometry(nets);
+                    if(std::find(neutral_history.begin(),neutral_history.end(),state)!=neutral_history.end()) {geometry_changed=false;++neutral_tabu_rejections;}
+                    neutral_tabu_s+=std::chrono::duration<double>(std::chrono::steady_clock::now()-start).count();
+                }
                 bool accept_neutral=accept_equal && legal && after==before && geometry_changed;
                 if(adaptive_groups) {
                     double reward=legal && after<before?100.0*static_cast<double>(before-after)/static_cast<double>(before):0;
@@ -738,15 +813,21 @@ struct Engine {
                     if(reward>0) ++neighborhood_gains[strategy];
                 }
                 if(legal && (after<before || accept_uphill || accept_neutral)) {
+                    if(group.size()>13 && after<before) {++large_group_strict;large_group_gain=add(large_group_gain,before-after);}
                     if(used_donor && after<before) ++donor_gains;
+                    if(used_escape && after<before) {++eligibility_strict;eligibility_gain=add(eligibility_gain,before-after);}
+                    if(used_escape && accept_neutral) ++eligibility_neutral;
                     ++accepted; changed=true;
                     if(accept_uphill) ++uphill_moves;
                     if(accept_neutral) ++neutral_moves;
+                    if(neutral_tabu && after<before) neutral_history.clear();
+                    remember_neutral_state();
                     current=add(current-before,after);
                     if(uphill && current<best) { best=current;best_nets=nets;best_owner=owner; }
                 }
                 else {
                     if(!legal) ++failed; else ++nonimproving;
+                    if(used_escape) {if(!legal) ++eligibility_failed;else ++eligibility_nonimproving;}
                     owner=std::move(old_owner);
                     for(std::size_t k=0;k<group.size();++k) nets[group[k]]=std::move(old[k]);
                 }
@@ -754,6 +835,18 @@ struct Engine {
             if(!changed) break;
         }
         if(uphill) {nets=std::move(best_nets);owner=std::move(best_owner);}
+    }
+    void remember_neutral_state() {
+        if(!neutral_tabu || !accept_equal) return;
+        auto start=std::chrono::steady_clock::now();
+        auto state=canonical_geometry(nets);
+        if(std::find(neutral_history.begin(),neutral_history.end(),state)==neutral_history.end()) {
+            if(neutral_history.size()>=static_cast<std::size_t>(neutral_tabu)) neutral_history.erase(neutral_history.begin());
+            neutral_history.push_back(std::move(state));
+        }
+        std::uint64_t bytes=0;for(const auto& saved:neutral_history) bytes+=saved.size()*sizeof(int);
+        neutral_history_peak_bytes=std::max(neutral_history_peak_bytes,bytes);
+        neutral_tabu_s+=std::chrono::duration<double>(std::chrono::steady_clock::now()-start).count();
     }
     void restart(unsigned long long seed,int passes,bool polish_fresh=false) {
         random_ties=true;tie_seed=seed;
@@ -800,7 +893,7 @@ struct Engine {
                 }
                 std::stable_sort(order.begin(),order.end(),[&](int a,int b){return potential[a]>potential[b];});
             }
-            if(repair_first) repair(seed+static_cast<unsigned long long>(pass),1,4,true,false,wide?12:4);
+            if(repair_first) repair(seed+static_cast<unsigned long long>(pass),1,4,true,false,wide?std::max(12,group_limit-1):4);
             for(int j:order) {
                 ++polish_attempts;
                 Net candidate;
@@ -812,7 +905,7 @@ struct Engine {
                 for(int v:candidate.vertices) owner[v]=nets[j].id;
                 nets[j]=std::move(candidate);
             }
-            if(!repair_first) repair(seed+static_cast<unsigned long long>(pass),1,4,true,false,wide?12:4);
+            if(!repair_first) repair(seed+static_cast<unsigned long long>(pass),1,4,true,false,wide?std::max(12,group_limit-1):4);
         }
     }
     std::string group_histogram() const {
@@ -836,6 +929,12 @@ struct Engine {
                  <<",\"work_limit\":"<<work_limit<<",\"work_exhausted\":"<<work_exhausted
                  <<",\"expansions_per_second\":"<<(optimization_s>0?expansions/optimization_s:0)
                  <<",\"eligibility_searches\":"<<eligibility_searches<<",\"eligibility_recovered\":"<<eligibility_recovered
+                 <<",\"eligibility_attempts\":"<<eligibility_attempts<<",\"eligibility_strict\":"<<eligibility_strict<<",\"eligibility_neutral\":"<<eligibility_neutral
+                 <<",\"eligibility_failed\":"<<eligibility_failed<<",\"eligibility_nonimproving\":"<<eligibility_nonimproving<<",\"eligibility_gain\":"<<eligibility_gain
+                 <<",\"escape_penalty\":"<<escape_penalty<<",\"escape_options\":"<<escape_options<<",\"escape_direct\":"<<escape_direct
+                 <<",\"neutral_tabu\":"<<neutral_tabu<<",\"neutral_tabu_rejections\":"<<neutral_tabu_rejections<<",\"neutral_history_peak_bytes\":"<<neutral_history_peak_bytes<<",\"neutral_tabu_s\":"<<neutral_tabu_s
+                 <<",\"tree_prices\":"<<tree_prices<<",\"flow_builds\":"<<flow_builds<<",\"flow_shared_vertices\":"<<flow_shared_vertices<<",\"flow_setup_s\":"<<flow_setup_s
+                 <<",\"large_group_attempts\":"<<large_group_attempts<<",\"large_group_strict\":"<<large_group_strict<<",\"large_group_gain\":"<<large_group_gain
                  <<",\"repair_sampling\":"<<repair_sampling
                  <<",\"accept_equal\":"<<accept_equal<<",\"neutral_moves\":"<<neutral_moves
                  <<",\"uphill_moves\":"<<uphill_moves
@@ -901,12 +1000,26 @@ int main(int argc,char**argv) {
                 if(number>2) throw std::runtime_error("repair_sampling must be0..2");
                 engine.repair_sampling=static_cast<int>(number);
             }
+            else if(key=="neutral_tabu") engine.neutral_tabu=static_cast<int>(number);
+            else if(key=="tree_prices") {
+                if(number>2) throw std::runtime_error("tree_prices must be0..2");
+                engine.tree_prices=static_cast<int>(number);
+            }
+            else if(key=="escape_direct") {
+                if(number>1) throw std::runtime_error("escape_direct must be0or1");
+                engine.escape_direct=number!=0;
+            }
+            else if(key=="escape_penalty") engine.escape_penalty=number;
+            else if(key=="escape_options") {
+                if(number<1 || number>4) throw std::runtime_error("escape_options must be1..4");
+                engine.escape_options=static_cast<int>(number);
+            }
             else if(key=="accept_equal") {
                 if(number>1) throw std::runtime_error("accept_equal must be0or1");
                 engine.accept_equal=number!=0;
             }
             else if(key=="group_limit") {
-                if(number<2 || number>13) throw std::runtime_error("group limit outside 2..13");
+                if(number<2 || number>64) throw std::runtime_error("group limit outside 2..64");
                 engine.group_limit=static_cast<int>(number);
             }
             else throw std::runtime_error("unknown config key");

@@ -513,3 +513,51 @@ PinnedCLI confirms45/45legal: intro1.0999131603791024,hard1.261189538560553,scal
 Next concrete action: matched scale01 repeated-seed escape/adaptive comparison,then fixed configuration validation on08;measure recovered-proposal physical acceptance before penalty tuning. Research smaller structured perturbations instead of immediate further full restarts. Final freeze/regeneration remain pending;missingolderancestors/referencegenerationlimitations retained.
 
 No running jobs. Root PDF untouched. Local commit authorized,no push/publication.
+
+# In progress: escape attribution and calibration
+
+Current session extends eligibility counters to classify recovered-group attempts/strict/neutral/failed/nonimproving outcomes and summed strict physical group gains. Defaults preserve prior output: repeated designsctrl10M old/new binary stdout identical. Counter gain is associated with selected group repairs,not an incremental causal attribution versus another algorithm. Added escape penalty/options configuration and mandatory-blockers-only option;default4/2/false unchanged.41focused checks pass before screens.
+
+Scale screen complete12legal10M trials,seeds1–3:development01escape2wins/1loss but geometric ratio0.9999375134;validation08threewins ratio1.0001078334. Reject promotion based on declared development gate;validation does not select settings.64.99998s added wrapper. Recovered strict improvements observed on both cases. Current canonical selections remain unchanged until full-stage verification.
+
+Running serial escape calibration matrix ondesignsctrl/congested01,seeds1–3,10M each;default versuspenalty2/penalty8/fouroptions/mandatoryonly. Frozen core/wrapper throughout. Report escape-tuning-screen.json;log /tmp/escape-tuning-screen.log. Next choose only qualifying optional configuration from development,run fixed complete-tier followup,then explore downstream-aware resource pricing separately.
+
+Escape calibration complete30legal10M trials,134.199s wrapper. Declared gate selectsdesigns penalty8(3wins) andcongestedmandatoryonly(2wins/1loss,largestqualifyingratio). Fixedfull7case continuation adds34.367s andimprovesall7:designs1.2405097243072432,congested1.1055495435969123. Tagged recoveredgroupstrict counts19/28 andgrossphysicalgain116/566;notcausalincrementalcomparison. These candidates are retained in raw artifacts pending combined finalcoverage/archive promotion.
+
+Nowrunning serial27trial downstream-price screen,hard01/designsctrl/congested01,seeds1–3,10M each,uniform versusold-tree downstream modes1/2. Tree-local sinkcounts checkedagainst3handexamples/100independentindividualpathoracles;41existing+2newfocusedchecks pass. Source/wrapper frozen;logs /tmp/tree-pricing-screen.log,report tree-pricing-screen.json. This is a new topology-aware pricing hypothesis,not the component-merging paper algorithm or guarantee. Current canonical selection unchanged until finalverification.
+
+Downstream screen complete27legal exact10M trials,119.681s wrapper. Selecthard model2(3wins),designsmodel1(3wins),congestedmodel1(2wins/1loss),keepingdefault0. Flow setup about6.3percent of hard optimization and1.2percent large representatives;expandedwork does not account for this CPU overhead. Added fixedall45case20M stage improves39/unchanged6,all6scores. Strict two-parent fusion saves4delay onhard04;other two tiers nofusiongain. Zero-budget checkpoint preserves hardfusion. Independent pinnedCLI45/45legal in tier-tree-pricing-followup-coverage.json. Current candidate scores intro1.1027993426079046,hard1.266947801241802,scale1.0517563683407252,congested1.1115412514063856,designs1.2507253940346224,stress1.0216409732905487. Canonical archive selection will be promoted after current experiment.
+
+Continuing exact recent-geometry memory trial:neutral_tabu0/8/32,three seeds/three representatives/10M.42focused engine checks pass,including actual repeated-neutral-state rejection and legal deterministic work-cap recovery.4closure checks pass including inherited portfolio cost repair. Running serial neutral-tabu-screen.json with frozen core/wrapper;log /tmp/neutral-tabu-screen.log. Finite exact memory is optional and does not prevent all cycles. Next choose measured optional setting or reject,then preserve best complete tiers and restore hashes.
+
+# Downstream pricing checkpoint and active continuation
+
+
+Current selected routes are legal on all 45 cases, verified with the pinned evaluator and the current upstream model/checker/scorer/CLI modules. Current upstream revision: `0a8e052944432de0c657f3d45d6838394e627d63`. All 96 current benchmark files match the pinned Git blob hashes. Parser changes reject malformed coordinates; score aggregation now uses math.fsum. Saved scores agree. Current contribution rules allow generated README leaderboard changes and require derived_from metadata for public route reuse. No competitor routes were adopted.
+
+## Measurements
+
+Downstream pricing screen: 27 legal 10M-expansion trials, seeds 1–3. Retain model2 on hard (3 wins), model1 on designs (3 wins) and congested (2 wins/1 loss). Default remains0. This is old-tree resource reweighting, not the cost-distance paper's component-merging algorithm. Equal expansion ceilings do not equal CPU cost.
+
+Escape tuning: 30 legal trials; designs penalty8 and congested mandatory-only meet development gates. Scale escape fails its development geometric-mean gate; retain adaptive. Reserved validation cases did not select settings.
+
+Full 45-case 20M continuation improves39 cases, leaves6 unchanged. Two-parent closure fusion saves4 delay units on hard04. Neutral memory screen: all18 candidate comparisons tie; reject adoption. Larger hard groups: cap24 wins4/9 and cap40 wins3/9, both geometric means below1; retain cap13.
+
+Whole-case portfolio selects among the declared local trial pool and complete stages. Its scores are output competitiveness measurements with extra seed/configuration selection effort, not uniform solver benchmarks. Six zero-budget checkpoints preserve selected routes. All45 archived route hashes restore correctly. Current focused checks:43 engine,2 flow and4 closure checks pass. No full upstream test rerun claimed.
+
+## Scores
+
+- intro: 1.1027993426
+- hard: 1.2687429717
+- scale: 1.0517899453
+- congested: 1.1120190457
+- designs: 1.2520683047
+- stress: 1.0216409733
+
+## Running continuation
+
+Three rounds, seeds4/5/6, 20M expansions per case,60s safety cap, two independent tier workers. Plan: dev/configs/downstream-continuation.json. Progress/logs: dev/artifacts/20261002-ongoing-downstream-portfolio/progress.json and /tmp/ongoing-downstream-portfolio.log. Session69273. Each completed round is officially rescored; canonical selections are not edited automatically. Create STOP inside the artifact directory to stop between stages. Source/wrapper/binary are frozen while running.
+
+Older missing ancestors and reference-generation costs remain unknown. Phase3 continues; final regeneration/freeze/submission preparation remain pending. User handles publication.
+
+Next: review completed continuation rounds and preserve improvements; prototype partial-branch rerouting after profiling whole-net group failures.

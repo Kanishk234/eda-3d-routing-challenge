@@ -1,0 +1,14 @@
+{
+  "coverage": "docs/evidence/phase3/tier-tree-pricing-followup-coverage.json",
+  "work_budget": 10000000,
+  "seeds": [1, 2, 3],
+  "control": "ordinary",
+  "common": {"mode": "fanout_fine_escape", "accept_equal": true, "present_initial": 2},
+  "cases": [
+    {"tier": "hard", "case": "case_01", "role": "development", "settings": {"group_limit": 13, "present_step": 1, "history_step": 1, "tree_prices": 2}},
+    {"tier": "designs", "case": "ctrl", "role": "development", "settings": {"group_limit": 3, "present_step": 2, "history_step": 2, "escape_penalty": 8, "tree_prices": 1}},
+    {"tier": "congested", "case": "case_01", "role": "development", "settings": {"group_limit": 3, "present_step": 4, "history_step": 4, "escape_direct": true, "tree_prices": 1}}
+  ],
+  "variants": {"ordinary": {"neutral_tabu": 0}, "history8": {"neutral_tabu": 8}, "history32": {"neutral_tabu": 32}},
+  "selection": "Per-tier optional history needs at least2/3wins and geometric ratio>1;choose largest qualifying ratio,otherwise0. Exact registered geometry comparison,no hash collisions. Does not prevent all cycles because history is finite and ordinary polish may change geometry outside this history."
+}

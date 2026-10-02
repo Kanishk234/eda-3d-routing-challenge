@@ -1,0 +1,391 @@
+{
+  "revision": "0a8e052944432de0c657f3d45d6838394e627d63",
+  "files": [
+    {
+      "path": "benchmarks/case_01.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks/case_02.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks/case_03.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks/case_04.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks/case_05.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks/case_06.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks/case_07.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks/case_08.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks/case_09.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks/case_10.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks/case_11.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks/case_12.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks/case_13.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks/case_14.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks/case_15.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks/case_16.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks/case_17.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks/case_18.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks/case_19.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks/case_20.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks/reference/case_01.sol.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks/reference/case_02.sol.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks/reference/case_03.sol.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks/reference/case_04.sol.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks/reference/case_05.sol.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks/reference/case_06.sol.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks/reference/case_07.sol.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks/reference/case_08.sol.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks/reference/case_09.sol.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks/reference/case_10.sol.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks/reference/case_11.sol.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks/reference/case_12.sol.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks/reference/case_13.sol.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks/reference/case_14.sol.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks/reference/case_15.sol.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks/reference/case_16.sol.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks/reference/case_17.sol.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks/reference/case_18.sol.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks/reference/case_19.sol.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks/reference/case_20.sol.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks/suite.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_congested/case_01.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_congested/case_02.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_congested/case_03.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_congested/case_04.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_congested/reference/case_01.sol.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_congested/reference/case_02.sol.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_congested/reference/case_03.sol.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_congested/reference/case_04.sol.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_congested/suite.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_designs/ctrl.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_designs/int2float.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_designs/reference/ctrl.sol.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_designs/reference/int2float.sol.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_designs/reference/router.sol.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_designs/router.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_designs/suite.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_hard/case_01.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_hard/case_02.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_hard/case_03.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_hard/case_04.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_hard/case_05.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_hard/case_06.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_hard/case_07.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_hard/case_08.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_hard/case_09.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_hard/reference/case_01.sol.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_hard/reference/case_02.sol.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_hard/reference/case_03.sol.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_hard/reference/case_04.sol.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_hard/reference/case_05.sol.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_hard/reference/case_06.sol.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_hard/reference/case_07.sol.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_hard/reference/case_08.sol.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_hard/reference/case_09.sol.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_hard/suite.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_scale/case_01.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_scale/case_02.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_scale/case_03.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_scale/case_04.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_scale/case_05.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_scale/case_06.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_scale/case_07.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_scale/case_08.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_scale/reference/case_01.sol.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_scale/reference/case_02.sol.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_scale/reference/case_03.sol.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_scale/reference/case_04.sol.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_scale/reference/case_05.sol.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_scale/reference/case_06.sol.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_scale/reference/case_07.sol.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_scale/reference/case_08.sol.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_scale/suite.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_stress/case_01.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_stress/reference/case_01.sol.json",
+      "matches_pin": true
+    },
+    {
+      "path": "benchmarks_stress/suite.json",
+      "matches_pin": true
+    }
+  ],
+  "all_match": true,
+  "scope": "All current upstream benchmark files against local pin; additions fail match."
+}

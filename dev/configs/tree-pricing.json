@@ -1,0 +1,18 @@
+{
+  "coverage": "docs/evidence/phase3/tier-eligibility-followup-coverage.json",
+  "work_budget": 10000000,
+  "seeds": [1, 2, 3],
+  "control": "uniform",
+  "common": {"mode": "fanout_fine_escape", "accept_equal": true, "present_initial": 2},
+  "cases": [
+    {"tier": "hard", "case": "case_01", "role": "development", "settings": {"group_limit": 13, "present_step": 1, "history_step": 1}},
+    {"tier": "designs", "case": "ctrl", "role": "development", "settings": {"group_limit": 3, "present_step": 2, "history_step": 2, "escape_penalty": 8}},
+    {"tier": "congested", "case": "case_01", "role": "development", "settings": {"group_limit": 3, "present_step": 4, "history_step": 4, "escape_direct": true}}
+  ],
+  "variants": {
+    "uniform": {"tree_prices": 0},
+    "downstream": {"tree_prices": 1},
+    "downstream_uniform_fallback": {"tree_prices": 2}
+  },
+  "selection": "Optional per-tier price model requires at least2/3wins and geometric ratio>1 versus uniform;choose highest qualifying ratio. Otherwise0. This is old-tree reweighting,not the component-merging paper algorithm or its guarantee."
+}

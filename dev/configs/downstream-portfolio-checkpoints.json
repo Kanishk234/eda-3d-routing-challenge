@@ -1,0 +1,37 @@
+{
+  "coverage": "docs/evidence/phase3/tier-tree-pricing-followup-coverage.json",
+  "common": {
+    "mode": "polish",
+    "seed": 1,
+    "passes": 1,
+    "budget": 0,
+    "work_budget": 0
+  },
+  "stages": [
+    {
+      "tier": "intro",
+      "resume_dir": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T182713.361612Z-case-portfolio/routes"
+    },
+    {
+      "tier": "hard",
+      "resume_dir": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T182714.936795Z-case-portfolio/routes"
+    },
+    {
+      "tier": "scale",
+      "resume_dir": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T182715.691780Z-case-portfolio/routes"
+    },
+    {
+      "tier": "congested",
+      "resume_dir": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T182718.792982Z-case-portfolio/routes"
+    },
+    {
+      "tier": "designs",
+      "resume_dir": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T182721.022948Z-case-portfolio/routes"
+    },
+    {
+      "tier": "stress",
+      "resume_dir": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T182722.647529Z-case-portfolio/routes"
+    }
+  ],
+  "scope": "Zero-budget native checkpoints preserve best whole-case outputs across declared local pool;benchmark-specific portfolio choice disclosed,not new solver speed/quality evidence."
+}

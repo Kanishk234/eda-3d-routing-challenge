@@ -1,0 +1,37 @@
+{
+  "complete": true,
+  "rows": [
+    {
+      "tier": "hard",
+      "report": "docs/evidence/phase3/hard-priced-tree-fusion.json",
+      "artifact_directory": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T180600.859504Z-net-recombination",
+      "score": 1.266947801241802,
+      "base_run": "20261002T180119.652477Z-exact-polish",
+      "donor_run": "20261002T163929.376758Z-exact-polish",
+      "selection_wall_s": 0.8840800970210694,
+      "delay_gain": 4
+    },
+    {
+      "tier": "designs",
+      "report": "docs/evidence/phase3/designs-priced-tree-fusion.json",
+      "artifact_directory": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T180602.125461Z-net-recombination",
+      "score": 1.2507253940346224,
+      "base_run": "20261002T180412.604703Z-exact-polish",
+      "donor_run": "20261002T164022.756160Z-exact-polish",
+      "selection_wall_s": 1.778875985997729,
+      "delay_gain": 0
+    },
+    {
+      "tier": "congested",
+      "report": "docs/evidence/phase3/congested-priced-tree-fusion.json",
+      "artifact_directory": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T180604.568413Z-net-recombination",
+      "score": 1.1115412514063856,
+      "base_run": "20261002T180339.095936Z-exact-polish",
+      "donor_run": "20261002T164011.751136Z-exact-polish",
+      "selection_wall_s": 3.0299009020091034,
+      "delay_gain": 0
+    }
+  ],
+  "scope": "Strict restricted two-parent fusion,new full-tier pricing continuation versus previous selected local routes. No new path search,not global routing optimality.",
+  "total_selection_wall_s": 5.692856985027902
+}

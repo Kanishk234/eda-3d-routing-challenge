@@ -1,0 +1,17 @@
+{
+  "coverage": "docs/evidence/phase3/tier-eligibility-followup-coverage.json",
+  "common": {
+    "mode": "polish",
+    "seed": 1,
+    "passes": 1,
+    "budget": 0,
+    "work_budget": 0
+  },
+  "stages": [
+    {
+      "tier": "hard",
+      "resume_dir": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T180600.859504Z-net-recombination/routes"
+    }
+  ],
+  "scope": "Zero-budget native checkpoint preserves verified winning restricted fusion;no search-quality claim."
+}

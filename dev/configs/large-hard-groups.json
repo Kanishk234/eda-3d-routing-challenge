@@ -1,0 +1,14 @@
+{
+  "coverage": "docs/evidence/phase3/tier-tree-pricing-followup-coverage.json",
+  "work_budget": 20000000,
+  "seeds": [1, 2, 3],
+  "control": "cap13",
+  "common": {"mode": "fanout_fine_escape", "accept_equal": true, "present_initial": 2, "present_step": 1, "history_step": 1, "tree_prices": 2},
+  "cases": [
+    {"tier": "hard", "case": "case_01", "role": "development"},
+    {"tier": "hard", "case": "case_04", "role": "development"},
+    {"tier": "hard", "case": "case_07", "role": "development"}
+  ],
+  "variants": {"cap13": {"group_limit": 13}, "cap24": {"group_limit": 24}, "cap40": {"group_limit": 40}},
+  "selection": "Across nine matched development comparisons,retain optional cap only if >=5wins and geometric mean delay ratio>1;choose largest qualifying ratio. Reserved08/09excluded. Otherwise13. Longer fixed full-tier continuation is additional effort."
+}

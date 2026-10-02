@@ -1,0 +1,90 @@
+{
+  "revision": "0a8e052944432de0c657f3d45d6838394e627d63",
+  "checked_utc": "2026-10-02",
+  "open_prs": [
+    {
+      "number": 26,
+      "title": "submission: drama3d-portfolio update",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/26",
+      "head": "89ca44091e30d9e8f2e7e56e5eb7e69de9b8294e"
+    },
+    {
+      "number": 25,
+      "title": "Update spt_lns submissions on all six tiers",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/25",
+      "head": "6bcf44c4a4203dfb0a060997e348ce9160d3c5dc"
+    },
+    {
+      "number": 24,
+      "title": "Update coordinated_refinement with crossover and bounded rerouting",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/24",
+      "head": "58585d7b496d505dfa35f2426df4269974e583fa"
+    },
+    {
+      "number": 23,
+      "title": "hard tier initial submission: ly",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/23",
+      "head": "3ef755992334715dd3e710c14e6237470b701344"
+    },
+    {
+      "number": 22,
+      "title": "Make documented commands work on every tier (baseline-suite, example router, designs regeneration, Makefile, docs)",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/22",
+      "head": "f812a142033c0759d094d3904533f36e1eb4098d"
+    },
+    {
+      "number": 21,
+      "title": "Submission: warm_lns_refinement \u2014 improve all six tiers with complete runtime provenance",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/21",
+      "head": "8be7b5340e5feee29285f8ca8531af3eaade22cf"
+    },
+    {
+      "number": 7,
+      "title": "Submission for M3D Router submission with results for intro, hard, scale, and designs benchmark suites",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/7",
+      "head": "dfbcba48bd762433350aea82cd653af74e7137ac"
+    }
+  ],
+  "files": {
+    "README.md": {
+      "sha256": "c9465652a395f832d139f4af979392836ea3adaedb4c60e916048962798e330f",
+      "matches_pin": false
+    },
+    "LEADERBOARD.md": {
+      "sha256": "e10bfad5cbcc8b6b452ee160c284e68010c3992dafbde12143edf02b471d6300",
+      "matches_pin": false
+    },
+    "CONTRIBUTING.md": {
+      "sha256": "a4bf0c119825caf31cb38b0663293a5fa8d47a51e39726e81858f7c3994552ac",
+      "matches_pin": false
+    },
+    ".github/workflows/leaderboard.yml": {
+      "sha256": "612d40f0a1e3af374c39713208797b0efffcc060ee570d7d558b45722d7b6104",
+      "matches_pin": false
+    },
+    "m3d/model.py": {
+      "sha256": "cdd5eff58c93d0e74c43183489b50d7cc8bf2d09418cd25149e4fe7a7992f231",
+      "matches_pin": false
+    },
+    "m3d/grid.py": {
+      "sha256": "b67408f25d94df45b529333203848c5915deeb72b68f2392ed8b6fa2a8ef0ab5",
+      "matches_pin": true
+    },
+    "m3d/checker.py": {
+      "sha256": "1f05fce3119300a056ebeeecd3b82a303fdd839c1392939bb52e4434393959dd",
+      "matches_pin": true
+    },
+    "m3d/scorer.py": {
+      "sha256": "c0bf2d0c8a7eefa4c58a24fdd371013a856ad08b7bdc19bf5376faf1435ec019",
+      "matches_pin": false
+    },
+    "m3d/suite.py": {
+      "sha256": "0d03a4d5540c71e12675f31e46bc59e573e9a94383945e42408e4ebe00fe7490",
+      "matches_pin": true
+    },
+    "m3d/cli.py": {
+      "sha256": "482a20407753cd55f0db3ce5cfe20ea06a37080cb4b5fbcb8206d79c1a707119",
+      "matches_pin": false
+    }
+  }
+}

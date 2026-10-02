@@ -310,8 +310,50 @@ class ExactKernel(unittest.TestCase):
                 if limit==10000:
                     counters=json.loads(run.stderr.splitlines()[-1]);self.assertGreater(counters['eligibility_searches'],0)
                     self.assertGreater(counters['eligibility_recovered'],0)
+                    self.assertEqual(counters['eligibility_attempts'],counters['eligibility_strict']+counters['eligibility_neutral']+counters['eligibility_failed']+counters['eligibility_nonimproving'])
                 outputs.append(run.stdout)
             self.assertEqual(*outputs)
+
+    def test_exact_neutral_tabu_defaults_caps_and_repetition(self):
+        pins=[Pin(0,0,0,0,2,0),Pin(1,0,0,4,2,0),Pin(2,1,0,2,0,0),Pin(3,1,0,2,4,0)]
+        inst=Instance("crossing",5,5,2,[2,1],2,[],pins,[Net(0,0,[1]),Net(1,2,[3])])
+        horizontal=[(0,2,0),(0,2,1),(1,2,1),(2,2,1),(3,2,1),(4,2,1),(4,2,0)];vertical=[(2,y,0) for y in range(5)]
+        sub=Submission(inst.name,[NetRoute(0,list(zip(horizontal,horizontal[1:]))),NetRoute(1,list(zip(vertical,vertical[1:])))])
+        cmd=[str(ENGINE),'5','1','100','fanout_fine_window','10000','accept_equal=1','repair_first=1'];data=encode(inst,sub)
+        old=subprocess.run(cmd,input=data,text=True,capture_output=True,check=True);explicit=subprocess.run(cmd+['neutral_tabu=0'],input=data,text=True,capture_output=True,check=True);self.assertEqual(old.stdout,explicit.stdout)
+        for arg in ['neutral_tabu=-1','neutral_tabu=65']:
+            self.assertEqual(subprocess.run(cmd+[arg],input=data,text=True,capture_output=True).returncode,2)
+        rejections=0
+        for size in (1,8,32):
+            for limit in (1,20,100,1000,10000):
+                outputs=[]
+                for wall in (2,5):
+                    run=subprocess.run([str(ENGINE),str(wall),'1','100','fanout_fine_window',str(limit),'accept_equal=1','repair_first=1','neutral_tabu='+str(size)],input=data,text=True,capture_output=True,check=True)
+                    out,stats=decode(inst,run.stdout);checked=check(inst,out);self.assertTrue(checked.legal);self.assertEqual(checked.total_delay,stats['total_delay']);self.assertLessEqual(checked.total_delay,check(inst,sub).total_delay);self.assertLessEqual(stats['expansions'],limit);outputs.append(run.stdout)
+                    rejections+=json.loads(run.stderr.splitlines()[-1])['neutral_tabu_rejections']
+                self.assertEqual(*outputs)
+        self.assertGreater(rejections,0)
+
+    def test_large_group_caps_preserve_work_budget_and_legal_state(self):
+        path=[(x,0,0) for x in range(5)]+[(4,y,0) for y in range(1,5)]
+        inst,sub=make(5,5,[6,2],3,(0,0,0),[(4,4,0)],own_edges=list(zip(path,path[1:])))
+        for cap in (13,24,40,64):
+            for limit in (1,20,100,1000):
+                outputs=[]
+                for wall in (2,5):
+                    run=subprocess.run([str(ENGINE),str(wall),'1','100','fanout_fine_escape',str(limit),'group_limit='+str(cap),'tree_prices=2','accept_equal=1'],input=encode(inst,sub),text=True,capture_output=True,check=True)
+                    out,stats=decode(inst,run.stdout);checked=check(inst,out);self.assertTrue(checked.legal);self.assertEqual(checked.total_delay,stats['total_delay']);self.assertLessEqual(checked.total_delay,check(inst,sub).total_delay);self.assertLessEqual(stats['expansions'],limit);outputs.append(run.stdout)
+                self.assertEqual(*outputs)
+
+    def test_escape_config_defaults_and_invalid_values(self):
+        inst,sub=make(3,1,[2],3,(0,0,0),[(2,0,0)],own_edges=[((0,0,0),(1,0,0)),((1,0,0),(2,0,0))])
+        command=[str(ENGINE),"2","1","10","fanout_fine_escape","1000"]
+        def invoke(args):return subprocess.run(command+args,input=encode(inst,sub),text=True,capture_output=True,timeout=8)
+        old=invoke([]);explicit=invoke(["escape_penalty=4","escape_options=2","escape_direct=0"])
+        self.assertEqual(old.returncode,0);self.assertEqual(old.stdout,explicit.stdout)
+        for args in (["escape_penalty=-1"],["escape_penalty=65"],["escape_options=0"],["escape_options=5"],["escape_direct=2"]):self.assertEqual(invoke(args).returncode,2)
+        counters=json.loads(old.stderr.splitlines()[-1])
+        self.assertEqual(counters['eligibility_attempts'],counters['eligibility_strict']+counters['eligibility_neutral']+counters['eligibility_failed']+counters['eligibility_nonimproving'])
 
     def test_whole_restart_builds_cheaper_layer_tree(self):
         path=[(x,0,0) for x in range(5)]+[(4,y,0) for y in range(1,5)]
@@ -486,7 +528,7 @@ class WorkAndAstarProperties(unittest.TestCase):
         self.assertEqual(old.returncode,0);self.assertEqual(explicit.returncode,0)
         self.assertEqual(old.stdout,explicit.stdout)
         for args in (["unknown=1"],["history_step=-1"],["present_step=65"],["present_initial="],
-                     ["history_step=2","history_step=3"],["present_step=999999999999999999999999"],["history_step"],["group_limit=1"],["group_limit=14"],["repair_first=2"],["polish_order=3"]):
+                     ["history_step=2","history_step=3"],["present_step=999999999999999999999999"],["history_step"],["group_limit=1"],["group_limit=65"],["repair_first=2"],["polish_order=3"]):
             self.assertEqual(invoke(args).returncode,2)
 
     def test_work_cap_is_exact_repeatable_and_preserves_legal_routes(self):

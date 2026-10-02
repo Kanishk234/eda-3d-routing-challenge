@@ -1,0 +1,19 @@
+{
+  "coverage": "docs/evidence/phase3/tier-eligibility-followup-coverage.json",
+  "work_budget": 10000000,
+  "seeds": [1, 2, 3],
+  "control": "default",
+  "common": {"mode": "fanout_fine_escape", "group_limit": 3, "accept_equal": true, "present_initial": 2},
+  "cases": [
+    {"tier": "designs", "case": "ctrl", "role": "development", "settings": {"present_step": 2, "history_step": 2}},
+    {"tier": "congested", "case": "case_01", "role": "development", "settings": {"present_step": 4, "history_step": 4}}
+  ],
+  "variants": {
+    "default": {"escape_penalty": 4, "escape_options": 2},
+    "penalty2": {"escape_penalty": 2, "escape_options": 2},
+    "penalty8": {"escape_penalty": 8, "escape_options": 2},
+    "four_options": {"escape_penalty": 4, "escape_options": 4},
+    "mandatory_only": {"escape_penalty": 4, "escape_options": 2, "escape_direct": true}
+  },
+  "selection": "Per-tier optional setting requires at least2/3wins and geometric ratio>1 versus default;choose largest qualifying ratio. Otherwise retain default. Whole-tier validation uses fixedseed1,no per-case seed/config selection."
+}

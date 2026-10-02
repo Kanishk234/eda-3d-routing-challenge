@@ -1,0 +1,356 @@
+{
+  "plan": {
+    "coverage": "docs/evidence/phase3/tier-eligibility-followup-coverage.json",
+    "common": {
+      "mode": "fanout_fine_escape",
+      "seed": 1,
+      "passes": 1000,
+      "budget": 60,
+      "work_budget": 20000000,
+      "present_initial": 2
+    },
+    "stages": [
+      {
+        "tier": "intro",
+        "settings": {
+          "group_limit": 13,
+          "present_step": 2,
+          "history_step": 2,
+          "tree_prices": 0
+        }
+      },
+      {
+        "tier": "hard",
+        "settings": {
+          "group_limit": 13,
+          "present_step": 1,
+          "history_step": 1,
+          "tree_prices": 2,
+          "accept_equal": true
+        }
+      },
+      {
+        "tier": "scale",
+        "settings": {
+          "group_limit": 3,
+          "present_step": 2,
+          "history_step": 2,
+          "tree_prices": 0,
+          "mode": "fanout_fine_adaptive"
+        }
+      },
+      {
+        "tier": "congested",
+        "settings": {
+          "group_limit": 3,
+          "present_step": 4,
+          "history_step": 4,
+          "tree_prices": 1,
+          "accept_equal": true,
+          "escape_direct": true
+        },
+        "resume_dir": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T175234.759992Z-exact-polish/routes"
+      },
+      {
+        "tier": "designs",
+        "settings": {
+          "group_limit": 3,
+          "present_step": 2,
+          "history_step": 2,
+          "tree_prices": 1,
+          "accept_equal": true,
+          "escape_penalty": 8
+        },
+        "resume_dir": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T175220.185194Z-exact-polish/routes"
+      },
+      {
+        "tier": "stress",
+        "settings": {
+          "group_limit": 13,
+          "present_step": 2,
+          "history_step": 2,
+          "tree_prices": 0
+        }
+      }
+    ],
+    "scope": "Added fixedseed1 full45case continuation20M. Price model selected from declared development screen only:hard2,designs/congested1;scale adaptive0 after escape development rejection;intro/stress0 unchanged. Hard08/09 fixed validation only. No matched full-tier superiority claim."
+  },
+  "plan_sha256": "825a18d52ced88b86d2f6f2ee3fd68fac9b3e24750bb034d87a339ae34d31f79",
+  "runner_sha256": "bdc113c890d15d71e086a9de3d5ffd62c95f168a8fba1d9fc9c9940620eee6b1",
+  "coverage_sha256": "8fe3b74c9933945dd1bffd05b5690cff318cc8af3507cce5989610b93261a24f",
+  "workers": 1,
+  "rows": [
+    {
+      "tier": "intro",
+      "run_id": "20261002T175859.707296Z-exact-polish",
+      "previous_run": "20261002T163851.054709Z-exact-polish",
+      "manifest_sha256": "53c4da3dc981af02fc52affab8bbb5cb90dc6f614b7c559bb4ce04eba5cca397",
+      "config": {
+        "suite": "benchmarks",
+        "case": null,
+        "donor_dir": null,
+        "mode": "fanout_fine_escape",
+        "budget": 60.0,
+        "work_budget": 20000000,
+        "present_initial": 2,
+        "present_step": 2,
+        "history_step": 2,
+        "polish_order": 0,
+        "repair_first": false,
+        "repair_sampling": 0,
+        "tree_prices": 0,
+        "escape_direct": false,
+        "escape_penalty": 4,
+        "escape_options": 2,
+        "accept_equal": false,
+        "group_limit": 13,
+        "seed": 1,
+        "passes": 1000,
+        "resume_dir": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T163851.054709Z-exact-polish/routes"
+      },
+      "score": 1.1027993426079046,
+      "improved_cases": 14,
+      "n_cases": 20,
+      "counters": {
+        "eligibility_searches": 3,
+        "eligibility_recovered": 1,
+        "eligibility_attempts": 1,
+        "eligibility_strict": 0,
+        "eligibility_neutral": 0,
+        "eligibility_gain": 0,
+        "eligibility_failed": 0,
+        "eligibility_nonimproving": 1,
+        "neutral_moves": 0,
+        "polish_improvements": 65
+      },
+      "wrapper_wall_s": 133.54512024502037
+    },
+    {
+      "tier": "hard",
+      "run_id": "20261002T180119.652477Z-exact-polish",
+      "previous_run": "20261002T163929.376758Z-exact-polish",
+      "manifest_sha256": "3dccfa0380c9c3485f7ffba32e86706e20ed424a875a98af182ee0edad709013",
+      "config": {
+        "suite": "benchmarks_hard",
+        "case": null,
+        "donor_dir": null,
+        "mode": "fanout_fine_escape",
+        "budget": 60.0,
+        "work_budget": 20000000,
+        "present_initial": 2,
+        "present_step": 1,
+        "history_step": 1,
+        "polish_order": 0,
+        "repair_first": false,
+        "repair_sampling": 0,
+        "tree_prices": 2,
+        "escape_direct": false,
+        "escape_penalty": 4,
+        "escape_options": 2,
+        "accept_equal": true,
+        "group_limit": 13,
+        "seed": 1,
+        "passes": 1000,
+        "resume_dir": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T163929.376758Z-exact-polish/routes"
+      },
+      "score": 1.266915979211645,
+      "improved_cases": 9,
+      "n_cases": 9,
+      "counters": {
+        "eligibility_searches": 185,
+        "eligibility_recovered": 86,
+        "eligibility_attempts": 86,
+        "eligibility_strict": 8,
+        "eligibility_neutral": 20,
+        "eligibility_gain": 80,
+        "eligibility_failed": 29,
+        "eligibility_nonimproving": 29,
+        "neutral_moves": 2589,
+        "polish_improvements": 29
+      },
+      "wrapper_wall_s": 65.52835366601357
+    },
+    {
+      "tier": "scale",
+      "run_id": "20261002T180228.462985Z-exact-polish",
+      "previous_run": "20261002T163946.669091Z-exact-polish",
+      "manifest_sha256": "2ac0620f4723a655d999c1aa113cce9bd46e10148059cd663ab90636a18cfbe0",
+      "config": {
+        "suite": "benchmarks_scale",
+        "case": null,
+        "donor_dir": null,
+        "mode": "fanout_fine_adaptive",
+        "budget": 60.0,
+        "work_budget": 20000000,
+        "present_initial": 2,
+        "present_step": 2,
+        "history_step": 2,
+        "polish_order": 0,
+        "repair_first": false,
+        "repair_sampling": 0,
+        "tree_prices": 0,
+        "escape_direct": false,
+        "escape_penalty": 4,
+        "escape_options": 2,
+        "accept_equal": false,
+        "group_limit": 3,
+        "seed": 1,
+        "passes": 1000,
+        "resume_dir": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T163946.669091Z-exact-polish/routes"
+      },
+      "score": 1.0517563683407252,
+      "improved_cases": 8,
+      "n_cases": 8,
+      "counters": {
+        "eligibility_searches": 0,
+        "eligibility_recovered": 0,
+        "eligibility_attempts": 0,
+        "eligibility_strict": 0,
+        "eligibility_neutral": 0,
+        "eligibility_gain": 0,
+        "eligibility_failed": 0,
+        "eligibility_nonimproving": 0,
+        "neutral_moves": 0,
+        "polish_improvements": 109
+      },
+      "wrapper_wall_s": 67.35699882399058
+    },
+    {
+      "tier": "congested",
+      "run_id": "20261002T180339.095936Z-exact-polish",
+      "previous_run": "20261002T164011.751136Z-exact-polish",
+      "manifest_sha256": "eb31f67b08f75cdb2d647849154c363f30024531c98d611b019f792bc24ef762",
+      "config": {
+        "suite": "benchmarks_congested",
+        "case": null,
+        "donor_dir": null,
+        "mode": "fanout_fine_escape",
+        "budget": 60.0,
+        "work_budget": 20000000,
+        "present_initial": 2,
+        "present_step": 4,
+        "history_step": 4,
+        "polish_order": 0,
+        "repair_first": false,
+        "repair_sampling": 0,
+        "tree_prices": 1,
+        "escape_direct": true,
+        "escape_penalty": 4,
+        "escape_options": 2,
+        "accept_equal": true,
+        "group_limit": 3,
+        "seed": 1,
+        "passes": 1000,
+        "resume_dir": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T175234.759992Z-exact-polish/routes"
+      },
+      "score": 1.1115412514063856,
+      "improved_cases": 4,
+      "n_cases": 4,
+      "counters": {
+        "eligibility_searches": 1488,
+        "eligibility_recovered": 377,
+        "eligibility_attempts": 377,
+        "eligibility_strict": 75,
+        "eligibility_neutral": 202,
+        "eligibility_gain": 1346,
+        "eligibility_failed": 3,
+        "eligibility_nonimproving": 97,
+        "neutral_moves": 425,
+        "polish_improvements": 75
+      },
+      "wrapper_wall_s": 31.762741604994517
+    },
+    {
+      "tier": "designs",
+      "run_id": "20261002T180412.604703Z-exact-polish",
+      "previous_run": "20261002T164022.756160Z-exact-polish",
+      "manifest_sha256": "183edbbe9d4a5b4e14233a5b5d39b8adc4c8c8cbe400887ba83405effb6740b0",
+      "config": {
+        "suite": "benchmarks_designs",
+        "case": null,
+        "donor_dir": null,
+        "mode": "fanout_fine_escape",
+        "budget": 60.0,
+        "work_budget": 20000000,
+        "present_initial": 2,
+        "present_step": 2,
+        "history_step": 2,
+        "polish_order": 0,
+        "repair_first": false,
+        "repair_sampling": 0,
+        "tree_prices": 1,
+        "escape_direct": false,
+        "escape_penalty": 8,
+        "escape_options": 2,
+        "accept_equal": true,
+        "group_limit": 3,
+        "seed": 1,
+        "passes": 1000,
+        "resume_dir": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T175220.185194Z-exact-polish/routes"
+      },
+      "score": 1.2507253940346224,
+      "improved_cases": 3,
+      "n_cases": 3,
+      "counters": {
+        "eligibility_searches": 1204,
+        "eligibility_recovered": 249,
+        "eligibility_attempts": 249,
+        "eligibility_strict": 76,
+        "eligibility_neutral": 120,
+        "eligibility_gain": 1134,
+        "eligibility_failed": 0,
+        "eligibility_nonimproving": 53,
+        "neutral_moves": 344,
+        "polish_improvements": 94
+      },
+      "wrapper_wall_s": 23.011120012030005
+    },
+    {
+      "tier": "stress",
+      "run_id": "20261002T180437.390831Z-exact-polish",
+      "previous_run": "20261002T164032.716433Z-exact-polish",
+      "manifest_sha256": "d49c1fb471515328d2dc9a4191772ca36a963feb9a7e9ca7d8928ab6960ad488",
+      "config": {
+        "suite": "benchmarks_stress",
+        "case": null,
+        "donor_dir": null,
+        "mode": "fanout_fine_escape",
+        "budget": 60.0,
+        "work_budget": 20000000,
+        "present_initial": 2,
+        "present_step": 2,
+        "history_step": 2,
+        "polish_order": 0,
+        "repair_first": false,
+        "repair_sampling": 0,
+        "tree_prices": 0,
+        "escape_direct": false,
+        "escape_penalty": 4,
+        "escape_options": 2,
+        "accept_equal": false,
+        "group_limit": 13,
+        "seed": 1,
+        "passes": 1000,
+        "resume_dir": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T164032.716433Z-exact-polish/routes"
+      },
+      "score": 1.0216409732905487,
+      "improved_cases": 1,
+      "n_cases": 1,
+      "counters": {
+        "eligibility_searches": 0,
+        "eligibility_recovered": 0,
+        "eligibility_attempts": 0,
+        "eligibility_strict": 0,
+        "eligibility_neutral": 0,
+        "eligibility_gain": 0,
+        "eligibility_failed": 0,
+        "eligibility_nonimproving": 0,
+        "neutral_moves": 0,
+        "polish_improvements": 21
+      },
+      "wrapper_wall_s": 28.031079133972526
+    }
+  ],
+  "complete": true,
+  "total_wrapper_wall_s": 349.23541348602157
+}

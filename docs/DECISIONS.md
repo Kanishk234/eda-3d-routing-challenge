@@ -98,3 +98,5 @@ cases from the same available1.227449 incumbent, without per-case selection.
 48. Reject fine-pricing whole-case restarts after9matched losses despite5legal hard rebuilds. Keep bounded transactional experiment available;no candidate pool claim. Profiles favor investigating over-cap proposals before owner-snapshot work for these selected runs.
 
 49. Keep escape fallback optional afterdesigns2wins/1loss andcongested3wins;adaptive default unchanged. Penalize blocker owner geometry only on over-cap improving ideals;retain exact physical acceptance and rollback. Full45case improvements are added-effort results,not matched whole-tier superiority;intro/stress fallbackinactive.
+
+50. Retain optional downstream pricing hard2/designs1/congested1 after declared repeated-seed screens. Reject neutral memory and larger hard groups for adoption. Preserve best whole-case local trial routes with explicit portfolio disclosure. Continue a bounded three-round two-worker search, keeping canonical selection separate from live results.

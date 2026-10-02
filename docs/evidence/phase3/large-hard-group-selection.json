@@ -1,0 +1,27 @@
+{
+  "screen_sha256": "3c24b99bd3c36a51c3d33b2da6b35c70c211758df370020d60c1a84e0dfe1240",
+  "comparisons": [
+    {
+      "label": "cap24",
+      "wins": 4,
+      "ties": 0,
+      "losses": 5,
+      "geomean_delay_ratio": 0.9983737775312441,
+      "large_attempts": 225,
+      "large_strict": 2,
+      "large_gain": 12
+    },
+    {
+      "label": "cap40",
+      "wins": 3,
+      "ties": 0,
+      "losses": 6,
+      "geomean_delay_ratio": 0.9985667272036755,
+      "large_attempts": 184,
+      "large_strict": 2,
+      "large_gain": 108
+    }
+  ],
+  "selected": "cap13",
+  "scope": "Declared development gate only;reserved08/09notused."
+}

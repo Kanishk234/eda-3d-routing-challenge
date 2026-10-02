@@ -73,6 +73,23 @@ def recombine(inst,base,donor,prefer_donor=False):
     assert checked.total_delay<=min(a.total_delay,b.total_delay)
     return result,{'base_delay':a.total_delay,'donor_delay':b.total_delay,'total_delay':checked.total_delay,'selected_donor_nets':[ids[k] for k in sorted(chosen)],'dependency_arcs':len(dependencies),'certificate':certificate}
 
+def ancestor_costs(directory):
+    """Deduplicate recorded optimizer stages,including an inherited portfolio."""
+    costs={};missing=set();visited=set()
+    m=json.loads((directory/'manifest.json').read_text())
+    while True:
+        if m['run_id'] in visited:raise ValueError("cyclic optimizer ancestry")
+        visited.add(m['run_id']);costs[m['run_id']]=m['wrapper_wall_s']
+        origin=Path(m['warm_start']['directory']);parent=origin.parent/'manifest.json'
+        if not parent.exists():
+            inherited=origin.parent/'portfolio.json'
+            if inherited.exists():
+                p=json.loads(inherited.read_text());costs.update(p.get('known_ancestry_runs',{}));missing.update(p.get('missing_ancestor_artifacts',[]))
+            if not origin.exists():missing.add(str(origin))
+            break
+        m=json.loads(parent.read_text())
+    return costs,missing
+
 def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('base',type=Path);p.add_argument('donor',type=Path);p.add_argument('--suite',required=True);p.add_argument('--out',type=Path,required=True);a=p.parse_args()
     if a.out.exists():p.error('report exists')
@@ -88,13 +105,12 @@ def main():
         report['cases'].append({'case':c['name'],'case_sha256':digest(case),'output_sha256':digest(target),**row})
     assert all(digest(Path(path))==sha for path,sha in inputs.items())
     costs={};missing=set()
-    for r,m in zip(runs,manifests):
-        while True:
-            costs[m['run_id']]=m['wrapper_wall_s'];origin=Path(m['warm_start']['directory']);parent=origin.parent/'manifest.json'
-            if not parent.exists():
-                if not origin.exists():missing.add(str(origin))
-                break
-            m=json.loads(parent.read_text())
+    for r in runs:
+        known,unavailable=ancestor_costs(r)
+        for name,value in known.items():
+            if name in costs:assert costs[name]==value
+            costs[name]=value
+        missing.update(unavailable)
     report.update(score=leaderboard(scores).to_dict(),known_ancestry_wrapper_wall_s=sum(costs.values()),known_ancestry_runs=costs,missing_ancestor_artifacts=sorted(missing),selection_wall_s=time.perf_counter()-start,source_sha256=digest(Path(__file__)))
     report['official_rescore_process']=execute([str(ROOT/'.venv/bin/python'),'-m','m3d.cli','score-suite','--suite',a.suite,'--submission-dir',str(out/'routes'),'--out',str(out/'official-rescore.json')],out,'official-rescore',180)
     assert report['official_rescore_process']['exit_code']==0;official=json.loads((out/'official-rescore.json').read_text());assert official['complete'] and official['aggregate_score']==report['score']['aggregate_score']

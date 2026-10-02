@@ -1,0 +1,130 @@
+{
+  "plan": {
+    "coverage": "docs/evidence/phase3/tier-eligibility-followup-coverage.json",
+    "common": {
+      "mode": "fanout_fine_escape",
+      "seed": 1,
+      "passes": 1000,
+      "budget": 60,
+      "work_budget": 10000000,
+      "group_limit": 3,
+      "accept_equal": true,
+      "present_initial": 2
+    },
+    "stages": [
+      {
+        "tier": "designs",
+        "settings": {
+          "present_step": 2,
+          "history_step": 2,
+          "escape_penalty": 8
+        }
+      },
+      {
+        "tier": "congested",
+        "settings": {
+          "present_step": 4,
+          "history_step": 4,
+          "escape_direct": true
+        }
+      }
+    ],
+    "scope": "Fixed full tiers after declared repeated development tuning. Added effort,not matched full-tier superiority."
+  },
+  "plan_sha256": "11fdaf9392b13cb290c1cdf8352d6ba5cba2dc023150cc5a7cf7f8c0bcb94b74",
+  "runner_sha256": "bdc113c890d15d71e086a9de3d5ffd62c95f168a8fba1d9fc9c9940620eee6b1",
+  "coverage_sha256": "8fe3b74c9933945dd1bffd05b5690cff318cc8af3507cce5989610b93261a24f",
+  "workers": 1,
+  "rows": [
+    {
+      "tier": "designs",
+      "run_id": "20261002T175220.185194Z-exact-polish",
+      "previous_run": "20261002T164022.756160Z-exact-polish",
+      "manifest_sha256": "c158779f172b8e4329ae74ba6c49bff2666cebfa878de2e5eacba4f6f3150fc6",
+      "config": {
+        "suite": "benchmarks_designs",
+        "case": null,
+        "donor_dir": null,
+        "mode": "fanout_fine_escape",
+        "budget": 60.0,
+        "work_budget": 10000000,
+        "present_initial": 2,
+        "present_step": 2,
+        "history_step": 2,
+        "polish_order": 0,
+        "repair_first": false,
+        "repair_sampling": 0,
+        "escape_direct": false,
+        "escape_penalty": 8,
+        "escape_options": 2,
+        "accept_equal": true,
+        "group_limit": 3,
+        "seed": 1,
+        "passes": 1000,
+        "resume_dir": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T164022.756160Z-exact-polish/routes"
+      },
+      "score": 1.2405097243072432,
+      "improved_cases": 3,
+      "n_cases": 3,
+      "counters": {
+        "eligibility_searches": 404,
+        "eligibility_recovered": 91,
+        "eligibility_attempts": 91,
+        "eligibility_strict": 19,
+        "eligibility_neutral": 42,
+        "eligibility_gain": 116,
+        "eligibility_failed": 5,
+        "eligibility_nonimproving": 25,
+        "neutral_moves": 101,
+        "polish_improvements": 38
+      },
+      "wrapper_wall_s": 14.432750215986744
+    },
+    {
+      "tier": "congested",
+      "run_id": "20261002T175234.759992Z-exact-polish",
+      "previous_run": "20261002T164011.751136Z-exact-polish",
+      "manifest_sha256": "4a556972c7cd2b48fe09dd093458fb3da84d153464783af9c98ce394252b9c3b",
+      "config": {
+        "suite": "benchmarks_congested",
+        "case": null,
+        "donor_dir": null,
+        "mode": "fanout_fine_escape",
+        "budget": 60.0,
+        "work_budget": 10000000,
+        "present_initial": 2,
+        "present_step": 4,
+        "history_step": 4,
+        "polish_order": 0,
+        "repair_first": false,
+        "repair_sampling": 0,
+        "escape_direct": true,
+        "escape_penalty": 4,
+        "escape_options": 2,
+        "accept_equal": true,
+        "group_limit": 3,
+        "seed": 1,
+        "passes": 1000,
+        "resume_dir": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T164011.751136Z-exact-polish/routes"
+      },
+      "score": 1.1055495435969123,
+      "improved_cases": 4,
+      "n_cases": 4,
+      "counters": {
+        "eligibility_searches": 704,
+        "eligibility_recovered": 195,
+        "eligibility_attempts": 195,
+        "eligibility_strict": 28,
+        "eligibility_neutral": 97,
+        "eligibility_gain": 566,
+        "eligibility_failed": 0,
+        "eligibility_nonimproving": 70,
+        "neutral_moves": 175,
+        "polish_improvements": 49
+      },
+      "wrapper_wall_s": 19.934064885019325
+    }
+  ],
+  "complete": true,
+  "total_wrapper_wall_s": 34.36681510100607
+}

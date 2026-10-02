@@ -1,0 +1,489 @@
+{
+  "revision": "0a8e052944432de0c657f3d45d6838394e627d63",
+  "scope": "Current six evaluator modules with pinned unchanged auxiliary modules and benchmark inputs; benchmark tree identity checked separately.",
+  "rows": [
+    {
+      "tier": "intro",
+      "result": {
+        "format": "m3d-leaderboard",
+        "complete": true,
+        "aggregate_score": 1.1027993426079046,
+        "n_cases": 20,
+        "n_legal": 20,
+        "formula": "aggregate = geomean_c(baseline_total_c / submission_total_c); higher is better; baseline scores 1.0; all cases must be legal for a complete ranked submission (else aggregate = 0.0)",
+        "cases": [
+          {
+            "case": "case_01",
+            "legal": true,
+            "total_delay": 206,
+            "baseline_delay": 240,
+            "ratio": 1.1650485436893203,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_02",
+            "legal": true,
+            "total_delay": 1030,
+            "baseline_delay": 1190,
+            "ratio": 1.1553398058252426,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_03",
+            "legal": true,
+            "total_delay": 1623,
+            "baseline_delay": 1757,
+            "ratio": 1.0825631546518792,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_04",
+            "legal": true,
+            "total_delay": 2042,
+            "baseline_delay": 2162,
+            "ratio": 1.058765915768854,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_05",
+            "legal": true,
+            "total_delay": 3853,
+            "baseline_delay": 4197,
+            "ratio": 1.089281079678173,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_06",
+            "legal": true,
+            "total_delay": 5397,
+            "baseline_delay": 6155,
+            "ratio": 1.1404483972577357,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_07",
+            "legal": true,
+            "total_delay": 5421,
+            "baseline_delay": 5855,
+            "ratio": 1.0800590296993176,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_08",
+            "legal": true,
+            "total_delay": 7783,
+            "baseline_delay": 8549,
+            "ratio": 1.0984196325324425,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_09",
+            "legal": true,
+            "total_delay": 8288,
+            "baseline_delay": 9728,
+            "ratio": 1.1737451737451738,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_10",
+            "legal": true,
+            "total_delay": 10911,
+            "baseline_delay": 11969,
+            "ratio": 1.0969663642195948,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_11",
+            "legal": true,
+            "total_delay": 12788,
+            "baseline_delay": 14142,
+            "ratio": 1.1058805129809197,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_12",
+            "legal": true,
+            "total_delay": 16737,
+            "baseline_delay": 18509,
+            "ratio": 1.1058732150325625,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_13",
+            "legal": true,
+            "total_delay": 20473,
+            "baseline_delay": 22599,
+            "ratio": 1.103844087334538,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_14",
+            "legal": true,
+            "total_delay": 22301,
+            "baseline_delay": 24481,
+            "ratio": 1.0977534639702256,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_15",
+            "legal": true,
+            "total_delay": 25504,
+            "baseline_delay": 27648,
+            "ratio": 1.0840652446675032,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_16",
+            "legal": true,
+            "total_delay": 34864,
+            "baseline_delay": 37902,
+            "ratio": 1.0871385956860946,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_17",
+            "legal": true,
+            "total_delay": 45728,
+            "baseline_delay": 49554,
+            "ratio": 1.0836686494051784,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_18",
+            "legal": true,
+            "total_delay": 49077,
+            "baseline_delay": 53805,
+            "ratio": 1.0963384069930926,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_19",
+            "legal": true,
+            "total_delay": 41944,
+            "baseline_delay": 45488,
+            "ratio": 1.0844936105283234,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_20",
+            "legal": true,
+            "total_delay": 48080,
+            "baseline_delay": 51660,
+            "ratio": 1.074459234608985,
+            "runtime_s": null,
+            "reasons": []
+          }
+        ]
+      }
+    },
+    {
+      "tier": "hard",
+      "result": {
+        "format": "m3d-leaderboard",
+        "complete": true,
+        "aggregate_score": 1.2687429716684697,
+        "n_cases": 9,
+        "n_legal": 9,
+        "formula": "aggregate = geomean_c(baseline_total_c / submission_total_c); higher is better; baseline scores 1.0; all cases must be legal for a complete ranked submission (else aggregate = 0.0)",
+        "cases": [
+          {
+            "case": "case_01",
+            "legal": true,
+            "total_delay": 9098,
+            "baseline_delay": 11938,
+            "ratio": 1.3121565179160255,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_02",
+            "legal": true,
+            "total_delay": 14400,
+            "baseline_delay": 18910,
+            "ratio": 1.3131944444444446,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_03",
+            "legal": true,
+            "total_delay": 11872,
+            "baseline_delay": 14724,
+            "ratio": 1.2402291105121295,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_04",
+            "legal": true,
+            "total_delay": 14189,
+            "baseline_delay": 18077,
+            "ratio": 1.2740150821058567,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_05",
+            "legal": true,
+            "total_delay": 16595,
+            "baseline_delay": 21051,
+            "ratio": 1.2685146128351914,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_06",
+            "legal": true,
+            "total_delay": 22068,
+            "baseline_delay": 27134,
+            "ratio": 1.229563168388617,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_07",
+            "legal": true,
+            "total_delay": 23221,
+            "baseline_delay": 31341,
+            "ratio": 1.3496834761638172,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_08",
+            "legal": true,
+            "total_delay": 25122,
+            "baseline_delay": 30886,
+            "ratio": 1.229440331183823,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_09",
+            "legal": true,
+            "total_delay": 22998,
+            "baseline_delay": 27802,
+            "ratio": 1.2088877293677711,
+            "runtime_s": null,
+            "reasons": []
+          }
+        ]
+      }
+    },
+    {
+      "tier": "scale",
+      "result": {
+        "format": "m3d-leaderboard",
+        "complete": true,
+        "aggregate_score": 1.0517899452851953,
+        "n_cases": 8,
+        "n_legal": 8,
+        "formula": "aggregate = geomean_c(baseline_total_c / submission_total_c); higher is better; baseline scores 1.0; all cases must be legal for a complete ranked submission (else aggregate = 0.0)",
+        "cases": [
+          {
+            "case": "case_01",
+            "legal": true,
+            "total_delay": 42670,
+            "baseline_delay": 45088,
+            "ratio": 1.0566674478556364,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_02",
+            "legal": true,
+            "total_delay": 48874,
+            "baseline_delay": 51828,
+            "ratio": 1.0604411343454598,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_03",
+            "legal": true,
+            "total_delay": 59302,
+            "baseline_delay": 62452,
+            "ratio": 1.0531179386867222,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_04",
+            "legal": true,
+            "total_delay": 61756,
+            "baseline_delay": 66106,
+            "ratio": 1.0704384999028433,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_05",
+            "legal": true,
+            "total_delay": 70549,
+            "baseline_delay": 74371,
+            "ratio": 1.0541751123332719,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_06",
+            "legal": true,
+            "total_delay": 83641,
+            "baseline_delay": 86553,
+            "ratio": 1.0348154613168183,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_07",
+            "legal": true,
+            "total_delay": 91917,
+            "baseline_delay": 96835,
+            "ratio": 1.0535047923670269,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_08",
+            "legal": true,
+            "total_delay": 117451,
+            "baseline_delay": 121175,
+            "ratio": 1.03170683944794,
+            "runtime_s": null,
+            "reasons": []
+          }
+        ]
+      }
+    },
+    {
+      "tier": "congested",
+      "result": {
+        "format": "m3d-leaderboard",
+        "complete": true,
+        "aggregate_score": 1.1120190456684313,
+        "n_cases": 4,
+        "n_legal": 4,
+        "formula": "aggregate = geomean_c(baseline_total_c / submission_total_c); higher is better; baseline scores 1.0; all cases must be legal for a complete ranked submission (else aggregate = 0.0)",
+        "cases": [
+          {
+            "case": "case_01",
+            "legal": true,
+            "total_delay": 59285,
+            "baseline_delay": 71049,
+            "ratio": 1.198431306401282,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_02",
+            "legal": true,
+            "total_delay": 111764,
+            "baseline_delay": 122534,
+            "ratio": 1.096363766507999,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_03",
+            "legal": true,
+            "total_delay": 199539,
+            "baseline_delay": 216835,
+            "ratio": 1.0866797969319282,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "case_04",
+            "legal": true,
+            "total_delay": 218611,
+            "baseline_delay": 234127,
+            "ratio": 1.0709753855021018,
+            "runtime_s": null,
+            "reasons": []
+          }
+        ]
+      }
+    },
+    {
+      "tier": "designs",
+      "result": {
+        "format": "m3d-leaderboard",
+        "complete": true,
+        "aggregate_score": 1.2520683047092604,
+        "n_cases": 3,
+        "n_legal": 3,
+        "formula": "aggregate = geomean_c(baseline_total_c / submission_total_c); higher is better; baseline scores 1.0; all cases must be legal for a complete ranked submission (else aggregate = 0.0)",
+        "cases": [
+          {
+            "case": "ctrl",
+            "legal": true,
+            "total_delay": 57682,
+            "baseline_delay": 73148,
+            "ratio": 1.2681252383759232,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "int2float",
+            "legal": true,
+            "total_delay": 107202,
+            "baseline_delay": 152284,
+            "ratio": 1.4205331990074812,
+            "runtime_s": null,
+            "reasons": []
+          },
+          {
+            "case": "router",
+            "legal": true,
+            "total_delay": 75707,
+            "baseline_delay": 82491,
+            "ratio": 1.0896086227165256,
+            "runtime_s": null,
+            "reasons": []
+          }
+        ]
+      }
+    },
+    {
+      "tier": "stress",
+      "result": {
+        "format": "m3d-leaderboard",
+        "complete": true,
+        "aggregate_score": 1.0216409732905487,
+        "n_cases": 1,
+        "n_legal": 1,
+        "formula": "aggregate = geomean_c(baseline_total_c / submission_total_c); higher is better; baseline scores 1.0; all cases must be legal for a complete ranked submission (else aggregate = 0.0)",
+        "cases": [
+          {
+            "case": "case_01",
+            "legal": true,
+            "total_delay": 1120652,
+            "baseline_delay": 1144904,
+            "ratio": 1.0216409732905487,
+            "runtime_s": null,
+            "reasons": []
+          }
+        ]
+      }
+    }
+  ]
+}

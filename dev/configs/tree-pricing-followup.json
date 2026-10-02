@@ -1,0 +1,76 @@
+{
+  "coverage": "docs/evidence/phase3/tier-eligibility-followup-coverage.json",
+  "common": {
+    "mode": "fanout_fine_escape",
+    "seed": 1,
+    "passes": 1000,
+    "budget": 60,
+    "work_budget": 20000000,
+    "present_initial": 2
+  },
+  "stages": [
+    {
+      "tier": "intro",
+      "settings": {
+        "group_limit": 13,
+        "present_step": 2,
+        "history_step": 2,
+        "tree_prices": 0
+      }
+    },
+    {
+      "tier": "hard",
+      "settings": {
+        "group_limit": 13,
+        "present_step": 1,
+        "history_step": 1,
+        "tree_prices": 2,
+        "accept_equal": true
+      }
+    },
+    {
+      "tier": "scale",
+      "settings": {
+        "group_limit": 3,
+        "present_step": 2,
+        "history_step": 2,
+        "tree_prices": 0,
+        "mode": "fanout_fine_adaptive"
+      }
+    },
+    {
+      "tier": "congested",
+      "settings": {
+        "group_limit": 3,
+        "present_step": 4,
+        "history_step": 4,
+        "tree_prices": 1,
+        "accept_equal": true,
+        "escape_direct": true
+      },
+      "resume_dir": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T175234.759992Z-exact-polish/routes"
+    },
+    {
+      "tier": "designs",
+      "settings": {
+        "group_limit": 3,
+        "present_step": 2,
+        "history_step": 2,
+        "tree_prices": 1,
+        "accept_equal": true,
+        "escape_penalty": 8
+      },
+      "resume_dir": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T175220.185194Z-exact-polish/routes"
+    },
+    {
+      "tier": "stress",
+      "settings": {
+        "group_limit": 13,
+        "present_step": 2,
+        "history_step": 2,
+        "tree_prices": 0
+      }
+    }
+  ],
+  "scope": "Added fixedseed1 full45case continuation20M. Price model selected from declared development screen only:hard2,designs/congested1;scale adaptive0 after escape development rejection;intro/stress0 unchanged. Hard08/09 fixed validation only. No matched full-tier superiority claim."
+}
