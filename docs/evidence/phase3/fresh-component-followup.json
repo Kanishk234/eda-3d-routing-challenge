@@ -1,0 +1,157 @@
+{
+  "plan": {
+    "cases": [
+      {
+        "suite": "benchmarks",
+        "case_file": "case_05.json"
+      }
+    ],
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "methods": [
+      "star",
+      "merge"
+    ],
+    "work_budget": 10000000,
+    "budget": 120,
+    "rounds": 24,
+    "scope": "Fixed expanded pilot on medium intro05 after both methods lacked legality at1M. Compare fresh constructions, not existing C++ incumbent quality. No competitor/reference route warm start. Six serial trials, up to720s routing safety total plus checking overhead."
+  },
+  "frozen_sha256": {
+    "/home/younix/eda-3d-routing-challenge/dev/configs/fresh-component-followup.json": "98cfa3a3bb43157fe2cd92d29fb9c499d28148ae8b05a4b6b12ccaf25c942012",
+    "/home/younix/eda-3d-routing-challenge/dev/fresh_construction_screen.py": "895f57df2a18b7d151e719fd2c6a40d5d34c08e0abe7994e03ee22d3025ed892",
+    "/home/younix/eda-3d-routing-challenge/dev/component_router.py": "1e3f3afd115041ae82115a88ecafc02f5e9f24d8543d109f901bbc72936cbd66",
+    "/home/younix/eda-3d-routing-challenge/dev/branch_repair.py": "fac12b4771279883b09714a76b9e05837450c8458cd4d780385ff7cb7e4e3a13",
+    "/home/younix/eda-3d-routing-challenge/dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6/benchmarks/case_05.json": "bc8121afd69bf79056e4521147ee7b92f5c95714b3c49058dfce7ed0f578d43b"
+  },
+  "status": "complete",
+  "rows": [
+    {
+      "legal": true,
+      "delay": 3989,
+      "expansions": 7177673,
+      "stats": {
+        "component_connections": 1464,
+        "rounds": 24,
+        "conflicting_vertices": 151
+      },
+      "wall_s": 41.31796898599714,
+      "output_sha256": "069de3fe4311e5a35b598c90e14cb29894d50bc078e2cf5db318d5ad81af638a",
+      "case": {
+        "suite": "benchmarks",
+        "case_file": "case_05.json"
+      },
+      "seed": 1,
+      "method": "star",
+      "run": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002-fresh-component-followup/benchmarks-case_05-1-star",
+      "manifest_sha256": "218d859c233f7f31bfcaf5c3bc4bb28ba80afbdb7eeb96c0d6f0776121a3e66c"
+    },
+    {
+      "legal": true,
+      "delay": 4185,
+      "expansions": 4042585,
+      "stats": {
+        "component_connections": 1464,
+        "rounds": 24,
+        "conflicting_vertices": 122
+      },
+      "wall_s": 25.359898141003214,
+      "output_sha256": "f1ab33e6d6b82d2011e9409e068301c7ce1e4a36c95b5b26a320f47b35d1cea0",
+      "case": {
+        "suite": "benchmarks",
+        "case_file": "case_05.json"
+      },
+      "seed": 1,
+      "method": "merge",
+      "run": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002-fresh-component-followup/benchmarks-case_05-1-merge",
+      "manifest_sha256": "0e6d6d1ea7245b5b78bfdc023b1e391af0eb747b18ae3a2d392744b59d36e778"
+    },
+    {
+      "legal": true,
+      "delay": 3993,
+      "expansions": 7204463,
+      "stats": {
+        "component_connections": 1464,
+        "rounds": 24,
+        "conflicting_vertices": 144
+      },
+      "wall_s": 44.528124283999205,
+      "output_sha256": "96d08c80c2f76ec8fae18b47b145000aaccc5597593d288da259d70cc20b9680",
+      "case": {
+        "suite": "benchmarks",
+        "case_file": "case_05.json"
+      },
+      "seed": 2,
+      "method": "star",
+      "run": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002-fresh-component-followup/benchmarks-case_05-2-star",
+      "manifest_sha256": "6295ecc666d8ecae3d6765bd92717470b2f41c3db2d45b874952329d3a7812a2"
+    },
+    {
+      "legal": true,
+      "delay": 4183,
+      "expansions": 4056684,
+      "stats": {
+        "component_connections": 1464,
+        "rounds": 24,
+        "conflicting_vertices": 113
+      },
+      "wall_s": 25.82295331801288,
+      "output_sha256": "de72777540d408bb216d9681f9885ec29c74eaf6f6b195e95a20ca37891b4f0a",
+      "case": {
+        "suite": "benchmarks",
+        "case_file": "case_05.json"
+      },
+      "seed": 2,
+      "method": "merge",
+      "run": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002-fresh-component-followup/benchmarks-case_05-2-merge",
+      "manifest_sha256": "5e67511569286607453875e0f8578f2021cf0191643b71ae58df13db5ef22900"
+    },
+    {
+      "legal": true,
+      "delay": 3905,
+      "expansions": 6978279,
+      "stats": {
+        "component_connections": 1464,
+        "rounds": 24,
+        "conflicting_vertices": 123
+      },
+      "wall_s": 41.41625311301323,
+      "output_sha256": "c0ec2f39f698560de6caaf94df7434ef277e9ec4600f90ea1a48fcf3f259918e",
+      "case": {
+        "suite": "benchmarks",
+        "case_file": "case_05.json"
+      },
+      "seed": 3,
+      "method": "star",
+      "run": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002-fresh-component-followup/benchmarks-case_05-3-star",
+      "manifest_sha256": "a64987b872c559e47c51646dd4e9aeb71ffb6a6961cf165f92df8f9194e7f3a5"
+    },
+    {
+      "legal": true,
+      "delay": 4207,
+      "expansions": 4120181,
+      "stats": {
+        "component_connections": 1464,
+        "rounds": 24,
+        "conflicting_vertices": 133
+      },
+      "wall_s": 25.559234148997348,
+      "output_sha256": "2ac6c1dea42ea81e532ae74fd8c316c8f45c7dad7e7d9920f0ca20ce1d19551f",
+      "case": {
+        "suite": "benchmarks",
+        "case_file": "case_05.json"
+      },
+      "seed": 3,
+      "method": "merge",
+      "run": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002-fresh-component-followup/benchmarks-case_05-3-merge",
+      "manifest_sha256": "761dcb946ca162d62cc484e18d9f7268864adc8d179f848c01669f36d54f7854"
+    }
+  ],
+  "workers": 1,
+  "scope": "Fresh route construction with no warm starts. Every trial retained, failures included. Expansion ceiling and round ceiling do not imply equal CPU. No full-tier competitiveness claim.",
+  "current": null,
+  "elapsed_wall_s": 204.8559334499878
+}

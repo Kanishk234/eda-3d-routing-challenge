@@ -1,0 +1,12 @@
+{
+  "suite": "benchmarks_congested",
+  "runs": [
+    "20261002T185248.178956Z-exact-polish",
+    "20261002T184615.403638Z-exact-polish",
+    "20261002T184928.216993Z-exact-polish",
+    "20261002T183107.714874Z-exact-polish"
+  ],
+  "seconds": 30,
+  "deterministic_time": 10,
+  "scope": "Declared own continuation stages and prior checkpoint; no competitor routes."
+}

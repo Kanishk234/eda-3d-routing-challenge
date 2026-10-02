@@ -1,0 +1,24 @@
+{
+  "coverage": "docs/evidence/phase3/tier-independent-continuation-coverage.json",
+  "tier": "hard",
+  "cases": [
+    "case_01",
+    "case_04",
+    "case_07"
+  ],
+  "pairs_per_case": 2,
+  "margin": 2,
+  "seconds": 30,
+  "deterministic_time": 10,
+  "proposal_work": 5000000,
+  "proposal_seconds": 60,
+  "scope": "Matched broader corridor CBS screen: up to4 nets,margin2,1M/group,all3 development cases. Avoidance tie-break on/off; no physical-distance modification.",
+  "max_group": 4,
+  "discovery_options": 5,
+  "prune_arcs": true,
+  "solver": "cbs",
+  "all_fanouts": true,
+  "strict_improvement": false,
+  "cbs_work_budget": 1000000,
+  "avoid_ties": true
+}

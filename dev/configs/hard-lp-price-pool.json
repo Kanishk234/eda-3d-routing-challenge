@@ -1,0 +1,18 @@
+{
+  "coverage": "docs/evidence/phase3/tier-independent-next-coverage.json",
+  "tier": "hard",
+  "cases": [
+    "case_01",
+    "case_04",
+    "case_07"
+  ],
+  "work_budget": 40000000,
+  "budget": 90,
+  "seed": 1,
+  "rounds": 12,
+  "price_step": 32,
+  "solve_seconds": 10,
+  "solve_deterministic": 2,
+  "scope": "Three development cases; LP dual vertex prices from finite tree pool,12 proposal rounds40M/case90s safety. Multi-sink priced oracle is heuristic; no global bound. Own routes only.",
+  "pricing": "lp"
+}

@@ -1,0 +1,235 @@
+{
+  "plan": {
+    "coverage": "docs/evidence/phase3/tier-independent-next-coverage.json",
+    "tier": "hard",
+    "cases": [
+      "case_01",
+      "case_04",
+      "case_07"
+    ],
+    "work_budget": 20000000,
+    "budget": 90,
+    "seed": 1,
+    "rounds": 6,
+    "price_step": 32,
+    "solve_seconds": 10,
+    "solve_deterministic": 2,
+    "scope": "Fixed three-case development screen. Adaptive shared vertex prices,6 proposal rounds,20M/case and90s safety. Own routes only; no aggregate tier claim."
+  },
+  "status": "complete",
+  "frozen_sha256": {
+    "/home/younix/eda-3d-routing-challenge/dev/configs/hard-adaptive-price-pool.json": "da8225ba80a853c4155042d87b9fb0674782ed7dc030b81df1723fe76eeb5c75",
+    "/home/younix/eda-3d-routing-challenge/dev/adaptive_price_pool.py": "33ac33fc38326043d89f2dca5f5667a50aaf50558fefc095dcfd846f7c7b66f1",
+    "/home/younix/eda-3d-routing-challenge/docs/evidence/phase3/tier-independent-next-coverage.json": "aad3b44fbf7ace129324798c982811067077c8a4e9db9f9ff5d3170791eb6ead",
+    "/home/younix/eda-3d-routing-challenge/dev/branch_repair.py": "fac12b4771279883b09714a76b9e05837450c8458cd4d780385ff7cb7e4e3a13",
+    "/home/younix/eda-3d-routing-challenge/dev/select_tree_pool.py": "e8905011506abe7513a85f113b33797d458ef067366e33cd6d71b6f0b7219725"
+  },
+  "rows": [
+    {
+      "case": "case_01",
+      "case_sha256": "685a165a7a15811dff12839e0dbe79752b889558213f760ad5f0df6139766f5d",
+      "start_sha256": "f79a45f1408276504fd64e1d21e3d307f8b7c732031b23b5747a977966c98dd2",
+      "output_sha256": "2dace420289df5d5945f175b043b1435039170ef6909b1a9816bf689a790d321",
+      "before_delay": 9068,
+      "after_delay": 9068,
+      "legal": true,
+      "rounds": [
+        {
+          "round": 1,
+          "generated_nets": 62,
+          "conflicts": 1110,
+          "relaxed_physical_delay": 7156,
+          "expansions": 142838
+        },
+        {
+          "round": 2,
+          "generated_nets": 62,
+          "conflicts": 1045,
+          "relaxed_physical_delay": 7708,
+          "expansions": 287907
+        },
+        {
+          "round": 3,
+          "generated_nets": 62,
+          "conflicts": 836,
+          "relaxed_physical_delay": 8442,
+          "expansions": 437092
+        },
+        {
+          "round": 4,
+          "generated_nets": 62,
+          "conflicts": 770,
+          "relaxed_physical_delay": 8588,
+          "expansions": 584941
+        },
+        {
+          "round": 5,
+          "generated_nets": 62,
+          "conflicts": 946,
+          "relaxed_physical_delay": 8654,
+          "expansions": 730002
+        },
+        {
+          "round": 6,
+          "generated_nets": 62,
+          "conflicts": 525,
+          "relaxed_physical_delay": 8928,
+          "expansions": 876387
+        }
+      ],
+      "limit_reached": false,
+      "expansions": 876387,
+      "wall_s": 2.897732656041626,
+      "selection": {
+        "status": "OPTIMAL",
+        "restricted_optimal": true,
+        "fallback_base": false,
+        "best_bound": 9068.0,
+        "chosen_delay": 9068,
+        "base_delay": 9068,
+        "variables": 413,
+        "vertex_constraints": 1593,
+        "wall_s": 0.018321349,
+        "deterministic_time": 0.0005891700000000001
+      }
+    },
+    {
+      "case": "case_04",
+      "case_sha256": "06324939b75971e45caa9e7f19d824a254e0f61167dd6b279bbff612d77d96f1",
+      "start_sha256": "a9abc805a79a9e3d34d39fa320c466505db04daa7a89428853bbf4f79358f5bf",
+      "output_sha256": "a9abc805a79a9e3d34d39fa320c466505db04daa7a89428853bbf4f79358f5bf",
+      "before_delay": 14171,
+      "after_delay": 14171,
+      "legal": true,
+      "rounds": [
+        {
+          "round": 1,
+          "generated_nets": 78,
+          "conflicts": 1555,
+          "relaxed_physical_delay": 10253,
+          "expansions": 269570
+        },
+        {
+          "round": 2,
+          "generated_nets": 78,
+          "conflicts": 1885,
+          "relaxed_physical_delay": 10993,
+          "expansions": 547918
+        },
+        {
+          "round": 3,
+          "generated_nets": 78,
+          "conflicts": 1767,
+          "relaxed_physical_delay": 11857,
+          "expansions": 832598
+        },
+        {
+          "round": 4,
+          "generated_nets": 78,
+          "conflicts": 1507,
+          "relaxed_physical_delay": 12401,
+          "expansions": 1121660
+        },
+        {
+          "round": 5,
+          "generated_nets": 78,
+          "conflicts": 1628,
+          "relaxed_physical_delay": 12405,
+          "expansions": 1412227
+        },
+        {
+          "round": 6,
+          "generated_nets": 78,
+          "conflicts": 1283,
+          "relaxed_physical_delay": 13445,
+          "expansions": 1705264
+        }
+      ],
+      "limit_reached": false,
+      "expansions": 1705264,
+      "wall_s": 4.930906668014359,
+      "selection": {
+        "status": "OPTIMAL",
+        "restricted_optimal": true,
+        "fallback_base": false,
+        "best_bound": 14171.0,
+        "chosen_delay": 14171,
+        "base_delay": 14171,
+        "variables": 511,
+        "vertex_constraints": 2448,
+        "wall_s": 0.017600354000000002,
+        "deterministic_time": 0.000843642
+      }
+    },
+    {
+      "case": "case_07",
+      "case_sha256": "e3475bed19f53670482b4b864a276c475b47e1cac7237d8fa26eeb48714de8f0",
+      "start_sha256": "f1ba5e25b013353c89c1887e38c5b1bd0f9c9b14444e219b7b50209790d43118",
+      "output_sha256": "f1ba5e25b013353c89c1887e38c5b1bd0f9c9b14444e219b7b50209790d43118",
+      "before_delay": 23093,
+      "after_delay": 23093,
+      "legal": true,
+      "rounds": [
+        {
+          "round": 1,
+          "generated_nets": 94,
+          "conflicts": 2725,
+          "relaxed_physical_delay": 16461,
+          "expansions": 463620
+        },
+        {
+          "round": 2,
+          "generated_nets": 94,
+          "conflicts": 3219,
+          "relaxed_physical_delay": 17483,
+          "expansions": 943539
+        },
+        {
+          "round": 3,
+          "generated_nets": 94,
+          "conflicts": 2765,
+          "relaxed_physical_delay": 19217,
+          "expansions": 1431834
+        },
+        {
+          "round": 4,
+          "generated_nets": 94,
+          "conflicts": 2705,
+          "relaxed_physical_delay": 19679,
+          "expansions": 1915554
+        },
+        {
+          "round": 5,
+          "generated_nets": 94,
+          "conflicts": 2472,
+          "relaxed_physical_delay": 20933,
+          "expansions": 2410003
+        },
+        {
+          "round": 6,
+          "generated_nets": 94,
+          "conflicts": 2322,
+          "relaxed_physical_delay": 21417,
+          "expansions": 2903184
+        }
+      ],
+      "limit_reached": false,
+      "expansions": 2903184,
+      "wall_s": 9.649583179038018,
+      "selection": {
+        "status": "OPTIMAL",
+        "restricted_optimal": true,
+        "fallback_base": false,
+        "best_bound": 23093.0,
+        "chosen_delay": 23093,
+        "base_delay": 23093,
+        "variables": 621,
+        "vertex_constraints": 3657,
+        "wall_s": 0.015853337000000002,
+        "deterministic_time": 0.0011941579999999999
+      }
+    }
+  ],
+  "workers": 1,
+  "scope": "Adaptive heuristic pricing; no multi-sink oracle exactness or global lower bound. Own baseline always retained; final finite-pool CP selection plus full official checker."
+}

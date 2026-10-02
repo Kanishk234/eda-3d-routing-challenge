@@ -1,0 +1,125 @@
+{
+  "plan": {
+    "coverage": "docs/evidence/phase3/tier-three-round-continuation-coverage.json",
+    "common": {
+      "mode": "polish",
+      "seed": 1,
+      "passes": 1,
+      "budget": 0,
+      "work_budget": 0
+    },
+    "stages": [
+      {
+        "tier": "hard",
+        "settings": {},
+        "resume_dir": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002-hard-tree-pool-checked/routes"
+      },
+      {
+        "tier": "congested",
+        "settings": {},
+        "resume_dir": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002-congested-tree-pool/routes"
+      }
+    ],
+    "scope": "Zero-work native checkpoints preserve CP-SAT selection; no native search improvement claim."
+  },
+  "plan_sha256": "b81fcd4e0b095c33320a608ecf9dbe1efbcd825e0ce81da624f60bf8298d1e68",
+  "runner_sha256": "bdc113c890d15d71e086a9de3d5ffd62c95f168a8fba1d9fc9c9940620eee6b1",
+  "coverage_sha256": "3c158f1f954df4c81a8a1ee82cb9c59eccda5df06681918eaf9919e8188a504c",
+  "workers": 1,
+  "rows": [
+    {
+      "tier": "hard",
+      "run_id": "20261002T191538.264265Z-exact-polish",
+      "previous_run": "20261002T185038.204620Z-exact-polish",
+      "manifest_sha256": "69fbece1b8b5125e9092653d22dcc04b50dd3235e79dea165e6bde70466c71f2",
+      "config": {
+        "suite": "benchmarks_hard",
+        "case": null,
+        "donor_dir": null,
+        "mode": "polish",
+        "budget": 0.0,
+        "work_budget": 0,
+        "present_initial": 2,
+        "present_step": 2,
+        "history_step": 2,
+        "polish_order": 0,
+        "repair_first": false,
+        "repair_sampling": 0,
+        "neutral_tabu": 0,
+        "tree_prices": 0,
+        "escape_direct": false,
+        "escape_penalty": 4,
+        "escape_options": 2,
+        "accept_equal": false,
+        "group_limit": 13,
+        "seed": 1,
+        "passes": 1,
+        "resume_dir": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002-hard-tree-pool-checked/routes"
+      },
+      "score": 1.2750711365059078,
+      "improved_cases": 0,
+      "n_cases": 9,
+      "counters": {
+        "eligibility_searches": 0,
+        "eligibility_recovered": 0,
+        "eligibility_attempts": 0,
+        "eligibility_strict": 0,
+        "eligibility_neutral": 0,
+        "eligibility_gain": 0,
+        "eligibility_failed": 0,
+        "eligibility_nonimproving": 0,
+        "neutral_moves": 0,
+        "polish_improvements": 0
+      },
+      "wrapper_wall_s": 1.7482861299649812
+    },
+    {
+      "tier": "congested",
+      "run_id": "20261002T191540.158533Z-exact-polish",
+      "previous_run": "20261002T185248.178956Z-exact-polish",
+      "manifest_sha256": "a22ba317ffc0dcf0ffd1f5b4dbd762c4c0d60dcb6472cc3f5dfae2d7a493751f",
+      "config": {
+        "suite": "benchmarks_congested",
+        "case": null,
+        "donor_dir": null,
+        "mode": "polish",
+        "budget": 0.0,
+        "work_budget": 0,
+        "present_initial": 2,
+        "present_step": 2,
+        "history_step": 2,
+        "polish_order": 0,
+        "repair_first": false,
+        "repair_sampling": 0,
+        "neutral_tabu": 0,
+        "tree_prices": 0,
+        "escape_direct": false,
+        "escape_penalty": 4,
+        "escape_options": 2,
+        "accept_equal": false,
+        "group_limit": 13,
+        "seed": 1,
+        "passes": 1,
+        "resume_dir": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002-congested-tree-pool/routes"
+      },
+      "score": 1.1206227053047342,
+      "improved_cases": 0,
+      "n_cases": 4,
+      "counters": {
+        "eligibility_searches": 0,
+        "eligibility_recovered": 0,
+        "eligibility_attempts": 0,
+        "eligibility_strict": 0,
+        "eligibility_neutral": 0,
+        "eligibility_gain": 0,
+        "eligibility_failed": 0,
+        "eligibility_nonimproving": 0,
+        "neutral_moves": 0,
+        "polish_improvements": 0
+      },
+      "wrapper_wall_s": 4.972930085961707
+    }
+  ],
+  "complete": true,
+  "total_wrapper_wall_s": 6.721216215926688
+}

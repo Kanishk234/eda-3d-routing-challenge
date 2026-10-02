@@ -1,0 +1,9 @@
+{
+  "cases": [{"suite": "benchmarks", "case_file": "case_05.json"}],
+  "seeds": [1, 2, 3],
+  "methods": ["star", "merge"],
+  "work_budget": 10000000,
+  "budget": 120,
+  "rounds": 24,
+  "scope": "Fixed expanded pilot on medium intro05 after both methods lacked legality at1M. Compare fresh constructions, not existing C++ incumbent quality. No competitor/reference route warm start. Six serial trials, up to720s routing safety total plus checking overhead."
+}

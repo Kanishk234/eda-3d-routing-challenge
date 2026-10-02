@@ -1,0 +1,17 @@
+{
+  "coverage": "docs/evidence/phase3/tier-independent-next-coverage.json",
+  "tier": "hard",
+  "cases": [
+    "case_01",
+    "case_04",
+    "case_07"
+  ],
+  "work_budget": 20000000,
+  "budget": 90,
+  "seed": 1,
+  "rounds": 6,
+  "price_step": 32,
+  "solve_seconds": 10,
+  "solve_deterministic": 2,
+  "scope": "Fixed three-case development screen. Adaptive shared vertex prices,6 proposal rounds,20M/case and90s safety. Own routes only; no aggregate tier claim."
+}

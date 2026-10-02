@@ -1,0 +1,16 @@
+{
+  "coverage": "docs/evidence/phase3/tier-exact-pool-coverage.json",
+  "tier": "hard",
+  "cases": [
+    "case_01",
+    "case_04",
+    "case_07"
+  ],
+  "pairs_per_case": 5,
+  "margin": 1,
+  "seconds": 10,
+  "deterministic_time": 1,
+  "proposal_work": 1000000,
+  "proposal_seconds": 30,
+  "scope": "First restricted corridor geometry pilot,development01/04/07only. Top improving ideal targets with exactlyone single-sinkblocker. Up to15pair solves;150s solver safety plus90s proposal safety,one worker. Own incumbents."
+}

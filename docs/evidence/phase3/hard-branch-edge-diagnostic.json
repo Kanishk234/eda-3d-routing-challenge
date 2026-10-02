@@ -1,0 +1,144 @@
+{
+  "tier": "hard",
+  "run_id": "20261002T184358.529171Z-exact-polish",
+  "coverage_sha256": "23c99c090a6dde25f43b249fad29f534b5f181ff03208e651baa7542423f2ca6",
+  "source_sha256": "9c3106045fd33b4135284bcb6eb889e45313dac19fea1a944904d32e8dfc5954",
+  "rows": [
+    {
+      "case": "case_01",
+      "case_sha256": "685a165a7a15811dff12839e0dbe79752b889558213f760ad5f0df6139766f5d",
+      "route_sha256": "01525c0de944c4c92ef447616a296463aa13a8d60116c66cfd916639dfeef33b",
+      "cut_edges": 1850,
+      "downstream_sink_histogram": {
+        "5": 99,
+        "2": 96,
+        "3": 157,
+        "1": 1263,
+        "4": 158,
+        "6": 77
+      },
+      "individually_verified_moves": []
+    },
+    {
+      "case": "case_02",
+      "case_sha256": "1017b8aac77273a25186858bf39dd66293d56aecebfc7b0e1f5a19c66a2d6c2e",
+      "route_sha256": "3c34c7bc227ae5488542ed90718d70daea3f522734e012293e305e552b404184",
+      "cut_edges": 2365,
+      "downstream_sink_histogram": {
+        "6": 211,
+        "2": 342,
+        "4": 160,
+        "1": 1302,
+        "3": 200,
+        "5": 150
+      },
+      "individually_verified_moves": []
+    },
+    {
+      "case": "case_03",
+      "case_sha256": "4783af0f84289f7d48d70b7428d2f7b8fbcdefaf2bdfca2bac237e874bd97858",
+      "route_sha256": "01b92165aaaa75f87bf7b9f030106dce4899832ca3d0ec3006ac20f21bd0bb2d",
+      "cut_edges": 2412,
+      "downstream_sink_histogram": {
+        "6": 79,
+        "1": 1557,
+        "5": 197,
+        "4": 169,
+        "3": 120,
+        "2": 290
+      },
+      "individually_verified_moves": []
+    },
+    {
+      "case": "case_04",
+      "case_sha256": "06324939b75971e45caa9e7f19d824a254e0f61167dd6b279bbff612d77d96f1",
+      "route_sha256": "b1e958d9e31ab16bb039fc7c9a68d53fff6fde327d2dafeb2639d3c80d8f3f58",
+      "cut_edges": 2832,
+      "downstream_sink_histogram": {
+        "6": 220,
+        "1": 1810,
+        "5": 43,
+        "3": 192,
+        "2": 383,
+        "4": 184
+      },
+      "individually_verified_moves": []
+    },
+    {
+      "case": "case_05",
+      "case_sha256": "51e44c96f14e5d3229047d6ee5ba2aa0faee94fb208f3f9e716310a0620306a1",
+      "route_sha256": "41b841eba5395c4aa6536c0b6d46c729e20a8c5ffec60231054539a9440ddd51",
+      "cut_edges": 3016,
+      "downstream_sink_histogram": {
+        "1": 1657,
+        "3": 335,
+        "2": 363,
+        "4": 380,
+        "6": 121,
+        "5": 160
+      },
+      "individually_verified_moves": []
+    },
+    {
+      "case": "case_06",
+      "case_sha256": "612b2680497826836de4d9553d8dc95d53f1d46fe07858cfdb74e43ce5582cba",
+      "route_sha256": "2ff2d5a0d192aebeaa583c5225f29cb9bc4407089c027f5e6e5c3bcb90315e43",
+      "cut_edges": 3751,
+      "downstream_sink_histogram": {
+        "6": 338,
+        "5": 277,
+        "1": 2131,
+        "4": 225,
+        "3": 353,
+        "2": 427
+      },
+      "individually_verified_moves": []
+    },
+    {
+      "case": "case_07",
+      "case_sha256": "e3475bed19f53670482b4b864a276c475b47e1cac7237d8fa26eeb48714de8f0",
+      "route_sha256": "de51c31d00de589d67083007ecc63bea3801e4d0196d317a231b2c69e7a204c2",
+      "cut_edges": 4108,
+      "downstream_sink_histogram": {
+        "6": 370,
+        "3": 272,
+        "2": 507,
+        "1": 2456,
+        "5": 262,
+        "4": 241
+      },
+      "individually_verified_moves": []
+    },
+    {
+      "case": "case_08",
+      "case_sha256": "b1dbc8ed8aab7cbb457987f4b8a877b9c2adda8575b326d9822523f090cec1f2",
+      "route_sha256": "ff5fa1b210464312867cd579630ec8ca62223d5dc9b03e42e2dc8d9225914b28",
+      "cut_edges": 4529,
+      "downstream_sink_histogram": {
+        "1": 2668,
+        "5": 303,
+        "3": 463,
+        "2": 575,
+        "4": 309,
+        "6": 211
+      },
+      "individually_verified_moves": []
+    },
+    {
+      "case": "case_09",
+      "case_sha256": "bcbd72a7bb47ec5c5f82428573ffabdb932594c4b574d552808851617b05f6c1",
+      "route_sha256": "13fdee052b671683632950e46d5358034d0f1765d616b93e1fe2b5c1edbd2ac5",
+      "cut_edges": 4456,
+      "downstream_sink_histogram": {
+        "1": 2751,
+        "5": 271,
+        "4": 307,
+        "3": 310,
+        "2": 503,
+        "6": 314
+      },
+      "individually_verified_moves": []
+    }
+  ],
+  "scope": "Read-only diagnostic. Each positive move independently officially validated. Moves across nets use unchanged own vertex sets; no competitor inputs. Restriction: one adjacent existing-tree attachment edge, not general branch rerouting or global optimality."
+}

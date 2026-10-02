@@ -1,0 +1,92 @@
+[
+  {
+    "experiment": "20261002-priced-candidates",
+    "snapshot": "dev/experiments/source-snapshots/20261002-priced-candidates/generate_tree_candidates.py",
+    "sha256": "20a79b93966478968eee80fcdf0c8ada2308acbb6c35da5c1acbf1b56a6a3173"
+  },
+  {
+    "experiment": "20261002-priced-candidates",
+    "snapshot": "dev/experiments/source-snapshots/20261002-priced-candidates/select_tree_pool.py",
+    "sha256": "e8905011506abe7513a85f113b33797d458ef067366e33cd6d71b6f0b7219725"
+  },
+  {
+    "experiment": "20261002-hard-exact-pairs",
+    "snapshot": "dev/experiments/source-snapshots/20261002-hard-exact-pairs/exact_pair_repair.py",
+    "sha256": "cb4897795ef5888f01e99d42f1649b54839357389ba42cc2673ae22dc113692f"
+  },
+  {
+    "experiment": "20261002-hard-exact-groups",
+    "snapshot": "dev/experiments/source-snapshots/20261002-hard-exact-groups/exact_pair_repair.py",
+    "sha256": "11e5dbde121d7f9ba65dd8bc4c30c184f579fa73a48eb73cb12790fd3bf43545"
+  },
+  {
+    "experiment": "20261002-hard-exact-groups-pruned",
+    "snapshot": "dev/experiments/source-snapshots/20261002-hard-exact-groups-pruned/exact_pair_repair.py",
+    "sha256": "d0cc23dd69ec435b70548b048c4d8ab55525270a2393e9fbc6e27671e8efa4b4"
+  },
+  {
+    "experiment": "20261002-hard-exact-trees",
+    "snapshot": "dev/experiments/source-snapshots/20261002-hard-exact-trees/exact_tree_repair.py",
+    "sha256": "d2c50b42e2e1bc3ca26cbafc55a2c7b3498aec645baea838fd7760f4a5218c8f"
+  },
+  {
+    "experiment": "20261002-hard-exact-trees",
+    "snapshot": "dev/experiments/source-snapshots/20261002-hard-exact-trees/exact_pair_repair.py",
+    "sha256": "a23abb886665d7cfe9e08542e5cc40752c1f474c23c0159991fdcbabc60148b5"
+  },
+  {
+    "experiment": "20261002-hard-exact-trees-strict",
+    "snapshot": "dev/experiments/source-snapshots/20261002-hard-exact-trees-strict/exact_tree_repair.py",
+    "sha256": "4922d2652a2098d402a29b8113e8ea6d6f52a59be5d0a8c43bd2e496b30c007a"
+  },
+  {
+    "experiment": "20261002-hard-exact-trees-strict",
+    "snapshot": "dev/experiments/source-snapshots/20261002-hard-exact-trees-strict/exact_pair_repair.py",
+    "sha256": "f860d40db652edd236d7d3a18e84e533ac8f39c26943034a7b83cabbef0ee37f"
+  },
+  {
+    "experiment": "20261002-hard-cbs-broad-control",
+    "snapshot": "dev/experiments/source-snapshots/20261002-hard-cbs-broad-control/static_cbs.py",
+    "sha256": "7e0893c42d9eabd465fe913546ddac44770bc3c96c469f8b7e5e8935b365372d"
+  },
+  {
+    "experiment": "20261002-hard-cbs-broad-control",
+    "snapshot": "dev/experiments/source-snapshots/20261002-hard-cbs-broad-control/exact_pair_repair.py",
+    "sha256": "5137bb8c79c4a56f7046e4c2e420381acf4b55a5663b152f1eae599588552094"
+  },
+  {
+    "experiment": "20261002-hard-cbs-broad-avoid",
+    "snapshot": "dev/experiments/source-snapshots/20261002-hard-cbs-broad-avoid/static_cbs.py",
+    "sha256": "7e0893c42d9eabd465fe913546ddac44770bc3c96c469f8b7e5e8935b365372d"
+  },
+  {
+    "experiment": "20261002-hard-cbs-broad-avoid",
+    "snapshot": "dev/experiments/source-snapshots/20261002-hard-cbs-broad-avoid/exact_pair_repair.py",
+    "sha256": "5137bb8c79c4a56f7046e4c2e420381acf4b55a5663b152f1eae599588552094"
+  },
+  {
+    "experiment": "20261002-hard-cbs-bypass",
+    "snapshot": "dev/experiments/source-snapshots/20261002-hard-cbs-bypass/static_cbs.py",
+    "sha256": "dd44a6863037d6f2afa3041a8685211f6217b0543241194f6c14a991ab6865dc"
+  },
+  {
+    "experiment": "20261002-hard-cbs-bypass",
+    "snapshot": "dev/experiments/source-snapshots/20261002-hard-cbs-bypass/exact_pair_repair.py",
+    "sha256": "f31bb397a6c71115309aae9ba90c5d79157d8438d7e52bed4679c16807350459"
+  },
+  {
+    "experiment": "20261002-hard-adaptive-price-pool",
+    "snapshot": "dev/experiments/source-snapshots/20261002-hard-adaptive-price-pool/adaptive_price_pool.py",
+    "sha256": "33ac33fc38326043d89f2dca5f5667a50aaf50558fefc095dcfd846f7c7b66f1"
+  },
+  {
+    "experiment": "20261002-hard-lp-price-pool",
+    "snapshot": "dev/experiments/source-snapshots/20261002-hard-lp-price-pool/adaptive_price_pool.py",
+    "sha256": "d181982cd21bc7507116e5772b7bb9642e71801507f95a03c28734077e66b4cd"
+  },
+  {
+    "experiment": "20261002-hard-ejection-chain",
+    "snapshot": "dev/experiments/source-snapshots/20261002-hard-ejection-chain/ejection_chain.py",
+    "sha256": "0ff538be2e87e3b9c5bec54a640229d8777a9bb532924bc81cdf8d41f13f5c60"
+  }
+]

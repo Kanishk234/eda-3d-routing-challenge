@@ -1,0 +1,347 @@
+{
+  "frozen_sha256": {
+    "dev/component_router.py": "1e3f3afd115041ae82115a88ecafc02f5e9f24d8543d109f901bbc72936cbd66",
+    "dev/branch_repair.py": "fac12b4771279883b09714a76b9e05837450c8458cd4d780385ff7cb7e4e3a13"
+  },
+  "rows": [
+    {
+      "legal": true,
+      "delay": 212,
+      "expansions": 164155,
+      "stats": {
+        "component_connections": 192,
+        "rounds": 24,
+        "conflicting_vertices": 1
+      },
+      "wall_s": 0.9444555619847961,
+      "output_sha256": "730c6918c306044bff90931c438a2f7d2bc5e70cc5a1405aa4631cdf324cf0c3",
+      "suite": "benchmarks",
+      "case": "case_01",
+      "seed": 1,
+      "method": "star",
+      "run": "dev/artifacts/component-screen-benchmarks-case_01-1-star",
+      "manifest_sha256": "e033f898efd74ab0c23f2f11c68374bd579e39a435537b240dc494ffc6d652ee"
+    },
+    {
+      "legal": true,
+      "delay": 212,
+      "expansions": 154782,
+      "stats": {
+        "component_connections": 192,
+        "rounds": 24,
+        "conflicting_vertices": 1
+      },
+      "wall_s": 0.8950934219756164,
+      "output_sha256": "730c6918c306044bff90931c438a2f7d2bc5e70cc5a1405aa4631cdf324cf0c3",
+      "suite": "benchmarks",
+      "case": "case_01",
+      "seed": 1,
+      "method": "merge",
+      "run": "dev/artifacts/component-screen-benchmarks-case_01-1-merge",
+      "manifest_sha256": "c6ca4111fc7bd46dcf6936c225892e9a1d98b1f2e2f0c795302f5e84d3133ac5"
+    },
+    {
+      "legal": true,
+      "delay": 212,
+      "expansions": 164139,
+      "stats": {
+        "component_connections": 192,
+        "rounds": 24,
+        "conflicting_vertices": 1
+      },
+      "wall_s": 0.7498790620011277,
+      "output_sha256": "730c6918c306044bff90931c438a2f7d2bc5e70cc5a1405aa4631cdf324cf0c3",
+      "suite": "benchmarks",
+      "case": "case_01",
+      "seed": 2,
+      "method": "star",
+      "run": "dev/artifacts/component-screen-benchmarks-case_01-2-star",
+      "manifest_sha256": "4d6393b9c980bf30c163ff83c6ae35eccaee71765118ba7fd4fa0675431e1e36"
+    },
+    {
+      "legal": true,
+      "delay": 212,
+      "expansions": 154768,
+      "stats": {
+        "component_connections": 192,
+        "rounds": 24,
+        "conflicting_vertices": 1
+      },
+      "wall_s": 0.8029123569722287,
+      "output_sha256": "730c6918c306044bff90931c438a2f7d2bc5e70cc5a1405aa4631cdf324cf0c3",
+      "suite": "benchmarks",
+      "case": "case_01",
+      "seed": 2,
+      "method": "merge",
+      "run": "dev/artifacts/component-screen-benchmarks-case_01-2-merge",
+      "manifest_sha256": "7643f178d81608c341aa304f9651d00b896b5a4fcbe72396cb32eb90938276e9"
+    },
+    {
+      "legal": true,
+      "delay": 208,
+      "expansions": 158963,
+      "stats": {
+        "component_connections": 192,
+        "rounds": 24,
+        "conflicting_vertices": 0
+      },
+      "wall_s": 0.8269092699629255,
+      "output_sha256": "c1b5e8498185c7ff83eb1414bda05239a700f43474fb8543592a27efd0eb6d53",
+      "suite": "benchmarks",
+      "case": "case_01",
+      "seed": 3,
+      "method": "star",
+      "run": "dev/artifacts/component-screen-benchmarks-case_01-3-star",
+      "manifest_sha256": "29f5c197f099d92d9ee1f51f01ba489ed69600c9bfbb65f2131e6215938d9b74"
+    },
+    {
+      "legal": true,
+      "delay": 208,
+      "expansions": 149464,
+      "stats": {
+        "component_connections": 192,
+        "rounds": 24,
+        "conflicting_vertices": 0
+      },
+      "wall_s": 0.762982040992938,
+      "output_sha256": "c1b5e8498185c7ff83eb1414bda05239a700f43474fb8543592a27efd0eb6d53",
+      "suite": "benchmarks",
+      "case": "case_01",
+      "seed": 3,
+      "method": "merge",
+      "run": "dev/artifacts/component-screen-benchmarks-case_01-3-merge",
+      "manifest_sha256": "e9e23104d654a7da11d1f408f9c37181e2f80d45fce007766a6cad645e065ed5"
+    },
+    {
+      "legal": false,
+      "delay": null,
+      "expansions": 1000000,
+      "stats": {
+        "component_connections": 177,
+        "rounds": 2,
+        "conflicting_vertices": 140,
+        "limit_reached": 1
+      },
+      "wall_s": 5.541570421017241,
+      "output_sha256": null,
+      "suite": "benchmarks",
+      "case": "case_05",
+      "seed": 1,
+      "method": "star",
+      "run": "dev/artifacts/component-screen-benchmarks-case_05-1-star",
+      "manifest_sha256": "ad99df99ee3df731fc347726a5f1d278da997d872e65e52382c61d5155e35d0c"
+    },
+    {
+      "legal": false,
+      "delay": null,
+      "expansions": 1000000,
+      "stats": {
+        "component_connections": 324,
+        "rounds": 5,
+        "conflicting_vertices": 110,
+        "limit_reached": 1
+      },
+      "wall_s": 5.972810265026055,
+      "output_sha256": null,
+      "suite": "benchmarks",
+      "case": "case_05",
+      "seed": 1,
+      "method": "merge",
+      "run": "dev/artifacts/component-screen-benchmarks-case_05-1-merge",
+      "manifest_sha256": "e755e354bf683b5f4e5ef423b1b55e65d18eb71d55415d97f4f7f0d8d9ee9442"
+    },
+    {
+      "legal": false,
+      "delay": null,
+      "expansions": 1000000,
+      "stats": {
+        "component_connections": 179,
+        "rounds": 2,
+        "conflicting_vertices": 129,
+        "limit_reached": 1
+      },
+      "wall_s": 5.749930451973341,
+      "output_sha256": null,
+      "suite": "benchmarks",
+      "case": "case_05",
+      "seed": 2,
+      "method": "star",
+      "run": "dev/artifacts/component-screen-benchmarks-case_05-2-star",
+      "manifest_sha256": "caa46173a04f7df1d535bcce0e7727803e40d2ef1cbe1ef46f1af5e07648ba84"
+    },
+    {
+      "legal": false,
+      "delay": null,
+      "expansions": 1000000,
+      "stats": {
+        "component_connections": 323,
+        "rounds": 5,
+        "conflicting_vertices": 107,
+        "limit_reached": 1
+      },
+      "wall_s": 6.497385456983466,
+      "output_sha256": null,
+      "suite": "benchmarks",
+      "case": "case_05",
+      "seed": 2,
+      "method": "merge",
+      "run": "dev/artifacts/component-screen-benchmarks-case_05-2-merge",
+      "manifest_sha256": "58abd5b22d3d083b4f7c3a1374b6928f24b09e735faff4e80305a9abc4f8b3a6"
+    },
+    {
+      "legal": false,
+      "delay": null,
+      "expansions": 1000000,
+      "stats": {
+        "component_connections": 181,
+        "rounds": 2,
+        "conflicting_vertices": 113,
+        "limit_reached": 1
+      },
+      "wall_s": 5.834962183027528,
+      "output_sha256": null,
+      "suite": "benchmarks",
+      "case": "case_05",
+      "seed": 3,
+      "method": "star",
+      "run": "dev/artifacts/component-screen-benchmarks-case_05-3-star",
+      "manifest_sha256": "a4e242b744304c56458223f3ba6a008c93208759e738a2db137fc6e3e620ce02"
+    },
+    {
+      "legal": false,
+      "delay": null,
+      "expansions": 1000000,
+      "stats": {
+        "component_connections": 329,
+        "rounds": 5,
+        "conflicting_vertices": 119,
+        "limit_reached": 1
+      },
+      "wall_s": 5.769319750019349,
+      "output_sha256": null,
+      "suite": "benchmarks",
+      "case": "case_05",
+      "seed": 3,
+      "method": "merge",
+      "run": "dev/artifacts/component-screen-benchmarks-case_05-3-merge",
+      "manifest_sha256": "a3c892f01e235a9f1b2c79fd05d750cb65c0e477582bc3aedda9362333abbb3d"
+    },
+    {
+      "legal": false,
+      "delay": null,
+      "expansions": 1000000,
+      "stats": {
+        "component_connections": 209,
+        "rounds": 1,
+        "conflicting_vertices": 465,
+        "limit_reached": 1
+      },
+      "wall_s": 5.7771012160228565,
+      "output_sha256": null,
+      "suite": "benchmarks_hard",
+      "case": "case_01",
+      "seed": 1,
+      "method": "star",
+      "run": "dev/artifacts/component-screen-benchmarks_hard-case_01-1-star",
+      "manifest_sha256": "707069d31f7bd5335dfa811b30aff005ed132e376111b52a615366d9d6a2b910"
+    },
+    {
+      "legal": false,
+      "delay": null,
+      "expansions": 1000000,
+      "stats": {
+        "component_connections": 508,
+        "rounds": 3,
+        "conflicting_vertices": 600,
+        "limit_reached": 1
+      },
+      "wall_s": 6.169247281970456,
+      "output_sha256": null,
+      "suite": "benchmarks_hard",
+      "case": "case_01",
+      "seed": 1,
+      "method": "merge",
+      "run": "dev/artifacts/component-screen-benchmarks_hard-case_01-1-merge",
+      "manifest_sha256": "c708b15457b524708e963c2cbfd0a62c7792e37cee3edc67a9a0ec8a62d7cc4c"
+    },
+    {
+      "legal": false,
+      "delay": null,
+      "expansions": 1000000,
+      "stats": {
+        "component_connections": 189,
+        "rounds": 1,
+        "conflicting_vertices": 504,
+        "limit_reached": 1
+      },
+      "wall_s": 5.805986154009588,
+      "output_sha256": null,
+      "suite": "benchmarks_hard",
+      "case": "case_01",
+      "seed": 2,
+      "method": "star",
+      "run": "dev/artifacts/component-screen-benchmarks_hard-case_01-2-star",
+      "manifest_sha256": "bc3339d0454b9f7c3c9b7c442c2851e93634f7e84cfd75db959bb80ffd292840"
+    },
+    {
+      "legal": false,
+      "delay": null,
+      "expansions": 1000000,
+      "stats": {
+        "component_connections": 515,
+        "rounds": 3,
+        "conflicting_vertices": 563,
+        "limit_reached": 1
+      },
+      "wall_s": 6.279608607001137,
+      "output_sha256": null,
+      "suite": "benchmarks_hard",
+      "case": "case_01",
+      "seed": 2,
+      "method": "merge",
+      "run": "dev/artifacts/component-screen-benchmarks_hard-case_01-2-merge",
+      "manifest_sha256": "0d3a3f0d838349db2e8a0cf6febeb52a9eab07ede5f13861fc7637a7a222eba4"
+    },
+    {
+      "legal": false,
+      "delay": null,
+      "expansions": 1000000,
+      "stats": {
+        "component_connections": 189,
+        "rounds": 1,
+        "conflicting_vertices": 466,
+        "limit_reached": 1
+      },
+      "wall_s": 5.456832398020197,
+      "output_sha256": null,
+      "suite": "benchmarks_hard",
+      "case": "case_01",
+      "seed": 3,
+      "method": "star",
+      "run": "dev/artifacts/component-screen-benchmarks_hard-case_01-3-star",
+      "manifest_sha256": "6b2956e6941e3e6cfc560ae0d34e21db047770de67846a1b0bd3f47bcacf2db6"
+    },
+    {
+      "legal": false,
+      "delay": null,
+      "expansions": 1000000,
+      "stats": {
+        "component_connections": 505,
+        "rounds": 3,
+        "conflicting_vertices": 594,
+        "limit_reached": 1
+      },
+      "wall_s": 6.1448793319868855,
+      "output_sha256": null,
+      "suite": "benchmarks_hard",
+      "case": "case_01",
+      "seed": 3,
+      "method": "merge",
+      "run": "dev/artifacts/component-screen-benchmarks_hard-case_01-3-merge",
+      "manifest_sha256": "bf5fc13b920aeff83d1f3d43ed47a17e62008650cac43322ffcf192a041a4cf9"
+    }
+  ],
+  "total_wall_s": 77.7038017900195,
+  "workers": 1,
+  "scope": "Fresh construction no incumbent/competitor routes; matched 1M expansion ceiling/24rounds/30s safety. Compare only legal physical-delay candidates; incomplete construction is failure,not score0 delay. Equal caps not equal CPU. Pilot only."
+}

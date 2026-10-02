@@ -1,0 +1,151 @@
+{
+  "weights": [
+    -0.10592601612711498,
+    0.4176518045314496,
+    -0.21622261058520284,
+    0.1669635277284521,
+    0.7873480046146818,
+    0.10213432478363851,
+    0.355358000527098,
+    -0.2190876959606143,
+    0.0
+  ],
+  "features": [
+    "fanout",
+    "bbox_x",
+    "bbox_y",
+    "bbox_area",
+    "cross_layer",
+    "total_xy_span",
+    "bbox_overlap",
+    "driver_layer",
+    "via_layer_ratio"
+  ],
+  "training": [
+    {
+      "seed": 1001,
+      "legal_orders": 0,
+      "best_delay": null
+    },
+    {
+      "seed": 1002,
+      "legal_orders": 9,
+      "best_delay": 223
+    },
+    {
+      "seed": 1003,
+      "legal_orders": 10,
+      "best_delay": 178
+    },
+    {
+      "seed": 1004,
+      "legal_orders": 8,
+      "best_delay": 139
+    },
+    {
+      "seed": 1005,
+      "legal_orders": 0,
+      "best_delay": null
+    },
+    {
+      "seed": 1006,
+      "legal_orders": 4,
+      "best_delay": 122
+    },
+    {
+      "seed": 1007,
+      "legal_orders": 0,
+      "best_delay": null
+    },
+    {
+      "seed": 1008,
+      "legal_orders": 15,
+      "best_delay": 303
+    },
+    {
+      "seed": 1009,
+      "legal_orders": 0,
+      "best_delay": null
+    },
+    {
+      "seed": 1010,
+      "legal_orders": 0,
+      "best_delay": null
+    },
+    {
+      "seed": 1011,
+      "legal_orders": 0,
+      "best_delay": null
+    },
+    {
+      "seed": 1012,
+      "legal_orders": 0,
+      "best_delay": null
+    },
+    {
+      "seed": 1013,
+      "legal_orders": 0,
+      "best_delay": null
+    },
+    {
+      "seed": 1014,
+      "legal_orders": 5,
+      "best_delay": 238
+    },
+    {
+      "seed": 1015,
+      "legal_orders": 0,
+      "best_delay": null
+    },
+    {
+      "seed": 1016,
+      "legal_orders": 2,
+      "best_delay": 276
+    },
+    {
+      "seed": 1017,
+      "legal_orders": 0,
+      "best_delay": null
+    },
+    {
+      "seed": 1018,
+      "legal_orders": 0,
+      "best_delay": null
+    },
+    {
+      "seed": 1019,
+      "legal_orders": 0,
+      "best_delay": null
+    },
+    {
+      "seed": 1020,
+      "legal_orders": 0,
+      "best_delay": null
+    },
+    {
+      "seed": 1021,
+      "legal_orders": 16,
+      "best_delay": 138
+    },
+    {
+      "seed": 1022,
+      "legal_orders": 0,
+      "best_delay": null
+    },
+    {
+      "seed": 1023,
+      "legal_orders": 14,
+      "best_delay": 168
+    },
+    {
+      "seed": 1024,
+      "legal_orders": 0,
+      "best_delay": null
+    }
+  ],
+  "source_sha256": {
+    "/home/younix/eda-3d-routing-challenge/dev/learned_fresh_order.py": "636a63942826686eaceae42287cf91ceccb3e67d992f59e3d4f255a32d547829",
+    "/home/younix/eda-3d-routing-challenge/dev/branch_repair.py": "fac12b4771279883b09714a76b9e05837450c8458cd4d780385ff7cb7e4e3a13"
+  },
+  "scope": "Pairwise imitation of best own finite sampled fresh orders on synthetic layouts; not reinforcement learning,not a pretrained external model."
+}

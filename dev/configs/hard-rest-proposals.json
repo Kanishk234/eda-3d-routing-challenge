@@ -1,0 +1,16 @@
+{
+  "coverage": "docs/evidence/phase3/tier-independent-third-coverage.json",
+  "tier": "hard",
+  "cases": [
+    "case_01",
+    "case_04",
+    "case_07"
+  ],
+  "work_budget": 5000000,
+  "budget": 60,
+  "penalties": [
+    0,
+    16,
+    64
+  ]
+}

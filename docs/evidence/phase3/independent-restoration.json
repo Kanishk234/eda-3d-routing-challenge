@@ -1,0 +1,275 @@
+{
+  "matched_routes": 45,
+  "rows": [
+    {
+      "tier": "intro",
+      "run_id": "20261002T201028.775038Z-exact-polish",
+      "file": "routes/case_01.sol.json",
+      "sha256": "f6e4400530093a14313f6454251af97b11219c6e2d3ae46bdb2519293b9eeaf6"
+    },
+    {
+      "tier": "intro",
+      "run_id": "20261002T201028.775038Z-exact-polish",
+      "file": "routes/case_02.sol.json",
+      "sha256": "16cb61cfe3e2296211aef87abf2d1287db641c7e50b5a06d46c255a353e9d46c"
+    },
+    {
+      "tier": "intro",
+      "run_id": "20261002T201028.775038Z-exact-polish",
+      "file": "routes/case_03.sol.json",
+      "sha256": "58da380a800373215ea88bc2632a975e29b04305ef1930008dc79ce6c9845620"
+    },
+    {
+      "tier": "intro",
+      "run_id": "20261002T201028.775038Z-exact-polish",
+      "file": "routes/case_04.sol.json",
+      "sha256": "fb4c5b7a2fb1b3517ca700ae5ecc4e006eac6fc37ba16c1c34c2f2a8bcd7a26b"
+    },
+    {
+      "tier": "intro",
+      "run_id": "20261002T201028.775038Z-exact-polish",
+      "file": "routes/case_05.sol.json",
+      "sha256": "5179d6551bae9aad748bed770e68593942559bbc17812ba04f4b5e7730ecf626"
+    },
+    {
+      "tier": "intro",
+      "run_id": "20261002T201028.775038Z-exact-polish",
+      "file": "routes/case_06.sol.json",
+      "sha256": "2747296e8aeaef18f95595f351f43397aaad3441b972080b9c54ed9d39f34a06"
+    },
+    {
+      "tier": "intro",
+      "run_id": "20261002T201028.775038Z-exact-polish",
+      "file": "routes/case_07.sol.json",
+      "sha256": "86dce039c68510c66af02221f023d0c0089b52b023968cd17e94bdbc101bf280"
+    },
+    {
+      "tier": "intro",
+      "run_id": "20261002T201028.775038Z-exact-polish",
+      "file": "routes/case_08.sol.json",
+      "sha256": "be04b66ea58a294ec7f1495a8354533540f133f387d35c238499fd4ece11db85"
+    },
+    {
+      "tier": "intro",
+      "run_id": "20261002T201028.775038Z-exact-polish",
+      "file": "routes/case_09.sol.json",
+      "sha256": "0144dff4ea01f842e29916bc49b93e368f8cc89412f8bae50b525a88aa06064e"
+    },
+    {
+      "tier": "intro",
+      "run_id": "20261002T201028.775038Z-exact-polish",
+      "file": "routes/case_10.sol.json",
+      "sha256": "4ce74ed8593001562f7c74582ab68cec9f30c53cdebb7b661e4369213970076d"
+    },
+    {
+      "tier": "intro",
+      "run_id": "20261002T201028.775038Z-exact-polish",
+      "file": "routes/case_11.sol.json",
+      "sha256": "0e49c27c790af8f778afae4ec33f90082011432eb9ec7520e2bfbc30f476d1d5"
+    },
+    {
+      "tier": "intro",
+      "run_id": "20261002T201028.775038Z-exact-polish",
+      "file": "routes/case_12.sol.json",
+      "sha256": "6d580cb12b5613b04b367fdd13c076d46d92408368766a6493361b2d8b1d63fd"
+    },
+    {
+      "tier": "intro",
+      "run_id": "20261002T201028.775038Z-exact-polish",
+      "file": "routes/case_13.sol.json",
+      "sha256": "5244e85200eabc0ab0e796e859902ba4514f3b40d9f809df123b6eda558288fb"
+    },
+    {
+      "tier": "intro",
+      "run_id": "20261002T201028.775038Z-exact-polish",
+      "file": "routes/case_14.sol.json",
+      "sha256": "966adc9274aacff9b6e72513299f977067c61e27ba0722834f330d8a432c67b9"
+    },
+    {
+      "tier": "intro",
+      "run_id": "20261002T201028.775038Z-exact-polish",
+      "file": "routes/case_15.sol.json",
+      "sha256": "ce45db09209ed829c45fbf05229bef772e2d8adab108ff7dbadf543ea3b69ff0"
+    },
+    {
+      "tier": "intro",
+      "run_id": "20261002T201028.775038Z-exact-polish",
+      "file": "routes/case_16.sol.json",
+      "sha256": "b0bea69adab68f3ac6ce97432b28a82b7b0492520b43a3f00356114a2d51a9dd"
+    },
+    {
+      "tier": "intro",
+      "run_id": "20261002T201028.775038Z-exact-polish",
+      "file": "routes/case_17.sol.json",
+      "sha256": "f84c3253765be79bfa874a2723b13cfc9bc7b1db152ecc1a1c934b010bfd2a74"
+    },
+    {
+      "tier": "intro",
+      "run_id": "20261002T201028.775038Z-exact-polish",
+      "file": "routes/case_18.sol.json",
+      "sha256": "6435df577e234f7c12607708553acce91d5e7e1fa84bff04eec2a6b9e601d513"
+    },
+    {
+      "tier": "intro",
+      "run_id": "20261002T201028.775038Z-exact-polish",
+      "file": "routes/case_19.sol.json",
+      "sha256": "2b123f8c2765b42f817b56cee4ad2fdb59be373c7686699888e8062cb5640af6"
+    },
+    {
+      "tier": "intro",
+      "run_id": "20261002T201028.775038Z-exact-polish",
+      "file": "routes/case_20.sol.json",
+      "sha256": "d9cf6954efd4d047e4611d695e1ef65e2d7313918006c22876f21d2578cf3e70"
+    },
+    {
+      "tier": "hard",
+      "run_id": "20261002T201028.781037Z-exact-polish",
+      "file": "routes/case_01.sol.json",
+      "sha256": "6a0a377fa2860071777e4e04020255d81a45de1925d55a26e8e30fb7cedefa4b"
+    },
+    {
+      "tier": "hard",
+      "run_id": "20261002T201028.781037Z-exact-polish",
+      "file": "routes/case_02.sol.json",
+      "sha256": "4c25cfb0369ee5f9be3b2c2be87d2eb3584ea1ba8aa9f9ab30b677f2eb83bc68"
+    },
+    {
+      "tier": "hard",
+      "run_id": "20261002T201028.781037Z-exact-polish",
+      "file": "routes/case_03.sol.json",
+      "sha256": "977cc5688d57bae072f8bcb967d633dae97bbe2c82c566aa461e8cd0dba786fb"
+    },
+    {
+      "tier": "hard",
+      "run_id": "20261002T201028.781037Z-exact-polish",
+      "file": "routes/case_04.sol.json",
+      "sha256": "5a72f75a05d9a8dbe425ae81eec5e1170f95ae87acc1491c11896fb94b0057bc"
+    },
+    {
+      "tier": "hard",
+      "run_id": "20261002T201028.781037Z-exact-polish",
+      "file": "routes/case_05.sol.json",
+      "sha256": "64ef1ebba2f9b5392904622af837847c5e9da0fd6ee7b297d8a81683883d77d6"
+    },
+    {
+      "tier": "hard",
+      "run_id": "20261002T201028.781037Z-exact-polish",
+      "file": "routes/case_06.sol.json",
+      "sha256": "0818dc774e86f91ff7b342e69caeede6e27e1e588e006aeee6b15298ae7dbe5d"
+    },
+    {
+      "tier": "hard",
+      "run_id": "20261002T201028.781037Z-exact-polish",
+      "file": "routes/case_07.sol.json",
+      "sha256": "5adb546e818420452490b78256fa07ff66675ddb6cea384a71f3dc4fb213de31"
+    },
+    {
+      "tier": "hard",
+      "run_id": "20261002T201028.781037Z-exact-polish",
+      "file": "routes/case_08.sol.json",
+      "sha256": "ccfabd9ab151499d8029740404aaaa6a5613000766f864941592e0345e9d08fd"
+    },
+    {
+      "tier": "hard",
+      "run_id": "20261002T201028.781037Z-exact-polish",
+      "file": "routes/case_09.sol.json",
+      "sha256": "8ab8e6fe920db43ca3629bba8b841df2445be587abc1789c7f4eaf6c5e6516e2"
+    },
+    {
+      "tier": "scale",
+      "run_id": "20261002T201231.674547Z-exact-polish",
+      "file": "routes/case_01.sol.json",
+      "sha256": "6508cfa01891fb5a8ec4dbafa155a48395d64ca7d4f6b3b62777973ab201bccc"
+    },
+    {
+      "tier": "scale",
+      "run_id": "20261002T201231.674547Z-exact-polish",
+      "file": "routes/case_02.sol.json",
+      "sha256": "0b7a8189b8649cf28659c2c8ca797475ba8ef2efd24f14ba965e19f490491aa9"
+    },
+    {
+      "tier": "scale",
+      "run_id": "20261002T201231.674547Z-exact-polish",
+      "file": "routes/case_03.sol.json",
+      "sha256": "5b3736bd95f60988eb83743ce81be543a0da942db82a34b7453fbd04d0453e07"
+    },
+    {
+      "tier": "scale",
+      "run_id": "20261002T201231.674547Z-exact-polish",
+      "file": "routes/case_04.sol.json",
+      "sha256": "f2d565253db620d5afdd7a6e88f830dafc5ad8a9fc881d96524333e00ef5d1dd"
+    },
+    {
+      "tier": "scale",
+      "run_id": "20261002T201231.674547Z-exact-polish",
+      "file": "routes/case_05.sol.json",
+      "sha256": "7f4ee8ba380bcd9f668e125e4b91666289a7c2f0e7098b6fb1e8b11c6fc29117"
+    },
+    {
+      "tier": "scale",
+      "run_id": "20261002T201231.674547Z-exact-polish",
+      "file": "routes/case_06.sol.json",
+      "sha256": "8a1b2f631dea9c5183223419e92a15881d6592a47dd7acb0980a471e57dd014d"
+    },
+    {
+      "tier": "scale",
+      "run_id": "20261002T201231.674547Z-exact-polish",
+      "file": "routes/case_07.sol.json",
+      "sha256": "58d2406d4e68db8fb929a70c716066b187f495d2da63ae3eabe550a515549810"
+    },
+    {
+      "tier": "scale",
+      "run_id": "20261002T201231.674547Z-exact-polish",
+      "file": "routes/case_08.sol.json",
+      "sha256": "25ec0196f544dd902cbedfa06d4682abde12033d881e8bace73e9158f5f0f332"
+    },
+    {
+      "tier": "congested",
+      "run_id": "20261002T201415.549181Z-exact-polish",
+      "file": "routes/case_01.sol.json",
+      "sha256": "2ef366cd015914ff157ac4347079b10e020c2694ac8d68b6b8c9258a399f68c7"
+    },
+    {
+      "tier": "congested",
+      "run_id": "20261002T201415.549181Z-exact-polish",
+      "file": "routes/case_02.sol.json",
+      "sha256": "6c42896965f98855ef1f0fae6e96af7080fe31ad4b8daef3b479f4ab756bf614"
+    },
+    {
+      "tier": "congested",
+      "run_id": "20261002T201415.549181Z-exact-polish",
+      "file": "routes/case_03.sol.json",
+      "sha256": "b43d339754dc0a9209bb43a8bc7dac376cad024ff419298576b89ad1f3fc1241"
+    },
+    {
+      "tier": "congested",
+      "run_id": "20261002T201415.549181Z-exact-polish",
+      "file": "routes/case_04.sol.json",
+      "sha256": "553b58bcc1e57cc4a01f6472fa7f186a2d02194d731071bc513e8754f46096b2"
+    },
+    {
+      "tier": "designs",
+      "run_id": "20261002T201428.044861Z-exact-polish",
+      "file": "routes/ctrl.sol.json",
+      "sha256": "c02e18e5596acc2e4c76da796e6d27e82df3957c4f2792d1c9942f821db20b13"
+    },
+    {
+      "tier": "designs",
+      "run_id": "20261002T201428.044861Z-exact-polish",
+      "file": "routes/int2float.sol.json",
+      "sha256": "be4a8d9be6c78da94eb795b085277317c429b1c3038964db5c967cb775fc2e2f"
+    },
+    {
+      "tier": "designs",
+      "run_id": "20261002T201428.044861Z-exact-polish",
+      "file": "routes/router.sol.json",
+      "sha256": "d47981f03624b9f9d2393587ee1ffdcabc221335324537d47b8de33d89062786"
+    },
+    {
+      "tier": "stress",
+      "run_id": "20261002T201509.054661Z-exact-polish",
+      "file": "routes/case_01.sol.json",
+      "sha256": "31f5fe0664b043fb613e28cd22df21d710d7c5265df8c6c8cc5ba9203935c0f9"
+    }
+  ]
+}

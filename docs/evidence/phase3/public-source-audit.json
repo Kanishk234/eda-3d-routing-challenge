@@ -1,0 +1,1323 @@
+{
+  "forks": [
+    {
+      "repo": "pmukeshreddy/eda-3d-routing-challenge",
+      "url": "https://github.com/pmukeshreddy/eda-3d-routing-challenge",
+      "default_branch": "main",
+      "branches": [
+        {
+          "name": "main",
+          "commit": "0a8e052944432de0c657f3d45d6838394e627d63"
+        }
+      ],
+      "own_repo": false
+    },
+    {
+      "repo": "ly2019/eda-3d-routing-challenge",
+      "url": "https://github.com/ly2019/eda-3d-routing-challenge",
+      "default_branch": "main",
+      "branches": [
+        {
+          "name": "main",
+          "commit": "182434de94d0deeeced10578500846fcc3a6acab"
+        },
+        {
+          "name": "submission-LY",
+          "commit": "930088f1274647f41b48e80b724b2e2e8fb7cfbc"
+        }
+      ],
+      "own_repo": false
+    },
+    {
+      "repo": "MantejGill/eda-3d-routing-challenge",
+      "url": "https://github.com/MantejGill/eda-3d-routing-challenge",
+      "default_branch": "main",
+      "branches": [
+        {
+          "name": "main",
+          "commit": "3d8948fdcd6f87165d5ca1efbf4b65e8168e8e81"
+        },
+        {
+          "name": "submit-negotiated-delay",
+          "commit": "e9183f55f5d4d79ab19ea4a2b49eeb8aa2dda248"
+        }
+      ],
+      "own_repo": false
+    },
+    {
+      "repo": "iamparv7043/eda-3d-routing-challenge",
+      "url": "https://github.com/iamparv7043/eda-3d-routing-challenge",
+      "default_branch": "main",
+      "branches": [
+        {
+          "name": "iamparv7043-hard",
+          "commit": "6d97e82c263a5b801f9031de774b90246a6b009f"
+        },
+        {
+          "name": "main",
+          "commit": "499ad7e2a415a97e9ce9b3396b0477e75ebd13e6"
+        }
+      ],
+      "own_repo": false
+    },
+    {
+      "repo": "IrwinJam/eda-3d-routing-challenge",
+      "url": "https://github.com/IrwinJam/eda-3d-routing-challenge",
+      "default_branch": "main",
+      "branches": [
+        {
+          "name": "fix/windows-utf8",
+          "commit": "e6a16b1dbc8f406ba8180cd0ec9dae4283d56331"
+        },
+        {
+          "name": "irwinjam/spt-lns-submission",
+          "commit": "806eb4150e6314a8f17ee47ba68d25f2e4d49be4"
+        },
+        {
+          "name": "irwinjam/spt-lns-update",
+          "commit": "6bcf44c4a4203dfb0a060997e348ce9160d3c5dc"
+        },
+        {
+          "name": "main",
+          "commit": "499ad7e2a415a97e9ce9b3396b0477e75ebd13e6"
+        }
+      ],
+      "own_repo": false
+    },
+    {
+      "repo": "Mummanajagadeesh/eda-3d-routing-challenge",
+      "url": "https://github.com/Mummanajagadeesh/eda-3d-routing-challenge",
+      "default_branch": "main",
+      "branches": [
+        {
+          "name": "main",
+          "commit": "182434de94d0deeeced10578500846fcc3a6acab"
+        }
+      ],
+      "own_repo": false
+    },
+    {
+      "repo": "Kanishk234/eda-3d-routing-challenge",
+      "url": "https://github.com/Kanishk234/eda-3d-routing-challenge",
+      "default_branch": "main",
+      "branches": [
+        {
+          "name": "main",
+          "commit": "78a39c3c94be96ac4933667c65a03c7970a26de2"
+        }
+      ],
+      "own_repo": true
+    },
+    {
+      "repo": "THOMACHAYAN/eda-3d-routing-challenge",
+      "url": "https://github.com/THOMACHAYAN/eda-3d-routing-challenge",
+      "default_branch": "main",
+      "branches": [
+        {
+          "name": "main",
+          "commit": "499ad7e2a415a97e9ce9b3396b0477e75ebd13e6"
+        },
+        {
+          "name": "reubalink-hard",
+          "commit": "55fc4956756402bbabeeb1d0bc80d07e83d6b1bf"
+        }
+      ],
+      "own_repo": false
+    },
+    {
+      "repo": "Youngjin-Luke-Kim/eda-3d-routing-challenge-submissions",
+      "url": "https://github.com/Youngjin-Luke-Kim/eda-3d-routing-challenge-submissions",
+      "default_branch": "main",
+      "branches": [
+        {
+          "name": "drama3d-portfolio",
+          "commit": "e2a01b990f3044f0650697ef4e963c579d107126"
+        },
+        {
+          "name": "drama3d-portfolio-update",
+          "commit": "89ca44091e30d9e8f2e7e56e5eb7e69de9b8294e"
+        },
+        {
+          "name": "main",
+          "commit": "499ad7e2a415a97e9ce9b3396b0477e75ebd13e6"
+        }
+      ],
+      "own_repo": false
+    },
+    {
+      "repo": "kesudh/eda-3d-routing-challenge",
+      "url": "https://github.com/kesudh/eda-3d-routing-challenge",
+      "default_branch": "main",
+      "branches": [
+        {
+          "name": "main",
+          "commit": "499ad7e2a415a97e9ce9b3396b0477e75ebd13e6"
+        },
+        {
+          "name": "submission/warm_lns_refinement_v2",
+          "commit": "fb2101ee2cc58ac35b4031c904359a603092a029"
+        },
+        {
+          "name": "submission/warm_lns_refinement",
+          "commit": "f3017e8250fd7917c9d1ab395ce5d1059eb6f4d9"
+        }
+      ],
+      "own_repo": false
+    },
+    {
+      "repo": "anveshshekhar/eda-3d-routing-challenge",
+      "url": "https://github.com/anveshshekhar/eda-3d-routing-challenge",
+      "default_branch": "main",
+      "branches": [
+        {
+          "name": "main",
+          "commit": "dfbcba48bd762433350aea82cd653af74e7137ac"
+        }
+      ],
+      "own_repo": false
+    },
+    {
+      "repo": "CarterT27/eda-3d-routing-challenge",
+      "url": "https://github.com/CarterT27/eda-3d-routing-challenge",
+      "default_branch": "main",
+      "branches": [
+        {
+          "name": "carter/hard-group-routing",
+          "commit": "bc8a8a942eb4dca9f06bb58585667a9a91c92af1"
+        },
+        {
+          "name": "main",
+          "commit": "499ad7e2a415a97e9ce9b3396b0477e75ebd13e6"
+        }
+      ],
+      "own_repo": false
+    },
+    {
+      "repo": "jay-tau/eda-3d-routing-challenge",
+      "url": "https://github.com/jay-tau/eda-3d-routing-challenge",
+      "default_branch": "main",
+      "branches": [
+        {
+          "name": "coordinated-refinement",
+          "commit": "4533580ce9a84b83c9c80b831d92f2fbac2bdac9"
+        },
+        {
+          "name": "coordinated-refinement-v2",
+          "commit": "58585d7b496d505dfa35f2426df4269974e583fa"
+        },
+        {
+          "name": "main",
+          "commit": "499ad7e2a415a97e9ce9b3396b0477e75ebd13e6"
+        }
+      ],
+      "own_repo": false
+    },
+    {
+      "repo": "toneywilliams-ux/eda-3d-routing-challenge",
+      "url": "https://github.com/toneywilliams-ux/eda-3d-routing-challenge",
+      "default_branch": "main",
+      "branches": [
+        {
+          "name": "main",
+          "commit": "499ad7e2a415a97e9ce9b3396b0477e75ebd13e6"
+        }
+      ],
+      "own_repo": false
+    },
+    {
+      "repo": "Flinner/eda-3d-routing-challenge",
+      "url": "https://github.com/Flinner/eda-3d-routing-challenge",
+      "default_branch": "main",
+      "branches": [
+        {
+          "name": "main",
+          "commit": "499ad7e2a415a97e9ce9b3396b0477e75ebd13e6"
+        }
+      ],
+      "own_repo": false
+    },
+    {
+      "repo": "mlewandowski0/eda-3d-routing-challenge",
+      "url": "https://github.com/mlewandowski0/eda-3d-routing-challenge",
+      "default_branch": "main",
+      "branches": [
+        {
+          "name": "main",
+          "commit": "499ad7e2a415a97e9ce9b3396b0477e75ebd13e6"
+        }
+      ],
+      "own_repo": false
+    },
+    {
+      "repo": "Snoob965/eda-3d-routing-challenge",
+      "url": "https://github.com/Snoob965/eda-3d-routing-challenge",
+      "default_branch": "main",
+      "branches": [
+        {
+          "name": "main",
+          "commit": "499ad7e2a415a97e9ce9b3396b0477e75ebd13e6"
+        }
+      ],
+      "own_repo": false
+    },
+    {
+      "repo": "shivaahir158/eda-3d-routing-challenge",
+      "url": "https://github.com/shivaahir158/eda-3d-routing-challenge",
+      "default_branch": "main",
+      "branches": [
+        {
+          "name": "main",
+          "commit": "499ad7e2a415a97e9ce9b3396b0477e75ebd13e6"
+        },
+        {
+          "name": "submission/shivaahir158",
+          "commit": "cd057ed79c2f91b0da1ab173b1d106ea28c39651"
+        }
+      ],
+      "own_repo": false
+    },
+    {
+      "repo": "Taz33m/eda-3d-routing-challenge",
+      "url": "https://github.com/Taz33m/eda-3d-routing-challenge",
+      "default_branch": "main",
+      "branches": [
+        {
+          "name": "fix/documented-commands",
+          "commit": "f812a142033c0759d094d3904533f36e1eb4098d"
+        },
+        {
+          "name": "fix/submission-pipeline",
+          "commit": "af9f95c17423fd1a56522fa89296aa1e93b7e3f4"
+        },
+        {
+          "name": "main",
+          "commit": "3d8948fdcd6f87165d5ca1efbf4b65e8168e8e81"
+        },
+        {
+          "name": "pathfinder-lns",
+          "commit": "c2d9d9f583d2f332ebb84d22592ee511f6e56e33"
+        }
+      ],
+      "own_repo": false
+    },
+    {
+      "repo": "erikqu/eda-3d-routing-challenge",
+      "url": "https://github.com/erikqu/eda-3d-routing-challenge",
+      "default_branch": "main",
+      "branches": [
+        {
+          "name": "main",
+          "commit": "499ad7e2a415a97e9ce9b3396b0477e75ebd13e6"
+        },
+        {
+          "name": "submission/erikqu-root-aware-portfolio",
+          "commit": "607bb91f497a105942ce6ed14e01fb39150036d3"
+        }
+      ],
+      "own_repo": false
+    },
+    {
+      "repo": "sethupathib/eda-3d-routing-challenge",
+      "url": "https://github.com/sethupathib/eda-3d-routing-challenge",
+      "default_branch": "main",
+      "branches": [
+        {
+          "name": "cursor/cpp-router-2651",
+          "commit": "22f3c69395f5b933d015b280aa1bdd1d951d291d"
+        },
+        {
+          "name": "cursor/delay-opt-router-8a79",
+          "commit": "b4016689f2be6869b171510b609c33c4dbc40e12"
+        },
+        {
+          "name": "main",
+          "commit": "22f3c69395f5b933d015b280aa1bdd1d951d291d"
+        }
+      ],
+      "own_repo": false
+    },
+    {
+      "repo": "adityuhkapoor/eda-3d-routing-challenge",
+      "url": "https://github.com/adityuhkapoor/eda-3d-routing-challenge",
+      "default_branch": "main",
+      "branches": [
+        {
+          "name": "main",
+          "commit": "499ad7e2a415a97e9ce9b3396b0477e75ebd13e6"
+        },
+        {
+          "name": "submit-lns",
+          "commit": "5b5be704578623c0430fedbd8d3c382d8b90caed"
+        }
+      ],
+      "own_repo": false
+    },
+    {
+      "repo": "Akendall47/eda-3d-routing-challenge",
+      "url": "https://github.com/Akendall47/eda-3d-routing-challenge",
+      "default_branch": "main",
+      "branches": [
+        {
+          "name": "main",
+          "commit": "499ad7e2a415a97e9ce9b3396b0477e75ebd13e6"
+        }
+      ],
+      "own_repo": false
+    }
+  ],
+  "prs": [
+    {
+      "number": 26,
+      "title": "submission: drama3d-portfolio update",
+      "state": "open",
+      "merged_at": null,
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/26",
+      "head_repo": "Youngjin-Luke-Kim/eda-3d-routing-challenge-submissions",
+      "head_commit": "89ca44091e30d9e8f2e7e56e5eb7e69de9b8294e"
+    },
+    {
+      "number": 25,
+      "title": "Update spt_lns submissions on all six tiers",
+      "state": "open",
+      "merged_at": null,
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/25",
+      "head_repo": "IrwinJam/eda-3d-routing-challenge",
+      "head_commit": "6bcf44c4a4203dfb0a060997e348ce9160d3c5dc"
+    },
+    {
+      "number": 24,
+      "title": "Update coordinated_refinement with crossover and bounded rerouting",
+      "state": "open",
+      "merged_at": null,
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/24",
+      "head_repo": "jay-tau/eda-3d-routing-challenge",
+      "head_commit": "58585d7b496d505dfa35f2426df4269974e583fa"
+    },
+    {
+      "number": 23,
+      "title": "hard tier initial submission: ly",
+      "state": "open",
+      "merged_at": null,
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/23",
+      "head_repo": "ly2019/eda-3d-routing-challenge",
+      "head_commit": "930088f1274647f41b48e80b724b2e2e8fb7cfbc"
+    },
+    {
+      "number": 22,
+      "title": "Make documented commands work on every tier (baseline-suite, example router, designs regeneration, Makefile, docs)",
+      "state": "open",
+      "merged_at": null,
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/22",
+      "head_repo": "Taz33m/eda-3d-routing-challenge",
+      "head_commit": "f812a142033c0759d094d3904533f36e1eb4098d"
+    },
+    {
+      "number": 21,
+      "title": "Submission: warm_lns_refinement \u2014 bounded conflict search and faster chain pricing",
+      "state": "open",
+      "merged_at": null,
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/21",
+      "head_repo": "kesudh/eda-3d-routing-challenge",
+      "head_commit": "fb2101ee2cc58ac35b4031c904359a603092a029"
+    },
+    {
+      "number": 20,
+      "title": "README: leaderboard below the GIFs; add maintainer 'verified' column",
+      "state": "closed",
+      "merged_at": "2026-10-02T16:30:57Z",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/20",
+      "head_repo": "partcleda/eda-3d-routing-challenge",
+      "head_commit": "74467a3cd3c595b7f739d06e9a62dc1d19f0b18e"
+    },
+    {
+      "number": 19,
+      "title": "Score with math.fsum so results match across Python versions",
+      "state": "closed",
+      "merged_at": "2026-10-02T00:45:33Z",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/19",
+      "head_repo": "partcleda/eda-3d-routing-challenge",
+      "head_commit": "f6c5894b3ddc154476ec5f04479647dac17fc2db"
+    },
+    {
+      "number": 18,
+      "title": "Merge pending leaderboard submissions (#1 #2 #3 #4 #5 #7 #8 #9 #10 #12 #14 #15)",
+      "state": "closed",
+      "merged_at": "2026-10-02T00:55:10Z",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/18",
+      "head_repo": "partcleda/eda-3d-routing-challenge",
+      "head_commit": "3a03a700b4a8b21c229e7e1f1b9db50e81b47a95"
+    },
+    {
+      "number": 17,
+      "title": "Show the leaderboard at the top of README; mark derivative entries",
+      "state": "closed",
+      "merged_at": "2026-10-02T00:37:06Z",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/17",
+      "head_repo": "partcleda/eda-3d-routing-challenge",
+      "head_commit": "0059cf4435865907bd97adbd16223c74880112cc"
+    },
+    {
+      "number": 16,
+      "title": "Fix CI failures for new hard submissions; harden submission and leaderboard inputs",
+      "state": "closed",
+      "merged_at": "2026-10-02T00:29:41Z",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/16",
+      "head_repo": "Taz33m/eda-3d-routing-challenge",
+      "head_commit": "af9f95c17423fd1a56522fa89296aa1e93b7e3f4"
+    },
+    {
+      "number": 15,
+      "title": "Add negotiated_delay submission (intro, hard, designs)",
+      "state": "closed",
+      "merged_at": "2026-10-02T00:55:11Z",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/15",
+      "head_repo": "MantejGill/eda-3d-routing-challenge",
+      "head_commit": "e9183f55f5d4d79ab19ea4a2b49eeb8aa2dda248"
+    },
+    {
+      "number": 14,
+      "title": "Add iamparv7043 hard-tier submission",
+      "state": "closed",
+      "merged_at": "2026-10-02T00:55:11Z",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/14",
+      "head_repo": "iamparv7043/eda-3d-routing-challenge",
+      "head_commit": "6d97e82c263a5b801f9031de774b90246a6b009f"
+    },
+    {
+      "number": 13,
+      "title": "Fix UTF-8 errors on Windows",
+      "state": "closed",
+      "merged_at": "2026-10-01T20:34:53Z",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/13",
+      "head_repo": "IrwinJam/eda-3d-routing-challenge",
+      "head_commit": "e6a16b1dbc8f406ba8180cd0ec9dae4283d56331"
+    },
+    {
+      "number": 12,
+      "title": "Add spt_lns submissions for all tiers",
+      "state": "closed",
+      "merged_at": "2026-10-02T00:55:11Z",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/12",
+      "head_repo": "IrwinJam/eda-3d-routing-challenge",
+      "head_commit": "806eb4150e6314a8f17ee47ba68d25f2e4d49be4"
+    },
+    {
+      "number": 11,
+      "title": "Add mj97 submissions for all six tiers",
+      "state": "closed",
+      "merged_at": null,
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/11",
+      "head_repo": null,
+      "head_commit": "93b6c420ef38b6a0294e8bf9727eb60dc4d89d62"
+    },
+    {
+      "number": 10,
+      "title": "Add reubalink hard submission (aggregate 1.3622)",
+      "state": "closed",
+      "merged_at": "2026-10-02T00:55:12Z",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/10",
+      "head_repo": "THOMACHAYAN/eda-3d-routing-challenge",
+      "head_commit": "d9cddc4cc365290f4c6f4d1752f460c46e03ddbe"
+    },
+    {
+      "number": 9,
+      "title": "Submission: warm_lns_refinement (leads all six tier aggregates over PR#3)",
+      "state": "closed",
+      "merged_at": "2026-10-02T00:55:11Z",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/9",
+      "head_repo": "kesudh/eda-3d-routing-challenge",
+      "head_commit": "f3017e8250fd7917c9d1ab395ce5d1059eb6f4d9"
+    },
+    {
+      "number": 8,
+      "title": "Leaderboard submission: drama3d-portfolio (6 tiers: intro 1.0830, hard 1.1121, scale 1.0409, designs 1.1369, stress 1.0201, congested 1.0160)",
+      "state": "closed",
+      "merged_at": "2026-10-02T00:55:12Z",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/8",
+      "head_repo": "Youngjin-Luke-Kim/eda-3d-routing-challenge-submissions",
+      "head_commit": "e2a01b990f3044f0650697ef4e963c579d107126"
+    },
+    {
+      "number": 7,
+      "title": "Submission for M3D Router submission with results for intro, hard, scale, and designs benchmark suites",
+      "state": "open",
+      "merged_at": null,
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/7",
+      "head_repo": "anveshshekhar/eda-3d-routing-challenge",
+      "head_commit": "dfbcba48bd762433350aea82cd653af74e7137ac"
+    },
+    {
+      "number": 6,
+      "title": "Hard-tier submission: CarterT27 joint-group routing (1.1637)",
+      "state": "closed",
+      "merged_at": null,
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/6",
+      "head_repo": "CarterT27/eda-3d-routing-challenge",
+      "head_commit": "bc8a8a942eb4dca9f06bb58585667a9a91c92af1"
+    },
+    {
+      "number": 5,
+      "title": "Submission: coordinated_refinement (all six tiers, credited warm starts)",
+      "state": "closed",
+      "merged_at": "2026-10-02T00:55:11Z",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/5",
+      "head_repo": "jay-tau/eda-3d-routing-challenge",
+      "head_commit": "4533580ce9a84b83c9c80b831d92f2fbac2bdac9"
+    },
+    {
+      "number": 4,
+      "title": "Submission: shivaahir158 \u2014 5 tiers, all baselines beaten",
+      "state": "closed",
+      "merged_at": "2026-10-02T00:55:12Z",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/4",
+      "head_repo": "shivaahir158/eda-3d-routing-challenge",
+      "head_commit": "cd057ed79c2f91b0da1ab173b1d106ea28c39651"
+    },
+    {
+      "number": 3,
+      "title": "Submission: pathfinder_lns (all six tiers)",
+      "state": "closed",
+      "merged_at": "2026-10-02T00:55:12Z",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/3",
+      "head_repo": "Taz33m/eda-3d-routing-challenge",
+      "head_commit": "c2d9d9f583d2f332ebb84d22592ee511f6e56e33"
+    },
+    {
+      "number": 2,
+      "title": "Add root-aware hard-tier portfolio: 1.274475, 9/9 legal",
+      "state": "closed",
+      "merged_at": "2026-10-02T00:55:12Z",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/2",
+      "head_repo": "erikqu/eda-3d-routing-challenge",
+      "head_commit": "607bb91f497a105942ce6ed14e01fb39150036d3"
+    },
+    {
+      "number": 1,
+      "title": "Submission: lns_negotiated (all six tiers)",
+      "state": "closed",
+      "merged_at": "2026-10-02T00:55:12Z",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/1",
+      "head_repo": "adityuhkapoor/eda-3d-routing-challenge",
+      "head_commit": "5b5be704578623c0430fedbd8d3c382d8b90caed"
+    }
+  ],
+  "heads": [
+    {
+      "repo": "Youngjin-Luke-Kim/eda-3d-routing-challenge-submissions",
+      "ref": "PR26",
+      "sha": "89ca44091e30d9e8f2e7e56e5eb7e69de9b8294e"
+    },
+    {
+      "repo": "IrwinJam/eda-3d-routing-challenge",
+      "ref": "PR25",
+      "sha": "6bcf44c4a4203dfb0a060997e348ce9160d3c5dc"
+    },
+    {
+      "repo": "jay-tau/eda-3d-routing-challenge",
+      "ref": "PR24",
+      "sha": "58585d7b496d505dfa35f2426df4269974e583fa"
+    },
+    {
+      "repo": "ly2019/eda-3d-routing-challenge",
+      "ref": "PR23",
+      "sha": "930088f1274647f41b48e80b724b2e2e8fb7cfbc"
+    },
+    {
+      "repo": "Taz33m/eda-3d-routing-challenge",
+      "ref": "PR22",
+      "sha": "f812a142033c0759d094d3904533f36e1eb4098d"
+    },
+    {
+      "repo": "kesudh/eda-3d-routing-challenge",
+      "ref": "PR21",
+      "sha": "fb2101ee2cc58ac35b4031c904359a603092a029"
+    },
+    {
+      "repo": "partcleda/eda-3d-routing-challenge",
+      "ref": "PR20",
+      "sha": "74467a3cd3c595b7f739d06e9a62dc1d19f0b18e"
+    },
+    {
+      "repo": "partcleda/eda-3d-routing-challenge",
+      "ref": "PR19",
+      "sha": "f6c5894b3ddc154476ec5f04479647dac17fc2db"
+    },
+    {
+      "repo": "partcleda/eda-3d-routing-challenge",
+      "ref": "PR18",
+      "sha": "3a03a700b4a8b21c229e7e1f1b9db50e81b47a95"
+    },
+    {
+      "repo": "partcleda/eda-3d-routing-challenge",
+      "ref": "PR17",
+      "sha": "0059cf4435865907bd97adbd16223c74880112cc"
+    },
+    {
+      "repo": "Taz33m/eda-3d-routing-challenge",
+      "ref": "PR16",
+      "sha": "af9f95c17423fd1a56522fa89296aa1e93b7e3f4"
+    },
+    {
+      "repo": "MantejGill/eda-3d-routing-challenge",
+      "ref": "PR15",
+      "sha": "e9183f55f5d4d79ab19ea4a2b49eeb8aa2dda248"
+    },
+    {
+      "repo": "iamparv7043/eda-3d-routing-challenge",
+      "ref": "PR14",
+      "sha": "6d97e82c263a5b801f9031de774b90246a6b009f"
+    },
+    {
+      "repo": "IrwinJam/eda-3d-routing-challenge",
+      "ref": "PR13",
+      "sha": "e6a16b1dbc8f406ba8180cd0ec9dae4283d56331"
+    },
+    {
+      "repo": "IrwinJam/eda-3d-routing-challenge",
+      "ref": "PR12",
+      "sha": "806eb4150e6314a8f17ee47ba68d25f2e4d49be4"
+    },
+    {
+      "repo": "partcleda/eda-3d-routing-challenge",
+      "ref": "PR11",
+      "sha": "93b6c420ef38b6a0294e8bf9727eb60dc4d89d62"
+    },
+    {
+      "repo": "THOMACHAYAN/eda-3d-routing-challenge",
+      "ref": "PR10",
+      "sha": "d9cddc4cc365290f4c6f4d1752f460c46e03ddbe"
+    },
+    {
+      "repo": "kesudh/eda-3d-routing-challenge",
+      "ref": "PR9",
+      "sha": "f3017e8250fd7917c9d1ab395ce5d1059eb6f4d9"
+    },
+    {
+      "repo": "Youngjin-Luke-Kim/eda-3d-routing-challenge-submissions",
+      "ref": "PR8",
+      "sha": "e2a01b990f3044f0650697ef4e963c579d107126"
+    },
+    {
+      "repo": "anveshshekhar/eda-3d-routing-challenge",
+      "ref": "PR7",
+      "sha": "dfbcba48bd762433350aea82cd653af74e7137ac"
+    },
+    {
+      "repo": "CarterT27/eda-3d-routing-challenge",
+      "ref": "PR6",
+      "sha": "bc8a8a942eb4dca9f06bb58585667a9a91c92af1"
+    },
+    {
+      "repo": "jay-tau/eda-3d-routing-challenge",
+      "ref": "PR5",
+      "sha": "4533580ce9a84b83c9c80b831d92f2fbac2bdac9"
+    },
+    {
+      "repo": "shivaahir158/eda-3d-routing-challenge",
+      "ref": "PR4",
+      "sha": "cd057ed79c2f91b0da1ab173b1d106ea28c39651"
+    },
+    {
+      "repo": "Taz33m/eda-3d-routing-challenge",
+      "ref": "PR3",
+      "sha": "c2d9d9f583d2f332ebb84d22592ee511f6e56e33"
+    },
+    {
+      "repo": "erikqu/eda-3d-routing-challenge",
+      "ref": "PR2",
+      "sha": "607bb91f497a105942ce6ed14e01fb39150036d3"
+    },
+    {
+      "repo": "adityuhkapoor/eda-3d-routing-challenge",
+      "ref": "PR1",
+      "sha": "5b5be704578623c0430fedbd8d3c382d8b90caed"
+    },
+    {
+      "repo": "pmukeshreddy/eda-3d-routing-challenge",
+      "ref": "main",
+      "sha": "0a8e052944432de0c657f3d45d6838394e627d63"
+    },
+    {
+      "repo": "ly2019/eda-3d-routing-challenge",
+      "ref": "main",
+      "sha": "182434de94d0deeeced10578500846fcc3a6acab"
+    },
+    {
+      "repo": "MantejGill/eda-3d-routing-challenge",
+      "ref": "main",
+      "sha": "3d8948fdcd6f87165d5ca1efbf4b65e8168e8e81"
+    },
+    {
+      "repo": "iamparv7043/eda-3d-routing-challenge",
+      "ref": "main",
+      "sha": "499ad7e2a415a97e9ce9b3396b0477e75ebd13e6"
+    },
+    {
+      "repo": "Kanishk234/eda-3d-routing-challenge",
+      "ref": "main",
+      "sha": "78a39c3c94be96ac4933667c65a03c7970a26de2"
+    },
+    {
+      "repo": "THOMACHAYAN/eda-3d-routing-challenge",
+      "ref": "reubalink-hard",
+      "sha": "55fc4956756402bbabeeb1d0bc80d07e83d6b1bf"
+    },
+    {
+      "repo": "sethupathib/eda-3d-routing-challenge",
+      "ref": "cursor/cpp-router-2651",
+      "sha": "22f3c69395f5b933d015b280aa1bdd1d951d291d"
+    },
+    {
+      "repo": "sethupathib/eda-3d-routing-challenge",
+      "ref": "cursor/delay-opt-router-8a79",
+      "sha": "b4016689f2be6869b171510b609c33c4dbc40e12"
+    }
+  ],
+  "unique_sources": [
+    {
+      "repo": "Youngjin-Luke-Kim/eda-3d-routing-challenge-submissions",
+      "ref": "PR26",
+      "path": "submissions/congested/drama3d-portfolio/meta.json",
+      "sha": "9b6b20b5b0311703c3e7cd0c9240ffe37ca8fa09",
+      "kind": "notes",
+      "content_sha256": "cf5f8b7dec8aed1b88812446a86838f8d33ca7526e326b9b9498999b3c9fa67e",
+      "bytes": 92,
+      "review_scope": "Method and provenance metadata"
+    },
+    {
+      "repo": "IrwinJam/eda-3d-routing-challenge",
+      "ref": "PR25",
+      "path": "submissions/congested/spt_lns/meta.json",
+      "sha": "44f9ef4772fa7ad09d09c50b15e41ba1e46892dc",
+      "kind": "notes",
+      "content_sha256": "0f7cd9628bc9e45d2edf109587cc8e11dc7a07f85f3063f80eaceb2d31322ad4",
+      "bytes": 323,
+      "review_scope": "Method and provenance metadata"
+    },
+    {
+      "repo": "jay-tau/eda-3d-routing-challenge",
+      "ref": "PR24",
+      "path": "submissions/congested/coordinated_refinement/README.md",
+      "sha": "4f0ae5c3b0405cffc2a16f84009329600c79501d",
+      "kind": "notes",
+      "content_sha256": "f7e8bf8cbacec45c8c5e502d7cd4e682b2e01235a8012e76a48771f390fbbed7",
+      "bytes": 792,
+      "review_scope": "Method and provenance metadata"
+    },
+    {
+      "repo": "jay-tau/eda-3d-routing-challenge",
+      "ref": "PR24",
+      "path": "submissions/congested/coordinated_refinement/meta.json",
+      "sha": "d0d02d19793ff71a7ceb456a17d07827791c64e9",
+      "kind": "notes",
+      "content_sha256": "e3d2780f45ad02aea13aef75ae17874f1fbc9a0268b6e7430b45fbe4d07bea6a",
+      "bytes": 12804,
+      "review_scope": "Method and provenance metadata"
+    },
+    {
+      "repo": "jay-tau/eda-3d-routing-challenge",
+      "ref": "PR24",
+      "path": "submissions/designs/coordinated_refinement/README.md",
+      "sha": "13b8c7e19649e9005de512ab2318f9e2d349a96b",
+      "kind": "notes",
+      "content_sha256": "eac6fbdd661a576fff547cf45e1fe36dfbc001a858dcaa751fb6dc2a1ff202d3",
+      "bytes": 655,
+      "review_scope": "Method and provenance metadata"
+    },
+    {
+      "repo": "jay-tau/eda-3d-routing-challenge",
+      "ref": "PR24",
+      "path": "submissions/designs/coordinated_refinement/meta.json",
+      "sha": "b592e48080d175eb8ef9355986ea30b605c2e79d",
+      "kind": "notes",
+      "content_sha256": "cd6fed45801bee7a5e62023e84a01a9998c9633d4b0d6c650758e85ad93a354d",
+      "bytes": 17276,
+      "review_scope": "Method and provenance metadata"
+    },
+    {
+      "repo": "jay-tau/eda-3d-routing-challenge",
+      "ref": "PR24",
+      "path": "submissions/hard/coordinated_refinement/README.md",
+      "sha": "246a366f1f38027fd4d09d4195e18af87a58965e",
+      "kind": "notes",
+      "content_sha256": "76b1744b2b38a29b718181096379ce5a4cc7ef306e4a2e0a07f19d142709d0be",
+      "bytes": 3760,
+      "review_scope": "Method and provenance metadata"
+    },
+    {
+      "repo": "jay-tau/eda-3d-routing-challenge",
+      "ref": "PR24",
+      "path": "submissions/hard/coordinated_refinement/meta.json",
+      "sha": "463e0292686e1aa078347d51c465a72906b999bb",
+      "kind": "notes",
+      "content_sha256": "b4d370ff5841fea3386310f03175a67be5baf01f651a509c3a486b62df31bf3e",
+      "bytes": 15591,
+      "review_scope": "Method and provenance metadata"
+    },
+    {
+      "repo": "jay-tau/eda-3d-routing-challenge",
+      "ref": "PR24",
+      "path": "submissions/intro/coordinated_refinement/README.md",
+      "sha": "726806393c2098a85455316c592ec8e911b98dd6",
+      "kind": "notes",
+      "content_sha256": "506c8331f14ec4868f22eebf51ac98a657997ee2d112b79509c0c0cf44281097",
+      "bytes": 1871,
+      "review_scope": "Method and provenance metadata"
+    },
+    {
+      "repo": "jay-tau/eda-3d-routing-challenge",
+      "ref": "PR24",
+      "path": "submissions/intro/coordinated_refinement/meta.json",
+      "sha": "5237961fa3b9813119223172e108894beeadd2c3",
+      "kind": "notes",
+      "content_sha256": "0323e5d6dc0eff27542a3cc2183cb61eba4792feee1af085cf1942f1e290ac0b",
+      "bytes": 36710,
+      "review_scope": "Method and provenance metadata"
+    },
+    {
+      "repo": "jay-tau/eda-3d-routing-challenge",
+      "ref": "PR24",
+      "path": "submissions/scale/coordinated_refinement/README.md",
+      "sha": "f5f7c25302a180c039b816e70f8c6515cd8c74d4",
+      "kind": "notes",
+      "content_sha256": "237e482ff8b702a203d3d6f6eacd6d8d96711e9b3d5ac4327df755cc85213639",
+      "bytes": 1101,
+      "review_scope": "Method and provenance metadata"
+    },
+    {
+      "repo": "jay-tau/eda-3d-routing-challenge",
+      "ref": "PR24",
+      "path": "submissions/scale/coordinated_refinement/meta.json",
+      "sha": "f0901fb12e40ecf61fa3dcc0af5cd933bf6f6be6",
+      "kind": "notes",
+      "content_sha256": "d4956ebd1f72096921114d89c3cb0db31772829f739250e98d945bcb5e8c6b52",
+      "bytes": 22288,
+      "review_scope": "Method and provenance metadata"
+    },
+    {
+      "repo": "jay-tau/eda-3d-routing-challenge",
+      "ref": "PR24",
+      "path": "submissions/stress/coordinated_refinement/README.md",
+      "sha": "4cf1b13edf190a5cb58e3ac6dad8802b420a6cab",
+      "kind": "notes",
+      "content_sha256": "cdccd50692cf9ad6cff7586af87f635a743957564ee50852093fa1b19511f927",
+      "bytes": 555,
+      "review_scope": "Method and provenance metadata"
+    },
+    {
+      "repo": "jay-tau/eda-3d-routing-challenge",
+      "ref": "PR24",
+      "path": "submissions/stress/coordinated_refinement/meta.json",
+      "sha": "863604236d9df41645b3cbec6ada5f96361ab92f",
+      "kind": "notes",
+      "content_sha256": "ffd956346598a4cb29a067f3139bc045f74d945050bc7599cb63f33fb1f65ac5",
+      "bytes": 4385,
+      "review_scope": "Method and provenance metadata"
+    },
+    {
+      "repo": "ly2019/eda-3d-routing-challenge",
+      "ref": "PR23",
+      "path": "submissions/hard/ly/meta.json",
+      "sha": "64e82724386a0bcfc7d4a8b1199227cc43e31251",
+      "kind": "notes",
+      "content_sha256": "55bba6c743f9fd54fa1c397a01453843764e4ab675737416506454fdecc909ca",
+      "bytes": 195,
+      "review_scope": "Method and provenance metadata"
+    },
+    {
+      "repo": "kesudh/eda-3d-routing-challenge",
+      "ref": "PR21",
+      "path": "submissions/congested/warm_lns_refinement/README.md",
+      "sha": "6675dbb664bc6e007b1d355adf8488d9694df078",
+      "kind": "notes",
+      "content_sha256": "60f9df0e2713af1ffb4a7cfe3c134e11d50418db830b1799aff3c05e49daa56d",
+      "bytes": 2416,
+      "review_scope": "Method and provenance metadata"
+    },
+    {
+      "repo": "kesudh/eda-3d-routing-challenge",
+      "ref": "PR21",
+      "path": "submissions/congested/warm_lns_refinement/meta.json",
+      "sha": "2308d50b745edff5b856efe15b95324e3c0b7f2d",
+      "kind": "notes",
+      "content_sha256": "2394920ec6f7056ea282da45ab33e99d1fc845554a07e1326ce974a966a356c2",
+      "bytes": 46607,
+      "review_scope": "Method and provenance metadata"
+    },
+    {
+      "repo": "kesudh/eda-3d-routing-challenge",
+      "ref": "PR21",
+      "path": "submissions/designs/warm_lns_refinement/README.md",
+      "sha": "656af6cb734b5708d53acc3df9876088eefd3a69",
+      "kind": "notes",
+      "content_sha256": "106af6c42df59f9083798e8000fece23f3c5d1fa19b84eba30ec765dee495324",
+      "bytes": 2413,
+      "review_scope": "Method and provenance metadata"
+    },
+    {
+      "repo": "kesudh/eda-3d-routing-challenge",
+      "ref": "PR21",
+      "path": "submissions/designs/warm_lns_refinement/meta.json",
+      "sha": "b217f0dd2d5d9c4fd345a196c6c627f4b730478a",
+      "kind": "notes",
+      "content_sha256": "fb075ec9379e4ff01a3d6e723ff30d2a1a6c589c5843c6c6d65f7e6315ad191d",
+      "bytes": 34013,
+      "review_scope": "Method and provenance metadata"
+    },
+    {
+      "repo": "kesudh/eda-3d-routing-challenge",
+      "ref": "PR21",
+      "path": "submissions/hard/warm_lns_refinement/README.md",
+      "sha": "67cbd58c05e5e5fb02ae85b658abaf75eb2273c0",
+      "kind": "notes",
+      "content_sha256": "89c18a7ef43e2530849f6285c976a8635b70b83d577a8919d01ba2fe27ce9de5",
+      "bytes": 2407,
+      "review_scope": "Method and provenance metadata"
+    },
+    {
+      "repo": "kesudh/eda-3d-routing-challenge",
+      "ref": "PR21",
+      "path": "submissions/hard/warm_lns_refinement/meta.json",
+      "sha": "acd51b395d6be2e364423a4a4328d8383693d8ad",
+      "kind": "notes",
+      "content_sha256": "43db9d3c6ed82314f66c38f216b43d6ca4246487045de1367672ec562fc74b85",
+      "bytes": 17328,
+      "review_scope": "Method and provenance metadata"
+    },
+    {
+      "repo": "kesudh/eda-3d-routing-challenge",
+      "ref": "PR21",
+      "path": "submissions/intro/warm_lns_refinement/README.md",
+      "sha": "2e7fb5cc49a03b4806c0a3b5c4bffc3beb46612e",
+      "kind": "notes",
+      "content_sha256": "993f4b66d6574a801156b964ca8e42518aeaaa4fca811ff3df61c8aba4bdf9c4",
+      "bytes": 2413,
+      "review_scope": "Method and provenance metadata"
+    },
+    {
+      "repo": "kesudh/eda-3d-routing-challenge",
+      "ref": "PR21",
+      "path": "submissions/intro/warm_lns_refinement/meta.json",
+      "sha": "13b1f0a89116af819f652adbdef5b3b141a1a366",
+      "kind": "notes",
+      "content_sha256": "bf6005815d67013df90ec04c27d91f703293033b2d0dfd2fbbebbf4a679dfab6",
+      "bytes": 60812,
+      "review_scope": "Method and provenance metadata"
+    },
+    {
+      "repo": "kesudh/eda-3d-routing-challenge",
+      "ref": "PR21",
+      "path": "submissions/intro/warm_lns_refinement/replay/README.md",
+      "sha": "d4c34692a4f22d541085460e7a8d8744a73eda8d",
+      "kind": "notes",
+      "content_sha256": "9a42416c5029180d5545f5611576b0cced78db3569d08cf00eb21f978e332491",
+      "bytes": 2157,
+      "review_scope": "Method and provenance metadata"
+    },
+    {
+      "repo": "kesudh/eda-3d-routing-challenge",
+      "ref": "PR21",
+      "path": "submissions/intro/warm_lns_refinement/replay/reproduce.py",
+      "sha": "6198cb477110cb7c61bc402a2c1226c166f03abb",
+      "kind": "code",
+      "content_sha256": "eec2df0d4d16c1cbd5752003c7cbfeec62052a6d06ee49024bfb2160570e0726",
+      "bytes": 5814,
+      "review_scope": "Source inventory and targeted algorithm inspection"
+    },
+    {
+      "repo": "kesudh/eda-3d-routing-challenge",
+      "ref": "PR21",
+      "path": "submissions/intro/warm_lns_refinement/replay/reproducer/algorithms/59c038818c60a136d5b1dbe3e1caf9f7a6cce57ce7b324a5cc88b60b1b69684b/pairwise_refine.py",
+      "sha": "774ce2cbc55b12c35f92a7a7c6c23ac001117531",
+      "kind": "code",
+      "content_sha256": "59c038818c60a136d5b1dbe3e1caf9f7a6cce57ce7b324a5cc88b60b1b69684b",
+      "bytes": 4792,
+      "review_scope": "Source inventory and targeted algorithm inspection"
+    },
+    {
+      "repo": "kesudh/eda-3d-routing-challenge",
+      "ref": "PR21",
+      "path": "submissions/intro/warm_lns_refinement/replay/reproducer/src/main.rs",
+      "sha": "ac54b06b9c18b7eba215b90a503a4e36177122f2",
+      "kind": "code",
+      "content_sha256": "9450f9addfe6c6428e295457321aa35cf383f459e17bef70a66f18a8eba50387",
+      "bytes": 109107,
+      "review_scope": "Source inventory and targeted algorithm inspection"
+    },
+    {
+      "repo": "kesudh/eda-3d-routing-challenge",
+      "ref": "PR21",
+      "path": "submissions/intro/warm_lns_refinement/replay/reproducer/versions/0348e9fb19d7499a3df56e1898e0514dc572f4aecac97e342e394d00aaea11e7/main.rs",
+      "sha": "201fbc94026d3fd4c9f126b664a13ab2f143698f",
+      "kind": "code",
+      "content_sha256": "0bcc6ce7bb11cc33df5e6eb87af48323da85214d0d42ad5d9238e2c498e55fb4",
+      "bytes": 71810,
+      "review_scope": "Source inventory and targeted algorithm inspection"
+    },
+    {
+      "repo": "kesudh/eda-3d-routing-challenge",
+      "ref": "PR21",
+      "path": "submissions/intro/warm_lns_refinement/replay/reproducer/versions/26d4a93436cf566bc568ffbecbf7881ff8489196befdbd9b243035bff0cb1441/main.rs",
+      "sha": "6cecb0731a4f298e6acfce0772b68588e9ec03ff",
+      "kind": "code",
+      "content_sha256": "e98a678321681dba0c322e341492b794d607f7daed28e5a8f08099707214b52e",
+      "bytes": 74354,
+      "review_scope": "Source inventory and targeted algorithm inspection"
+    },
+    {
+      "repo": "kesudh/eda-3d-routing-challenge",
+      "ref": "PR21",
+      "path": "submissions/intro/warm_lns_refinement/replay/reproducer/versions/62ecc2d8bfda88da565842e77fb1b0581463851ed50f38daf044f9ca16d52703/main.rs",
+      "sha": "a5ae49be3a0ebe61a1b0479bda83c1282044cf16",
+      "kind": "code",
+      "content_sha256": "39632604508b4de01e756281b7194fc3ddc0775cf05710bbd6be7d3136185cd7",
+      "bytes": 81024,
+      "review_scope": "Source inventory and targeted algorithm inspection"
+    },
+    {
+      "repo": "kesudh/eda-3d-routing-challenge",
+      "ref": "PR21",
+      "path": "submissions/intro/warm_lns_refinement/replay/reproducer/versions/7a11406bbc53bf39076980446f8a0033535179c66adb969627a35a690f08b179/main.rs",
+      "sha": "997fd36421d1ddfc77ae939df84e2a35eef4b9ae",
+      "kind": "code",
+      "content_sha256": "09f17e223b2782d88d821c1994d77fb13ca318d771922a697177fb4f808d22d9",
+      "bytes": 70538,
+      "review_scope": "Source inventory and targeted algorithm inspection"
+    },
+    {
+      "repo": "kesudh/eda-3d-routing-challenge",
+      "ref": "PR21",
+      "path": "submissions/intro/warm_lns_refinement/replay/reproducer/versions/a0fb3d6a4286830d0464da30b7d2fdfe9afd39090b6cae4988fcfdd5af8e9387/main.rs",
+      "sha": "038f69e2ea27f4063ab6d4fc53176e53af66b251",
+      "kind": "code",
+      "content_sha256": "ecf7baa8a5a7dd78809f4d69682abf23a398a8464d1747dc1d75f0f346a3f13b",
+      "bytes": 104848,
+      "review_scope": "Source inventory and targeted algorithm inspection"
+    },
+    {
+      "repo": "kesudh/eda-3d-routing-challenge",
+      "ref": "PR21",
+      "path": "submissions/intro/warm_lns_refinement/replay/reproducer/versions/b5803388e99ad375a5e53754eefb1184f05a1d2d0e1e5f9240ad6bd1e5bda63d/main.rs",
+      "sha": "896e10dff4acff5dcec63cbdaf62dffdee72a6e4",
+      "kind": "code",
+      "content_sha256": "300b6a4e6aea16fd521a3dd4ae1973e4a42c2eaa862bc9308e9401db637560de",
+      "bytes": 81593,
+      "review_scope": "Source inventory and targeted algorithm inspection"
+    },
+    {
+      "repo": "kesudh/eda-3d-routing-challenge",
+      "ref": "PR21",
+      "path": "submissions/intro/warm_lns_refinement/replay/reproducer/versions/cd6b3e8ec0b3f3be6fe814c59eaceb6fbd1b69e13659deaed725f77605bce65f/main.rs",
+      "sha": "746d616c7550f9f214043bacf44b8e8e9cbc1255",
+      "kind": "code",
+      "content_sha256": "b0afdaf96a538b41855c821a0f5717e087aaa40149d8d3d43a69f6a91feebc22",
+      "bytes": 72891,
+      "review_scope": "Source inventory and targeted algorithm inspection"
+    },
+    {
+      "repo": "kesudh/eda-3d-routing-challenge",
+      "ref": "PR21",
+      "path": "submissions/intro/warm_lns_refinement/replay/reproducer/versions/d10c46019d4ccab0ce1f9782fc139c99a2c2560a23eb8b65cb834bc97040f196/main.rs",
+      "sha": "b74fc1e1dfda50173fdd9fe0cdb532710efa5db1",
+      "kind": "code",
+      "content_sha256": "47d51c473bd03dad94abdfb3592bfb7de3faf12d893f8c8bc62b2eed181885d7",
+      "bytes": 68856,
+      "review_scope": "Source inventory and targeted algorithm inspection"
+    },
+    {
+      "repo": "kesudh/eda-3d-routing-challenge",
+      "ref": "PR21",
+      "path": "submissions/intro/warm_lns_refinement/replay/reproducer/versions/d5c8302ea6c560a08843cc18190162e0fbfd890a5e28accfa3f6c4ba68fde0bf/main.rs",
+      "sha": "1f47b6326749dc951c6c36f519e4248f8fb41452",
+      "kind": "code",
+      "content_sha256": "40a29b29e893b1ce688aa69fda02cb6bda9afd88956cd2683d35c7676fd14107",
+      "bytes": 90462,
+      "review_scope": "Source inventory and targeted algorithm inspection"
+    },
+    {
+      "repo": "kesudh/eda-3d-routing-challenge",
+      "ref": "PR21",
+      "path": "submissions/intro/warm_lns_refinement/replay/reproducer/versions/f07d222b18bbfcb664782163e288af4cd4f9740e88090210d2ddc36509690e35/main.rs",
+      "sha": "2cd273c0beeca20a86dd613b111566f675f66f3b",
+      "kind": "code",
+      "content_sha256": "14ffefa9fd077247e86f9da5f765fceaf790e7a2bc4dc06d23c28de975419d98",
+      "bytes": 96255,
+      "review_scope": "Source inventory and targeted algorithm inspection"
+    },
+    {
+      "repo": "kesudh/eda-3d-routing-challenge",
+      "ref": "PR21",
+      "path": "submissions/intro/warm_lns_refinement/replay/reproducer/versions/f69c92e7a12c087d08cf0b468eb9324e83c113f8a33e22d57f788bad23ef685e/main.rs",
+      "sha": "0fa140fda01df9b1246fe1f2fd520e6819587ec8",
+      "kind": "code",
+      "content_sha256": "ec899a2834f7073b335fa469de6e2281e87add646116f79038e9b45af38fe6cc",
+      "bytes": 67234,
+      "review_scope": "Source inventory and targeted algorithm inspection"
+    },
+    {
+      "repo": "kesudh/eda-3d-routing-challenge",
+      "ref": "PR21",
+      "path": "submissions/scale/warm_lns_refinement/README.md",
+      "sha": "9fc88e925a1249c5bc6678d8f62667f58fbb18c1",
+      "kind": "notes",
+      "content_sha256": "29b75e60985b94c788a94ecf8f324c604ebdae20f28b550a39039007ed5b7326",
+      "bytes": 2410,
+      "review_scope": "Method and provenance metadata"
+    },
+    {
+      "repo": "kesudh/eda-3d-routing-challenge",
+      "ref": "PR21",
+      "path": "submissions/scale/warm_lns_refinement/meta.json",
+      "sha": "31f13501780b44f94ba9e485bbf840a196c15602",
+      "kind": "notes",
+      "content_sha256": "7cac0128ecadbda140e737f367aeff1b7e520cd0b9a992a36809a2410d2227fb",
+      "bytes": 30073,
+      "review_scope": "Method and provenance metadata"
+    },
+    {
+      "repo": "kesudh/eda-3d-routing-challenge",
+      "ref": "PR21",
+      "path": "submissions/stress/warm_lns_refinement/README.md",
+      "sha": "05bd63bd016a95f54b991c1546c41fa28161a9b9",
+      "kind": "notes",
+      "content_sha256": "00f40e7de614c51e44a77718ac90e5deb70ad956a1bcfba7674c5e42813ed062",
+      "bytes": 2414,
+      "review_scope": "Method and provenance metadata"
+    },
+    {
+      "repo": "kesudh/eda-3d-routing-challenge",
+      "ref": "PR21",
+      "path": "submissions/stress/warm_lns_refinement/meta.json",
+      "sha": "ea8b079514cb7f28d0b6c30a538043910277c62d",
+      "kind": "notes",
+      "content_sha256": "3f5db893eaf06c0346c171be39b97d8f2a9cec995a798ff8954e84885889b8a8",
+      "bytes": 14154,
+      "review_scope": "Method and provenance metadata"
+    },
+    {
+      "repo": "partcleda/eda-3d-routing-challenge",
+      "ref": "PR11",
+      "path": "submissions/congested/mj97/meta.json",
+      "sha": "5cd6aa60f313de7e5d182b38cfe03660c447ed08",
+      "kind": "notes",
+      "content_sha256": "81edcc7f5f1b608d35e654ffa01f065a9444eba3cfe97db5753c9016ddcd682e",
+      "bytes": 156,
+      "review_scope": "Method and provenance metadata"
+    },
+    {
+      "repo": "partcleda/eda-3d-routing-challenge",
+      "ref": "PR11",
+      "path": "submissions/intro/mj97/meta.json",
+      "sha": "dd5bce10d86f29edfe67a78679cf0afa70363e98",
+      "kind": "notes",
+      "content_sha256": "1089245938b39b1f8b9c3a5b0ad135b44a3b23fa181fb492623a23ae59e3bf37",
+      "bytes": 155,
+      "review_scope": "Method and provenance metadata"
+    },
+    {
+      "repo": "anveshshekhar/eda-3d-routing-challenge",
+      "ref": "PR7",
+      "path": "merge_best.py",
+      "sha": "f7cd09fe708503b40c7a9e148bd6f094c467d287",
+      "kind": "code",
+      "content_sha256": "08f5c379ac3ad6b7930f98b90f58c19c34d81bf98096673b36267d9242ff770f",
+      "bytes": 3444,
+      "review_scope": "Source inventory and targeted algorithm inspection"
+    },
+    {
+      "repo": "anveshshekhar/eda-3d-routing-challenge",
+      "ref": "PR7",
+      "path": "my_router.py",
+      "sha": "9e3fc60ee1870e4dd43b64e51b9ae14efce9cd5e",
+      "kind": "code",
+      "content_sha256": "6dd4698942df67d958def48a5ee76d0c796859f7b9fd6efe66db36f14a7cddb7",
+      "bytes": 22095,
+      "review_scope": "Source inventory and targeted algorithm inspection"
+    },
+    {
+      "repo": "CarterT27/eda-3d-routing-challenge",
+      "ref": "PR6",
+      "path": "submissions/hard/carter-group-routing/meta.json",
+      "sha": "7f703ecd702ec78934122edbd69c7d9f39c87e4e",
+      "kind": "notes",
+      "content_sha256": "13ed9de1ba910d9b73201501ff1b6a37b07dd1a84f03062374d3b2e547358c7d",
+      "bytes": 264,
+      "review_scope": "Method and provenance metadata"
+    },
+    {
+      "repo": "THOMACHAYAN/eda-3d-routing-challenge",
+      "ref": "reubalink-hard",
+      "path": "submissions/hard/reubalink/meta.json",
+      "sha": "19c7a642cad9d68603810ed7179e4b2a764b0209",
+      "kind": "notes",
+      "content_sha256": "84985c41d2df9d74cf4cd47a4dc6db783dbc09fa7ffa0d92315cc16fa268d932",
+      "bytes": 387,
+      "review_scope": "Method and provenance metadata"
+    },
+    {
+      "repo": "sethupathib/eda-3d-routing-challenge",
+      "ref": "cursor/cpp-router-2651",
+      "path": "cpp/m3d_route.cpp",
+      "sha": "ae0fc38b1ab9e6c4687562b59fc81dd266df115d",
+      "kind": "code",
+      "content_sha256": "ed67f4efa22efc4cc115412571cab0bc465d07dd26cbaff139545b58c3c83fa3",
+      "bytes": 50359,
+      "review_scope": "Source inventory and targeted algorithm inspection"
+    },
+    {
+      "repo": "sethupathib/eda-3d-routing-challenge",
+      "ref": "cursor/cpp-router-2651",
+      "path": "submissions/congested/cpp-route/meta.json",
+      "sha": "852647d49eb67d08161e11eba17da95758986c56",
+      "kind": "notes",
+      "content_sha256": "8193cc7369909bfdb3c41489b9a9cc16df3c9852720a5b049a571ff758683035",
+      "bytes": 252,
+      "review_scope": "Method and provenance metadata"
+    },
+    {
+      "repo": "sethupathib/eda-3d-routing-challenge",
+      "ref": "cursor/cpp-router-2651",
+      "path": "submissions/hard/delay-opt/meta.json",
+      "sha": "eff68c97bd741000fd3644a7ecbc746190afc33d",
+      "kind": "notes",
+      "content_sha256": "035d6728284b70f0dd30575c920138430665b23ace0ebc4be8a1c7909af6e983",
+      "bytes": 260,
+      "review_scope": "Method and provenance metadata"
+    },
+    {
+      "repo": "sethupathib/eda-3d-routing-challenge",
+      "ref": "cursor/cpp-router-2651",
+      "path": "submissions/hard/delay-opt/solve.py",
+      "sha": "2f4c2b7e3a16ae0cb351d2092c9820d002d312db",
+      "kind": "code",
+      "content_sha256": "1945ce543f9a3b8e1eb9bd1fad05c921c33033754d07c12caad4eccbc235ba85",
+      "bytes": 34090,
+      "review_scope": "Source inventory and targeted algorithm inspection"
+    },
+    {
+      "repo": "sethupathib/eda-3d-routing-challenge",
+      "ref": "cursor/cpp-router-2651",
+      "path": "submissions/stress/cpp-route/meta.json",
+      "sha": "d6f3eb73ee1fbc72f2e231fddeaa6283534822f3",
+      "kind": "notes",
+      "content_sha256": "2f46a917fed1af0857d7a8a522b3902048cb66d5d6a2146656668961967b4917",
+      "bytes": 239,
+      "review_scope": "Method and provenance metadata"
+    }
+  ],
+  "counts": {
+    "forks": 23,
+    "prs": 26,
+    "distinct_tree_records": 34,
+    "unique_code_blobs": 18,
+    "unique_note_blobs": 35
+  },
+  "limitations": [
+    "Public GitHub snapshot only; private/unpublished solvers cannot be inspected.",
+    "One PR26 diff endpoint returned HTTP422; full recursive head tree succeeded.",
+    "PR file listing may truncate at100; recursive trees used for source discovery,none truncated.",
+    "Own fork not treated as a competing algorithm. Unchanged official toolkit modules excluded from algorithm scan.",
+    "No external code executed, copied into solver, or external route inputs used.",
+    "18 code blobs include historical duplicates/versions; targeted latest-kernel review rather than every-line historical review."
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "coverage": "docs/evidence/phase3/tier-exact-pool-coverage.json",
+  "tier": "hard",
+  "cases": [
+    "case_01",
+    "case_04",
+    "case_07"
+  ],
+  "pairs_per_case": 5,
+  "margin": 1,
+  "seconds": 10,
+  "deterministic_time": 1,
+  "proposal_work": 3000000,
+  "proposal_seconds": 60,
+  "scope": "Development-only restricted corridor pilot. Discover target headroom by freeing one/two nearby single-sink nets while keeping all other routes fixed; then exact jointly route up to3nets. Bounded percase discovery and up to5group solves.",
+  "max_group": 3,
+  "discovery_options": 4
+}

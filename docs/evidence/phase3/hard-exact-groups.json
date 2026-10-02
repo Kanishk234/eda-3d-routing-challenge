@@ -1,0 +1,335 @@
+{
+  "plan": {
+    "coverage": "docs/evidence/phase3/tier-exact-pool-coverage.json",
+    "tier": "hard",
+    "cases": [
+      "case_01",
+      "case_04",
+      "case_07"
+    ],
+    "pairs_per_case": 5,
+    "margin": 1,
+    "seconds": 10,
+    "deterministic_time": 1,
+    "proposal_work": 3000000,
+    "proposal_seconds": 60,
+    "scope": "Development-only restricted corridor pilot. Discover target headroom by freeing one/two nearby single-sink nets while keeping all other routes fixed; then exact jointly route up to3nets. Bounded percase discovery and up to5group solves.",
+    "max_group": 3,
+    "discovery_options": 4
+  },
+  "frozen_sha256": {
+    "/home/younix/eda-3d-routing-challenge/dev/configs/hard-exact-groups.json": "d4ac70679f883343381e64a7b5f8bc38961384ff7d9c9780a229cd79a9abdbcc",
+    "/home/younix/eda-3d-routing-challenge/dev/exact_pair_repair.py": "11e5dbde121d7f9ba65dd8bc4c30c184f579fa73a48eb73cb12790fd3bf43545",
+    "/home/younix/eda-3d-routing-challenge/docs/evidence/phase3/tier-exact-pool-coverage.json": "f4c8790dd936946d79ca8c323f2794ec19ca9c8d4c1878a81805e1a74b43598f",
+    "/home/younix/eda-3d-routing-challenge/dev/branch_repair.py": "fac12b4771279883b09714a76b9e05837450c8458cd4d780385ff7cb7e4e3a13",
+    "/home/younix/eda-3d-routing-challenge/dev/generate_tree_candidates.py": "57e96f75c4b1bec8b764aa0eb79b5bcf964286f2ee2cfcd1f8f80081192ad4d0"
+  },
+  "status": "complete",
+  "rows": [
+    {
+      "case": "case_01",
+      "case_sha256": "685a165a7a15811dff12839e0dbe79752b889558213f760ad5f0df6139766f5d",
+      "start_sha256": "666e44ae96ee72816309fa92955ada3677731697d016178f15e4b095bbe25a8c",
+      "output_sha256": "666e44ae96ee72816309fa92955ada3677731697d016178f15e4b095bbe25a8c",
+      "before_delay": 9088,
+      "after_delay": 9088,
+      "legal": true,
+      "pairs": [
+        {
+          "nets": [
+            48,
+            4,
+            26
+          ],
+          "ideal_target_gain": 26,
+          "accepted_gain": 0,
+          "status": "FEASIBLE",
+          "restricted_optimal": false,
+          "baseline": 242,
+          "bound": 122.0,
+          "objective": 242.0,
+          "wall_s": 4.630905208000001,
+          "deterministic_time": 1.0063151705681905,
+          "graph_vertices": 141,
+          "flow_variables": 1164
+        },
+        {
+          "nets": [
+            18,
+            9,
+            27
+          ],
+          "ideal_target_gain": 24,
+          "accepted_gain": 0,
+          "status": "FEASIBLE",
+          "restricted_optimal": false,
+          "baseline": 214,
+          "bound": 80.0,
+          "objective": 214.0,
+          "wall_s": 3.9554142060000004,
+          "deterministic_time": 1.0025177636659526,
+          "graph_vertices": 126,
+          "flow_variables": 1064
+        },
+        {
+          "nets": [
+            26,
+            1,
+            4
+          ],
+          "ideal_target_gain": 24,
+          "accepted_gain": 0,
+          "status": "FEASIBLE",
+          "restricted_optimal": false,
+          "baseline": 232,
+          "bound": 147.0,
+          "objective": 232.0,
+          "wall_s": 3.5982996880000004,
+          "deterministic_time": 1.0000019046797437,
+          "graph_vertices": 156,
+          "flow_variables": 1210
+        },
+        {
+          "nets": [
+            48,
+            4
+          ],
+          "ideal_target_gain": 18,
+          "accepted_gain": 0,
+          "status": "OPTIMAL",
+          "restricted_optimal": true,
+          "baseline": 149,
+          "bound": 149.0,
+          "objective": 149.0,
+          "wall_s": 0.23751634700000002,
+          "deterministic_time": 0.06887102125422748,
+          "graph_vertices": 82,
+          "flow_variables": 436
+        },
+        {
+          "nets": [
+            48,
+            4,
+            32
+          ],
+          "ideal_target_gain": 18,
+          "accepted_gain": 0,
+          "status": "OPTIMAL",
+          "restricted_optimal": true,
+          "baseline": 224,
+          "bound": 224.0,
+          "objective": 224.0,
+          "wall_s": 0.6305808660000001,
+          "deterministic_time": 0.16297857093718923,
+          "graph_vertices": 124,
+          "flow_variables": 930
+        }
+      ],
+      "proposal_expansions": 266495
+    },
+    {
+      "case": "case_04",
+      "case_sha256": "06324939b75971e45caa9e7f19d824a254e0f61167dd6b279bbff612d77d96f1",
+      "start_sha256": "38485db0811336d2071c38b28c50e005c00f60949652653961dd8fddb9bd7c7e",
+      "output_sha256": "38485db0811336d2071c38b28c50e005c00f60949652653961dd8fddb9bd7c7e",
+      "before_delay": 14179,
+      "after_delay": 14179,
+      "legal": true,
+      "pairs": [
+        {
+          "nets": [
+            72,
+            47
+          ],
+          "ideal_target_gain": 60,
+          "accepted_gain": 0,
+          "status": "FEASIBLE",
+          "restricted_optimal": false,
+          "baseline": 221,
+          "bound": 94.0,
+          "objective": 221.0,
+          "wall_s": 3.3221952650000004,
+          "deterministic_time": 1.0047902900280656,
+          "graph_vertices": 167,
+          "flow_variables": 920
+        },
+        {
+          "nets": [
+            72,
+            47,
+            16
+          ],
+          "ideal_target_gain": 60,
+          "accepted_gain": 0,
+          "status": "FEASIBLE",
+          "restricted_optimal": false,
+          "baseline": 260,
+          "bound": 135.0,
+          "objective": 260.0,
+          "wall_s": 3.4907355730000003,
+          "deterministic_time": 1.0000806896165906,
+          "graph_vertices": 186,
+          "flow_variables": 1496
+        },
+        {
+          "nets": [
+            72,
+            57,
+            47
+          ],
+          "ideal_target_gain": 60,
+          "accepted_gain": 0,
+          "status": "FEASIBLE",
+          "restricted_optimal": false,
+          "baseline": 375,
+          "bound": 112.0,
+          "objective": 375.0,
+          "wall_s": 6.302149541,
+          "deterministic_time": 1.0000196022849555,
+          "graph_vertices": 246,
+          "flow_variables": 2046
+        },
+        {
+          "nets": [
+            72,
+            61,
+            47
+          ],
+          "ideal_target_gain": 60,
+          "accepted_gain": 0,
+          "status": "FEASIBLE",
+          "restricted_optimal": false,
+          "baseline": 393,
+          "bound": 122.0,
+          "objective": 393.0,
+          "wall_s": 4.633793061,
+          "deterministic_time": 1.0000300925791135,
+          "graph_vertices": 258,
+          "flow_variables": 2312
+        },
+        {
+          "nets": [
+            4,
+            45,
+            62
+          ],
+          "ideal_target_gain": 42,
+          "accepted_gain": 0,
+          "status": "FEASIBLE",
+          "restricted_optimal": false,
+          "baseline": 263,
+          "bound": 43.0,
+          "objective": 263.0,
+          "wall_s": 1.9882892120000002,
+          "deterministic_time": 1.0089269255486946,
+          "graph_vertices": 188,
+          "flow_variables": 1592
+        }
+      ],
+      "proposal_expansions": 470243
+    },
+    {
+      "case": "case_07",
+      "case_sha256": "e3475bed19f53670482b4b864a276c475b47e1cac7237d8fa26eeb48714de8f0",
+      "start_sha256": "8b2aa734679b5fed0d5fd18710c1f8e8bd4e13b94c329a8bb0fe18b53f1339c0",
+      "output_sha256": "8b2aa734679b5fed0d5fd18710c1f8e8bd4e13b94c329a8bb0fe18b53f1339c0",
+      "before_delay": 23113,
+      "after_delay": 23113,
+      "legal": true,
+      "pairs": [
+        {
+          "nets": [
+            8,
+            20,
+            50
+          ],
+          "ideal_target_gain": 54,
+          "accepted_gain": 0,
+          "status": "FEASIBLE",
+          "restricted_optimal": false,
+          "baseline": 333,
+          "bound": 67.0,
+          "objective": 333.0,
+          "wall_s": 4.613849361000001,
+          "deterministic_time": 1.0068751461242351,
+          "graph_vertices": 168,
+          "flow_variables": 1394
+        },
+        {
+          "nets": [
+            8,
+            20
+          ],
+          "ideal_target_gain": 52,
+          "accepted_gain": 0,
+          "status": "FEASIBLE",
+          "restricted_optimal": false,
+          "baseline": 270,
+          "bound": 15.0,
+          "objective": 270.0,
+          "wall_s": 3.947739544,
+          "deterministic_time": 1.0000361716063706,
+          "graph_vertices": 135,
+          "flow_variables": 778
+        },
+        {
+          "nets": [
+            8,
+            20,
+            2
+          ],
+          "ideal_target_gain": 52,
+          "accepted_gain": 0,
+          "status": "FEASIBLE",
+          "restricted_optimal": false,
+          "baseline": 368,
+          "bound": 40.0,
+          "objective": 368.0,
+          "wall_s": 4.601949264,
+          "deterministic_time": 1.0230053563726884,
+          "graph_vertices": 174,
+          "flow_variables": 1476
+        },
+        {
+          "nets": [
+            8,
+            20,
+            29
+          ],
+          "ideal_target_gain": 52,
+          "accepted_gain": 0,
+          "status": "FEASIBLE",
+          "restricted_optimal": false,
+          "baseline": 376,
+          "bound": 56.0,
+          "objective": 376.0,
+          "wall_s": 6.411517937,
+          "deterministic_time": 1.0001876812671555,
+          "graph_vertices": 182,
+          "flow_variables": 1624
+        },
+        {
+          "nets": [
+            75,
+            77,
+            52
+          ],
+          "ideal_target_gain": 36,
+          "accepted_gain": 0,
+          "status": "FEASIBLE",
+          "restricted_optimal": false,
+          "baseline": 470,
+          "bound": 120.0,
+          "objective": 470.0,
+          "wall_s": 5.291644632000001,
+          "deterministic_time": 1.0000358894201684,
+          "graph_vertices": 330,
+          "flow_variables": 2846
+        }
+      ],
+      "proposal_expansions": 555756
+    }
+  ],
+  "workers": 1,
+  "scope": "Two single-sink nets on restricted corridor, outside routes fixed. Solver optimality is restricted only; full official checker governs accepted output. Own incumbents only."
+}

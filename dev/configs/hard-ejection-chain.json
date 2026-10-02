@@ -1,0 +1,22 @@
+{
+  "coverage": "docs/evidence/phase3/tier-independent-next-coverage.json",
+  "tier": "hard",
+  "cases": [
+    "case_01",
+    "case_04",
+    "case_07"
+  ],
+  "work_budget": 3000000,
+  "budget": 30,
+  "seed": 1,
+  "passes": 4,
+  "group_cap": 8,
+  "penalties": [
+    4,
+    16,
+    64,
+    256
+  ],
+  "entry_price": true,
+  "scope": "Dynamic displacement-chain screen on three development cases,own routes,3M/case,30s safety."
+}

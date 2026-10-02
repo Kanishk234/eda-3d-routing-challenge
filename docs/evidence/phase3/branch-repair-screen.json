@@ -1,0 +1,369 @@
+{
+  "source_sha256": "fac12b4771279883b09714a76b9e05837450c8458cd4d780385ff7cb7e4e3a13",
+  "work_budget": 300000,
+  "workers": 1,
+  "rows": [
+    {
+      "case": "case_01",
+      "seed": 1,
+      "mode": "whole",
+      "run": "dev/artifacts/branch-screen-case_01-1-whole",
+      "before_delay": 9088,
+      "after_delay": 9088,
+      "legal": true,
+      "expansions": 300000,
+      "stats": {
+        "proposals": 125,
+        "searches": 141,
+        "over_cap": 110,
+        "released_vertices": 686,
+        "rejected": 6,
+        "limit_reached": 1
+      },
+      "wall_s": 1.7869690650259145,
+      "manifest_sha256": "ed3c2245518b5e6eec87f2ad59418fa722545c78308145525d45a127aed458e9"
+    },
+    {
+      "case": "case_01",
+      "seed": 1,
+      "mode": "branch",
+      "run": "dev/artifacts/branch-screen-case_01-1-branch",
+      "before_delay": 9088,
+      "after_delay": 9088,
+      "legal": true,
+      "expansions": 300000,
+      "stats": {
+        "proposals": 125,
+        "searches": 141,
+        "over_cap": 110,
+        "released_vertices": 302,
+        "rejected": 6,
+        "limit_reached": 1
+      },
+      "wall_s": 1.7785503069753759,
+      "manifest_sha256": "2430ae3bbb2ffe0433ca841edaf1bcb124957b810d93f5649d60920d9fa80c6d"
+    },
+    {
+      "case": "case_01",
+      "seed": 2,
+      "mode": "whole",
+      "run": "dev/artifacts/branch-screen-case_01-2-whole",
+      "before_delay": 9088,
+      "after_delay": 9088,
+      "legal": true,
+      "expansions": 300000,
+      "stats": {
+        "proposals": 125,
+        "searches": 142,
+        "over_cap": 110,
+        "released_vertices": 863,
+        "rejected": 6,
+        "limit_reached": 1
+      },
+      "wall_s": 1.8612702869577333,
+      "manifest_sha256": "5ad265a55e0ff5879c8c1834488e387490df23dff212d671f0282c22cdd556ae"
+    },
+    {
+      "case": "case_01",
+      "seed": 2,
+      "mode": "branch",
+      "run": "dev/artifacts/branch-screen-case_01-2-branch",
+      "before_delay": 9088,
+      "after_delay": 9088,
+      "legal": true,
+      "expansions": 300000,
+      "stats": {
+        "proposals": 125,
+        "searches": 143,
+        "over_cap": 110,
+        "released_vertices": 363,
+        "rejected": 6,
+        "limit_reached": 1
+      },
+      "wall_s": 1.7602130779996514,
+      "manifest_sha256": "702c79fdb75b2dda1b9214eaade4196fead565386b1e18cb97967468b8daa7d2"
+    },
+    {
+      "case": "case_01",
+      "seed": 3,
+      "mode": "whole",
+      "run": "dev/artifacts/branch-screen-case_01-3-whole",
+      "before_delay": 9088,
+      "after_delay": 9088,
+      "legal": true,
+      "expansions": 300000,
+      "stats": {
+        "proposals": 124,
+        "searches": 138,
+        "released_vertices": 686,
+        "rejected": 6,
+        "over_cap": 109,
+        "limit_reached": 1
+      },
+      "wall_s": 1.7166141099878587,
+      "manifest_sha256": "101d158d825c6b9e343f4a476bfe632e3245576c24901e3d5263fab2e937973b"
+    },
+    {
+      "case": "case_01",
+      "seed": 3,
+      "mode": "branch",
+      "run": "dev/artifacts/branch-screen-case_01-3-branch",
+      "before_delay": 9088,
+      "after_delay": 9088,
+      "legal": true,
+      "expansions": 300000,
+      "stats": {
+        "proposals": 125,
+        "searches": 139,
+        "released_vertices": 302,
+        "rejected": 6,
+        "over_cap": 110,
+        "limit_reached": 1
+      },
+      "wall_s": 1.783397827995941,
+      "manifest_sha256": "b9077daeb6f16667b6b615ca449886d18f5e554a38131281d7945628396567f1"
+    },
+    {
+      "case": "case_04",
+      "seed": 1,
+      "mode": "whole",
+      "run": "dev/artifacts/branch-screen-case_04-1-whole",
+      "before_delay": 14179,
+      "after_delay": 14179,
+      "legal": true,
+      "expansions": 300000,
+      "stats": {
+        "proposals": 85,
+        "searches": 87,
+        "over_cap": 75,
+        "released_vertices": 138,
+        "rejected": 1,
+        "limit_reached": 1
+      },
+      "wall_s": 1.8581792270415463,
+      "manifest_sha256": "ba9e33d6aa05cf81cef9a1549628efd1e9999a116ee4ab5489874739e438eb95"
+    },
+    {
+      "case": "case_04",
+      "seed": 1,
+      "mode": "branch",
+      "run": "dev/artifacts/branch-screen-case_04-1-branch",
+      "before_delay": 14179,
+      "after_delay": 14179,
+      "legal": true,
+      "expansions": 300000,
+      "stats": {
+        "proposals": 85,
+        "searches": 87,
+        "over_cap": 75,
+        "released_vertices": 26,
+        "rejected": 1,
+        "limit_reached": 1
+      },
+      "wall_s": 1.7560421689995565,
+      "manifest_sha256": "de9a31254205f4c73c37a4929121de94f48600c70d933465e1c6b211dd579430"
+    },
+    {
+      "case": "case_04",
+      "seed": 2,
+      "mode": "whole",
+      "run": "dev/artifacts/branch-screen-case_04-2-whole",
+      "before_delay": 14179,
+      "after_delay": 14179,
+      "legal": true,
+      "expansions": 300000,
+      "stats": {
+        "proposals": 86,
+        "searches": 90,
+        "over_cap": 75,
+        "released_vertices": 276,
+        "rejected": 2,
+        "limit_reached": 1
+      },
+      "wall_s": 1.8435760739957914,
+      "manifest_sha256": "b183e478685e5f66a5b997fad92722726648ab61459dbfd115f4772e98e7475d"
+    },
+    {
+      "case": "case_04",
+      "seed": 2,
+      "mode": "branch",
+      "run": "dev/artifacts/branch-screen-case_04-2-branch",
+      "before_delay": 14179,
+      "after_delay": 14179,
+      "legal": true,
+      "expansions": 300000,
+      "stats": {
+        "proposals": 86,
+        "searches": 90,
+        "over_cap": 75,
+        "released_vertices": 52,
+        "rejected": 2,
+        "limit_reached": 1
+      },
+      "wall_s": 1.8169119820231572,
+      "manifest_sha256": "6877dfaca4fa4c2071de94e112cbb36a5c273c50182cc85d310560494efa3100"
+    },
+    {
+      "case": "case_04",
+      "seed": 3,
+      "mode": "whole",
+      "run": "dev/artifacts/branch-screen-case_04-3-whole",
+      "before_delay": 14179,
+      "after_delay": 14179,
+      "legal": true,
+      "expansions": 300000,
+      "stats": {
+        "proposals": 86,
+        "searches": 88,
+        "over_cap": 75,
+        "released_vertices": 138,
+        "rejected": 1,
+        "limit_reached": 1
+      },
+      "wall_s": 1.6962360689649358,
+      "manifest_sha256": "e51587d7b1face029d71fa6fd27a346f2774e661513b3872e6b35962691ebf8f"
+    },
+    {
+      "case": "case_04",
+      "seed": 3,
+      "mode": "branch",
+      "run": "dev/artifacts/branch-screen-case_04-3-branch",
+      "before_delay": 14179,
+      "after_delay": 14179,
+      "legal": true,
+      "expansions": 300000,
+      "stats": {
+        "proposals": 87,
+        "searches": 89,
+        "over_cap": 76,
+        "released_vertices": 26,
+        "rejected": 1,
+        "limit_reached": 1
+      },
+      "wall_s": 1.6672164300107397,
+      "manifest_sha256": "98e6468a2cb11d70f9e88213245f5783e35c876dc59b4a78635c71f1f847e0e8"
+    },
+    {
+      "case": "case_07",
+      "seed": 1,
+      "mode": "whole",
+      "run": "dev/artifacts/branch-screen-case_07-1-whole",
+      "before_delay": 23113,
+      "after_delay": 23113,
+      "legal": true,
+      "expansions": 300000,
+      "stats": {
+        "proposals": 60,
+        "searches": 63,
+        "over_cap": 55,
+        "released_vertices": 193,
+        "rejected": 1,
+        "limit_reached": 1
+      },
+      "wall_s": 1.706175084982533,
+      "manifest_sha256": "5aedd88d0e6bd0e7227fdcb3933b5ec8c4ca44d8279707f4f0a50445475c510e"
+    },
+    {
+      "case": "case_07",
+      "seed": 1,
+      "mode": "branch",
+      "run": "dev/artifacts/branch-screen-case_07-1-branch",
+      "before_delay": 23113,
+      "after_delay": 23113,
+      "legal": true,
+      "expansions": 300000,
+      "stats": {
+        "proposals": 60,
+        "searches": 63,
+        "over_cap": 55,
+        "released_vertices": 123,
+        "rejected": 1,
+        "limit_reached": 1
+      },
+      "wall_s": 1.7077771300100721,
+      "manifest_sha256": "bb36fc66e1b6b3876d9508d46b15a9c19f18288d2a892265f1b619133a6ffbed"
+    },
+    {
+      "case": "case_07",
+      "seed": 2,
+      "mode": "whole",
+      "run": "dev/artifacts/branch-screen-case_07-2-whole",
+      "before_delay": 23113,
+      "after_delay": 23113,
+      "legal": true,
+      "expansions": 300000,
+      "stats": {
+        "proposals": 62,
+        "searches": 68,
+        "over_cap": 53,
+        "released_vertices": 348,
+        "rejected": 2,
+        "limit_reached": 1
+      },
+      "wall_s": 1.8683047840022482,
+      "manifest_sha256": "f527a97485655e7ab98cc5aa9174ef2803670fc5766fb25e77b94825c17ccf08"
+    },
+    {
+      "case": "case_07",
+      "seed": 2,
+      "mode": "branch",
+      "run": "dev/artifacts/branch-screen-case_07-2-branch",
+      "before_delay": 23113,
+      "after_delay": 23113,
+      "legal": true,
+      "expansions": 300000,
+      "stats": {
+        "proposals": 62,
+        "searches": 67,
+        "over_cap": 53,
+        "released_vertices": 225,
+        "rejected": 2,
+        "limit_reached": 1
+      },
+      "wall_s": 1.6832365260343067,
+      "manifest_sha256": "d3085edb3cb2301ec733daebcf962cbeade0a73743ea55600a73a3308d355ee6"
+    },
+    {
+      "case": "case_07",
+      "seed": 3,
+      "mode": "whole",
+      "run": "dev/artifacts/branch-screen-case_07-3-whole",
+      "before_delay": 23113,
+      "after_delay": 23113,
+      "legal": true,
+      "expansions": 300000,
+      "stats": {
+        "proposals": 56,
+        "searches": 62,
+        "over_cap": 51,
+        "released_vertices": 348,
+        "rejected": 2,
+        "limit_reached": 1
+      },
+      "wall_s": 1.8234150659991428,
+      "manifest_sha256": "e30a3c7716b187bc81ee18463901f589e26545019ef416ee0473760b5c6275d4"
+    },
+    {
+      "case": "case_07",
+      "seed": 3,
+      "mode": "branch",
+      "run": "dev/artifacts/branch-screen-case_07-3-branch",
+      "before_delay": 23113,
+      "after_delay": 23113,
+      "legal": true,
+      "expansions": 300000,
+      "stats": {
+        "proposals": 56,
+        "searches": 62,
+        "over_cap": 51,
+        "released_vertices": 225,
+        "rejected": 2,
+        "limit_reached": 1
+      },
+      "wall_s": 1.8587083230377175,
+      "manifest_sha256": "6f19423c2a8ffc9102078cac589556bd78b97bf0bd505d8e31e3e1515287abe6"
+    }
+  ],
+  "total_wall_s": 34.193770579993725,
+  "scope": "Matched Python reservation-first whole blocking net rebuild versus partial branch rebuild; not comparison with C++ negotiated solver. Source frozen. Hard08/09 excluded from operator selection."
+}

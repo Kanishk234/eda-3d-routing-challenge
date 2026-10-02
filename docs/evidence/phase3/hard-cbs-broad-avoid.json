@@ -1,0 +1,232 @@
+{
+  "plan": {
+    "coverage": "docs/evidence/phase3/tier-independent-continuation-coverage.json",
+    "tier": "hard",
+    "cases": [
+      "case_01",
+      "case_04",
+      "case_07"
+    ],
+    "pairs_per_case": 2,
+    "margin": 2,
+    "seconds": 30,
+    "deterministic_time": 10,
+    "proposal_work": 5000000,
+    "proposal_seconds": 60,
+    "scope": "Matched broader corridor CBS screen: up to4 nets,margin2,1M/group,all3 development cases. Avoidance tie-break on/off; no physical-distance modification.",
+    "max_group": 4,
+    "discovery_options": 5,
+    "prune_arcs": true,
+    "solver": "cbs",
+    "all_fanouts": true,
+    "strict_improvement": false,
+    "cbs_work_budget": 1000000,
+    "avoid_ties": true
+  },
+  "frozen_sha256": {
+    "/home/younix/eda-3d-routing-challenge/dev/configs/hard-cbs-broad-avoid.json": "ae3614aeed8eb58528581e1fc6a66f2dd23d6525b111b9c999b16be172f4c0ec",
+    "/home/younix/eda-3d-routing-challenge/dev/exact_pair_repair.py": "5137bb8c79c4a56f7046e4c2e420381acf4b55a5663b152f1eae599588552094",
+    "/home/younix/eda-3d-routing-challenge/docs/evidence/phase3/tier-independent-continuation-coverage.json": "17732eb3e00199e3d4cf47e87665a6b60e9654bd4b313fef39fd29d9e1d48f96",
+    "/home/younix/eda-3d-routing-challenge/dev/branch_repair.py": "fac12b4771279883b09714a76b9e05837450c8458cd4d780385ff7cb7e4e3a13",
+    "/home/younix/eda-3d-routing-challenge/dev/generate_tree_candidates.py": "57e96f75c4b1bec8b764aa0eb79b5bcf964286f2ee2cfcd1f8f80081192ad4d0",
+    "/home/younix/eda-3d-routing-challenge/dev/static_cbs.py": "7e0893c42d9eabd465fe913546ddac44770bc3c96c469f8b7e5e8935b365372d"
+  },
+  "status": "complete",
+  "rows": [
+    {
+      "case": "case_01",
+      "case_sha256": "685a165a7a15811dff12839e0dbe79752b889558213f760ad5f0df6139766f5d",
+      "start_sha256": "6a0a377fa2860071777e4e04020255d81a45de1925d55a26e8e30fb7cedefa4b",
+      "output_sha256": "6a0a377fa2860071777e4e04020255d81a45de1925d55a26e8e30fb7cedefa4b",
+      "before_delay": 9068,
+      "after_delay": 9068,
+      "legal": true,
+      "pairs": [
+        {
+          "nets": [
+            53,
+            45,
+            57,
+            30
+          ],
+          "ideal_target_gain": 74,
+          "accepted_gain": 0,
+          "status": "FEASIBLE",
+          "restricted_optimal": false,
+          "baseline": 1606,
+          "objective": 1606,
+          "bound": 1590,
+          "wall_s": 2.1931950619909912,
+          "deterministic_time": null,
+          "graph_vertices": 1026,
+          "flow_variables": 0,
+          "method": "static vertex-conflict branching",
+          "sink_count": 20,
+          "expansions": 1000000,
+          "searches": 1131,
+          "branch_nodes": 1015,
+          "cached_constraints": 1130,
+          "work_limit": 1000000,
+          "avoid_ties": true
+        },
+        {
+          "nets": [
+            50,
+            57,
+            45
+          ],
+          "ideal_target_gain": 66,
+          "accepted_gain": 0,
+          "status": "FEASIBLE",
+          "restricted_optimal": false,
+          "baseline": 1348,
+          "objective": 1348,
+          "bound": 1304,
+          "wall_s": 2.309304833004717,
+          "deterministic_time": null,
+          "graph_vertices": 906,
+          "flow_variables": 0,
+          "method": "static vertex-conflict branching",
+          "sink_count": 16,
+          "expansions": 1000000,
+          "searches": 1239,
+          "branch_nodes": 707,
+          "cached_constraints": 1238,
+          "work_limit": 1000000,
+          "avoid_ties": true
+        }
+      ],
+      "proposal_expansions": 1110653
+    },
+    {
+      "case": "case_04",
+      "case_sha256": "06324939b75971e45caa9e7f19d824a254e0f61167dd6b279bbff612d77d96f1",
+      "start_sha256": "5a72f75a05d9a8dbe425ae81eec5e1170f95ae87acc1491c11896fb94b0057bc",
+      "output_sha256": "5a72f75a05d9a8dbe425ae81eec5e1170f95ae87acc1491c11896fb94b0057bc",
+      "before_delay": 14175,
+      "after_delay": 14175,
+      "legal": true,
+      "pairs": [
+        {
+          "nets": [
+            51,
+            55,
+            58,
+            60
+          ],
+          "ideal_target_gain": 96,
+          "accepted_gain": 0,
+          "status": "FEASIBLE",
+          "restricted_optimal": false,
+          "baseline": 1730,
+          "objective": 1730,
+          "bound": 1606,
+          "wall_s": 1.9186269420315512,
+          "deterministic_time": null,
+          "graph_vertices": 1026,
+          "flow_variables": 0,
+          "method": "static vertex-conflict branching",
+          "sink_count": 17,
+          "expansions": 1000000,
+          "searches": 1606,
+          "branch_nodes": 1184,
+          "cached_constraints": 1605,
+          "work_limit": 1000000,
+          "avoid_ties": true
+        },
+        {
+          "nets": [
+            51,
+            58,
+            60
+          ],
+          "ideal_target_gain": 96,
+          "accepted_gain": 0,
+          "status": "FEASIBLE",
+          "restricted_optimal": false,
+          "baseline": 1316,
+          "objective": 1316,
+          "bound": 1298,
+          "wall_s": 1.7854088410385884,
+          "deterministic_time": null,
+          "graph_vertices": 938,
+          "flow_variables": 0,
+          "method": "static vertex-conflict branching",
+          "sink_count": 13,
+          "expansions": 1000000,
+          "searches": 1340,
+          "branch_nodes": 1366,
+          "cached_constraints": 1339,
+          "work_limit": 1000000,
+          "avoid_ties": true
+        }
+      ],
+      "proposal_expansions": 2180419
+    },
+    {
+      "case": "case_07",
+      "case_sha256": "e3475bed19f53670482b4b864a276c475b47e1cac7237d8fa26eeb48714de8f0",
+      "start_sha256": "5adb546e818420452490b78256fa07ff66675ddb6cea384a71f3dc4fb213de31",
+      "output_sha256": "5adb546e818420452490b78256fa07ff66675ddb6cea384a71f3dc4fb213de31",
+      "before_delay": 23097,
+      "after_delay": 23097,
+      "legal": true,
+      "pairs": [
+        {
+          "nets": [
+            65,
+            31
+          ],
+          "ideal_target_gain": 124,
+          "accepted_gain": 0,
+          "status": "OPTIMAL",
+          "restricted_optimal": true,
+          "baseline": 1130,
+          "objective": 1130,
+          "bound": 1130,
+          "wall_s": 0.01668724202318117,
+          "deterministic_time": null,
+          "graph_vertices": 565,
+          "flow_variables": 0,
+          "method": "static vertex-conflict branching",
+          "sink_count": 10,
+          "expansions": 7402,
+          "searches": 18,
+          "branch_nodes": 8,
+          "cached_constraints": 18,
+          "work_limit": 1000000,
+          "avoid_ties": true
+        },
+        {
+          "nets": [
+            65,
+            31,
+            42
+          ],
+          "ideal_target_gain": 124,
+          "accepted_gain": 0,
+          "status": "OPTIMAL",
+          "restricted_optimal": true,
+          "baseline": 1854,
+          "objective": 1854,
+          "bound": 1854,
+          "wall_s": 0.03500531101599336,
+          "deterministic_time": null,
+          "graph_vertices": 1141,
+          "flow_variables": 0,
+          "method": "static vertex-conflict branching",
+          "sink_count": 16,
+          "expansions": 13520,
+          "searches": 21,
+          "branch_nodes": 9,
+          "cached_constraints": 21,
+          "work_limit": 1000000,
+          "avoid_ties": true
+        }
+      ],
+      "proposal_expansions": 3668894
+    }
+  ],
+  "workers": 1,
+  "scope": "Net groups on restricted corridor, outside routes fixed. Solver optimality is restricted only; full official checker governs accepted output. Own incumbents only."
+}

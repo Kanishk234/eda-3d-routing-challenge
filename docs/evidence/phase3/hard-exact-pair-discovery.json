@@ -1,0 +1,63 @@
+{
+  "plan": {
+    "coverage": "docs/evidence/phase3/tier-exact-pool-coverage.json",
+    "tier": "hard",
+    "cases": [
+      "case_01",
+      "case_04",
+      "case_07"
+    ],
+    "pairs_per_case": 5,
+    "margin": 1,
+    "seconds": 10,
+    "deterministic_time": 1,
+    "proposal_work": 1000000,
+    "proposal_seconds": 30,
+    "scope": "First restricted corridor geometry pilot,development01/04/07only. Top improving ideal targets with exactlyone single-sinkblocker. Up to15pair solves;150s solver safety plus90s proposal safety,one worker. Own incumbents."
+  },
+  "frozen_sha256": {
+    "/home/younix/eda-3d-routing-challenge/dev/configs/hard-exact-pairs.json": "23b5f0ec97223fd011d07f4aaafb99f4ea09a3a523e28efcb5d271db979002ca",
+    "/home/younix/eda-3d-routing-challenge/dev/exact_pair_repair.py": "cb4897795ef5888f01e99d42f1649b54839357389ba42cc2673ae22dc113692f",
+    "/home/younix/eda-3d-routing-challenge/docs/evidence/phase3/tier-exact-pool-coverage.json": "f4c8790dd936946d79ca8c323f2794ec19ca9c8d4c1878a81805e1a74b43598f",
+    "/home/younix/eda-3d-routing-challenge/dev/branch_repair.py": "fac12b4771279883b09714a76b9e05837450c8458cd4d780385ff7cb7e4e3a13",
+    "/home/younix/eda-3d-routing-challenge/dev/generate_tree_candidates.py": "57e96f75c4b1bec8b764aa0eb79b5bcf964286f2ee2cfcd1f8f80081192ad4d0"
+  },
+  "status": "complete",
+  "rows": [
+    {
+      "case": "case_01",
+      "case_sha256": "685a165a7a15811dff12839e0dbe79752b889558213f760ad5f0df6139766f5d",
+      "start_sha256": "666e44ae96ee72816309fa92955ada3677731697d016178f15e4b095bbe25a8c",
+      "output_sha256": "666e44ae96ee72816309fa92955ada3677731697d016178f15e4b095bbe25a8c",
+      "before_delay": 9088,
+      "after_delay": 9088,
+      "legal": true,
+      "pairs": [],
+      "proposal_expansions": 86497
+    },
+    {
+      "case": "case_04",
+      "case_sha256": "06324939b75971e45caa9e7f19d824a254e0f61167dd6b279bbff612d77d96f1",
+      "start_sha256": "38485db0811336d2071c38b28c50e005c00f60949652653961dd8fddb9bd7c7e",
+      "output_sha256": "38485db0811336d2071c38b28c50e005c00f60949652653961dd8fddb9bd7c7e",
+      "before_delay": 14179,
+      "after_delay": 14179,
+      "legal": true,
+      "pairs": [],
+      "proposal_expansions": 153652
+    },
+    {
+      "case": "case_07",
+      "case_sha256": "e3475bed19f53670482b4b864a276c475b47e1cac7237d8fa26eeb48714de8f0",
+      "start_sha256": "8b2aa734679b5fed0d5fd18710c1f8e8bd4e13b94c329a8bb0fe18b53f1339c0",
+      "output_sha256": "8b2aa734679b5fed0d5fd18710c1f8e8bd4e13b94c329a8bb0fe18b53f1339c0",
+      "before_delay": 23113,
+      "after_delay": 23113,
+      "legal": true,
+      "pairs": [],
+      "proposal_expansions": 191294
+    }
+  ],
+  "workers": 1,
+  "scope": "Two single-sink nets on restricted corridor, outside routes fixed. Solver optimality is restricted only; full official checker governs accepted output. Own incumbents only."
+}

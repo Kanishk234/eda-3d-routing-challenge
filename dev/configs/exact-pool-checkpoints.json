@@ -1,0 +1,23 @@
+{
+  "coverage": "docs/evidence/phase3/tier-three-round-continuation-coverage.json",
+  "common": {
+    "mode": "polish",
+    "seed": 1,
+    "passes": 1,
+    "budget": 0,
+    "work_budget": 0
+  },
+  "stages": [
+    {
+      "tier": "hard",
+      "settings": {},
+      "resume_dir": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002-hard-tree-pool-checked/routes"
+    },
+    {
+      "tier": "congested",
+      "settings": {},
+      "resume_dir": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002-congested-tree-pool/routes"
+    }
+  ],
+  "scope": "Zero-work native checkpoints preserve CP-SAT selection; no native search improvement claim."
+}

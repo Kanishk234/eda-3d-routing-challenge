@@ -1,0 +1,865 @@
+{
+  "status": "complete",
+  "training": [
+    {
+      "seed": 1001,
+      "legal_orders": 0,
+      "best_delay": null
+    },
+    {
+      "seed": 1002,
+      "legal_orders": 9,
+      "best_delay": 223
+    },
+    {
+      "seed": 1003,
+      "legal_orders": 10,
+      "best_delay": 178
+    },
+    {
+      "seed": 1004,
+      "legal_orders": 8,
+      "best_delay": 139
+    },
+    {
+      "seed": 1005,
+      "legal_orders": 0,
+      "best_delay": null
+    },
+    {
+      "seed": 1006,
+      "legal_orders": 4,
+      "best_delay": 122
+    },
+    {
+      "seed": 1007,
+      "legal_orders": 0,
+      "best_delay": null
+    },
+    {
+      "seed": 1008,
+      "legal_orders": 15,
+      "best_delay": 303
+    },
+    {
+      "seed": 1009,
+      "legal_orders": 0,
+      "best_delay": null
+    },
+    {
+      "seed": 1010,
+      "legal_orders": 0,
+      "best_delay": null
+    },
+    {
+      "seed": 1011,
+      "legal_orders": 0,
+      "best_delay": null
+    },
+    {
+      "seed": 1012,
+      "legal_orders": 0,
+      "best_delay": null
+    },
+    {
+      "seed": 1013,
+      "legal_orders": 0,
+      "best_delay": null
+    },
+    {
+      "seed": 1014,
+      "legal_orders": 5,
+      "best_delay": 238
+    },
+    {
+      "seed": 1015,
+      "legal_orders": 0,
+      "best_delay": null
+    },
+    {
+      "seed": 1016,
+      "legal_orders": 2,
+      "best_delay": 276
+    },
+    {
+      "seed": 1017,
+      "legal_orders": 0,
+      "best_delay": null
+    },
+    {
+      "seed": 1018,
+      "legal_orders": 0,
+      "best_delay": null
+    },
+    {
+      "seed": 1019,
+      "legal_orders": 0,
+      "best_delay": null
+    },
+    {
+      "seed": 1020,
+      "legal_orders": 0,
+      "best_delay": null
+    },
+    {
+      "seed": 1021,
+      "legal_orders": 16,
+      "best_delay": 138
+    },
+    {
+      "seed": 1022,
+      "legal_orders": 0,
+      "best_delay": null
+    },
+    {
+      "seed": 1023,
+      "legal_orders": 14,
+      "best_delay": 168
+    },
+    {
+      "seed": 1024,
+      "legal_orders": 0,
+      "best_delay": null
+    }
+  ],
+  "validation": [
+    {
+      "seed": 9001,
+      "methods": {
+        "learned": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "short_first": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "long_first": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "fanout_first": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "random": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        }
+      }
+    },
+    {
+      "seed": 9002,
+      "methods": {
+        "learned": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "short_first": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "long_first": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "fanout_first": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "random": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        }
+      }
+    },
+    {
+      "seed": 9003,
+      "methods": {
+        "learned": {
+          "legal": true,
+          "delay": 370,
+          "expansions": 923
+        },
+        "short_first": {
+          "legal": true,
+          "delay": 406,
+          "expansions": 1016
+        },
+        "long_first": {
+          "legal": true,
+          "delay": 396,
+          "expansions": 927
+        },
+        "fanout_first": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "random": {
+          "legal": true,
+          "delay": 476,
+          "expansions": 1025
+        }
+      }
+    },
+    {
+      "seed": 9004,
+      "methods": {
+        "learned": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "short_first": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "long_first": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "fanout_first": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "random": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        }
+      }
+    },
+    {
+      "seed": 9005,
+      "methods": {
+        "learned": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "short_first": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "long_first": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "fanout_first": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "random": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        }
+      }
+    },
+    {
+      "seed": 9006,
+      "methods": {
+        "learned": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "short_first": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "long_first": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "fanout_first": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "random": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        }
+      }
+    },
+    {
+      "seed": 9007,
+      "methods": {
+        "learned": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "short_first": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "long_first": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "fanout_first": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "random": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        }
+      }
+    },
+    {
+      "seed": 9008,
+      "methods": {
+        "learned": {
+          "legal": true,
+          "delay": 165,
+          "expansions": 722
+        },
+        "short_first": {
+          "legal": true,
+          "delay": 182,
+          "expansions": 809
+        },
+        "long_first": {
+          "legal": true,
+          "delay": 190,
+          "expansions": 756
+        },
+        "fanout_first": {
+          "legal": true,
+          "delay": 186,
+          "expansions": 734
+        },
+        "random": {
+          "legal": true,
+          "delay": 173,
+          "expansions": 779
+        }
+      }
+    },
+    {
+      "seed": 9009,
+      "methods": {
+        "learned": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "short_first": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "long_first": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "fanout_first": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "random": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        }
+      }
+    },
+    {
+      "seed": 9010,
+      "methods": {
+        "learned": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "short_first": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "long_first": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "fanout_first": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "random": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        }
+      }
+    },
+    {
+      "seed": 9011,
+      "methods": {
+        "learned": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "short_first": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "long_first": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "fanout_first": {
+          "legal": true,
+          "delay": 272,
+          "expansions": 825
+        },
+        "random": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        }
+      }
+    },
+    {
+      "seed": 9012,
+      "methods": {
+        "learned": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "short_first": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "long_first": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "fanout_first": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "random": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        }
+      }
+    },
+    {
+      "seed": 9013,
+      "methods": {
+        "learned": {
+          "legal": true,
+          "delay": 53,
+          "expansions": 318
+        },
+        "short_first": {
+          "legal": true,
+          "delay": 53,
+          "expansions": 329
+        },
+        "long_first": {
+          "legal": true,
+          "delay": 53,
+          "expansions": 294
+        },
+        "fanout_first": {
+          "legal": true,
+          "delay": 53,
+          "expansions": 318
+        },
+        "random": {
+          "legal": true,
+          "delay": 53,
+          "expansions": 328
+        }
+      }
+    },
+    {
+      "seed": 9014,
+      "methods": {
+        "learned": {
+          "legal": true,
+          "delay": 153,
+          "expansions": 294
+        },
+        "short_first": {
+          "legal": true,
+          "delay": 152,
+          "expansions": 298
+        },
+        "long_first": {
+          "legal": true,
+          "delay": 153,
+          "expansions": 294
+        },
+        "fanout_first": {
+          "legal": true,
+          "delay": 155,
+          "expansions": 308
+        },
+        "random": {
+          "legal": true,
+          "delay": 155,
+          "expansions": 320
+        }
+      }
+    },
+    {
+      "seed": 9015,
+      "methods": {
+        "learned": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "short_first": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "long_first": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "fanout_first": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "random": {
+          "legal": true,
+          "delay": 628,
+          "expansions": 986
+        }
+      }
+    },
+    {
+      "seed": 9016,
+      "methods": {
+        "learned": {
+          "legal": true,
+          "delay": 222,
+          "expansions": 447
+        },
+        "short_first": {
+          "legal": true,
+          "delay": 204,
+          "expansions": 431
+        },
+        "long_first": {
+          "legal": true,
+          "delay": 218,
+          "expansions": 440
+        },
+        "fanout_first": {
+          "legal": true,
+          "delay": 217,
+          "expansions": 464
+        },
+        "random": {
+          "legal": true,
+          "delay": 245,
+          "expansions": 440
+        }
+      }
+    },
+    {
+      "seed": 9017,
+      "methods": {
+        "learned": {
+          "legal": true,
+          "delay": 196,
+          "expansions": 851
+        },
+        "short_first": {
+          "legal": true,
+          "delay": 189,
+          "expansions": 774
+        },
+        "long_first": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "fanout_first": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "random": {
+          "legal": true,
+          "delay": 199,
+          "expansions": 848
+        }
+      }
+    },
+    {
+      "seed": 9018,
+      "methods": {
+        "learned": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "short_first": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "long_first": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "fanout_first": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "random": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        }
+      }
+    },
+    {
+      "seed": 9019,
+      "methods": {
+        "learned": {
+          "legal": true,
+          "delay": 161,
+          "expansions": 482
+        },
+        "short_first": {
+          "legal": true,
+          "delay": 180,
+          "expansions": 452
+        },
+        "long_first": {
+          "legal": true,
+          "delay": 143,
+          "expansions": 424
+        },
+        "fanout_first": {
+          "legal": true,
+          "delay": 149,
+          "expansions": 369
+        },
+        "random": {
+          "legal": true,
+          "delay": 179,
+          "expansions": 428
+        }
+      }
+    },
+    {
+      "seed": 9020,
+      "methods": {
+        "learned": {
+          "legal": true,
+          "delay": 203,
+          "expansions": 786
+        },
+        "short_first": {
+          "legal": true,
+          "delay": 248,
+          "expansions": 922
+        },
+        "long_first": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "fanout_first": {
+          "legal": true,
+          "delay": 218,
+          "expansions": 997
+        },
+        "random": {
+          "legal": true,
+          "delay": 221,
+          "expansions": 877
+        }
+      }
+    },
+    {
+      "seed": 9021,
+      "methods": {
+        "learned": {
+          "legal": true,
+          "delay": 87,
+          "expansions": 121
+        },
+        "short_first": {
+          "legal": true,
+          "delay": 87,
+          "expansions": 110
+        },
+        "long_first": {
+          "legal": true,
+          "delay": 101,
+          "expansions": 131
+        },
+        "fanout_first": {
+          "legal": true,
+          "delay": 101,
+          "expansions": 130
+        },
+        "random": {
+          "legal": true,
+          "delay": 87,
+          "expansions": 114
+        }
+      }
+    },
+    {
+      "seed": 9022,
+      "methods": {
+        "learned": {
+          "legal": true,
+          "delay": 110,
+          "expansions": 232
+        },
+        "short_first": {
+          "legal": true,
+          "delay": 132,
+          "expansions": 260
+        },
+        "long_first": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "fanout_first": {
+          "legal": true,
+          "delay": 120,
+          "expansions": 248
+        },
+        "random": {
+          "legal": true,
+          "delay": 108,
+          "expansions": 230
+        }
+      }
+    },
+    {
+      "seed": 9023,
+      "methods": {
+        "learned": {
+          "legal": true,
+          "delay": 319,
+          "expansions": 856
+        },
+        "short_first": {
+          "legal": true,
+          "delay": 284,
+          "expansions": 824
+        },
+        "long_first": {
+          "legal": true,
+          "delay": 297,
+          "expansions": 838
+        },
+        "fanout_first": {
+          "legal": true,
+          "delay": 309,
+          "expansions": 811
+        },
+        "random": {
+          "legal": true,
+          "delay": 284,
+          "expansions": 834
+        }
+      }
+    },
+    {
+      "seed": 9024,
+      "methods": {
+        "learned": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "short_first": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "long_first": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        },
+        "fanout_first": {
+          "legal": true,
+          "delay": 115,
+          "expansions": 257
+        },
+        "random": {
+          "legal": false,
+          "delay": null,
+          "expansions": null
+        }
+      }
+    }
+  ],
+  "weights": [
+    -0.10592601612711498,
+    0.4176518045314496,
+    -0.21622261058520284,
+    0.1669635277284521,
+    0.7873480046146818,
+    0.10213432478363851,
+    0.355358000527098,
+    -0.2190876959606143,
+    0.0
+  ],
+  "wall_s": 1.2962641479680315,
+  "source_sha256": {
+    "/home/younix/eda-3d-routing-challenge/dev/learned_fresh_order.py": "636a63942826686eaceae42287cf91ceccb3e67d992f59e3d4f255a32d547829",
+    "/home/younix/eda-3d-routing-challenge/dev/branch_repair.py": "fac12b4771279883b09714a76b9e05837450c8458cd4d780385ff7cb7e4e3a13"
+  },
+  "model_sha256": "b5127f647875d682d27fd16de975d8eeade8392d884dd0bd7c9803068b5a9631",
+  "scope": "Fresh synthetic train/validation seeds disjoint. One constructive attempt per method; no official-tier or generalization gain claim. Incomplete construction retained as failure,not silently omitted."
+}

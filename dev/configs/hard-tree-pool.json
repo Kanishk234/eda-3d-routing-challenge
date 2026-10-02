@@ -1,0 +1,12 @@
+{
+  "suite": "benchmarks_hard",
+  "runs": [
+    "20261002T185038.204620Z-exact-polish",
+    "20261002T184358.529171Z-exact-polish",
+    "20261002T184724.610899Z-exact-polish",
+    "20261002T183057.311784Z-exact-polish"
+  ],
+  "seconds": 30,
+  "deterministic_time": 10,
+  "scope": "Declared own three-round native routes plus prior own checkpoint; multi-parent pool selection, no competitor routes."
+}

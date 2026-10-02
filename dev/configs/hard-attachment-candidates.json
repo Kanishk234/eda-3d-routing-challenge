@@ -1,0 +1,18 @@
+{
+  "suite": "benchmarks_hard",
+  "run_id": "20261002T185038.204620Z-exact-polish",
+  "penalties": [
+    2,
+    8
+  ],
+  "seed": 1,
+  "work_budget": 3000000,
+  "budget": 60,
+  "scope": "Capacity-sharing variants: root-distance seed scales8/12/16 out of16; search priorities only. True delay officially rescored. Fixed allhard9case generation.",
+  "builder": "attachment",
+  "root_scales": [
+    8,
+    12,
+    16
+  ]
+}

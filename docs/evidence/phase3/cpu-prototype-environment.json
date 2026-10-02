@@ -1,0 +1,15 @@
+{
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "affinity_cpus": 16,
+  "packages": {
+    "ortools": "9.15.6755",
+    "numpy": "2.5.3",
+    "protobuf": "6.33.6",
+    "pandas": "3.0.6"
+  },
+  "solver_workers": 1,
+  "gpu": null,
+  "peak_memory": "Not collected for these prototype processes; official rescorer RSS available in reports.",
+  "timing_scope": "Some fixed-pool solves overlapped fresh-construction trials; no timing speedup claim."
+}

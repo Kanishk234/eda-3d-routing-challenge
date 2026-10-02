@@ -1,0 +1,12 @@
+{
+  "suite": "benchmarks_designs",
+  "runs": [
+    "20261002T185252.774030Z-exact-polish",
+    "20261002T184620.326417Z-exact-polish",
+    "20261002T184933.151177Z-exact-polish",
+    "20261002T183113.120727Z-exact-polish"
+  ],
+  "seconds": 30,
+  "deterministic_time": 10,
+  "scope": "Declared own continuation stages and prior checkpoint; no competitor routes."
+}

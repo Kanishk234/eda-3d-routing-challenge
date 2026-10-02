@@ -1,0 +1,23 @@
+{
+  "coverage": "docs/evidence/phase3/tier-independent-next-coverage.json",
+  "tier": "hard",
+  "cases": [
+    "case_01",
+    "case_04",
+    "case_07"
+  ],
+  "work_budget": 20000000,
+  "budget": 60,
+  "seed": 2,
+  "passes": 100,
+  "group_cap": 8,
+  "penalties": [
+    4,
+    16,
+    64,
+    256
+  ],
+  "entry_price": true,
+  "scope": "Matched strict versus neutral chain followup,seed2,20M per development case,60s safety. Own starts,cap8,physical total never increases.",
+  "accept_equal": false
+}

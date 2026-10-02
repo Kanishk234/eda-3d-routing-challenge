@@ -1,0 +1,221 @@
+{
+  "plan": {
+    "coverage": "docs/evidence/phase3/tier-exact-pool-coverage.json",
+    "tier": "hard",
+    "cases": [
+      "case_01",
+      "case_04",
+      "case_07"
+    ],
+    "pairs_per_case": 2,
+    "margin": 1,
+    "seconds": 60,
+    "deterministic_time": 10,
+    "proposal_work": 3000000,
+    "proposal_seconds": 60,
+    "scope": "Bounded stronger solve on top2 groups per development case. Require a physical delay improvement; if infeasibility proven, own incumbent is optimal only in restricted graph/group. Six group solves, up to360s safety plusdiscovery.",
+    "max_group": 3,
+    "discovery_options": 4,
+    "prune_arcs": true,
+    "solver": "tree",
+    "all_fanouts": true,
+    "strict_improvement": true
+  },
+  "frozen_sha256": {
+    "/home/younix/eda-3d-routing-challenge/dev/configs/hard-exact-trees-strict.json": "aba8960c4fb0cff2d104ad2cc15f85b2d7a613741a7d4a8375c9a3f0ef5f78b5",
+    "/home/younix/eda-3d-routing-challenge/dev/exact_pair_repair.py": "f860d40db652edd236d7d3a18e84e533ac8f39c26943034a7b83cabbef0ee37f",
+    "/home/younix/eda-3d-routing-challenge/docs/evidence/phase3/tier-exact-pool-coverage.json": "f4c8790dd936946d79ca8c323f2794ec19ca9c8d4c1878a81805e1a74b43598f",
+    "/home/younix/eda-3d-routing-challenge/dev/branch_repair.py": "fac12b4771279883b09714a76b9e05837450c8458cd4d780385ff7cb7e4e3a13",
+    "/home/younix/eda-3d-routing-challenge/dev/generate_tree_candidates.py": "57e96f75c4b1bec8b764aa0eb79b5bcf964286f2ee2cfcd1f8f80081192ad4d0",
+    "/home/younix/eda-3d-routing-challenge/dev/exact_tree_repair.py": "4922d2652a2098d402a29b8113e8ea6d6f52a59be5d0a8c43bd2e496b30c007a"
+  },
+  "status": "complete",
+  "rows": [
+    {
+      "case": "case_01",
+      "case_sha256": "685a165a7a15811dff12839e0dbe79752b889558213f760ad5f0df6139766f5d",
+      "start_sha256": "666e44ae96ee72816309fa92955ada3677731697d016178f15e4b095bbe25a8c",
+      "output_sha256": "666e44ae96ee72816309fa92955ada3677731697d016178f15e4b095bbe25a8c",
+      "before_delay": 9088,
+      "after_delay": 9088,
+      "legal": true,
+      "pairs": [
+        {
+          "nets": [
+            50,
+            57,
+            45
+          ],
+          "ideal_target_gain": 66,
+          "accepted_gain": 0,
+          "status": "UNKNOWN",
+          "restricted_optimal": false,
+          "proved_no_improvement": false,
+          "strict_improvement": true,
+          "baseline": 1348,
+          "bound": 1268.0,
+          "solver_bound": 1268.0,
+          "objective": null,
+          "wall_s": 34.286858578,
+          "deterministic_time": 10.000014725982371,
+          "graph_vertices": 536,
+          "flow_variables": 5679,
+          "pruned_arcs": 0,
+          "independent_group_bound": 1268,
+          "method": "arborescence physical-distance potentials",
+          "sink_count": 16
+        },
+        {
+          "nets": [
+            50,
+            57
+          ],
+          "ideal_target_gain": 58,
+          "accepted_gain": 0,
+          "status": "UNKNOWN",
+          "restricted_optimal": false,
+          "proved_no_improvement": false,
+          "strict_improvement": true,
+          "baseline": 1015,
+          "bound": 957.0,
+          "solver_bound": 957.0,
+          "objective": null,
+          "wall_s": 26.258457867,
+          "deterministic_time": 10.000062441487337,
+          "graph_vertices": 430,
+          "flow_variables": 2928,
+          "pruned_arcs": 0,
+          "independent_group_bound": 957,
+          "method": "arborescence physical-distance potentials",
+          "sink_count": 12
+        }
+      ],
+      "proposal_expansions": 500591
+    },
+    {
+      "case": "case_04",
+      "case_sha256": "06324939b75971e45caa9e7f19d824a254e0f61167dd6b279bbff612d77d96f1",
+      "start_sha256": "38485db0811336d2071c38b28c50e005c00f60949652653961dd8fddb9bd7c7e",
+      "output_sha256": "38485db0811336d2071c38b28c50e005c00f60949652653961dd8fddb9bd7c7e",
+      "before_delay": 14179,
+      "after_delay": 14179,
+      "legal": true,
+      "pairs": [
+        {
+          "nets": [
+            51,
+            58,
+            60
+          ],
+          "ideal_target_gain": 96,
+          "accepted_gain": 0,
+          "status": "UNKNOWN",
+          "restricted_optimal": false,
+          "proved_no_improvement": false,
+          "strict_improvement": true,
+          "baseline": 1316,
+          "bound": 1162.0,
+          "solver_bound": 1162.0,
+          "objective": null,
+          "wall_s": 31.98194287,
+          "deterministic_time": 10.000017875872791,
+          "graph_vertices": 514,
+          "flow_variables": 4478,
+          "pruned_arcs": 0,
+          "independent_group_bound": 1162,
+          "method": "arborescence physical-distance potentials",
+          "sink_count": 13
+        },
+        {
+          "nets": [
+            56,
+            58,
+            67
+          ],
+          "ideal_target_gain": 74,
+          "accepted_gain": 0,
+          "status": "UNKNOWN",
+          "restricted_optimal": false,
+          "proved_no_improvement": false,
+          "strict_improvement": true,
+          "baseline": 1247,
+          "bound": 1147.0,
+          "solver_bound": 1147.0,
+          "objective": null,
+          "wall_s": 29.266174856000003,
+          "deterministic_time": 10.000002739160493,
+          "graph_vertices": 480,
+          "flow_variables": 4265,
+          "pruned_arcs": 0,
+          "independent_group_bound": 1147,
+          "method": "arborescence physical-distance potentials",
+          "sink_count": 12
+        }
+      ],
+      "proposal_expansions": 1001810
+    },
+    {
+      "case": "case_07",
+      "case_sha256": "e3475bed19f53670482b4b864a276c475b47e1cac7237d8fa26eeb48714de8f0",
+      "start_sha256": "8b2aa734679b5fed0d5fd18710c1f8e8bd4e13b94c329a8bb0fe18b53f1339c0",
+      "output_sha256": "8b2aa734679b5fed0d5fd18710c1f8e8bd4e13b94c329a8bb0fe18b53f1339c0",
+      "before_delay": 23113,
+      "after_delay": 23113,
+      "legal": true,
+      "pairs": [
+        {
+          "nets": [
+            65,
+            31
+          ],
+          "ideal_target_gain": 124,
+          "accepted_gain": 0,
+          "status": "UNKNOWN",
+          "restricted_optimal": false,
+          "proved_no_improvement": false,
+          "strict_improvement": true,
+          "baseline": 1130,
+          "bound": 1004.0,
+          "solver_bound": 1004.0,
+          "objective": null,
+          "wall_s": 31.375064432000002,
+          "deterministic_time": 10.244697567980007,
+          "graph_vertices": 299,
+          "flow_variables": 1712,
+          "pruned_arcs": 0,
+          "independent_group_bound": 1004,
+          "method": "arborescence physical-distance potentials",
+          "sink_count": 10
+        },
+        {
+          "nets": [
+            65,
+            31,
+            42
+          ],
+          "ideal_target_gain": 124,
+          "accepted_gain": 0,
+          "status": "UNKNOWN",
+          "restricted_optimal": false,
+          "proved_no_improvement": false,
+          "strict_improvement": true,
+          "baseline": 1854,
+          "bound": 1726.0,
+          "solver_bound": 1726.0,
+          "objective": null,
+          "wall_s": 37.32377017,
+          "deterministic_time": 10.000018411956894,
+          "graph_vertices": 591,
+          "flow_variables": 5325,
+          "pruned_arcs": 0,
+          "independent_group_bound": 1726,
+          "method": "arborescence physical-distance potentials",
+          "sink_count": 16
+        }
+      ],
+      "proposal_expansions": 1674511
+    }
+  ],
+  "workers": 1,
+  "scope": "Net groups on restricted corridor, outside routes fixed. Solver optimality is restricted only; full official checker governs accepted output. Own incumbents only."
+}

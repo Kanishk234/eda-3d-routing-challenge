@@ -1,0 +1,398 @@
+{
+  "plan": {
+    "coverage": "docs/evidence/phase3/tier-independent-next-coverage.json",
+    "tier": "hard",
+    "cases": [
+      "case_01",
+      "case_04",
+      "case_07"
+    ],
+    "work_budget": 40000000,
+    "budget": 90,
+    "seed": 1,
+    "rounds": 12,
+    "price_step": 32,
+    "solve_seconds": 10,
+    "solve_deterministic": 2,
+    "scope": "Three development cases; LP dual vertex prices from finite tree pool,12 proposal rounds40M/case90s safety. Multi-sink priced oracle is heuristic; no global bound. Own routes only.",
+    "pricing": "lp"
+  },
+  "status": "complete",
+  "frozen_sha256": {
+    "/home/younix/eda-3d-routing-challenge/dev/configs/hard-lp-price-pool.json": "82824e9a0ec20a8921e769a485d8d7f3777453400d0078819634511067ddb4cf",
+    "/home/younix/eda-3d-routing-challenge/dev/adaptive_price_pool.py": "d181982cd21bc7507116e5772b7bb9642e71801507f95a03c28734077e66b4cd",
+    "/home/younix/eda-3d-routing-challenge/docs/evidence/phase3/tier-independent-next-coverage.json": "aad3b44fbf7ace129324798c982811067077c8a4e9db9f9ff5d3170791eb6ead",
+    "/home/younix/eda-3d-routing-challenge/dev/branch_repair.py": "fac12b4771279883b09714a76b9e05837450c8458cd4d780385ff7cb7e4e3a13",
+    "/home/younix/eda-3d-routing-challenge/dev/select_tree_pool.py": "e8905011506abe7513a85f113b33797d458ef067366e33cd6d71b6f0b7219725"
+  },
+  "rows": [
+    {
+      "case": "case_01",
+      "case_sha256": "685a165a7a15811dff12839e0dbe79752b889558213f760ad5f0df6139766f5d",
+      "start_sha256": "f79a45f1408276504fd64e1d21e3d307f8b7c732031b23b5747a977966c98dd2",
+      "output_sha256": "f79a45f1408276504fd64e1d21e3d307f8b7c732031b23b5747a977966c98dd2",
+      "before_delay": 9068,
+      "after_delay": 9068,
+      "legal": true,
+      "rounds": [
+        {
+          "round": 1,
+          "generated_nets": 62,
+          "conflicts": 1110,
+          "relaxed_physical_delay": 7156,
+          "expansions": 142838,
+          "restricted_fractional_delay": 9068.0
+        },
+        {
+          "round": 2,
+          "generated_nets": 62,
+          "conflicts": 1064,
+          "relaxed_physical_delay": 7198,
+          "expansions": 285502,
+          "restricted_fractional_delay": 9068.0
+        },
+        {
+          "round": 3,
+          "generated_nets": 62,
+          "conflicts": 1076,
+          "relaxed_physical_delay": 7234,
+          "expansions": 429530,
+          "restricted_fractional_delay": 9068.0
+        },
+        {
+          "round": 4,
+          "generated_nets": 62,
+          "conflicts": 1152,
+          "relaxed_physical_delay": 7248,
+          "expansions": 572124,
+          "restricted_fractional_delay": 9068.000000000004
+        },
+        {
+          "round": 5,
+          "generated_nets": 62,
+          "conflicts": 1077,
+          "relaxed_physical_delay": 7310,
+          "expansions": 716399,
+          "restricted_fractional_delay": 9068.000000000005
+        },
+        {
+          "round": 6,
+          "generated_nets": 62,
+          "conflicts": 1101,
+          "relaxed_physical_delay": 7334,
+          "expansions": 859395,
+          "restricted_fractional_delay": 9068.000000000035
+        },
+        {
+          "round": 7,
+          "generated_nets": 62,
+          "conflicts": 1130,
+          "relaxed_physical_delay": 7360,
+          "expansions": 1003207,
+          "restricted_fractional_delay": 9068.000000000158
+        },
+        {
+          "round": 8,
+          "generated_nets": 62,
+          "conflicts": 1022,
+          "relaxed_physical_delay": 7362,
+          "expansions": 1148546,
+          "restricted_fractional_delay": 9068.00000000002
+        },
+        {
+          "round": 9,
+          "generated_nets": 62,
+          "conflicts": 1087,
+          "relaxed_physical_delay": 7384,
+          "expansions": 1292811,
+          "restricted_fractional_delay": 9068.000000000182
+        },
+        {
+          "round": 10,
+          "generated_nets": 62,
+          "conflicts": 1148,
+          "relaxed_physical_delay": 7422,
+          "expansions": 1439110,
+          "restricted_fractional_delay": 9068.000000000085
+        },
+        {
+          "round": 11,
+          "generated_nets": 62,
+          "conflicts": 1193,
+          "relaxed_physical_delay": 7464,
+          "expansions": 1585176,
+          "restricted_fractional_delay": 9068.000000001755
+        },
+        {
+          "round": 12,
+          "generated_nets": 62,
+          "conflicts": 1123,
+          "relaxed_physical_delay": 7500,
+          "expansions": 1732769,
+          "restricted_fractional_delay": 9068.000000000206
+        }
+      ],
+      "limit_reached": false,
+      "expansions": 1732769,
+      "wall_s": 6.266512287023943,
+      "selection": {
+        "status": "OPTIMAL",
+        "restricted_optimal": true,
+        "fallback_base": false,
+        "best_bound": 9068.0,
+        "chosen_delay": 9068,
+        "base_delay": 9068,
+        "variables": 762,
+        "vertex_constraints": 1082,
+        "wall_s": 0.011056543,
+        "deterministic_time": 0.001558103
+      }
+    },
+    {
+      "case": "case_04",
+      "case_sha256": "06324939b75971e45caa9e7f19d824a254e0f61167dd6b279bbff612d77d96f1",
+      "start_sha256": "a9abc805a79a9e3d34d39fa320c466505db04daa7a89428853bbf4f79358f5bf",
+      "output_sha256": "a9abc805a79a9e3d34d39fa320c466505db04daa7a89428853bbf4f79358f5bf",
+      "before_delay": 14171,
+      "after_delay": 14171,
+      "legal": true,
+      "rounds": [
+        {
+          "round": 1,
+          "generated_nets": 78,
+          "conflicts": 1555,
+          "relaxed_physical_delay": 10253,
+          "expansions": 269570,
+          "restricted_fractional_delay": 14171.0
+        },
+        {
+          "round": 2,
+          "generated_nets": 78,
+          "conflicts": 1601,
+          "relaxed_physical_delay": 10301,
+          "expansions": 537844,
+          "restricted_fractional_delay": 14171.0
+        },
+        {
+          "round": 3,
+          "generated_nets": 78,
+          "conflicts": 1572,
+          "relaxed_physical_delay": 10315,
+          "expansions": 806741,
+          "restricted_fractional_delay": 14171.000000000007
+        },
+        {
+          "round": 4,
+          "generated_nets": 78,
+          "conflicts": 1538,
+          "relaxed_physical_delay": 10377,
+          "expansions": 1077331,
+          "restricted_fractional_delay": 14171.000000000096
+        },
+        {
+          "round": 5,
+          "generated_nets": 78,
+          "conflicts": 1586,
+          "relaxed_physical_delay": 10361,
+          "expansions": 1345906,
+          "restricted_fractional_delay": 14171.000000000018
+        },
+        {
+          "round": 6,
+          "generated_nets": 78,
+          "conflicts": 1628,
+          "relaxed_physical_delay": 10421,
+          "expansions": 1615920,
+          "restricted_fractional_delay": 14171.000000000036
+        },
+        {
+          "round": 7,
+          "generated_nets": 78,
+          "conflicts": 1644,
+          "relaxed_physical_delay": 10491,
+          "expansions": 1888807,
+          "restricted_fractional_delay": 14171.000000000335
+        },
+        {
+          "round": 8,
+          "generated_nets": 78,
+          "conflicts": 1722,
+          "relaxed_physical_delay": 10457,
+          "expansions": 2158272,
+          "restricted_fractional_delay": 14171.000000000538
+        },
+        {
+          "round": 9,
+          "generated_nets": 78,
+          "conflicts": 1604,
+          "relaxed_physical_delay": 10517,
+          "expansions": 2431939,
+          "restricted_fractional_delay": 14171.00000000008
+        },
+        {
+          "round": 10,
+          "generated_nets": 78,
+          "conflicts": 1828,
+          "relaxed_physical_delay": 10555,
+          "expansions": 2706500,
+          "restricted_fractional_delay": 14171.000000001293
+        },
+        {
+          "round": 11,
+          "generated_nets": 78,
+          "conflicts": 1731,
+          "relaxed_physical_delay": 10583,
+          "expansions": 2979415,
+          "restricted_fractional_delay": 14171.000000002783
+        },
+        {
+          "round": 12,
+          "generated_nets": 78,
+          "conflicts": 1751,
+          "relaxed_physical_delay": 10651,
+          "expansions": 3258505,
+          "restricted_fractional_delay": 14171.0000000009
+        }
+      ],
+      "limit_reached": false,
+      "expansions": 3258505,
+      "wall_s": 13.714296090009157,
+      "selection": {
+        "status": "OPTIMAL",
+        "restricted_optimal": true,
+        "fallback_base": false,
+        "best_bound": 14171.0,
+        "chosen_delay": 14171,
+        "base_delay": 14171,
+        "variables": 939,
+        "vertex_constraints": 1541,
+        "wall_s": 0.015856186,
+        "deterministic_time": 0.001878589
+      }
+    },
+    {
+      "case": "case_07",
+      "case_sha256": "e3475bed19f53670482b4b864a276c475b47e1cac7237d8fa26eeb48714de8f0",
+      "start_sha256": "f1ba5e25b013353c89c1887e38c5b1bd0f9c9b14444e219b7b50209790d43118",
+      "output_sha256": "f1ba5e25b013353c89c1887e38c5b1bd0f9c9b14444e219b7b50209790d43118",
+      "before_delay": 23093,
+      "after_delay": 23093,
+      "legal": true,
+      "rounds": [
+        {
+          "round": 1,
+          "generated_nets": 94,
+          "conflicts": 2725,
+          "relaxed_physical_delay": 16461,
+          "expansions": 463620,
+          "restricted_fractional_delay": 23093.0
+        },
+        {
+          "round": 2,
+          "generated_nets": 94,
+          "conflicts": 2772,
+          "relaxed_physical_delay": 16499,
+          "expansions": 924957,
+          "restricted_fractional_delay": 23093.0
+        },
+        {
+          "round": 3,
+          "generated_nets": 94,
+          "conflicts": 2731,
+          "relaxed_physical_delay": 16525,
+          "expansions": 1388554,
+          "restricted_fractional_delay": 23093.0
+        },
+        {
+          "round": 4,
+          "generated_nets": 94,
+          "conflicts": 2612,
+          "relaxed_physical_delay": 16599,
+          "expansions": 1851120,
+          "restricted_fractional_delay": 23093.000000000022
+        },
+        {
+          "round": 5,
+          "generated_nets": 94,
+          "conflicts": 2720,
+          "relaxed_physical_delay": 16637,
+          "expansions": 2313050,
+          "restricted_fractional_delay": 23093.000000000062
+        },
+        {
+          "round": 6,
+          "generated_nets": 94,
+          "conflicts": 2752,
+          "relaxed_physical_delay": 16663,
+          "expansions": 2777930,
+          "restricted_fractional_delay": 23093.000000000386
+        },
+        {
+          "round": 7,
+          "generated_nets": 94,
+          "conflicts": 2707,
+          "relaxed_physical_delay": 16729,
+          "expansions": 3244104,
+          "restricted_fractional_delay": 23093.00000000124
+        },
+        {
+          "round": 8,
+          "generated_nets": 94,
+          "conflicts": 2760,
+          "relaxed_physical_delay": 16703,
+          "expansions": 3708775,
+          "restricted_fractional_delay": 23093.00000000043
+        },
+        {
+          "round": 9,
+          "generated_nets": 94,
+          "conflicts": 2786,
+          "relaxed_physical_delay": 16855,
+          "expansions": 4175156,
+          "restricted_fractional_delay": 23093.00000000221
+        },
+        {
+          "round": 10,
+          "generated_nets": 94,
+          "conflicts": 2641,
+          "relaxed_physical_delay": 16789,
+          "expansions": 4642933,
+          "restricted_fractional_delay": 23093.000000001673
+        },
+        {
+          "round": 11,
+          "generated_nets": 94,
+          "conflicts": 2895,
+          "relaxed_physical_delay": 16899,
+          "expansions": 5111711,
+          "restricted_fractional_delay": 23093.000000004937
+        },
+        {
+          "round": 12,
+          "generated_nets": 94,
+          "conflicts": 2737,
+          "relaxed_physical_delay": 16861,
+          "expansions": 5580708,
+          "restricted_fractional_delay": 23093.00000000219
+        }
+      ],
+      "limit_reached": false,
+      "expansions": 5580708,
+      "wall_s": 23.70082981500309,
+      "selection": {
+        "status": "OPTIMAL",
+        "restricted_optimal": true,
+        "fallback_base": false,
+        "best_bound": 23093.0,
+        "chosen_delay": 23093,
+        "base_delay": 23093,
+        "variables": 1148,
+        "vertex_constraints": 2280,
+        "wall_s": 0.021959457,
+        "deterministic_time": 0.0023624630000000004
+      }
+    }
+  ],
+  "workers": 1,
+  "scope": "Adaptive heuristic pricing; no multi-sink oracle exactness or global lower bound. Own baseline always retained; final finite-pool CP selection plus full official checker."
+}
