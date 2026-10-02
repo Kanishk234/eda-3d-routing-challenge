@@ -188,3 +188,5 @@ Tighter physical lookahead is optional:use `--mode fanout_tight` for negotiated 
 ```
 
 `dev/search_kernel_screen.py --control PATH` compares a rebuilt637a829 control binary with the current engine serially atfixed5M expansions. Treat those outputs as development measurements;this script doesnotcreatecompleteentries.
+
+Price-resolution experiment: `--mode fanout_fine` combines tight lookahead with16 search units per physical unit. Compare against `fanout_tight` at matching work budgets. Defaults retain original units. `dev/pricing_screen.py` runs the declared hard/congested case01 comparison on seeds1–3 serially and records manifests; it does not select complete entries or use held-out cases for tuning.

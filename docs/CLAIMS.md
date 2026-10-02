@@ -47,3 +47,6 @@ Fanout stage fixedseed1 hard9/9 legal1.2054914475674077,allimprove vs1.186873;of
 
 - Currenthard1.2300004741250727,officiallylegal9/9;selectedalltiers45/45legal,otherfiveunchanged. tier-kernel-coverage.json andhard-long_cycles-validation.json/hard-tight_stage-validation.json. Sevenlongstagecasegains,fourtightstagecasegains;fixedconfigs,attributedancestorcosts,no fresh-runtime/globaloptimalityclaim.
 - Storedgkerneloutputidenticaltocontrol,buttimingdoesnotestablishspeedup. Optionaltightlookahead lowershard/congestedrepresentativedelayatfixed5M expansions,stress unchanged. Two repeats/onecasepertieronly.31focusedtests pass;explicitper-moveownerinvariantsstillpending.
+
+- Current hard1.2303243121958916 and congested1.08805956745537 after optional fine-price stage; all13 cases improve their preceding incumbents. Other four selected tiers unchanged; independently rescored45/45 legal in tier-pricing-coverage.json. Matched representative screen4wins/1tie/1loss; no universal superiority claim.31 focused checks pass, including fine-mode work-cap rollback/repetition.
+- DATE11539267 identified and official abstract read; full text remains inaccessible. No claim of implementing or reproducing that paper. Six-link coverage and source-access limits in OPTIMIZATION_FOLLOWUP.md.

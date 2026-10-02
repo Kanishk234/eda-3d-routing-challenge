@@ -115,3 +115,9 @@ Public hard geometry comparison concentrates the signed deficit in multi-sink ne
 ## Hard-tier update and tighter lookahead
 
 Hard now1.2300004741250727 afterfixedlong-cyclefull-tierstage(1.229451)andoptional5M-expansiontight-lookaheadstage.9/9legal,independentselectedsix-tierreport45/45legal(tier-kernel-coverage.json). Kernelcontrolcomparisons byte-identical forstoredg and repeatable;no measuredheapgspeedup. Tightbound improveshard/congestedrepresentatives andtiesstress.31focusedtests passincludingtightlookaheadcostequivalence/rollback. Profilingdoesnotjustifybroadownershiprewrite yet. Next:fixed-pointmulti-sinkcongestionpricesundercontrolledworkbudgets. Finalfreeze/regeneration/submissionstillpending.
+
+## Six-source audit and finer congestion prices
+
+Confirmed prior PathFinder/CUGR/cost-distance coverage; reviewed NTHU algorithm sections and PD-II/DAS objectives/pseudocode. DATE paper identified through the user's IEEE ID; only official programme abstract accessible, both conference PDF links404. Research notes distinguish reading from implementation.
+
+Original16-unit price experiment preserves finer fractional congestion penalties with checked scaled priorities and unscaled physical delays. Matched5M representative trials:4wins/1tie/1loss. Fixed seed1 full hard/congested stages improve all13 incumbents. Official selected-tier report45/45 legal: hard1.230324,congested1.088060,others unchanged.31 focused tests pass. Next: configurable history/present schedules and controlled small tuning sweep; final freeze/regeneration/submission remain pending.
