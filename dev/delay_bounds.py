@@ -1,12 +1,18 @@
 """Relax all ownership/pin obstacles to bound delay, not construct legal routes."""
+import argparse
 import json
 import math
 import sys
+from pathlib import Path
 from measure import ROOT, OFFICIAL, REVISION, digest, save
 
 
 def main():
-    coverage = json.loads((ROOT / "docs/evidence/phase3/tier-optimized-coverage.json").read_text())
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--coverage",type=Path,default=ROOT/"docs/evidence/phase3/tier-optimized-coverage.json")
+    parser.add_argument("--out",type=Path,default=ROOT/"docs/evidence/phase3/delay-bounds.json")
+    args=parser.parse_args()
+    coverage = json.loads(args.coverage.read_text())
     tiers = []
     for row in coverage["rows"]:
         suite = row["config"]["suite"]
@@ -37,8 +43,8 @@ def main():
         tiers.append({"tier": row["tier"], "current_score": row["score"]["aggregate_score"],
                       "optimistic_score_ceiling": ceiling, "cases": cases})
         print(row["tier"], "current", row["score"]["aggregate_score"], "ceiling", ceiling)
-    save(ROOT / "docs/evidence/phase3/delay-bounds.json",
-         {"upstream_revision": REVISION, "tiers": tiers,
+    save(args.out,
+         {"upstream_revision": REVISION, "coverage_sha256":digest(args.coverage), "tiers": tiers,
           "formula": "min_k ManhattanXY*layer_delay[k] + via_delay*(abs(driver_z-k)+abs(sink_z-k))",
           "proof": "Any path visits a cheapest layer k, uses at least ManhattanXY horizontal steps and at least abs(driver_z-k)+abs(sink_z-k) vias. Moving horizontally on k attains that bound when obstacles are removed.",
           "limitations": "Foreign pins and competing nets are ignored. Pairwise optimum sums are lower bounds only; their score ceilings need not be jointly achievable. No global optimum or legal construction claim."})

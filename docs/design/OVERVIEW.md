@@ -1,10 +1,10 @@
 # Overview
 
-Goal: legal CPU routing trees with low total driver-to-sink delay and a reproducible route-only entry. Phases 0–2 complete; Phase 3 measured gates satisfied and optimization continuing. A verified compiled routing pipeline exists; current hard score1.220250. Best audited public artifact1.387394 remains higher.
+Goal: legal CPU routing trees with low total driver-to-sink delay and a reproducible route-only entry. Phases 0–2 complete; Phase 3 measured gates satisfied and optimization continuing. A verified compiled routing pipeline exists; current hard score1.231296. Best audited public artifact1.387394 remains higher.
 
 Authoritative pin: 499ad7e2a415a97e9ce9b3396b0477e75ebd13e6, retained for experiment comparability. Rules rechecked at newer upstream3d8948f; see CONTRACT.md. See CONTRACT.md, VERSIONS.md and evidence/phase0/. Supplied research is a hypothesis and historical audit, not new measured evidence.
 
-Initial solver target: hard (9 cases). User now requests coverage across all six tiers; intended scope is intro/hard/scale/stress/congested/designs, subject to complete official validation. Hard remains the optimization focus. Initial broader runs use attributed official reference warm starts for scale/stress/congested/designs; independent generation/runtime reproduction remains separate work. C++17 exact polish is implemented and measured; see PHASE2 summary.
+Initial solver target: hard (9 cases). User now requests coverage across all six tiers; intended scope is intro/hard/scale/stress/congested/designs, subject to complete official validation. All six tier scores are optimization objectives. Prior hard-first development was an initial allocation, not the final goal. Public outputs are comparisons, not stopping targets. Initial broader runs use attributed official reference warm starts for scale/stress/congested/designs; independent generation/runtime reproduction remains separate work. C++17 exact polish is implemented and measured; see PHASE2 summary.
 
 Before tuning, reserve hard case_08 and case_09 for validation; case_01–07 may drive development. Future generated development seeds: 1001,1002,1003; validation seeds: 9001,9002,9003. These layouts have not been generated or proven feasible. Released cases are public, not hidden tests. Profiles use hard01/scale08. Generated-case feasibility/protocol remains pending.
 

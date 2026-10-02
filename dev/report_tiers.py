@@ -57,7 +57,7 @@ def main():
                      "wrapper_wall_s": m["wrapper_wall_s"],
                      "core_wall_s": m["total_core_wall_s"],
                      "peak_core_rss_kib": max(c["process"].get("peak_rss_kib") or 0 for c in m["cases"]),
-                     "cases": m["cases"], "outputs": m["outputs"], "official_rescore": step})
+                     "cases": [{**c,"core":{k:v for k,v in c.get("core",{}).items() if k!="net_delays"}} for c in m["cases"]], "outputs": m["outputs"], "official_rescore": step})
         print(rows[-1]["tier"], score["aggregate_score"], flush=True)
     args.out.parent.mkdir(parents=True, exist_ok=True)
     save(args.out, {"upstream_revision": REVISION, "rows": rows,

@@ -1,0 +1,293 @@
+{
+  "rows": [
+    {
+      "tier": "intro",
+      "before_score": 1.0504090271124256,
+      "after_score": 1.0935715066916682,
+      "improved_cases": 20,
+      "unchanged_cases": 0,
+      "cases": [
+        {
+          "case": "case_01",
+          "before": 232,
+          "after": 206
+        },
+        {
+          "case": "case_02",
+          "before": 1046,
+          "after": 1030
+        },
+        {
+          "case": "case_03",
+          "before": 1723,
+          "after": 1631
+        },
+        {
+          "case": "case_04",
+          "before": 2134,
+          "after": 2042
+        },
+        {
+          "case": "case_05",
+          "before": 4011,
+          "after": 3879
+        },
+        {
+          "case": "case_06",
+          "before": 5773,
+          "after": 5521
+        },
+        {
+          "case": "case_07",
+          "before": 5741,
+          "after": 5425
+        },
+        {
+          "case": "case_08",
+          "before": 8273,
+          "after": 7843
+        },
+        {
+          "case": "case_09",
+          "before": 8938,
+          "after": 8308
+        },
+        {
+          "case": "case_10",
+          "before": 11455,
+          "after": 11067
+        },
+        {
+          "case": "case_11",
+          "before": 13496,
+          "after": 12872
+        },
+        {
+          "case": "case_12",
+          "before": 17437,
+          "after": 16825
+        },
+        {
+          "case": "case_13",
+          "before": 21671,
+          "after": 20933
+        },
+        {
+          "case": "case_14",
+          "before": 23267,
+          "after": 22427
+        },
+        {
+          "case": "case_15",
+          "before": 26548,
+          "after": 25840
+        },
+        {
+          "case": "case_16",
+          "before": 36238,
+          "after": 35174
+        },
+        {
+          "case": "case_17",
+          "before": 46734,
+          "after": 46050
+        },
+        {
+          "case": "case_18",
+          "before": 51025,
+          "after": 49985
+        },
+        {
+          "case": "case_19",
+          "before": 43356,
+          "after": 42542
+        },
+        {
+          "case": "case_20",
+          "before": 48978,
+          "after": 48446
+        }
+      ],
+      "run_id": "20261002T002033.150869Z-exact-polish"
+    },
+    {
+      "tier": "hard",
+      "before_score": 1.2306575756801885,
+      "after_score": 1.2312958441734672,
+      "improved_cases": 4,
+      "unchanged_cases": 5,
+      "cases": [
+        {
+          "case": "case_01",
+          "before": 9252,
+          "after": 9252
+        },
+        {
+          "case": "case_02",
+          "before": 14794,
+          "after": 14794
+        },
+        {
+          "case": "case_03",
+          "before": 12326,
+          "after": 12326
+        },
+        {
+          "case": "case_04",
+          "before": 14881,
+          "after": 14845
+        },
+        {
+          "case": "case_05",
+          "before": 16949,
+          "after": 16921
+        },
+        {
+          "case": "case_06",
+          "before": 22584,
+          "after": 22576
+        },
+        {
+          "case": "case_07",
+          "before": 24747,
+          "after": 24747
+        },
+        {
+          "case": "case_08",
+          "before": 25346,
+          "after": 25340
+        },
+        {
+          "case": "case_09",
+          "before": 23666,
+          "after": 23666
+        }
+      ],
+      "run_id": "20261002T002153.697116Z-exact-polish"
+    },
+    {
+      "tier": "scale",
+      "before_score": 1.0299239499469701,
+      "after_score": 1.0404093962466106,
+      "improved_cases": 8,
+      "unchanged_cases": 0,
+      "cases": [
+        {
+          "case": "case_01",
+          "before": 43978,
+          "after": 43212
+        },
+        {
+          "case": "case_02",
+          "before": 50368,
+          "after": 49790
+        },
+        {
+          "case": "case_03",
+          "before": 60464,
+          "after": 59984
+        },
+        {
+          "case": "case_04",
+          "before": 63468,
+          "after": 62624
+        },
+        {
+          "case": "case_05",
+          "before": 71861,
+          "after": 71081
+        },
+        {
+          "case": "case_06",
+          "before": 84727,
+          "after": 84317
+        },
+        {
+          "case": "case_07",
+          "before": 93617,
+          "after": 92875
+        },
+        {
+          "case": "case_08",
+          "before": 118793,
+          "after": 117983
+        }
+      ],
+      "run_id": "20261002T002229.334302Z-exact-polish"
+    },
+    {
+      "tier": "congested",
+      "before_score": 1.090605391888499,
+      "after_score": 1.0941448397359423,
+      "improved_cases": 4,
+      "unchanged_cases": 0,
+      "cases": [
+        {
+          "case": "case_01",
+          "before": 61645,
+          "after": 61149
+        },
+        {
+          "case": "case_02",
+          "before": 113202,
+          "after": 113018
+        },
+        {
+          "case": "case_03",
+          "before": 202129,
+          "after": 201687
+        },
+        {
+          "case": "case_04",
+          "before": 221485,
+          "after": 221249
+        }
+      ],
+      "run_id": "20261002T002313.240222Z-exact-polish"
+    },
+    {
+      "tier": "designs",
+      "before_score": 1.2124988396182923,
+      "after_score": 1.2236812513939086,
+      "improved_cases": 3,
+      "unchanged_cases": 0,
+      "cases": [
+        {
+          "case": "ctrl",
+          "before": 59828,
+          "after": 59464
+        },
+        {
+          "case": "int2float",
+          "before": 112496,
+          "after": 110404
+        },
+        {
+          "case": "router",
+          "before": 76591,
+          "after": 76387
+        }
+      ],
+      "run_id": "20261002T002335.637690Z-exact-polish"
+    },
+    {
+      "tier": "stress",
+      "before_score": 1.0204335557381696,
+      "after_score": 1.0205481649985917,
+      "improved_cases": 1,
+      "unchanged_cases": 0,
+      "cases": [
+        {
+          "case": "case_01",
+          "before": 1121978,
+          "after": 1121852
+        }
+      ],
+      "run_id": "20261002T002350.849915Z-exact-polish"
+    }
+  ],
+  "added_wrapper_wall_s": 319.18863028101623,
+  "stages": 10,
+  "scope": "All six official tiers improved through disclosed incremental stages. No cross-tier aggregate; all cases physically nonworsening.",
+  "limitations": "Different accumulated effort and reference ancestry remain explicit in coverage. Relaxed bounds are not jointly routable targets. No global maximum, public-best or final regeneration claim."
+}
