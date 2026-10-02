@@ -58,3 +58,6 @@ External ownership and all foreign pins remain blocked; existing transaction
 snapshots restore failed, expired and nonimproving repairs. Fine-diverse
 outperforms this prototype on matched development screens; no strict-window
 repair, boundary stitching or unpublished competitor reproduction implemented.
+
+
+Conflict-window experiment: derive mandatory whole-net blockers from an improving seed ideal tree. Foreign pins remain blocked even in relaxed ownership search. Reject groups that cannot contain every blocker; include up to three nearby whole nets in a4/8 XY conflict-centered box spanning layers. Seed-first fixed-owner repair then exact polish operates in the outer rollback transaction. Bounds rank seeds; no public route geometry drives selection. No dynamic displacement outside the selected group, branch clipping or competitor-source reproduction.

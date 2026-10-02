@@ -1,75 +1,102 @@
 {
-  "coverage": "docs/evidence/phase3/tier-window-followup-coverage.json",
-  "coverage_sha256": "130d0b0354b4973570cbe4ba335a2e78d0a3c4d3aa4eb158645836cd80ff79bf",
+  "coverage": "docs/evidence/phase3/tier-conflict-window-all-tiers-coverage.json",
   "tiers": [
     {
       "tier": "intro",
-      "run_id": "20261002T032837.739731Z-exact-polish",
-      "score": 1.0974025183797085,
-      "archive": "dev/incumbents/intro/20261002T032837.739731Z-exact-polish.tar.gz",
-      "archive_sha256": "49f7df323eb8ae95bb944ce84e23e79e65f7b2d6501988fe5d69e3a46b07e175"
+      "run_id": "20261002T042219.409990Z-exact-polish",
+      "score": 1.098317782147403,
+      "archive": "dev/incumbents/intro/20261002T042219.409990Z-exact-polish.tar.gz",
+      "archive_sha256": "9ca3211e5298c9522e02c73c681040f20a207a18fd5b2aefaf7f77c31663cb36",
+      "selection_context": {
+        "stage": "docs/evidence/phase3/conflict-window-all-tiers.json",
+        "configuration": "Fixed conflict-window seed1,3M work; retained per-tier caps/schedules. Added continuation effort,not matched full-tier superiority.",
+        "previous_selection_context": null
+      }
     },
     {
       "tier": "hard",
-      "run_id": "20261002T041703.423261Z-exact-polish",
-      "score": 1.256758876094034,
-      "archive": "dev/incumbents/hard/20261002T041703.423261Z-exact-polish.tar.gz",
-      "archive_sha256": "b0724cf03bd3c0377630e3555ae4371b387561192ec293117dfc188460388ed2",
+      "run_id": "20261002T042248.527325Z-exact-polish",
+      "score": 1.256997693901798,
+      "archive": "dev/incumbents/hard/20261002T042248.527325Z-exact-polish.tar.gz",
+      "archive_sha256": "b8909f9ed59564a61df6f5a69cc9d5e52202ba82a4d272c0a3ad99ee5864f30c",
       "selection_context": {
-        "screen": "docs/evidence/phase3/window-seed-first-screen.json",
-        "configuration": "Fixed seed1,fanout_fine_window,3M expansions per case,group13,schedule2/1/1",
-        "scope": "All nine cases; full-stage gains come from ordinary single-net polish, zero accepted window repairs. Mixed pilot supports experimental status only."
+        "stage": "docs/evidence/phase3/conflict-window-all-tiers.json",
+        "configuration": "Fixed conflict-window seed1,3M work; retained per-tier caps/schedules. Added continuation effort,not matched full-tier superiority.",
+        "previous_selection_context": {
+          "screen": "docs/evidence/phase3/window-seed-first-screen.json",
+          "configuration": "Fixed seed1,fanout_fine_window,3M expansions per case,group13,schedule2/1/1",
+          "scope": "All nine cases; full-stage gains come from ordinary single-net polish, zero accepted window repairs. Mixed pilot supports experimental status only."
+        }
       }
     },
     {
       "tier": "scale",
-      "run_id": "20261002T034757.054852Z-exact-polish",
-      "score": 1.0471187071837642,
-      "archive": "dev/incumbents/scale/20261002T034757.054852Z-exact-polish.tar.gz",
-      "archive_sha256": "2b31e47a9be7d1ee9b9df05648be3bdcb1f19442ee0e57623ed79c91e8e25f80",
+      "run_id": "20261002T042302.150638Z-exact-polish",
+      "score": 1.0479000969718766,
+      "archive": "dev/incumbents/scale/20261002T042302.150638Z-exact-polish.tar.gz",
+      "archive_sha256": "4e6e186b6967d77f95b0a548ad1512ed68fda8ed5156fa72cf6f82b72e01e524",
       "selection_context": {
-        "screen": "docs/evidence/phase3/repair-schedule-screen.json",
-        "configuration": "Original polish-first adaptive,group3,seed3,3M work",
-        "selection_scope": "Seed chosen from scale01 development;fixed full8case evaluation afterward;no per-case seed portfolio"
+        "stage": "docs/evidence/phase3/conflict-window-all-tiers.json",
+        "configuration": "Fixed conflict-window seed1,3M work; retained per-tier caps/schedules. Added continuation effort,not matched full-tier superiority.",
+        "previous_selection_context": {
+          "screen": "docs/evidence/phase3/repair-schedule-screen.json",
+          "configuration": "Original polish-first adaptive,group3,seed3,3M work",
+          "selection_scope": "Seed chosen from scale01 development;fixed full8case evaluation afterward;no per-case seed portfolio"
+        }
       }
     },
     {
       "tier": "congested",
-      "run_id": "20261002T032937.433131Z-exact-polish",
-      "score": 1.0984083343517812,
-      "archive": "dev/incumbents/congested/20261002T032937.433131Z-exact-polish.tar.gz",
-      "archive_sha256": "15be303c5f37260d271bbec0bf4f9ceafb26b133e1e5a7c195fcb822ca4295a8"
+      "run_id": "20261002T042319.971263Z-exact-polish",
+      "score": 1.098592335143899,
+      "archive": "dev/incumbents/congested/20261002T042319.971263Z-exact-polish.tar.gz",
+      "archive_sha256": "bebb1c26a5b6e4d7600cde2e87bda1f3d2423454a4ac77ed3b59123aa6e834e3",
+      "selection_context": {
+        "stage": "docs/evidence/phase3/conflict-window-all-tiers.json",
+        "configuration": "Fixed conflict-window seed1,3M work; retained per-tier caps/schedules. Added continuation effort,not matched full-tier superiority.",
+        "previous_selection_context": null
+      }
     },
     {
       "tier": "designs",
-      "run_id": "20261002T032948.831226Z-exact-polish",
-      "score": 1.2297437228340384,
-      "archive": "dev/incumbents/designs/20261002T032948.831226Z-exact-polish.tar.gz",
-      "archive_sha256": "0091325324574a108b9a67c5cd177aa39ca4e05c71521c107f664622edaea018"
+      "run_id": "20261002T042331.559561Z-exact-polish",
+      "score": 1.2303118137738096,
+      "archive": "dev/incumbents/designs/20261002T042331.559561Z-exact-polish.tar.gz",
+      "archive_sha256": "bd69c0bdfbc17e6b7ed5e15adb133c79baf0bf06321ca65ce77c8ae346b47d0c",
+      "selection_context": {
+        "stage": "docs/evidence/phase3/conflict-window-all-tiers.json",
+        "configuration": "Fixed conflict-window seed1,3M work; retained per-tier caps/schedules. Added continuation effort,not matched full-tier superiority.",
+        "previous_selection_context": null
+      }
     },
     {
       "tier": "stress",
-      "run_id": "20261002T040756.926682Z-exact-polish",
-      "score": 1.0213602626320297,
-      "archive": "dev/incumbents/stress/20261002T040756.926682Z-exact-polish.tar.gz",
-      "archive_sha256": "079b58dfc45aed9da0721d9d0a72a0cf2810910250d49347d6da6e5ce0b89de2",
+      "run_id": "20261002T042338.677086Z-exact-polish",
+      "score": 1.02137484120527,
+      "archive": "dev/incumbents/stress/20261002T042338.677086Z-exact-polish.tar.gz",
+      "archive_sha256": "45aa4f1fb7fa224f48381e5b125bd24b52db6f0f26713d7ada50335d687a8d48",
       "selection_context": {
-        "screen": "docs/evidence/phase3/polish-order-screen.json",
-        "configuration": "Area-normalized excess-delay ordering; fixed seed1 3M pilot then20M continuation,group13",
-        "scope": "Chosen ordering from three matched seeds; stress has one case and no held-out validation. Larger continuation adds search effort, not a matched-budget comparison.",
-        "screen_wrapper_wall_s": 225.48264092003228,
-        "continuation_wrapper_wall_s": 32.68367733195191,
+        "stage": "docs/evidence/phase3/conflict-window-all-tiers.json",
+        "configuration": "Fixed conflict-window seed1,3M work; retained per-tier caps/schedules. Added continuation effort,not matched full-tier superiority.",
         "previous_selection_context": {
-          "screen": "docs/evidence/phase3/repair-schedule-screen.json",
-          "screen_sha256": "55ebe3d8305978cf50dcb59cea6573922c923d2cf8993eda5d2fd0ba7a4a63dd",
-          "selected_label": "control",
-          "selected_seed": 3,
-          "stress_candidates_tried": 9,
-          "scope": "Best legal stress output across tested scheduling/seed candidates, not a repair-first improvement. Stress has no separate held-out case.",
-          "total_screen_wrapper_wall_s": 219.38891770900227
+          "screen": "docs/evidence/phase3/polish-order-screen.json",
+          "configuration": "Area-normalized excess-delay ordering; fixed seed1 3M pilot then20M continuation,group13",
+          "scope": "Chosen ordering from three matched seeds; stress has one case and no held-out validation. Larger continuation adds search effort, not a matched-budget comparison.",
+          "screen_wrapper_wall_s": 225.48264092003228,
+          "continuation_wrapper_wall_s": 32.68367733195191,
+          "previous_selection_context": {
+            "screen": "docs/evidence/phase3/repair-schedule-screen.json",
+            "screen_sha256": "55ebe3d8305978cf50dcb59cea6573922c923d2cf8993eda5d2fd0ba7a4a63dd",
+            "selected_label": "control",
+            "selected_seed": 3,
+            "stress_candidates_tried": 9,
+            "scope": "Best legal stress output across tested scheduling/seed candidates, not a repair-first improvement. Stress has no separate held-out case.",
+            "total_screen_wrapper_wall_s": 219.38891770900227
+          }
         }
       }
     }
   ],
-  "limitations": "Selected outputs/source/provenance preserved; older missing raw ancestors and reference-generation costs remain unreproduced."
+  "limitations": "Selected outputs/source/provenance preserved; older missing raw ancestors and reference-generation costs remain unreproduced.",
+  "coverage_sha256": "cab65753b1f3b43440bff020b4f927374e7a93eb346ee05e23c0b4786b17dbb2"
 }

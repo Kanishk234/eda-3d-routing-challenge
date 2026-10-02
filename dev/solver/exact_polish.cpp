@@ -59,6 +59,7 @@ struct Engine {
     bool ablation_mode=false;
     bool compact_groups=false,fanout_prices=false,astar_search=false,tight_heuristic=false,gap_order=false,discounted_groups=false;
     bool random_ties=false; std::uint64_t tie_seed=0;
+    bool conflict_windows=false;
     bool seed_first_groups=false;
     bool shuffled_groups=false,diverse_proposals=false,adaptive_groups=false,spatial_groups=false;
     std::mt19937_64 group_rng{0};
@@ -534,7 +535,34 @@ struct Engine {
                 ++proposals;
                 std::vector<int> group{index};
                 bool used_donor=false;
-                if(spatial_groups) {
+                if(conflict_windows) {
+                    Net ideal;
+                    if(!shortest(nets[index],ideal,true,penalty)) break;
+                    if(ideal.delay>=nets[index].delay) {++no_gain;continue;}
+                    std::set<int> blockers; std::vector<int> conflicts;
+                    for(int v:ideal.vertices) if(owner[v]>=0 && owner[v]!=nets[index].id) {
+                        blockers.insert(owner[v]);conflicts.push_back(v);
+                    }
+                    if(blockers.size()>static_cast<std::size_t>(max_blockers)) {++too_many;continue;}
+                    for(int j:order) if(blockers.count(nets[j].id)) group.push_back(j);
+                    if(!conflicts.empty()) {
+                        int anchor=conflicts[group_rng()%conflicts.size()];
+                        int size=group_rng()%2?4:8;
+                        int x0=std::max(0,anchor%w-size/2),y0=std::max(0,(anchor%wh)/w-size/2);
+                        std::vector<int> local;
+                        for(int j:order) {
+                            if(std::find(group.begin(),group.end(),j)!=group.end()) continue;
+                            for(int v:nets[j].vertices) {
+                                int x=v%w,y=(v%wh)/w;
+                                if(x>=x0 && x<x0+size && y>=y0 && y<y0+size) {local.push_back(j);break;}
+                            }
+                        }
+                        // Include a few nearby alternatives; preserve every ideal-path blocker.
+                        std::size_t target=std::min(group.size()+3,static_cast<std::size_t>(max_blockers+1));
+                        for(int j:local) {if(group.size()>=target) break;group.push_back(j);}
+                    }
+                    ++attempts;
+                } else if(spatial_groups) {
                     // Rank windows from our own incumbent, across all layers.
                     const auto& vertices=nets[index].vertices;
                     int anchor=vertices[group_rng()%vertices.size()];
@@ -784,7 +812,7 @@ int main(int argc,char**argv) {
         const std::string kernel=split==std::string::npos?mode:mode.substr(0,split);
         const std::string operation=split==std::string::npos?"":mode.substr(split+1);
         const bool neighborhood_mode=(kernel=="fanout_astar" || kernel=="fanout_tight" || kernel=="fanout_fine") &&
-                                     (operation=="shuffle" || operation=="diverse" || operation=="adaptive" || operation=="spatial" || operation=="hybrid" || operation=="donor" || operation=="window");
+                                     (operation=="shuffle" || operation=="diverse" || operation=="adaptive" || operation=="spatial" || operation=="hybrid" || operation=="donor" || operation=="window" || operation=="conflict");
         bool search_only=std::string(argv[4])=="search";
         if(!search_only && !neighborhood_mode && std::string(argv[4])!="polish" && std::string(argv[4])!="repair" && std::string(argv[4])!="repairsoft" && std::string(argv[4])!="ablation" && std::string(argv[4])!="negotiated" && std::string(argv[4])!="explore" && std::string(argv[4])!="restart" && std::string(argv[4])!="select" && std::string(argv[4])!="wide" && std::string(argv[4])!="walk" && std::string(argv[4])!="descent" && std::string(argv[4])!="compact" && std::string(argv[4])!="fanout" && std::string(argv[4])!="restart_fanout" && std::string(argv[4])!="restart_compact" && std::string(argv[4])!="restart_polish" && std::string(argv[4])!="fanout_walk" && std::string(argv[4])!="fanout_descent" && std::string(argv[4])!="astar" && std::string(argv[4])!="fanout_astar" && std::string(argv[4])!="fanout_gap" && std::string(argv[4])!="fanout_astar_gap" && std::string(argv[4])!="restart_astar" && std::string(argv[4])!="treecost" && std::string(argv[4])!="fanout_tight" && std::string(argv[4])!="astar_tight" && std::string(argv[4])!="fanout_fine") throw std::runtime_error("invalid mode");
         std::signal(SIGINT,on_signal); std::signal(SIGTERM,on_signal);
@@ -845,7 +873,9 @@ int main(int argc,char**argv) {
             engine.diverse_proposals=operation=="diverse" || operation=="hybrid";
             engine.adaptive_groups=operation=="adaptive" || operation=="hybrid" || operation=="donor";
             engine.spatial_groups=operation=="spatial" || operation=="window";
-            engine.seed_first_groups=operation=="window";
+            engine.seed_first_groups=operation=="window" || operation=="conflict";
+            engine.conflict_windows=operation=="conflict";
+            if(engine.conflict_windows) engine.gap_order=true;
             engine.explore(seed,passes,true);
         }
         else if(std::string(argv[4])=="fanout_fine") {engine.price_units=16;engine.tight_heuristic=true;engine.astar_search=true;engine.fanout_prices=true;engine.explore(seed,passes,true);}

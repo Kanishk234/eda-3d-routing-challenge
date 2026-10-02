@@ -20,7 +20,7 @@ BUILD_FLAGS = ["-O3", "-std=c++17", "-Wall", "-Wextra", "-Wpedantic"]
 ENGINE = ROOT / "dev/artifacts/build/exact_polish"
 NEIGHBORHOOD_MODES = [f"{kernel}_{operation}" for kernel in
                       ("fanout_astar", "fanout_tight", "fanout_fine")
-                      for operation in ("shuffle", "diverse", "adaptive", "spatial", "hybrid", "window")]
+                      for operation in ("shuffle", "diverse", "adaptive", "spatial", "hybrid", "window", "conflict")]
 
 def encode(inst, sub):
     def vid(v):

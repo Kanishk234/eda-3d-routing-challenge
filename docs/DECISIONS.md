@@ -84,3 +84,5 @@ cases from the same available1.227449 incumbent, without per-case selection.
 41. Retain area-normalized excess-delay polish ordering for stress only after three matched-seed wins; scale keeps random after two losses. Keep engine default random and expose ordering explicitly. Fixed seed1 larger20M continuation is added effort, not matched-budget evidence; preserve all selected outputs and inherited provenance.
 
 42. Keep seed-first whole-net window repair experimental after2wins/6ties/1loss in nine matched comparisons. Full-tier fixed-seed continuation gains come from single-net polish,not accepted window moves. Preserve improved hard outputs without claiming window superiority; next target actual ideal-path conflicts.
+
+43. Keep conflict-centered window mode experimental:matched pilot2wins/5ties/2losses despite larger geometric gain than old window. Fixed all-tier continuation improves all six scores with added effort;stress gains only from polish. Preserve mandatory ideal blockers and reject over-cap groups. Next compare diversified basins on designs/congested before further cooperative repair complexity.

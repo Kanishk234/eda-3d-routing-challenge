@@ -202,3 +202,19 @@ Pinned CLI independently verifies45/45 selected outputs in tier-window-followup-
 Next concrete experiment: target windows around seed ideal-path conflicts rather than random incumbent vertices, compare conflict-driven group expansion and retained adaptive controls. Existing window scoring favors large nested boxes; partial branches need a coherent boundary/tree contract. Keep multi-start distinct-basin continuation as a separate direction.
 
 No running optimization jobs; archive restoration checked separately. PDF untouched, no push/publication.
+
+# Conflict-centered whole-net windows
+
+The new conflict mode finds an improving ideal seed tree while protecting foreign pins, includes every displaced owner and rejects over-cap groups. A seeded4/8 XY window around a conflicting ideal vertex adds up to three local nets across all layers. Exact seed-first fixed-owner reconstruction, negotiated repair and final exact polish use existing transactional rollback. No unselected owner is displaced; routes can leave the selection window. Whole-net rebuilding remains a limitation; no partial-branch stitching or competitor-source reproduction.
+
+Warning-free C++17 build;37 focused checks pass, including crossing work-cap checkpoints/repetition at1/20/100/1000 expansions with conflict repair first. Engine/wrapper frozen throughout experiments.
+
+Matched hard01/04/07,seeds1–3,3M work,schedule2/1/1:27 legal outputs,all exact3M expansions,45.355s total wrapper. Existing window2wins/7ties/0losses,geometric delay ratio1.00011580 versus adaptive. Conflict-window2wins/5ties/2losses,ratio1.00029718. Group attempts/accepted:adaptive877/2,window108/2,conflict275/2. Conflict mode has higher aggregate ratio but mixed outcomes; both remain experimental,default unchanged. No universal superiority or CPU speed claim.
+
+Fixed seed1 conflict-window full-six continuation,3M per case,group3 for scale/congested/designs and13 elsewhere; schedules hard2/1/1,congested2/4/4,others2/2/2. Added96.787s wrapper,not a matched full-tier comparison.31cases improve/14unchanged;all six aggregates improve. Accepted group moves intro23,hard1,scale11,congested1,designs1,stress0. Single-net polish also improves these outputs;stress gain comes from polish only. Reserved hard08/09 evaluated with frozen config; both unchanged.
+
+Current independent pinned CLI scores,45/45legal: intro1.098317782147403,hard1.256997693901798,scale1.0479000969718766,congested1.098592335143899,designs1.2303118137738096,stress1.02137484120527. Evidence conflict-window-screen.json,conflict-window-all-tiers.json,tier-conflict-window-all-tiers-coverage.json. Canonical selection and six compact archives preserve route/source/manifest bytes; earlier selection history retained. Missing older ancestors/reference-generation costs remain unknown;no final freeze or end-to-end regeneration claim.
+
+Next concrete action: compare continuation from distinct local basins with single-incumbent continuation under matched effort on designs/congested,where competitor gaps remain substantial. Seed freezing and whole-net reconstruction can prevent cooperative improvements; consider reversible seed release or coherent branch repair only after this comparison.
+
+No optimization jobs running. User PDF untouched;local commits authorized,no push/publication.

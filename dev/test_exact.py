@@ -212,7 +212,7 @@ class ExactKernel(unittest.TestCase):
                 self.assertTrue(check(inst,out).legal)
                 self.assertLessEqual(stats["total_delay"],before.total_delay)
 
-    def test_seed_first_window_work_checkpoint_repetition(self):
+    def test_seed_first_conflict_work_checkpoint_repetition(self):
         pins=[Pin(0,0,0,0,2,0),Pin(1,0,0,4,2,0),
               Pin(2,1,0,2,0,0),Pin(3,1,0,2,4,0)]
         inst=Instance("crossing",5,5,2,[2,1],2,[],pins,[Net(0,0,[1]),Net(1,2,[3])])
@@ -222,7 +222,7 @@ class ExactKernel(unittest.TestCase):
                                   NetRoute(1,list(zip(vertical,vertical[1:])))])
         before=check(inst,sub).total_delay
         for limit in (1,20,100,1000):
-            cmd=[str(ENGINE),"5","1","5","fanout_fine_window",str(limit),"repair_first=1"]
+            cmd=[str(ENGINE),"5","1","5","fanout_fine_conflict",str(limit),"repair_first=1"]
             runs=[subprocess.run(cmd,input=encode(inst,sub),text=True,capture_output=True,timeout=8) for _ in range(2)]
             self.assertEqual(runs[0].returncode,0)
             self.assertEqual(runs[0].stdout,runs[1].stdout)
