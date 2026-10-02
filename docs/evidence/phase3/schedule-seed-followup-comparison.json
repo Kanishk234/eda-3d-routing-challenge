@@ -1,0 +1,10 @@
+{
+  "scale_score": 1.0471187071837642,
+  "prior_scale_score": 1.0457201790330146,
+  "scale_improved_cases": 8,
+  "scale_wrapper_wall_s": 18.152164781989995,
+  "stress_score": 1.0206282248316045,
+  "stress_delay_saved": 54,
+  "screen_wrapper_wall_s": 219.38891770900227,
+  "limitations": "Original scheduling,not new repair-first improvement. Stress explicitly selected among9screen candidates;scale fixedseed3selectedoncase01thenfull-tier run. Allscreen/inheritedgenerationcosts separate."
+}

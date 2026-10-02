@@ -111,6 +111,7 @@ def main():
     p.add_argument("--work-budget",type=int,default=0,help="maximum expanded vertices; 0 disables; wall budget remains a safety cap")
     for key in ("present_initial","present_step","history_step"):
         p.add_argument("--"+key.replace("_","-"),type=int,default=2)
+    p.add_argument("--repair-first",action="store_true")
     p.add_argument("--group-limit",type=int,default=13)
     p.add_argument("--seed",type=int,default=1)
     p.add_argument("--passes",type=int,default=5)
@@ -166,7 +167,7 @@ def main():
             if not donor_checked.legal: raise RuntimeError("illegal donor route")
             data+=encode(inst,alternate)
             donor_metadata={"donor_path":str(donor_path.resolve()),"donor_sha256":digest(donor_path),"donor_delay":donor_checked.total_delay}
-        result,raw=run_core(out/c["name"],data,a.budget,a.seed,a.passes,a.mode,a.work_budget,{k:getattr(a,k) for k in ("present_initial","present_step","history_step","group_limit")})
+        result,raw=run_core(out/c["name"],data,a.budget,a.seed,a.passes,a.mode,a.work_budget,{**{k:getattr(a,k) for k in ("present_initial","present_step","history_step","group_limit")},"repair_first":int(a.repair_first)})
         record={**donor_metadata,"case":c["name"],"case_sha256":digest(OFFICIAL/a.suite/c["instance_file"]),
                 "case_seed":inst.seed,"warm_start_sha256":digest(warm),"before_delay":previous.total_delay,"before_resources":route_resources(old),
                 "process":result,"candidate_accepted":False,"error":None}

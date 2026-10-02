@@ -1,0 +1,61 @@
+{
+  "comparisons": [
+    {
+      "tier": "stress",
+      "label": "repair_first",
+      "wins": 0,
+      "ties": 2,
+      "losses": 1,
+      "geomean_delay_ratio": 0.9999839543590631
+    },
+    {
+      "tier": "stress",
+      "label": "repair_first_alt_cap",
+      "wins": 1,
+      "ties": 1,
+      "losses": 1,
+      "geomean_delay_ratio": 0.999992274178701
+    },
+    {
+      "tier": "scale",
+      "label": "repair_first",
+      "wins": 1,
+      "ties": 0,
+      "losses": 2,
+      "geomean_delay_ratio": 0.999735508361296
+    },
+    {
+      "tier": "scale",
+      "label": "repair_first_alt_cap",
+      "wins": 1,
+      "ties": 0,
+      "losses": 2,
+      "geomean_delay_ratio": 0.999533460920163
+    }
+  ],
+  "selected_configs": {
+    "stress": {
+      "repair_first": false,
+      "group_limit": 13
+    },
+    "scale": {
+      "repair_first": false,
+      "group_limit": 3
+    }
+  },
+  "screen_wrapper_wall_s": 219.38891770900227,
+  "selected_stress_score": 1.0206282248316045,
+  "previous_stress_score": 1.0205790957178438,
+  "selected_stress_delay": 1121764,
+  "delay_improvement": 54,
+  "selection_context": {
+    "screen": "docs/evidence/phase3/repair-schedule-screen.json",
+    "screen_sha256": "55ebe3d8305978cf50dcb59cea6573922c923d2cf8993eda5d2fd0ba7a4a63dd",
+    "selected_label": "control",
+    "selected_seed": 3,
+    "stress_candidates_tried": 9,
+    "scope": "Best legal stress output across tested scheduling/seed candidates, not a repair-first improvement. Stress has no separate held-out case.",
+    "total_screen_wrapper_wall_s": 219.38891770900227
+  },
+  "limitations": "Repair-first remains experimental after losing matched comparisons. Incumbent gain is seed selection under original order. All18trials legal and exact3M expansions; screen time includes9stress+9scale trials, not just retained output."
+}

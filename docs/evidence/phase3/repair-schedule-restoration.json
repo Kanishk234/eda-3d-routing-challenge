@@ -1,0 +1,6 @@
+{
+  "selection_sha256": "c5c86c5b0da28d532802b8de4791ca2c56fc2c8ab63d487953eb2cd11ad9fe32",
+  "restored_output_hash_checks": 45,
+  "all_match": true,
+  "limitations": "Byte restoration ofscored outputs,not missing-ancestor or algorithm regeneration."
+}

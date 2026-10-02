@@ -78,3 +78,5 @@ method. Freeze fine-diverse/seed1/20M/1000cycles/60s/schedule2/1/1 for all nine
 cases from the same available1.227449 incumbent, without per-case selection.
 
 39. Bound complete-net repair groups with explicit2–13limit; retain default13 engine semantics and original24round wide negotiation. Pilot selects3 for scale/congested/designs (nine matched-seed wins against13 across first development cases),not a universal default. Fixed full-tier stages and all unchanged cases reported in bounded-group coverage. Defer partial-branch repair; first fix stress scheduling because its3M budget is spent before any group proposal.
+
+40. Keep repair-first optional after18matched3M trials:overalllosses versus original order onstress/scale and bothtestedcaps. Reachinggrouprepairs alone is insufficient evidenceofphysicalgain. Retain original-order stresscontrolseed3 as explicitly disclosed9candidate selection;fixed scalecontrolseed3full-tierfollowup afterdevelopmentcase01selection. Nexttestgain-per-estimated-cost netordering before adding local cancellation or component repair.

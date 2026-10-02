@@ -1,6 +1,6 @@
 # Phase 3 — in progress
 
-All six tiers remain active optimization objectives. Latest45/45legal selected outputs are independently scored in tier-bounded-groups-all-tiers-coverage.json; hard1.256487. See ADAPTIVE_ALL_TIERS.md for scores, costs and ancestry limits. Both concurrent commits are integrated. Historical missing-artifact statements below concern the other checkout or older incoming ancestors, not current selected outputs.
+All six tiers remain active optimization objectives. Latest45/45legal selected outputs are independently scored in tier-schedule-seed-followup-coverage.json; hard1.256487. See ADAPTIVE_ALL_TIERS.md for scores, costs and ancestry limits. Both concurrent commits are integrated. Historical missing-artifact statements below concern the other checkout or older incoming ancestors, not current selected outputs.
 
 ## Latest: recovered incumbents and diverse neighborhoods
 

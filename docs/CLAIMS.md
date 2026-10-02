@@ -78,3 +78,5 @@ Fanout stage fixedseed1 hard9/9 legal1.2054914475674077,allimprove vs1.186873;of
   not universal operator superiority or rejection of spatial LNS generally.
 
 - Bounded group pilot:cap3beats13 on all9first-case/repeated-seed comparisons across scale/congested/designs at3M work. Evidence group-limit-screen.json;one development case per tier,not unseen-case generalization. Fixed subsequent full tiers improve five aggregate scores,stress unchanged;45/45legal in tier-bounded-groups-all-tiers-coverage.json. Added stage effort remains separate from matched pilot comparisons. No global-optimum claim.
+
+- Repair-first reachesstress1–13proposals versus0controls butlosesmatchedphysicaldelay comparisons overall;35focusedchecks pass. Evidence repair-schedule-screen.json. Stressselectedscore1.0206282248316045comesfromoriginal-order controlseed3,notrepair-first. Fixed original-order scale seed3/group3full-tier gives1.0471187071837642,8/8improve.45/45selectedlegal in tier-schedule-seed-followup-coverage.json;additional search/seedselection disclosed,nouniversal ormatchedwhole-tier superiority claim.

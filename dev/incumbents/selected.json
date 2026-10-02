@@ -1,6 +1,6 @@
 {
-  "coverage": "docs/evidence/phase3/tier-bounded-groups-all-tiers-coverage.json",
-  "coverage_sha256": "6bab85a53f38126228d79cc53cfc0a281e8ea631b41ca040bee568d2c2ab808f",
+  "coverage": "docs/evidence/phase3/tier-schedule-seed-followup-coverage.json",
+  "coverage_sha256": "c8892ea40896b96b06f7fa6e4194ea28d0923d8f36de82bbf31c23f776b74a69",
   "tiers": [
     {
       "tier": "intro",
@@ -18,10 +18,15 @@
     },
     {
       "tier": "scale",
-      "run_id": "20261002T032919.026164Z-exact-polish",
-      "score": 1.0457201790330146,
-      "archive": "dev/incumbents/scale/20261002T032919.026164Z-exact-polish.tar.gz",
-      "archive_sha256": "717028b322201717bf7629e5d74b00a25da108f21ae8b9756c96fd6f65f9d543"
+      "run_id": "20261002T034757.054852Z-exact-polish",
+      "score": 1.0471187071837642,
+      "archive": "dev/incumbents/scale/20261002T034757.054852Z-exact-polish.tar.gz",
+      "archive_sha256": "2b31e47a9be7d1ee9b9df05648be3bdcb1f19442ee0e57623ed79c91e8e25f80",
+      "selection_context": {
+        "screen": "docs/evidence/phase3/repair-schedule-screen.json",
+        "configuration": "Original polish-first adaptive,group3,seed3,3M work",
+        "selection_scope": "Seed chosen from scale01 development;fixed full8case evaluation afterward;no per-case seed portfolio"
+      }
     },
     {
       "tier": "congested",
@@ -39,10 +44,19 @@
     },
     {
       "tier": "stress",
-      "run_id": "20261002T032956.054997Z-exact-polish",
-      "score": 1.0205790957178438,
-      "archive": "dev/incumbents/stress/20261002T032956.054997Z-exact-polish.tar.gz",
-      "archive_sha256": "9588c8876cbf6a02ae5d336c3b26316a6cbb697ba3173f230d4a46dd050ce21a"
+      "run_id": "20261002T033712.792138Z-exact-polish",
+      "score": 1.0206282248316045,
+      "archive": "dev/incumbents/stress/20261002T033712.792138Z-exact-polish.tar.gz",
+      "archive_sha256": "4129c20251c3d9f2a5f56c68fd8b2c86f1bdf96c9c06571fe5945ab7ee74be4e",
+      "selection_context": {
+        "screen": "docs/evidence/phase3/repair-schedule-screen.json",
+        "screen_sha256": "55ebe3d8305978cf50dcb59cea6573922c923d2cf8993eda5d2fd0ba7a4a63dd",
+        "selected_label": "control",
+        "selected_seed": 3,
+        "stress_candidates_tried": 9,
+        "scope": "Best legal stress output across tested scheduling/seed candidates, not a repair-first improvement. Stress has no separate held-out case.",
+        "total_screen_wrapper_wall_s": 219.38891770900227
+      }
     }
   ],
   "limitations": "Selected outputs/source/provenance preserved; older missing raw ancestors and reference-generation costs remain unreproduced."

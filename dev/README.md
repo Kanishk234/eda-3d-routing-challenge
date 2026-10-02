@@ -320,3 +320,11 @@ Matched larger-tier pilot and fixed all-tier followup:
 ```
 
 The pilot declares its per-tier selection rule before running: smaller cap must improve at least2/3seed trials and have geometric delay ratio>1 against13. Only first development cases are tuned; full-tier stages evaluate the chosen fixed config. This is a complete-net group bound, not partial-tree branch repair.
+
+`run_polish.py --repair-first` moves the existing coordinated repair sweep ahead of single-net polish in each explore pass. It preserves the same work cap, priorities, group transactions and rollback. Default order remains unchanged. The repeated-seed stress/scale screen rejects repair-first as a default; selected stress improvement came from control seed3, not the new schedule.
+
+```bash
+.venv/bin/python dev/repair_schedule_screen.py --coverage CURRENT_COVERAGE.json --out NEW_SCREEN.json
+```
+
+Stress has one case: this pilot has no held-out stress validation and must be described as benchmark-specific evaluation/selection. Record all screen effort even when only a control-seed output is retained.

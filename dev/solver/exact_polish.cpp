@@ -41,6 +41,7 @@ struct NegotiationConfig { I present_initial=2,present_step=2,history_step=2; };
 struct Engine {
     NegotiationConfig negotiation;
     int group_limit=13;
+    bool repair_first=false;
     int w,h,l,vcount,wh;
     I via;
     I price_units=1;
@@ -677,6 +678,7 @@ struct Engine {
         std::vector<int> order(nets.size());std::iota(order.begin(),order.end(),0);
         for(int pass=0;pass<passes && !expired();++pass) {
             for(std::size_t i=order.size();i>1;--i) std::swap(order[i-1],order[rng()%i]);
+            if(repair_first) repair(seed+static_cast<unsigned long long>(pass),1,4,true,false,wide?12:4);
             for(int j:order) {
                 Net candidate;
                 if(!shortest(nets[j],candidate)) break;
@@ -685,7 +687,7 @@ struct Engine {
                 for(int v:candidate.vertices) owner[v]=nets[j].id;
                 nets[j]=std::move(candidate);
             }
-            repair(seed+static_cast<unsigned long long>(pass),1,4,true,false,wide?12:4);
+            if(!repair_first) repair(seed+static_cast<unsigned long long>(pass),1,4,true,false,wide?12:4);
         }
     }
     std::string group_histogram() const {
@@ -701,6 +703,7 @@ struct Engine {
                  <<",\"read_s\":"<<read_s<<",\"validation_s\":"<<validation_s<<",\"optimization_s\":"<<optimization_s
                  <<",\"search_reset_s\":"<<search_reset_s<<",\"search_rebuild_s\":"<<search_rebuild_s
                  <<",\"present_initial\":"<<negotiation.present_initial<<",\"present_step\":"<<negotiation.present_step<<",\"history_step\":"<<negotiation.history_step
+                 <<",\"repair_first\":"<<repair_first
                  <<",\"group_limit\":"<<group_limit<<",\"group_size_histogram\":"<<group_histogram()
                  <<",\"price_units\":"<<price_units
                  <<",\"snapshot_s\":"<<snapshot_s<<",\"negotiation_setup_s\":"<<negotiation_setup_s<<",\"negotiation_scan_s\":"<<negotiation_scan_s
@@ -757,6 +760,10 @@ int main(int argc,char**argv) {
             if(key=="present_initial") engine.negotiation.present_initial=number;
             else if(key=="present_step") engine.negotiation.present_step=number;
             else if(key=="history_step") engine.negotiation.history_step=number;
+            else if(key=="repair_first") {
+                if(number>1) throw std::runtime_error("repair_first must be0or1");
+                engine.repair_first=number!=0;
+            }
             else if(key=="group_limit") {
                 if(number<2 || number>13) throw std::runtime_error("group limit outside 2..13");
                 engine.group_limit=static_cast<int>(number);
