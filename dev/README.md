@@ -328,3 +328,11 @@ The pilot declares its per-tier selection rule before running: smaller cap must 
 ```
 
 Stress has one case: this pilot has no held-out stress validation and must be described as benchmark-specific evaluation/selection. Record all screen effort even when only a control-seed output is retained.
+
+`run_polish.py --polish-order N` changes only the order of exact single-net searches in explore modes:0seededrandom(default),1delayexcess/XYbounding-boxarea,2relativeexcessoverobstacle-freebound. The scores are ordering proxies,not search heuristics or achievable targets. Stable sorting retains seeded tie diversity;physicaldelay/ownership/rollback remain unchanged. `polish_attempts`, `polish_completed`, and `polish_improvements` distinguish completed searches from accepted improvements.
+
+```bash
+.venv/bin/python dev/polish_order_screen.py --coverage CURRENT_COVERAGE.json --out NEW_SCREEN.json
+```
+
+The repeated-seed stress/scale01 pilot declares selection before running:atleast2of3wins and geometric delay ratio>1versusrandom order. Stress has no separate held-out case. Full-tier validation and all generation costs remain separate.

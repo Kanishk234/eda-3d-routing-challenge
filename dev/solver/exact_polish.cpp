@@ -42,6 +42,8 @@ struct Engine {
     NegotiationConfig negotiation;
     int group_limit=13;
     bool repair_first=false;
+    int polish_order=0;
+    std::uint64_t polish_attempts=0,polish_completed=0,polish_improvements=0;
     int w,h,l,vcount,wh;
     I via;
     I price_units=1;
@@ -676,12 +678,30 @@ struct Engine {
         random_ties=true; tie_seed=seed;
         std::mt19937_64 rng(seed);
         std::vector<int> order(nets.size());std::iota(order.begin(),order.end(),0);
+        std::vector<I> lower(nets.size()),area(nets.size());
+        if(polish_order) for(std::size_t j=0;j<nets.size();++j) {
+            lower[j]=relaxed_delay(nets[j]);
+            int x0=nets[j].root%w,x1=x0,y0=(nets[j].root%wh)/w,y1=y0;
+            for(int v:nets[j].sinks) {int x=v%w,y=(v%wh)/w;x0=std::min(x0,x);x1=std::max(x1,x);y0=std::min(y0,y);y1=std::max(y1,y);}
+            area[j]=static_cast<I>(x1-x0+1)*(y1-y0+1);
+        }
         for(int pass=0;pass<passes && !expired();++pass) {
             for(std::size_t i=order.size();i>1;--i) std::swap(order[i-1],order[rng()%i]);
+            if(polish_order) {
+                std::vector<long double> potential(nets.size());
+                for(std::size_t j=0;j<nets.size();++j) {
+                    I denominator=polish_order==1?area[j]:std::max<I>(1,lower[j]);
+                    potential[j]=static_cast<long double>(std::max<I>(0,nets[j].delay-lower[j]))/denominator;
+                }
+                std::stable_sort(order.begin(),order.end(),[&](int a,int b){return potential[a]>potential[b];});
+            }
             if(repair_first) repair(seed+static_cast<unsigned long long>(pass),1,4,true,false,wide?12:4);
             for(int j:order) {
+                ++polish_attempts;
                 Net candidate;
                 if(!shortest(nets[j],candidate)) break;
+                ++polish_completed;
+                if(candidate.delay<nets[j].delay) ++polish_improvements;
                 if(candidate.delay>nets[j].delay) continue;
                 for(int v:nets[j].vertices) owner[v]=-1;
                 for(int v:candidate.vertices) owner[v]=nets[j].id;
@@ -703,6 +723,7 @@ struct Engine {
                  <<",\"read_s\":"<<read_s<<",\"validation_s\":"<<validation_s<<",\"optimization_s\":"<<optimization_s
                  <<",\"search_reset_s\":"<<search_reset_s<<",\"search_rebuild_s\":"<<search_rebuild_s
                  <<",\"present_initial\":"<<negotiation.present_initial<<",\"present_step\":"<<negotiation.present_step<<",\"history_step\":"<<negotiation.history_step
+                 <<",\"polish_order\":"<<polish_order<<",\"polish_attempts\":"<<polish_attempts<<",\"polish_completed\":"<<polish_completed<<",\"polish_improvements\":"<<polish_improvements
                  <<",\"repair_first\":"<<repair_first
                  <<",\"group_limit\":"<<group_limit<<",\"group_size_histogram\":"<<group_histogram()
                  <<",\"price_units\":"<<price_units
@@ -760,6 +781,10 @@ int main(int argc,char**argv) {
             if(key=="present_initial") engine.negotiation.present_initial=number;
             else if(key=="present_step") engine.negotiation.present_step=number;
             else if(key=="history_step") engine.negotiation.history_step=number;
+            else if(key=="polish_order") {
+                if(number>2) throw std::runtime_error("polish_order must be0..2");
+                engine.polish_order=static_cast<int>(number);
+            }
             else if(key=="repair_first") {
                 if(number>1) throw std::runtime_error("repair_first must be0or1");
                 engine.repair_first=number!=0;

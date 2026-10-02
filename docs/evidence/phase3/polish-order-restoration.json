@@ -1,0 +1,6 @@
+{
+  "routes_verified": 45,
+  "selection_sha256": "dc590dedcbd39cf3de1cf3aed45132d4d0a64ad4c6bb3889f348450a907238f5",
+  "method": "Restored archive members and compared every original route output hash",
+  "destination": "/tmp/routing-polish-order-restoration-20261002T0408"
+}

@@ -1,6 +1,6 @@
 {
-  "coverage": "docs/evidence/phase3/tier-schedule-seed-followup-coverage.json",
-  "coverage_sha256": "c8892ea40896b96b06f7fa6e4194ea28d0923d8f36de82bbf31c23f776b74a69",
+  "coverage": "docs/evidence/phase3/tier-polish-order-followup-coverage.json",
+  "coverage_sha256": "168081d430c47489f10d4dde12c577ef0cd2c259bc1910528b9582ebc69f71f6",
   "tiers": [
     {
       "tier": "intro",
@@ -44,18 +44,25 @@
     },
     {
       "tier": "stress",
-      "run_id": "20261002T033712.792138Z-exact-polish",
-      "score": 1.0206282248316045,
-      "archive": "dev/incumbents/stress/20261002T033712.792138Z-exact-polish.tar.gz",
-      "archive_sha256": "4129c20251c3d9f2a5f56c68fd8b2c86f1bdf96c9c06571fe5945ab7ee74be4e",
+      "run_id": "20261002T040756.926682Z-exact-polish",
+      "score": 1.0213602626320297,
+      "archive": "dev/incumbents/stress/20261002T040756.926682Z-exact-polish.tar.gz",
+      "archive_sha256": "079b58dfc45aed9da0721d9d0a72a0cf2810910250d49347d6da6e5ce0b89de2",
       "selection_context": {
-        "screen": "docs/evidence/phase3/repair-schedule-screen.json",
-        "screen_sha256": "55ebe3d8305978cf50dcb59cea6573922c923d2cf8993eda5d2fd0ba7a4a63dd",
-        "selected_label": "control",
-        "selected_seed": 3,
-        "stress_candidates_tried": 9,
-        "scope": "Best legal stress output across tested scheduling/seed candidates, not a repair-first improvement. Stress has no separate held-out case.",
-        "total_screen_wrapper_wall_s": 219.38891770900227
+        "screen": "docs/evidence/phase3/polish-order-screen.json",
+        "configuration": "Area-normalized excess-delay ordering; fixed seed1 3M pilot then20M continuation,group13",
+        "scope": "Chosen ordering from three matched seeds; stress has one case and no held-out validation. Larger continuation adds search effort, not a matched-budget comparison.",
+        "screen_wrapper_wall_s": 225.48264092003228,
+        "continuation_wrapper_wall_s": 32.68367733195191,
+        "previous_selection_context": {
+          "screen": "docs/evidence/phase3/repair-schedule-screen.json",
+          "screen_sha256": "55ebe3d8305978cf50dcb59cea6573922c923d2cf8993eda5d2fd0ba7a4a63dd",
+          "selected_label": "control",
+          "selected_seed": 3,
+          "stress_candidates_tried": 9,
+          "scope": "Best legal stress output across tested scheduling/seed candidates, not a repair-first improvement. Stress has no separate held-out case.",
+          "total_screen_wrapper_wall_s": 219.38891770900227
+        }
       }
     }
   ],

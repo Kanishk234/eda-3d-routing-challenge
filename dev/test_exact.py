@@ -347,6 +347,22 @@ class WorkAndAstarProperties(unittest.TestCase):
             run=subprocess.run([str(ENGINE),"2","1","100","fanout_fine_donor","100"],input=invalid,text=True,capture_output=True,timeout=5)
             self.assertEqual(run.returncode,2)
 
+    def test_polish_order_preserves_work_caps_and_exact_single_net_delay(self):
+        path=[(x,0,0) for x in range(5)]+[(4,y,0) for y in range(1,5)]
+        inst,sub=make(5,5,[6,2],3,(0,0,0),[(4,4,0)],own_edges=list(zip(path,path[1:])))
+        for order in (1,2):
+            for cap in (1,100,1000):
+                outputs=[]
+                for budget in (2,5):
+                    run=subprocess.run([str(ENGINE),str(budget),"1","1000","fanout_fine_adaptive",str(cap),f"polish_order={order}"],input=encode(inst,sub),text=True,capture_output=True,timeout=8)
+                    self.assertEqual(run.returncode,0);result,stats=decode(inst,run.stdout)
+                    checked=check(inst,result);self.assertTrue(checked.legal);self.assertLessEqual(checked.total_delay,48);self.assertLessEqual(stats["expansions"],cap)
+                    if cap==1000:self.assertEqual(checked.total_delay,22)
+                    counters=json.loads(run.stderr.splitlines()[-1]);self.assertEqual(counters["polish_order"],order)
+                    self.assertLessEqual(counters["polish_improvements"],counters["polish_completed"])
+                    outputs.append(run.stdout)
+                self.assertEqual(*outputs)
+
     def test_repair_first_repetition_and_interrupted_checkpoint(self):
         path=[(x,0,0) for x in range(5)]+[(4,y,0) for y in range(1,5)]
         inst,sub=make(5,5,[6,2],3,(0,0,0),[(4,4,0)],own_edges=list(zip(path,path[1:])))
@@ -380,11 +396,11 @@ class WorkAndAstarProperties(unittest.TestCase):
         base=[str(ENGINE),"2","1","100","fanout_fine","100"]
         def invoke(args):
             return subprocess.run(base+args,input=encode(inst,sub),text=True,capture_output=True,timeout=5)
-        old=invoke([]); explicit=invoke(["present_initial=2","present_step=2","history_step=2","group_limit=13","repair_first=0"])
+        old=invoke([]); explicit=invoke(["present_initial=2","present_step=2","history_step=2","group_limit=13","repair_first=0","polish_order=0"])
         self.assertEqual(old.returncode,0);self.assertEqual(explicit.returncode,0)
         self.assertEqual(old.stdout,explicit.stdout)
         for args in (["unknown=1"],["history_step=-1"],["present_step=65"],["present_initial="],
-                     ["history_step=2","history_step=3"],["present_step=999999999999999999999999"],["history_step"],["group_limit=1"],["group_limit=14"],["repair_first=2"]):
+                     ["history_step=2","history_step=3"],["present_step=999999999999999999999999"],["history_step"],["group_limit=1"],["group_limit=14"],["repair_first=2"],["polish_order=3"]):
             self.assertEqual(invoke(args).returncode,2)
 
     def test_work_cap_is_exact_repeatable_and_preserves_legal_routes(self):
