@@ -76,3 +76,5 @@ Fanout stage fixedseed1 hard9/9 legal1.2054914475674077,allimprove vs1.186873;of
   loses6/9 at both budgets. All54 legal, exact work caps reached. Evidence:
   spatial-comparison.json and two screen manifests. Scope is sampled cases,
   not universal operator superiority or rejection of spatial LNS generally.
+
+- Bounded group pilot:cap3beats13 on all9first-case/repeated-seed comparisons across scale/congested/designs at3M work. Evidence group-limit-screen.json;one development case per tier,not unseen-case generalization. Fixed subsequent full tiers improve five aggregate scores,stress unchanged;45/45legal in tier-bounded-groups-all-tiers-coverage.json. Added stage effort remains separate from matched pilot comparisons. No global-optimum claim.

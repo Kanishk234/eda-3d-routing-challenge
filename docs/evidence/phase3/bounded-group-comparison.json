@@ -1,0 +1,105 @@
+{
+  "comparison": [
+    {
+      "tier": "scale",
+      "cap": 3,
+      "wins": 3,
+      "ties": 0,
+      "losses": 0,
+      "geomean_delay_ratio": 1.0004975891025603
+    },
+    {
+      "tier": "scale",
+      "cap": 7,
+      "wins": 2,
+      "ties": 0,
+      "losses": 1,
+      "geomean_delay_ratio": 1.000170981966365
+    },
+    {
+      "tier": "congested",
+      "cap": 3,
+      "wins": 3,
+      "ties": 0,
+      "losses": 0,
+      "geomean_delay_ratio": 1.0015577487373661
+    },
+    {
+      "tier": "congested",
+      "cap": 7,
+      "wins": 2,
+      "ties": 0,
+      "losses": 1,
+      "geomean_delay_ratio": 1.0003947271711155
+    },
+    {
+      "tier": "designs",
+      "cap": 3,
+      "wins": 3,
+      "ties": 0,
+      "losses": 0,
+      "geomean_delay_ratio": 1.0007089501746114
+    },
+    {
+      "tier": "designs",
+      "cap": 7,
+      "wins": 1,
+      "ties": 2,
+      "losses": 0,
+      "geomean_delay_ratio": 1.000619153381723
+    }
+  ],
+  "selected_caps": {
+    "scale": 3,
+    "congested": 3,
+    "designs": 3
+  },
+  "pilot_wrapper_wall_s": 57.5837320961291,
+  "full_wrapper_wall_s": 97.75448661396513,
+  "rows": [
+    {
+      "tier": "intro",
+      "score": 1.0974025183797085,
+      "improved": 11,
+      "unchanged": 9
+    },
+    {
+      "tier": "hard",
+      "score": 1.2564870553234753,
+      "improved": 6,
+      "unchanged": 3
+    },
+    {
+      "tier": "scale",
+      "score": 1.0457201790330146,
+      "improved": 8,
+      "unchanged": 0
+    },
+    {
+      "tier": "congested",
+      "score": 1.0984083343517812,
+      "improved": 4,
+      "unchanged": 0
+    },
+    {
+      "tier": "designs",
+      "score": 1.2297437228340384,
+      "improved": 3,
+      "unchanged": 0
+    },
+    {
+      "tier": "stress",
+      "score": 1.0205790957178438,
+      "improved": 0,
+      "unchanged": 1
+    }
+  ],
+  "stress_diagnosis": {
+    "searches": 16,
+    "expansions": 3000000,
+    "proposals": 0,
+    "nets": 901,
+    "next_hypothesis": "Repair before or interleaved with whole-net polish"
+  },
+  "limitations": "Fixed incumbent stages, not matched whole-tier superiority. Pilot1development case per tier; missing ancestors/reference-generation unmeasured."
+}

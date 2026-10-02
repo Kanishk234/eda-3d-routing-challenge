@@ -1,0 +1,16 @@
+{
+  "run_id": "20261002T032948.831226Z-exact-polish",
+  "score": 1.2297437228340384,
+  "archive_sha256": "0091325324574a108b9a67c5cd177aa39ca4e05c71521c107f664622edaea018",
+  "members": {
+    "manifest.json": "2256ab58774172c219bc7ffe00536376e922477affa37822fa1e78f7ee08a71c",
+    "coverage-rescore.json": "cf773930a1dd5ed788419b79f736a0bc9f6c0acee710001d2fd421a05f06c9ea",
+    "routes/ctrl.sol.json": "ba121b71927fba04cea75a748fc49989ff87e0bef1a234acb38d7513ecfdd0b5",
+    "routes/int2float.sol.json": "46ef2d156d4a0b9cc506628f34901c94f15fca065908b3129bce7ebbba0d5371",
+    "routes/router.sol.json": "25157468422a3b623bd64a89e24d5fc16e1c2aa6b5781a34dea425948171f811",
+    "development-source/exact_polish.cpp": "e4a29c991f0f9c88a3897bdfedc61d53e6b2fa9210f496f900092d36b8a1d4b4",
+    "development-source/measure.py": "567d13af7911c668243237ae39ad84fed9462715cc7a0c85ae9aae7f2970dbe2",
+    "development-source/run_polish.py": "bd357394ab2f3f7055e62221d65835ba593750842adf52c86cbb89509c94d776"
+  },
+  "limitations": "Preserves scored outputs and their recorded source/manifest; missing raw ancestors are not reconstructed. See coverage evidence for case-portfolio and donor ancestry."
+}

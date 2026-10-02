@@ -13,6 +13,7 @@ def main():
     parser.add_argument('--single-stage',action='store_true')
     parser.add_argument('--seed',type=int,default=1)
     parser.add_argument('--work-budget',type=int,default=5000000)
+    parser.add_argument('--group-caps',type=Path,help='Completed group-limit screen supplying selected per-tier caps')
     parser.add_argument('--hard-start',type=Path,help='Explicit preserved hard run directory, including manifest and routes')
     args=parser.parse_args()
     if args.work_budget<=0: parser.error('work budget must be positive')
@@ -29,9 +30,15 @@ def main():
         manifest=json.loads((archive/'manifest.json').read_text())
         if manifest['config']['suite']!='benchmarks_hard': parser.error('hard start must be a hard-tier run')
         selected['hard']=manifest['run_id']; locations['hard']=archive
+    caps={}
+    if args.group_caps:
+        pilot=json.loads(args.group_caps.read_text())
+        if not pilot.get('complete'): parser.error('group-cap screen is incomplete')
+        caps=pilot['selected_caps']
+        if any(not 2<=x<=13 for x in caps.values()): parser.error('invalid selected group cap')
     schedules={'hard':(2,1,1),'congested':(2,4,4)}
     report={'input_coverage_sha256':digest(coverage),'workers':1,'scope':'All six separately scored tiers. Declared bounded stages; fixed configs per tier, no public warm starts or per-case candidate selection.',
-            'rows':[],'selected_runs':selected,'limitations':'Incremental incumbent improvement, not fresh generation or a globally optimal score claim. All experiments/stages count toward total search effort.'}
+            'group_caps':caps,'group_caps_evidence_sha256':digest(args.group_caps) if args.group_caps else None,'rows':[],'selected_runs':selected,'limitations':'Incremental incumbent improvement, not fresh generation or a globally optimal score claim. All experiments/stages count toward total search effort.'}
     stages=[(1,5000000,('intro','scale','designs','stress')),(2,10000000,('intro','hard','scale','congested','designs','stress'))]
     if args.single_stage: stages=[(args.seed,args.work_budget,('intro','hard','scale','congested','designs','stress'))]
     for seed,work,tiers in stages:
@@ -41,7 +48,7 @@ def main():
             before=set((ROOT/'dev/artifacts').glob('*-exact-polish/manifest.json'))
             command=[sys.executable,str(ROOT/'dev/run_polish.py'),'--suite',suite,'--resume-dir',str(locations[tier]/'routes'),
                 '--mode',args.mode,'--seed',str(seed),'--passes','1000','--budget','60','--work-budget',str(work),
-                '--present-initial',str(cfg[0]),'--present-step',str(cfg[1]),'--history-step',str(cfg[2])]
+                '--group-limit',str(caps.get(tier,13)),'--present-initial',str(cfg[0]),'--present-step',str(cfg[1]),'--history-step',str(cfg[2])]
             subprocess.run(command,check=True)
             paths=set((ROOT/'dev/artifacts').glob('*-exact-polish/manifest.json'))-before
             assert len(paths)==1;path=paths.pop();m=json.loads(path.read_text())

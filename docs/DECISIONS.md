@@ -76,3 +76,5 @@ regions;13-net groups and whole-tree rebuilding may impede repair. This does
 not reject boundary-preserving window repair or establish another entrant's
 method. Freeze fine-diverse/seed1/20M/1000cycles/60s/schedule2/1/1 for all nine
 cases from the same available1.227449 incumbent, without per-case selection.
+
+39. Bound complete-net repair groups with explicit2–13limit; retain default13 engine semantics and original24round wide negotiation. Pilot selects3 for scale/congested/designs (nine matched-seed wins against13 across first development cases),not a universal default. Fixed full-tier stages and all unchanged cases reported in bounded-group coverage. Defer partial-branch repair; first fix stress scheduling because its3M budget is spent before any group proposal.

@@ -40,6 +40,7 @@ struct Net {
 struct NegotiationConfig { I present_initial=2,present_step=2,history_step=2; };
 struct Engine {
     NegotiationConfig negotiation;
+    int group_limit=13;
     int w,h,l,vcount,wh;
     I via;
     I price_units=1;
@@ -487,6 +488,8 @@ struct Engine {
         return total;
     }
     void repair(unsigned long long seed,int passes,I penalty=0,bool negotiated=false,bool selection=false,int max_blockers=4,bool uphill=false) {
+        const int repair_rounds=max_blockers>4?24:12;
+        max_blockers=std::min(max_blockers,group_limit-1);
         std::mt19937_64 rng(seed);
         I current=0;for(const Net& n:nets) current=add(current,n.delay);
         I best=current;
@@ -614,7 +617,7 @@ struct Engine {
                 }
                 bool legal=true; I after=0;
                 if(selection) legal=select_candidates(group,after);
-                else if(negotiated) legal=negotiate(group,after,max_blockers>4?24:12);
+                else if(negotiated) legal=negotiate(group,after,repair_rounds);
                 else for(int j:group) {
                     Net candidate;
                     if(!shortest(nets[j],candidate)) { legal=false; break; }
@@ -685,6 +688,11 @@ struct Engine {
             repair(seed+static_cast<unsigned long long>(pass),1,4,true,false,wide?12:4);
         }
     }
+    std::string group_histogram() const {
+        std::string result="[";
+        for(std::size_t i=0;i<group_sizes.size();++i) {if(i) result+=",";result+=std::to_string(group_sizes[i]);}
+        return result+"]";
+    }
     void output() {
         if(!ablation_mode) std::cerr<<"{\"proposals\":"<<proposals<<",\"no_gain\":"<<no_gain
                  <<",\"too_many\":"<<too_many<<",\"attempts\":"<<attempts
@@ -693,6 +701,7 @@ struct Engine {
                  <<",\"read_s\":"<<read_s<<",\"validation_s\":"<<validation_s<<",\"optimization_s\":"<<optimization_s
                  <<",\"search_reset_s\":"<<search_reset_s<<",\"search_rebuild_s\":"<<search_rebuild_s
                  <<",\"present_initial\":"<<negotiation.present_initial<<",\"present_step\":"<<negotiation.present_step<<",\"history_step\":"<<negotiation.history_step
+                 <<",\"group_limit\":"<<group_limit<<",\"group_size_histogram\":"<<group_histogram()
                  <<",\"price_units\":"<<price_units
                  <<",\"snapshot_s\":"<<snapshot_s<<",\"negotiation_setup_s\":"<<negotiation_setup_s<<",\"negotiation_scan_s\":"<<negotiation_scan_s
                  <<",\"work_limit\":"<<work_limit<<",\"work_exhausted\":"<<work_exhausted
@@ -748,6 +757,10 @@ int main(int argc,char**argv) {
             if(key=="present_initial") engine.negotiation.present_initial=number;
             else if(key=="present_step") engine.negotiation.present_step=number;
             else if(key=="history_step") engine.negotiation.history_step=number;
+            else if(key=="group_limit") {
+                if(number<2 || number>13) throw std::runtime_error("group limit outside 2..13");
+                engine.group_limit=static_cast<int>(number);
+            }
             else throw std::runtime_error("unknown config key");
         }
         engine.deadline=std::chrono::steady_clock::now()+std::chrono::duration_cast<std::chrono::steady_clock::duration>(std::chrono::duration<double>(seconds));

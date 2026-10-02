@@ -347,16 +347,27 @@ class WorkAndAstarProperties(unittest.TestCase):
             run=subprocess.run([str(ENGINE),"2","1","100","fanout_fine_donor","100"],input=invalid,text=True,capture_output=True,timeout=5)
             self.assertEqual(run.returncode,2)
 
+    def test_group_limit_caps_actual_transaction_sizes(self):
+        path=[(x,0,0) for x in range(5)]+[(4,y,0) for y in range(1,5)]
+        inst,sub=make(5,5,[6,2],3,(0,0,0),[(4,4,0)],own_edges=list(zip(path,path[1:])))
+        for limit in (2,3,7,13):
+            run=subprocess.run([str(ENGINE),"2","1","1000","fanout_fine_adaptive","1000",f"group_limit={limit}"],input=encode(inst,sub),text=True,capture_output=True,timeout=5)
+            self.assertEqual(run.returncode,0)
+            result,stats=decode(inst,run.stdout);self.assertTrue(check(inst,result).legal)
+            counters=json.loads(run.stderr.splitlines()[-1])
+            self.assertEqual(counters["group_limit"],limit)
+            self.assertFalse(any(counters["group_size_histogram"][limit+1:]))
+
     def test_schedule_parser_defaults_and_rejections(self):
         inst,sub=make(3,1,[1],1,(0,0,0),[(2,0,0)],own_edges=[((0,0,0),(1,0,0)),((1,0,0),(2,0,0))])
         base=[str(ENGINE),"2","1","100","fanout_fine","100"]
         def invoke(args):
             return subprocess.run(base+args,input=encode(inst,sub),text=True,capture_output=True,timeout=5)
-        old=invoke([]); explicit=invoke(["present_initial=2","present_step=2","history_step=2"])
+        old=invoke([]); explicit=invoke(["present_initial=2","present_step=2","history_step=2","group_limit=13"])
         self.assertEqual(old.returncode,0);self.assertEqual(explicit.returncode,0)
         self.assertEqual(old.stdout,explicit.stdout)
         for args in (["unknown=1"],["history_step=-1"],["present_step=65"],["present_initial="],
-                     ["history_step=2","history_step=3"],["present_step=999999999999999999999999"],["history_step"]):
+                     ["history_step=2","history_step=3"],["present_step=999999999999999999999999"],["history_step"],["group_limit=1"],["group_limit=14"]):
             self.assertEqual(invoke(args).returncode,2)
 
     def test_work_cap_is_exact_repeatable_and_preserves_legal_routes(self):

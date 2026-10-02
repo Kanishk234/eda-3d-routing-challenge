@@ -1,49 +1,49 @@
 {
-  "coverage": "docs/evidence/phase3/tier-two-donor-followup-coverage.json",
-  "coverage_sha256": "2d43e20f1c34edb04a7e40aa28f1f22f6d555b8c16e421cd524fce901dfff885",
+  "coverage": "docs/evidence/phase3/tier-bounded-groups-all-tiers-coverage.json",
+  "coverage_sha256": "6bab85a53f38126228d79cc53cfc0a281e8ea631b41ca040bee568d2c2ab808f",
   "tiers": [
     {
       "tier": "intro",
-      "run_id": "20261002T031705.508259Z-exact-polish",
-      "score": 1.0966221349244722,
-      "archive": "dev/incumbents/intro/20261002T031705.508259Z-exact-polish.tar.gz",
-      "archive_sha256": "bca79dc81f95ad3806ac8e3e43e80ce66d362d41d8871d74d2fb6b10d250b1b4"
+      "run_id": "20261002T032837.739731Z-exact-polish",
+      "score": 1.0974025183797085,
+      "archive": "dev/incumbents/intro/20261002T032837.739731Z-exact-polish.tar.gz",
+      "archive_sha256": "49f7df323eb8ae95bb944ce84e23e79e65f7b2d6501988fe5d69e3a46b07e175"
     },
     {
       "tier": "hard",
-      "run_id": "20261002T032017.366965Z-exact-polish",
-      "score": 1.2563066799749418,
-      "archive": "dev/incumbents/hard/20261002T032017.366965Z-exact-polish.tar.gz",
-      "archive_sha256": "7eb2e68d86e5d89b706c97d0c1aaf14a80fa801d92c8bdd8e8a6c745655a1df5"
+      "run_id": "20261002T032906.935646Z-exact-polish",
+      "score": 1.2564870553234753,
+      "archive": "dev/incumbents/hard/20261002T032906.935646Z-exact-polish.tar.gz",
+      "archive_sha256": "595ed30b0208e998230909c1b543639851a730d36a3472c35c3c74e006e24443"
     },
     {
       "tier": "scale",
-      "run_id": "20261002T031747.626666Z-exact-polish",
-      "score": 1.0444737801995665,
-      "archive": "dev/incumbents/scale/20261002T031747.626666Z-exact-polish.tar.gz",
-      "archive_sha256": "4bc9be3d6ccb77f03a19406f8bebb74a9fb28d13e905fe38c2caeae30f170d05"
+      "run_id": "20261002T032919.026164Z-exact-polish",
+      "score": 1.0457201790330146,
+      "archive": "dev/incumbents/scale/20261002T032919.026164Z-exact-polish.tar.gz",
+      "archive_sha256": "717028b322201717bf7629e5d74b00a25da108f21ae8b9756c96fd6f65f9d543"
     },
     {
       "tier": "congested",
-      "run_id": "20261002T031807.030723Z-exact-polish",
-      "score": 1.097029151793132,
-      "archive": "dev/incumbents/congested/20261002T031807.030723Z-exact-polish.tar.gz",
-      "archive_sha256": "fda4b99d8bd0c56849db2d5562b13fc68c414825d13a4a8832fe4df1cda88b79"
+      "run_id": "20261002T032937.433131Z-exact-polish",
+      "score": 1.0984083343517812,
+      "archive": "dev/incumbents/congested/20261002T032937.433131Z-exact-polish.tar.gz",
+      "archive_sha256": "15be303c5f37260d271bbec0bf4f9ceafb26b133e1e5a7c195fcb822ca4295a8"
     },
     {
       "tier": "designs",
-      "run_id": "20261002T031817.337433Z-exact-polish",
-      "score": 1.2281799145202401,
-      "archive": "dev/incumbents/designs/20261002T031817.337433Z-exact-polish.tar.gz",
-      "archive_sha256": "176f4cae527bb18557a90b08055ee7640dc6eaffb0b03969a4237c29f5ccf6a4"
+      "run_id": "20261002T032948.831226Z-exact-polish",
+      "score": 1.2297437228340384,
+      "archive": "dev/incumbents/designs/20261002T032948.831226Z-exact-polish.tar.gz",
+      "archive_sha256": "0091325324574a108b9a67c5cd177aa39ca4e05c71521c107f664622edaea018"
     },
     {
       "tier": "stress",
-      "run_id": "20261002T031824.318945Z-exact-polish",
+      "run_id": "20261002T032956.054997Z-exact-polish",
       "score": 1.0205790957178438,
-      "archive": "dev/incumbents/stress/20261002T031824.318945Z-exact-polish.tar.gz",
-      "archive_sha256": "2b3e93bae6031005ef0af80eb8117211aad3bb788b07e8e7654a3336d2c3a155"
+      "archive": "dev/incumbents/stress/20261002T032956.054997Z-exact-polish.tar.gz",
+      "archive_sha256": "9588c8876cbf6a02ae5d336c3b26316a6cbb697ba3173f230d4a46dd050ce21a"
     }
   ],
-  "limitations": "Archives preserve selected routes/source/manifests. Missing raw incoming ancestors and reference generation remain unreproduced; coverage records inherited case portfolio and donor provenance."
+  "limitations": "Selected outputs/source/provenance preserved; older missing raw ancestors and reference-generation costs remain unreproduced."
 }

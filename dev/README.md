@@ -309,3 +309,14 @@ Preserve a completed run compactly with byte-identical routes and source:
 ```
 
 The archive is checked by reading every member back and comparing original bytes. Extract into an empty directory with `tar -xzf ARCHIVE.tar.gz -C DESTINATION`; the archived run directory contains `routes/` for resuming. It preserves outputs, not missing generation ancestors.
+
+Bound local repair transactions with `run_polish.py --group-limit N` (2–13 nets, default13). All original blockers must fit; they are never silently dropped. Adaptive additions respect the limit, frozen nets remain owned, and wide-mode negotiation retains24 rounds at every cap. `group_size_histogram` logs attempted transaction sizes; timeout/failed repairs retain rollback.
+
+Matched larger-tier pilot and fixed all-tier followup:
+
+```bash
+.venv/bin/python dev/group_limit_screen.py --coverage CURRENT_COVERAGE.json --out NEW_SCREEN.json
+.venv/bin/python dev/advance_all_tiers.py --coverage CURRENT_COVERAGE.json --label NEW-LABEL --single-stage --mode fanout_fine_adaptive --seed 1 --work-budget 3000000 --group-caps NEW_SCREEN.json
+```
+
+The pilot declares its per-tier selection rule before running: smaller cap must improve at least2/3seed trials and have geometric delay ratio>1 against13. Only first development cases are tuned; full-tier stages evaluate the chosen fixed config. This is a complete-net group bound, not partial-tree branch repair.

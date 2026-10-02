@@ -111,11 +111,13 @@ def main():
     p.add_argument("--work-budget",type=int,default=0,help="maximum expanded vertices; 0 disables; wall budget remains a safety cap")
     for key in ("present_initial","present_step","history_step"):
         p.add_argument("--"+key.replace("_","-"),type=int,default=2)
+    p.add_argument("--group-limit",type=int,default=13)
     p.add_argument("--seed",type=int,default=1)
     p.add_argument("--passes",type=int,default=5)
     p.add_argument("--resume-dir",type=Path)
     a=p.parse_args()
     if (a.mode=="fanout_fine_donor") != (a.donor_dir is not None): p.error("donor mode requires --donor-dir; other modes do not accept it")
+    if not 2<=a.group_limit<=13: p.error("group limit must be2..13")
     if Path(sys.prefix).resolve()!=(ROOT/".venv").resolve(): p.error("use project .venv")
     if not 0<=a.work_budget<2**64 or not 0<=a.budget<=600 or not 1<=a.passes<=1000 or not 0<=a.seed<2**64: p.error("invalid config")
     if any(not 0<=getattr(a,k)<=64 for k in ("present_initial","present_step","history_step")): p.error("schedule values must be 0..64")
@@ -164,7 +166,7 @@ def main():
             if not donor_checked.legal: raise RuntimeError("illegal donor route")
             data+=encode(inst,alternate)
             donor_metadata={"donor_path":str(donor_path.resolve()),"donor_sha256":digest(donor_path),"donor_delay":donor_checked.total_delay}
-        result,raw=run_core(out/c["name"],data,a.budget,a.seed,a.passes,a.mode,a.work_budget,{k:getattr(a,k) for k in ("present_initial","present_step","history_step")})
+        result,raw=run_core(out/c["name"],data,a.budget,a.seed,a.passes,a.mode,a.work_budget,{k:getattr(a,k) for k in ("present_initial","present_step","history_step","group_limit")})
         record={**donor_metadata,"case":c["name"],"case_sha256":digest(OFFICIAL/a.suite/c["instance_file"]),
                 "case_seed":inst.seed,"warm_start_sha256":digest(warm),"before_delay":previous.total_delay,"before_resources":route_resources(old),
                 "process":result,"candidate_accepted":False,"error":None}
