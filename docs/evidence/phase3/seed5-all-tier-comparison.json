@@ -1,0 +1,90 @@
+{
+  "rows": [
+    {
+      "tier": "intro",
+      "score": 1.0966221349244722,
+      "improved": 14,
+      "unchanged": 6,
+      "repair_totals": {
+        "attempts": 907,
+        "failed": 12,
+        "nonimproving": 865,
+        "group_size_2": 433,
+        "group_size_3": 93,
+        "group_size_13": 5
+      }
+    },
+    {
+      "tier": "hard",
+      "score": 1.2552328666827532,
+      "improved": 5,
+      "unchanged": 4,
+      "repair_totals": {
+        "attempts": 638,
+        "failed": 114,
+        "nonimproving": 509,
+        "group_size_2": 135,
+        "group_size_3": 89,
+        "group_size_13": 49
+      }
+    },
+    {
+      "tier": "scale",
+      "score": 1.0444737801995665,
+      "improved": 8,
+      "unchanged": 0,
+      "repair_totals": {
+        "attempts": 32,
+        "failed": 7,
+        "nonimproving": 16,
+        "group_size_2": 6,
+        "group_size_3": 1,
+        "group_size_13": 5
+      }
+    },
+    {
+      "tier": "congested",
+      "score": 1.097029151793132,
+      "improved": 4,
+      "unchanged": 0,
+      "repair_totals": {
+        "attempts": 16,
+        "failed": 5,
+        "nonimproving": 9,
+        "group_size_2": 0,
+        "group_size_3": 2,
+        "group_size_13": 7
+      }
+    },
+    {
+      "tier": "designs",
+      "score": 1.2281799145202401,
+      "improved": 3,
+      "unchanged": 0,
+      "repair_totals": {
+        "attempts": 12,
+        "failed": 4,
+        "nonimproving": 7,
+        "group_size_2": 1,
+        "group_size_3": 0,
+        "group_size_13": 3
+      }
+    },
+    {
+      "tier": "stress",
+      "score": 1.0205790957178438,
+      "improved": 1,
+      "unchanged": 0,
+      "repair_totals": {
+        "attempts": 0,
+        "failed": 0,
+        "nonimproving": 0,
+        "group_size_2": 0,
+        "group_size_3": 0,
+        "group_size_13": 0
+      }
+    }
+  ],
+  "wrapper_wall_s": 98.09490477893269,
+  "limitations": "Fixed seed5 adaptive3M additional stages, not matched controls. Only group-size buckets2/3/13 are exposed; no full histogram or CPU-normalized reward. All-tier score independent CLI verified."
+}

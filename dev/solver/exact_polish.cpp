@@ -59,6 +59,8 @@ struct Engine {
     std::mt19937_64 group_rng{0};
     std::array<double,3> neighborhood_weights{{1,1,1}};
     std::array<std::uint64_t,3> neighborhood_attempts{{0,0,0}},neighborhood_gains{{0,0,0}};
+    std::uint64_t donor_eligible=0,donor_selected=0,donor_gains=0;
+    std::array<std::uint64_t,15> group_sizes{};
     std::uint64_t tie_rank(int v) const {
         std::uint64_t x=static_cast<std::uint64_t>(v)+tie_seed+0x9e3779b97f4a7c15ULL;
         x=(x^(x>>30))*0xbf58476d1ce4e5b9ULL;
@@ -501,6 +503,7 @@ struct Engine {
                 if(expired()) break;
                 ++proposals;
                 std::vector<int> group{index};
+                bool used_donor=false;
                 if(spatial_groups) {
                     // Rank windows from our own incumbent, across all layers.
                     const auto& vertices=nets[index].vertices;
@@ -558,8 +561,9 @@ struct Engine {
                         for(int v:candidate.vertices) if(owner[v]>=0 && owner[v]!=candidate.id) displaced.insert(owner[v]);
                         return std::make_pair(displaced.size(),candidate.delay);
                     };
+                    if(donor.delay<nets[index].delay) ++donor_eligible;
                     if(donor.delay<nets[index].delay &&
-                       (ideal.delay>=nets[index].delay || merit(donor)<merit(ideal))) ideal=donor;
+                       (ideal.delay>=nets[index].delay || merit(donor)<merit(ideal))) {ideal=donor;used_donor=true;++donor_selected;}
                 }
                 if(ideal.delay>=nets[index].delay) { ++no_gain; continue; }
                 std::set<int> blockers;
@@ -597,6 +601,7 @@ struct Engine {
                     }
                     ++neighborhood_attempts[strategy];
                 }
+                ++group_sizes[std::min(group.size(),group_sizes.size()-1)];
                 // Full transaction snapshot makes all failed/expired repairs reversible.
                 auto snapshot_start=std::chrono::steady_clock::now();
                 auto old_owner=owner;
@@ -623,6 +628,7 @@ struct Engine {
                     if(reward>0) ++neighborhood_gains[strategy];
                 }
                 if(legal && (after<before || accept_uphill)) {
+                    if(used_donor && after<before) ++donor_gains;
                     ++accepted; changed=true;
                     if(accept_uphill) ++uphill_moves;
                     current=add(current-before,after);
@@ -696,6 +702,8 @@ struct Engine {
                  <<",\"selection_partial\":"<<selection_partial
                  <<",\"neighborhood_attempts\":["<<neighborhood_attempts[0]<<","<<neighborhood_attempts[1]<<","<<neighborhood_attempts[2]<<"]"
                  <<",\"neighborhood_gains\":["<<neighborhood_gains[0]<<","<<neighborhood_gains[1]<<","<<neighborhood_gains[2]<<"]"
+                 <<",\"donor_eligible\":"<<donor_eligible<<",\"donor_selected\":"<<donor_selected<<",\"donor_gains\":"<<donor_gains
+                 <<",\"group_size_2\":"<<group_sizes[2]<<",\"group_size_3\":"<<group_sizes[3]<<",\"group_size_13\":"<<group_sizes[13]
                  <<",\"failed\":"<<failed<<",\"nonimproving\":"<<nonimproving<<"}\n";
         I total=0; for(const Net& n:nets) total=add(total,n.delay);
         std::cout<<"M3DOUT1 "<<nets.size()<<" "<<total<<" "<<timed_out<<" "
@@ -755,6 +763,7 @@ int main(int argc,char**argv) {
                 if(alternate.nets[j].id!=engine.nets[j].id || alternate.nets[j].root!=engine.nets[j].root || alternate.nets[j].sinks!=engine.nets[j].sinks)
                     throw std::runtime_error("donor terminals mismatch");
             engine.donor_nets=std::move(alternate.nets);
+            engine.read_s=std::chrono::duration<double>(std::chrono::steady_clock::now()-read_start).count();
         }
         auto optimization_start=std::chrono::steady_clock::now();
         engine.ablation_mode=std::string(argv[4])=="ablation";

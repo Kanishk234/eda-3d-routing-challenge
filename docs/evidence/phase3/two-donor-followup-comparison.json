@@ -1,0 +1,53 @@
+{
+  "comparisons": [
+    {
+      "label": "donor_0",
+      "wins": 2,
+      "ties": 2,
+      "losses": 5,
+      "geomean_delay_ratio": 0.9998680553037288
+    },
+    {
+      "label": "donor_1",
+      "wins": 6,
+      "ties": 1,
+      "losses": 2,
+      "geomean_delay_ratio": 1.000241328432937
+    }
+  ],
+  "activity": [
+    {
+      "label": "control",
+      "donor_eligible": 0,
+      "donor_selected": 0,
+      "donor_gains": 0,
+      "attempts": 862,
+      "failed": 104,
+      "nonimproving": 747
+    },
+    {
+      "label": "donor_0",
+      "donor_eligible": 362,
+      "donor_selected": 244,
+      "donor_gains": 2,
+      "attempts": 895,
+      "failed": 107,
+      "nonimproving": 778
+    },
+    {
+      "label": "donor_1",
+      "donor_eligible": 334,
+      "donor_selected": 230,
+      "donor_gains": 8,
+      "attempts": 618,
+      "failed": 95,
+      "nonimproving": 505
+    }
+  ],
+  "screen_wrapper_wall_s": 40.646233267732896,
+  "full_followup_score": 1.2563066799749418,
+  "full_followup_wrapper_wall_s": 12.729055477015208,
+  "full_improved": 8,
+  "full_unchanged": 1,
+  "limitations": "Development27trials all consume3M expansions. Fixed donor_1 selection then seed1 full-stage validation; no held-out tuning. Activity reflects proposal/group repairs, not fixed donor-tree insertion. No universal superiority, fresh generation or complete missing-ancestor regeneration claim."
+}

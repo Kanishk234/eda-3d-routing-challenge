@@ -1,0 +1,7 @@
+{
+  "selection_sha256": "fb2ef474bbfa4f791ce3f41d78559be3d37a6faa069b34c70c3704b632e22362",
+  "restored_output_hash_checks": 45,
+  "all_match": true,
+  "destination": "/tmp/routing-selected-restoration-20261002T0321",
+  "limitations": "Byte restoration, not algorithm regeneration or reconstruction of missing ancestors."
+}

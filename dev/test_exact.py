@@ -1,4 +1,5 @@
 """Independent correctness/integration checks for the C++ exact kernel."""
+import json
 import heapq
 import random
 import subprocess
@@ -334,6 +335,9 @@ class WorkAndAstarProperties(unittest.TestCase):
                     run=subprocess.run([str(ENGINE),str(budget),str(seed),"1000","fanout_fine_donor",str(limit)],input=data,text=True,capture_output=True,timeout=8)
                     self.assertEqual(run.returncode,0)
                     result,stats=decode(inst,run.stdout)
+                    counters=json.loads(run.stderr.splitlines()[-1])
+                    self.assertLessEqual(counters["donor_gains"],counters["donor_selected"])
+                    self.assertLessEqual(counters["donor_selected"],counters["donor_eligible"])
                     self.assertTrue(check(inst,result).legal)
                     self.assertLessEqual(stats["expansions"],limit)
                     self.assertLessEqual(stats["total_delay"],check(inst,sub).total_delay)
