@@ -1,5 +1,5 @@
 {
-  "coverage": "docs/evidence/phase3/tier-conflict-window-all-tiers-coverage.json",
+  "coverage": "docs/evidence/phase3/tier-diversity-recombination-coverage.json",
   "tiers": [
     {
       "tier": "intro",
@@ -47,26 +47,37 @@
     },
     {
       "tier": "congested",
-      "run_id": "20261002T042319.971263Z-exact-polish",
-      "score": 1.098592335143899,
-      "archive": "dev/incumbents/congested/20261002T042319.971263Z-exact-polish.tar.gz",
-      "archive_sha256": "bebb1c26a5b6e4d7600cde2e87bda1f3d2423454a4ac77ed3b59123aa6e834e3",
+      "run_id": "20261002T043638.522140Z-exact-polish",
+      "score": 1.0988489911881147,
+      "archive": "dev/incumbents/congested/20261002T043638.522140Z-exact-polish.tar.gz",
+      "archive_sha256": "52e7208afabb6f65503bf107998f7df8a87b095e2d8904869987fa668a3fa679",
       "selection_context": {
-        "stage": "docs/evidence/phase3/conflict-window-all-tiers.json",
-        "configuration": "Fixed conflict-window seed1,3M work; retained per-tier caps/schedules. Added continuation effort,not matched full-tier superiority.",
-        "previous_selection_context": null
+        "screen": "docs/evidence/phase3/diversity-screen.json",
+        "stage": "docs/evidence/phase3/diversity-followup.json",
+        "recombination": "docs/evidence/phase3/congested-archive-recombination.json",
+        "scope": "Adaptive full-tier continuation followed by exact restricted two-parent recombination; best candidate pair per case; zero-budget checkpoint preserves routes.",
+        "previous_selection_context": {
+          "stage": "docs/evidence/phase3/conflict-window-all-tiers.json",
+          "configuration": "Fixed conflict-window seed1,3M work; retained per-tier caps/schedules. Added continuation effort,not matched full-tier superiority.",
+          "previous_selection_context": null
+        }
       }
     },
     {
       "tier": "designs",
-      "run_id": "20261002T042331.559561Z-exact-polish",
-      "score": 1.2303118137738096,
-      "archive": "dev/incumbents/designs/20261002T042331.559561Z-exact-polish.tar.gz",
-      "archive_sha256": "bd69c0bdfbc17e6b7ed5e15adb133c79baf0bf06321ca65ce77c8ae346b47d0c",
+      "run_id": "20261002T043025.770962Z-exact-polish",
+      "score": 1.2309315470922892,
+      "archive": "dev/incumbents/designs/20261002T043025.770962Z-exact-polish.tar.gz",
+      "archive_sha256": "8c4e756c9f1af41c9a6c8be1f4255f1ff4cc7f9e53d2ea3935669fcb16da9756",
       "selection_context": {
-        "stage": "docs/evidence/phase3/conflict-window-all-tiers.json",
-        "configuration": "Fixed conflict-window seed1,3M work; retained per-tier caps/schedules. Added continuation effort,not matched full-tier superiority.",
-        "previous_selection_context": null
+        "screen": "docs/evidence/phase3/diversity-screen.json",
+        "stage": "docs/evidence/phase3/diversity-followup.json",
+        "scope": "Fixed seed1 donor full-tier continuation; no donor-labelled accepted moves in this full stage. Ordinary repair/polish gains.",
+        "previous_selection_context": {
+          "stage": "docs/evidence/phase3/conflict-window-all-tiers.json",
+          "configuration": "Fixed conflict-window seed1,3M work; retained per-tier caps/schedules. Added continuation effort,not matched full-tier superiority.",
+          "previous_selection_context": null
+        }
       }
     },
     {
@@ -98,5 +109,5 @@
     }
   ],
   "limitations": "Selected outputs/source/provenance preserved; older missing raw ancestors and reference-generation costs remain unreproduced.",
-  "coverage_sha256": "cab65753b1f3b43440bff020b4f927374e7a93eb346ee05e23c0b4786b17dbb2"
+  "coverage_sha256": "120338d8da603ee89bcd1acaf211a968a798e9637e8a074bd3acdc4d84bdb712"
 }

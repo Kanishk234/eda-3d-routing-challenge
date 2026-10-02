@@ -1,0 +1,58 @@
+{
+  "workers": 1,
+  "screen": "docs/evidence/phase3/diversity-screen.json",
+  "rows": [
+    {
+      "tier": "designs",
+      "run_id": "20261002T043025.770962Z-exact-polish",
+      "config": {
+        "suite": "benchmarks_designs",
+        "case": null,
+        "donor_dir": "dev/artifacts/20261001T231442.109038Z-exact-polish/routes",
+        "mode": "fanout_fine_donor",
+        "budget": 60.0,
+        "work_budget": 3000000,
+        "present_initial": 2,
+        "present_step": 2,
+        "history_step": 2,
+        "polish_order": 0,
+        "repair_first": false,
+        "group_limit": 3,
+        "seed": 1,
+        "passes": 1000,
+        "resume_dir": "dev/artifacts/20261002T042331.559561Z-exact-polish/routes"
+      },
+      "wrapper_wall_s": 4.563790834974498,
+      "score": 1.2309315470922892,
+      "previous_run": "20261002T042331.559561Z-exact-polish",
+      "improved_cases": 3
+    },
+    {
+      "tier": "congested",
+      "run_id": "20261002T043030.450594Z-exact-polish",
+      "config": {
+        "suite": "benchmarks_congested",
+        "case": null,
+        "donor_dir": null,
+        "mode": "fanout_fine_adaptive",
+        "budget": 60.0,
+        "work_budget": 3000000,
+        "present_initial": 2,
+        "present_step": 4,
+        "history_step": 4,
+        "polish_order": 0,
+        "repair_first": false,
+        "group_limit": 3,
+        "seed": 1,
+        "passes": 1000,
+        "resume_dir": "dev/artifacts/20261002T042319.971263Z-exact-polish/routes"
+      },
+      "wrapper_wall_s": 5.908576425979845,
+      "score": 1.0988399406456149,
+      "previous_run": "20261002T042319.971263Z-exact-polish",
+      "improved_cases": 4
+    }
+  ],
+  "complete": true,
+  "total_wrapper_wall_s": 10.472367260954343
+}

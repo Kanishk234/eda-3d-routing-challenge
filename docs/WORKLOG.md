@@ -457,3 +457,17 @@ Current independent pinned CLI scores,45/45legal: intro1.098317782147403,hard1.2
 Next concrete action: compare continuation from distinct local basins with single-incumbent continuation under matched effort on designs/congested,where competitor gaps remain substantial. Seed freezing and whole-net reconstruction can prevent cooperative improvements; consider reversible seed release or coherent branch repair only after this comparison.
 
 No optimization jobs running. User PDF untouched;local commits authorized,no push/publication.
+
+# Archive diversity and graph-cut recombination
+
+Researched scatter-search/path-relinking author sections,MAPF-LNS experiments,MAPF-LNS2 repository overview and restricted decision-diagram LNS sections. Detailed source/scope notes in docs/research/DIVERSITY_AND_CLOSURE.md. No third-party code copied/executed. Developed a two-parent tree recombination reduction to minimum-weight closure: alternate tree conflicts imply selecting the corresponding alternate owners; exact max-flow minimizes summed physical delay within those candidate sets. Every terminal/branch/via endpoint participates. This is restricted exactness,not global routing optimality.
+
+Inventory freezes locally generated complete alternative runs within5percent delay on designsctrl/congested01. Geometry diversity does not prove different basins. Three matched seeds,current/older/donor,3M each:18legal,all exactworkcap,25.552s wrapper. Older continuation loses3/3 on both tiers. Donor designs2wins/1loss,ratio1.00028202;congested3ties. Selected fixed seed1 full designs donor/congested adaptive stages improve all7cases,add10.472s wrapper. Full designs gains have zero donor-labelled accepted moves;ordinary repair/polish attribution retained.
+
+Independent graph-cut routine passes2focused checks including exhaustive subset enumeration on200random graphs and explicit dependency examples. Maximally divergent pair gives no gain. All7designs/8congested frozen candidate archive pairs checked against new fixed base,with best pair selected per case. Designs no gain;congested01 gains2delay units and all other cases unchanged. Recombination selection5.777/10.050s excludes rescorers,initial rejected pairs and historical generation. Zero-budget checkpoint retains winning congested mixture unchanged. Known archive generation deduplicated in inherited portfolio;missing ancestors/reference-generation remain unknown.
+
+Current selected scores: intro1.098317782147403,hard1.256997693901798,scale1.0479000969718766,congested1.0988489911881147,designs1.2309315470922892,stress1.02137484120527. Independent pinnedCLI confirms45/45legal. Latest coverage tier-diversity-recombination-coverage.json,canonical selected.json and compact new designs/congested archives. Otherfour routes unchanged. No final freeze/global-best/end-to-end regeneration claim.
+
+Next concrete action: optional neutral group acceptance only when geometry changes,with best legal checkpoint retained; compare against strict-improvement controls on designs/congested repeated seeds. This can explore equal-delay plateaus without uphill submitted scores. Candidate-pool/branch alternatives remain ranked in research notes.
+
+No optimization jobs running. PDF untouched;local commits authorized,no push/publication.

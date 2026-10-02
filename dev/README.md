@@ -348,3 +348,11 @@ Screen: `.venv/bin/python dev/window_seed_first_screen.py` uses current frozen h
 `--mode fanout_fine_conflict` (also astar/tight kernels) ranks seeds by relaxed delay excess, searches an improving ideal tree with foreign ownership relaxed but foreign pins protected, and includes every displaced owner. Over-cap groups are rejected. A seeded4/8 XY window centered on a conflicting ideal vertex adds up to three nearby nets, spanning all layers. Seed-first repair, frozen external ownership, exact polish and rollback match window mode. Routes may leave the box; no partial-branch or dynamic unselected-owner displacement is implemented.
 
 Matched screen: `.venv/bin/python dev/conflict_window_screen.py` compares adaptive/window/conflict on hard01/04/07,seeds1–3,3M work,schedule2/1/1 and current frozen starts. Refuses to overwrite evidence.
+
+### Local archive diversity and exact recombination
+
+Inventory: `.venv/bin/python dev/route_diversity_inventory.py --out NEW.json`. Fixed designsctrl/congested01 inventory covers successful complete local runs within5percent current case delay; Jaccard net-labelled edge distance is a geometry proxy. Preserve the selection revision used before screening.
+
+`dev/diversity_screen.py` uses the frozen inventory evidence for three-seed matched current/alternate/donor continuations. `dev/recombination_archive_screen.py` checks the recorded candidate pool and chooses a best pair per case; no rerouting or public warm starts.
+
+Generic exact two-parent combination: `.venv/bin/python dev/recombine_routes.py BASE_RUN DONOR_RUN --suite benchmarks_designs --out NEW_REPORT.json`. Full inputs and output are officially checked; each chosen net uses one complete original legal tree. Directed displacement dependencies reduce to minimum-weight closure/max-flow. This is exact only within the two candidate sets,not globally optimal routing. `.venv/bin/python dev/test_recombination.py` compares the closure routine against exhaustive independent subsets on200random graphs and forced-dependency examples.

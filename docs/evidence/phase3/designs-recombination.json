@@ -1,0 +1,143 @@
+{
+  "upstream_revision": "499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+  "suite": "benchmarks_designs",
+  "artifact_directory": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T043331.828396Z-net-recombination",
+  "portfolio_selection": true,
+  "method": "Exact two-parent per-net tree closure/mincut",
+  "sources": [
+    {
+      "directory": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T043025.770962Z-exact-polish",
+      "manifest_sha256": "5586e04c566cfe09f8d22187ecc4f255efbc6b927a92adaf7b93df455d8f8372"
+    },
+    {
+      "directory": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261001T231442.109038Z-exact-polish",
+      "manifest_sha256": "1c102c7b0a9088a217c5f63256df99640a959732fa7b403b6a9e261877dbf9b2"
+    }
+  ],
+  "cases": [
+    {
+      "case": "ctrl",
+      "case_sha256": "024ebda5df67cf2077542524a2bf6109bd40937c9ee901d7d8ec0abcf55402cb",
+      "output_sha256": "83449e2660836efba501d268068305d60682ffae7a70b80cbbcce770ece74c6f",
+      "base_delay": 59106,
+      "donor_delay": 61964,
+      "total_delay": 59106,
+      "selected_donor_nets": [],
+      "dependency_arcs": 809,
+      "certificate": {
+        "minimum_delta": 0,
+        "max_flow": 1372,
+        "finite_infinity": 5603
+      }
+    },
+    {
+      "case": "int2float",
+      "case_sha256": "1d57b7e5b69292592184aa9368930490c5f7af477f4f739db3500a329d6fb16e",
+      "output_sha256": "961dbd776371ac6f2324f1d4182959e9b644c29b219c9bb0368c9e8842c2a8ae",
+      "base_delay": 109342,
+      "donor_delay": 119472,
+      "total_delay": 109342,
+      "selected_donor_nets": [],
+      "dependency_arcs": 1471,
+      "certificate": {
+        "minimum_delta": 0,
+        "max_flow": 4266,
+        "finite_infinity": 18663
+      }
+    },
+    {
+      "case": "router",
+      "case_sha256": "34096ab422d9b1cfff1c607bfc66e28a2a9ab43eeb1e0cd34e481162f017a98c",
+      "output_sha256": "cef74dbcd47fb71aaaf7bed85167bdca60a30f0404654fcf7913101f71c9cb08",
+      "base_delay": 76233,
+      "donor_delay": 78537,
+      "total_delay": 76233,
+      "selected_donor_nets": [],
+      "dependency_arcs": 992,
+      "certificate": {
+        "minimum_delta": 0,
+        "max_flow": 1152,
+        "finite_infinity": 4609
+      }
+    }
+  ],
+  "limitations": "Exact restricted candidate-set recombination,not global routing optimality. All inherited generation and missing ancestry limitations retained.",
+  "score": {
+    "format": "m3d-leaderboard",
+    "complete": true,
+    "aggregate_score": 1.2309315470922892,
+    "n_cases": 3,
+    "n_legal": 3,
+    "formula": "aggregate = geomean_c(baseline_total_c / submission_total_c); higher is better; baseline scores 1.0; all cases must be legal for a complete ranked submission (else aggregate = 0.0)",
+    "cases": [
+      {
+        "case": "ctrl",
+        "legal": true,
+        "total_delay": 59106,
+        "baseline_delay": 73148,
+        "ratio": 1.2375731736202755,
+        "runtime_s": null,
+        "reasons": []
+      },
+      {
+        "case": "int2float",
+        "legal": true,
+        "total_delay": 109342,
+        "baseline_delay": 152284,
+        "ratio": 1.3927310640010242,
+        "runtime_s": null,
+        "reasons": []
+      },
+      {
+        "case": "router",
+        "legal": true,
+        "total_delay": 76233,
+        "baseline_delay": 82491,
+        "ratio": 1.0820904332769272,
+        "runtime_s": null,
+        "reasons": []
+      }
+    ]
+  },
+  "known_ancestry_wrapper_wall_s": 165.33475196996005,
+  "known_ancestry_runs": {
+    "20261002T043025.770962Z-exact-polish": 4.563790834974498,
+    "20261002T042331.559561Z-exact-polish": 6.924364714010153,
+    "20261002T032948.831226Z-exact-polish": 7.046532603970263,
+    "20261002T031817.337433Z-exact-polish": 6.84031464997679,
+    "20261002T023612.135172Z-exact-polish": 9.359309644030873,
+    "20261002T002335.637690Z-exact-polish": 15.031920574023388,
+    "20261002T001959.135826Z-exact-polish": 9.01648148096865,
+    "20261001T232756.705387Z-exact-polish": 61.965817156014964,
+    "20261001T231442.109038Z-exact-polish": 17.132815924007446,
+    "20261001T230307.084109Z-exact-polish": 18.393332402978558,
+    "20261001T225152.699204Z-exact-polish": 9.06007198500447
+  },
+  "missing_ancestor_artifacts": [],
+  "selection_wall_s": 1.2186086219735444,
+  "source_sha256": "805be47b127e1ff72ecd4d8e448e668055a67ec068063681c495097b61b2a4eb",
+  "official_rescore_process": {
+    "command": [
+      "/home/younix/eda-3d-routing-challenge/.venv/bin/python",
+      "-m",
+      "m3d.cli",
+      "score-suite",
+      "--suite",
+      "benchmarks_designs",
+      "--submission-dir",
+      "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T043331.828396Z-net-recombination/routes",
+      "--out",
+      "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T043331.828396Z-net-recombination/official-rescore.json"
+    ],
+    "cwd": "/home/younix/eda-3d-routing-challenge/dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+    "budget_s": 180,
+    "wall_s": 0.31542020000051707,
+    "exit_code": 0,
+    "timeout": false,
+    "interrupted": false,
+    "log": "dev/artifacts/20261002T043331.828396Z-net-recombination/official-rescore.log",
+    "peak_rss_kib": 35436,
+    "user_cpu_s": 0.29,
+    "system_cpu_s": 0.02
+  }
+}

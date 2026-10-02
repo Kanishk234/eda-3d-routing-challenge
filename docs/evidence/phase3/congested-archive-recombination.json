@@ -1,0 +1,604 @@
+{
+  "upstream_revision": "499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+  "suite": "benchmarks_congested",
+  "artifact_directory": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T043546.532861Z-archive-recombination",
+  "portfolio_selection": true,
+  "inventory_sha256": "f6d3102bffca438761d5c5eca5da9aacd28248fc5f33b8ede8184d9b863d918b",
+  "sources": [
+    {
+      "directory": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T043030.450594Z-exact-polish",
+      "manifest_sha256": "cb412956f1b8767b036653c685d4576d6a02696700d6833164a7534727b440a0"
+    },
+    {
+      "directory": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261001T232629.746653Z-exact-polish",
+      "manifest_sha256": "47ed23835a5d3a2829d3f8135049f4675b29f9591ebc08779d00239168cb3f01"
+    },
+    {
+      "directory": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261001T232900.916803Z-exact-polish",
+      "manifest_sha256": "f5f9ed26d336f1d65a77480bef92ee5e6b218b214ec43fa161dfdfa4b01ce35a"
+    },
+    {
+      "directory": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T000215.838363Z-exact-polish",
+      "manifest_sha256": "d44fc594b5f907fda34aeee00c2f3c13fb7da34b212656c86f6af0af982c891b"
+    },
+    {
+      "directory": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T001141.164841Z-exact-polish",
+      "manifest_sha256": "8e819c5063fc504c4d2110d6998632dfffde21e376e96fd9bbb1247dd61b90dd"
+    },
+    {
+      "directory": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T002313.240222Z-exact-polish",
+      "manifest_sha256": "2486c43cfab07cc5046218d8dd8a330d94757984e423a8b61de22d10c586da75"
+    },
+    {
+      "directory": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T031807.030723Z-exact-polish",
+      "manifest_sha256": "96f0a3e46fab9b990776cafc1342b576d6d3f0a6db89542076a72aeb4c9f3ccc"
+    },
+    {
+      "directory": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T023556.952369Z-exact-polish",
+      "manifest_sha256": "1b8cbd7db7efb33415e44e839cad7fae00cb7299fb3776116455d96d3fad380a"
+    },
+    {
+      "directory": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T032937.433131Z-exact-polish",
+      "manifest_sha256": "ee31b49b652b19314765dc2c71465e2ece212f0331426e5d26ea4b9a5a54493d"
+    }
+  ],
+  "cases": [
+    {
+      "case": "case_01",
+      "case_sha256": "74f8fb9b0a4fdf230227e676999da156bd2dfea8dcacb1f8ec3407086fe11d06",
+      "total_delay": 60705,
+      "base_delay": 60707,
+      "chosen_source_index": 4,
+      "trials": [
+        {
+          "donor_index": 1,
+          "base_delay": 60707,
+          "donor_delay": 62989,
+          "total_delay": 60707,
+          "selected_donor_nets": [],
+          "dependency_arcs": 2774,
+          "certificate": {
+            "minimum_delta": 0,
+            "max_flow": 4096,
+            "finite_infinity": 10475
+          }
+        },
+        {
+          "donor_index": 2,
+          "base_delay": 60707,
+          "donor_delay": 62163,
+          "total_delay": 60707,
+          "selected_donor_nets": [],
+          "dependency_arcs": 462,
+          "certificate": {
+            "minimum_delta": 0,
+            "max_flow": 166,
+            "finite_infinity": 1789
+          }
+        },
+        {
+          "donor_index": 3,
+          "base_delay": 60707,
+          "donor_delay": 61817,
+          "total_delay": 60707,
+          "selected_donor_nets": [],
+          "dependency_arcs": 339,
+          "certificate": {
+            "minimum_delta": 0,
+            "max_flow": 158,
+            "finite_infinity": 1427
+          }
+        },
+        {
+          "donor_index": 4,
+          "base_delay": 60707,
+          "donor_delay": 61645,
+          "total_delay": 60705,
+          "selected_donor_nets": [
+            64
+          ],
+          "dependency_arcs": 286,
+          "certificate": {
+            "minimum_delta": -2,
+            "max_flow": 130,
+            "finite_infinity": 1203
+          }
+        },
+        {
+          "donor_index": 5,
+          "base_delay": 60707,
+          "donor_delay": 61149,
+          "total_delay": 60705,
+          "selected_donor_nets": [
+            64
+          ],
+          "dependency_arcs": 173,
+          "certificate": {
+            "minimum_delta": -2,
+            "max_flow": 44,
+            "finite_infinity": 535
+          }
+        },
+        {
+          "donor_index": 6,
+          "base_delay": 60707,
+          "donor_delay": 60923,
+          "total_delay": 60705,
+          "selected_donor_nets": [
+            64
+          ],
+          "dependency_arcs": 100,
+          "certificate": {
+            "minimum_delta": -2,
+            "max_flow": 44,
+            "finite_infinity": 309
+          }
+        },
+        {
+          "donor_index": 7,
+          "base_delay": 60707,
+          "donor_delay": 61021,
+          "total_delay": 60705,
+          "selected_donor_nets": [
+            64
+          ],
+          "dependency_arcs": 121,
+          "certificate": {
+            "minimum_delta": -2,
+            "max_flow": 44,
+            "finite_infinity": 407
+          }
+        },
+        {
+          "donor_index": 8,
+          "base_delay": 60707,
+          "donor_delay": 60745,
+          "total_delay": 60705,
+          "selected_donor_nets": [
+            64
+          ],
+          "dependency_arcs": 54,
+          "certificate": {
+            "minimum_delta": -2,
+            "max_flow": 16,
+            "finite_infinity": 75
+          }
+        }
+      ],
+      "output_sha256": "53bdcd8850578bc4b96503349b06d1de8c4556da7309d49435c493603ffd7c3e"
+    },
+    {
+      "case": "case_02",
+      "case_sha256": "080b349aea6d22e149d25ca74603cec81331cace10e7731bc4d86a3a7f780740",
+      "total_delay": 112664,
+      "base_delay": 112664,
+      "chosen_source_index": null,
+      "trials": [
+        {
+          "donor_index": 1,
+          "base_delay": 112664,
+          "donor_delay": 114074,
+          "total_delay": 112664,
+          "selected_donor_nets": [],
+          "dependency_arcs": 404,
+          "certificate": {
+            "minimum_delta": 0,
+            "max_flow": 68,
+            "finite_infinity": 1547
+          }
+        },
+        {
+          "donor_index": 2,
+          "base_delay": 112664,
+          "donor_delay": 114074,
+          "total_delay": 112664,
+          "selected_donor_nets": [],
+          "dependency_arcs": 404,
+          "certificate": {
+            "minimum_delta": 0,
+            "max_flow": 68,
+            "finite_infinity": 1547
+          }
+        },
+        {
+          "donor_index": 3,
+          "base_delay": 112664,
+          "donor_delay": 113550,
+          "total_delay": 112664,
+          "selected_donor_nets": [],
+          "dependency_arcs": 277,
+          "certificate": {
+            "minimum_delta": 0,
+            "max_flow": 68,
+            "finite_infinity": 1023
+          }
+        },
+        {
+          "donor_index": 4,
+          "base_delay": 112664,
+          "donor_delay": 113202,
+          "total_delay": 112664,
+          "selected_donor_nets": [],
+          "dependency_arcs": 215,
+          "certificate": {
+            "minimum_delta": 0,
+            "max_flow": 68,
+            "finite_infinity": 675
+          }
+        },
+        {
+          "donor_index": 5,
+          "base_delay": 112664,
+          "donor_delay": 113018,
+          "total_delay": 112664,
+          "selected_donor_nets": [],
+          "dependency_arcs": 160,
+          "certificate": {
+            "minimum_delta": 0,
+            "max_flow": 26,
+            "finite_infinity": 407
+          }
+        },
+        {
+          "donor_index": 6,
+          "base_delay": 112664,
+          "donor_delay": 112764,
+          "total_delay": 112664,
+          "selected_donor_nets": [],
+          "dependency_arcs": 59,
+          "certificate": {
+            "minimum_delta": 0,
+            "max_flow": 14,
+            "finite_infinity": 129
+          }
+        },
+        {
+          "donor_index": 7,
+          "base_delay": 112664,
+          "donor_delay": 112898,
+          "total_delay": 112664,
+          "selected_donor_nets": [],
+          "dependency_arcs": 88,
+          "certificate": {
+            "minimum_delta": 0,
+            "max_flow": 14,
+            "finite_infinity": 263
+          }
+        },
+        {
+          "donor_index": 8,
+          "base_delay": 112664,
+          "donor_delay": 112698,
+          "total_delay": 112664,
+          "selected_donor_nets": [],
+          "dependency_arcs": 12,
+          "certificate": {
+            "minimum_delta": 0,
+            "max_flow": 14,
+            "finite_infinity": 63
+          }
+        }
+      ],
+      "output_sha256": "3de8117e64de89c5dbf8ef21e97f2ad19bb13af490c9477db711fc03e2b39b46"
+    },
+    {
+      "case": "case_03",
+      "case_sha256": "e4ec45609bfbfb4c31b1b24d4d6ce5be4c4711210f39bb8e096331f66446546c",
+      "total_delay": 201091,
+      "base_delay": 201091,
+      "chosen_source_index": null,
+      "trials": [
+        {
+          "donor_index": 1,
+          "base_delay": 201091,
+          "donor_delay": 203921,
+          "total_delay": 201091,
+          "selected_donor_nets": [],
+          "dependency_arcs": 667,
+          "certificate": {
+            "minimum_delta": 0,
+            "max_flow": 198,
+            "finite_infinity": 3227
+          }
+        },
+        {
+          "donor_index": 2,
+          "base_delay": 201091,
+          "donor_delay": 203921,
+          "total_delay": 201091,
+          "selected_donor_nets": [],
+          "dependency_arcs": 667,
+          "certificate": {
+            "minimum_delta": 0,
+            "max_flow": 198,
+            "finite_infinity": 3227
+          }
+        },
+        {
+          "donor_index": 3,
+          "base_delay": 201091,
+          "donor_delay": 202655,
+          "total_delay": 201091,
+          "selected_donor_nets": [],
+          "dependency_arcs": 447,
+          "certificate": {
+            "minimum_delta": 0,
+            "max_flow": 174,
+            "finite_infinity": 1913
+          }
+        },
+        {
+          "donor_index": 4,
+          "base_delay": 201091,
+          "donor_delay": 202129,
+          "total_delay": 201091,
+          "selected_donor_nets": [],
+          "dependency_arcs": 367,
+          "certificate": {
+            "minimum_delta": 0,
+            "max_flow": 62,
+            "finite_infinity": 1163
+          }
+        },
+        {
+          "donor_index": 5,
+          "base_delay": 201091,
+          "donor_delay": 201687,
+          "total_delay": 201091,
+          "selected_donor_nets": [],
+          "dependency_arcs": 254,
+          "certificate": {
+            "minimum_delta": 0,
+            "max_flow": 60,
+            "finite_infinity": 717
+          }
+        },
+        {
+          "donor_index": 6,
+          "base_delay": 201091,
+          "donor_delay": 201257,
+          "total_delay": 201091,
+          "selected_donor_nets": [],
+          "dependency_arcs": 110,
+          "certificate": {
+            "minimum_delta": 0,
+            "max_flow": 60,
+            "finite_infinity": 287
+          }
+        },
+        {
+          "donor_index": 7,
+          "base_delay": 201091,
+          "donor_delay": 201423,
+          "total_delay": 201091,
+          "selected_donor_nets": [],
+          "dependency_arcs": 177,
+          "certificate": {
+            "minimum_delta": 0,
+            "max_flow": 60,
+            "finite_infinity": 453
+          }
+        },
+        {
+          "donor_index": 8,
+          "base_delay": 201091,
+          "donor_delay": 201153,
+          "total_delay": 201091,
+          "selected_donor_nets": [],
+          "dependency_arcs": 15,
+          "certificate": {
+            "minimum_delta": 0,
+            "max_flow": 0,
+            "finite_infinity": 63
+          }
+        }
+      ],
+      "output_sha256": "a2807bbfa10b0402edc1bd7ca3e721b0c90922b65b8e60c7ba613af9702bc036"
+    },
+    {
+      "case": "case_04",
+      "case_sha256": "c591114d5439e4dca0c30b2db15c072e9837461f2469fabc7fea8c753729cf01",
+      "total_delay": 220415,
+      "base_delay": 220415,
+      "chosen_source_index": null,
+      "trials": [
+        {
+          "donor_index": 1,
+          "base_delay": 220415,
+          "donor_delay": 222451,
+          "total_delay": 220415,
+          "selected_donor_nets": [],
+          "dependency_arcs": 550,
+          "certificate": {
+            "minimum_delta": 0,
+            "max_flow": 130,
+            "finite_infinity": 2297
+          }
+        },
+        {
+          "donor_index": 2,
+          "base_delay": 220415,
+          "donor_delay": 222451,
+          "total_delay": 220415,
+          "selected_donor_nets": [],
+          "dependency_arcs": 550,
+          "certificate": {
+            "minimum_delta": 0,
+            "max_flow": 130,
+            "finite_infinity": 2297
+          }
+        },
+        {
+          "donor_index": 3,
+          "base_delay": 220415,
+          "donor_delay": 221683,
+          "total_delay": 220415,
+          "selected_donor_nets": [],
+          "dependency_arcs": 434,
+          "certificate": {
+            "minimum_delta": 0,
+            "max_flow": 126,
+            "finite_infinity": 1521
+          }
+        },
+        {
+          "donor_index": 4,
+          "base_delay": 220415,
+          "donor_delay": 221485,
+          "total_delay": 220415,
+          "selected_donor_nets": [],
+          "dependency_arcs": 407,
+          "certificate": {
+            "minimum_delta": 0,
+            "max_flow": 126,
+            "finite_infinity": 1323
+          }
+        },
+        {
+          "donor_index": 5,
+          "base_delay": 220415,
+          "donor_delay": 221249,
+          "total_delay": 220415,
+          "selected_donor_nets": [],
+          "dependency_arcs": 287,
+          "certificate": {
+            "minimum_delta": 0,
+            "max_flow": 74,
+            "finite_infinity": 983
+          }
+        },
+        {
+          "donor_index": 6,
+          "base_delay": 220415,
+          "donor_delay": 220709,
+          "total_delay": 220415,
+          "selected_donor_nets": [],
+          "dependency_arcs": 91,
+          "certificate": {
+            "minimum_delta": 0,
+            "max_flow": 0,
+            "finite_infinity": 295
+          }
+        },
+        {
+          "donor_index": 7,
+          "base_delay": 220415,
+          "donor_delay": 220981,
+          "total_delay": 220415,
+          "selected_donor_nets": [],
+          "dependency_arcs": 183,
+          "certificate": {
+            "minimum_delta": 0,
+            "max_flow": 0,
+            "finite_infinity": 567
+          }
+        },
+        {
+          "donor_index": 8,
+          "base_delay": 220415,
+          "donor_delay": 220489,
+          "total_delay": 220415,
+          "selected_donor_nets": [],
+          "dependency_arcs": 12,
+          "certificate": {
+            "minimum_delta": 0,
+            "max_flow": 0,
+            "finite_infinity": 75
+          }
+        }
+      ],
+      "output_sha256": "772d74995a283d089f5f915316d681cae9e7b8b65ad1e2047926eb7ab319c2a2"
+    }
+  ],
+  "limitations": "Each pair optimized exactly for its two candidate trees per net. Best pair chosen per case;not global optimization over the whole archive or fresh routing. All historical candidate-generation costs count separately.",
+  "score": {
+    "format": "m3d-leaderboard",
+    "complete": true,
+    "aggregate_score": 1.0988489911881147,
+    "n_cases": 4,
+    "n_legal": 4,
+    "formula": "aggregate = geomean_c(baseline_total_c / submission_total_c); higher is better; baseline scores 1.0; all cases must be legal for a complete ranked submission (else aggregate = 0.0)",
+    "cases": [
+      {
+        "case": "case_01",
+        "legal": true,
+        "total_delay": 60705,
+        "baseline_delay": 71049,
+        "ratio": 1.17039782554979,
+        "runtime_s": null,
+        "reasons": []
+      },
+      {
+        "case": "case_02",
+        "legal": true,
+        "total_delay": 112664,
+        "baseline_delay": 122534,
+        "ratio": 1.0876056238017469,
+        "runtime_s": null,
+        "reasons": []
+      },
+      {
+        "case": "case_03",
+        "legal": true,
+        "total_delay": 201091,
+        "baseline_delay": 216835,
+        "ratio": 1.0782929121641447,
+        "runtime_s": null,
+        "reasons": []
+      },
+      {
+        "case": "case_04",
+        "legal": true,
+        "total_delay": 220415,
+        "baseline_delay": 234127,
+        "ratio": 1.0622099221922283,
+        "runtime_s": null,
+        "reasons": []
+      }
+    ]
+  },
+  "known_ancestry_wrapper_wall_s": 322.16771994304145,
+  "known_ancestry_runs": {
+    "20261002T043030.450594Z-exact-polish": 5.908576425979845,
+    "20261002T042319.971263Z-exact-polish": 10.067865716002416,
+    "20261002T032937.433131Z-exact-polish": 10.033136468031444,
+    "20261002T031807.030723Z-exact-polish": 10.155978422961198,
+    "20261002T023556.952369Z-exact-polish": 13.827362541982438,
+    "20261002T002313.240222Z-exact-polish": 21.507743681024294,
+    "20261002T001141.164841Z-exact-polish": 13.296067696996033,
+    "20261002T000215.838363Z-exact-polish": 7.94247098400956,
+    "20261001T232900.916803Z-exact-polish": 84.00084879499627,
+    "20261001T232629.746653Z-exact-polish": 83.6551800770103,
+    "20261001T231417.800514Z-exact-polish": 23.496090208995156,
+    "20261001T230240.338860Z-exact-polish": 25.455756760027725,
+    "20261001T225138.640344Z-exact-polish": 12.820642165024765
+  },
+  "missing_ancestor_artifacts": [],
+  "selection_wall_s": 10.049970496969763,
+  "source_sha256": "ef68baaa5b71448a5597ca94eefea2bb9238af31b45fb70d4c0b73530fdd713d",
+  "closure_source_sha256": "805be47b127e1ff72ecd4d8e448e668055a67ec068063681c495097b61b2a4eb",
+  "official_rescore_process": {
+    "command": [
+      "/home/younix/eda-3d-routing-challenge/.venv/bin/python",
+      "-m",
+      "m3d.cli",
+      "score-suite",
+      "--suite",
+      "benchmarks_congested",
+      "--submission-dir",
+      "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T043546.532861Z-archive-recombination/routes",
+      "--out",
+      "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T043546.532861Z-archive-recombination/official-rescore.json"
+    ],
+    "cwd": "/home/younix/eda-3d-routing-challenge/dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+    "budget_s": 180,
+    "wall_s": 0.4659493939834647,
+    "exit_code": 0,
+    "timeout": false,
+    "interrupted": false,
+    "log": "dev/artifacts/20261002T043546.532861Z-archive-recombination/official-rescore.log",
+    "peak_rss_kib": 44820,
+    "user_cpu_s": 0.39,
+    "system_cpu_s": 0.07
+  }
+}

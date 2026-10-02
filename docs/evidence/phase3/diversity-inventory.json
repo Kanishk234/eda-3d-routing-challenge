@@ -1,0 +1,157 @@
+{
+  "selection_sha256": "9cd4c32767ad5bb461d5aa8a513fbbb74f7548e47688ff7166b07324a84ffea7",
+  "metric": "Jaccard distance on net-labelled undirected edges; geometry proxy,not proof of distinct basins",
+  "delay_tolerance": 1.05,
+  "tiers": {
+    "designs": {
+      "case": "ctrl",
+      "current_run": "20261002T042331.559561Z-exact-polish",
+      "current_delay": 59178,
+      "selected": {
+        "run_id": "20261001T231442.109038Z-exact-polish",
+        "delay": 61964,
+        "distance": 0.5550773694390716,
+        "manifest_sha256": "1c102c7b0a9088a217c5f63256df99640a959732fa7b403b6a9e261877dbf9b2",
+        "output_sha256": "1b71c89f302c7aa0bb38347cd3d6330eb30ef6112638137d2bba2fb3a8c0b589",
+        "prior_wrapper_wall_s": 17.132815924007446
+      },
+      "candidates": [
+        {
+          "run_id": "20261001T231442.109038Z-exact-polish",
+          "delay": 61964,
+          "distance": 0.5550773694390716,
+          "manifest_sha256": "1c102c7b0a9088a217c5f63256df99640a959732fa7b403b6a9e261877dbf9b2",
+          "output_sha256": "1b71c89f302c7aa0bb38347cd3d6330eb30ef6112638137d2bba2fb3a8c0b589",
+          "prior_wrapper_wall_s": 17.132815924007446
+        },
+        {
+          "run_id": "20261001T232756.705387Z-exact-polish",
+          "delay": 59828,
+          "distance": 0.28460877042132415,
+          "manifest_sha256": "50b9de6aa04298ddf0150e5f7b45f5f8875a299ab212d5c1e7c8062be3a96eed",
+          "output_sha256": "b46e7a18098fd993769561fd2323384e7f36fb81b3c46522118ab8e1e4355143",
+          "prior_wrapper_wall_s": 61.965817156014964
+        },
+        {
+          "run_id": "20261002T002335.637690Z-exact-polish",
+          "delay": 59464,
+          "distance": 0.19865035849852386,
+          "manifest_sha256": "8d3013102db4244969043a018ed7b2b1259a71f4982f17650b17d9010593429e",
+          "output_sha256": "1c9c26cfb5cadfd2810707fc4c65edf94718ecda0654f1215f23fecf7fbd03a5",
+          "prior_wrapper_wall_s": 15.031920574023388
+        },
+        {
+          "run_id": "20261002T001959.135826Z-exact-polish",
+          "delay": 59602,
+          "distance": 0.16679938744257272,
+          "manifest_sha256": "4d5243609925bf999a96494c50a1382ab1513c04d2454be65ea1508cf6892342",
+          "output_sha256": "3bfb9fb21ca1a17095ded3657b2e36ef441359db576a6ed0bb189150d0f6aef1",
+          "prior_wrapper_wall_s": 9.01648148096865
+        },
+        {
+          "run_id": "20261002T031817.337433Z-exact-polish",
+          "delay": 59330,
+          "distance": 0.15199653850908645,
+          "manifest_sha256": "0884fe7c138b9fb2b3ae7961fb91dcfdba55d6e90b4a7e88212bd28b21b1a9a0",
+          "output_sha256": "9ab0713fdbf52b41aece0e83126e9946b474a5fcacb71b1d47cb8662967fd6de",
+          "prior_wrapper_wall_s": 6.84031464997679
+        },
+        {
+          "run_id": "20261002T023612.135172Z-exact-polish",
+          "delay": 59390,
+          "distance": 0.09145446422873194,
+          "manifest_sha256": "ba230f514d66685056a19d78aec5d81e33848f5a1e1f5597330d2b66c27813fd",
+          "output_sha256": "1f61731dc32804d2db1b8ac6eb76ec3262606d30fb8699e83a0fe064d1114f96",
+          "prior_wrapper_wall_s": 9.359309644030873
+        },
+        {
+          "run_id": "20261002T032948.831226Z-exact-polish",
+          "delay": 59206,
+          "distance": 0.042045975505927036,
+          "manifest_sha256": "2256ab58774172c219bc7ffe00536376e922477affa37822fa1e78f7ee08a71c",
+          "output_sha256": "ba121b71927fba04cea75a748fc49989ff87e0bef1a234acb38d7513ecfdd0b5",
+          "prior_wrapper_wall_s": 7.046532603970263
+        }
+      ]
+    },
+    "congested": {
+      "case": "case_01",
+      "current_run": "20261002T042319.971263Z-exact-polish",
+      "current_delay": 60735,
+      "selected": {
+        "run_id": "20261001T232629.746653Z-exact-polish",
+        "delay": 62989,
+        "distance": 0.9387735759643636,
+        "manifest_sha256": "47ed23835a5d3a2829d3f8135049f4675b29f9591ebc08779d00239168cb3f01",
+        "output_sha256": "148e69f7e0f2c5110bae05a357e5a16e7d5a8679bc9bbcae9b631a4ffbd24dba",
+        "prior_wrapper_wall_s": 83.6551800770103
+      },
+      "candidates": [
+        {
+          "run_id": "20261001T232629.746653Z-exact-polish",
+          "delay": 62989,
+          "distance": 0.9387735759643636,
+          "manifest_sha256": "47ed23835a5d3a2829d3f8135049f4675b29f9591ebc08779d00239168cb3f01",
+          "output_sha256": "148e69f7e0f2c5110bae05a357e5a16e7d5a8679bc9bbcae9b631a4ffbd24dba",
+          "prior_wrapper_wall_s": 83.6551800770103
+        },
+        {
+          "run_id": "20261001T232900.916803Z-exact-polish",
+          "delay": 62163,
+          "distance": 0.3952530541012217,
+          "manifest_sha256": "f5f9ed26d336f1d65a77480bef92ee5e6b218b214ec43fa161dfdfa4b01ce35a",
+          "output_sha256": "ecc3b50d4f614c48c46d35965ceddf88e4a0b34a9287d35aebcb790a2b9bf009",
+          "prior_wrapper_wall_s": 84.00084879499627
+        },
+        {
+          "run_id": "20261002T000215.838363Z-exact-polish",
+          "delay": 61817,
+          "distance": 0.2971568554673001,
+          "manifest_sha256": "d44fc594b5f907fda34aeee00c2f3c13fb7da34b212656c86f6af0af982c891b",
+          "output_sha256": "28fe349b8f5ccd64ef6cc7003ea95c3eac4cca3c45b55abeec84cf8dc36347cd",
+          "prior_wrapper_wall_s": 7.94247098400956
+        },
+        {
+          "run_id": "20261002T001141.164841Z-exact-polish",
+          "delay": 61645,
+          "distance": 0.24441554467564264,
+          "manifest_sha256": "8e819c5063fc504c4d2110d6998632dfffde21e376e96fd9bbb1247dd61b90dd",
+          "output_sha256": "e39a3d3f1224b1ae5d38f6d5502069917df6f8093981e72e27d69d1e05dbe87b",
+          "prior_wrapper_wall_s": 13.296067696996033
+        },
+        {
+          "run_id": "20261002T002313.240222Z-exact-polish",
+          "delay": 61149,
+          "distance": 0.2074497222004852,
+          "manifest_sha256": "2486c43cfab07cc5046218d8dd8a330d94757984e423a8b61de22d10c586da75",
+          "output_sha256": "b87ea8280fc64292e36c23491364860a8c0a0f9c472b4aeca4d781cdf9b198d5",
+          "prior_wrapper_wall_s": 21.507743681024294
+        },
+        {
+          "run_id": "20261002T031807.030723Z-exact-polish",
+          "delay": 60923,
+          "distance": 0.1483818770226537,
+          "manifest_sha256": "96f0a3e46fab9b990776cafc1342b576d6d3f0a6db89542076a72aeb4c9f3ccc",
+          "output_sha256": "062824ad6bbfa7a584165b8c381cfd1c9724853f70918f0652614f867c78ef22",
+          "prior_wrapper_wall_s": 10.155978422961198
+        },
+        {
+          "run_id": "20261002T023556.952369Z-exact-polish",
+          "delay": 61021,
+          "distance": 0.11984557253162476,
+          "manifest_sha256": "1b8cbd7db7efb33415e44e839cad7fae00cb7299fb3776116455d96d3fad380a",
+          "output_sha256": "f1d28483e9e2635d2d0c55c46158c98b62d9c7831a0e898c76698808ef5b9508",
+          "prior_wrapper_wall_s": 13.827362541982438
+        },
+        {
+          "run_id": "20261002T032937.433131Z-exact-polish",
+          "delay": 60745,
+          "distance": 0.11781160016454129,
+          "manifest_sha256": "ee31b49b652b19314765dc2c71465e2ece212f0331426e5d26ea4b9a5a54493d",
+          "output_sha256": "6c7f06a28996414df41ac84bd1db6146857078aeeee0e0713f4d08008c988265",
+          "prior_wrapper_wall_s": 10.033136468031444
+        }
+      ]
+    }
+  }
+}
