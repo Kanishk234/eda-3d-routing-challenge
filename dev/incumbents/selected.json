@@ -1,50 +1,90 @@
 {
-  "coverage": "docs/evidence/phase3/tier-downstream-case-portfolio-coverage.json",
+  "coverage": "docs/evidence/phase3/tier-independent-third-coverage.json",
   "tiers": [
     {
       "tier": "intro",
-      "run_id": "20261002T183052.649401Z-exact-polish",
-      "score": 1.1027993426079046,
-      "archive": "dev/incumbents/intro/20261002T183052.649401Z-exact-polish.tar.gz",
-      "archive_sha256": "a466569fa470bb035e620d5882e962ebac9421bb9835c0a65b8991c1a938b840",
+      "run_id": "20261002T222232.588647Z-exact-polish",
+      "score": 1.1105584404926576,
+      "archive": "dev/incumbents/intro/20261002T222232.588647Z-exact-polish.tar.gz",
+      "archive_sha256": "68cdb3397c87c2c23d48e3ad0b86beb64785c1670b4cb08be5a838a55c407188",
       "selection_context": {
-        "portfolio": "docs/evidence/phase3/downstream-case-portfolio.json",
-        "scope": "Best whole-case routes across declared local trials and full continuation; added portfolio effort, not a uniform solver comparison. Zero-budget native checkpoint preserves selected routes.",
+        "stage": "docs/evidence/phase3/independent-third.json",
+        "scope": "Own-route seeds11/12/13,50M/case,two workers; added effort.",
         "previous_selection_context": {
-          "screen": "docs/evidence/phase3/eligibility-screen.json",
-          "stage": "docs/evidence/phase3/eligibility-followup.json",
-          "scope": "Fixed seed1 fine escape10M continuation. Designs/congested optional after matched pilot;other tiers exploratory. Added effort,not matched full-tier superiority. Physical gains also include ordinary polish/repair.",
+          "stage": "docs/evidence/phase3/independent-next.json",
+          "scope": "Own-route seeds9/10 continuation40M/case,two workers; added effort.",
           "previous_selection_context": {
-            "stage": "docs/evidence/phase3/conflict-window-all-tiers.json",
-            "configuration": "Fixed conflict-window seed1,3M work; retained per-tier caps/schedules. Added continuation effort,not matched full-tier superiority.",
-            "previous_selection_context": null
+            "stage": "docs/evidence/phase3/independent-continuation.json",
+            "plan": "dev/configs/independent-continuation.json",
+            "scope": "Own-route continuation seeds7/8,40M per case,two workers; added effort.",
+            "previous_selection_context": {
+              "stage": "dev/artifacts/20261002-ongoing-downstream-portfolio/progress.json",
+              "plan": "dev/configs/downstream-continuation.json",
+              "scope": "Three fixed-seed continuation rounds4/5/6,20M per case, two workers, added effort. No competitor routes.",
+              "previous_selection_context": {
+                "portfolio": "docs/evidence/phase3/downstream-case-portfolio.json",
+                "scope": "Best whole-case routes across declared local trials and full continuation; added portfolio effort, not a uniform solver comparison. Zero-budget native checkpoint preserves selected routes.",
+                "previous_selection_context": {
+                  "screen": "docs/evidence/phase3/eligibility-screen.json",
+                  "stage": "docs/evidence/phase3/eligibility-followup.json",
+                  "scope": "Fixed seed1 fine escape10M continuation. Designs/congested optional after matched pilot;other tiers exploratory. Added effort,not matched full-tier superiority. Physical gains also include ordinary polish/repair.",
+                  "previous_selection_context": {
+                    "stage": "docs/evidence/phase3/conflict-window-all-tiers.json",
+                    "configuration": "Fixed conflict-window seed1,3M work; retained per-tier caps/schedules. Added continuation effort,not matched full-tier superiority.",
+                    "previous_selection_context": null
+                  }
+                }
+              }
+            }
           }
         }
       }
     },
     {
       "tier": "hard",
-      "run_id": "20261002T183057.311784Z-exact-polish",
-      "score": 1.2687429716684697,
-      "archive": "dev/incumbents/hard/20261002T183057.311784Z-exact-polish.tar.gz",
-      "archive_sha256": "03bc21eaccc344dcb345cd50d2407d585fcbe98f66578df73c94c1bf2effc488",
+      "run_id": "20261002T222232.599549Z-exact-polish",
+      "score": 1.287513731040157,
+      "archive": "dev/incumbents/hard/20261002T222232.599549Z-exact-polish.tar.gz",
+      "archive_sha256": "d56989fbe65f672114c4d00e95d801865febea9b855c2f268f5073dde6c8e1a9",
       "selection_context": {
-        "portfolio": "docs/evidence/phase3/downstream-case-portfolio.json",
-        "scope": "Best whole-case routes across declared local trials and full continuation; added portfolio effort, not a uniform solver comparison. Zero-budget native checkpoint preserves selected routes.",
+        "stage": "docs/evidence/phase3/independent-third.json",
+        "scope": "Own-route seeds11/12/13,50M/case,two workers; added effort.",
         "previous_selection_context": {
-          "screen": "docs/evidence/phase3/eligibility-screen.json",
-          "stage": "docs/evidence/phase3/eligibility-followup.json",
-          "scope": "Fixed seed1 fine escape10M continuation. Designs/congested optional after matched pilot;other tiers exploratory. Added effort,not matched full-tier superiority. Physical gains also include ordinary polish/repair.",
+          "stage": "docs/evidence/phase3/independent-next.json",
+          "scope": "Own-route seeds9/10 continuation40M/case,two workers; added effort.",
           "previous_selection_context": {
-            "stage": "docs/evidence/phase3/hard-neutral-screen.json",
-            "scope": "Hard neutral pilot5wins/4losses; fixed seed1 full9case neutral10M continuation,7improve/2unchanged. Reserved08/09 excluded from selection.",
+            "stage": "docs/evidence/phase3/independent-continuation.json",
+            "plan": "dev/configs/independent-continuation.json",
+            "scope": "Own-route continuation seeds7/8,40M per case,two workers; added effort.",
             "previous_selection_context": {
-              "stage": "docs/evidence/phase3/conflict-window-all-tiers.json",
-              "configuration": "Fixed conflict-window seed1,3M work; retained per-tier caps/schedules. Added continuation effort,not matched full-tier superiority.",
+              "stage": "docs/evidence/phase3/exact-pool-checkpoints.json",
+              "scope": "Restricted CP-SAT own4parent tree pool; zero-budget native preserves4hard/2congesteddelay gains.",
               "previous_selection_context": {
-                "screen": "docs/evidence/phase3/window-seed-first-screen.json",
-                "configuration": "Fixed seed1,fanout_fine_window,3M expansions per case,group13,schedule2/1/1",
-                "scope": "All nine cases; full-stage gains come from ordinary single-net polish, zero accepted window repairs. Mixed pilot supports experimental status only."
+                "stage": "dev/artifacts/20261002-ongoing-downstream-portfolio/progress.json",
+                "plan": "dev/configs/downstream-continuation.json",
+                "scope": "Three fixed-seed continuation rounds4/5/6,20M per case, two workers, added effort. No competitor routes.",
+                "previous_selection_context": {
+                  "portfolio": "docs/evidence/phase3/downstream-case-portfolio.json",
+                  "scope": "Best whole-case routes across declared local trials and full continuation; added portfolio effort, not a uniform solver comparison. Zero-budget native checkpoint preserves selected routes.",
+                  "previous_selection_context": {
+                    "screen": "docs/evidence/phase3/eligibility-screen.json",
+                    "stage": "docs/evidence/phase3/eligibility-followup.json",
+                    "scope": "Fixed seed1 fine escape10M continuation. Designs/congested optional after matched pilot;other tiers exploratory. Added effort,not matched full-tier superiority. Physical gains also include ordinary polish/repair.",
+                    "previous_selection_context": {
+                      "stage": "docs/evidence/phase3/hard-neutral-screen.json",
+                      "scope": "Hard neutral pilot5wins/4losses; fixed seed1 full9case neutral10M continuation,7improve/2unchanged. Reserved08/09 excluded from selection.",
+                      "previous_selection_context": {
+                        "stage": "docs/evidence/phase3/conflict-window-all-tiers.json",
+                        "configuration": "Fixed conflict-window seed1,3M work; retained per-tier caps/schedules. Added continuation effort,not matched full-tier superiority.",
+                        "previous_selection_context": {
+                          "screen": "docs/evidence/phase3/window-seed-first-screen.json",
+                          "configuration": "Fixed seed1,fanout_fine_window,3M expansions per case,group13,schedule2/1/1",
+                          "scope": "All nine cases; full-stage gains come from ordinary single-net polish, zero accepted window repairs. Mixed pilot supports experimental status only."
+                        }
+                      }
+                    }
+                  }
+                }
               }
             }
           }
@@ -53,24 +93,42 @@
     },
     {
       "tier": "scale",
-      "run_id": "20261002T183059.275924Z-exact-polish",
-      "score": 1.0517899452851953,
-      "archive": "dev/incumbents/scale/20261002T183059.275924Z-exact-polish.tar.gz",
-      "archive_sha256": "4d5c6d576e0f0ebba50406aebb5e21d52927038c8bf902cc5ea165084e6377f6",
+      "run_id": "20261002T222455.757361Z-exact-polish",
+      "score": 1.0601057824495825,
+      "archive": "dev/incumbents/scale/20261002T222455.757361Z-exact-polish.tar.gz",
+      "archive_sha256": "fa1c8e55a5d1e870c60cf081036235d689750ce08ff86dcad7e6420f6e5e8ddd",
       "selection_context": {
-        "portfolio": "docs/evidence/phase3/downstream-case-portfolio.json",
-        "scope": "Best whole-case routes across declared local trials and full continuation; added portfolio effort, not a uniform solver comparison. Zero-budget native checkpoint preserves selected routes.",
+        "stage": "docs/evidence/phase3/independent-third.json",
+        "scope": "Own-route seeds11/12/13,50M/case,two workers; added effort.",
         "previous_selection_context": {
-          "screen": "docs/evidence/phase3/eligibility-screen.json",
-          "stage": "docs/evidence/phase3/eligibility-followup.json",
-          "scope": "Fixed seed1 fine escape10M continuation. Designs/congested optional after matched pilot;other tiers exploratory. Added effort,not matched full-tier superiority. Physical gains also include ordinary polish/repair.",
+          "stage": "docs/evidence/phase3/independent-next.json",
+          "scope": "Own-route seeds9/10 continuation40M/case,two workers; added effort.",
           "previous_selection_context": {
-            "stage": "docs/evidence/phase3/conflict-window-all-tiers.json",
-            "configuration": "Fixed conflict-window seed1,3M work; retained per-tier caps/schedules. Added continuation effort,not matched full-tier superiority.",
+            "stage": "docs/evidence/phase3/independent-continuation.json",
+            "plan": "dev/configs/independent-continuation.json",
+            "scope": "Own-route continuation seeds7/8,40M per case,two workers; added effort.",
             "previous_selection_context": {
-              "screen": "docs/evidence/phase3/repair-schedule-screen.json",
-              "configuration": "Original polish-first adaptive,group3,seed3,3M work",
-              "selection_scope": "Seed chosen from scale01 development;fixed full8case evaluation afterward;no per-case seed portfolio"
+              "stage": "dev/artifacts/20261002-ongoing-downstream-portfolio/progress.json",
+              "plan": "dev/configs/downstream-continuation.json",
+              "scope": "Three fixed-seed continuation rounds4/5/6,20M per case, two workers, added effort. No competitor routes.",
+              "previous_selection_context": {
+                "portfolio": "docs/evidence/phase3/downstream-case-portfolio.json",
+                "scope": "Best whole-case routes across declared local trials and full continuation; added portfolio effort, not a uniform solver comparison. Zero-budget native checkpoint preserves selected routes.",
+                "previous_selection_context": {
+                  "screen": "docs/evidence/phase3/eligibility-screen.json",
+                  "stage": "docs/evidence/phase3/eligibility-followup.json",
+                  "scope": "Fixed seed1 fine escape10M continuation. Designs/congested optional after matched pilot;other tiers exploratory. Added effort,not matched full-tier superiority. Physical gains also include ordinary polish/repair.",
+                  "previous_selection_context": {
+                    "stage": "docs/evidence/phase3/conflict-window-all-tiers.json",
+                    "configuration": "Fixed conflict-window seed1,3M work; retained per-tier caps/schedules. Added continuation effort,not matched full-tier superiority.",
+                    "previous_selection_context": {
+                      "screen": "docs/evidence/phase3/repair-schedule-screen.json",
+                      "configuration": "Original polish-first adaptive,group3,seed3,3M work",
+                      "selection_scope": "Seed chosen from scale01 development;fixed full8case evaluation afterward;no per-case seed portfolio"
+                    }
+                  }
+                }
+              }
             }
           }
         }
@@ -78,71 +136,111 @@
     },
     {
       "tier": "congested",
-      "run_id": "20261002T183107.714874Z-exact-polish",
-      "score": 1.1120190456684313,
-      "archive": "dev/incumbents/congested/20261002T183107.714874Z-exact-polish.tar.gz",
-      "archive_sha256": "15cd195a2f468d35407a6df3aa39baf50fe5df0b8d72d62e29d8c824ce4a6f13",
+      "run_id": "20261002T222650.280317Z-exact-polish",
+      "score": 1.1316334400797703,
+      "archive": "dev/incumbents/congested/20261002T222650.280317Z-exact-polish.tar.gz",
+      "archive_sha256": "5d73974f30588b48135246dc38afab6f4d5415e7a2e3691afb8af9414e047a55",
       "selection_context": {
-        "portfolio": "docs/evidence/phase3/downstream-case-portfolio.json",
-        "scope": "Best whole-case routes across declared local trials and full continuation; added portfolio effort, not a uniform solver comparison. Zero-budget native checkpoint preserves selected routes.",
+        "stage": "docs/evidence/phase3/independent-third.json",
+        "scope": "Own-route seeds11/12/13,50M/case,two workers; added effort.",
         "previous_selection_context": {
-          "screen": "docs/evidence/phase3/eligibility-screen.json",
-          "stage": "docs/evidence/phase3/eligibility-followup.json",
-          "scope": "Fixed seed1 fine escape10M continuation. Designs/congested optional after matched pilot;other tiers exploratory. Added effort,not matched full-tier superiority. Physical gains also include ordinary polish/repair.",
+          "stage": "docs/evidence/phase3/independent-next.json",
+          "scope": "Own-route seeds9/10 continuation40M/case,two workers; added effort.",
           "previous_selection_context": {
-            "stage": "docs/evidence/phase3/sampling-fusion-followup.json",
-            "scope": "Fixed seed1 adaptive neutral10M continuation; added effort, not matched full-tier superiority. Weighted sampling rejected; shuffled seeds retained.",
+            "stage": "docs/evidence/phase3/independent-continuation.json",
+            "plan": "dev/configs/independent-continuation.json",
+            "scope": "Own-route continuation seeds7/8,40M per case,two workers; added effort.",
             "previous_selection_context": {
-              "screen": "docs/evidence/phase3/neutral-long-screen.json",
-              "short_screen": "docs/evidence/phase3/neutral-screen.json",
-              "stage": "docs/evidence/phase3/neutral-followup.json",
-              "scope": "Fixed seed1 adaptive with equal-delay geometry changes,group3,10M per case. Selected from repeated development seeds;added full-tier effort is separate from matched pilot.",
+              "stage": "docs/evidence/phase3/exact-pool-checkpoints.json",
+              "scope": "Restricted CP-SAT own4parent tree pool; zero-budget native preserves4hard/2congesteddelay gains.",
               "previous_selection_context": {
-                "screen": "docs/evidence/phase3/diversity-screen.json",
-                "stage": "docs/evidence/phase3/diversity-followup.json",
-                "recombination": "docs/evidence/phase3/congested-archive-recombination.json",
-                "scope": "Adaptive full-tier continuation followed by exact restricted two-parent recombination; best candidate pair per case; zero-budget checkpoint preserves routes.",
+                "stage": "dev/artifacts/20261002-ongoing-downstream-portfolio/progress.json",
+                "plan": "dev/configs/downstream-continuation.json",
+                "scope": "Three fixed-seed continuation rounds4/5/6,20M per case, two workers, added effort. No competitor routes.",
                 "previous_selection_context": {
-                  "stage": "docs/evidence/phase3/conflict-window-all-tiers.json",
-                  "configuration": "Fixed conflict-window seed1,3M work; retained per-tier caps/schedules. Added continuation effort,not matched full-tier superiority.",
-                  "previous_selection_context": null
+                  "portfolio": "docs/evidence/phase3/downstream-case-portfolio.json",
+                  "scope": "Best whole-case routes across declared local trials and full continuation; added portfolio effort, not a uniform solver comparison. Zero-budget native checkpoint preserves selected routes.",
+                  "previous_selection_context": {
+                    "screen": "docs/evidence/phase3/eligibility-screen.json",
+                    "stage": "docs/evidence/phase3/eligibility-followup.json",
+                    "scope": "Fixed seed1 fine escape10M continuation. Designs/congested optional after matched pilot;other tiers exploratory. Added effort,not matched full-tier superiority. Physical gains also include ordinary polish/repair.",
+                    "previous_selection_context": {
+                      "stage": "docs/evidence/phase3/sampling-fusion-followup.json",
+                      "scope": "Fixed seed1 adaptive neutral10M continuation; added effort, not matched full-tier superiority. Weighted sampling rejected; shuffled seeds retained.",
+                      "previous_selection_context": {
+                        "screen": "docs/evidence/phase3/neutral-long-screen.json",
+                        "short_screen": "docs/evidence/phase3/neutral-screen.json",
+                        "stage": "docs/evidence/phase3/neutral-followup.json",
+                        "scope": "Fixed seed1 adaptive with equal-delay geometry changes,group3,10M per case. Selected from repeated development seeds;added full-tier effort is separate from matched pilot.",
+                        "previous_selection_context": {
+                          "screen": "docs/evidence/phase3/diversity-screen.json",
+                          "stage": "docs/evidence/phase3/diversity-followup.json",
+                          "recombination": "docs/evidence/phase3/congested-archive-recombination.json",
+                          "scope": "Adaptive full-tier continuation followed by exact restricted two-parent recombination; best candidate pair per case; zero-budget checkpoint preserves routes.",
+                          "previous_selection_context": {
+                            "stage": "docs/evidence/phase3/conflict-window-all-tiers.json",
+                            "configuration": "Fixed conflict-window seed1,3M work; retained per-tier caps/schedules. Added continuation effort,not matched full-tier superiority.",
+                            "previous_selection_context": null
+                          }
+                        }
+                      },
+                      "fusion": "docs/evidence/phase3/neutral-fusion-screen.json; strict iterative closure gains10delay before continuation. Donor-preferring tie-break adds no scored benefit."
+                    }
+                  }
                 }
               }
-            },
-            "fusion": "docs/evidence/phase3/neutral-fusion-screen.json; strict iterative closure gains10delay before continuation. Donor-preferring tie-break adds no scored benefit."
+            }
           }
         }
       }
     },
     {
       "tier": "designs",
-      "run_id": "20261002T183113.120727Z-exact-polish",
-      "score": 1.2520683047092604,
-      "archive": "dev/incumbents/designs/20261002T183113.120727Z-exact-polish.tar.gz",
-      "archive_sha256": "1aa89f8b07f05c17ab56d67160f45ff707cc3562eb261ceea77f1511aec7da80",
+      "run_id": "20261002T222707.707138Z-exact-polish",
+      "score": 1.2773919686484563,
+      "archive": "dev/incumbents/designs/20261002T222707.707138Z-exact-polish.tar.gz",
+      "archive_sha256": "400272df8f99d5766083f5dcf962536975df88c0a5b4e8337b2f66b255cfa3dc",
       "selection_context": {
-        "portfolio": "docs/evidence/phase3/downstream-case-portfolio.json",
-        "scope": "Best whole-case routes across declared local trials and full continuation; added portfolio effort, not a uniform solver comparison. Zero-budget native checkpoint preserves selected routes.",
+        "stage": "docs/evidence/phase3/independent-third.json",
+        "scope": "Own-route seeds11/12/13,50M/case,two workers; added effort.",
         "previous_selection_context": {
-          "screen": "docs/evidence/phase3/eligibility-screen.json",
-          "stage": "docs/evidence/phase3/eligibility-followup.json",
-          "scope": "Fixed seed1 fine escape10M continuation. Designs/congested optional after matched pilot;other tiers exploratory. Added effort,not matched full-tier superiority. Physical gains also include ordinary polish/repair.",
+          "stage": "docs/evidence/phase3/independent-next.json",
+          "scope": "Own-route seeds9/10 continuation40M/case,two workers; added effort.",
           "previous_selection_context": {
-            "stage": "docs/evidence/phase3/sampling-fusion-followup.json",
-            "scope": "Fixed seed1 adaptive neutral10M continuation; added effort, not matched full-tier superiority. Weighted sampling rejected; shuffled seeds retained.",
+            "stage": "docs/evidence/phase3/independent-continuation.json",
+            "plan": "dev/configs/independent-continuation.json",
+            "scope": "Own-route continuation seeds7/8,40M per case,two workers; added effort.",
             "previous_selection_context": {
-              "screen": "docs/evidence/phase3/neutral-long-screen.json",
-              "short_screen": "docs/evidence/phase3/neutral-screen.json",
-              "stage": "docs/evidence/phase3/neutral-followup.json",
-              "scope": "Fixed seed1 adaptive with equal-delay geometry changes,group3,10M per case. Selected from repeated development seeds;added full-tier effort is separate from matched pilot.",
+              "stage": "dev/artifacts/20261002-ongoing-downstream-portfolio/progress.json",
+              "plan": "dev/configs/downstream-continuation.json",
+              "scope": "Three fixed-seed continuation rounds4/5/6,20M per case, two workers, added effort. No competitor routes.",
               "previous_selection_context": {
-                "screen": "docs/evidence/phase3/diversity-screen.json",
-                "stage": "docs/evidence/phase3/diversity-followup.json",
-                "scope": "Fixed seed1 donor full-tier continuation; no donor-labelled accepted moves in this full stage. Ordinary repair/polish gains.",
+                "portfolio": "docs/evidence/phase3/downstream-case-portfolio.json",
+                "scope": "Best whole-case routes across declared local trials and full continuation; added portfolio effort, not a uniform solver comparison. Zero-budget native checkpoint preserves selected routes.",
                 "previous_selection_context": {
-                  "stage": "docs/evidence/phase3/conflict-window-all-tiers.json",
-                  "configuration": "Fixed conflict-window seed1,3M work; retained per-tier caps/schedules. Added continuation effort,not matched full-tier superiority.",
-                  "previous_selection_context": null
+                  "screen": "docs/evidence/phase3/eligibility-screen.json",
+                  "stage": "docs/evidence/phase3/eligibility-followup.json",
+                  "scope": "Fixed seed1 fine escape10M continuation. Designs/congested optional after matched pilot;other tiers exploratory. Added effort,not matched full-tier superiority. Physical gains also include ordinary polish/repair.",
+                  "previous_selection_context": {
+                    "stage": "docs/evidence/phase3/sampling-fusion-followup.json",
+                    "scope": "Fixed seed1 adaptive neutral10M continuation; added effort, not matched full-tier superiority. Weighted sampling rejected; shuffled seeds retained.",
+                    "previous_selection_context": {
+                      "screen": "docs/evidence/phase3/neutral-long-screen.json",
+                      "short_screen": "docs/evidence/phase3/neutral-screen.json",
+                      "stage": "docs/evidence/phase3/neutral-followup.json",
+                      "scope": "Fixed seed1 adaptive with equal-delay geometry changes,group3,10M per case. Selected from repeated development seeds;added full-tier effort is separate from matched pilot.",
+                      "previous_selection_context": {
+                        "screen": "docs/evidence/phase3/diversity-screen.json",
+                        "stage": "docs/evidence/phase3/diversity-followup.json",
+                        "scope": "Fixed seed1 donor full-tier continuation; no donor-labelled accepted moves in this full stage. Ordinary repair/polish gains.",
+                        "previous_selection_context": {
+                          "stage": "docs/evidence/phase3/conflict-window-all-tiers.json",
+                          "configuration": "Fixed conflict-window seed1,3M work; retained per-tier caps/schedules. Added continuation effort,not matched full-tier superiority.",
+                          "previous_selection_context": null
+                        }
+                      }
+                    }
+                  }
                 }
               }
             }
@@ -152,41 +250,57 @@
     },
     {
       "tier": "stress",
-      "run_id": "20261002T183116.596728Z-exact-polish",
-      "score": 1.0216409732905487,
-      "archive": "dev/incumbents/stress/20261002T183116.596728Z-exact-polish.tar.gz",
-      "archive_sha256": "c1b1346964e8f24467a438f71dc39ce07ae6e5402e9422d0b25df41338218e19",
+      "run_id": "20261002T222753.207504Z-exact-polish",
+      "score": 1.0273357022361007,
+      "archive": "dev/incumbents/stress/20261002T222753.207504Z-exact-polish.tar.gz",
+      "archive_sha256": "d35ff90f5d72d89a63dc631a7d99031377bdb29bd28193c55543c58c41076145",
       "selection_context": {
-        "portfolio": "docs/evidence/phase3/downstream-case-portfolio.json",
-        "scope": "Best whole-case routes across declared local trials and full continuation; added portfolio effort, not a uniform solver comparison. Zero-budget native checkpoint preserves selected routes.",
+        "stage": "docs/evidence/phase3/independent-third.json",
+        "scope": "Own-route seeds11/12/13,50M/case,two workers; added effort.",
         "previous_selection_context": {
-          "screen": "docs/evidence/phase3/eligibility-screen.json",
-          "stage": "docs/evidence/phase3/eligibility-followup.json",
-          "scope": "Fixed seed1 fine escape10M continuation. Designs/congested optional after matched pilot;other tiers exploratory. Added effort,not matched full-tier superiority. Physical gains also include ordinary polish/repair.",
+          "stage": "docs/evidence/phase3/independent-next.json",
+          "scope": "Own-route seeds9/10 continuation40M/case,two workers; added effort.",
           "previous_selection_context": {
-            "stage": "docs/evidence/phase3/conflict-window-all-tiers.json",
-            "configuration": "Fixed conflict-window seed1,3M work; retained per-tier caps/schedules. Added continuation effort,not matched full-tier superiority.",
+            "stage": "docs/evidence/phase3/independent-continuation.json",
+            "plan": "dev/configs/independent-continuation.json",
+            "scope": "Own-route continuation seeds7/8,40M per case,two workers; added effort.",
             "previous_selection_context": {
-              "screen": "docs/evidence/phase3/polish-order-screen.json",
-              "configuration": "Area-normalized excess-delay ordering; fixed seed1 3M pilot then20M continuation,group13",
-              "scope": "Chosen ordering from three matched seeds; stress has one case and no held-out validation. Larger continuation adds search effort, not a matched-budget comparison.",
-              "screen_wrapper_wall_s": 225.48264092003228,
-              "continuation_wrapper_wall_s": 32.68367733195191,
+              "stage": "dev/artifacts/20261002-ongoing-downstream-portfolio/progress.json",
+              "plan": "dev/configs/downstream-continuation.json",
+              "scope": "Three fixed-seed continuation rounds4/5/6,20M per case, two workers, added effort. No competitor routes.",
               "previous_selection_context": {
-                "screen": "docs/evidence/phase3/repair-schedule-screen.json",
-                "screen_sha256": "55ebe3d8305978cf50dcb59cea6573922c923d2cf8993eda5d2fd0ba7a4a63dd",
-                "selected_label": "control",
-                "selected_seed": 3,
-                "stress_candidates_tried": 9,
-                "scope": "Best legal stress output across tested scheduling/seed candidates, not a repair-first improvement. Stress has no separate held-out case.",
-                "total_screen_wrapper_wall_s": 219.38891770900227
+                "portfolio": "docs/evidence/phase3/downstream-case-portfolio.json",
+                "scope": "Best whole-case routes across declared local trials and full continuation; added portfolio effort, not a uniform solver comparison. Zero-budget native checkpoint preserves selected routes.",
+                "previous_selection_context": {
+                  "screen": "docs/evidence/phase3/eligibility-screen.json",
+                  "stage": "docs/evidence/phase3/eligibility-followup.json",
+                  "scope": "Fixed seed1 fine escape10M continuation. Designs/congested optional after matched pilot;other tiers exploratory. Added effort,not matched full-tier superiority. Physical gains also include ordinary polish/repair.",
+                  "previous_selection_context": {
+                    "stage": "docs/evidence/phase3/conflict-window-all-tiers.json",
+                    "configuration": "Fixed conflict-window seed1,3M work; retained per-tier caps/schedules. Added continuation effort,not matched full-tier superiority.",
+                    "previous_selection_context": {
+                      "screen": "docs/evidence/phase3/polish-order-screen.json",
+                      "configuration": "Area-normalized excess-delay ordering; fixed seed1 3M pilot then20M continuation,group13",
+                      "scope": "Chosen ordering from three matched seeds; stress has one case and no held-out validation. Larger continuation adds search effort, not a matched-budget comparison.",
+                      "screen_wrapper_wall_s": 225.48264092003228,
+                      "continuation_wrapper_wall_s": 32.68367733195191,
+                      "previous_selection_context": {
+                        "screen": "docs/evidence/phase3/repair-schedule-screen.json",
+                        "screen_sha256": "55ebe3d8305978cf50dcb59cea6573922c923d2cf8993eda5d2fd0ba7a4a63dd",
+                        "selected_label": "control",
+                        "selected_seed": 3,
+                        "stress_candidates_tried": 9,
+                        "scope": "Best legal stress output across tested scheduling/seed candidates, not a repair-first improvement. Stress has no separate held-out case.",
+                        "total_screen_wrapper_wall_s": 219.38891770900227
+                      }
+                    }
+                  }
+                }
               }
             }
           }
         }
       }
     }
-  ],
-  "limitations": "Selected outputs/source/provenance preserved; older missing raw ancestors and reference-generation costs remain unreproduced.",
-  "coverage_sha256": "1bbb1805a04c99744d389bb7b0a5e715292b5f6a3d209db1a0a4695c1c1d9f11"
+  ]
 }

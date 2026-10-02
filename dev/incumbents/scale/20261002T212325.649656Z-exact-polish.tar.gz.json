@@ -1,0 +1,21 @@
+{
+  "run_id": "20261002T212325.649656Z-exact-polish",
+  "score": 1.0581625310036957,
+  "archive_sha256": "0efd73f85caee540bdaaaa854b0f1747a5713ef5fb5467952c10882fdc49f5ed",
+  "members": {
+    "manifest.json": "a408be2d9b580541f4ada1131d14727d6e5e8dbeba36f25ace7dc6c981f46b2a",
+    "coverage-rescore.json": "ed466ad8b22cdf654a868f2875f604d410a6e76ecb9e8e2c4e51da29eba2932c",
+    "routes/case_01.sol.json": "75d280a07ca2619c87c50e89095aed0788e102e1ec33f5796b2a292cbc6b7882",
+    "routes/case_02.sol.json": "a9e0170f63c77c2dfb013878f95521d87133eb9e28c2eec76f92f24658849075",
+    "routes/case_03.sol.json": "93d603f476cb467333e3539ac127c9f89f6b627929410a85acbb235aa3c052af",
+    "routes/case_04.sol.json": "2e9c48900cf10207d53ba8db5a613448deebfb698de9b164f1ad8073dedc61a7",
+    "routes/case_05.sol.json": "ba9ca28be1728c6b782f2eb08f0ed31342d431297ce11ae35783104b0c1b9764",
+    "routes/case_06.sol.json": "f581f96cc379bed39a4e31723cf0b012bd1472cecddc8213f8efa2c21b63b5eb",
+    "routes/case_07.sol.json": "d0337ade809fb800b69fd37edd8182eaac4010d2e3891cd19680521dd685fbf4",
+    "routes/case_08.sol.json": "6796008eca919e3bbb0c148185df3a0d216e692fc83c3087dac929c059493e1a",
+    "development-source/exact_polish.cpp": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+    "development-source/measure.py": "567d13af7911c668243237ae39ad84fed9462715cc7a0c85ae9aae7f2970dbe2",
+    "development-source/run_polish.py": "e4ed5c38874cea1945514d7fd8a69086296f0c1597252f98bd45d4c1928ad252"
+  },
+  "limitations": "Preserves scored outputs and their recorded source/manifest; missing raw ancestors are not reconstructed. See coverage evidence for case-portfolio and donor ancestry."
+}
