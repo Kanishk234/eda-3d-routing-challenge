@@ -1,0 +1,11 @@
+--- control.cpp
++++ solver.cpp
+@@ -1044,7 +1044,7 @@
+         if(neighborhood_mode) {
+             engine.astar_search=true;engine.fanout_prices=true;
+             engine.tight_heuristic=kernel=="fanout_tight" || kernel=="fanout_fine";
+-            engine.price_units=kernel=="fanout_fine"?16:1;
++            engine.price_units=kernel=="fanout_fine"?64:1;
+             engine.shuffled_groups=true;engine.group_rng.seed(seed^0x6a09e667f3bcc909ULL);
+             engine.diverse_proposals=operation=="diverse" || operation=="hybrid";
+             engine.eligibility_proposals=operation=="escape";

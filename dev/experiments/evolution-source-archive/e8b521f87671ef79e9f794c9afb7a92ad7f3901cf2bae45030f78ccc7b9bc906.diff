@@ -1,0 +1,11 @@
+--- control.cpp
++++ solver.cpp
+@@ -492,7 +492,7 @@
+             bool conflict=false;
+             for(int v=0;v<vcount;++v) if(usage[v]>1) {
+                 conflict=true;history[v]=add(history[v],multiply(negotiation.history_step,usage[v]-1));
+-            }
++            } else if(usage[v]==0) history[v]=std::max<I>(0,history[v]-negotiation.history_step);
+             negotiation_scan_s+=std::chrono::duration<double>(std::chrono::steady_clock::now()-scan_start).count();
+             if(conflict) { ++conflicted_rounds; continue; }
+             after=0;

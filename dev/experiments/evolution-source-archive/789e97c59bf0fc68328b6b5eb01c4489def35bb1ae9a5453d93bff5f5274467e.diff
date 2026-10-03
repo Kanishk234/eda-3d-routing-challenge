@@ -1,0 +1,49 @@
+--- control.cpp
++++ solver.cpp
+@@ -872,6 +872,19 @@
+             else {nets=std::move(old_nets);owner=std::move(old_owner);}
+         }
+     }
++    void budgeted_repair(unsigned long long seed,int passes,I penalty,bool negotiated,bool selection,int blockers) {
++        auto full=work_limit;
++        if(!full || expansions>=full) {repair(seed,passes,penalty,negotiated,selection,blockers);return;}
++        work_limit=expansions+std::max<std::uint64_t>(1,(full-expansions)*10/100);
++        try {repair(seed,passes,penalty,negotiated,selection,blockers);}
++        catch(...) {work_limit=full;throw;}
++        work_limit=full;
++        // Work interruption rolled back the current transaction. Resume only
++        // when no real stop/time/global-work condition has occurred.
++        if(work_exhausted && !stopped && std::chrono::steady_clock::now()<deadline && expansions<full) {
++            work_exhausted=false;timed_out=false;
++        }
++    }
+     void explore(unsigned long long seed,int passes,bool wide=false) {
+         random_ties=true; tie_seed=seed;
+         std::mt19937_64 rng(seed);
+@@ -893,7 +906,7 @@
+                 }
+                 std::stable_sort(order.begin(),order.end(),[&](int a,int b){return potential[a]>potential[b];});
+             }
+-            if(repair_first) repair(seed+static_cast<unsigned long long>(pass),1,4,true,false,wide?std::max(12,group_limit-1):4);
++            if(repair_first) budgeted_repair(seed+static_cast<unsigned long long>(pass),1,4,true,false,wide?std::max(12,group_limit-1):4);
+             for(int j:order) {
+                 ++polish_attempts;
+                 Net candidate;
+@@ -905,7 +918,7 @@
+                 for(int v:candidate.vertices) owner[v]=nets[j].id;
+                 nets[j]=std::move(candidate);
+             }
+-            if(!repair_first) repair(seed+static_cast<unsigned long long>(pass),1,4,true,false,wide?std::max(12,group_limit-1):4);
++            if(!repair_first) budgeted_repair(seed+static_cast<unsigned long long>(pass),1,4,true,false,wide?std::max(12,group_limit-1):4);
+         }
+     }
+     std::string group_histogram() const {
+@@ -1044,7 +1057,7 @@
+         if(neighborhood_mode) {
+             engine.astar_search=true;engine.fanout_prices=true;
+             engine.tight_heuristic=kernel=="fanout_tight" || kernel=="fanout_fine";
+-            engine.price_units=kernel=="fanout_fine"?16:1;
++            engine.price_units=kernel=="fanout_fine"?16:1;engine.repair_first=true;
+             engine.shuffled_groups=true;engine.group_rng.seed(seed^0x6a09e667f3bcc909ULL);
+             engine.diverse_proposals=operation=="diverse" || operation=="hybrid";
+             engine.eligibility_proposals=operation=="escape";
