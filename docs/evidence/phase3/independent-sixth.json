@@ -1,0 +1,272 @@
+{
+  "started_utc": "2026-10-03T00:16:29.656584+00:00",
+  "plan": {
+    "coverage": "docs/evidence/phase3/tier-fresh-basin-coverage.json",
+    "workers": 2,
+    "seeds": [
+      18,
+      19
+    ],
+    "work_budget": 75000000,
+    "tiers": [
+      {
+        "tier": "intro",
+        "settings": {
+          "mode": "fanout_fine_escape",
+          "present_initial": 2,
+          "group_limit": 13,
+          "present_step": 2,
+          "history_step": 2,
+          "tree_prices": 0
+        }
+      },
+      {
+        "tier": "hard",
+        "settings": {
+          "mode": "fanout_fine_escape",
+          "present_initial": 2,
+          "group_limit": 13,
+          "present_step": 1,
+          "history_step": 1,
+          "tree_prices": 2,
+          "accept_equal": true
+        }
+      },
+      {
+        "tier": "scale",
+        "settings": {
+          "mode": "fanout_fine_adaptive",
+          "present_initial": 2,
+          "group_limit": 3,
+          "present_step": 2,
+          "history_step": 2,
+          "tree_prices": 0
+        }
+      },
+      {
+        "tier": "congested",
+        "settings": {
+          "mode": "fanout_fine_escape",
+          "present_initial": 2,
+          "group_limit": 3,
+          "present_step": 4,
+          "history_step": 4,
+          "tree_prices": 1,
+          "accept_equal": true,
+          "escape_direct": true
+        }
+      },
+      {
+        "tier": "designs",
+        "settings": {
+          "mode": "fanout_fine_escape",
+          "present_initial": 2,
+          "group_limit": 3,
+          "present_step": 2,
+          "history_step": 2,
+          "tree_prices": 1,
+          "accept_equal": true,
+          "escape_penalty": 8
+        }
+      },
+      {
+        "tier": "stress",
+        "settings": {
+          "mode": "fanout_fine_escape",
+          "present_initial": 2,
+          "group_limit": 13,
+          "present_step": 2,
+          "history_step": 2,
+          "tree_prices": 0
+        }
+      }
+    ],
+    "scope": "Own-route continuation18/19,75M/case60s safety,two workers. Includes attributed own fresh intro05 parent;added portfolio effort;independent full-round rescoring;no automatic promotion."
+  },
+  "frozen_sha256": {
+    "/home/younix/eda-3d-routing-challenge/docs/evidence/phase3/tier-fresh-basin-coverage.json": "971ef6c36a60cdd247274401c872425ba5cd2cd3d06fa5d0f72ddb3350c60848",
+    "/home/younix/eda-3d-routing-challenge/dev/configs/independent-continuation-sixth.json": "03eb13be6ac3638aa76695aa5c484e33ca01b652d0d7cfcb8d8ce62bd24ca15a",
+    "/home/younix/eda-3d-routing-challenge/dev/continue_portfolio.py": "407894c94cf881494ade232e33d6237e670dfcf788421f3baa48a6f121caf4ce",
+    "/home/younix/eda-3d-routing-challenge/dev/solver/exact_polish.cpp": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+    "/home/younix/eda-3d-routing-challenge/dev/run_polish.py": "e4ed5c38874cea1945514d7fd8a69086296f0c1597252f98bd45d4c1928ad252",
+    "/home/younix/eda-3d-routing-challenge/dev/artifacts/build/exact_polish": "31255b5b053fd26f1f2fc43390dbe5e943fc102ef4c74372c1a4ba020e1fd7ea"
+  },
+  "workers": 2,
+  "status": "complete",
+  "completed_rounds": 2,
+  "current": null,
+  "best": {
+    "intro": {
+      "run_id": "20261003T162335.455064Z-exact-polish",
+      "score": 1.1133471279193425
+    },
+    "hard": {
+      "run_id": "20261003T162335.455957Z-exact-polish",
+      "score": 1.2929381689991806
+    },
+    "scale": {
+      "run_id": "20261003T162715.755033Z-exact-polish",
+      "score": 1.0624051365502247
+    },
+    "congested": {
+      "run_id": "20261003T165045.854294Z-exact-polish",
+      "score": 1.134724059591937
+    },
+    "designs": {
+      "run_id": "20261003T165118.625816Z-exact-polish",
+      "score": 1.2833698922888248
+    },
+    "stress": {
+      "run_id": "20261003T165226.787233Z-exact-polish",
+      "score": 1.0299585643062894
+    }
+  },
+  "stages": [
+    {
+      "round": 1,
+      "tier": "hard",
+      "seed": 18,
+      "run_id": "20261003T001629.764588Z-exact-polish",
+      "previous_run": "20261002T233929.590989Z-exact-polish",
+      "manifest_sha256": "c4948ee31d269251fac76e768ecb904e06440d8791a78bf1b36d6e85faf8ac05",
+      "score": 1.292425428824244,
+      "improved_cases": 6,
+      "wrapper_wall_s": 222.48417449300177
+    },
+    {
+      "round": 1,
+      "tier": "intro",
+      "seed": 18,
+      "run_id": "20261003T001629.769364Z-exact-polish",
+      "previous_run": "20261002T235527.528665Z-exact-polish",
+      "manifest_sha256": "7e453bda92275f37bbf911255441cec130e3d0ef36f93e3212efa7754483ffd4",
+      "score": 1.112959142700757,
+      "improved_cases": 8,
+      "wrapper_wall_s": 415.36347089597257
+    },
+    {
+      "round": 1,
+      "tier": "scale",
+      "seed": 18,
+      "run_id": "20261003T002829.751952Z-exact-polish",
+      "previous_run": "20261002T234542.922401Z-exact-polish",
+      "manifest_sha256": "db3cdf167e4489831d58b762b9fcedb578bb2a8cddea5037f085a0b4b71e8940",
+      "score": 1.0620525278223203,
+      "improved_cases": 7,
+      "wrapper_wall_s": 233.03456040500896
+    },
+    {
+      "round": 1,
+      "tier": "congested",
+      "seed": 18,
+      "run_id": "20261003T055346.514470Z-exact-polish",
+      "previous_run": "20261002T234756.960425Z-exact-polish",
+      "manifest_sha256": "cd0a7df146a24cfefa4b5a1d8d98a743e9b947616e54dd66b58d1e20e369205d",
+      "score": 1.134267329975225,
+      "improved_cases": 4,
+      "wrapper_wall_s": 114.93262327398406
+    },
+    {
+      "round": 1,
+      "tier": "designs",
+      "seed": 18,
+      "run_id": "20261003T055427.992325Z-exact-polish",
+      "previous_run": "20261002T234817.896625Z-exact-polish",
+      "manifest_sha256": "e96439cf8bbcfd12ae2a808446c23e711373144be40e2cd161d182bb00b515a4",
+      "score": 1.2825867049082653,
+      "improved_cases": 3,
+      "wrapper_wall_s": 87.17440396395978
+    },
+    {
+      "round": 1,
+      "tier": "stress",
+      "seed": 18,
+      "run_id": "20261003T162225.479647Z-exact-polish",
+      "previous_run": "20261002T234907.005641Z-exact-polish",
+      "manifest_sha256": "0b3a6d5ac4fa37983b6dfd0087db9ed41c64bc85bbcef89890d2471e4ede159e",
+      "score": 1.0296306688394146,
+      "improved_cases": 1,
+      "wrapper_wall_s": 58.43271362199448
+    },
+    {
+      "round": 2,
+      "tier": "hard",
+      "seed": 19,
+      "run_id": "20261003T162335.455957Z-exact-polish",
+      "previous_run": "20261003T001629.764588Z-exact-polish",
+      "manifest_sha256": "1cfc4b583f12a7b4d2c1614ff2fb365451828d66e4ce07c31e2e2fa85cf2823c",
+      "score": 1.2929381689991806,
+      "improved_cases": 4,
+      "wrapper_wall_s": 212.6618948749965
+    },
+    {
+      "round": 2,
+      "tier": "intro",
+      "seed": 19,
+      "run_id": "20261003T162335.455064Z-exact-polish",
+      "previous_run": "20261003T001629.769364Z-exact-polish",
+      "manifest_sha256": "e594ce409121b26c3aa2d32b8b47c5664190c56f95906e25bd8c3de81ed3375b",
+      "score": 1.1133471279193425,
+      "improved_cases": 9,
+      "wrapper_wall_s": 390.3755095870001
+    },
+    {
+      "round": 2,
+      "tier": "scale",
+      "seed": 19,
+      "run_id": "20261003T162715.755033Z-exact-polish",
+      "previous_run": "20261003T002829.751952Z-exact-polish",
+      "manifest_sha256": "1c25705b2725def0463cffdf996780f78650a74e4a1f65cb440061a02dd746e0",
+      "score": 1.0624051365502247,
+      "improved_cases": 8,
+      "wrapper_wall_s": 209.11967531201662
+    },
+    {
+      "round": 2,
+      "tier": "congested",
+      "seed": 19,
+      "run_id": "20261003T165045.854294Z-exact-polish",
+      "previous_run": "20261003T055346.514470Z-exact-polish",
+      "manifest_sha256": "032d6a3a368272f13f2ca6881b456576dc1338dcb9f7609764395959112d9d04",
+      "score": 1.134724059591937,
+      "improved_cases": 3,
+      "wrapper_wall_s": 97.03076126700034
+    },
+    {
+      "round": 2,
+      "tier": "designs",
+      "seed": 19,
+      "run_id": "20261003T165118.625816Z-exact-polish",
+      "previous_run": "20261003T055427.992325Z-exact-polish",
+      "manifest_sha256": "2381e8a7db2073459ff11e14356a7ea50ec1a71810d3cf90208d06a3e09c6705",
+      "score": 1.2833698922888248,
+      "improved_cases": 3,
+      "wrapper_wall_s": 69.79735094704665
+    },
+    {
+      "round": 2,
+      "tier": "stress",
+      "seed": 19,
+      "run_id": "20261003T165226.787233Z-exact-polish",
+      "previous_run": "20261003T162225.479647Z-exact-polish",
+      "manifest_sha256": "53468a0a3d62238cddd0e1a0d0430a8b7b7d41958232ee48667802a5e881070b",
+      "score": 1.0299585643062894,
+      "improved_cases": 1,
+      "wrapper_wall_s": 53.78750380099518
+    }
+  ],
+  "round_coverages": [
+    {
+      "round": 1,
+      "path": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002-independent-continuation-sixth/round-1-coverage.json",
+      "sha256": "b8a467e01b9c5750dbfc8354a8bb28978e467cb921804e120e25a9ce2265b905"
+    },
+    {
+      "round": 2,
+      "path": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002-independent-continuation-sixth/round-2-coverage.json",
+      "sha256": "913b0ea92e123857a86f8cdfa38b3eebb3b45dfa1d3b59800bba4990d48a071e"
+    }
+  ],
+  "limitations": "Added portfolio search,not matched-budget superiority. No publication or automatic canonical-selection edits. Stops between tiers if STOP file appears or frozen source/binary changes. Missing historical/reference-generation costs remain unknown.",
+  "elapsed_wall_s": 1146.0746575219673
+}

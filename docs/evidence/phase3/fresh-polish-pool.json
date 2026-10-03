@@ -1,0 +1,20 @@
+{
+  "complete": true,
+  "rows": [
+    {
+      "run_id": "20261002T233700.365971Z-exact-polish"
+    },
+    {
+      "run_id": "20261002T233709.517640Z-exact-polish"
+    },
+    {
+      "run_id": "20261002T233716.002755Z-exact-polish"
+    },
+    {
+      "run_id": "20261002T233722.262770Z-exact-polish"
+    }
+  ],
+  "source_report": "docs/evidence/phase3/polish-fresh-candidates.json",
+  "source_report_sha256": "46dd622eaab84c98a7aa610725af5def16a0902aa3151ff1b492c734ebb30c16",
+  "scope": "Own fresh geometry followed by native refinement; fresh generation costs retained in named reports,not included in native ancestor sums. Case-wise portfolio selection disclosed."
+}

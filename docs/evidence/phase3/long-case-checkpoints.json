@@ -1,0 +1,16 @@
+{
+  "checkpoints": [
+    {
+      "tier": "hard",
+      "run_id": "20261003T185344.981018Z-exact-polish",
+      "manifest_sha256": "ab34927cc422aa093c8621129e7b9f5101f1683269d76d2f356e91b2441a34f4",
+      "portfolio_directory": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261003T185125.338363Z-case-portfolio"
+    },
+    {
+      "tier": "designs",
+      "run_id": "20261003T185347.068523Z-exact-polish",
+      "manifest_sha256": "c17db3a4a579637c0cef36a64ea428dc201240525507db0f51cd80a2824dfdd9",
+      "portfolio_directory": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261003T185131.279278Z-case-portfolio"
+    }
+  ]
+}

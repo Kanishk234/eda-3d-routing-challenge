@@ -1,0 +1,166 @@
+{
+  "status": "complete",
+  "plan": {
+    "coverage": "docs/evidence/phase3/tier-independent-sixth-coverage.json",
+    "tier": "hard",
+    "cases": [
+      "case_01",
+      "case_04",
+      "case_07"
+    ],
+    "work_budget": 15000000,
+    "budget": 90,
+    "penalties": [
+      0,
+      16,
+      64
+    ],
+    "transformations": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "model_manifest": {
+    "repo": "https://github.com/cuhk-eda/REST",
+    "tree_sha": "fef7eef964455b91c3b44bdbdeed55b52a82477e",
+    "files": [
+      {
+        "path": "LICENSE",
+        "git_blob": "b7d832f08f8999c4d43f08bb4b660dac4eb915f2",
+        "sha256": "ebaa1e42e8b201fde0694e55245cdf1a5f0d430a8c281a88d866f73469dc7a52",
+        "bytes": 2245
+      },
+      {
+        "path": "README.md",
+        "git_blob": "230c2a7f378c2f0fce7e41928d365b1a2c1273c5",
+        "sha256": "29eaf51b8ce2ea9e4de7aee935b84879b642baad2180448289c490f63d964810",
+        "bytes": 3663
+      },
+      {
+        "path": "models/actor_critic.py",
+        "git_blob": "a2fbb5b7553e7bb7bf18079006c2e1a764bdebcf",
+        "sha256": "b01bef84cef8f8ce4812e7f282663b3d5075aec9ce0f721e416f567204dab676",
+        "bytes": 6629
+      },
+      {
+        "path": "models/self_attn.py",
+        "git_blob": "59f77e69a606f0b6b40fb34ab523806293aef860",
+        "sha256": "9752b01b4e81f57d84950bb8d1871fd458e81854cb0644d54c1c45c773df437f",
+        "bytes": 5036
+      },
+      {
+        "path": "models/utils.py",
+        "git_blob": "d7f87eb29b50210d1c1b6833affc23653ab89105",
+        "sha256": "5beb3284650ea20b5c3b03fe737aaffb5efdf8a52661e7d800d5d1428cbb1b40",
+        "bytes": 1848
+      },
+      {
+        "path": "save/DAC21/rsmt5b.pt",
+        "git_blob": "4e8f5485bf76eac05555e96107dbf86dd9c9e3d7",
+        "sha256": "6b75dcfa26dfa4ffd869de42a74f789e72a5671d289d99ee3d76b4e424397a9e",
+        "bytes": 28683626
+      },
+      {
+        "path": "test.py",
+        "git_blob": "a1516d53294bbe9e5dc37971fae20d366e2f73ed",
+        "sha256": "9e45b08dd79630288bbd893caea4df411a978e93f85b6251d29d5203f49800cf",
+        "bytes": 5050
+      }
+    ],
+    "scope": "Original licensed source and pretrained weights; CPU inference probe only, no competitor route input."
+  },
+  "torch_version": "2.8.0+cpu",
+  "cpu_threads": 1,
+  "source_sha256": {
+    "/home/younix/eda-3d-routing-challenge/dev/configs/hard-rest-eight.json": "bb86fe48f9b720fc86d9ebb4ec2c294f293ba1fc5e2355087a8d7cf363a6c9a1",
+    "/home/younix/eda-3d-routing-challenge/dev/rest_proposals.py": "61c86bb04153ec6f5368481e1799eb3f7b24101c5c20fd8ff892b90373e2cdad",
+    "/home/younix/eda-3d-routing-challenge/dev/branch_repair.py": "fac12b4771279883b09714a76b9e05837450c8458cd4d780385ff7cb7e4e3a13",
+    "/home/younix/eda-3d-routing-challenge/dev/select_tree_pool.py": "e8905011506abe7513a85f113b33797d458ef067366e33cd6d71b6f0b7219725",
+    "/home/younix/eda-3d-routing-challenge/docs/evidence/phase3/tier-independent-sixth-coverage.json": "913b0ea92e123857a86f8cdfa38b3eebb3b45dfa1d3b59800bba4990d48a071e"
+  },
+  "rows": [
+    {
+      "case": "case_01",
+      "case_sha256": "685a165a7a15811dff12839e0dbe79752b889558213f760ad5f0df6139766f5d",
+      "start_sha256": "836887bac6e8dbe5b86fe943a132a31e08dce28b743849ebeaa7b7e54a9c749c",
+      "output_sha256": "d546229aa3b74d5786702a39d66cd5a811195eb2dad8ed676974f3c8e7c01a5d",
+      "before_delay": 9054,
+      "after_delay": 9054,
+      "legal": true,
+      "neural_calls": 416,
+      "expansions": 2367560,
+      "limited": false,
+      "selection": {
+        "status": "OPTIMAL",
+        "restricted_optimal": true,
+        "fallback_base": false,
+        "best_bound": 9054.0,
+        "chosen_delay": 9054,
+        "base_delay": 9054,
+        "variables": 294,
+        "vertex_constraints": 687,
+        "wall_s": 0.048551049000000006,
+        "deterministic_time": 5.135e-05
+      },
+      "wall_s": 19.730985368951224
+    },
+    {
+      "case": "case_04",
+      "case_sha256": "06324939b75971e45caa9e7f19d824a254e0f61167dd6b279bbff612d77d96f1",
+      "start_sha256": "6f63b99fa5716427ffc61c7c5475bc5ab2981ac6b6336d91fc639146ab8e3521",
+      "output_sha256": "f21e53fdbb5075738326451b8ade247a1f3e47fe2599ea9959144581fa6cb41f",
+      "before_delay": 14019,
+      "after_delay": 14019,
+      "legal": true,
+      "neural_calls": 520,
+      "expansions": 4466721,
+      "limited": false,
+      "selection": {
+        "status": "OPTIMAL",
+        "restricted_optimal": true,
+        "fallback_base": false,
+        "best_bound": 14019.0,
+        "chosen_delay": 14019,
+        "base_delay": 14019,
+        "variables": 359,
+        "vertex_constraints": 995,
+        "wall_s": 0.006357532000000001,
+        "deterministic_time": 6.193e-05
+      },
+      "wall_s": 35.64349760400364
+    },
+    {
+      "case": "case_07",
+      "case_sha256": "e3475bed19f53670482b4b864a276c475b47e1cac7237d8fa26eeb48714de8f0",
+      "start_sha256": "8279face61d3742fcd0306cfb5495dc77fada1f752a16518c1de4d0305cd4a42",
+      "output_sha256": "5b22e9874d4741a9eef9e6f35e85d17bb10b8a54e9814df03dfdde707bdf046a",
+      "before_delay": 22997,
+      "after_delay": 22997,
+      "legal": true,
+      "neural_calls": 600,
+      "expansions": 7127214,
+      "limited": false,
+      "selection": {
+        "status": "OPTIMAL",
+        "restricted_optimal": true,
+        "fallback_base": false,
+        "best_bound": 22997.0,
+        "chosen_delay": 22997,
+        "base_delay": 22997,
+        "variables": 443,
+        "vertex_constraints": 1435,
+        "wall_s": 0.004449294,
+        "deterministic_time": 7.635e-05
+      },
+      "wall_s": 53.920703600975685
+    }
+  ],
+  "scope": "Existing REST5-terminal weights; adapted XY topology tie preferences. Multi-sink3D delay not training objective; degree2-5 transfer experimental. No competitor routes. Restricted finite-pool selection only.",
+  "peak_rss_kb": 321800
+}

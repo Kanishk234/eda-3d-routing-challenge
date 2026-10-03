@@ -1,0 +1,40 @@
+{
+  "static_weights": [
+    0.027869509102356617,
+    -0.14578117745814118,
+    -0.10815985971760247,
+    -0.11062003680521697,
+    -0.08423409133944625,
+    -0.003077262887648226,
+    -0.03747496059425796,
+    -0.04139755063932736,
+    0.0
+  ],
+  "context_weights": [
+    0.03526729495753638,
+    -0.17123185405199898,
+    -0.13415736066550643,
+    -0.1306019166736348,
+    -0.10329483705526585,
+    0.014184507921727775,
+    -0.062230661617769155,
+    -0.036717381064707504,
+    0.0,
+    0.06042344313656023,
+    -0.31465177865444083,
+    -0.057467804166914986,
+    0.11628885175437195,
+    -0.11042140307774771,
+    0.0,
+    0.0
+  ],
+  "feature_count": 16,
+  "mlp_architecture": "16,32,tanh,1",
+  "source_sha256": {
+    "/home/younix/eda-3d-routing-challenge/dev/configs/learned-context-order.json": "712beddb851b3a1375f017abefc354341bd8ebb61ec62461230a125aa9963ebf",
+    "/home/younix/eda-3d-routing-challenge/dev/learned_context_order.py": "c497404488cfde5713356e8c58c4d010c664950c8c39b1aa0d007e14d4eb76ad",
+    "/home/younix/eda-3d-routing-challenge/dev/learned_fresh_order.py": "636a63942826686eaceae42287cf91ceccb3e67d992f59e3d4f255a32d547829",
+    "/home/younix/eda-3d-routing-challenge/dev/branch_repair.py": "fac12b4771279883b09714a76b9e05837450c8458cd4d780385ff7cb7e4e3a13"
+  },
+  "mlp_sha256": "bcf6aa64b8ba8a3ee0be94332dce383dc9891d9ba526f846aa759f3d1d970896"
+}

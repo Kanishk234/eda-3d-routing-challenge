@@ -1,0 +1,49 @@
+{
+  "repo": "https://github.com/cuhk-eda/REST",
+  "tree_sha": "fef7eef964455b91c3b44bdbdeed55b52a82477e",
+  "files": [
+    {
+      "path": "LICENSE",
+      "git_blob": "b7d832f08f8999c4d43f08bb4b660dac4eb915f2",
+      "sha256": "ebaa1e42e8b201fde0694e55245cdf1a5f0d430a8c281a88d866f73469dc7a52",
+      "bytes": 2245
+    },
+    {
+      "path": "README.md",
+      "git_blob": "230c2a7f378c2f0fce7e41928d365b1a2c1273c5",
+      "sha256": "29eaf51b8ce2ea9e4de7aee935b84879b642baad2180448289c490f63d964810",
+      "bytes": 3663
+    },
+    {
+      "path": "models/actor_critic.py",
+      "git_blob": "a2fbb5b7553e7bb7bf18079006c2e1a764bdebcf",
+      "sha256": "b01bef84cef8f8ce4812e7f282663b3d5075aec9ce0f721e416f567204dab676",
+      "bytes": 6629
+    },
+    {
+      "path": "models/self_attn.py",
+      "git_blob": "59f77e69a606f0b6b40fb34ab523806293aef860",
+      "sha256": "9752b01b4e81f57d84950bb8d1871fd458e81854cb0644d54c1c45c773df437f",
+      "bytes": 5036
+    },
+    {
+      "path": "models/utils.py",
+      "git_blob": "d7f87eb29b50210d1c1b6833affc23653ab89105",
+      "sha256": "5beb3284650ea20b5c3b03fe737aaffb5efdf8a52661e7d800d5d1428cbb1b40",
+      "bytes": 1848
+    },
+    {
+      "path": "test.py",
+      "git_blob": "a1516d53294bbe9e5dc37971fae20d366e2f73ed",
+      "sha256": "9e45b08dd79630288bbd893caea4df411a978e93f85b6251d29d5203f49800cf",
+      "bytes": 5050
+    },
+    {
+      "path": "save/DAC21/rsmt10b.pt",
+      "git_blob": "b6407ae2cb9e35bcd4ccfd8cd92ffde36a95ee5d",
+      "sha256": "8edeb75f81955f90a924b2ffd14a15273ba277ee7c573bac7e868bff5caa1772",
+      "size": 28683630
+    }
+  ],
+  "scope": "Original published REST ten-terminal weights and licensed original source,CPU inference only;no training."
+}

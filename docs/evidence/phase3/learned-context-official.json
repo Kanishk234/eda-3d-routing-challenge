@@ -1,0 +1,225 @@
+{
+  "status": "complete",
+  "plan": {
+    "model_root": "dev/artifacts/20261002-learned-context-order",
+    "cases": [
+      {
+        "suite": "benchmarks",
+        "file": "case_05.json"
+      },
+      {
+        "suite": "benchmarks_hard",
+        "file": "case_01.json"
+      }
+    ],
+    "seeds": [
+      1
+    ],
+    "methods": [
+      "context_linear",
+      "context_mlp",
+      "static_linear",
+      "pressure",
+      "short_first",
+      "random"
+    ],
+    "work_budget": 3000000,
+    "budget": 30,
+    "scope": "Fixed model official development screen; no heldout-case tuning,one fresh attempt per method,failures retained."
+  },
+  "source_sha256": {
+    "/home/younix/eda-3d-routing-challenge/dev/configs/learned-context-official.json": "9ee4ad896056e0488f660655947ae03c1c97dd2db1be6f9517c36cf7f278d32d",
+    "/home/younix/eda-3d-routing-challenge/dev/evaluate_context_policy.py": "faab17468fb9d065c297c70f682a08783feef0a8fbbe13ef59cf11c00b666405",
+    "/home/younix/eda-3d-routing-challenge/dev/learned_context_order.py": "c497404488cfde5713356e8c58c4d010c664950c8c39b1aa0d007e14d4eb76ad",
+    "/home/younix/eda-3d-routing-challenge/dev/branch_repair.py": "fac12b4771279883b09714a76b9e05837450c8458cd4d780385ff7cb7e4e3a13",
+    "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002-learned-context-order/model.json": "c66a88e97497049a397386554203b707e56297aad7cbc3d2d6e83fa2a55e9363",
+    "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002-learned-context-order/mlp.pt": "bcf6aa64b8ba8a3ee0be94332dce383dc9891d9ba526f846aa759f3d1d970896"
+  },
+  "rows": [
+    {
+      "case": {
+        "suite": "benchmarks",
+        "file": "case_05.json"
+      },
+      "case_sha256": "bc8121afd69bf79056e4521147ee7b92f5c95714b3c49058dfce7ed0f578d43b",
+      "seed": 1,
+      "method": "context_linear",
+      "expansions": 105492,
+      "limited": false,
+      "completed_nets": 34,
+      "delay": 4149,
+      "wall_s": 0.6405301180202514,
+      "legal": true,
+      "output_sha256": "a0ca600ba374cf4c6a982736dd7887ceda0b8b2b2ead8606662952593706b623"
+    },
+    {
+      "case": {
+        "suite": "benchmarks",
+        "file": "case_05.json"
+      },
+      "case_sha256": "bc8121afd69bf79056e4521147ee7b92f5c95714b3c49058dfce7ed0f578d43b",
+      "seed": 1,
+      "method": "context_mlp",
+      "expansions": 106791,
+      "limited": false,
+      "completed_nets": 34,
+      "delay": 4065,
+      "wall_s": 0.6566204800037667,
+      "legal": true,
+      "output_sha256": "72880e958219a40bf496af7974f3f74181052542eb6c7bc866b79c0499a4f6df"
+    },
+    {
+      "case": {
+        "suite": "benchmarks",
+        "file": "case_05.json"
+      },
+      "case_sha256": "bc8121afd69bf79056e4521147ee7b92f5c95714b3c49058dfce7ed0f578d43b",
+      "seed": 1,
+      "method": "static_linear",
+      "expansions": 104466,
+      "limited": false,
+      "completed_nets": 34,
+      "delay": 4221,
+      "wall_s": 0.588192664028611,
+      "legal": true,
+      "output_sha256": "ecb212f995b2104a96400c32b449aa5a98e4e26e6de79e282c92eb547e5a28f5"
+    },
+    {
+      "case": {
+        "suite": "benchmarks",
+        "file": "case_05.json"
+      },
+      "case_sha256": "bc8121afd69bf79056e4521147ee7b92f5c95714b3c49058dfce7ed0f578d43b",
+      "seed": 1,
+      "method": "pressure",
+      "expansions": 106060,
+      "limited": false,
+      "completed_nets": 34,
+      "delay": 4085,
+      "wall_s": 0.7036509310128167,
+      "legal": true,
+      "output_sha256": "a643b6016f6d9fda05dea4b765e0f22215cb088081a4c102e831cd9761b3ade0"
+    },
+    {
+      "case": {
+        "suite": "benchmarks",
+        "file": "case_05.json"
+      },
+      "case_sha256": "bc8121afd69bf79056e4521147ee7b92f5c95714b3c49058dfce7ed0f578d43b",
+      "seed": 1,
+      "method": "short_first",
+      "expansions": 107191,
+      "limited": false,
+      "completed_nets": 34,
+      "delay": 4335,
+      "wall_s": 0.5260155490250327,
+      "legal": true,
+      "output_sha256": "73bafccc2b751d1dddb47c81cf0952a3e000dc85c4828a63ca74bf71e39948be"
+    },
+    {
+      "case": {
+        "suite": "benchmarks",
+        "file": "case_05.json"
+      },
+      "case_sha256": "bc8121afd69bf79056e4521147ee7b92f5c95714b3c49058dfce7ed0f578d43b",
+      "seed": 1,
+      "method": "random",
+      "expansions": 103901,
+      "limited": false,
+      "completed_nets": 34,
+      "delay": 3999,
+      "wall_s": 0.4366468680091202,
+      "legal": true,
+      "output_sha256": "63cb5e6f333b082bf04ba0d2278bfc03f6eecf3a82dcb5aac0779f3c639ed601"
+    },
+    {
+      "case": {
+        "suite": "benchmarks_hard",
+        "file": "case_01.json"
+      },
+      "case_sha256": "685a165a7a15811dff12839e0dbe79752b889558213f760ad5f0df6139766f5d",
+      "seed": 1,
+      "method": "context_linear",
+      "expansions": 94545,
+      "limited": false,
+      "completed_nets": 54,
+      "wall_s": 0.950421889021527,
+      "legal": false
+    },
+    {
+      "case": {
+        "suite": "benchmarks_hard",
+        "file": "case_01.json"
+      },
+      "case_sha256": "685a165a7a15811dff12839e0dbe79752b889558213f760ad5f0df6139766f5d",
+      "seed": 1,
+      "method": "context_mlp",
+      "expansions": 52528,
+      "limited": false,
+      "completed_nets": 26,
+      "wall_s": 0.6990587699692696,
+      "legal": false
+    },
+    {
+      "case": {
+        "suite": "benchmarks_hard",
+        "file": "case_01.json"
+      },
+      "case_sha256": "685a165a7a15811dff12839e0dbe79752b889558213f760ad5f0df6139766f5d",
+      "seed": 1,
+      "method": "static_linear",
+      "expansions": 80248,
+      "limited": false,
+      "completed_nets": 46,
+      "wall_s": 0.7850136149791069,
+      "legal": false
+    },
+    {
+      "case": {
+        "suite": "benchmarks_hard",
+        "file": "case_01.json"
+      },
+      "case_sha256": "685a165a7a15811dff12839e0dbe79752b889558213f760ad5f0df6139766f5d",
+      "seed": 1,
+      "method": "pressure",
+      "expansions": 77232,
+      "limited": false,
+      "completed_nets": 39,
+      "wall_s": 0.9122960169916041,
+      "legal": false
+    },
+    {
+      "case": {
+        "suite": "benchmarks_hard",
+        "file": "case_01.json"
+      },
+      "case_sha256": "685a165a7a15811dff12839e0dbe79752b889558213f760ad5f0df6139766f5d",
+      "seed": 1,
+      "method": "short_first",
+      "expansions": 96853,
+      "limited": false,
+      "completed_nets": 54,
+      "wall_s": 0.48334529699059203,
+      "legal": false
+    },
+    {
+      "case": {
+        "suite": "benchmarks_hard",
+        "file": "case_01.json"
+      },
+      "case_sha256": "685a165a7a15811dff12839e0dbe79752b889558213f760ad5f0df6139766f5d",
+      "seed": 1,
+      "method": "random",
+      "expansions": 80968,
+      "limited": false,
+      "completed_nets": 46,
+      "wall_s": 0.3710304639535025,
+      "legal": false
+    }
+  ],
+  "workers": 1,
+  "cpu_threads": 1,
+  "scope": "Fixed own curriculum models; one sequential construction per development case/method/seed. Failures retained. No tier claim or model tuning on these results.",
+  "wall_s": 7.994475723011419,
+  "peak_rss_kb": 213892
+}

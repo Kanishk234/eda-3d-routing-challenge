@@ -1,0 +1,204 @@
+{
+  "status": "complete",
+  "plan": {
+    "coverage": "docs/evidence/phase3/tier-independent-sixth-coverage.json",
+    "cases": [
+      "case_01",
+      "case_04",
+      "case_07"
+    ],
+    "seed": 1,
+    "nets": 8,
+    "max_sinks": 4,
+    "work_budget": 2000000,
+    "budget": 30,
+    "penalties": [
+      16,
+      64
+    ]
+  },
+  "source_sha256": {
+    "/home/younix/eda-3d-routing-challenge/dev/configs/hard-component-reuse.json": "c256b1b09d1f916c8f400595f60735c456aa0766c68af7008514d034ee74067d",
+    "/home/younix/eda-3d-routing-challenge/dev/component_reuse_screen.py": "29d3c788c5d5d0f1760c849b2f32468641f8258785afe56fe1fc39760a7dac7d",
+    "/home/younix/eda-3d-routing-challenge/docs/evidence/phase3/tier-independent-sixth-coverage.json": "913b0ea92e123857a86f8cdfa38b3eebb3b45dfa1d3b59800bba4990d48a071e",
+    "/home/younix/eda-3d-routing-challenge/dev/component_reuse.py": "1eaf8a99e9cd5dd50cfc1bb15aad8ec0efbd9e173c34e6ee8fddf31e5ba38134",
+    "/home/younix/eda-3d-routing-challenge/dev/component_router.py": "1e3f3afd115041ae82115a88ecafc02f5e9f24d8543d109f901bbc72936cbd66",
+    "/home/younix/eda-3d-routing-challenge/dev/branch_repair.py": "fac12b4771279883b09714a76b9e05837450c8458cd4d780385ff7cb7e4e3a13",
+    "/home/younix/eda-3d-routing-challenge/dev/select_tree_pool.py": "e8905011506abe7513a85f113b33797d458ef067366e33cd6d71b6f0b7219725"
+  },
+  "rows": [
+    {
+      "case": "case_01",
+      "case_sha256": "685a165a7a15811dff12839e0dbe79752b889558213f760ad5f0df6139766f5d",
+      "parent_sha256": "836887bac6e8dbe5b86fe943a132a31e08dce28b743849ebeaa7b7e54a9c749c",
+      "output_sha256": "836887bac6e8dbe5b86fe943a132a31e08dce28b743849ebeaa7b7e54a9c749c",
+      "before_delay": 9054,
+      "after_delay": 9054,
+      "legal": true,
+      "selected_nets": [
+        53,
+        45,
+        25,
+        44,
+        2,
+        33,
+        54,
+        43
+      ],
+      "methods": [
+        {
+          "method": "merge",
+          "attempts": 16,
+          "unique_trees_added": 15,
+          "expansions": 64306,
+          "limited": false,
+          "wall_s": 0.3795529790222645
+        },
+        {
+          "method": "reuse",
+          "attempts": 16,
+          "unique_trees_added": 0,
+          "expansions": 193886,
+          "limited": false,
+          "wall_s": 1.100435278029181
+        },
+        {
+          "method": "relocated",
+          "attempts": 16,
+          "unique_trees_added": 3,
+          "expansions": 195418,
+          "limited": false,
+          "wall_s": 1.0386085289646871
+        }
+      ],
+      "selection": {
+        "status": "OPTIMAL",
+        "restricted_optimal": true,
+        "fallback_base": false,
+        "best_bound": 9054.0,
+        "chosen_delay": 9054,
+        "base_delay": 9054,
+        "variables": 80,
+        "vertex_constraints": 1,
+        "wall_s": 0.005121154,
+        "deterministic_time": 1.393e-05
+      }
+    },
+    {
+      "case": "case_04",
+      "case_sha256": "06324939b75971e45caa9e7f19d824a254e0f61167dd6b279bbff612d77d96f1",
+      "parent_sha256": "6f63b99fa5716427ffc61c7c5475bc5ab2981ac6b6336d91fc639146ab8e3521",
+      "output_sha256": "8ef73b31dbd80359f4ec0c10c4706817f227bccab8cfad55381946842810b7cc",
+      "before_delay": 14019,
+      "after_delay": 14019,
+      "legal": true,
+      "selected_nets": [
+        51,
+        56,
+        60,
+        40,
+        55,
+        18,
+        31,
+        59
+      ],
+      "methods": [
+        {
+          "method": "merge",
+          "attempts": 16,
+          "unique_trees_added": 11,
+          "expansions": 102701,
+          "limited": false,
+          "wall_s": 0.49842460197396576
+        },
+        {
+          "method": "reuse",
+          "attempts": 16,
+          "unique_trees_added": 0,
+          "expansions": 327782,
+          "limited": false,
+          "wall_s": 1.8627557209692895
+        },
+        {
+          "method": "relocated",
+          "attempts": 16,
+          "unique_trees_added": 5,
+          "expansions": 327202,
+          "limited": false,
+          "wall_s": 1.830220472998917
+        }
+      ],
+      "selection": {
+        "status": "OPTIMAL",
+        "restricted_optimal": true,
+        "fallback_base": false,
+        "best_bound": 14019.0,
+        "chosen_delay": 14019,
+        "base_delay": 14019,
+        "variables": 94,
+        "vertex_constraints": 7,
+        "wall_s": 0.002574419,
+        "deterministic_time": 1.6490000000000003e-05
+      }
+    },
+    {
+      "case": "case_07",
+      "case_sha256": "e3475bed19f53670482b4b864a276c475b47e1cac7237d8fa26eeb48714de8f0",
+      "parent_sha256": "8279face61d3742fcd0306cfb5495dc77fada1f752a16518c1de4d0305cd4a42",
+      "output_sha256": "b8d2d97be4ecc0b735cbd3c2bbd02f6d7eda85f1c4c844b1b430000faff779cf",
+      "before_delay": 22997,
+      "after_delay": 22997,
+      "legal": true,
+      "selected_nets": [
+        57,
+        28,
+        27,
+        92,
+        89,
+        48,
+        54,
+        70
+      ],
+      "methods": [
+        {
+          "method": "merge",
+          "attempts": 16,
+          "unique_trees_added": 15,
+          "expansions": 184472,
+          "limited": false,
+          "wall_s": 1.0672819239553064
+        },
+        {
+          "method": "reuse",
+          "attempts": 16,
+          "unique_trees_added": 0,
+          "expansions": 532840,
+          "limited": false,
+          "wall_s": 3.3687833310104907
+        },
+        {
+          "method": "relocated",
+          "attempts": 16,
+          "unique_trees_added": 5,
+          "expansions": 523662,
+          "limited": false,
+          "wall_s": 3.323253453010693
+        }
+      ],
+      "selection": {
+        "status": "OPTIMAL",
+        "restricted_optimal": true,
+        "fallback_base": false,
+        "best_bound": 22997.0,
+        "chosen_delay": 22997,
+        "base_delay": 22997,
+        "variables": 114,
+        "vertex_constraints": 18,
+        "wall_s": 0.001380883,
+        "deterministic_time": 1.9370000000000003e-05
+      }
+    }
+  ],
+  "scope": "Own parent trees; independently implemented vertex-price component hypotheses,not paper guarantee. Restricted CP optimality only. Each method gets separate equal work/time ceilings;not isolated wall timings.",
+  "peak_rss_kib": 100044
+}

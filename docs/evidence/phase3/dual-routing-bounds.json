@@ -1,0 +1,511 @@
+{
+  "complete": true,
+  "coverage_sha256": "e125cf4651c7e2ea861b56e4dfb32c838eb2df0855444224ee4917e82ad1af20",
+  "parent_source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+  "source_sha256": "0f9567f79ecf758074ee50b81816b8deb2fef7418714221d04b9fce53e1a1897",
+  "binary_sha256": "aa92b2510cbd70d1aefe7878ee8dd0140b4ab02d013d190925f4f3f1ac53a031",
+  "build_command": [
+    "g++",
+    "-O3",
+    "-std=c++17",
+    "-Wall",
+    "-Wextra",
+    "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261003-dual-bound-checked/bound.cpp",
+    "-o",
+    "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261003-dual-bound-checked/bound"
+  ],
+  "iterations": 24,
+  "step": 8,
+  "rows": [
+    {
+      "tier": "hard",
+      "case": "case_01",
+      "case_sha256": "685a165a7a15811dff12839e0dbe79752b889558213f760ad5f0df6139766f5d",
+      "parent_sha256": "16f3d8ddc0c768fe42592202d789f24814c17625f8afd6571a51672fab639b8d",
+      "incumbent_delay": 9050,
+      "baseline_delay": 11938,
+      "score_ceiling": 1.6682504192286194,
+      "wall_s": 0.4925723689957522,
+      "command": [
+        "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261003-dual-bound-checked/bound",
+        "24",
+        "8"
+      ],
+      "iterations": [
+        {
+          "iteration": 0,
+          "lower_bound": 7156,
+          "best_lower_bound": 7156,
+          "priced_vertices": 0
+        },
+        {
+          "iteration": 1,
+          "lower_bound": 3848,
+          "best_lower_bound": 7156,
+          "priced_vertices": 361
+        },
+        {
+          "iteration": 2,
+          "lower_bound": 2894,
+          "best_lower_bound": 7156,
+          "priced_vertices": 624
+        },
+        {
+          "iteration": 3,
+          "lower_bound": 2788,
+          "best_lower_bound": 7156,
+          "priced_vertices": 797
+        },
+        {
+          "iteration": 4,
+          "lower_bound": 2673,
+          "best_lower_bound": 7156,
+          "priced_vertices": 886
+        },
+        {
+          "iteration": 5,
+          "lower_bound": 2760,
+          "best_lower_bound": 7156,
+          "priced_vertices": 976
+        },
+        {
+          "iteration": 6,
+          "lower_bound": 3024,
+          "best_lower_bound": 7156,
+          "priced_vertices": 1081
+        },
+        {
+          "iteration": 7,
+          "lower_bound": 3408,
+          "best_lower_bound": 7156,
+          "priced_vertices": 1089
+        },
+        {
+          "iteration": 8,
+          "lower_bound": 3957,
+          "best_lower_bound": 7156,
+          "priced_vertices": 1063
+        },
+        {
+          "iteration": 9,
+          "lower_bound": 4469,
+          "best_lower_bound": 7156,
+          "priced_vertices": 1071
+        },
+        {
+          "iteration": 10,
+          "lower_bound": 4841,
+          "best_lower_bound": 7156,
+          "priced_vertices": 1070
+        },
+        {
+          "iteration": 11,
+          "lower_bound": 5116,
+          "best_lower_bound": 7156,
+          "priced_vertices": 1108
+        },
+        {
+          "iteration": 12,
+          "lower_bound": 5255,
+          "best_lower_bound": 7156,
+          "priced_vertices": 1062
+        },
+        {
+          "iteration": 13,
+          "lower_bound": 5369,
+          "best_lower_bound": 7156,
+          "priced_vertices": 1059
+        },
+        {
+          "iteration": 14,
+          "lower_bound": 5403,
+          "best_lower_bound": 7156,
+          "priced_vertices": 1052
+        },
+        {
+          "iteration": 15,
+          "lower_bound": 5593,
+          "best_lower_bound": 7156,
+          "priced_vertices": 1063
+        },
+        {
+          "iteration": 16,
+          "lower_bound": 5704,
+          "best_lower_bound": 7156,
+          "priced_vertices": 1014
+        },
+        {
+          "iteration": 17,
+          "lower_bound": 5749,
+          "best_lower_bound": 7156,
+          "priced_vertices": 977
+        },
+        {
+          "iteration": 18,
+          "lower_bound": 5741,
+          "best_lower_bound": 7156,
+          "priced_vertices": 985
+        },
+        {
+          "iteration": 19,
+          "lower_bound": 5813,
+          "best_lower_bound": 7156,
+          "priced_vertices": 966
+        },
+        {
+          "iteration": 20,
+          "lower_bound": 5750,
+          "best_lower_bound": 7156,
+          "priced_vertices": 958
+        },
+        {
+          "iteration": 21,
+          "lower_bound": 5950,
+          "best_lower_bound": 7156,
+          "priced_vertices": 966
+        },
+        {
+          "iteration": 22,
+          "lower_bound": 6146,
+          "best_lower_bound": 7156,
+          "priced_vertices": 944
+        },
+        {
+          "iteration": 23,
+          "lower_bound": 6173,
+          "best_lower_bound": 7156,
+          "priced_vertices": 919
+        }
+      ],
+      "best_lower_bound": 7156,
+      "expansions": 1449161
+    },
+    {
+      "tier": "hard",
+      "case": "case_04",
+      "case_sha256": "06324939b75971e45caa9e7f19d824a254e0f61167dd6b279bbff612d77d96f1",
+      "parent_sha256": "90dc265fdca3673ec261b225aa5f0f752f91dc3aee11571ddf83441423fbf3eb",
+      "incumbent_delay": 13967,
+      "baseline_delay": 18077,
+      "score_ceiling": 1.763093728664781,
+      "wall_s": 1.047050504013896,
+      "command": [
+        "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261003-dual-bound-checked/bound",
+        "24",
+        "8"
+      ],
+      "iterations": [
+        {
+          "iteration": 0,
+          "lower_bound": 10253,
+          "best_lower_bound": 10253,
+          "priced_vertices": 0
+        },
+        {
+          "iteration": 1,
+          "lower_bound": 5206,
+          "best_lower_bound": 10253,
+          "priced_vertices": 518
+        },
+        {
+          "iteration": 2,
+          "lower_bound": 2849,
+          "best_lower_bound": 10253,
+          "priced_vertices": 817
+        },
+        {
+          "iteration": 3,
+          "lower_bound": 1970,
+          "best_lower_bound": 10253,
+          "priced_vertices": 1094
+        },
+        {
+          "iteration": 4,
+          "lower_bound": 1307,
+          "best_lower_bound": 10253,
+          "priced_vertices": 1310
+        },
+        {
+          "iteration": 5,
+          "lower_bound": 1601,
+          "best_lower_bound": 10253,
+          "priced_vertices": 1403
+        },
+        {
+          "iteration": 6,
+          "lower_bound": 2101,
+          "best_lower_bound": 10253,
+          "priced_vertices": 1646
+        },
+        {
+          "iteration": 7,
+          "lower_bound": 2913,
+          "best_lower_bound": 10253,
+          "priced_vertices": 1719
+        },
+        {
+          "iteration": 8,
+          "lower_bound": 3931,
+          "best_lower_bound": 10253,
+          "priced_vertices": 1734
+        },
+        {
+          "iteration": 9,
+          "lower_bound": 4868,
+          "best_lower_bound": 10253,
+          "priced_vertices": 1747
+        },
+        {
+          "iteration": 10,
+          "lower_bound": 5676,
+          "best_lower_bound": 10253,
+          "priced_vertices": 1748
+        },
+        {
+          "iteration": 11,
+          "lower_bound": 5607,
+          "best_lower_bound": 10253,
+          "priced_vertices": 1694
+        },
+        {
+          "iteration": 12,
+          "lower_bound": 6036,
+          "best_lower_bound": 10253,
+          "priced_vertices": 1691
+        },
+        {
+          "iteration": 13,
+          "lower_bound": 6174,
+          "best_lower_bound": 10253,
+          "priced_vertices": 1733
+        },
+        {
+          "iteration": 14,
+          "lower_bound": 6817,
+          "best_lower_bound": 10253,
+          "priced_vertices": 1715
+        },
+        {
+          "iteration": 15,
+          "lower_bound": 7117,
+          "best_lower_bound": 10253,
+          "priced_vertices": 1711
+        },
+        {
+          "iteration": 16,
+          "lower_bound": 7467,
+          "best_lower_bound": 10253,
+          "priced_vertices": 1594
+        },
+        {
+          "iteration": 17,
+          "lower_bound": 7779,
+          "best_lower_bound": 10253,
+          "priced_vertices": 1596
+        },
+        {
+          "iteration": 18,
+          "lower_bound": 7983,
+          "best_lower_bound": 10253,
+          "priced_vertices": 1590
+        },
+        {
+          "iteration": 19,
+          "lower_bound": 8205,
+          "best_lower_bound": 10253,
+          "priced_vertices": 1508
+        },
+        {
+          "iteration": 20,
+          "lower_bound": 8487,
+          "best_lower_bound": 10253,
+          "priced_vertices": 1520
+        },
+        {
+          "iteration": 21,
+          "lower_bound": 8614,
+          "best_lower_bound": 10253,
+          "priced_vertices": 1503
+        },
+        {
+          "iteration": 22,
+          "lower_bound": 8801,
+          "best_lower_bound": 10253,
+          "priced_vertices": 1456
+        },
+        {
+          "iteration": 23,
+          "lower_bound": 8741,
+          "best_lower_bound": 10253,
+          "priced_vertices": 1420
+        }
+      ],
+      "best_lower_bound": 10253,
+      "expansions": 3327711
+    },
+    {
+      "tier": "hard",
+      "case": "case_07",
+      "case_sha256": "e3475bed19f53670482b4b864a276c475b47e1cac7237d8fa26eeb48714de8f0",
+      "parent_sha256": "f79587c96f1b83aba91f47118d6a4bbcfcbcd17deffdbcb1599ca5417a991545",
+      "incumbent_delay": 22793,
+      "baseline_delay": 31341,
+      "score_ceiling": 1.9039548022598871,
+      "wall_s": 2.0659429100342095,
+      "command": [
+        "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261003-dual-bound-checked/bound",
+        "24",
+        "8"
+      ],
+      "iterations": [
+        {
+          "iteration": 0,
+          "lower_bound": 16461,
+          "best_lower_bound": 16461,
+          "priced_vertices": 0
+        },
+        {
+          "iteration": 1,
+          "lower_bound": 9286,
+          "best_lower_bound": 16461,
+          "priced_vertices": 684
+        },
+        {
+          "iteration": 2,
+          "lower_bound": 5764,
+          "best_lower_bound": 16461,
+          "priced_vertices": 1055
+        },
+        {
+          "iteration": 3,
+          "lower_bound": 4519,
+          "best_lower_bound": 16461,
+          "priced_vertices": 1460
+        },
+        {
+          "iteration": 4,
+          "lower_bound": 4289,
+          "best_lower_bound": 16461,
+          "priced_vertices": 1800
+        },
+        {
+          "iteration": 5,
+          "lower_bound": 4732,
+          "best_lower_bound": 16461,
+          "priced_vertices": 2022
+        },
+        {
+          "iteration": 6,
+          "lower_bound": 5162,
+          "best_lower_bound": 16461,
+          "priced_vertices": 2267
+        },
+        {
+          "iteration": 7,
+          "lower_bound": 5971,
+          "best_lower_bound": 16461,
+          "priced_vertices": 2280
+        },
+        {
+          "iteration": 8,
+          "lower_bound": 7110,
+          "best_lower_bound": 16461,
+          "priced_vertices": 2366
+        },
+        {
+          "iteration": 9,
+          "lower_bound": 8532,
+          "best_lower_bound": 16461,
+          "priced_vertices": 2403
+        },
+        {
+          "iteration": 10,
+          "lower_bound": 9696,
+          "best_lower_bound": 16461,
+          "priced_vertices": 2400
+        },
+        {
+          "iteration": 11,
+          "lower_bound": 10490,
+          "best_lower_bound": 16461,
+          "priced_vertices": 2439
+        },
+        {
+          "iteration": 12,
+          "lower_bound": 10961,
+          "best_lower_bound": 16461,
+          "priced_vertices": 2463
+        },
+        {
+          "iteration": 13,
+          "lower_bound": 11555,
+          "best_lower_bound": 16461,
+          "priced_vertices": 2453
+        },
+        {
+          "iteration": 14,
+          "lower_bound": 12135,
+          "best_lower_bound": 16461,
+          "priced_vertices": 2399
+        },
+        {
+          "iteration": 15,
+          "lower_bound": 12457,
+          "best_lower_bound": 16461,
+          "priced_vertices": 2325
+        },
+        {
+          "iteration": 16,
+          "lower_bound": 12818,
+          "best_lower_bound": 16461,
+          "priced_vertices": 2331
+        },
+        {
+          "iteration": 17,
+          "lower_bound": 13260,
+          "best_lower_bound": 16461,
+          "priced_vertices": 2308
+        },
+        {
+          "iteration": 18,
+          "lower_bound": 13588,
+          "best_lower_bound": 16461,
+          "priced_vertices": 2233
+        },
+        {
+          "iteration": 19,
+          "lower_bound": 13762,
+          "best_lower_bound": 16461,
+          "priced_vertices": 2115
+        },
+        {
+          "iteration": 20,
+          "lower_bound": 14128,
+          "best_lower_bound": 16461,
+          "priced_vertices": 2079
+        },
+        {
+          "iteration": 21,
+          "lower_bound": 14312,
+          "best_lower_bound": 16461,
+          "priced_vertices": 2047
+        },
+        {
+          "iteration": 22,
+          "lower_bound": 14478,
+          "best_lower_bound": 16461,
+          "priced_vertices": 2028
+        },
+        {
+          "iteration": 23,
+          "lower_bound": 14627,
+          "best_lower_bound": 16461,
+          "priced_vertices": 2009
+        }
+      ],
+      "best_lower_bound": 16461,
+      "expansions": 5755511
+    }
+  ],
+  "scope": "Valid conservative independent-path Lagrangian lower bounds under nonnegative integer vertex prices. Uniform fanout division with fixed-point floor relaxes price costs. No achievable ceiling,global optimality or legal route claim."
+}

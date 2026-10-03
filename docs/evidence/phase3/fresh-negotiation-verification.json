@@ -1,0 +1,10 @@
+{
+  "output_hashes_matched": 41,
+  "focused_checks": 4,
+  "python": "3.12.3",
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "available_cpus": 16,
+  "workers_per_run": 1,
+  "compiler_flags": null,
+  "scope": "Hash checks and focused small-instance tests; legal outputs checked and reloaded by each run. Two prototype runs overlapped temporarily; no wall-speed comparisons."
+}

@@ -1,0 +1,208 @@
+{
+  "pr_count": 26,
+  "changed_heads": [
+    {
+      "number": 25,
+      "previous": "6bcf44c4a4203dfb0a060997e348ce9160d3c5dc",
+      "current": "de7ef9ded58319a70c7cf7d46e8744b7be2dde73",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/25"
+    }
+  ],
+  "prs": [
+    {
+      "number": 26,
+      "head": "89ca44091e30d9e8f2e7e56e5eb7e69de9b8294e",
+      "state": "open",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/26"
+    },
+    {
+      "number": 25,
+      "head": "de7ef9ded58319a70c7cf7d46e8744b7be2dde73",
+      "state": "open",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/25"
+    },
+    {
+      "number": 24,
+      "head": "58585d7b496d505dfa35f2426df4269974e583fa",
+      "state": "open",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/24"
+    },
+    {
+      "number": 23,
+      "head": "930088f1274647f41b48e80b724b2e2e8fb7cfbc",
+      "state": "open",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/23"
+    },
+    {
+      "number": 22,
+      "head": "f812a142033c0759d094d3904533f36e1eb4098d",
+      "state": "open",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/22"
+    },
+    {
+      "number": 21,
+      "head": "fb2101ee2cc58ac35b4031c904359a603092a029",
+      "state": "open",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/21"
+    },
+    {
+      "number": 20,
+      "head": "74467a3cd3c595b7f739d06e9a62dc1d19f0b18e",
+      "state": "closed",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/20"
+    },
+    {
+      "number": 19,
+      "head": "f6c5894b3ddc154476ec5f04479647dac17fc2db",
+      "state": "closed",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/19"
+    },
+    {
+      "number": 18,
+      "head": "3a03a700b4a8b21c229e7e1f1b9db50e81b47a95",
+      "state": "closed",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/18"
+    },
+    {
+      "number": 17,
+      "head": "0059cf4435865907bd97adbd16223c74880112cc",
+      "state": "closed",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/17"
+    },
+    {
+      "number": 16,
+      "head": "af9f95c17423fd1a56522fa89296aa1e93b7e3f4",
+      "state": "closed",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/16"
+    },
+    {
+      "number": 15,
+      "head": "e9183f55f5d4d79ab19ea4a2b49eeb8aa2dda248",
+      "state": "closed",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/15"
+    },
+    {
+      "number": 14,
+      "head": "6d97e82c263a5b801f9031de774b90246a6b009f",
+      "state": "closed",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/14"
+    },
+    {
+      "number": 13,
+      "head": "e6a16b1dbc8f406ba8180cd0ec9dae4283d56331",
+      "state": "closed",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/13"
+    },
+    {
+      "number": 12,
+      "head": "806eb4150e6314a8f17ee47ba68d25f2e4d49be4",
+      "state": "closed",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/12"
+    },
+    {
+      "number": 11,
+      "head": "93b6c420ef38b6a0294e8bf9727eb60dc4d89d62",
+      "state": "closed",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/11"
+    },
+    {
+      "number": 10,
+      "head": "d9cddc4cc365290f4c6f4d1752f460c46e03ddbe",
+      "state": "closed",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/10"
+    },
+    {
+      "number": 9,
+      "head": "f3017e8250fd7917c9d1ab395ce5d1059eb6f4d9",
+      "state": "closed",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/9"
+    },
+    {
+      "number": 8,
+      "head": "e2a01b990f3044f0650697ef4e963c579d107126",
+      "state": "closed",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/8"
+    },
+    {
+      "number": 7,
+      "head": "dfbcba48bd762433350aea82cd653af74e7137ac",
+      "state": "open",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/7"
+    },
+    {
+      "number": 6,
+      "head": "bc8a8a942eb4dca9f06bb58585667a9a91c92af1",
+      "state": "closed",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/6"
+    },
+    {
+      "number": 5,
+      "head": "4533580ce9a84b83c9c80b831d92f2fbac2bdac9",
+      "state": "closed",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/5"
+    },
+    {
+      "number": 4,
+      "head": "cd057ed79c2f91b0da1ab173b1d106ea28c39651",
+      "state": "closed",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/4"
+    },
+    {
+      "number": 3,
+      "head": "c2d9d9f583d2f332ebb84d22592ee511f6e56e33",
+      "state": "closed",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/3"
+    },
+    {
+      "number": 2,
+      "head": "607bb91f497a105942ce6ed14e01fb39150036d3",
+      "state": "closed",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/2"
+    },
+    {
+      "number": 1,
+      "head": "5b5be704578623c0430fedbd8d3c382d8b90caed",
+      "state": "closed",
+      "url": "https://github.com/partcleda/eda-3d-routing-challenge/pull/1"
+    }
+  ],
+  "linked_solver": {
+    "repo": "https://github.com/IrwinJam/m3d-router",
+    "tree": "dca18b22954261536106fd87e4abe1e75e1a9185",
+    "verified_current_source": [
+      {
+        "path": "core.py",
+        "git_blob": "3e8cfd4c4d4850b55b9143b57cc2272d0aef8abc",
+        "sha256": "f47f1096ad811f7a3cdc63a3e0fa0762cf2f4b786a152aa8eab47231a933a889"
+      },
+      {
+        "path": "router.py",
+        "git_blob": "47b4c78556f6c73ebf3c68d722a2c552398817ea",
+        "sha256": "ccfcfb133540e0678f9d3bae3e50fc188d98870419de4fd8bfa5c3ec6dc9baf9"
+      },
+      {
+        "path": "overnight.py",
+        "git_blob": "bdb6a4eef958c1937f9d601af01c109b884d0d03",
+        "sha256": "468db2c21e1a7833561a032d38ed2c09f2e86a9e1ab4bccfb0ae0adf7faf2a51"
+      },
+      {
+        "path": "README.md",
+        "git_blob": "1e6a7a75077317e900dec14e37deafd769411ec5",
+        "sha256": "607fbadbe9c64c7e7941e2470ac5e78040d4c708595f1484669340e7a1076bdb"
+      },
+      {
+        "path": "LICENSE",
+        "git_blob": "372213f53674040c6cd9f13d3fcd4b3ed81bd9cc",
+        "sha256": "1ba23add5c4bb4532b12227873d1848d5d6c825f27ba6be1673ba7b1b4cece1d"
+      }
+    ]
+  },
+  "updated_pr25_tree": {
+    "sha": "de7ef9ded58319a70c7cf7d46e8744b7be2dde73",
+    "truncated": false,
+    "non_toolkit_code": [
+      "examples/example_submission.py"
+    ]
+  },
+  "scope": "Fresh PR inventory and changed-head tree; linked solver code current blobs verified against previously fetched files,then re-read. No competitor route files downloaded or used; no external solver executed/copied. Previous full fork inventory not refreshed in this targeted update."
+}

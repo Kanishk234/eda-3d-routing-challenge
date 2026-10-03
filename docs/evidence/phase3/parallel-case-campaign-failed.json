@@ -1,0 +1,169 @@
+{
+  "complete": false,
+  "status": "failed",
+  "plan": {
+    "coverage": "docs/evidence/phase3/tier-independent-sixth-coverage.json",
+    "workers": 8,
+    "per_worker_ram_reservation": 314572800,
+    "seeds": [
+      22,
+      23
+    ],
+    "budget": 180,
+    "work_budget": 200000000,
+    "cases": [
+      {
+        "tier": "hard",
+        "case": "case_01",
+        "settings": {
+          "mode": "fanout_fine_escape",
+          "present_initial": 2,
+          "group_limit": 13,
+          "present_step": 1,
+          "history_step": 1,
+          "tree_prices": 2,
+          "accept_equal": true
+        }
+      },
+      {
+        "tier": "hard",
+        "case": "case_04",
+        "settings": {
+          "mode": "fanout_fine_escape",
+          "present_initial": 2,
+          "group_limit": 13,
+          "present_step": 1,
+          "history_step": 1,
+          "tree_prices": 2,
+          "accept_equal": true
+        }
+      },
+      {
+        "tier": "hard",
+        "case": "case_07",
+        "settings": {
+          "mode": "fanout_fine_escape",
+          "present_initial": 2,
+          "group_limit": 13,
+          "present_step": 1,
+          "history_step": 1,
+          "tree_prices": 2,
+          "accept_equal": true
+        }
+      },
+      {
+        "tier": "congested",
+        "case": "case_01",
+        "settings": {
+          "mode": "fanout_fine_escape",
+          "present_initial": 2,
+          "group_limit": 3,
+          "present_step": 4,
+          "history_step": 4,
+          "tree_prices": 1,
+          "accept_equal": true,
+          "escape_direct": true
+        }
+      },
+      {
+        "tier": "congested",
+        "case": "case_02",
+        "settings": {
+          "mode": "fanout_fine_escape",
+          "present_initial": 2,
+          "group_limit": 3,
+          "present_step": 4,
+          "history_step": 4,
+          "tree_prices": 1,
+          "accept_equal": true,
+          "escape_direct": true
+        }
+      },
+      {
+        "tier": "designs",
+        "case": "case_01",
+        "settings": {
+          "mode": "fanout_fine_escape",
+          "present_initial": 2,
+          "group_limit": 3,
+          "present_step": 2,
+          "history_step": 2,
+          "tree_prices": 1,
+          "accept_equal": true,
+          "escape_penalty": 8
+        }
+      },
+      {
+        "tier": "designs",
+        "case": "case_02",
+        "settings": {
+          "mode": "fanout_fine_escape",
+          "present_initial": 2,
+          "group_limit": 3,
+          "present_step": 2,
+          "history_step": 2,
+          "tree_prices": 1,
+          "accept_equal": true,
+          "escape_penalty": 8
+        }
+      }
+    ],
+    "scope": "14independent own-case walks,8workers; 180s/200M caps,42CPU-minute planned search ceiling. Plus active2worker all-tier continuation. Separate immutable parent;no competitor routes,no automatic selection. Memory gates reserve2GiB plus300MiB/worker against observed previous peaks<=49MiB."
+  },
+  "source_sha256": {
+    "/home/younix/eda-3d-routing-challenge/dev/configs/parallel-case-campaign.json": "3790c0986bae2c8eb08917c4764fc4ca2609b4eaae2469c918b2672aa4e7dffe",
+    "/home/younix/eda-3d-routing-challenge/dev/campaign_cases.py": "cbdb3f9b5cf01230eb2a624cd245d889fda07481f9d4fad81a75dc205adadead",
+    "/home/younix/eda-3d-routing-challenge/docs/evidence/phase3/tier-independent-sixth-coverage.json": "913b0ea92e123857a86f8cdfa38b3eebb3b45dfa1d3b59800bba4990d48a071e",
+    "/home/younix/eda-3d-routing-challenge/dev/run_polish.py": "e4ed5c38874cea1945514d7fd8a69086296f0c1597252f98bd45d4c1928ad252",
+    "/home/younix/eda-3d-routing-challenge/dev/solver/exact_polish.cpp": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+    "/home/younix/eda-3d-routing-challenge/dev/artifacts/build/exact_polish": "31255b5b053fd26f1f2fc43390dbe5e943fc102ef4c74372c1a4ba020e1fd7ea"
+  },
+  "workers": 8,
+  "available_ram_bytes": 14284488704,
+  "affinity_cpus": 16,
+  "rows": [
+    {
+      "tier": "hard",
+      "case": "case_04",
+      "seed": 22,
+      "run_id": "20261003T183348.565698Z-exact-polish",
+      "manifest_sha256": "0e03cee338494f484e5ec1e402a8acdcc9ef65a4c84409ca9cb1600fe48ae3b9",
+      "before_delay": 14019,
+      "after_delay": 13991,
+      "expansions": 200000000,
+      "legal": true,
+      "wrapper_wall_s": 64.56366228102706,
+      "peak_core_rss_kib": 4608
+    },
+    {
+      "tier": "hard",
+      "case": "case_07",
+      "seed": 23,
+      "run_id": "20261003T183348.571929Z-exact-polish",
+      "manifest_sha256": "37ec44df2850702fb19ffe9598ba7e6f722bbb1bbde068573a6e29fb92002cf6",
+      "before_delay": 22997,
+      "after_delay": 22947,
+      "expansions": 200000000,
+      "legal": true,
+      "wrapper_wall_s": 64.88266107300296,
+      "peak_core_rss_kib": 4864
+    },
+    {
+      "tier": "congested",
+      "case": "case_01",
+      "seed": 23,
+      "run_id": "20261003T183348.579720Z-exact-polish",
+      "manifest_sha256": "f57320c2df8a32f1c88cb4186d90c79b09efef13b869dfe4bdd2c66b407d1750",
+      "before_delay": 58975,
+      "after_delay": 58975,
+      "expansions": 200000000,
+      "legal": true,
+      "wrapper_wall_s": 64.93591867398936,
+      "peak_core_rss_kib": 5556
+    }
+  ],
+  "planned_max_core_seconds": 2520,
+  "scope": "Independent own incumbent walks,matched per-task ceilings; added parallel portfolio effort,not isolated timings. All candidates officially checked. No automatic canonical promotion.",
+  "elapsed_wall_s": 65.13904336903943,
+  "error": "CalledProcessError(2, ['/home/younix/eda-3d-routing-challenge/.venv/bin/python', '/home/younix/eda-3d-routing-challenge/dev/run_polish.py', '--suite', 'benchmarks_designs', '--case', 'case_01', '--resume-dir', '/home/younix/eda-3d-routing-challenge/dev/artifacts/20261003T165118.625816Z-exact-polish/routes', '--seed', '22', '--passes', '1000', '--budget', '180', '--work-budget', '200000000', '--mode', 'fanout_fine_escape', '--present-initial', '2', '--group-limit', '3', '--present-step', '2', '--history-step', '2', '--tree-prices', '1', '--accept-equal', '--escape-penalty', '8'])"
+}

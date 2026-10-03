@@ -1,0 +1,78 @@
+{
+  "coverage_sha256": "2f1a312218648551dcc928e826f9104b86ec55ff45283e6499fd8a9eb20c0509",
+  "pool_reports": {
+    "docs/evidence/phase3/fresh-polish-pool.json": "6bfceb7cc6cc6e8fe086c4ce847611c127d284dbcd3e6755a6eabb47bf8965e8"
+  },
+  "source_sha256": "bbb0938bfefa7d2a5e40afeb97b232529bf8c443b7701cf6aea035a601c98141",
+  "pool_manifests": {
+    "20261002T225004.449560Z-exact-polish": "26c5c71a299e73bb1d598399a3e71a715308c17fbbe3d139438de7923e963873",
+    "20261002T225004.449845Z-exact-polish": "32d352849b40cfa979e17fa78b9ed1e785cba5dcce8a24c2128dec337f962711",
+    "20261002T225128.950529Z-exact-polish": "aa8583a0a181db927f76632020c554ed66821fb8aa19e2697cab97c0d3c2c5b8",
+    "20261002T225240.816459Z-exact-polish": "a84ba098aceb8bc5dcd4a7fd83091e7e753c67267c3f76677b5dc9dd6e7a5b6e",
+    "20261002T225251.310809Z-exact-polish": "0c62a34431df1f36221f160a588ee43ca4fcb221b48e06d8553ea2b086c9c2c1",
+    "20261002T225320.729788Z-exact-polish": "7e4a7758ba8760f3fb31703018b6ecbf6dff5c82721106fc22722867487afd3a",
+    "20261002T233700.365971Z-exact-polish": "6d5ef3857e62468387b6ffa52f319da06ef8b37d5fda12c2ee2900f7e3afe1a8",
+    "20261002T233709.517640Z-exact-polish": "42b51e336aca2a17d167e2a021a77edbb4a6d6e092ef6c383c33e21baf139a85",
+    "20261002T233716.002755Z-exact-polish": "f62c5541aac22edda44800b08e4799ea69a6f84fdd7deff1cb0faba48e0d1532",
+    "20261002T233722.262770Z-exact-polish": "226434ca3fdb68974aef6bc107ca4743b37615f740c921d30521a71404019f6b"
+  },
+  "rows": [
+    {
+      "tier": "intro",
+      "artifact_directory": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T235206.369713Z-case-portfolio",
+      "score": 1.1122010598828096,
+      "previous_score": 1.1113221786806797,
+      "case_sources_changed": 1,
+      "selection_wall_s": 0.7505062010022812,
+      "portfolio_sha256": "b0fb2b9323b32a99cf284694fd7a859eb3c127208b38e8eceb48eb7a8f7d7b3a"
+    },
+    {
+      "tier": "hard",
+      "artifact_directory": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T235207.740057Z-case-portfolio",
+      "score": 1.289789888367763,
+      "previous_score": 1.289789888367763,
+      "case_sources_changed": 0,
+      "selection_wall_s": 0.3137215150054544,
+      "portfolio_sha256": "64cde16c7db609d8f407fbb8b676ee74b0a127c03f1b2bdd4ea4f5a2971fe494"
+    },
+    {
+      "tier": "scale",
+      "artifact_directory": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T235208.327150Z-case-portfolio",
+      "score": 1.0611042155024737,
+      "previous_score": 1.0611042155024737,
+      "case_sources_changed": 0,
+      "selection_wall_s": 1.5770659160334617,
+      "portfolio_sha256": "0cde62c71d6ef523790bc7288046cea86b63ba9e3e0f927e44f936f2ff05ae65"
+    },
+    {
+      "tier": "congested",
+      "artifact_directory": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T235210.830520Z-case-portfolio",
+      "score": 1.1327108721514698,
+      "previous_score": 1.1327108721514698,
+      "case_sources_changed": 0,
+      "selection_wall_s": 1.0726380639825948,
+      "portfolio_sha256": "186035b6585779e48b3e991ed2772cb93121421571fd00c80656a1707b97bef4"
+    },
+    {
+      "tier": "designs",
+      "artifact_directory": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T235212.625539Z-case-portfolio",
+      "score": 1.2792832634397222,
+      "previous_score": 1.2792832634397222,
+      "case_sources_changed": 0,
+      "selection_wall_s": 0.6383560919784941,
+      "portfolio_sha256": "36b6bcff2df4188d30c959593342d1ad247b98c915231576277426b612ca055c"
+    },
+    {
+      "tier": "stress",
+      "artifact_directory": "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261002T235213.738334Z-case-portfolio",
+      "score": 1.028389523739376,
+      "previous_score": 1.028389523739376,
+      "case_sources_changed": 0,
+      "selection_wall_s": 3.813573754974641,
+      "portfolio_sha256": "9ce12d43caf7e0ace2be9cd7da0b8f89f1929ac3a0063b769cccfb45bd0b1947"
+    }
+  ],
+  "complete": true,
+  "limitations": "Best whole-case output across declared local trials,including partial-suite development trials;benchmark-specific seed/config selection disclosed. Not a matched-budget algorithm comparison or unseen-case result. No public competitor warm starts.",
+  "total_selection_wall_s": 8.165861542976927
+}

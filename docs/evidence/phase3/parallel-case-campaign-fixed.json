@@ -1,0 +1,312 @@
+{
+  "complete": true,
+  "status": "complete",
+  "plan": {
+    "coverage": "docs/evidence/phase3/tier-independent-sixth-coverage.json",
+    "workers": 8,
+    "per_worker_ram_reservation": 314572800,
+    "seeds": [
+      22,
+      23
+    ],
+    "budget": 180,
+    "work_budget": 200000000,
+    "cases": [
+      {
+        "tier": "hard",
+        "case": "case_01",
+        "settings": {
+          "mode": "fanout_fine_escape",
+          "present_initial": 2,
+          "group_limit": 13,
+          "present_step": 1,
+          "history_step": 1,
+          "tree_prices": 2,
+          "accept_equal": true
+        }
+      },
+      {
+        "tier": "hard",
+        "case": "case_04",
+        "settings": {
+          "mode": "fanout_fine_escape",
+          "present_initial": 2,
+          "group_limit": 13,
+          "present_step": 1,
+          "history_step": 1,
+          "tree_prices": 2,
+          "accept_equal": true
+        }
+      },
+      {
+        "tier": "hard",
+        "case": "case_07",
+        "settings": {
+          "mode": "fanout_fine_escape",
+          "present_initial": 2,
+          "group_limit": 13,
+          "present_step": 1,
+          "history_step": 1,
+          "tree_prices": 2,
+          "accept_equal": true
+        }
+      },
+      {
+        "tier": "congested",
+        "case": "case_01",
+        "settings": {
+          "mode": "fanout_fine_escape",
+          "present_initial": 2,
+          "group_limit": 3,
+          "present_step": 4,
+          "history_step": 4,
+          "tree_prices": 1,
+          "accept_equal": true,
+          "escape_direct": true
+        }
+      },
+      {
+        "tier": "congested",
+        "case": "case_02",
+        "settings": {
+          "mode": "fanout_fine_escape",
+          "present_initial": 2,
+          "group_limit": 3,
+          "present_step": 4,
+          "history_step": 4,
+          "tree_prices": 1,
+          "accept_equal": true,
+          "escape_direct": true
+        }
+      },
+      {
+        "tier": "designs",
+        "case": "ctrl",
+        "settings": {
+          "mode": "fanout_fine_escape",
+          "present_initial": 2,
+          "group_limit": 3,
+          "present_step": 2,
+          "history_step": 2,
+          "tree_prices": 1,
+          "accept_equal": true,
+          "escape_penalty": 8
+        }
+      },
+      {
+        "tier": "designs",
+        "case": "int2float",
+        "settings": {
+          "mode": "fanout_fine_escape",
+          "present_initial": 2,
+          "group_limit": 3,
+          "present_step": 2,
+          "history_step": 2,
+          "tree_prices": 1,
+          "accept_equal": true,
+          "escape_penalty": 8
+        }
+      }
+    ],
+    "scope": "14independent own-case walks,8workers; 180s/200M caps,42CPU-minute planned search ceiling. Plus active2worker all-tier continuation. Separate immutable parent;no competitor routes,no automatic selection. Memory gates reserve2GiB plus300MiB/worker against observed previous peaks<=49MiB. Corrected designs names; every future result is retained even if another task fails."
+  },
+  "source_sha256": {
+    "/home/younix/eda-3d-routing-challenge/dev/configs/parallel-case-campaign.json": "8c7c163f3359e34e95b3e364ab12107c2eb428f5152b5e2cb3c1dfae9e717f96",
+    "/home/younix/eda-3d-routing-challenge/dev/campaign_cases.py": "ef1258ae6438c45d7c15a417a1583746c04edb7a98f862721e85721646bca9c7",
+    "/home/younix/eda-3d-routing-challenge/docs/evidence/phase3/tier-independent-sixth-coverage.json": "913b0ea92e123857a86f8cdfa38b3eebb3b45dfa1d3b59800bba4990d48a071e",
+    "/home/younix/eda-3d-routing-challenge/dev/run_polish.py": "e4ed5c38874cea1945514d7fd8a69086296f0c1597252f98bd45d4c1928ad252",
+    "/home/younix/eda-3d-routing-challenge/dev/solver/exact_polish.cpp": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+    "/home/younix/eda-3d-routing-challenge/dev/artifacts/build/exact_polish": "31255b5b053fd26f1f2fc43390dbe5e943fc102ef4c74372c1a4ba020e1fd7ea"
+  },
+  "workers": 8,
+  "available_ram_bytes": 13991968768,
+  "affinity_cpus": 16,
+  "rows": [
+    {
+      "tier": "congested",
+      "case": "case_01",
+      "seed": 22,
+      "run_id": "20261003T184801.892768Z-exact-polish",
+      "manifest_sha256": "fb85a06014d0f45ca442e356e33d3c18d5ac169c3da8f6e969da41c36b05c631",
+      "before_delay": 58975,
+      "after_delay": 58975,
+      "expansions": 200000000,
+      "legal": true,
+      "wrapper_wall_s": 66.7609967229655,
+      "peak_core_rss_kib": 5708
+    },
+    {
+      "tier": "hard",
+      "case": "case_04",
+      "seed": 23,
+      "run_id": "20261003T184801.881085Z-exact-polish",
+      "manifest_sha256": "42a721b063778e908e5310536c691f215ae1ad3d8df2bb8526e9804dd4eb1b88",
+      "before_delay": 14019,
+      "after_delay": 14013,
+      "expansions": 200000000,
+      "legal": true,
+      "wrapper_wall_s": 66.80857259203913,
+      "peak_core_rss_kib": 4608
+    },
+    {
+      "tier": "hard",
+      "case": "case_07",
+      "seed": 22,
+      "run_id": "20261003T184801.870160Z-exact-polish",
+      "manifest_sha256": "5c54d6c310c7e077244a5b5b2c5bb8f3f435005a05bff5d550fcd905cb7a3ef4",
+      "before_delay": 22997,
+      "after_delay": 22995,
+      "expansions": 200000000,
+      "legal": true,
+      "wrapper_wall_s": 67.7436850220547,
+      "peak_core_rss_kib": 4736
+    },
+    {
+      "tier": "congested",
+      "case": "case_01",
+      "seed": 23,
+      "run_id": "20261003T184801.906823Z-exact-polish",
+      "manifest_sha256": "84c2fb80382d0cd4c17e76cefbc4b9ec4c61d126e81e135087fc8985e6e8ed8d",
+      "before_delay": 58975,
+      "after_delay": 58975,
+      "expansions": 200000000,
+      "legal": true,
+      "wrapper_wall_s": 68.48307297396241,
+      "peak_core_rss_kib": 5576
+    },
+    {
+      "tier": "hard",
+      "case": "case_07",
+      "seed": 23,
+      "run_id": "20261003T184801.899888Z-exact-polish",
+      "manifest_sha256": "3804010b75660b6e4818e62ade1ce8900fd5bbe92f7b9f509d5235c5b46210a1",
+      "before_delay": 22997,
+      "after_delay": 22947,
+      "expansions": 200000000,
+      "legal": true,
+      "wrapper_wall_s": 70.13819944101851,
+      "peak_core_rss_kib": 4736
+    },
+    {
+      "tier": "hard",
+      "case": "case_01",
+      "seed": 23,
+      "run_id": "20261003T184801.885008Z-exact-polish",
+      "manifest_sha256": "b90b594ed9661adbe664e99ae138bd09fb494abfcf458a6830eac00a28031019",
+      "before_delay": 9054,
+      "after_delay": 9054,
+      "expansions": 200000000,
+      "legal": true,
+      "wrapper_wall_s": 70.44385493802838,
+      "peak_core_rss_kib": 4480
+    },
+    {
+      "tier": "hard",
+      "case": "case_04",
+      "seed": 22,
+      "run_id": "20261003T184801.912332Z-exact-polish",
+      "manifest_sha256": "6605732058d500589607bcad72accee42183f108eeb8c02c2df6befdb96fb7cd",
+      "before_delay": 14019,
+      "after_delay": 13991,
+      "expansions": 200000000,
+      "legal": true,
+      "wrapper_wall_s": 70.72062990203267,
+      "peak_core_rss_kib": 4480
+    },
+    {
+      "tier": "hard",
+      "case": "case_01",
+      "seed": 22,
+      "run_id": "20261003T184801.892630Z-exact-polish",
+      "manifest_sha256": "aed7a4964496dfb1edd171f0ed6724436c795c6aa99bc7d2b5772559ef37c6de",
+      "before_delay": 9054,
+      "after_delay": 9054,
+      "expansions": 200000000,
+      "legal": true,
+      "wrapper_wall_s": 71.10084835300222,
+      "peak_core_rss_kib": 4480
+    },
+    {
+      "tier": "designs",
+      "case": "ctrl",
+      "seed": 23,
+      "run_id": "20261003T184913.549420Z-exact-polish",
+      "manifest_sha256": "d192d18390926ddf348df53432745920736b83b5416a6e9c391d2d4ceaa1497c",
+      "before_delay": 56488,
+      "after_delay": 56440,
+      "expansions": 200000000,
+      "legal": true,
+      "wrapper_wall_s": 60.42432818299858,
+      "peak_core_rss_kib": 6044
+    },
+    {
+      "tier": "designs",
+      "case": "ctrl",
+      "seed": 22,
+      "run_id": "20261003T184912.744043Z-exact-polish",
+      "manifest_sha256": "80474e1b3bc4763517bdf4e3d1bfe1642872913cd6dfbdeb8a437aa4dc54ac59",
+      "before_delay": 56488,
+      "after_delay": 56454,
+      "expansions": 200000000,
+      "legal": true,
+      "wrapper_wall_s": 61.767142297991086,
+      "peak_core_rss_kib": 5936
+    },
+    {
+      "tier": "congested",
+      "case": "case_02",
+      "seed": 23,
+      "run_id": "20261003T184911.855693Z-exact-polish",
+      "manifest_sha256": "a9d50136fdfda0937cc5056bdb3a3c233946216b4acc5bcae162bd7b25488075",
+      "before_delay": 110038,
+      "after_delay": 109982,
+      "expansions": 200000000,
+      "legal": true,
+      "wrapper_wall_s": 63.33187877497403,
+      "peak_core_rss_kib": 6528
+    },
+    {
+      "tier": "congested",
+      "case": "case_02",
+      "seed": 22,
+      "run_id": "20261003T184911.795288Z-exact-polish",
+      "manifest_sha256": "696f5d0897bbea62d8b46b0b1e027d6a63e18758c5fda3397213fcf6f2c38b90",
+      "before_delay": 110038,
+      "after_delay": 110008,
+      "expansions": 200000000,
+      "legal": true,
+      "wrapper_wall_s": 63.817860924988054,
+      "peak_core_rss_kib": 6696
+    },
+    {
+      "tier": "designs",
+      "case": "int2float",
+      "seed": 22,
+      "run_id": "20261003T184915.195398Z-exact-polish",
+      "manifest_sha256": "a2f3df7a696beea1e807aa1996220854a240109514aa289c794b24416e60c207",
+      "before_delay": 102754,
+      "after_delay": 102658,
+      "expansions": 200000000,
+      "legal": true,
+      "wrapper_wall_s": 61.167124237981625,
+      "peak_core_rss_kib": 6412
+    },
+    {
+      "tier": "designs",
+      "case": "int2float",
+      "seed": 23,
+      "run_id": "20261003T184915.497948Z-exact-polish",
+      "manifest_sha256": "a9399a82d97aa687850bc420e457a823e51cc5508edab069a949bd00b1adc3ec",
+      "before_delay": 102754,
+      "after_delay": 102650,
+      "expansions": 200000000,
+      "legal": true,
+      "wrapper_wall_s": 61.74497783201514,
+      "peak_core_rss_kib": 6516
+    }
+  ],
+  "errors": [],
+  "planned_max_core_seconds": 2520,
+  "scope": "Independent own incumbent walks,matched per-task ceilings; added parallel portfolio effort,not isolated timings. All candidates officially checked. No automatic canonical promotion.",
+  "elapsed_wall_s": 132.55574131303
+}

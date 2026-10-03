@@ -1,0 +1,2118 @@
+{
+  "reports": {
+    "docs/evidence/phase3/evolution-basin.json": "d7c0ff657fa2b26ed341a8023a6446cffa9e994c80cf18a4369941ae35b91f81",
+    "docs/evidence/phase3/evolution-crossover.json": "1c787408e49f83d6f2bd0f3293d311dd6fd466c9a927e7767c5ca0003ad473c9",
+    "docs/evidence/phase3/evolution-delayed-full-congested.json": "a1a4fa85e624a0ac344e9e4f3390e6a3cf59242c81b71660c8d8251ff002cf12",
+    "docs/evidence/phase3/evolution-delayed-full-designs.json": "6058963258bfec47d2baf7150460212977f84a01d38d7cd071521c8dbd7d1b2b",
+    "docs/evidence/phase3/evolution-delayed-full-hard.json": "eba210698147ff2ced0927656e2f71b023f0f940a8be893e6ce1d2b2cef35727",
+    "docs/evidence/phase3/evolution-delayed-full-intro.json": "3f588be3bf0c90ab4ad5b91a856ed3887ebe987387f5cb54be1f3bf1b9204482",
+    "docs/evidence/phase3/evolution-delayed-full-scale.json": "62f13be669c6520e4d41ae86b98a4d67702ea9bcfd24fec7964447cd63da52a4",
+    "docs/evidence/phase3/evolution-delayed-full-stress.json": "bc0dd7b34fb6609e9bdcf72f453c8c54bc310fa4945f5916aff16c3b32df9551",
+    "docs/evidence/phase3/evolution-delayed-transfer.json": "4c51b949e2ec9ca1c7e838b1ea5a9e65e232b4c69a21f80c62be94b7c5bf6cbb",
+    "docs/evidence/phase3/evolution-history-crossover.json": "b10a5b171fb51be50c00542bd517caa5fb3face0264e20f229732eafeffb4430",
+    "docs/evidence/phase3/evolution-history.json": "91ac4398d495ef4a8643ee4f4225a12d97acb01233fbe6101e9fcde6b1ab0221",
+    "docs/evidence/phase3/evolution-neutral-checkpoint.json": "4a2c59e9534c693f56acc92c607bfe0cad0a8e806b6a5ebb82b8cf7f83668aab",
+    "docs/evidence/phase3/evolution-neutral-full-hard.json": "cad848499ec1bf10aa42756888b10b3c590f33fd15c0c59748acb364926f17be",
+    "docs/evidence/phase3/evolution-neutral-validation.json": "8098d0c3f869f1046a93629f9afd2fd798a05589f73b1cda41b5c086ebafd3c1",
+    "docs/evidence/phase3/evolution-order-validation.json": "e6e58e8aea40ce2855f4be4a9f4b44b161257fce0920e4de8d11b7db77dab263",
+    "docs/evidence/phase3/evolution-pilot.json": "719b2b7ed24bce52691672596d41e4be578aa8a1a2a24549aef6ec3d72c0e1c3",
+    "docs/evidence/phase3/evolution-precision.json": "aa16481e7f6103448ec140f4ad9cafc403746d1f9f1e8b8eabb491c3a7598b1a",
+    "docs/evidence/phase3/evolution-refinement.json": "c5d022ff597793c5bf0388614e7ad72a17f8adeda5caf8ea772d559bde924f98",
+    "docs/evidence/phase3/evolution-schedule.json": "9c7620f62f4bee48909ecfdd627b858acae5a51022a15cd97f08c85e980fc746",
+    "docs/evidence/phase3/evolution-slice.json": "f726cd7dd59da17126def9e7d323891d9ce12eb033b3773a18fd4f940d5a5b2f"
+  },
+  "entries": [
+    {
+      "report": "docs/evidence/phase3/evolution-basin.json",
+      "name": "control",
+      "mutation_family": "basin",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "binary_sha256": "e1b8e3c52a2b7269ff4f0b43c3641859fce32a49cd592bba2b19c76439d7eadb",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.diff",
+      "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "comparisons": [],
+      "legal_rows": 9,
+      "order_changes": 0,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption. Isolated fine-price uphill/annealing mutations; best legal state restored by existing repair transaction. No score regression allowed in retained output."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-basin.json",
+      "name": "fine_uphill",
+      "mutation_family": "basin",
+      "source_sha256": "3c1d98108f2f0d69e04dab5869c9f190a8ae4617c7b7a4c291bd5393c8940636",
+      "binary_sha256": "980aa5055700df6f08af571c9f4f82ddcc7237c05b4fbc7c719ba822b226ed38",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/3c1d98108f2f0d69e04dab5869c9f190a8ae4617c7b7a4c291bd5393c8940636.diff",
+      "patch_sha256": "79e5585e16bc4d7fb9d3598721d2ff5110b23cb427a8bf65de106bf0cdc681d6",
+      "comparisons": [
+        {
+          "variant": "fine_uphill",
+          "wins": 1,
+          "ties": 4,
+          "losses": 4,
+          "geomean_score_ratio": 0.9999719756183181,
+          "pairs": 9
+        }
+      ],
+      "legal_rows": 9,
+      "order_changes": 0,
+      "uphill_moves": 339,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption. Isolated fine-price uphill/annealing mutations; best legal state restored by existing repair transaction. No score regression allowed in retained output."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-basin.json",
+      "name": "fine_anneal",
+      "mutation_family": "basin",
+      "source_sha256": "1361bc39ee460e2f094c1a5db1a9dc527b3540e1e38845ce2da32f14e18bb269",
+      "binary_sha256": "58fd768cc5123b1a66e040090f0bde01cd78ea9499ef1aa4bd6656ca6626db4c",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/1361bc39ee460e2f094c1a5db1a9dc527b3540e1e38845ce2da32f14e18bb269.diff",
+      "patch_sha256": "a84a5306a63e2774ea3d0f2a91ab1f7482768dd8424caba7cc7569d6095d7755",
+      "comparisons": [
+        {
+          "variant": "fine_anneal",
+          "wins": 2,
+          "ties": 3,
+          "losses": 4,
+          "geomean_score_ratio": 0.9999851404118583,
+          "pairs": 9
+        }
+      ],
+      "legal_rows": 9,
+      "order_changes": 0,
+      "uphill_moves": 139,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption. Isolated fine-price uphill/annealing mutations; best legal state restored by existing repair transaction. No score regression allowed in retained output."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-basin.json",
+      "name": "fine_anneal_warm",
+      "mutation_family": "basin",
+      "source_sha256": "8ff993fdc5716a5caacd2ba2c76b2146c5ccdd23a83b546dc5ba2aa3d12c993b",
+      "binary_sha256": "dbd0ca3efc2a8d83f091c290d1aae4e58f4e41b0f0d410c63e424b3ab7e60400",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/8ff993fdc5716a5caacd2ba2c76b2146c5ccdd23a83b546dc5ba2aa3d12c993b.diff",
+      "patch_sha256": "d2a0399302738e8cebfd18e6ee10e92eea44fb70e3489d081cda418c79676015",
+      "comparisons": [
+        {
+          "variant": "fine_anneal_warm",
+          "wins": 1,
+          "ties": 4,
+          "losses": 4,
+          "geomean_score_ratio": 0.9999277967465613,
+          "pairs": 9
+        }
+      ],
+      "legal_rows": 9,
+      "order_changes": 0,
+      "uphill_moves": 270,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption. Isolated fine-price uphill/annealing mutations; best legal state restored by existing repair transaction. No score regression allowed in retained output."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-crossover.json",
+      "name": "control",
+      "mutation_family": "mixed",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "binary_sha256": "e1b8e3c52a2b7269ff4f0b43c3641859fce32a49cd592bba2b19c76439d7eadb",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.diff",
+      "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "comparisons": [],
+      "legal_rows": 6,
+      "order_changes": 0,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-crossover.json",
+      "name": "conflict_last",
+      "mutation_family": "mixed",
+      "source_sha256": "365fa578781bb02255d788e14af8454080f9e4c1409bfadef18665f3e754ea50",
+      "binary_sha256": "7191a02aab0707d7d5198e4d9c6580ac1d545d183bd7cbc2f64c55158c77de6b",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/365fa578781bb02255d788e14af8454080f9e4c1409bfadef18665f3e754ea50.diff",
+      "patch_sha256": "5633bd101729235f2cbf893a9d9bce8c7963a5d593ac6420968a49212cf34588",
+      "comparisons": [
+        {
+          "variant": "conflict_last",
+          "wins": 4,
+          "ties": 2,
+          "losses": 0,
+          "geomean_score_ratio": 1.0001851119293592,
+          "pairs": 6
+        }
+      ],
+      "legal_rows": 6,
+      "order_changes": 64795,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-crossover.json",
+      "name": "flow_conflict_first",
+      "mutation_family": "mixed",
+      "source_sha256": "398f1c63bb9a18ab5cb6e0d54ed364740f1ceef70e40c3079a12abaac9b64e76",
+      "binary_sha256": "fdf6c414269ff7f861d3f386b60f1f98ae99ff105edd05132b42c130531e943d",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/398f1c63bb9a18ab5cb6e0d54ed364740f1ceef70e40c3079a12abaac9b64e76.diff",
+      "patch_sha256": "a0fd1cf135f4f7693845e1dc95eb211eebf08e0fa07c15b4e34643a66b33aec5",
+      "comparisons": [
+        {
+          "variant": "flow_conflict_first",
+          "wins": 2,
+          "ties": 3,
+          "losses": 1,
+          "geomean_score_ratio": 1.0001617545951829,
+          "pairs": 6
+        }
+      ],
+      "legal_rows": 6,
+      "order_changes": 69438,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-crossover.json",
+      "name": "fine_anneal",
+      "mutation_family": "mixed",
+      "source_sha256": "1361bc39ee460e2f094c1a5db1a9dc527b3540e1e38845ce2da32f14e18bb269",
+      "binary_sha256": "58fd768cc5123b1a66e040090f0bde01cd78ea9499ef1aa4bd6656ca6626db4c",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/1361bc39ee460e2f094c1a5db1a9dc527b3540e1e38845ce2da32f14e18bb269.diff",
+      "patch_sha256": "a84a5306a63e2774ea3d0f2a91ab1f7482768dd8424caba7cc7569d6095d7755",
+      "comparisons": [
+        {
+          "variant": "fine_anneal",
+          "wins": 0,
+          "ties": 3,
+          "losses": 3,
+          "geomean_score_ratio": 0.9998756056806816,
+          "pairs": 6
+        }
+      ],
+      "legal_rows": 6,
+      "order_changes": 0,
+      "uphill_moves": 130,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-crossover.json",
+      "name": "flow_anneal",
+      "mutation_family": "mixed",
+      "source_sha256": "cc28b6ece1a0def6c68698d79705d9b93c36b95649db5be0abb5242007deb349",
+      "binary_sha256": "6adc87b7286637f8ec630356eb60280ee0e538350c8e6c134ad1c4d5d9845521",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/cc28b6ece1a0def6c68698d79705d9b93c36b95649db5be0abb5242007deb349.diff",
+      "patch_sha256": "b959f30f0aa4fc59080b800ca486b9a883e3ad2544d46dbea1fcdd3a750073e1",
+      "comparisons": [
+        {
+          "variant": "flow_anneal",
+          "wins": 1,
+          "ties": 2,
+          "losses": 3,
+          "geomean_score_ratio": 1.0000041428507431,
+          "pairs": 6
+        }
+      ],
+      "legal_rows": 6,
+      "order_changes": 70372,
+      "uphill_moves": 127,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-crossover.json",
+      "name": "last_anneal",
+      "mutation_family": "mixed",
+      "source_sha256": "4675b998f2c7c56a85360ed9d0fc9df98c0eda16b0d5f3f9f0faf61165451525",
+      "binary_sha256": "63aee8b5f36ed74d5ab6760ba4f6cd3e2f9b83247bdef01d69c13c379c8829fb",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/4675b998f2c7c56a85360ed9d0fc9df98c0eda16b0d5f3f9f0faf61165451525.diff",
+      "patch_sha256": "d37d971894eecbe5a9653d7071513b0df51899ccd829df63484dbbbc1c100baf",
+      "comparisons": [
+        {
+          "variant": "last_anneal",
+          "wins": 2,
+          "ties": 2,
+          "losses": 2,
+          "geomean_score_ratio": 1.0001494796243464,
+          "pairs": 6
+        }
+      ],
+      "legal_rows": 6,
+      "order_changes": 65227,
+      "uphill_moves": 130,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-crossover.json",
+      "name": "flow_uphill",
+      "mutation_family": "mixed",
+      "source_sha256": "48ea58a02bbfade106e0c368a985a6abe159203f90151106042e9d7ba03d568a",
+      "binary_sha256": "8a6516446327ee219f4b0da2add0cfa1f86c91b5f126b99e39ab5e98819633ab",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/48ea58a02bbfade106e0c368a985a6abe159203f90151106042e9d7ba03d568a.diff",
+      "patch_sha256": "236cad05db04bfafd89e79f434d1075f934dbb684b043e063c43268074403ed0",
+      "comparisons": [
+        {
+          "variant": "flow_uphill",
+          "wins": 1,
+          "ties": 2,
+          "losses": 3,
+          "geomean_score_ratio": 0.999861080733068,
+          "pairs": 6
+        }
+      ],
+      "legal_rows": 6,
+      "order_changes": 69958,
+      "uphill_moves": 305,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-delayed-full-congested.json",
+      "name": "control",
+      "mutation_family": "ordering",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "binary_sha256": "e1b8e3c52a2b7269ff4f0b43c3641859fce32a49cd592bba2b19c76439d7eadb",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.diff",
+      "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "comparisons": [],
+      "legal_rows": 8,
+      "order_changes": 0,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-delayed-full-congested.json",
+      "name": "delayed_conflict_first",
+      "mutation_family": "ordering",
+      "source_sha256": "6eab965d3af2de6d08a8033c318b538d13b92eaf0f3483c9040827d1d5ae47f2",
+      "binary_sha256": "faebdf87db32959cd154b05053102172c9990d77410b85c948c36b4cf7a56839",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/6eab965d3af2de6d08a8033c318b538d13b92eaf0f3483c9040827d1d5ae47f2.diff",
+      "patch_sha256": "0e76f8e4f7c803019f3ee282d95fd78b0724738af335ef2b0cb05d5090acb9f9",
+      "comparisons": [
+        {
+          "tier": "congested",
+          "variant": "delayed_conflict_first",
+          "wins": 2,
+          "ties": 4,
+          "losses": 2,
+          "geomean_score_ratio": 0.9999810836761946,
+          "pairs": 8
+        }
+      ],
+      "legal_rows": 8,
+      "order_changes": 692,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-delayed-full-designs.json",
+      "name": "control",
+      "mutation_family": "ordering",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "binary_sha256": "e1b8e3c52a2b7269ff4f0b43c3641859fce32a49cd592bba2b19c76439d7eadb",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.diff",
+      "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "comparisons": [],
+      "legal_rows": 6,
+      "order_changes": 0,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-delayed-full-designs.json",
+      "name": "delayed_conflict_first",
+      "mutation_family": "ordering",
+      "source_sha256": "6eab965d3af2de6d08a8033c318b538d13b92eaf0f3483c9040827d1d5ae47f2",
+      "binary_sha256": "faebdf87db32959cd154b05053102172c9990d77410b85c948c36b4cf7a56839",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/6eab965d3af2de6d08a8033c318b538d13b92eaf0f3483c9040827d1d5ae47f2.diff",
+      "patch_sha256": "0e76f8e4f7c803019f3ee282d95fd78b0724738af335ef2b0cb05d5090acb9f9",
+      "comparisons": [
+        {
+          "tier": "designs",
+          "variant": "delayed_conflict_first",
+          "wins": 3,
+          "ties": 1,
+          "losses": 2,
+          "geomean_score_ratio": 1.0003231726059854,
+          "pairs": 6
+        }
+      ],
+      "legal_rows": 6,
+      "order_changes": 780,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-delayed-full-hard.json",
+      "name": "control",
+      "mutation_family": "ordering",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "binary_sha256": "e1b8e3c52a2b7269ff4f0b43c3641859fce32a49cd592bba2b19c76439d7eadb",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.diff",
+      "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "comparisons": [],
+      "legal_rows": 27,
+      "order_changes": 0,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-delayed-full-hard.json",
+      "name": "delayed_conflict_first",
+      "mutation_family": "ordering",
+      "source_sha256": "6eab965d3af2de6d08a8033c318b538d13b92eaf0f3483c9040827d1d5ae47f2",
+      "binary_sha256": "faebdf87db32959cd154b05053102172c9990d77410b85c948c36b4cf7a56839",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/6eab965d3af2de6d08a8033c318b538d13b92eaf0f3483c9040827d1d5ae47f2.diff",
+      "patch_sha256": "0e76f8e4f7c803019f3ee282d95fd78b0724738af335ef2b0cb05d5090acb9f9",
+      "comparisons": [
+        {
+          "tier": "hard",
+          "variant": "delayed_conflict_first",
+          "wins": 4,
+          "ties": 11,
+          "losses": 12,
+          "geomean_score_ratio": 0.9996835714852124,
+          "pairs": 27
+        }
+      ],
+      "legal_rows": 27,
+      "order_changes": 74217,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+      "name": "control",
+      "mutation_family": "ordering",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "binary_sha256": "e1b8e3c52a2b7269ff4f0b43c3641859fce32a49cd592bba2b19c76439d7eadb",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.diff",
+      "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "comparisons": [],
+      "legal_rows": 40,
+      "order_changes": 0,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+      "name": "delayed_conflict_first",
+      "mutation_family": "ordering",
+      "source_sha256": "6eab965d3af2de6d08a8033c318b538d13b92eaf0f3483c9040827d1d5ae47f2",
+      "binary_sha256": "faebdf87db32959cd154b05053102172c9990d77410b85c948c36b4cf7a56839",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/6eab965d3af2de6d08a8033c318b538d13b92eaf0f3483c9040827d1d5ae47f2.diff",
+      "patch_sha256": "0e76f8e4f7c803019f3ee282d95fd78b0724738af335ef2b0cb05d5090acb9f9",
+      "comparisons": [
+        {
+          "tier": "intro",
+          "variant": "delayed_conflict_first",
+          "wins": 6,
+          "ties": 29,
+          "losses": 5,
+          "geomean_score_ratio": 1.0000125824909927,
+          "pairs": 40
+        }
+      ],
+      "legal_rows": 40,
+      "order_changes": 7933,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-delayed-full-scale.json",
+      "name": "control",
+      "mutation_family": "ordering",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "binary_sha256": "e1b8e3c52a2b7269ff4f0b43c3641859fce32a49cd592bba2b19c76439d7eadb",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.diff",
+      "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "comparisons": [],
+      "legal_rows": 16,
+      "order_changes": 0,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-delayed-full-scale.json",
+      "name": "delayed_conflict_first",
+      "mutation_family": "ordering",
+      "source_sha256": "6eab965d3af2de6d08a8033c318b538d13b92eaf0f3483c9040827d1d5ae47f2",
+      "binary_sha256": "faebdf87db32959cd154b05053102172c9990d77410b85c948c36b4cf7a56839",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/6eab965d3af2de6d08a8033c318b538d13b92eaf0f3483c9040827d1d5ae47f2.diff",
+      "patch_sha256": "0e76f8e4f7c803019f3ee282d95fd78b0724738af335ef2b0cb05d5090acb9f9",
+      "comparisons": [
+        {
+          "tier": "scale",
+          "variant": "delayed_conflict_first",
+          "wins": 7,
+          "ties": 6,
+          "losses": 3,
+          "geomean_score_ratio": 1.0000706090392995,
+          "pairs": 16
+        }
+      ],
+      "legal_rows": 16,
+      "order_changes": 1108,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-delayed-full-stress.json",
+      "name": "control",
+      "mutation_family": "ordering",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "binary_sha256": "e1b8e3c52a2b7269ff4f0b43c3641859fce32a49cd592bba2b19c76439d7eadb",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.diff",
+      "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "comparisons": [],
+      "legal_rows": 2,
+      "order_changes": 0,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-delayed-full-stress.json",
+      "name": "delayed_conflict_first",
+      "mutation_family": "ordering",
+      "source_sha256": "6eab965d3af2de6d08a8033c318b538d13b92eaf0f3483c9040827d1d5ae47f2",
+      "binary_sha256": "faebdf87db32959cd154b05053102172c9990d77410b85c948c36b4cf7a56839",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/6eab965d3af2de6d08a8033c318b538d13b92eaf0f3483c9040827d1d5ae47f2.diff",
+      "patch_sha256": "0e76f8e4f7c803019f3ee282d95fd78b0724738af335ef2b0cb05d5090acb9f9",
+      "comparisons": [
+        {
+          "tier": "stress",
+          "variant": "delayed_conflict_first",
+          "wins": 0,
+          "ties": 2,
+          "losses": 0,
+          "geomean_score_ratio": 1.0,
+          "pairs": 2
+        }
+      ],
+      "legal_rows": 2,
+      "order_changes": 0,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-delayed-transfer.json",
+      "name": "control",
+      "mutation_family": "ordering",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "binary_sha256": "e1b8e3c52a2b7269ff4f0b43c3641859fce32a49cd592bba2b19c76439d7eadb",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.diff",
+      "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "comparisons": [],
+      "legal_rows": 12,
+      "order_changes": 0,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-delayed-transfer.json",
+      "name": "delayed_conflict_first",
+      "mutation_family": "ordering",
+      "source_sha256": "6eab965d3af2de6d08a8033c318b538d13b92eaf0f3483c9040827d1d5ae47f2",
+      "binary_sha256": "faebdf87db32959cd154b05053102172c9990d77410b85c948c36b4cf7a56839",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/6eab965d3af2de6d08a8033c318b538d13b92eaf0f3483c9040827d1d5ae47f2.diff",
+      "patch_sha256": "0e76f8e4f7c803019f3ee282d95fd78b0724738af335ef2b0cb05d5090acb9f9",
+      "comparisons": [
+        {
+          "tier": "congested",
+          "variant": "delayed_conflict_first",
+          "wins": 2,
+          "ties": 3,
+          "losses": 1,
+          "geomean_score_ratio": 0.9999956089607553,
+          "pairs": 6
+        },
+        {
+          "tier": "designs",
+          "variant": "delayed_conflict_first",
+          "wins": 4,
+          "ties": 0,
+          "losses": 2,
+          "geomean_score_ratio": 1.0001569121707006,
+          "pairs": 6
+        }
+      ],
+      "legal_rows": 12,
+      "order_changes": 1425,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-history-crossover.json",
+      "name": "control",
+      "mutation_family": "history-crossover",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "binary_sha256": "e1b8e3c52a2b7269ff4f0b43c3641859fce32a49cd592bba2b19c76439d7eadb",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.diff",
+      "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "comparisons": [],
+      "legal_rows": 6,
+      "order_changes": 0,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption. Cold unused-resource history decay crossed with neutral-best annealing. Both pure parents retained,not automatically replaced."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-history-crossover.json",
+      "name": "cold_decay",
+      "mutation_family": "history-crossover",
+      "source_sha256": "4a4a116c8d7fc335e34229ff7a720d75d40c1db531e5f842b75882c516f1b68c",
+      "binary_sha256": "ad4c1db93730561df823e31232492736174fd5dfad51dd5f191d121597788727",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/4a4a116c8d7fc335e34229ff7a720d75d40c1db531e5f842b75882c516f1b68c.diff",
+      "patch_sha256": "b4376d8b4663b42dd100781a9cddfe8fd47de15cd497f2754e816e58adae12a1",
+      "comparisons": [
+        {
+          "tier": "hard",
+          "variant": "cold_decay",
+          "wins": 1,
+          "ties": 5,
+          "losses": 0,
+          "geomean_score_ratio": 1.0000146251215805,
+          "pairs": 6
+        }
+      ],
+      "legal_rows": 6,
+      "order_changes": 0,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption. Cold unused-resource history decay crossed with neutral-best annealing. Both pure parents retained,not automatically replaced."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-history-crossover.json",
+      "name": "fine_anneal_neutral",
+      "mutation_family": "history-crossover",
+      "source_sha256": "5048249b7084c563c977a2e2f317424a36c9dcf84edf042c4b2120dad020ba7c",
+      "binary_sha256": "5175c7183edf87898877bad135e6a8ac6d480c77a527e7b2d565a84d61fdf557",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/5048249b7084c563c977a2e2f317424a36c9dcf84edf042c4b2120dad020ba7c.diff",
+      "patch_sha256": "08ffc0d246e5ea35ae7a390df2e4135e50691a8a3d95fcba984694d6afc62ccc",
+      "comparisons": [
+        {
+          "tier": "hard",
+          "variant": "fine_anneal_neutral",
+          "wins": 2,
+          "ties": 4,
+          "losses": 0,
+          "geomean_score_ratio": 1.0000769926704407,
+          "pairs": 6
+        }
+      ],
+      "legal_rows": 6,
+      "order_changes": 0,
+      "uphill_moves": 132,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption. Cold unused-resource history decay crossed with neutral-best annealing. Both pure parents retained,not automatically replaced."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-history-crossover.json",
+      "name": "cold_anneal_neutral",
+      "mutation_family": "history-crossover",
+      "source_sha256": "1edd4ff2fa58a42396d38be99445c947d10b156f6e076248834474b5c8542073",
+      "binary_sha256": "60166101252a268f253008575387d5085489897b769b7859171c6c762e8b6c59",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/1edd4ff2fa58a42396d38be99445c947d10b156f6e076248834474b5c8542073.diff",
+      "patch_sha256": "71704f57a349ce5f1cadf8ce9c9e1f31eb6e6a8cb44176e6dec79d032bd5d057",
+      "comparisons": [
+        {
+          "tier": "hard",
+          "variant": "cold_anneal_neutral",
+          "wins": 1,
+          "ties": 5,
+          "losses": 0,
+          "geomean_score_ratio": 1.0000146251215805,
+          "pairs": 6
+        }
+      ],
+      "legal_rows": 6,
+      "order_changes": 0,
+      "uphill_moves": 122,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption. Cold unused-resource history decay crossed with neutral-best annealing. Both pure parents retained,not automatically replaced."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-history.json",
+      "name": "control",
+      "mutation_family": "history",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "binary_sha256": "e1b8e3c52a2b7269ff4f0b43c3641859fce32a49cd592bba2b19c76439d7eadb",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.diff",
+      "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "comparisons": [],
+      "legal_rows": 15,
+      "order_changes": 0,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption. Releasable nonnegative local history tolls:projected dual-like update or unused-resource decay. Not an exact dual optimizer or dual bound."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-history.json",
+      "name": "dual_release",
+      "mutation_family": "history",
+      "source_sha256": "e8b521f87671ef79e9f794c9afb7a92ad7f3901cf2bae45030f78ccc7b9bc906",
+      "binary_sha256": "6889b2b32e02eb6308d50bc6563edef9262be110241eb0d96b64804af6347746",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/e8b521f87671ef79e9f794c9afb7a92ad7f3901cf2bae45030f78ccc7b9bc906.diff",
+      "patch_sha256": "3a7b7bb1a3dad92fe97f29f0861fb684e5fb338fbfb12a46da155c7219184aa3",
+      "comparisons": [
+        {
+          "tier": "congested",
+          "variant": "dual_release",
+          "wins": 1,
+          "ties": 0,
+          "losses": 2,
+          "geomean_score_ratio": 0.9998868789789614,
+          "pairs": 3
+        },
+        {
+          "tier": "designs",
+          "variant": "dual_release",
+          "wins": 1,
+          "ties": 0,
+          "losses": 2,
+          "geomean_score_ratio": 0.9997788945979195,
+          "pairs": 3
+        },
+        {
+          "tier": "hard",
+          "variant": "dual_release",
+          "wins": 2,
+          "ties": 5,
+          "losses": 2,
+          "geomean_score_ratio": 1.0000632339219966,
+          "pairs": 9
+        }
+      ],
+      "legal_rows": 15,
+      "order_changes": 0,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption. Releasable nonnegative local history tolls:projected dual-like update or unused-resource decay. Not an exact dual optimizer or dual bound."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-history.json",
+      "name": "cold_decay",
+      "mutation_family": "history",
+      "source_sha256": "4a4a116c8d7fc335e34229ff7a720d75d40c1db531e5f842b75882c516f1b68c",
+      "binary_sha256": "ad4c1db93730561df823e31232492736174fd5dfad51dd5f191d121597788727",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/4a4a116c8d7fc335e34229ff7a720d75d40c1db531e5f842b75882c516f1b68c.diff",
+      "patch_sha256": "b4376d8b4663b42dd100781a9cddfe8fd47de15cd497f2754e816e58adae12a1",
+      "comparisons": [
+        {
+          "tier": "congested",
+          "variant": "cold_decay",
+          "wins": 0,
+          "ties": 1,
+          "losses": 2,
+          "geomean_score_ratio": 0.9998755690009724,
+          "pairs": 3
+        },
+        {
+          "tier": "designs",
+          "variant": "cold_decay",
+          "wins": 1,
+          "ties": 0,
+          "losses": 2,
+          "geomean_score_ratio": 0.9999480259485748,
+          "pairs": 3
+        },
+        {
+          "tier": "hard",
+          "variant": "cold_decay",
+          "wins": 2,
+          "ties": 5,
+          "losses": 2,
+          "geomean_score_ratio": 1.0000863646277993,
+          "pairs": 9
+        }
+      ],
+      "legal_rows": 15,
+      "order_changes": 0,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption. Releasable nonnegative local history tolls:projected dual-like update or unused-resource decay. Not an exact dual optimizer or dual bound."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-history.json",
+      "name": "cycle_history",
+      "mutation_family": "history",
+      "source_sha256": "e36e4b7069b3ef89e13acbe89d08ec2e1059be6f37f24b3a5302c9bca2903e7c",
+      "binary_sha256": "6e89cdf7755a6454c84a9a8649e0feb7fc888d6198464dccd3be7ffddc548576",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/e36e4b7069b3ef89e13acbe89d08ec2e1059be6f37f24b3a5302c9bca2903e7c.diff",
+      "patch_sha256": "791677f61bcdb65e255004df9dad92470f393e9d7b0a5fdcc878e02145661a70",
+      "comparisons": [
+        {
+          "tier": "congested",
+          "variant": "cycle_history",
+          "wins": 1,
+          "ties": 0,
+          "losses": 2,
+          "geomean_score_ratio": 1.000067908251461,
+          "pairs": 3
+        },
+        {
+          "tier": "designs",
+          "variant": "cycle_history",
+          "wins": 1,
+          "ties": 0,
+          "losses": 2,
+          "geomean_score_ratio": 0.9999480097006396,
+          "pairs": 3
+        },
+        {
+          "tier": "hard",
+          "variant": "cycle_history",
+          "wins": 1,
+          "ties": 6,
+          "losses": 2,
+          "geomean_score_ratio": 0.999766463369124,
+          "pairs": 9
+        }
+      ],
+      "legal_rows": 15,
+      "order_changes": 0,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption. Releasable nonnegative local history tolls:projected dual-like update or unused-resource decay. Not an exact dual optimizer or dual bound."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-neutral-checkpoint.json",
+      "name": "control",
+      "mutation_family": "mixed",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "binary_sha256": "e1b8e3c52a2b7269ff4f0b43c3641859fce32a49cd592bba2b19c76439d7eadb",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.diff",
+      "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "comparisons": [],
+      "legal_rows": 9,
+      "order_changes": 0,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-neutral-checkpoint.json",
+      "name": "delayed_conflict_first",
+      "mutation_family": "mixed",
+      "source_sha256": "6eab965d3af2de6d08a8033c318b538d13b92eaf0f3483c9040827d1d5ae47f2",
+      "binary_sha256": "faebdf87db32959cd154b05053102172c9990d77410b85c948c36b4cf7a56839",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/6eab965d3af2de6d08a8033c318b538d13b92eaf0f3483c9040827d1d5ae47f2.diff",
+      "patch_sha256": "0e76f8e4f7c803019f3ee282d95fd78b0724738af335ef2b0cb05d5090acb9f9",
+      "comparisons": [
+        {
+          "tier": "hard",
+          "variant": "delayed_conflict_first",
+          "wins": 4,
+          "ties": 3,
+          "losses": 2,
+          "geomean_score_ratio": 1.0000195387953223,
+          "pairs": 9
+        }
+      ],
+      "legal_rows": 9,
+      "order_changes": 31858,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-neutral-checkpoint.json",
+      "name": "fine_anneal",
+      "mutation_family": "mixed",
+      "source_sha256": "1361bc39ee460e2f094c1a5db1a9dc527b3540e1e38845ce2da32f14e18bb269",
+      "binary_sha256": "58fd768cc5123b1a66e040090f0bde01cd78ea9499ef1aa4bd6656ca6626db4c",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/1361bc39ee460e2f094c1a5db1a9dc527b3540e1e38845ce2da32f14e18bb269.diff",
+      "patch_sha256": "a84a5306a63e2774ea3d0f2a91ab1f7482768dd8424caba7cc7569d6095d7755",
+      "comparisons": [
+        {
+          "tier": "hard",
+          "variant": "fine_anneal",
+          "wins": 1,
+          "ties": 2,
+          "losses": 6,
+          "geomean_score_ratio": 0.9996878204565511,
+          "pairs": 9
+        }
+      ],
+      "legal_rows": 9,
+      "order_changes": 0,
+      "uphill_moves": 237,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-neutral-checkpoint.json",
+      "name": "fine_anneal_neutral",
+      "mutation_family": "mixed",
+      "source_sha256": "5048249b7084c563c977a2e2f317424a36c9dcf84edf042c4b2120dad020ba7c",
+      "binary_sha256": "5175c7183edf87898877bad135e6a8ac6d480c77a527e7b2d565a84d61fdf557",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/5048249b7084c563c977a2e2f317424a36c9dcf84edf042c4b2120dad020ba7c.diff",
+      "patch_sha256": "08ffc0d246e5ea35ae7a390df2e4135e50691a8a3d95fcba984694d6afc62ccc",
+      "comparisons": [
+        {
+          "tier": "hard",
+          "variant": "fine_anneal_neutral",
+          "wins": 1,
+          "ties": 5,
+          "losses": 3,
+          "geomean_score_ratio": 1.0000483313612707,
+          "pairs": 9
+        }
+      ],
+      "legal_rows": 9,
+      "order_changes": 0,
+      "uphill_moves": 253,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-neutral-checkpoint.json",
+      "name": "fine_uphill_neutral",
+      "mutation_family": "mixed",
+      "source_sha256": "67f9928e4673f3b69253a05e2b082750b1868ea3e59cf66db4df09bb1e5a1cc3",
+      "binary_sha256": "a36fae34fc05e75f12d7d00a1263b04accbe9cdb09c6d5e44784cc6d70c81c4f",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/67f9928e4673f3b69253a05e2b082750b1868ea3e59cf66db4df09bb1e5a1cc3.diff",
+      "patch_sha256": "32f96d58e26114f13044f7c37b0869977a3ac2a6627939cb31e22b327b023e41",
+      "comparisons": [
+        {
+          "tier": "hard",
+          "variant": "fine_uphill_neutral",
+          "wins": 1,
+          "ties": 2,
+          "losses": 6,
+          "geomean_score_ratio": 0.9997195797672248,
+          "pairs": 9
+        }
+      ],
+      "legal_rows": 9,
+      "order_changes": 0,
+      "uphill_moves": 679,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-neutral-checkpoint.json",
+      "name": "delayed_anneal_neutral",
+      "mutation_family": "mixed",
+      "source_sha256": "7c069de22d5e34a18ea16ccbe97857a9a47ec698f6019fe598c06bf4b6a385a2",
+      "binary_sha256": "26a8f8b18dc94805310712eace6d568de79e363c40c228f8c16ca5f40cc3c630",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/7c069de22d5e34a18ea16ccbe97857a9a47ec698f6019fe598c06bf4b6a385a2.diff",
+      "patch_sha256": "6f331421f18b7548683b0c9888fde8781f5f878f2990b1b5dde48718b6787c65",
+      "comparisons": [
+        {
+          "tier": "hard",
+          "variant": "delayed_anneal_neutral",
+          "wins": 1,
+          "ties": 2,
+          "losses": 6,
+          "geomean_score_ratio": 0.999753807554732,
+          "pairs": 9
+        }
+      ],
+      "legal_rows": 9,
+      "order_changes": 31900,
+      "uphill_moves": 249,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-neutral-full-hard.json",
+      "name": "control",
+      "mutation_family": "mixed",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "binary_sha256": "e1b8e3c52a2b7269ff4f0b43c3641859fce32a49cd592bba2b19c76439d7eadb",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.diff",
+      "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "comparisons": [],
+      "legal_rows": 18,
+      "order_changes": 0,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-neutral-full-hard.json",
+      "name": "fine_anneal_neutral",
+      "mutation_family": "mixed",
+      "source_sha256": "5048249b7084c563c977a2e2f317424a36c9dcf84edf042c4b2120dad020ba7c",
+      "binary_sha256": "5175c7183edf87898877bad135e6a8ac6d480c77a527e7b2d565a84d61fdf557",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/5048249b7084c563c977a2e2f317424a36c9dcf84edf042c4b2120dad020ba7c.diff",
+      "patch_sha256": "08ffc0d246e5ea35ae7a390df2e4135e50691a8a3d95fcba984694d6afc62ccc",
+      "comparisons": [
+        {
+          "tier": "hard",
+          "variant": "fine_anneal_neutral",
+          "wins": 3,
+          "ties": 12,
+          "losses": 3,
+          "geomean_score_ratio": 0.9999635620579538,
+          "pairs": 18
+        }
+      ],
+      "legal_rows": 18,
+      "order_changes": 0,
+      "uphill_moves": 378,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-neutral-validation.json",
+      "name": "control",
+      "mutation_family": "mixed",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "binary_sha256": "e1b8e3c52a2b7269ff4f0b43c3641859fce32a49cd592bba2b19c76439d7eadb",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.diff",
+      "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "comparisons": [],
+      "legal_rows": 6,
+      "order_changes": 0,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-neutral-validation.json",
+      "name": "fine_anneal_neutral",
+      "mutation_family": "mixed",
+      "source_sha256": "5048249b7084c563c977a2e2f317424a36c9dcf84edf042c4b2120dad020ba7c",
+      "binary_sha256": "5175c7183edf87898877bad135e6a8ac6d480c77a527e7b2d565a84d61fdf557",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/5048249b7084c563c977a2e2f317424a36c9dcf84edf042c4b2120dad020ba7c.diff",
+      "patch_sha256": "08ffc0d246e5ea35ae7a390df2e4135e50691a8a3d95fcba984694d6afc62ccc",
+      "comparisons": [
+        {
+          "tier": "hard",
+          "variant": "fine_anneal_neutral",
+          "wins": 2,
+          "ties": 1,
+          "losses": 3,
+          "geomean_score_ratio": 1.0002806387716743,
+          "pairs": 6
+        }
+      ],
+      "legal_rows": 6,
+      "order_changes": 0,
+      "uphill_moves": 88,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-order-validation.json",
+      "name": "control",
+      "mutation_family": "ordering",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "binary_sha256": "e1b8e3c52a2b7269ff4f0b43c3641859fce32a49cd592bba2b19c76439d7eadb",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.diff",
+      "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "comparisons": [],
+      "legal_rows": 6,
+      "order_changes": 0,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-order-validation.json",
+      "name": "conflict_last",
+      "mutation_family": "ordering",
+      "source_sha256": "365fa578781bb02255d788e14af8454080f9e4c1409bfadef18665f3e754ea50",
+      "binary_sha256": "7191a02aab0707d7d5198e4d9c6580ac1d545d183bd7cbc2f64c55158c77de6b",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/365fa578781bb02255d788e14af8454080f9e4c1409bfadef18665f3e754ea50.diff",
+      "patch_sha256": "5633bd101729235f2cbf893a9d9bce8c7963a5d593ac6420968a49212cf34588",
+      "comparisons": [
+        {
+          "variant": "conflict_last",
+          "wins": 1,
+          "ties": 2,
+          "losses": 3,
+          "geomean_score_ratio": 0.9996254079874102,
+          "pairs": 6
+        }
+      ],
+      "legal_rows": 6,
+      "order_changes": 31398,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-order-validation.json",
+      "name": "delayed_conflict_first",
+      "mutation_family": "ordering",
+      "source_sha256": "6eab965d3af2de6d08a8033c318b538d13b92eaf0f3483c9040827d1d5ae47f2",
+      "binary_sha256": "faebdf87db32959cd154b05053102172c9990d77410b85c948c36b4cf7a56839",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/6eab965d3af2de6d08a8033c318b538d13b92eaf0f3483c9040827d1d5ae47f2.diff",
+      "patch_sha256": "0e76f8e4f7c803019f3ee282d95fd78b0724738af335ef2b0cb05d5090acb9f9",
+      "comparisons": [
+        {
+          "variant": "delayed_conflict_first",
+          "wins": 4,
+          "ties": 0,
+          "losses": 2,
+          "geomean_score_ratio": 1.0004021272400883,
+          "pairs": 6
+        }
+      ],
+      "legal_rows": 6,
+      "order_changes": 9636,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-order-validation.json",
+      "name": "flow_conflict_first",
+      "mutation_family": "ordering",
+      "source_sha256": "398f1c63bb9a18ab5cb6e0d54ed364740f1ceef70e40c3079a12abaac9b64e76",
+      "binary_sha256": "fdf6c414269ff7f861d3f386b60f1f98ae99ff105edd05132b42c130531e943d",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/398f1c63bb9a18ab5cb6e0d54ed364740f1ceef70e40c3079a12abaac9b64e76.diff",
+      "patch_sha256": "a0fd1cf135f4f7693845e1dc95eb211eebf08e0fa07c15b4e34643a66b33aec5",
+      "comparisons": [
+        {
+          "variant": "flow_conflict_first",
+          "wins": 1,
+          "ties": 3,
+          "losses": 2,
+          "geomean_score_ratio": 0.9994506706372768,
+          "pairs": 6
+        }
+      ],
+      "legal_rows": 6,
+      "order_changes": 33376,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-order-validation.json",
+      "name": "rotate_order",
+      "mutation_family": "ordering",
+      "source_sha256": "99ebdfe070776bbead52b0dcd6c0917afd709d7b5f173260f77d26cb24ae7d1d",
+      "binary_sha256": "ce90c3fec09c18f55f76a24be4719f64354c91c4b1d0dbf9bcee467f63adfd7f",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/99ebdfe070776bbead52b0dcd6c0917afd709d7b5f173260f77d26cb24ae7d1d.diff",
+      "patch_sha256": "7ee25c724ace0d5cf17816aac105adf38e054f7bc5382f5387b807801a88cd38",
+      "comparisons": [
+        {
+          "variant": "rotate_order",
+          "wins": 1,
+          "ties": 2,
+          "losses": 3,
+          "geomean_score_ratio": 0.9995011203481952,
+          "pairs": 6
+        }
+      ],
+      "legal_rows": 6,
+      "order_changes": 38564,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-pilot.json",
+      "name": "control",
+      "mutation_family": "ordering",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "binary_sha256": "e1b8e3c52a2b7269ff4f0b43c3641859fce32a49cd592bba2b19c76439d7eadb",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.diff",
+      "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "comparisons": [],
+      "legal_rows": 9,
+      "order_changes": 0,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-pilot.json",
+      "name": "conflict_first",
+      "mutation_family": "ordering",
+      "source_sha256": "783b880aabd9e4e2376b2ceee291766ec8aeb242df575c29f59784b8bf59b819",
+      "binary_sha256": "bb945f543c5d81932d6c41fe653198ff9e8bcb279ae496c4d2d585f14beaadbe",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/783b880aabd9e4e2376b2ceee291766ec8aeb242df575c29f59784b8bf59b819.diff",
+      "patch_sha256": "7061bf0ddb71bb3970d6f9cb28e8dc27d94ef842370d0a417b178d7a5efc2ba9",
+      "comparisons": [
+        {
+          "variant": "conflict_first",
+          "wins": 0,
+          "ties": 6,
+          "losses": 3,
+          "geomean_delay_ratio": 0.9998729172814225,
+          "pairs": 9
+        }
+      ],
+      "legal_rows": 9,
+      "order_changes": 0,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-pilot.json",
+      "name": "conflict_last",
+      "mutation_family": "ordering",
+      "source_sha256": "94bf040099b7c2262c97da9e322d8f7411b2f4d6833ffc0904aad1ec1660b2a7",
+      "binary_sha256": "58ded86fe97b652d4a25215cd9b4ab99b65a5c72412851a477e6c8f07da16862",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/94bf040099b7c2262c97da9e322d8f7411b2f4d6833ffc0904aad1ec1660b2a7.diff",
+      "patch_sha256": "0a295bf1ecc08701f2a4c97572b3caa5816804f2072f3f314b3b509f20739445",
+      "comparisons": [
+        {
+          "variant": "conflict_last",
+          "wins": 0,
+          "ties": 6,
+          "losses": 3,
+          "geomean_delay_ratio": 0.9998729172814225,
+          "pairs": 9
+        }
+      ],
+      "legal_rows": 9,
+      "order_changes": 0,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-precision.json",
+      "name": "control",
+      "mutation_family": "precision",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "binary_sha256": "e1b8e3c52a2b7269ff4f0b43c3641859fce32a49cd592bba2b19c76439d7eadb",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.diff",
+      "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "comparisons": [],
+      "legal_rows": 15,
+      "order_changes": 0,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption. Finer fixed-point congestion units;all physical distances and reported scores unchanged. No training or external model API."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-precision.json",
+      "name": "precision64",
+      "mutation_family": "precision",
+      "source_sha256": "e1358831e86caa1ee94ff49d76bbbf78618394fcc75967ae8f637bfd14d5d600",
+      "binary_sha256": "3ed30acd29b8becf7464111594b83a7f9ea55c335d08c46bbf1410fd57595861",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/e1358831e86caa1ee94ff49d76bbbf78618394fcc75967ae8f637bfd14d5d600.diff",
+      "patch_sha256": "3314db6ffe35df47a147f3894dcaa853a78d98743d5ae42b2779469e19308c05",
+      "comparisons": [
+        {
+          "tier": "congested",
+          "variant": "precision64",
+          "wins": 0,
+          "ties": 3,
+          "losses": 0,
+          "geomean_score_ratio": 1.0,
+          "pairs": 3
+        },
+        {
+          "tier": "designs",
+          "variant": "precision64",
+          "wins": 0,
+          "ties": 3,
+          "losses": 0,
+          "geomean_score_ratio": 1.0,
+          "pairs": 3
+        },
+        {
+          "tier": "hard",
+          "variant": "precision64",
+          "wins": 3,
+          "ties": 4,
+          "losses": 2,
+          "geomean_score_ratio": 0.999647853484696,
+          "pairs": 9
+        }
+      ],
+      "legal_rows": 15,
+      "order_changes": 0,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption. Finer fixed-point congestion units;all physical distances and reported scores unchanged. No training or external model API."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-precision.json",
+      "name": "precision256",
+      "mutation_family": "precision",
+      "source_sha256": "eddae4b33d06f15040aeb9f0d7fd46c951397b1d7b55a1c5403e8073bb552747",
+      "binary_sha256": "5e953ee90b461659b370af70978b3b40ab9f35bef8ff6d17a451bfbd58393bc4",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/eddae4b33d06f15040aeb9f0d7fd46c951397b1d7b55a1c5403e8073bb552747.diff",
+      "patch_sha256": "036a30b4a779c94c06c99ec54a2821287927f34e86a8fb73830fdeb42b2ab922",
+      "comparisons": [
+        {
+          "tier": "congested",
+          "variant": "precision256",
+          "wins": 0,
+          "ties": 3,
+          "losses": 0,
+          "geomean_score_ratio": 1.0,
+          "pairs": 3
+        },
+        {
+          "tier": "designs",
+          "variant": "precision256",
+          "wins": 0,
+          "ties": 3,
+          "losses": 0,
+          "geomean_score_ratio": 1.0,
+          "pairs": 3
+        },
+        {
+          "tier": "hard",
+          "variant": "precision256",
+          "wins": 3,
+          "ties": 4,
+          "losses": 2,
+          "geomean_score_ratio": 0.999647853484696,
+          "pairs": 9
+        }
+      ],
+      "legal_rows": 15,
+      "order_changes": 0,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption. Finer fixed-point congestion units;all physical distances and reported scores unchanged. No training or external model API."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-precision.json",
+      "name": "precision1024",
+      "mutation_family": "precision",
+      "source_sha256": "d80c4846eb6c8c229fc0636f0e63a4d859ba46d0f6db3135466180fd31b6b8d6",
+      "binary_sha256": "05ae741b62dc01c83df0f753e23250af0c604654d8661ff20839a1546d829d9b",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/d80c4846eb6c8c229fc0636f0e63a4d859ba46d0f6db3135466180fd31b6b8d6.diff",
+      "patch_sha256": "7d0af77a35326065b53bd04ebf6707fd55c0847d4a9f875902cb2fb9959c19e7",
+      "comparisons": [
+        {
+          "tier": "congested",
+          "variant": "precision1024",
+          "wins": 0,
+          "ties": 3,
+          "losses": 0,
+          "geomean_score_ratio": 1.0,
+          "pairs": 3
+        },
+        {
+          "tier": "designs",
+          "variant": "precision1024",
+          "wins": 0,
+          "ties": 3,
+          "losses": 0,
+          "geomean_score_ratio": 1.0,
+          "pairs": 3
+        },
+        {
+          "tier": "hard",
+          "variant": "precision1024",
+          "wins": 3,
+          "ties": 4,
+          "losses": 2,
+          "geomean_score_ratio": 0.999647853484696,
+          "pairs": 9
+        }
+      ],
+      "legal_rows": 15,
+      "order_changes": 0,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption. Finer fixed-point congestion units;all physical distances and reported scores unchanged. No training or external model API."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-refinement.json",
+      "name": "control",
+      "mutation_family": "ordering",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "binary_sha256": "e1b8e3c52a2b7269ff4f0b43c3641859fce32a49cd592bba2b19c76439d7eadb",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.diff",
+      "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "comparisons": [],
+      "legal_rows": 9,
+      "order_changes": 0,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-refinement.json",
+      "name": "conflict_first",
+      "mutation_family": "ordering",
+      "source_sha256": "87b33c01929423f1fbda14f9a27d39976310023cc4f8ca579d70148d77c4bd8e",
+      "binary_sha256": "c5e35d6d7fd11658e0c2561a9fcc9679e3b7f5d0b24e0a9569c69328a34cbe38",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/87b33c01929423f1fbda14f9a27d39976310023cc4f8ca579d70148d77c4bd8e.diff",
+      "patch_sha256": "c1a3cbb47b39dec7b59976d8e5f256e72abf387bbd83d79ad90ef26049d5e161",
+      "comparisons": [
+        {
+          "variant": "conflict_first",
+          "wins": 0,
+          "ties": 6,
+          "losses": 3,
+          "geomean_score_ratio": 0.9999163121890344,
+          "pairs": 9
+        }
+      ],
+      "legal_rows": 9,
+      "order_changes": 96404,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-refinement.json",
+      "name": "conflict_last",
+      "mutation_family": "ordering",
+      "source_sha256": "365fa578781bb02255d788e14af8454080f9e4c1409bfadef18665f3e754ea50",
+      "binary_sha256": "7191a02aab0707d7d5198e4d9c6580ac1d545d183bd7cbc2f64c55158c77de6b",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/365fa578781bb02255d788e14af8454080f9e4c1409bfadef18665f3e754ea50.diff",
+      "patch_sha256": "5633bd101729235f2cbf893a9d9bce8c7963a5d593ac6420968a49212cf34588",
+      "comparisons": [
+        {
+          "variant": "conflict_last",
+          "wins": 3,
+          "ties": 5,
+          "losses": 1,
+          "geomean_score_ratio": 1.0000981158627968,
+          "pairs": 9
+        }
+      ],
+      "legal_rows": 9,
+      "order_changes": 99060,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-refinement.json",
+      "name": "delayed_conflict_first",
+      "mutation_family": "ordering",
+      "source_sha256": "6eab965d3af2de6d08a8033c318b538d13b92eaf0f3483c9040827d1d5ae47f2",
+      "binary_sha256": "faebdf87db32959cd154b05053102172c9990d77410b85c948c36b4cf7a56839",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/6eab965d3af2de6d08a8033c318b538d13b92eaf0f3483c9040827d1d5ae47f2.diff",
+      "patch_sha256": "0e76f8e4f7c803019f3ee282d95fd78b0724738af335ef2b0cb05d5090acb9f9",
+      "comparisons": [
+        {
+          "variant": "delayed_conflict_first",
+          "wins": 3,
+          "ties": 3,
+          "losses": 3,
+          "geomean_score_ratio": 1.0000244953558968,
+          "pairs": 9
+        }
+      ],
+      "legal_rows": 9,
+      "order_changes": 27080,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-refinement.json",
+      "name": "flow_conflict_first",
+      "mutation_family": "ordering",
+      "source_sha256": "398f1c63bb9a18ab5cb6e0d54ed364740f1ceef70e40c3079a12abaac9b64e76",
+      "binary_sha256": "fdf6c414269ff7f861d3f386b60f1f98ae99ff105edd05132b42c130531e943d",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/398f1c63bb9a18ab5cb6e0d54ed364740f1ceef70e40c3079a12abaac9b64e76.diff",
+      "patch_sha256": "a0fd1cf135f4f7693845e1dc95eb211eebf08e0fa07c15b4e34643a66b33aec5",
+      "comparisons": [
+        {
+          "variant": "flow_conflict_first",
+          "wins": 3,
+          "ties": 5,
+          "losses": 1,
+          "geomean_score_ratio": 1.0000873851671581,
+          "pairs": 9
+        }
+      ],
+      "legal_rows": 9,
+      "order_changes": 106759,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-refinement.json",
+      "name": "rotate_order",
+      "mutation_family": "ordering",
+      "source_sha256": "99ebdfe070776bbead52b0dcd6c0917afd709d7b5f173260f77d26cb24ae7d1d",
+      "binary_sha256": "ce90c3fec09c18f55f76a24be4719f64354c91c4b1d0dbf9bcee467f63adfd7f",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/99ebdfe070776bbead52b0dcd6c0917afd709d7b5f173260f77d26cb24ae7d1d.diff",
+      "patch_sha256": "7ee25c724ace0d5cf17816aac105adf38e054f7bc5382f5387b807801a88cd38",
+      "comparisons": [
+        {
+          "variant": "rotate_order",
+          "wins": 2,
+          "ties": 4,
+          "losses": 3,
+          "geomean_score_ratio": 1.0000539842477791,
+          "pairs": 9
+        }
+      ],
+      "legal_rows": 9,
+      "order_changes": 125037,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-schedule.json",
+      "name": "control",
+      "mutation_family": "scheduling",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "binary_sha256": "e1b8e3c52a2b7269ff4f0b43c3641859fce32a49cd592bba2b19c76439d7eadb",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.diff",
+      "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "comparisons": [],
+      "legal_rows": 12,
+      "order_changes": 0,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption. Budget scheduling refinement prompted by stress profiles:50M consumed by initial polish before any repair proposals. Compare repair-first with existing polish-first."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-schedule.json",
+      "name": "repair_first",
+      "mutation_family": "scheduling",
+      "source_sha256": "ce82916aa4d620a79fad50a0de4a68ad15cc995adf3efb604187a532b744fe6b",
+      "binary_sha256": "16557aae7d15cb5dd5f4dadf71eeac20d7892323a56ffd44bd33de16be14d155",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/ce82916aa4d620a79fad50a0de4a68ad15cc995adf3efb604187a532b744fe6b.diff",
+      "patch_sha256": "d5fdab7e72d1c0ac71b584ec94daf7a4716f7d08b5d4c3c8899ba6eee8fb30c3",
+      "comparisons": [
+        {
+          "tier": "designs",
+          "variant": "repair_first",
+          "wins": 0,
+          "ties": 0,
+          "losses": 2,
+          "geomean_score_ratio": 0.9988587598420299,
+          "pairs": 2
+        },
+        {
+          "tier": "hard",
+          "variant": "repair_first",
+          "wins": 1,
+          "ties": 0,
+          "losses": 1,
+          "geomean_score_ratio": 0.9994277129511974,
+          "pairs": 2
+        },
+        {
+          "tier": "scale",
+          "variant": "repair_first",
+          "wins": 4,
+          "ties": 0,
+          "losses": 2,
+          "geomean_score_ratio": 1.000078745075632,
+          "pairs": 6
+        },
+        {
+          "tier": "stress",
+          "variant": "repair_first",
+          "wins": 0,
+          "ties": 0,
+          "losses": 2,
+          "geomean_score_ratio": 0.9998504576409811,
+          "pairs": 2
+        }
+      ],
+      "legal_rows": 12,
+      "order_changes": 0,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption. Budget scheduling refinement prompted by stress profiles:50M consumed by initial polish before any repair proposals. Compare repair-first with existing polish-first."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-slice.json",
+      "name": "control",
+      "mutation_family": "scheduling",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "binary_sha256": "e1b8e3c52a2b7269ff4f0b43c3641859fce32a49cd592bba2b19c76439d7eadb",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.diff",
+      "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "comparisons": [],
+      "legal_rows": 8,
+      "order_changes": 0,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption. Bounded repair consumes at most10/25percent remaining expansion budget per pass,then physical polish. Local work-stop resets only after transaction rollback and absent global/time/stop exhaustion."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-slice.json",
+      "name": "slice10",
+      "mutation_family": "scheduling",
+      "source_sha256": "789e97c59bf0fc68328b6b5eb01c4489def35bb1ae9a5453d93bff5f5274467e",
+      "binary_sha256": "49fda8e7af99363771fe6b8caf1293a06864ae98272b81350330ddc3f2d1eac8",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/789e97c59bf0fc68328b6b5eb01c4489def35bb1ae9a5453d93bff5f5274467e.diff",
+      "patch_sha256": "bd1c4b4d8436d09a849025ed7e5ef7dd84315b5dfc9633d3add7a9db27f34a21",
+      "comparisons": [
+        {
+          "tier": "scale",
+          "variant": "slice10",
+          "wins": 4,
+          "ties": 0,
+          "losses": 2,
+          "geomean_score_ratio": 0.9999450428809383,
+          "pairs": 6
+        },
+        {
+          "tier": "stress",
+          "variant": "slice10",
+          "wins": 0,
+          "ties": 0,
+          "losses": 2,
+          "geomean_score_ratio": 0.9999630629571282,
+          "pairs": 2
+        }
+      ],
+      "legal_rows": 8,
+      "order_changes": 0,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption. Bounded repair consumes at most10/25percent remaining expansion budget per pass,then physical polish. Local work-stop resets only after transaction rollback and absent global/time/stop exhaustion."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-slice.json",
+      "name": "slice25",
+      "mutation_family": "scheduling",
+      "source_sha256": "9f33f80979d1d0565f391cc0ea4fde1f40dbb9732798aa5d71558ae7b3907eed",
+      "binary_sha256": "e86756a285d55fbb9cb5a6ae6ac19d504006cba445619621d04608ca4f904a63",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/9f33f80979d1d0565f391cc0ea4fde1f40dbb9732798aa5d71558ae7b3907eed.diff",
+      "patch_sha256": "f6b1579268fee86772f4f31a2f00389ff870a853be124f066b2225d94aa03bef",
+      "comparisons": [
+        {
+          "tier": "scale",
+          "variant": "slice25",
+          "wins": 4,
+          "ties": 0,
+          "losses": 2,
+          "geomean_score_ratio": 0.9998602753921286,
+          "pairs": 6
+        },
+        {
+          "tier": "stress",
+          "variant": "slice25",
+          "wins": 1,
+          "ties": 0,
+          "losses": 1,
+          "geomean_score_ratio": 1.000008108326848,
+          "pairs": 2
+        }
+      ],
+      "legal_rows": 8,
+      "order_changes": 0,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption. Bounded repair consumes at most10/25percent remaining expansion budget per pass,then physical polish. Local work-stop resets only after transaction rollback and absent global/time/stop exhaustion."
+    }
+  ],
+  "best_own_cases": {
+    "hard/case_01": {
+      "delay": 9048,
+      "case_sha256": "685a165a7a15811dff12839e0dbe79752b889558213f760ad5f0df6139766f5d",
+      "output": "dev/artifacts/20261003-evolution-precision/precision64/hard-case_01-31/candidate.sol.json",
+      "output_sha256": "d589065438376aa81a5e223cfbb4feec156d0f6c099065016c849d3c35415acd",
+      "report": "docs/evidence/phase3/evolution-precision.json",
+      "variant": "precision64",
+      "source_sha256": "e1358831e86caa1ee94ff49d76bbbf78618394fcc75967ae8f637bfd14d5d600",
+      "seed": 31,
+      "work_budget": 50000000
+    },
+    "hard/case_04": {
+      "delay": 13953,
+      "case_sha256": "06324939b75971e45caa9e7f19d824a254e0f61167dd6b279bbff612d77d96f1",
+      "output": "dev/artifacts/20261003-evolution-neutral-checkpoint/fine_anneal_neutral/hard-case_04-16/candidate.sol.json",
+      "output_sha256": "4887bc9ab7a4fa1833cef24d5659d087df6112753cabb702a11deef40552fb1e",
+      "report": "docs/evidence/phase3/evolution-neutral-checkpoint.json",
+      "variant": "fine_anneal_neutral",
+      "source_sha256": "5048249b7084c563c977a2e2f317424a36c9dcf84edf042c4b2120dad020ba7c",
+      "seed": 16,
+      "work_budget": 60000000
+    },
+    "hard/case_07": {
+      "delay": 22759,
+      "case_sha256": "e3475bed19f53670482b4b864a276c475b47e1cac7237d8fa26eeb48714de8f0",
+      "output": "dev/artifacts/20261003-evolution-neutral-full-hard/control/hard-case_07-42/candidate.sol.json",
+      "output_sha256": "0c802f8699c29baab6164cc44eb54aa7d47ad099512d1a6844bfc7b7e163519d",
+      "report": "docs/evidence/phase3/evolution-neutral-full-hard.json",
+      "variant": "control",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "seed": 42,
+      "work_budget": 60000000
+    },
+    "congested/case_01": {
+      "delay": 58905,
+      "case_sha256": "74f8fb9b0a4fdf230227e676999da156bd2dfea8dcacb1f8ec3407086fe11d06",
+      "output": "dev/artifacts/20261003-evolution-history/cycle_history/congested-case_01-34/candidate.sol.json",
+      "output_sha256": "140e7ba5b382f9ee26b9946c6bd50e09ea813575fbd12913ba7cca904838a8c9",
+      "report": "docs/evidence/phase3/evolution-history.json",
+      "variant": "cycle_history",
+      "source_sha256": "e36e4b7069b3ef89e13acbe89d08ec2e1059be6f37f24b3a5302c9bca2903e7c",
+      "seed": 34,
+      "work_budget": 50000000
+    },
+    "congested/case_02": {
+      "delay": 109918,
+      "case_sha256": "080b349aea6d22e149d25ca74603cec81331cace10e7731bc4d86a3a7f780740",
+      "output": "dev/artifacts/20261003-evolution-delayed-other-tiers/congested/control/congested-case_02-20/candidate.sol.json",
+      "output_sha256": "56dc9f7b392ade79c41651aa7d8bbd771dd10598c9fe8bdae96eb16a2fdb1fdc",
+      "report": "docs/evidence/phase3/evolution-delayed-full-congested.json",
+      "variant": "control",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "seed": 20,
+      "work_budget": 50000000
+    },
+    "congested/case_03": {
+      "delay": 192883,
+      "case_sha256": "e4ec45609bfbfb4c31b1b24d4d6ce5be4c4711210f39bb8e096331f66446546c",
+      "output": "dev/artifacts/20261003-evolution-delayed-other-tiers/congested/delayed_conflict_first/congested-case_03-20/candidate.sol.json",
+      "output_sha256": "4cc7cd6680de118408ab67fc49711c8fa191c7525815d4cc1310279dcf2094cf",
+      "report": "docs/evidence/phase3/evolution-delayed-full-congested.json",
+      "variant": "delayed_conflict_first",
+      "source_sha256": "6eab965d3af2de6d08a8033c318b538d13b92eaf0f3483c9040827d1d5ae47f2",
+      "seed": 20,
+      "work_budget": 50000000
+    },
+    "congested/case_04": {
+      "delay": 210953,
+      "case_sha256": "c591114d5439e4dca0c30b2db15c072e9837461f2469fabc7fea8c753729cf01",
+      "output": "dev/artifacts/20261003-evolution-delayed-transfer/control/congested-case_04-13/candidate.sol.json",
+      "output_sha256": "95f0e3eb2b2eb3e4c3c09cad38a8d91fa9279f54f082cf12a1bfad3479d3b338",
+      "report": "docs/evidence/phase3/evolution-delayed-transfer.json",
+      "variant": "control",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "seed": 13,
+      "work_budget": 50000000
+    },
+    "designs/ctrl": {
+      "delay": 56270,
+      "case_sha256": "024ebda5df67cf2077542524a2bf6109bd40937c9ee901d7d8ec0abcf55402cb",
+      "output": "dev/artifacts/20261003-evolution-delayed-transfer/delayed_conflict_first/designs-ctrl-15/candidate.sol.json",
+      "output_sha256": "5d36810cc6d4f8539a8c84df95b134017977fe29c187c5a92821f55f6e0ff361",
+      "report": "docs/evidence/phase3/evolution-delayed-transfer.json",
+      "variant": "delayed_conflict_first",
+      "source_sha256": "6eab965d3af2de6d08a8033c318b538d13b92eaf0f3483c9040827d1d5ae47f2",
+      "seed": 15,
+      "work_budget": 50000000
+    },
+    "designs/int2float": {
+      "delay": 102286,
+      "case_sha256": "1d57b7e5b69292592184aa9368930490c5f7af477f4f739db3500a329d6fb16e",
+      "output": "dev/artifacts/20261003-evolution-delayed-other-tiers/designs/delayed_conflict_first/designs-int2float-20/candidate.sol.json",
+      "output_sha256": "3f43793c9d9423df50dde2cebcf9b3f903398582a51368edf7e841f37341cca0",
+      "report": "docs/evidence/phase3/evolution-delayed-full-designs.json",
+      "variant": "delayed_conflict_first",
+      "source_sha256": "6eab965d3af2de6d08a8033c318b538d13b92eaf0f3483c9040827d1d5ae47f2",
+      "seed": 20,
+      "work_budget": 50000000
+    },
+    "designs/router": {
+      "delay": 74795,
+      "case_sha256": "34096ab422d9b1cfff1c607bfc66e28a2a9ab43eeb1e0cd34e481162f017a98c",
+      "output": "dev/artifacts/20261003-evolution-delayed-transfer/delayed_conflict_first/designs-router-14/candidate.sol.json",
+      "output_sha256": "4cf6cfbc5eaca9173e3bfc874761cf796887ca31870e8cd99d6229bfaeb60198",
+      "report": "docs/evidence/phase3/evolution-delayed-transfer.json",
+      "variant": "delayed_conflict_first",
+      "source_sha256": "6eab965d3af2de6d08a8033c318b538d13b92eaf0f3483c9040827d1d5ae47f2",
+      "seed": 14,
+      "work_budget": 50000000
+    },
+    "hard/case_02": {
+      "delay": 13938,
+      "case_sha256": "1017b8aac77273a25186858bf39dd66293d56aecebfc7b0e1f5a19c66a2d6c2e",
+      "output": "dev/artifacts/20261003-evolution-neutral-full-hard/fine_anneal_neutral/hard-case_02-42/candidate.sol.json",
+      "output_sha256": "5973ca00ccfab05041f2953a050f77f126c58d5bc2a82f18a095b6cc13a1f7b2",
+      "report": "docs/evidence/phase3/evolution-neutral-full-hard.json",
+      "variant": "fine_anneal_neutral",
+      "source_sha256": "5048249b7084c563c977a2e2f317424a36c9dcf84edf042c4b2120dad020ba7c",
+      "seed": 42,
+      "work_budget": 60000000
+    },
+    "hard/case_03": {
+      "delay": 11774,
+      "case_sha256": "4783af0f84289f7d48d70b7428d2f7b8fbcdefaf2bdfca2bac237e874bd97858",
+      "output": "dev/artifacts/20261003-evolution-delayed-full-hard/control/hard-case_03-13/candidate.sol.json",
+      "output_sha256": "be43c16e508c2a4349a63c34543abec9bd580f4fb3e116a7a8a4ccca330c8e21",
+      "report": "docs/evidence/phase3/evolution-delayed-full-hard.json",
+      "variant": "control",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "seed": 13,
+      "work_budget": 50000000
+    },
+    "hard/case_05": {
+      "delay": 16141,
+      "case_sha256": "51e44c96f14e5d3229047d6ee5ba2aa0faee94fb208f3f9e716310a0620306a1",
+      "output": "dev/artifacts/20261003-evolution-delayed-full-hard/control/hard-case_05-14/candidate.sol.json",
+      "output_sha256": "807f2cfd1c568f1d6247567ad9bbcb51ece04ceba133ab9385537b62c20f80c7",
+      "report": "docs/evidence/phase3/evolution-delayed-full-hard.json",
+      "variant": "control",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "seed": 14,
+      "work_budget": 50000000
+    },
+    "hard/case_06": {
+      "delay": 21354,
+      "case_sha256": "612b2680497826836de4d9553d8dc95d53f1d46fe07858cfdb74e43ce5582cba",
+      "output": "dev/artifacts/20261003-evolution-delayed-full-hard/delayed_conflict_first/hard-case_06-15/candidate.sol.json",
+      "output_sha256": "f9b13caa4e778139619385a0165e50acf984b72f38b23e3c40d2b0f70a2c1b10",
+      "report": "docs/evidence/phase3/evolution-delayed-full-hard.json",
+      "variant": "delayed_conflict_first",
+      "source_sha256": "6eab965d3af2de6d08a8033c318b538d13b92eaf0f3483c9040827d1d5ae47f2",
+      "seed": 15,
+      "work_budget": 50000000
+    },
+    "hard/case_08": {
+      "delay": 23622,
+      "case_sha256": "b1dbc8ed8aab7cbb457987f4b8a877b9c2adda8575b326d9822523f090cec1f2",
+      "output": "dev/artifacts/20261003-evolution-neutral-full-hard/fine_anneal_neutral/hard-case_08-42/candidate.sol.json",
+      "output_sha256": "e62658355c5d06ab41ecb6a6ac31e880e539ef937db5c9765303d7ec650e358b",
+      "report": "docs/evidence/phase3/evolution-neutral-full-hard.json",
+      "variant": "fine_anneal_neutral",
+      "source_sha256": "5048249b7084c563c977a2e2f317424a36c9dcf84edf042c4b2120dad020ba7c",
+      "seed": 42,
+      "work_budget": 60000000
+    },
+    "hard/case_09": {
+      "delay": 22580,
+      "case_sha256": "bcbd72a7bb47ec5c5f82428573ffabdb932594c4b574d552808851617b05f6c1",
+      "output": "dev/artifacts/20261003-evolution-neutral-full-hard/fine_anneal_neutral/hard-case_09-42/candidate.sol.json",
+      "output_sha256": "256cb9a4a9f0aa06258626d6823b77e1faa590e0ce2c9eca31bfd26356ff6e57",
+      "report": "docs/evidence/phase3/evolution-neutral-full-hard.json",
+      "variant": "fine_anneal_neutral",
+      "source_sha256": "5048249b7084c563c977a2e2f317424a36c9dcf84edf042c4b2120dad020ba7c",
+      "seed": 42,
+      "work_budget": 60000000
+    },
+    "intro/case_01": {
+      "delay": 206,
+      "case_sha256": "cc44aff1a21f0d4854ced9d550e95d4a77f6f475b6be0f3eec0416b070625b8c",
+      "output": "dev/artifacts/20261003-evolution-delayed-full-intro-checked/control/intro-case_01-19/candidate.sol.json",
+      "output_sha256": "cb018102e83b647c928576c62a2e0c7bd3bb3deada933068742478faf3170572",
+      "report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+      "variant": "control",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "seed": 19,
+      "work_budget": 50000000
+    },
+    "intro/case_02": {
+      "delay": 1030,
+      "case_sha256": "169d1850ef77912297e3db307ff29c6b86db307e3ea846bafd6d771f147e848a",
+      "output": "dev/artifacts/20261003-evolution-delayed-full-intro-checked/control/intro-case_02-19/candidate.sol.json",
+      "output_sha256": "0bca078a745ae6b710b52242e9fc4f0000df231176ed937789f92a1917c04c29",
+      "report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+      "variant": "control",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "seed": 19,
+      "work_budget": 50000000
+    },
+    "intro/case_03": {
+      "delay": 1611,
+      "case_sha256": "192bf94aa004b19e166888ca61ae6b6cbc0900d0f4bb108b7421494e2e85c460",
+      "output": "dev/artifacts/20261003-evolution-delayed-full-intro-checked/control/intro-case_03-19/candidate.sol.json",
+      "output_sha256": "691e537805e80e3fef0c0baee84dee9c9692ab15db6bce49256f0bcbc6a5dbe3",
+      "report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+      "variant": "control",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "seed": 19,
+      "work_budget": 50000000
+    },
+    "intro/case_04": {
+      "delay": 2036,
+      "case_sha256": "27a5b017b31d7f5f15e11894bec5c7352fe66446a11106fb918a91140916cbd0",
+      "output": "dev/artifacts/20261003-evolution-delayed-full-intro-checked/control/intro-case_04-19/candidate.sol.json",
+      "output_sha256": "9a4063a06c2620cdd3b618b877fe301d41ec903263a27469993efb840bd6a738",
+      "report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+      "variant": "control",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "seed": 19,
+      "work_budget": 50000000
+    },
+    "intro/case_05": {
+      "delay": 3761,
+      "case_sha256": "bc8121afd69bf79056e4521147ee7b92f5c95714b3c49058dfce7ed0f578d43b",
+      "output": "dev/artifacts/20261003-evolution-delayed-full-intro-checked/control/intro-case_05-19/candidate.sol.json",
+      "output_sha256": "a229a783af29dbcfa0e5df6727bef35911199abc7afdabfda791deda8d7f6093",
+      "report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+      "variant": "control",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "seed": 19,
+      "work_budget": 50000000
+    },
+    "intro/case_06": {
+      "delay": 5369,
+      "case_sha256": "b3b28f8640b5470534cc942036e7fd71ffb42f6638c366b5674eddd9499b9614",
+      "output": "dev/artifacts/20261003-evolution-delayed-full-intro-checked/control/intro-case_06-19/candidate.sol.json",
+      "output_sha256": "c10a7c6f733c898dcc3f825c74ccb1d6ecd62293b00dd37b90666ee9ce819307",
+      "report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+      "variant": "control",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "seed": 19,
+      "work_budget": 50000000
+    },
+    "intro/case_07": {
+      "delay": 5377,
+      "case_sha256": "ce99efb6e9dbb4e1d5a4891732b033636de49e734e027aff4db29aa744e556db",
+      "output": "dev/artifacts/20261003-evolution-delayed-full-intro-checked/delayed_conflict_first/intro-case_07-20/candidate.sol.json",
+      "output_sha256": "58a8ab5bd2a801510d75d5b7636be1894de8cc69d279a8d68b6003620cbd1f1c",
+      "report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+      "variant": "delayed_conflict_first",
+      "source_sha256": "6eab965d3af2de6d08a8033c318b538d13b92eaf0f3483c9040827d1d5ae47f2",
+      "seed": 20,
+      "work_budget": 50000000
+    },
+    "intro/case_08": {
+      "delay": 7727,
+      "case_sha256": "485c0189d09ddfd5ba716a4e8d2266674ea2f715855c7fbe9ca3bba09f55103f",
+      "output": "dev/artifacts/20261003-evolution-delayed-full-intro-checked/control/intro-case_08-19/candidate.sol.json",
+      "output_sha256": "ab350e8d31490691bff5ec076e7601c28d69eafbd124236aed83b9bb47dfafe5",
+      "report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+      "variant": "control",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "seed": 19,
+      "work_budget": 50000000
+    },
+    "intro/case_09": {
+      "delay": 8284,
+      "case_sha256": "343f80021db5f9b94c8701e93cc57af504aeaee4fb84849ffb4d171e13c2af6c",
+      "output": "dev/artifacts/20261003-evolution-delayed-full-intro-checked/control/intro-case_09-19/candidate.sol.json",
+      "output_sha256": "37f05f9d4ef311451c7bb0f864e692a3d8a61c679fa9bdabee29d340ce0921cb",
+      "report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+      "variant": "control",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "seed": 19,
+      "work_budget": 50000000
+    },
+    "intro/case_10": {
+      "delay": 10847,
+      "case_sha256": "a4c94e920951032e8a2d28face6a24cbb9061c9c69d5852eddce4495adfd444d",
+      "output": "dev/artifacts/20261003-evolution-delayed-full-intro-checked/control/intro-case_10-19/candidate.sol.json",
+      "output_sha256": "a7ab153ca30cf5e2654c26e6df15e5217afe58075d76085531551908cf26e524",
+      "report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+      "variant": "control",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "seed": 19,
+      "work_budget": 50000000
+    },
+    "intro/case_11": {
+      "delay": 12724,
+      "case_sha256": "de941ab2da09af4b577b916440b4a5488f5a911c7f93b99cbeefe65f24378f99",
+      "output": "dev/artifacts/20261003-evolution-delayed-full-intro-checked/control/intro-case_11-19/candidate.sol.json",
+      "output_sha256": "06e889e199d251d457c449f2ccb583d2d7eaba0d1d59261557fe7f39bd69cca9",
+      "report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+      "variant": "control",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "seed": 19,
+      "work_budget": 50000000
+    },
+    "intro/case_12": {
+      "delay": 16639,
+      "case_sha256": "2ed0461460276127a0777473b75c370bc005833f5645c4d836d9e41d8c3c7ecf",
+      "output": "dev/artifacts/20261003-evolution-delayed-full-intro-checked/control/intro-case_12-19/candidate.sol.json",
+      "output_sha256": "8e30c3d8d790d7869fec537e579c3702ee059c37e76ee83a41c70cb84c6a926b",
+      "report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+      "variant": "control",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "seed": 19,
+      "work_budget": 50000000
+    },
+    "intro/case_13": {
+      "delay": 20351,
+      "case_sha256": "f413841a7b40da4ef52825684b9b3faa4ebabc74b0463c873f0aab8090c5c77e",
+      "output": "dev/artifacts/20261003-evolution-delayed-full-intro-checked/delayed_conflict_first/intro-case_13-20/candidate.sol.json",
+      "output_sha256": "771892d1b0768a98a91b7e6cf6eb7811afbaf910f91a60b73b82f3c72ec7e4b4",
+      "report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+      "variant": "delayed_conflict_first",
+      "source_sha256": "6eab965d3af2de6d08a8033c318b538d13b92eaf0f3483c9040827d1d5ae47f2",
+      "seed": 20,
+      "work_budget": 50000000
+    },
+    "intro/case_14": {
+      "delay": 22147,
+      "case_sha256": "18a2f4f7453e613146247e88ce84880048142657c570c3d7a7787e265b2f2a40",
+      "output": "dev/artifacts/20261003-evolution-delayed-full-intro-checked/control/intro-case_14-19/candidate.sol.json",
+      "output_sha256": "c9be452d5fa0337d46a2fcf76013c9c4cad690caffdc0cc6ffb748f0220100df",
+      "report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+      "variant": "control",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "seed": 19,
+      "work_budget": 50000000
+    },
+    "intro/case_15": {
+      "delay": 25242,
+      "case_sha256": "986db029f111f85749f2ddfaddd8aa897a7377ef7c72cb00c0b1bb88eb378e9d",
+      "output": "dev/artifacts/20261003-evolution-delayed-full-intro-checked/control/intro-case_15-20/candidate.sol.json",
+      "output_sha256": "19aafa4e8629ddc7697a49b6a9fc01fecaa0a9c54a71cba49a0af5d80a06bf3c",
+      "report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+      "variant": "control",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "seed": 20,
+      "work_budget": 50000000
+    },
+    "intro/case_16": {
+      "delay": 34360,
+      "case_sha256": "80606ec42f5ae064b1c25222752ecaa01684f94f9eae7ba359b81209951ec62d",
+      "output": "dev/artifacts/20261003-evolution-delayed-full-intro-checked/delayed_conflict_first/intro-case_16-20/candidate.sol.json",
+      "output_sha256": "4d3a5c6c51bca7df41e1b936b59ae77583a296700bf5ca1b5572687ef919d034",
+      "report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+      "variant": "delayed_conflict_first",
+      "source_sha256": "6eab965d3af2de6d08a8033c318b538d13b92eaf0f3483c9040827d1d5ae47f2",
+      "seed": 20,
+      "work_budget": 50000000
+    },
+    "intro/case_17": {
+      "delay": 44658,
+      "case_sha256": "df56b2ecda8fdff6175df01d4e3a74f999fa7a289bd289e9763ea65a7c18add7",
+      "output": "dev/artifacts/20261003-evolution-delayed-full-intro-checked/control/intro-case_17-20/candidate.sol.json",
+      "output_sha256": "9b131caf94b13245d942e8ecf7405c4681082b7ea227019ea845ecd902266e76",
+      "report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+      "variant": "control",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "seed": 20,
+      "work_budget": 50000000
+    },
+    "intro/case_18": {
+      "delay": 47573,
+      "case_sha256": "209f64bb32263e7e4db36f997d4113d08ba88b7bfd9b62f49a173c24080a0136",
+      "output": "dev/artifacts/20261003-evolution-delayed-full-intro-checked/delayed_conflict_first/intro-case_18-19/candidate.sol.json",
+      "output_sha256": "d8480f65e36cbfdb28ec0e4221b362c12e2de4fd8b140e01c432b04892e557d4",
+      "report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+      "variant": "delayed_conflict_first",
+      "source_sha256": "6eab965d3af2de6d08a8033c318b538d13b92eaf0f3483c9040827d1d5ae47f2",
+      "seed": 19,
+      "work_budget": 50000000
+    },
+    "intro/case_19": {
+      "delay": 41346,
+      "case_sha256": "97b2f17901d53d2dad2f102893ab4e687a194c219e39af985fd960104cf0a7b5",
+      "output": "dev/artifacts/20261003-evolution-delayed-full-intro-checked/delayed_conflict_first/intro-case_19-19/candidate.sol.json",
+      "output_sha256": "11bf0f867e0cc4aeb27c28b172b87948c2f3e75345973028ff503bd88710ad17",
+      "report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+      "variant": "delayed_conflict_first",
+      "source_sha256": "6eab965d3af2de6d08a8033c318b538d13b92eaf0f3483c9040827d1d5ae47f2",
+      "seed": 19,
+      "work_budget": 50000000
+    },
+    "intro/case_20": {
+      "delay": 46972,
+      "case_sha256": "c701d3fc484a2d4a77c9e7bfdba030174a445c7e07ec2797d2f797d21b6241fb",
+      "output": "dev/artifacts/20261003-evolution-delayed-full-intro-checked/control/intro-case_20-20/candidate.sol.json",
+      "output_sha256": "e25622fc692dcc2967b8c1aba1e64c6875c610a1a5da66292c93ad864ce6a61c",
+      "report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+      "variant": "control",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "seed": 20,
+      "work_budget": 50000000
+    },
+    "scale/case_01": {
+      "delay": 42358,
+      "case_sha256": "86aecbc407f74b0988098c968efcb9849eb87e00306e8307dd28ef339e070458",
+      "output": "dev/artifacts/20261003-evolution-slice/control/scale-case_01-44/candidate.sol.json",
+      "output_sha256": "71e397fd33cfa7ae1028806dc4f5785096d50320422627ba586fdb8eecc528ec",
+      "report": "docs/evidence/phase3/evolution-slice.json",
+      "variant": "control",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "seed": 44,
+      "work_budget": 50000000
+    },
+    "scale/case_02": {
+      "delay": 48294,
+      "case_sha256": "e59beb3293a96da64871a1c3f5fd547d619470e178a7dd1ea6bc7aed0f90af39",
+      "output": "dev/artifacts/20261003-evolution-delayed-other-tiers/scale/delayed_conflict_first/scale-case_02-20/candidate.sol.json",
+      "output_sha256": "46b04754dc38c15e924ae0ddfe55eedbf36af3314d49bd28219f5740ddef114e",
+      "report": "docs/evidence/phase3/evolution-delayed-full-scale.json",
+      "variant": "delayed_conflict_first",
+      "source_sha256": "6eab965d3af2de6d08a8033c318b538d13b92eaf0f3483c9040827d1d5ae47f2",
+      "seed": 20,
+      "work_budget": 50000000
+    },
+    "scale/case_03": {
+      "delay": 58292,
+      "case_sha256": "46732d04f041bd582d427ed0c0fece4ecbae4208cbd7b2c90380ef359f485b4c",
+      "output": "dev/artifacts/20261003-evolution-delayed-other-tiers/scale/control/scale-case_03-19/candidate.sol.json",
+      "output_sha256": "943249a7815ded80995f612608cc12f7323439e44c0fee94f1106c3592956d3d",
+      "report": "docs/evidence/phase3/evolution-delayed-full-scale.json",
+      "variant": "control",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "seed": 19,
+      "work_budget": 50000000
+    },
+    "scale/case_04": {
+      "delay": 61258,
+      "case_sha256": "c419a4d6d2aa7093c4ebf23a9e299a1dfe486cfa24e4eb167deb92f59c820a43",
+      "output": "dev/artifacts/20261003-evolution-delayed-other-tiers/scale/control/scale-case_04-19/candidate.sol.json",
+      "output_sha256": "62a19bb5ead9335d5791d2b244f632563e586380a412ddf9ca2e296821e6a113",
+      "report": "docs/evidence/phase3/evolution-delayed-full-scale.json",
+      "variant": "control",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "seed": 19,
+      "work_budget": 50000000
+    },
+    "scale/case_05": {
+      "delay": 69373,
+      "case_sha256": "0308afa080feaae6e605419820e329770d519b3a9842db78b2cf57e9527cf85d",
+      "output": "dev/artifacts/20261003-evolution-delayed-other-tiers/scale/control/scale-case_05-19/candidate.sol.json",
+      "output_sha256": "d3affc6d45eac5c9ae96537781e25b8bbcb6e90f6bdeee05937ef7939a8b51fe",
+      "report": "docs/evidence/phase3/evolution-delayed-full-scale.json",
+      "variant": "control",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "seed": 19,
+      "work_budget": 50000000
+    },
+    "scale/case_06": {
+      "delay": 82931,
+      "case_sha256": "e3d6b3ac5e27caa6f519b16d1f2233bed3d80e14bc1dbc9d3f8850133c919b52",
+      "output": "dev/artifacts/20261003-evolution-delayed-other-tiers/scale/delayed_conflict_first/scale-case_06-19/candidate.sol.json",
+      "output_sha256": "111ad8c182f2ace67d8fdfd4804b33fc516e39d5ecca9a849219b988434b7916",
+      "report": "docs/evidence/phase3/evolution-delayed-full-scale.json",
+      "variant": "delayed_conflict_first",
+      "source_sha256": "6eab965d3af2de6d08a8033c318b538d13b92eaf0f3483c9040827d1d5ae47f2",
+      "seed": 19,
+      "work_budget": 50000000
+    },
+    "scale/case_07": {
+      "delay": 90929,
+      "case_sha256": "af966c99c83fe29ca64dbfa1862d6e95b43997ff09aeadd5b329a55fc0ead9ef",
+      "output": "dev/artifacts/20261003-evolution-delayed-other-tiers/scale/control/scale-case_07-20/candidate.sol.json",
+      "output_sha256": "552ecc83d179a0aa0741da5ef66487fe0a7c9c52facc47a83b154357b5a85dd9",
+      "report": "docs/evidence/phase3/evolution-delayed-full-scale.json",
+      "variant": "control",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "seed": 20,
+      "work_budget": 50000000
+    },
+    "scale/case_08": {
+      "delay": 116125,
+      "case_sha256": "dfa38773632df7d3560c51b443eb3a32f358ea64799caa1e6ee7ce5bd3e812c6",
+      "output": "dev/artifacts/20261003-evolution-slice/slice10/scale-case_08-45/candidate.sol.json",
+      "output_sha256": "a55aa0ab180740b8246c220b733fe36e5aac1371d8dd84d02196fdd7ca5c4344",
+      "report": "docs/evidence/phase3/evolution-slice.json",
+      "variant": "slice10",
+      "source_sha256": "789e97c59bf0fc68328b6b5eb01c4489def35bb1ae9a5453d93bff5f5274467e",
+      "seed": 45,
+      "work_budget": 50000000
+    },
+    "stress/case_01": {
+      "delay": 1109852,
+      "case_sha256": "125f9d4d871a727418cafe4ce68dda4dc93a40c6c631daaf45fa9a9c73fae550",
+      "output": "dev/artifacts/20261003-evolution-schedule/control/stress-case_01-40/candidate.sol.json",
+      "output_sha256": "e3418012bd2eef80d0717413a1f393d25af182306c37dd7c596fc633ea36b444",
+      "report": "docs/evidence/phase3/evolution-schedule.json",
+      "variant": "control",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "seed": 40,
+      "work_budget": 50000000
+    }
+  },
+  "policy": "Keep all legal source variants and their observations,including worse exploratory families. Production promotion requires full-tier/validation evidence;no automatic adoption. Score comparisons are within tiers,not summed delay or six-tier aggregate.",
+  "unique_source_count": 27,
+  "legal_evaluations": 705
+}

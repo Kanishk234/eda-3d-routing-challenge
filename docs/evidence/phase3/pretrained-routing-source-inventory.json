@@ -1,0 +1,119 @@
+{
+  "repository": "Thinklab-SJTU/EDA-AI",
+  "revision": "fd9d3a3df1cf53b6828528bab8925d35abdfa7c8",
+  "truncated": false,
+  "inference_configs": [
+    {
+      "path": "DSBRouter/evaluate/util/REST_tool/pretrained/rsmt10b.pt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b6407ae2cb9e35bcd4ccfd8cd92ffde36a95ee5d",
+      "size": 28683630,
+      "url": "https://api.github.com/repos/Thinklab-SJTU/EDA-AI/git/blobs/b6407ae2cb9e35bcd4ccfd8cd92ffde36a95ee5d"
+    },
+    {
+      "path": "DSBRouter/evaluate/util/REST_tool/pretrained/rsmt15b.pt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c425199d0a182d0f4a197521503936cdd2055000",
+      "size": 28683627,
+      "url": "https://api.github.com/repos/Thinklab-SJTU/EDA-AI/git/blobs/c425199d0a182d0f4a197521503936cdd2055000"
+    },
+    {
+      "path": "DSBRouter/evaluate/util/REST_tool/pretrained/rsmt20b.pt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4cad72880d9d103fa3ef49b0d4d4913c4d7877f0",
+      "size": 28682732,
+      "url": "https://api.github.com/repos/Thinklab-SJTU/EDA-AI/git/blobs/4cad72880d9d103fa3ef49b0d4d4913c4d7877f0"
+    },
+    {
+      "path": "DSBRouter/evaluate/util/REST_tool/pretrained/rsmt25b.pt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa92bb752287140c6300c05714c9b14f6a779387",
+      "size": 28683637,
+      "url": "https://api.github.com/repos/Thinklab-SJTU/EDA-AI/git/blobs/aa92bb752287140c6300c05714c9b14f6a779387"
+    },
+    {
+      "path": "DSBRouter/evaluate/util/REST_tool/pretrained/rsmt30b.pt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bfe1a9e7026a5f4303b71ceafbe17fde4296bd32",
+      "size": 28683630,
+      "url": "https://api.github.com/repos/Thinklab-SJTU/EDA-AI/git/blobs/bfe1a9e7026a5f4303b71ceafbe17fde4296bd32"
+    },
+    {
+      "path": "DSBRouter/evaluate/util/REST_tool/pretrained/rsmt35b.pt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a35bd316ad0a1a5eb114cd76d30b6d6fcb3da098",
+      "size": 28683638,
+      "url": "https://api.github.com/repos/Thinklab-SJTU/EDA-AI/git/blobs/a35bd316ad0a1a5eb114cd76d30b6d6fcb3da098"
+    },
+    {
+      "path": "DSBRouter/evaluate/util/REST_tool/pretrained/rsmt40b.pt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "85f554cd120ace712d46dfac25c352f6b60d3b31",
+      "size": 28683632,
+      "url": "https://api.github.com/repos/Thinklab-SJTU/EDA-AI/git/blobs/85f554cd120ace712d46dfac25c352f6b60d3b31"
+    },
+    {
+      "path": "DSBRouter/evaluate/util/REST_tool/pretrained/rsmt45b.pt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d0550e138ec9ad08c6b35fbb26ee528ff0f7cfd3",
+      "size": 28684739,
+      "url": "https://api.github.com/repos/Thinklab-SJTU/EDA-AI/git/blobs/d0550e138ec9ad08c6b35fbb26ee528ff0f7cfd3"
+    },
+    {
+      "path": "DSBRouter/evaluate/util/REST_tool/pretrained/rsmt50b.pt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e00ea5d6621daa844a8194b3d2efd389cbe27565",
+      "size": 28684723,
+      "url": "https://api.github.com/repos/Thinklab-SJTU/EDA-AI/git/blobs/e00ea5d6621daa844a8194b3d2efd389cbe27565"
+    },
+    {
+      "path": "DSBRouter/evaluate/util/REST_tool/pretrained/rsmt5b.pt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e8f5485bf76eac05555e96107dbf86dd9c9e3d7",
+      "size": 28683626,
+      "url": "https://api.github.com/repos/Thinklab-SJTU/EDA-AI/git/blobs/4e8f5485bf76eac05555e96107dbf86dd9c9e3d7"
+    },
+    {
+      "path": "DSBRouter/readme.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "daf5737361750eb95e540bbdd4063b3b160a8ab1",
+      "size": 2374,
+      "url": "https://api.github.com/repos/Thinklab-SJTU/EDA-AI/git/blobs/daf5737361750eb95e540bbdd4063b3b160a8ab1"
+    },
+    {
+      "path": "HubRouter/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1fccaa31666f9044c72f40d6a32f901179e16cd6",
+      "size": 2085,
+      "url": "https://api.github.com/repos/Thinklab-SJTU/EDA-AI/git/blobs/1fccaa31666f9044c72f40d6a32f901179e16cd6"
+    },
+    {
+      "path": "OAREST/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db3ca06a18ec2bbfec46d1f806ff76ff6647b95b",
+      "size": 3366,
+      "url": "https://api.github.com/repos/Thinklab-SJTU/EDA-AI/git/blobs/db3ca06a18ec2bbfec46d1f806ff76ff6647b95b"
+    },
+    {
+      "path": "OAREST/configs/OAREST_test.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "21572ddf08b44c7a8601c24ff2abab36f6b5daff",
+      "size": 996,
+      "url": "https://api.github.com/repos/Thinklab-SJTU/EDA-AI/git/blobs/21572ddf08b44c7a8601c24ff2abab36f6b5daff"
+    }
+  ]
+}

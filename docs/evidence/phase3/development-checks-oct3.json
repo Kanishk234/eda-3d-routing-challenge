@@ -1,0 +1,8 @@
+{
+  "command": "PYTHONPATH=dev .venv/bin/python -m unittest discover -s dev -p 'test_*.py'",
+  "tests": 106,
+  "elapsed_s": 9.122,
+  "passed": true,
+  "log_sha256": "33dadcf6ed6961b0640c932d50b1c45b3e7ea1838b6af8b898748d04a47c79b4",
+  "scope": "Development unit checks; full output official checks recorded separately. Concurrent native runs mean not a timing benchmark."
+}

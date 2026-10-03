@@ -1,0 +1,843 @@
+{
+  "status": "complete",
+  "plan": {
+    "cases": [
+      {
+        "suite": "benchmarks_hard",
+        "file": "case_01.json"
+      }
+    ],
+    "seeds": [
+      1,
+      2
+    ],
+    "work_budget": 3000000,
+    "budget": 30,
+    "rounds": 180,
+    "schedules": {
+      "aggressive": {
+        "initial": 2,
+        "multiplier": 1.12,
+        "cap": 32,
+        "history": 2,
+        "fanout_power": 0.5,
+        "conflict_only": true,
+        "full_every": 10
+      },
+      "gradual": {
+        "initial": 0.05,
+        "multiplier": 1.03,
+        "cap": 3,
+        "history": 0.05,
+        "fanout_power": 0.5,
+        "conflict_only": true,
+        "full_every": 10
+      }
+    },
+    "scope": "Followup hard01 same3M/30s ceilings; conflict-only passes plus every10th full pass. Earlier all-net report/source snapshot preserved."
+  },
+  "source_sha256": {
+    "/home/younix/eda-3d-routing-challenge/dev/configs/fresh-negotiation-conflict.json": "26aa71cf0b32e5e3602b2face1cb82c0a6c3c1b29db7f7cbbb075af24c1d1b4a",
+    "/home/younix/eda-3d-routing-challenge/dev/fresh_negotiation.py": "e8aa376738a3d53b22972b41a460f2c241465750646e05e7ca1776663cea9246",
+    "/home/younix/eda-3d-routing-challenge/dev/branch_repair.py": "fac12b4771279883b09714a76b9e05837450c8458cd4d780385ff7cb7e4e3a13",
+    "/home/younix/eda-3d-routing-challenge/dev/learned_fresh_order.py": "636a63942826686eaceae42287cf91ceccb3e67d992f59e3d4f255a32d547829"
+  },
+  "rows": [
+    {
+      "case": {
+        "suite": "benchmarks_hard",
+        "file": "case_01.json"
+      },
+      "case_sha256": "685a165a7a15811dff12839e0dbe79752b889558213f760ad5f0df6139766f5d",
+      "seed": 1,
+      "schedule": "aggressive",
+      "legal": true,
+      "delay": 10010,
+      "output_sha256": "2e496edb477c28c88f66de41ae365875b8d5ff43d26b73182bb4dca2dccc21cc",
+      "expansions": 1993273,
+      "rounds": [
+        {
+          "iteration": 0,
+          "present": 2.0,
+          "conflicting_vertices": 634,
+          "expansions": 144682
+        },
+        {
+          "iteration": 1,
+          "present": 2.24,
+          "conflicting_vertices": 370,
+          "expansions": 284604
+        },
+        {
+          "iteration": 2,
+          "present": 2.5088000000000004,
+          "conflicting_vertices": 271,
+          "expansions": 419715
+        },
+        {
+          "iteration": 3,
+          "present": 2.809856000000001,
+          "conflicting_vertices": 197,
+          "expansions": 547446
+        },
+        {
+          "iteration": 4,
+          "present": 3.147038720000001,
+          "conflicting_vertices": 134,
+          "expansions": 671545
+        },
+        {
+          "iteration": 5,
+          "present": 3.5246833664000015,
+          "conflicting_vertices": 126,
+          "expansions": 787691
+        },
+        {
+          "iteration": 6,
+          "present": 3.947645370368002,
+          "conflicting_vertices": 103,
+          "expansions": 904084
+        },
+        {
+          "iteration": 7,
+          "present": 4.421362814812163,
+          "conflicting_vertices": 79,
+          "expansions": 1015910
+        },
+        {
+          "iteration": 8,
+          "present": 4.951926352589623,
+          "conflicting_vertices": 64,
+          "expansions": 1119122
+        },
+        {
+          "iteration": 9,
+          "present": 5.546157514900378,
+          "conflicting_vertices": 51,
+          "expansions": 1214462
+        },
+        {
+          "iteration": 10,
+          "present": 6.211696416688424,
+          "conflicting_vertices": 35,
+          "expansions": 1330541
+        },
+        {
+          "iteration": 11,
+          "present": 6.957099986691036,
+          "conflicting_vertices": 37,
+          "expansions": 1408983
+        },
+        {
+          "iteration": 12,
+          "present": 7.791951985093961,
+          "conflicting_vertices": 34,
+          "expansions": 1485166
+        },
+        {
+          "iteration": 13,
+          "present": 8.726986223305238,
+          "conflicting_vertices": 23,
+          "expansions": 1565167
+        },
+        {
+          "iteration": 14,
+          "present": 9.774224570101866,
+          "conflicting_vertices": 24,
+          "expansions": 1626064
+        },
+        {
+          "iteration": 15,
+          "present": 10.947131518514091,
+          "conflicting_vertices": 16,
+          "expansions": 1684413
+        },
+        {
+          "iteration": 16,
+          "present": 12.260787300735783,
+          "conflicting_vertices": 10,
+          "expansions": 1722976
+        },
+        {
+          "iteration": 17,
+          "present": 13.732081776824078,
+          "conflicting_vertices": 7,
+          "expansions": 1754290
+        },
+        {
+          "iteration": 18,
+          "present": 15.37993159004297,
+          "conflicting_vertices": 6,
+          "expansions": 1779508
+        },
+        {
+          "iteration": 19,
+          "present": 17.225523380848127,
+          "conflicting_vertices": 5,
+          "expansions": 1796682
+        },
+        {
+          "iteration": 20,
+          "present": 19.292586186549904,
+          "conflicting_vertices": 4,
+          "expansions": 1879854
+        },
+        {
+          "iteration": 21,
+          "present": 21.607696528935897,
+          "conflicting_vertices": 3,
+          "expansions": 1890520
+        },
+        {
+          "iteration": 22,
+          "present": 24.200620112408206,
+          "conflicting_vertices": 3,
+          "expansions": 1897189
+        },
+        {
+          "iteration": 23,
+          "present": 27.10469452589719,
+          "conflicting_vertices": 3,
+          "expansions": 1903000
+        },
+        {
+          "iteration": 24,
+          "present": 30.357257869004858,
+          "conflicting_vertices": 2,
+          "expansions": 1909640
+        },
+        {
+          "iteration": 25,
+          "present": 32,
+          "conflicting_vertices": 1,
+          "expansions": 1915593
+        },
+        {
+          "iteration": 26,
+          "present": 32,
+          "conflicting_vertices": 1,
+          "expansions": 1917067
+        },
+        {
+          "iteration": 27,
+          "present": 32,
+          "conflicting_vertices": 1,
+          "expansions": 1919474
+        },
+        {
+          "iteration": 28,
+          "present": 32,
+          "conflicting_vertices": 1,
+          "expansions": 1920929
+        },
+        {
+          "iteration": 29,
+          "present": 32,
+          "conflicting_vertices": 1,
+          "expansions": 1922989
+        },
+        {
+          "iteration": 30,
+          "present": 32,
+          "conflicting_vertices": 0,
+          "expansions": 1993273,
+          "delay": 10010
+        }
+      ],
+      "limited": false,
+      "wall_s": 7.912680712004658,
+      "unreachable": false
+    },
+    {
+      "case": {
+        "suite": "benchmarks_hard",
+        "file": "case_01.json"
+      },
+      "case_sha256": "685a165a7a15811dff12839e0dbe79752b889558213f760ad5f0df6139766f5d",
+      "seed": 1,
+      "schedule": "gradual",
+      "legal": false,
+      "delay": null,
+      "output_sha256": null,
+      "expansions": 3000000,
+      "rounds": [
+        {
+          "iteration": 0,
+          "present": 0.05,
+          "conflicting_vertices": 638,
+          "expansions": 143333
+        },
+        {
+          "iteration": 1,
+          "present": 0.051500000000000004,
+          "conflicting_vertices": 635,
+          "expansions": 286814
+        },
+        {
+          "iteration": 2,
+          "present": 0.053045,
+          "conflicting_vertices": 666,
+          "expansions": 430406
+        },
+        {
+          "iteration": 3,
+          "present": 0.05463635,
+          "conflicting_vertices": 660,
+          "expansions": 574250
+        },
+        {
+          "iteration": 4,
+          "present": 0.05627544050000001,
+          "conflicting_vertices": 706,
+          "expansions": 718637
+        },
+        {
+          "iteration": 5,
+          "present": 0.05796370371500001,
+          "conflicting_vertices": 703,
+          "expansions": 863350
+        },
+        {
+          "iteration": 6,
+          "present": 0.05970261482645001,
+          "conflicting_vertices": 707,
+          "expansions": 1008321
+        },
+        {
+          "iteration": 7,
+          "present": 0.061493693271243516,
+          "conflicting_vertices": 707,
+          "expansions": 1153777
+        },
+        {
+          "iteration": 8,
+          "present": 0.06333850406938082,
+          "conflicting_vertices": 684,
+          "expansions": 1299007
+        },
+        {
+          "iteration": 9,
+          "present": 0.06523865919146225,
+          "conflicting_vertices": 716,
+          "expansions": 1444621
+        },
+        {
+          "iteration": 10,
+          "present": 0.06719581896720611,
+          "conflicting_vertices": 705,
+          "expansions": 1590713
+        },
+        {
+          "iteration": 11,
+          "present": 0.0692116935362223,
+          "conflicting_vertices": 728,
+          "expansions": 1736850
+        },
+        {
+          "iteration": 12,
+          "present": 0.07128804434230897,
+          "conflicting_vertices": 733,
+          "expansions": 1882990
+        },
+        {
+          "iteration": 13,
+          "present": 0.07342668567257825,
+          "conflicting_vertices": 744,
+          "expansions": 2029277
+        },
+        {
+          "iteration": 14,
+          "present": 0.0756294862427556,
+          "conflicting_vertices": 769,
+          "expansions": 2175867
+        },
+        {
+          "iteration": 15,
+          "present": 0.07789837083003825,
+          "conflicting_vertices": 763,
+          "expansions": 2322547
+        },
+        {
+          "iteration": 16,
+          "present": 0.08023532195493942,
+          "conflicting_vertices": 742,
+          "expansions": 2469506
+        },
+        {
+          "iteration": 17,
+          "present": 0.0826423816135876,
+          "conflicting_vertices": 735,
+          "expansions": 2616819
+        },
+        {
+          "iteration": 18,
+          "present": 0.08512165306199523,
+          "conflicting_vertices": 769,
+          "expansions": 2762230
+        },
+        {
+          "iteration": 19,
+          "present": 0.08767530265385509,
+          "conflicting_vertices": 759,
+          "expansions": 2907526
+        }
+      ],
+      "limited": true,
+      "wall_s": 13.218619130959269,
+      "unreachable": false
+    },
+    {
+      "case": {
+        "suite": "benchmarks_hard",
+        "file": "case_01.json"
+      },
+      "case_sha256": "685a165a7a15811dff12839e0dbe79752b889558213f760ad5f0df6139766f5d",
+      "seed": 2,
+      "schedule": "aggressive",
+      "legal": true,
+      "delay": 10218,
+      "output_sha256": "2a09a39e3a81a4adbdc285471a2bed6c3db6465c2c58de560c224889fc04039c",
+      "expansions": 2279326,
+      "rounds": [
+        {
+          "iteration": 0,
+          "present": 2.0,
+          "conflicting_vertices": 652,
+          "expansions": 140429
+        },
+        {
+          "iteration": 1,
+          "present": 2.24,
+          "conflicting_vertices": 383,
+          "expansions": 277333
+        },
+        {
+          "iteration": 2,
+          "present": 2.5088000000000004,
+          "conflicting_vertices": 291,
+          "expansions": 412945
+        },
+        {
+          "iteration": 3,
+          "present": 2.809856000000001,
+          "conflicting_vertices": 210,
+          "expansions": 541140
+        },
+        {
+          "iteration": 4,
+          "present": 3.147038720000001,
+          "conflicting_vertices": 166,
+          "expansions": 672021
+        },
+        {
+          "iteration": 5,
+          "present": 3.5246833664000015,
+          "conflicting_vertices": 153,
+          "expansions": 796421
+        },
+        {
+          "iteration": 6,
+          "present": 3.947645370368002,
+          "conflicting_vertices": 120,
+          "expansions": 924769
+        },
+        {
+          "iteration": 7,
+          "present": 4.421362814812163,
+          "conflicting_vertices": 90,
+          "expansions": 1045714
+        },
+        {
+          "iteration": 8,
+          "present": 4.951926352589623,
+          "conflicting_vertices": 74,
+          "expansions": 1156944
+        },
+        {
+          "iteration": 9,
+          "present": 5.546157514900378,
+          "conflicting_vertices": 59,
+          "expansions": 1262612
+        },
+        {
+          "iteration": 10,
+          "present": 6.211696416688424,
+          "conflicting_vertices": 51,
+          "expansions": 1383279
+        },
+        {
+          "iteration": 11,
+          "present": 6.957099986691036,
+          "conflicting_vertices": 31,
+          "expansions": 1469598
+        },
+        {
+          "iteration": 12,
+          "present": 7.791951985093961,
+          "conflicting_vertices": 27,
+          "expansions": 1539965
+        },
+        {
+          "iteration": 13,
+          "present": 8.726986223305238,
+          "conflicting_vertices": 21,
+          "expansions": 1602066
+        },
+        {
+          "iteration": 14,
+          "present": 9.774224570101866,
+          "conflicting_vertices": 18,
+          "expansions": 1652872
+        },
+        {
+          "iteration": 15,
+          "present": 10.947131518514091,
+          "conflicting_vertices": 15,
+          "expansions": 1697282
+        },
+        {
+          "iteration": 16,
+          "present": 12.260787300735783,
+          "conflicting_vertices": 16,
+          "expansions": 1740716
+        },
+        {
+          "iteration": 17,
+          "present": 13.732081776824078,
+          "conflicting_vertices": 11,
+          "expansions": 1774637
+        },
+        {
+          "iteration": 18,
+          "present": 15.37993159004297,
+          "conflicting_vertices": 9,
+          "expansions": 1799585
+        },
+        {
+          "iteration": 19,
+          "present": 17.225523380848127,
+          "conflicting_vertices": 7,
+          "expansions": 1821146
+        },
+        {
+          "iteration": 20,
+          "present": 19.292586186549904,
+          "conflicting_vertices": 7,
+          "expansions": 1906646
+        },
+        {
+          "iteration": 21,
+          "present": 21.607696528935897,
+          "conflicting_vertices": 6,
+          "expansions": 1926681
+        },
+        {
+          "iteration": 22,
+          "present": 24.200620112408206,
+          "conflicting_vertices": 5,
+          "expansions": 1943140
+        },
+        {
+          "iteration": 23,
+          "present": 27.10469452589719,
+          "conflicting_vertices": 3,
+          "expansions": 1956722
+        },
+        {
+          "iteration": 24,
+          "present": 30.357257869004858,
+          "conflicting_vertices": 2,
+          "expansions": 1966395
+        },
+        {
+          "iteration": 25,
+          "present": 32,
+          "conflicting_vertices": 2,
+          "expansions": 1972868
+        },
+        {
+          "iteration": 26,
+          "present": 32,
+          "conflicting_vertices": 2,
+          "expansions": 1981716
+        },
+        {
+          "iteration": 27,
+          "present": 32,
+          "conflicting_vertices": 2,
+          "expansions": 1988693
+        },
+        {
+          "iteration": 28,
+          "present": 32,
+          "conflicting_vertices": 3,
+          "expansions": 1996044
+        },
+        {
+          "iteration": 29,
+          "present": 32,
+          "conflicting_vertices": 2,
+          "expansions": 2005304
+        },
+        {
+          "iteration": 30,
+          "present": 32,
+          "conflicting_vertices": 2,
+          "expansions": 2074896
+        },
+        {
+          "iteration": 31,
+          "present": 32,
+          "conflicting_vertices": 2,
+          "expansions": 2081982
+        },
+        {
+          "iteration": 32,
+          "present": 32,
+          "conflicting_vertices": 2,
+          "expansions": 2090666
+        },
+        {
+          "iteration": 33,
+          "present": 32,
+          "conflicting_vertices": 3,
+          "expansions": 2100229
+        },
+        {
+          "iteration": 34,
+          "present": 32,
+          "conflicting_vertices": 3,
+          "expansions": 2112320
+        },
+        {
+          "iteration": 35,
+          "present": 32,
+          "conflicting_vertices": 3,
+          "expansions": 2124534
+        },
+        {
+          "iteration": 36,
+          "present": 32,
+          "conflicting_vertices": 3,
+          "expansions": 2136829
+        },
+        {
+          "iteration": 37,
+          "present": 32,
+          "conflicting_vertices": 3,
+          "expansions": 2149275
+        },
+        {
+          "iteration": 38,
+          "present": 32,
+          "conflicting_vertices": 2,
+          "expansions": 2160957
+        },
+        {
+          "iteration": 39,
+          "present": 32,
+          "conflicting_vertices": 2,
+          "expansions": 2170051
+        },
+        {
+          "iteration": 40,
+          "present": 32,
+          "conflicting_vertices": 1,
+          "expansions": 2240828
+        },
+        {
+          "iteration": 41,
+          "present": 32,
+          "conflicting_vertices": 1,
+          "expansions": 2245771
+        },
+        {
+          "iteration": 42,
+          "present": 32,
+          "conflicting_vertices": 1,
+          "expansions": 2250753
+        },
+        {
+          "iteration": 43,
+          "present": 32,
+          "conflicting_vertices": 1,
+          "expansions": 2255773
+        },
+        {
+          "iteration": 44,
+          "present": 32,
+          "conflicting_vertices": 1,
+          "expansions": 2260847
+        },
+        {
+          "iteration": 45,
+          "present": 32,
+          "conflicting_vertices": 1,
+          "expansions": 2265997
+        },
+        {
+          "iteration": 46,
+          "present": 32,
+          "conflicting_vertices": 1,
+          "expansions": 2270923
+        },
+        {
+          "iteration": 47,
+          "present": 32,
+          "conflicting_vertices": 1,
+          "expansions": 2275218
+        },
+        {
+          "iteration": 48,
+          "present": 32,
+          "conflicting_vertices": 0,
+          "expansions": 2279326,
+          "delay": 10218
+        }
+      ],
+      "limited": false,
+      "wall_s": 8.27008204703452,
+      "unreachable": false
+    },
+    {
+      "case": {
+        "suite": "benchmarks_hard",
+        "file": "case_01.json"
+      },
+      "case_sha256": "685a165a7a15811dff12839e0dbe79752b889558213f760ad5f0df6139766f5d",
+      "seed": 2,
+      "schedule": "gradual",
+      "legal": false,
+      "delay": null,
+      "output_sha256": null,
+      "expansions": 3000000,
+      "rounds": [
+        {
+          "iteration": 0,
+          "present": 0.05,
+          "conflicting_vertices": 627,
+          "expansions": 143471
+        },
+        {
+          "iteration": 1,
+          "present": 0.051500000000000004,
+          "conflicting_vertices": 636,
+          "expansions": 286873
+        },
+        {
+          "iteration": 2,
+          "present": 0.053045,
+          "conflicting_vertices": 657,
+          "expansions": 430455
+        },
+        {
+          "iteration": 3,
+          "present": 0.05463635,
+          "conflicting_vertices": 681,
+          "expansions": 574456
+        },
+        {
+          "iteration": 4,
+          "present": 0.05627544050000001,
+          "conflicting_vertices": 691,
+          "expansions": 718799
+        },
+        {
+          "iteration": 5,
+          "present": 0.05796370371500001,
+          "conflicting_vertices": 713,
+          "expansions": 863421
+        },
+        {
+          "iteration": 6,
+          "present": 0.05970261482645001,
+          "conflicting_vertices": 738,
+          "expansions": 1008405
+        },
+        {
+          "iteration": 7,
+          "present": 0.061493693271243516,
+          "conflicting_vertices": 751,
+          "expansions": 1153558
+        },
+        {
+          "iteration": 8,
+          "present": 0.06333850406938082,
+          "conflicting_vertices": 709,
+          "expansions": 1298674
+        },
+        {
+          "iteration": 9,
+          "present": 0.06523865919146225,
+          "conflicting_vertices": 707,
+          "expansions": 1444071
+        },
+        {
+          "iteration": 10,
+          "present": 0.06719581896720611,
+          "conflicting_vertices": 716,
+          "expansions": 1590095
+        },
+        {
+          "iteration": 11,
+          "present": 0.0692116935362223,
+          "conflicting_vertices": 723,
+          "expansions": 1735869
+        },
+        {
+          "iteration": 12,
+          "present": 0.07128804434230897,
+          "conflicting_vertices": 716,
+          "expansions": 1881956
+        },
+        {
+          "iteration": 13,
+          "present": 0.07342668567257825,
+          "conflicting_vertices": 722,
+          "expansions": 2028063
+        },
+        {
+          "iteration": 14,
+          "present": 0.0756294862427556,
+          "conflicting_vertices": 757,
+          "expansions": 2174362
+        },
+        {
+          "iteration": 15,
+          "present": 0.07789837083003825,
+          "conflicting_vertices": 789,
+          "expansions": 2320939
+        },
+        {
+          "iteration": 16,
+          "present": 0.08023532195493942,
+          "conflicting_vertices": 773,
+          "expansions": 2467660
+        },
+        {
+          "iteration": 17,
+          "present": 0.0826423816135876,
+          "conflicting_vertices": 754,
+          "expansions": 2614664
+        },
+        {
+          "iteration": 18,
+          "present": 0.08512165306199523,
+          "conflicting_vertices": 747,
+          "expansions": 2761618
+        },
+        {
+          "iteration": 19,
+          "present": 0.08767530265385509,
+          "conflicting_vertices": 729,
+          "expansions": 2906433
+        }
+      ],
+      "limited": true,
+      "wall_s": 11.420210754033178,
+      "unreachable": false
+    }
+  ],
+  "workers": 1,
+  "scope": "Own fresh geometry; heuristic multi-sink tolls; matched expansion/time ceilings. Every failure retained. No full-tier claim."
+}

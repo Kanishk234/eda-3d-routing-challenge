@@ -1,0 +1,4620 @@
+{
+  "complete": true,
+  "coverage_sha256": "beab0b0003f43c10cb284d2f0bf20d3801a70633c8f5e0b8fc83e5aff7bb74fb",
+  "reports": {
+    "docs/evidence/phase3/evolution-basin.json": "d7c0ff657fa2b26ed341a8023a6446cffa9e994c80cf18a4369941ae35b91f81",
+    "docs/evidence/phase3/evolution-crossover.json": "1c787408e49f83d6f2bd0f3293d311dd6fd466c9a927e7767c5ca0003ad473c9",
+    "docs/evidence/phase3/evolution-delayed-full-congested.json": "a1a4fa85e624a0ac344e9e4f3390e6a3cf59242c81b71660c8d8251ff002cf12",
+    "docs/evidence/phase3/evolution-delayed-full-designs.json": "6058963258bfec47d2baf7150460212977f84a01d38d7cd071521c8dbd7d1b2b",
+    "docs/evidence/phase3/evolution-delayed-full-hard.json": "eba210698147ff2ced0927656e2f71b023f0f940a8be893e6ce1d2b2cef35727",
+    "docs/evidence/phase3/evolution-delayed-full-intro.json": "3f588be3bf0c90ab4ad5b91a856ed3887ebe987387f5cb54be1f3bf1b9204482",
+    "docs/evidence/phase3/evolution-delayed-full-scale.json": "62f13be669c6520e4d41ae86b98a4d67702ea9bcfd24fec7964447cd63da52a4",
+    "docs/evidence/phase3/evolution-delayed-full-stress.json": "bc0dd7b34fb6609e9bdcf72f453c8c54bc310fa4945f5916aff16c3b32df9551",
+    "docs/evidence/phase3/evolution-delayed-transfer.json": "4c51b949e2ec9ca1c7e838b1ea5a9e65e232b4c69a21f80c62be94b7c5bf6cbb",
+    "docs/evidence/phase3/evolution-history-crossover.json": "b10a5b171fb51be50c00542bd517caa5fb3face0264e20f229732eafeffb4430",
+    "docs/evidence/phase3/evolution-history.json": "91ac4398d495ef4a8643ee4f4225a12d97acb01233fbe6101e9fcde6b1ab0221",
+    "docs/evidence/phase3/evolution-neutral-checkpoint.json": "4a2c59e9534c693f56acc92c607bfe0cad0a8e806b6a5ebb82b8cf7f83668aab",
+    "docs/evidence/phase3/evolution-neutral-full-hard.json": "cad848499ec1bf10aa42756888b10b3c590f33fd15c0c59748acb364926f17be",
+    "docs/evidence/phase3/evolution-neutral-validation.json": "8098d0c3f869f1046a93629f9afd2fd798a05589f73b1cda41b5c086ebafd3c1",
+    "docs/evidence/phase3/evolution-order-validation.json": "e6e58e8aea40ce2855f4be4a9f4b44b161257fce0920e4de8d11b7db77dab263",
+    "docs/evidence/phase3/evolution-pilot.json": "719b2b7ed24bce52691672596d41e4be578aa8a1a2a24549aef6ec3d72c0e1c3",
+    "docs/evidence/phase3/evolution-precision.json": "aa16481e7f6103448ec140f4ad9cafc403746d1f9f1e8b8eabb491c3a7598b1a",
+    "docs/evidence/phase3/evolution-refinement.json": "c5d022ff597793c5bf0388614e7ad72a17f8adeda5caf8ea772d559bde924f98",
+    "docs/evidence/phase3/evolution-schedule.json": "9c7620f62f4bee48909ecfdd627b858acae5a51022a15cd97f08c85e980fc746",
+    "docs/evidence/phase3/evolution-slice.json": "f726cd7dd59da17126def9e7d323891d9ce12eb033b3773a18fd4f940d5a5b2f"
+  },
+  "fusion_donors": 6,
+  "known_experimental_core_wall_s": 9347.302562302386,
+  "rows": [
+    {
+      "tier": "intro",
+      "run_id": "20261003T203401.019961Z-exact-polish",
+      "score": 1.114674260118846,
+      "previous_score": 1.114616909239685,
+      "improved_cases": 4,
+      "cases": [
+        {
+          "case": "case_01",
+          "previous_run": "20261003T202210.943268Z-exact-polish",
+          "previous_delay": 206,
+          "selected_delay": 206,
+          "changed": false,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "delayed_conflict_first",
+              "seed": 20,
+              "output_sha256": "1d1252268f36b1870d55cb96c7eb0a43a212f1bc5334333d6602b64c464e3f6b",
+              "base_delay": 206,
+              "donor_delay": 206,
+              "total_delay": 206,
+              "selected_donor_nets": [],
+              "dependency_arcs": 1,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 0,
+                "finite_infinity": 1,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "delayed_conflict_first",
+              "seed": 19,
+              "output_sha256": "cb018102e83b647c928576c62a2e0c7bd3bb3deada933068742478faf3170572",
+              "base_delay": 206,
+              "donor_delay": 206,
+              "total_delay": 206,
+              "selected_donor_nets": [],
+              "dependency_arcs": 0,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 0,
+                "finite_infinity": 1,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        },
+        {
+          "case": "case_02",
+          "previous_run": "20261003T202210.943268Z-exact-polish",
+          "previous_delay": 1030,
+          "selected_delay": 1030,
+          "changed": false,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "delayed_conflict_first",
+              "seed": 19,
+              "output_sha256": "0bca078a745ae6b710b52242e9fc4f0000df231176ed937789f92a1917c04c29",
+              "base_delay": 1030,
+              "donor_delay": 1030,
+              "total_delay": 1030,
+              "selected_donor_nets": [],
+              "dependency_arcs": 0,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 0,
+                "finite_infinity": 1,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "delayed_conflict_first",
+              "seed": 20,
+              "output_sha256": "3a12740a50eafbd6cea2732d591ed19c12160fc9a0b8cb45ea507f870f4d1a5e",
+              "base_delay": 1030,
+              "donor_delay": 1030,
+              "total_delay": 1030,
+              "selected_donor_nets": [],
+              "dependency_arcs": 0,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 0,
+                "finite_infinity": 1,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        },
+        {
+          "case": "case_03",
+          "previous_run": "20261003T202210.943268Z-exact-polish",
+          "previous_delay": 1611,
+          "selected_delay": 1611,
+          "changed": false,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "delayed_conflict_first",
+              "seed": 20,
+              "output_sha256": "1ca3fcc1c5c199d68e08067a9bdde8280e3676683c3f9eb4e93fb52448123944",
+              "base_delay": 1611,
+              "donor_delay": 1611,
+              "total_delay": 1611,
+              "selected_donor_nets": [],
+              "dependency_arcs": 5,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 0,
+                "finite_infinity": 1,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "delayed_conflict_first",
+              "seed": 19,
+              "output_sha256": "691e537805e80e3fef0c0baee84dee9c9692ab15db6bce49256f0bcbc6a5dbe3",
+              "base_delay": 1611,
+              "donor_delay": 1611,
+              "total_delay": 1611,
+              "selected_donor_nets": [],
+              "dependency_arcs": 4,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 0,
+                "finite_infinity": 1,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        },
+        {
+          "case": "case_04",
+          "previous_run": "20261003T202210.943268Z-exact-polish",
+          "previous_delay": 2036,
+          "selected_delay": 2036,
+          "changed": false,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "delayed_conflict_first",
+              "seed": 20,
+              "output_sha256": "6988071b5e8d53d3bb17cf8a8ed42216884a0cbbca0d5253628cdcd012fd2b7a",
+              "base_delay": 2036,
+              "donor_delay": 2036,
+              "total_delay": 2036,
+              "selected_donor_nets": [],
+              "dependency_arcs": 10,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 0,
+                "finite_infinity": 1,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "delayed_conflict_first",
+              "seed": 19,
+              "output_sha256": "9a4063a06c2620cdd3b618b877fe301d41ec903263a27469993efb840bd6a738",
+              "base_delay": 2036,
+              "donor_delay": 2036,
+              "total_delay": 2036,
+              "selected_donor_nets": [],
+              "dependency_arcs": 10,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 0,
+                "finite_infinity": 1,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        },
+        {
+          "case": "case_05",
+          "previous_run": "20261003T202210.943268Z-exact-polish",
+          "previous_delay": 3761,
+          "selected_delay": 3761,
+          "changed": false,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "delayed_conflict_first",
+              "seed": 20,
+              "output_sha256": "8566eee2674c6c059d5ab8c05b245ad2b09ce209ef04fb6079c03c83035618e1",
+              "base_delay": 3761,
+              "donor_delay": 3761,
+              "total_delay": 3761,
+              "selected_donor_nets": [],
+              "dependency_arcs": 2,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 0,
+                "finite_infinity": 1,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "control",
+              "seed": 20,
+              "output_sha256": "94f498918f213d8c6bfcf7f5302fba91bc4be80b23cf438303fe5af9dffd93c1",
+              "base_delay": 3761,
+              "donor_delay": 3761,
+              "total_delay": 3761,
+              "selected_donor_nets": [],
+              "dependency_arcs": 3,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 0,
+                "finite_infinity": 1,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "control",
+              "seed": 19,
+              "output_sha256": "a229a783af29dbcfa0e5df6727bef35911199abc7afdabfda791deda8d7f6093",
+              "base_delay": 3761,
+              "donor_delay": 3761,
+              "total_delay": 3761,
+              "selected_donor_nets": [],
+              "dependency_arcs": 3,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 0,
+                "finite_infinity": 1,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "delayed_conflict_first",
+              "seed": 19,
+              "output_sha256": "ee4afb28ea6a8c6200b9f4b8736d03e30ac84c85c42f955bc814ccefb53f7c2a",
+              "base_delay": 3761,
+              "donor_delay": 3761,
+              "total_delay": 3761,
+              "selected_donor_nets": [],
+              "dependency_arcs": 4,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 0,
+                "finite_infinity": 1,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        },
+        {
+          "case": "case_06",
+          "previous_run": "20261003T202210.943268Z-exact-polish",
+          "previous_delay": 5369,
+          "selected_delay": 5369,
+          "changed": false,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "delayed_conflict_first",
+              "seed": 20,
+              "output_sha256": "1012770c1cab81694a46a4d4c48fd4b9744ef53e2aaf5aa10745ac53d5200b8b",
+              "base_delay": 5369,
+              "donor_delay": 5369,
+              "total_delay": 5369,
+              "selected_donor_nets": [],
+              "dependency_arcs": 5,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 0,
+                "finite_infinity": 1,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "delayed_conflict_first",
+              "seed": 19,
+              "output_sha256": "79d1b4738619f0d5a9fc7270d13763e0d11a82feab8d349267d93b1ad5405d81",
+              "base_delay": 5369,
+              "donor_delay": 5369,
+              "total_delay": 5369,
+              "selected_donor_nets": [],
+              "dependency_arcs": 12,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 0,
+                "finite_infinity": 1,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "control",
+              "seed": 20,
+              "output_sha256": "8785dcef026d211e27e7591177625fe0ea8be332f6db43c92311a25465fa1c19",
+              "base_delay": 5369,
+              "donor_delay": 5369,
+              "total_delay": 5369,
+              "selected_donor_nets": [],
+              "dependency_arcs": 15,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 0,
+                "finite_infinity": 1,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "control",
+              "seed": 19,
+              "output_sha256": "c10a7c6f733c898dcc3f825c74ccb1d6ecd62293b00dd37b90666ee9ce819307",
+              "base_delay": 5369,
+              "donor_delay": 5369,
+              "total_delay": 5369,
+              "selected_donor_nets": [],
+              "dependency_arcs": 8,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 0,
+                "finite_infinity": 1,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        },
+        {
+          "case": "case_07",
+          "previous_run": "20261003T202210.943268Z-exact-polish",
+          "previous_delay": 5381,
+          "selected_delay": 5377,
+          "changed": true,
+          "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+          "variant": "delayed_conflict_first",
+          "seed": 20,
+          "source_sha256": "6eab965d3af2de6d08a8033c318b538d13b92eaf0f3483c9040827d1d5ae47f2",
+          "output_sha256": "58a8ab5bd2a801510d75d5b7636be1894de8cc69d279a8d68b6003620cbd1f1c",
+          "work_expansions": 50000000,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "delayed_conflict_first",
+              "seed": 20,
+              "output_sha256": "58a8ab5bd2a801510d75d5b7636be1894de8cc69d279a8d68b6003620cbd1f1c",
+              "base_delay": 5377,
+              "donor_delay": 5377,
+              "total_delay": 5377,
+              "selected_donor_nets": [],
+              "dependency_arcs": 0,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 0,
+                "finite_infinity": 1,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "control",
+              "seed": 19,
+              "output_sha256": "281ec0f87e0a085bf401739eace09c214b86cea18d879ca237ad52875b2b7762",
+              "base_delay": 5377,
+              "donor_delay": 5381,
+              "total_delay": 5377,
+              "selected_donor_nets": [],
+              "dependency_arcs": 14,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 0,
+                "finite_infinity": 5,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "delayed_conflict_first",
+              "seed": 19,
+              "output_sha256": "67aca4c50ed277ff3cb870e507170238783c772ae377a9e24c35fbe9f4d9c39a",
+              "base_delay": 5377,
+              "donor_delay": 5381,
+              "total_delay": 5377,
+              "selected_donor_nets": [],
+              "dependency_arcs": 16,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 0,
+                "finite_infinity": 5,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "control",
+              "seed": 20,
+              "output_sha256": "b35579ef81b6cde37565129d7a8bc649ba4fc6c41426653da776f78540df61ea",
+              "base_delay": 5377,
+              "donor_delay": 5381,
+              "total_delay": 5377,
+              "selected_donor_nets": [],
+              "dependency_arcs": 13,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 0,
+                "finite_infinity": 5,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        },
+        {
+          "case": "case_08",
+          "previous_run": "20261003T202210.943268Z-exact-polish",
+          "previous_delay": 7717,
+          "selected_delay": 7717,
+          "changed": false,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "control",
+              "seed": 20,
+              "output_sha256": "27f336c6e6ec09ec0e8f78c7f393912261f349d1df70e6ffe36d68c4b301f422",
+              "base_delay": 7717,
+              "donor_delay": 7727,
+              "total_delay": 7717,
+              "selected_donor_nets": [],
+              "dependency_arcs": 27,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 2,
+                "finite_infinity": 15,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "delayed_conflict_first",
+              "seed": 19,
+              "output_sha256": "9c241c67f230f163dd79ea9d8b078be0b95a5cfc84d0e6b66b72d5b85cea8c3c",
+              "base_delay": 7717,
+              "donor_delay": 7727,
+              "total_delay": 7717,
+              "selected_donor_nets": [],
+              "dependency_arcs": 29,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 2,
+                "finite_infinity": 15,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "control",
+              "seed": 19,
+              "output_sha256": "ab350e8d31490691bff5ec076e7601c28d69eafbd124236aed83b9bb47dfafe5",
+              "base_delay": 7717,
+              "donor_delay": 7727,
+              "total_delay": 7717,
+              "selected_donor_nets": [],
+              "dependency_arcs": 37,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 2,
+                "finite_infinity": 15,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "delayed_conflict_first",
+              "seed": 20,
+              "output_sha256": "c0d7759976df64e4acbb11a1b6162c11016b2a237e7c51b9f0b7f213f879ff4a",
+              "base_delay": 7717,
+              "donor_delay": 7727,
+              "total_delay": 7717,
+              "selected_donor_nets": [],
+              "dependency_arcs": 32,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 2,
+                "finite_infinity": 15,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        },
+        {
+          "case": "case_09",
+          "previous_run": "20261003T202210.943268Z-exact-polish",
+          "previous_delay": 8284,
+          "selected_delay": 8284,
+          "changed": false,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "delayed_conflict_first",
+              "seed": 20,
+              "output_sha256": "168bf2fe29fe71fe17eec2eb32140f70f3fc02d8703e6da3b23b7cddda6e3af9",
+              "base_delay": 8284,
+              "donor_delay": 8284,
+              "total_delay": 8284,
+              "selected_donor_nets": [],
+              "dependency_arcs": 17,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 0,
+                "finite_infinity": 1,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "control",
+              "seed": 19,
+              "output_sha256": "37f05f9d4ef311451c7bb0f864e692a3d8a61c679fa9bdabee29d340ce0921cb",
+              "base_delay": 8284,
+              "donor_delay": 8284,
+              "total_delay": 8284,
+              "selected_donor_nets": [],
+              "dependency_arcs": 21,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 0,
+                "finite_infinity": 1,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "control",
+              "seed": 20,
+              "output_sha256": "9c10678fd631292d9e0d3c7c88bc9746cea3857dff0816a433a999728c2f8508",
+              "base_delay": 8284,
+              "donor_delay": 8284,
+              "total_delay": 8284,
+              "selected_donor_nets": [],
+              "dependency_arcs": 17,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 0,
+                "finite_infinity": 1,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "delayed_conflict_first",
+              "seed": 19,
+              "output_sha256": "a9d2c00210a08e610ad2967e2d3200ec4fd3298b5d6e12e34c0cccb1d9ae3c8b",
+              "base_delay": 8284,
+              "donor_delay": 8284,
+              "total_delay": 8284,
+              "selected_donor_nets": [],
+              "dependency_arcs": 19,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 0,
+                "finite_infinity": 1,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        },
+        {
+          "case": "case_10",
+          "previous_run": "20261003T202210.943268Z-exact-polish",
+          "previous_delay": 10825,
+          "selected_delay": 10825,
+          "changed": false,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "control",
+              "seed": 20,
+              "output_sha256": "6ede0462a5160790a3ba78c12df3820028f8d904156d32023f31eafb205ac2b6",
+              "base_delay": 10825,
+              "donor_delay": 10847,
+              "total_delay": 10825,
+              "selected_donor_nets": [],
+              "dependency_arcs": 71,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 10,
+                "finite_infinity": 43,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "delayed_conflict_first",
+              "seed": 20,
+              "output_sha256": "a1ff68d082eec65acb0dc92d989b037621697dc7ef4a781abd73ebece7df9599",
+              "base_delay": 10825,
+              "donor_delay": 10847,
+              "total_delay": 10825,
+              "selected_donor_nets": [],
+              "dependency_arcs": 71,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 10,
+                "finite_infinity": 43,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "delayed_conflict_first",
+              "seed": 19,
+              "output_sha256": "a29bf4c5008e0642d7ce6a22cd6caf66a7b4108a7fedf55484b43fc36f149b66",
+              "base_delay": 10825,
+              "donor_delay": 10847,
+              "total_delay": 10825,
+              "selected_donor_nets": [],
+              "dependency_arcs": 70,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 10,
+                "finite_infinity": 43,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "control",
+              "seed": 19,
+              "output_sha256": "a7ab153ca30cf5e2654c26e6df15e5217afe58075d76085531551908cf26e524",
+              "base_delay": 10825,
+              "donor_delay": 10847,
+              "total_delay": 10825,
+              "selected_donor_nets": [],
+              "dependency_arcs": 67,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 10,
+                "finite_infinity": 43,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        },
+        {
+          "case": "case_11",
+          "previous_run": "20261003T202210.943268Z-exact-polish",
+          "previous_delay": 12716,
+          "selected_delay": 12716,
+          "changed": false,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "control",
+              "seed": 19,
+              "output_sha256": "06e889e199d251d457c449f2ccb583d2d7eaba0d1d59261557fe7f39bd69cca9",
+              "base_delay": 12716,
+              "donor_delay": 12724,
+              "total_delay": 12716,
+              "selected_donor_nets": [],
+              "dependency_arcs": 40,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 0,
+                "finite_infinity": 9,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "delayed_conflict_first",
+              "seed": 19,
+              "output_sha256": "9f288863cd4894220c6225e05ce4745284e8ebb078b77760d2e3dbaaab497b80",
+              "base_delay": 12716,
+              "donor_delay": 12724,
+              "total_delay": 12716,
+              "selected_donor_nets": [],
+              "dependency_arcs": 38,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 0,
+                "finite_infinity": 9,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "delayed_conflict_first",
+              "seed": 20,
+              "output_sha256": "ca5c46d0bbfb2870e425781637e8e8e88f365b8338510bd5c970c7a19e5d4338",
+              "base_delay": 12716,
+              "donor_delay": 12724,
+              "total_delay": 12716,
+              "selected_donor_nets": [],
+              "dependency_arcs": 39,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 0,
+                "finite_infinity": 9,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "control",
+              "seed": 20,
+              "output_sha256": "d32ccdd75bb10f66aa1b9c7a370bf6bf6ba57e936f06f6467e38a73aee852a56",
+              "base_delay": 12716,
+              "donor_delay": 12724,
+              "total_delay": 12716,
+              "selected_donor_nets": [],
+              "dependency_arcs": 43,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 0,
+                "finite_infinity": 9,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        },
+        {
+          "case": "case_12",
+          "previous_run": "20261003T202210.943268Z-exact-polish",
+          "previous_delay": 16639,
+          "selected_delay": 16639,
+          "changed": false,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "control",
+              "seed": 19,
+              "output_sha256": "8e30c3d8d790d7869fec537e579c3702ee059c37e76ee83a41c70cb84c6a926b",
+              "base_delay": 16639,
+              "donor_delay": 16639,
+              "total_delay": 16639,
+              "selected_donor_nets": [],
+              "dependency_arcs": 34,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 0,
+                "finite_infinity": 1,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "control",
+              "seed": 20,
+              "output_sha256": "9ae2883d0ec7fc2124b216682340e59c27c331aa10bd48f15d1497a758ae549b",
+              "base_delay": 16639,
+              "donor_delay": 16639,
+              "total_delay": 16639,
+              "selected_donor_nets": [],
+              "dependency_arcs": 31,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 0,
+                "finite_infinity": 1,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "delayed_conflict_first",
+              "seed": 19,
+              "output_sha256": "ca8fe05cb3f9298a6d84311c278d0a4353e44aa0e2678c81229d7f66d479b625",
+              "base_delay": 16639,
+              "donor_delay": 16639,
+              "total_delay": 16639,
+              "selected_donor_nets": [],
+              "dependency_arcs": 37,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 0,
+                "finite_infinity": 1,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "delayed_conflict_first",
+              "seed": 20,
+              "output_sha256": "d44f7807f32a2eec2e54641c808bc09313181b5e99e1892fe1c7ca54a9a68b09",
+              "base_delay": 16639,
+              "donor_delay": 16639,
+              "total_delay": 16639,
+              "selected_donor_nets": [],
+              "dependency_arcs": 23,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 0,
+                "finite_infinity": 1,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        },
+        {
+          "case": "case_13",
+          "previous_run": "20261003T202210.943268Z-exact-polish",
+          "previous_delay": 20343,
+          "selected_delay": 20343,
+          "changed": false,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "delayed_conflict_first",
+              "seed": 20,
+              "output_sha256": "771892d1b0768a98a91b7e6cf6eb7811afbaf910f91a60b73b82f3c72ec7e4b4",
+              "base_delay": 20343,
+              "donor_delay": 20351,
+              "total_delay": 20343,
+              "selected_donor_nets": [],
+              "dependency_arcs": 28,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 4,
+                "finite_infinity": 17,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "control",
+              "seed": 19,
+              "output_sha256": "0728bc874e8595dcf4710236a0086b87adf94c16fcf1a7a3f9606ae26863232f",
+              "base_delay": 20343,
+              "donor_delay": 20353,
+              "total_delay": 20343,
+              "selected_donor_nets": [],
+              "dependency_arcs": 27,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 4,
+                "finite_infinity": 19,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "delayed_conflict_first",
+              "seed": 19,
+              "output_sha256": "8f2bb853a4f1a52c62f8a7db0db05c4c9860cab48a0eef21d5e055a5c11c0eea",
+              "base_delay": 20343,
+              "donor_delay": 20355,
+              "total_delay": 20343,
+              "selected_donor_nets": [],
+              "dependency_arcs": 26,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 4,
+                "finite_infinity": 21,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "control",
+              "seed": 20,
+              "output_sha256": "e49a91f99a1d97170d3b5907e77df74e3130af003db0e9ae2d1e2915a74f43ae",
+              "base_delay": 20343,
+              "donor_delay": 20355,
+              "total_delay": 20343,
+              "selected_donor_nets": [],
+              "dependency_arcs": 35,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 4,
+                "finite_infinity": 21,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        },
+        {
+          "case": "case_14",
+          "previous_run": "20261003T202210.943268Z-exact-polish",
+          "previous_delay": 22141,
+          "selected_delay": 22141,
+          "changed": false,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "delayed_conflict_first",
+              "seed": 20,
+              "output_sha256": "7ff4b14cf858d82920f7d94399b975952456b722907dbc99cd98c393831c20d0",
+              "base_delay": 22141,
+              "donor_delay": 22147,
+              "total_delay": 22141,
+              "selected_donor_nets": [],
+              "dependency_arcs": 58,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 6,
+                "finite_infinity": 19,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "control",
+              "seed": 20,
+              "output_sha256": "92f1687a96765cb2f4eb2e6b407d8a780c309f17a83f903740da2a4c2df0c2b4",
+              "base_delay": 22141,
+              "donor_delay": 22147,
+              "total_delay": 22141,
+              "selected_donor_nets": [],
+              "dependency_arcs": 49,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 6,
+                "finite_infinity": 19,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "control",
+              "seed": 19,
+              "output_sha256": "c9be452d5fa0337d46a2fcf76013c9c4cad690caffdc0cc6ffb748f0220100df",
+              "base_delay": 22141,
+              "donor_delay": 22147,
+              "total_delay": 22141,
+              "selected_donor_nets": [],
+              "dependency_arcs": 44,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 6,
+                "finite_infinity": 19,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "delayed_conflict_first",
+              "seed": 19,
+              "output_sha256": "fd944af3a56fe2cce0f2c29ee62a46464c0c326cefb42842c538e24b2f601dde",
+              "base_delay": 22141,
+              "donor_delay": 22147,
+              "total_delay": 22141,
+              "selected_donor_nets": [],
+              "dependency_arcs": 53,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 6,
+                "finite_infinity": 19,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        },
+        {
+          "case": "case_15",
+          "previous_run": "20261003T202210.943268Z-exact-polish",
+          "previous_delay": 25200,
+          "selected_delay": 25198,
+          "changed": true,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "control",
+              "seed": 20,
+              "output_sha256": "19aafa4e8629ddc7697a49b6a9fc01fecaa0a9c54a71cba49a0af5d80a06bf3c",
+              "base_delay": 25200,
+              "donor_delay": 25242,
+              "total_delay": 25198,
+              "selected_donor_nets": [
+                40,
+                45,
+                56,
+                87
+              ],
+              "dependency_arcs": 65,
+              "certificate": {
+                "minimum_delta": -2,
+                "max_flow": 6,
+                "finite_infinity": 59,
+                "weighted_minimum_delta": -2,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "delayed_conflict_first",
+              "seed": 20,
+              "output_sha256": "202190db82acd33b3e9f4d5587d9306886451b0fe2bed47afe50649738da008e",
+              "base_delay": 25198,
+              "donor_delay": 25244,
+              "total_delay": 25198,
+              "selected_donor_nets": [],
+              "dependency_arcs": 66,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 6,
+                "finite_infinity": 59,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "delayed_conflict_first",
+              "seed": 19,
+              "output_sha256": "66bb5bac78c6f96faff4ff7b33081d76cc2c5b5abda4d57a6bbc896fca02dd26",
+              "base_delay": 25198,
+              "donor_delay": 25244,
+              "total_delay": 25198,
+              "selected_donor_nets": [],
+              "dependency_arcs": 52,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 6,
+                "finite_infinity": 59,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "control",
+              "seed": 19,
+              "output_sha256": "6aaeca922d7daa5b3769978f5ff23a8b99d3cab5cc917bac93c7f2d336e59e16",
+              "base_delay": 25198,
+              "donor_delay": 25244,
+              "total_delay": 25198,
+              "selected_donor_nets": [],
+              "dependency_arcs": 66,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 6,
+                "finite_infinity": 59,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        },
+        {
+          "case": "case_16",
+          "previous_run": "20261003T202210.943268Z-exact-polish",
+          "previous_delay": 34364,
+          "selected_delay": 34360,
+          "changed": true,
+          "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+          "variant": "delayed_conflict_first",
+          "seed": 20,
+          "source_sha256": "6eab965d3af2de6d08a8033c318b538d13b92eaf0f3483c9040827d1d5ae47f2",
+          "output_sha256": "4d3a5c6c51bca7df41e1b936b59ae77583a296700bf5ca1b5572687ef919d034",
+          "work_expansions": 50000000,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "delayed_conflict_first",
+              "seed": 20,
+              "output_sha256": "4d3a5c6c51bca7df41e1b936b59ae77583a296700bf5ca1b5572687ef919d034",
+              "base_delay": 34360,
+              "donor_delay": 34360,
+              "total_delay": 34360,
+              "selected_donor_nets": [],
+              "dependency_arcs": 0,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 0,
+                "finite_infinity": 1,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "delayed_conflict_first",
+              "seed": 19,
+              "output_sha256": "5678dc72a93580c332a0ff522188a56a27526a568bfc19380defb1abd729418a",
+              "base_delay": 34360,
+              "donor_delay": 34364,
+              "total_delay": 34360,
+              "selected_donor_nets": [],
+              "dependency_arcs": 52,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 14,
+                "finite_infinity": 33,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "control",
+              "seed": 20,
+              "output_sha256": "28430bbbcf14e70e1b356231566824504138151f0c2e4b04c3c6cb2b10a39062",
+              "base_delay": 34360,
+              "donor_delay": 34366,
+              "total_delay": 34360,
+              "selected_donor_nets": [],
+              "dependency_arcs": 44,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 8,
+                "finite_infinity": 23,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "control",
+              "seed": 19,
+              "output_sha256": "7f4e4930d523537d1f84b56066b66706500bf7e626929fc101a4cc5e8dddecdc",
+              "base_delay": 34360,
+              "donor_delay": 34366,
+              "total_delay": 34360,
+              "selected_donor_nets": [],
+              "dependency_arcs": 50,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 8,
+                "finite_infinity": 23,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        },
+        {
+          "case": "case_17",
+          "previous_run": "20261003T202210.943268Z-exact-polish",
+          "previous_delay": 44628,
+          "selected_delay": 44624,
+          "changed": true,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "control",
+              "seed": 20,
+              "output_sha256": "9b131caf94b13245d942e8ecf7405c4681082b7ea227019ea845ecd902266e76",
+              "base_delay": 44628,
+              "donor_delay": 44658,
+              "total_delay": 44624,
+              "selected_donor_nets": [
+                26,
+                42,
+                49,
+                61,
+                85
+              ],
+              "dependency_arcs": 73,
+              "certificate": {
+                "minimum_delta": -4,
+                "max_flow": 32,
+                "finite_infinity": 103,
+                "weighted_minimum_delta": -4,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "control",
+              "seed": 19,
+              "output_sha256": "19d97b1bb51c07416465e3dbde4b38e5b07b62ce7418f1b1f243df99311bb5ee",
+              "base_delay": 44624,
+              "donor_delay": 44670,
+              "total_delay": 44624,
+              "selected_donor_nets": [],
+              "dependency_arcs": 66,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 18,
+                "finite_infinity": 83,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "delayed_conflict_first",
+              "seed": 20,
+              "output_sha256": "c9022d82252d8eacdd6aaef6bbd8d4f3ec74d1549a33e015f2875bb9b60dc57a",
+              "base_delay": 44624,
+              "donor_delay": 44674,
+              "total_delay": 44624,
+              "selected_donor_nets": [],
+              "dependency_arcs": 63,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 16,
+                "finite_infinity": 83,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "delayed_conflict_first",
+              "seed": 19,
+              "output_sha256": "482ec6fc482f4212a6596216d6ff2393f62fe86ab06aa498a3d3c2e66167f24e",
+              "base_delay": 44624,
+              "donor_delay": 44680,
+              "total_delay": 44624,
+              "selected_donor_nets": [],
+              "dependency_arcs": 69,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 16,
+                "finite_infinity": 89,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        },
+        {
+          "case": "case_18",
+          "previous_run": "20261003T202210.943268Z-exact-polish",
+          "previous_delay": 47519,
+          "selected_delay": 47519,
+          "changed": false,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "delayed_conflict_first",
+              "seed": 19,
+              "output_sha256": "d8480f65e36cbfdb28ec0e4221b362c12e2de4fd8b140e01c432b04892e557d4",
+              "base_delay": 47519,
+              "donor_delay": 47573,
+              "total_delay": 47519,
+              "selected_donor_nets": [],
+              "dependency_arcs": 88,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 32,
+                "finite_infinity": 119,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "control",
+              "seed": 20,
+              "output_sha256": "5b3a11e163d02373afcc4aeae5f194286cded1cd853f6ce9c7ca4a8f7e6abc52",
+              "base_delay": 47519,
+              "donor_delay": 47577,
+              "total_delay": 47519,
+              "selected_donor_nets": [],
+              "dependency_arcs": 83,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 24,
+                "finite_infinity": 107,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "control",
+              "seed": 19,
+              "output_sha256": "af4cf2778cedefef3d9005983e4d3c38b1efa2b003e68f340287d348f2738d10",
+              "base_delay": 47519,
+              "donor_delay": 47577,
+              "total_delay": 47519,
+              "selected_donor_nets": [],
+              "dependency_arcs": 93,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 24,
+                "finite_infinity": 107,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "delayed_conflict_first",
+              "seed": 20,
+              "output_sha256": "f50481e07b024115bc8762da1f0fc2a5117ec472a18f9979a1977b45d7cd8355",
+              "base_delay": 47519,
+              "donor_delay": 47577,
+              "total_delay": 47519,
+              "selected_donor_nets": [],
+              "dependency_arcs": 89,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 24,
+                "finite_infinity": 107,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        },
+        {
+          "case": "case_19",
+          "previous_run": "20261003T202210.943268Z-exact-polish",
+          "previous_delay": 41304,
+          "selected_delay": 41304,
+          "changed": false,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "delayed_conflict_first",
+              "seed": 19,
+              "output_sha256": "11bf0f867e0cc4aeb27c28b172b87948c2f3e75345973028ff503bd88710ad17",
+              "base_delay": 41304,
+              "donor_delay": 41346,
+              "total_delay": 41304,
+              "selected_donor_nets": [],
+              "dependency_arcs": 124,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 38,
+                "finite_infinity": 119,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "control",
+              "seed": 19,
+              "output_sha256": "291d507987d50458445badb403283ac7410c2e572e11a1460c511a86eaa6efc2",
+              "base_delay": 41304,
+              "donor_delay": 41348,
+              "total_delay": 41304,
+              "selected_donor_nets": [],
+              "dependency_arcs": 110,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 36,
+                "finite_infinity": 117,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "delayed_conflict_first",
+              "seed": 20,
+              "output_sha256": "62ee14a2572d5a29e41a2134dcea8b73ff51ab3800f0d3daa3229f3c66b64422",
+              "base_delay": 41304,
+              "donor_delay": 41352,
+              "total_delay": 41304,
+              "selected_donor_nets": [],
+              "dependency_arcs": 125,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 32,
+                "finite_infinity": 113,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "control",
+              "seed": 20,
+              "output_sha256": "7bf6769a56e48e91c91a07963421e870205dd4dab812b11f93f24edbcf790713",
+              "base_delay": 41304,
+              "donor_delay": 41352,
+              "total_delay": 41304,
+              "selected_donor_nets": [],
+              "dependency_arcs": 109,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 32,
+                "finite_infinity": 113,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        },
+        {
+          "case": "case_20",
+          "previous_run": "20261003T202210.943268Z-exact-polish",
+          "previous_delay": 46864,
+          "selected_delay": 46864,
+          "changed": false,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "control",
+              "seed": 20,
+              "output_sha256": "e25622fc692dcc2967b8c1aba1e64c6875c610a1a5da66292c93ad864ce6a61c",
+              "base_delay": 46864,
+              "donor_delay": 46972,
+              "total_delay": 46864,
+              "selected_donor_nets": [],
+              "dependency_arcs": 122,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 28,
+                "finite_infinity": 165,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "control",
+              "seed": 19,
+              "output_sha256": "28be832c85c35bc308648c5edbf6622442b05b9469cd80c08f3a0bfdfa99a4f3",
+              "base_delay": 46864,
+              "donor_delay": 46974,
+              "total_delay": 46864,
+              "selected_donor_nets": [],
+              "dependency_arcs": 140,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 28,
+                "finite_infinity": 167,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "delayed_conflict_first",
+              "seed": 20,
+              "output_sha256": "57beb2645ecabbb3d780e9ea85e5c5d7649b3fdbe48cc4cf89b5758117d9d055",
+              "base_delay": 46864,
+              "donor_delay": 46974,
+              "total_delay": 46864,
+              "selected_donor_nets": [],
+              "dependency_arcs": 137,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 28,
+                "finite_infinity": 167,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-intro.json",
+              "variant": "delayed_conflict_first",
+              "seed": 19,
+              "output_sha256": "6b5e0a70964afa7fb22a1268b0fd28193e8fa1db596dedb7ed2807b65976a317",
+              "base_delay": 46864,
+              "donor_delay": 46974,
+              "total_delay": 46864,
+              "selected_donor_nets": [],
+              "dependency_arcs": 126,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 28,
+                "finite_infinity": 167,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tier": "hard",
+      "run_id": "20261003T203406.740284Z-exact-polish",
+      "score": 1.3014679169752474,
+      "previous_score": 1.3006553431912806,
+      "improved_cases": 6,
+      "cases": [
+        {
+          "case": "case_01",
+          "previous_run": "20261003T202210.944108Z-exact-polish",
+          "previous_delay": 9050,
+          "selected_delay": 9048,
+          "changed": true,
+          "experiment_report": "docs/evidence/phase3/evolution-precision.json",
+          "variant": "precision64",
+          "seed": 31,
+          "source_sha256": "e1358831e86caa1ee94ff49d76bbbf78618394fcc75967ae8f637bfd14d5d600",
+          "output_sha256": "d589065438376aa81a5e223cfbb4feec156d0f6c099065016c849d3c35415acd",
+          "work_expansions": 50000000,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-precision.json",
+              "variant": "precision256",
+              "seed": 31,
+              "output_sha256": "af3765734627c75794a5fe8d3a609e423e43b3cd0292a3a56347766944f4d73e",
+              "base_delay": 9048,
+              "donor_delay": 9048,
+              "total_delay": 9048,
+              "selected_donor_nets": [],
+              "dependency_arcs": 0,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 0,
+                "finite_infinity": 1,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-precision.json",
+              "variant": "precision1024",
+              "seed": 31,
+              "output_sha256": "b61b97e0db33b4b76577ae1548898d0428e0da7aaa0d95a812f315813c994c95",
+              "base_delay": 9048,
+              "donor_delay": 9048,
+              "total_delay": 9048,
+              "selected_donor_nets": [],
+              "dependency_arcs": 0,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 0,
+                "finite_infinity": 1,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-precision.json",
+              "variant": "precision64",
+              "seed": 31,
+              "output_sha256": "d589065438376aa81a5e223cfbb4feec156d0f6c099065016c849d3c35415acd",
+              "base_delay": 9048,
+              "donor_delay": 9048,
+              "total_delay": 9048,
+              "selected_donor_nets": [],
+              "dependency_arcs": 0,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 0,
+                "finite_infinity": 1,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-history-crossover.json",
+              "variant": "cold_decay",
+              "seed": 49,
+              "output_sha256": "1409224870634bae2d27ebc0c5335ce1551845992d57031bdf94b24e26823d8b",
+              "base_delay": 9048,
+              "donor_delay": 9050,
+              "total_delay": 9048,
+              "selected_donor_nets": [],
+              "dependency_arcs": 10,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 4,
+                "finite_infinity": 11,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-history-crossover.json",
+              "variant": "fine_anneal_neutral",
+              "seed": 49,
+              "output_sha256": "1a64af22a2bcecd828d63443a0b9f0078d28c6fe3461efb35d012f5758df4279",
+              "base_delay": 9048,
+              "donor_delay": 9050,
+              "total_delay": 9048,
+              "selected_donor_nets": [],
+              "dependency_arcs": 8,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 4,
+                "finite_infinity": 11,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-neutral-full-hard.json",
+              "variant": "control",
+              "seed": 43,
+              "output_sha256": "3aa009adcd932105e6ba63804332e1a613ca80d6a8b90e00a459ec6fbf9794fe",
+              "base_delay": 9048,
+              "donor_delay": 9050,
+              "total_delay": 9048,
+              "selected_donor_nets": [],
+              "dependency_arcs": 9,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 6,
+                "finite_infinity": 15,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        },
+        {
+          "case": "case_02",
+          "previous_run": "20261003T202210.944108Z-exact-polish",
+          "previous_delay": 13940,
+          "selected_delay": 13932,
+          "changed": true,
+          "experiment_report": "docs/evidence/phase3/evolution-neutral-full-hard.json",
+          "variant": "fine_anneal_neutral",
+          "seed": 42,
+          "source_sha256": "5048249b7084c563c977a2e2f317424a36c9dcf84edf042c4b2120dad020ba7c",
+          "output_sha256": "5973ca00ccfab05041f2953a050f77f126c58d5bc2a82f18a095b6cc13a1f7b2",
+          "work_expansions": 60000000,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-neutral-full-hard.json",
+              "variant": "fine_anneal_neutral",
+              "seed": 42,
+              "output_sha256": "5973ca00ccfab05041f2953a050f77f126c58d5bc2a82f18a095b6cc13a1f7b2",
+              "base_delay": 13938,
+              "donor_delay": 13938,
+              "total_delay": 13938,
+              "selected_donor_nets": [],
+              "dependency_arcs": 0,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 0,
+                "finite_infinity": 1,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-neutral-full-hard.json",
+              "variant": "control",
+              "seed": 42,
+              "output_sha256": "2b8c1692b71bf4c604a42b9bf4d5d12a250b4c2e10bb8c5626c9043fe134a257",
+              "base_delay": 13938,
+              "donor_delay": 13940,
+              "total_delay": 13938,
+              "selected_donor_nets": [],
+              "dependency_arcs": 6,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 12,
+                "finite_infinity": 27,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-neutral-full-hard.json",
+              "variant": "fine_anneal_neutral",
+              "seed": 43,
+              "output_sha256": "3716b52050ac01cce6b78170bab93658bb7f87b80fa8cf5ab484008594ab3955",
+              "base_delay": 13938,
+              "donor_delay": 13940,
+              "total_delay": 13938,
+              "selected_donor_nets": [],
+              "dependency_arcs": 17,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 16,
+                "finite_infinity": 35,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-neutral-full-hard.json",
+              "variant": "control",
+              "seed": 43,
+              "output_sha256": "7386c6420de185f899592597a7c99321d537105dd6e32e336294ec789248fbc9",
+              "base_delay": 13938,
+              "donor_delay": 13940,
+              "total_delay": 13938,
+              "selected_donor_nets": [],
+              "dependency_arcs": 9,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 14,
+                "finite_infinity": 31,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-hard.json",
+              "variant": "control",
+              "seed": 15,
+              "output_sha256": "04f2151d096eb7f305357efa3ec132d5d70f061e5cff2952c4f5a2342bdaab7c",
+              "base_delay": 13938,
+              "donor_delay": 13946,
+              "total_delay": 13932,
+              "selected_donor_nets": [
+                1,
+                2,
+                6,
+                9,
+                11,
+                20,
+                26,
+                27,
+                30,
+                34,
+                61
+              ],
+              "dependency_arcs": 52,
+              "certificate": {
+                "minimum_delta": -6,
+                "max_flow": 90,
+                "finite_infinity": 201,
+                "weighted_minimum_delta": -6,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-hard.json",
+              "variant": "control",
+              "seed": 13,
+              "output_sha256": "001da3586d1d999c5b075047dde012b98cc041b9dddd6c131f7f2d8dd4bc659f",
+              "base_delay": 13932,
+              "donor_delay": 13954,
+              "total_delay": 13932,
+              "selected_donor_nets": [],
+              "dependency_arcs": 39,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 64,
+                "finite_infinity": 151,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        },
+        {
+          "case": "case_03",
+          "previous_run": "20261003T202210.944108Z-exact-polish",
+          "previous_delay": 11766,
+          "selected_delay": 11766,
+          "changed": false,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-hard.json",
+              "variant": "delayed_conflict_first",
+              "seed": 15,
+              "output_sha256": "33e6e5b069a23294f7a634325295feb9f544c8046b15b04a117fe9c64ea66716",
+              "base_delay": 11766,
+              "donor_delay": 11774,
+              "total_delay": 11766,
+              "selected_donor_nets": [],
+              "dependency_arcs": 10,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 30,
+                "finite_infinity": 69,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-hard.json",
+              "variant": "delayed_conflict_first",
+              "seed": 14,
+              "output_sha256": "47d9486062dc416996022004adf3842e4909ea1d87ee88a333b220e3217c2c38",
+              "base_delay": 11766,
+              "donor_delay": 11774,
+              "total_delay": 11766,
+              "selected_donor_nets": [],
+              "dependency_arcs": 15,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 30,
+                "finite_infinity": 69,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-hard.json",
+              "variant": "delayed_conflict_first",
+              "seed": 13,
+              "output_sha256": "4c65a1e3d39d5381c3baa19ccd5151c1b138af50328d87a5efdedf14346a2af6",
+              "base_delay": 11766,
+              "donor_delay": 11774,
+              "total_delay": 11766,
+              "selected_donor_nets": [],
+              "dependency_arcs": 17,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 38,
+                "finite_infinity": 85,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-neutral-full-hard.json",
+              "variant": "fine_anneal_neutral",
+              "seed": 42,
+              "output_sha256": "4e8b7db3e8976c4043da6c0050bb3f39482b1ddfd9975771645060555622f253",
+              "base_delay": 11766,
+              "donor_delay": 11774,
+              "total_delay": 11766,
+              "selected_donor_nets": [],
+              "dependency_arcs": 12,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 28,
+                "finite_infinity": 65,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-neutral-full-hard.json",
+              "variant": "fine_anneal_neutral",
+              "seed": 43,
+              "output_sha256": "60c095d29fda246f4ca04091293a4d0ae85eeaf2057b774eed965b6f409a4e4a",
+              "base_delay": 11766,
+              "donor_delay": 11774,
+              "total_delay": 11766,
+              "selected_donor_nets": [],
+              "dependency_arcs": 16,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 30,
+                "finite_infinity": 69,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-hard.json",
+              "variant": "control",
+              "seed": 15,
+              "output_sha256": "66bf9cb8244172359a07b32481b7099a13b80a94864f20527d9a6c92168db05b",
+              "base_delay": 11766,
+              "donor_delay": 11774,
+              "total_delay": 11766,
+              "selected_donor_nets": [],
+              "dependency_arcs": 16,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 28,
+                "finite_infinity": 65,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        },
+        {
+          "case": "case_04",
+          "previous_run": "20261003T202210.944108Z-exact-polish",
+          "previous_delay": 13967,
+          "selected_delay": 13949,
+          "changed": true,
+          "experiment_report": "docs/evidence/phase3/evolution-neutral-checkpoint.json",
+          "variant": "fine_anneal_neutral",
+          "seed": 16,
+          "source_sha256": "5048249b7084c563c977a2e2f317424a36c9dcf84edf042c4b2120dad020ba7c",
+          "output_sha256": "4887bc9ab7a4fa1833cef24d5659d087df6112753cabb702a11deef40552fb1e",
+          "work_expansions": 60000000,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-neutral-checkpoint.json",
+              "variant": "fine_anneal_neutral",
+              "seed": 16,
+              "output_sha256": "4887bc9ab7a4fa1833cef24d5659d087df6112753cabb702a11deef40552fb1e",
+              "base_delay": 13953,
+              "donor_delay": 13953,
+              "total_delay": 13953,
+              "selected_donor_nets": [],
+              "dependency_arcs": 0,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 0,
+                "finite_infinity": 1,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-history-crossover.json",
+              "variant": "fine_anneal_neutral",
+              "seed": 49,
+              "output_sha256": "babccd6bb4ebfbfe790dcc28e346a696ef52d8bab366ec8e25311205bb63dda7",
+              "base_delay": 13953,
+              "donor_delay": 13963,
+              "total_delay": 13949,
+              "selected_donor_nets": [
+                2,
+                3,
+                18,
+                27,
+                31,
+                34
+              ],
+              "dependency_arcs": 29,
+              "certificate": {
+                "minimum_delta": -4,
+                "max_flow": 26,
+                "finite_infinity": 71,
+                "weighted_minimum_delta": -4,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-neutral-full-hard.json",
+              "variant": "fine_anneal_neutral",
+              "seed": 42,
+              "output_sha256": "06bb5c4a18a817dc89954bef32bf6c30f261b7512b0d0dbf898eb13771415ffe",
+              "base_delay": 13949,
+              "donor_delay": 13967,
+              "total_delay": 13949,
+              "selected_donor_nets": [],
+              "dependency_arcs": 32,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 36,
+                "finite_infinity": 91,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-schedule.json",
+              "variant": "control",
+              "seed": 40,
+              "output_sha256": "0a50579536c399e603f1741d0be1c458779c28fea2fa9137d3c9e133b5c973eb",
+              "base_delay": 13949,
+              "donor_delay": 13967,
+              "total_delay": 13949,
+              "selected_donor_nets": [],
+              "dependency_arcs": 26,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 36,
+                "finite_infinity": 91,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-precision.json",
+              "variant": "precision1024",
+              "seed": 32,
+              "output_sha256": "1111d2ed3aa65fc9b24a1cad73439c8d36cf2bb122722d683d4ef055847157d5",
+              "base_delay": 13949,
+              "donor_delay": 13967,
+              "total_delay": 13949,
+              "selected_donor_nets": [],
+              "dependency_arcs": 26,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 26,
+                "finite_infinity": 71,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-history-crossover.json",
+              "variant": "cold_decay",
+              "seed": 49,
+              "output_sha256": "164d0a2e6a0f2951a591cdf338e761e2080ed414c4aac42a29ed060b0b3db1ee",
+              "base_delay": 13949,
+              "donor_delay": 13967,
+              "total_delay": 13949,
+              "selected_donor_nets": [],
+              "dependency_arcs": 30,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 26,
+                "finite_infinity": 71,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        },
+        {
+          "case": "case_05",
+          "previous_run": "20261003T202210.944108Z-exact-polish",
+          "previous_delay": 16173,
+          "selected_delay": 16141,
+          "changed": true,
+          "experiment_report": "docs/evidence/phase3/evolution-delayed-full-hard.json",
+          "variant": "control",
+          "seed": 14,
+          "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+          "output_sha256": "807f2cfd1c568f1d6247567ad9bbcb51ece04ceba133ab9385537b62c20f80c7",
+          "work_expansions": 50000000,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-hard.json",
+              "variant": "control",
+              "seed": 14,
+              "output_sha256": "807f2cfd1c568f1d6247567ad9bbcb51ece04ceba133ab9385537b62c20f80c7",
+              "base_delay": 16141,
+              "donor_delay": 16141,
+              "total_delay": 16141,
+              "selected_donor_nets": [],
+              "dependency_arcs": 0,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 0,
+                "finite_infinity": 1,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-hard.json",
+              "variant": "control",
+              "seed": 15,
+              "output_sha256": "232769dd54c1453c9428f74b5b6b0c77973a26f37cb1385a49d163d32f767eef",
+              "base_delay": 16141,
+              "donor_delay": 16173,
+              "total_delay": 16141,
+              "selected_donor_nets": [],
+              "dependency_arcs": 23,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 14,
+                "finite_infinity": 61,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-neutral-full-hard.json",
+              "variant": "control",
+              "seed": 42,
+              "output_sha256": "23e81373b19c4143eaa672901842900e94275500b98ef6a6b5b36ab45e9be13c",
+              "base_delay": 16141,
+              "donor_delay": 16173,
+              "total_delay": 16141,
+              "selected_donor_nets": [],
+              "dependency_arcs": 36,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 36,
+                "finite_infinity": 105,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-hard.json",
+              "variant": "control",
+              "seed": 13,
+              "output_sha256": "2d669103e8d02d10998bcd92823aef82692ab21af49c42c2d865110dac663849",
+              "base_delay": 16141,
+              "donor_delay": 16173,
+              "total_delay": 16141,
+              "selected_donor_nets": [],
+              "dependency_arcs": 21,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 14,
+                "finite_infinity": 61,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-neutral-full-hard.json",
+              "variant": "fine_anneal_neutral",
+              "seed": 42,
+              "output_sha256": "5cbb86a097fdb02b67d26d843b55628dfa533836b5e3060ec6fabfe1b2042794",
+              "base_delay": 16141,
+              "donor_delay": 16173,
+              "total_delay": 16141,
+              "selected_donor_nets": [],
+              "dependency_arcs": 35,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 38,
+                "finite_infinity": 109,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-hard.json",
+              "variant": "delayed_conflict_first",
+              "seed": 15,
+              "output_sha256": "7bdc8ee91d55c235cd821f6f1fdf1e925a0fc25a2df04194950f28eb70a343ba",
+              "base_delay": 16141,
+              "donor_delay": 16173,
+              "total_delay": 16141,
+              "selected_donor_nets": [],
+              "dependency_arcs": 26,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 18,
+                "finite_infinity": 69,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        },
+        {
+          "case": "case_06",
+          "previous_run": "20261003T202210.944108Z-exact-polish",
+          "previous_delay": 21302,
+          "selected_delay": 21302,
+          "changed": false,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-neutral-full-hard.json",
+              "variant": "fine_anneal_neutral",
+              "seed": 42,
+              "output_sha256": "11b8df43bec7d2851bef0c0068b9276d587ee124086d5b4d06081c007f0b3af2",
+              "base_delay": 21302,
+              "donor_delay": 21354,
+              "total_delay": 21302,
+              "selected_donor_nets": [],
+              "dependency_arcs": 63,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 118,
+                "finite_infinity": 289,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-neutral-full-hard.json",
+              "variant": "control",
+              "seed": 42,
+              "output_sha256": "25262405e588888a2d273f754204d974e9807d66268fc309da39ef61e870fbda",
+              "base_delay": 21302,
+              "donor_delay": 21354,
+              "total_delay": 21302,
+              "selected_donor_nets": [],
+              "dependency_arcs": 53,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 116,
+                "finite_infinity": 285,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-neutral-full-hard.json",
+              "variant": "fine_anneal_neutral",
+              "seed": 43,
+              "output_sha256": "7d187aa996b91c63bb60152f8eadf632828b1f9b8b92bceb881d713eb38e3add",
+              "base_delay": 21302,
+              "donor_delay": 21354,
+              "total_delay": 21302,
+              "selected_donor_nets": [],
+              "dependency_arcs": 56,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 112,
+                "finite_infinity": 277,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-neutral-full-hard.json",
+              "variant": "control",
+              "seed": 43,
+              "output_sha256": "cd69c0baf1acbf4e73450a6864e167be8a3f4e8b320183363d5d37452f9e9ab1",
+              "base_delay": 21302,
+              "donor_delay": 21354,
+              "total_delay": 21302,
+              "selected_donor_nets": [],
+              "dependency_arcs": 62,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 114,
+                "finite_infinity": 281,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-hard.json",
+              "variant": "delayed_conflict_first",
+              "seed": 15,
+              "output_sha256": "f9b13caa4e778139619385a0165e50acf984b72f38b23e3c40d2b0f70a2c1b10",
+              "base_delay": 21302,
+              "donor_delay": 21354,
+              "total_delay": 21302,
+              "selected_donor_nets": [],
+              "dependency_arcs": 79,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 176,
+                "finite_infinity": 405,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-hard.json",
+              "variant": "delayed_conflict_first",
+              "seed": 13,
+              "output_sha256": "187af3d9740ab35d8531db2b3228e75bd099b665c122eff6fdb1326098d13b1c",
+              "base_delay": 21302,
+              "donor_delay": 21366,
+              "total_delay": 21302,
+              "selected_donor_nets": [],
+              "dependency_arcs": 72,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 146,
+                "finite_infinity": 357,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        },
+        {
+          "case": "case_07",
+          "previous_run": "20261003T202210.944108Z-exact-polish",
+          "previous_delay": 22753,
+          "selected_delay": 22753,
+          "changed": false,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-neutral-full-hard.json",
+              "variant": "control",
+              "seed": 42,
+              "output_sha256": "0c802f8699c29baab6164cc44eb54aa7d47ad099512d1a6844bfc7b7e163519d",
+              "base_delay": 22753,
+              "donor_delay": 22759,
+              "total_delay": 22753,
+              "selected_donor_nets": [],
+              "dependency_arcs": 33,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 74,
+                "finite_infinity": 155,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-neutral-full-hard.json",
+              "variant": "control",
+              "seed": 43,
+              "output_sha256": "15a66284f10dfcfac796e896a3d2253052a905e61adbb4a0bba3d875b8eaecfd",
+              "base_delay": 22753,
+              "donor_delay": 22785,
+              "total_delay": 22753,
+              "selected_donor_nets": [],
+              "dependency_arcs": 32,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 52,
+                "finite_infinity": 137,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-neutral-full-hard.json",
+              "variant": "fine_anneal_neutral",
+              "seed": 42,
+              "output_sha256": "69d23ca9a3a5ef4567097139a752c2cf875ec885d5ea7e28cbf4be09b530bc20",
+              "base_delay": 22753,
+              "donor_delay": 22787,
+              "total_delay": 22753,
+              "selected_donor_nets": [],
+              "dependency_arcs": 25,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 28,
+                "finite_infinity": 91,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-history-crossover.json",
+              "variant": "fine_anneal_neutral",
+              "seed": 49,
+              "output_sha256": "1c4485298b5974aefbebe3d8e072b5cdea30020a8631e0239aaee1bc474beebb",
+              "base_delay": 22753,
+              "donor_delay": 22789,
+              "total_delay": 22753,
+              "selected_donor_nets": [],
+              "dependency_arcs": 42,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 62,
+                "finite_infinity": 161,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-history-crossover.json",
+              "variant": "cold_anneal_neutral",
+              "seed": 49,
+              "output_sha256": "a5ff95714f7e5f81f56f7222a93afb269408dea2bece5999230eb316110be818",
+              "base_delay": 22753,
+              "donor_delay": 22791,
+              "total_delay": 22753,
+              "selected_donor_nets": [],
+              "dependency_arcs": 33,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 46,
+                "finite_infinity": 131,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-history-crossover.json",
+              "variant": "cold_decay",
+              "seed": 48,
+              "output_sha256": "cf58d56486fd9989968cb850ddb1125595a5f813967435e9ac25ee6fbeba2d14",
+              "base_delay": 22753,
+              "donor_delay": 22791,
+              "total_delay": 22753,
+              "selected_donor_nets": [],
+              "dependency_arcs": 34,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 46,
+                "finite_infinity": 131,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        },
+        {
+          "case": "case_08",
+          "previous_run": "20261003T202210.944108Z-exact-polish",
+          "previous_delay": 23618,
+          "selected_delay": 23598,
+          "changed": true,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-neutral-full-hard.json",
+              "variant": "fine_anneal_neutral",
+              "seed": 42,
+              "output_sha256": "e62658355c5d06ab41ecb6a6ac31e880e539ef937db5c9765303d7ec650e358b",
+              "base_delay": 23618,
+              "donor_delay": 23622,
+              "total_delay": 23598,
+              "selected_donor_nets": [
+                4,
+                11,
+                12,
+                17,
+                20,
+                21,
+                29,
+                30,
+                36,
+                48,
+                53,
+                57,
+                59,
+                68
+              ],
+              "dependency_arcs": 54,
+              "certificate": {
+                "minimum_delta": -20,
+                "max_flow": 100,
+                "finite_infinity": 245,
+                "weighted_minimum_delta": -20,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-neutral-full-hard.json",
+              "variant": "control",
+              "seed": 43,
+              "output_sha256": "5e889ce29cf19378c733576069d28e8276fbd934929d673a3f84e213c774a8cd",
+              "base_delay": 23598,
+              "donor_delay": 23626,
+              "total_delay": 23598,
+              "selected_donor_nets": [],
+              "dependency_arcs": 65,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 114,
+                "finite_infinity": 257,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-neutral-full-hard.json",
+              "variant": "fine_anneal_neutral",
+              "seed": 43,
+              "output_sha256": "9c94048bbc09543af8a7bd9436da40c4a072dfd78fe3eabc7560732248c59f92",
+              "base_delay": 23598,
+              "donor_delay": 23652,
+              "total_delay": 23598,
+              "selected_donor_nets": [],
+              "dependency_arcs": 60,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 186,
+                "finite_infinity": 427,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-neutral-full-hard.json",
+              "variant": "control",
+              "seed": 42,
+              "output_sha256": "131d42e055c69e0dc37127d5b82f36a2505e0fe090dcb0a687e715e34fc670be",
+              "base_delay": 23598,
+              "donor_delay": 23656,
+              "total_delay": 23598,
+              "selected_donor_nets": [],
+              "dependency_arcs": 51,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 198,
+                "finite_infinity": 455,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-hard.json",
+              "variant": "control",
+              "seed": 13,
+              "output_sha256": "3eb527c18417e31a5097c1cbd6c449aec856d74c38251e28cb34c055e3af2d21",
+              "base_delay": 23598,
+              "donor_delay": 23952,
+              "total_delay": 23598,
+              "selected_donor_nets": [],
+              "dependency_arcs": 209,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 444,
+                "finite_infinity": 1243,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-hard.json",
+              "variant": "delayed_conflict_first",
+              "seed": 13,
+              "output_sha256": "170b00081496dc11779bd5165164d4152add9d78db904c10b5598a63a497fc24",
+              "base_delay": 23598,
+              "donor_delay": 23968,
+              "total_delay": 23598,
+              "selected_donor_nets": [],
+              "dependency_arcs": 208,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 388,
+                "finite_infinity": 1147,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        },
+        {
+          "case": "case_09",
+          "previous_run": "20261003T202210.944108Z-exact-polish",
+          "previous_delay": 22590,
+          "selected_delay": 22574,
+          "changed": true,
+          "experiment_report": "docs/evidence/phase3/evolution-neutral-full-hard.json",
+          "variant": "fine_anneal_neutral",
+          "seed": 42,
+          "source_sha256": "5048249b7084c563c977a2e2f317424a36c9dcf84edf042c4b2120dad020ba7c",
+          "output_sha256": "256cb9a4a9f0aa06258626d6823b77e1faa590e0ce2c9eca31bfd26356ff6e57",
+          "work_expansions": 60000000,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-neutral-full-hard.json",
+              "variant": "fine_anneal_neutral",
+              "seed": 42,
+              "output_sha256": "256cb9a4a9f0aa06258626d6823b77e1faa590e0ce2c9eca31bfd26356ff6e57",
+              "base_delay": 22580,
+              "donor_delay": 22580,
+              "total_delay": 22580,
+              "selected_donor_nets": [],
+              "dependency_arcs": 0,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 0,
+                "finite_infinity": 1,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-neutral-full-hard.json",
+              "variant": "control",
+              "seed": 43,
+              "output_sha256": "107015974dc6a7f945beefe96d6abcdef5184bc4b17e30e103c2daba200d1c93",
+              "base_delay": 22580,
+              "donor_delay": 22590,
+              "total_delay": 22580,
+              "selected_donor_nets": [],
+              "dependency_arcs": 16,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 60,
+                "finite_infinity": 131,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-neutral-full-hard.json",
+              "variant": "control",
+              "seed": 42,
+              "output_sha256": "30d532a9a512d2d163c38774cddbbe2755035fde374c6e7b202a79a6af6fdb1f",
+              "base_delay": 22580,
+              "donor_delay": 22590,
+              "total_delay": 22580,
+              "selected_donor_nets": [],
+              "dependency_arcs": 15,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 26,
+                "finite_infinity": 63,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-neutral-full-hard.json",
+              "variant": "fine_anneal_neutral",
+              "seed": 43,
+              "output_sha256": "7a692a84d5d8aff75f7086c121c205f080e0ff6b472b9d56b2d8fb88eab7e0ee",
+              "base_delay": 22580,
+              "donor_delay": 22590,
+              "total_delay": 22580,
+              "selected_donor_nets": [],
+              "dependency_arcs": 18,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 60,
+                "finite_infinity": 131,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-neutral-validation.json",
+              "variant": "control",
+              "seed": 35,
+              "output_sha256": "740fe78e3b5d879c1053d48adae0a22e75f4c73eeaebd2be325820396c8bde2d",
+              "base_delay": 22580,
+              "donor_delay": 22604,
+              "total_delay": 22574,
+              "selected_donor_nets": [
+                14,
+                25,
+                35,
+                66,
+                71,
+                80,
+                88,
+                95
+              ],
+              "dependency_arcs": 58,
+              "certificate": {
+                "minimum_delta": -6,
+                "max_flow": 86,
+                "finite_infinity": 209,
+                "weighted_minimum_delta": -6,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-order-validation.json",
+              "variant": "flow_conflict_first",
+              "seed": 7,
+              "output_sha256": "77f8b1e94158b983c54b5aa99e338987094732242b048464e32441d41dd6e48b",
+              "base_delay": 22574,
+              "donor_delay": 22612,
+              "total_delay": 22574,
+              "selected_donor_nets": [],
+              "dependency_arcs": 52,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 80,
+                "finite_infinity": 199,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tier": "scale",
+      "run_id": "20261003T203418.490772Z-exact-polish",
+      "score": 1.0648977612656003,
+      "previous_score": 1.064756984976603,
+      "improved_cases": 4,
+      "cases": [
+        {
+          "case": "case_01",
+          "previous_run": "20261003T202702.499477Z-exact-polish",
+          "previous_delay": 42388,
+          "selected_delay": 42358,
+          "changed": true,
+          "experiment_report": "docs/evidence/phase3/evolution-slice.json",
+          "variant": "control",
+          "seed": 44,
+          "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+          "output_sha256": "71e397fd33cfa7ae1028806dc4f5785096d50320422627ba586fdb8eecc528ec",
+          "work_expansions": 50000000,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-slice.json",
+              "variant": "control",
+              "seed": 44,
+              "output_sha256": "71e397fd33cfa7ae1028806dc4f5785096d50320422627ba586fdb8eecc528ec",
+              "base_delay": 42358,
+              "donor_delay": 42358,
+              "total_delay": 42358,
+              "selected_donor_nets": [],
+              "dependency_arcs": 0,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 0,
+                "finite_infinity": 1,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-slice.json",
+              "variant": "slice10",
+              "seed": 44,
+              "output_sha256": "5ad219ec5a07803cc7b67c4e4b7f48fcd0f4a2866397d414f35e734340212170",
+              "base_delay": 42358,
+              "donor_delay": 42410,
+              "total_delay": 42358,
+              "selected_donor_nets": [],
+              "dependency_arcs": 134,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 18,
+                "finite_infinity": 89,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-schedule.json",
+              "variant": "repair_first",
+              "seed": 41,
+              "output_sha256": "9aca775f125a1a8f74743e710079b53a7509e8c8e1781949f85a3f7ffd4a092f",
+              "base_delay": 42358,
+              "donor_delay": 42410,
+              "total_delay": 42358,
+              "selected_donor_nets": [],
+              "dependency_arcs": 133,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 20,
+                "finite_infinity": 93,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-slice.json",
+              "variant": "control",
+              "seed": 45,
+              "output_sha256": "ceac7ff83baae77d70cbd26f3922862fdb62e0442659add8ee639ea408648dd8",
+              "base_delay": 42358,
+              "donor_delay": 42410,
+              "total_delay": 42358,
+              "selected_donor_nets": [],
+              "dependency_arcs": 139,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 20,
+                "finite_infinity": 93,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-slice.json",
+              "variant": "slice25",
+              "seed": 44,
+              "output_sha256": "31a581ddf8ed65d3a9f232b951cbba7dfca4100489611aa5193e64c79bf41c37",
+              "base_delay": 42358,
+              "donor_delay": 42414,
+              "total_delay": 42358,
+              "selected_donor_nets": [],
+              "dependency_arcs": 121,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 14,
+                "finite_infinity": 85,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-slice.json",
+              "variant": "slice25",
+              "seed": 45,
+              "output_sha256": "786f14127d154827a56564a549032e6dc52659a688c3412710cba31e59bae477",
+              "base_delay": 42358,
+              "donor_delay": 42418,
+              "total_delay": 42358,
+              "selected_donor_nets": [],
+              "dependency_arcs": 123,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 12,
+                "finite_infinity": 85,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        },
+        {
+          "case": "case_02",
+          "previous_run": "20261003T202702.499477Z-exact-polish",
+          "previous_delay": 48276,
+          "selected_delay": 48276,
+          "changed": false,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-scale.json",
+              "variant": "delayed_conflict_first",
+              "seed": 20,
+              "output_sha256": "46b04754dc38c15e924ae0ddfe55eedbf36af3314d49bd28219f5740ddef114e",
+              "base_delay": 48276,
+              "donor_delay": 48294,
+              "total_delay": 48276,
+              "selected_donor_nets": [],
+              "dependency_arcs": 124,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 14,
+                "finite_infinity": 47,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-scale.json",
+              "variant": "delayed_conflict_first",
+              "seed": 19,
+              "output_sha256": "7805363f7bd4ecd60b8d4634770efafdf303dd531b7b9e2f15c00340c4b6e204",
+              "base_delay": 48276,
+              "donor_delay": 48302,
+              "total_delay": 48276,
+              "selected_donor_nets": [],
+              "dependency_arcs": 151,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 18,
+                "finite_infinity": 63,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-scale.json",
+              "variant": "control",
+              "seed": 19,
+              "output_sha256": "bb1cdceaa94a44e404c974610f8217320a4a6f4616b05364cb2e9a73bae91ba5",
+              "base_delay": 48276,
+              "donor_delay": 48302,
+              "total_delay": 48276,
+              "selected_donor_nets": [],
+              "dependency_arcs": 149,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 18,
+                "finite_infinity": 63,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-scale.json",
+              "variant": "control",
+              "seed": 20,
+              "output_sha256": "ef9f0cf81922c355fd299b3c521be236fc9f7a7e248da6f7d87b5839aa0d03b3",
+              "base_delay": 48276,
+              "donor_delay": 48306,
+              "total_delay": 48276,
+              "selected_donor_nets": [],
+              "dependency_arcs": 157,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 14,
+                "finite_infinity": 59,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        },
+        {
+          "case": "case_03",
+          "previous_run": "20261003T202702.499477Z-exact-polish",
+          "previous_delay": 58288,
+          "selected_delay": 58288,
+          "changed": false,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-scale.json",
+              "variant": "delayed_conflict_first",
+              "seed": 19,
+              "output_sha256": "3542ecad1175c23b382e4ad713f9a528cb4680ac7aaa1a057c54570cc00aea47",
+              "base_delay": 58288,
+              "donor_delay": 58292,
+              "total_delay": 58288,
+              "selected_donor_nets": [],
+              "dependency_arcs": 126,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 0,
+                "finite_infinity": 5,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-scale.json",
+              "variant": "delayed_conflict_first",
+              "seed": 20,
+              "output_sha256": "5fbd63c0bccc3f47973239ec5505690551d30350c733356fd29ab82bb4d57609",
+              "base_delay": 58288,
+              "donor_delay": 58292,
+              "total_delay": 58288,
+              "selected_donor_nets": [],
+              "dependency_arcs": 150,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 0,
+                "finite_infinity": 5,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-scale.json",
+              "variant": "control",
+              "seed": 19,
+              "output_sha256": "943249a7815ded80995f612608cc12f7323439e44c0fee94f1106c3592956d3d",
+              "base_delay": 58288,
+              "donor_delay": 58292,
+              "total_delay": 58288,
+              "selected_donor_nets": [],
+              "dependency_arcs": 131,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 0,
+                "finite_infinity": 5,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-scale.json",
+              "variant": "control",
+              "seed": 20,
+              "output_sha256": "9679679f7b4b33db367425974e31f763710bc89f0b8229c94a04cc461268ba8d",
+              "base_delay": 58288,
+              "donor_delay": 58292,
+              "total_delay": 58288,
+              "selected_donor_nets": [],
+              "dependency_arcs": 154,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 0,
+                "finite_infinity": 5,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        },
+        {
+          "case": "case_04",
+          "previous_run": "20261003T202702.499477Z-exact-polish",
+          "previous_delay": 61244,
+          "selected_delay": 61238,
+          "changed": true,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-scale.json",
+              "variant": "control",
+              "seed": 19,
+              "output_sha256": "62a19bb5ead9335d5791d2b244f632563e586380a412ddf9ca2e296821e6a113",
+              "base_delay": 61244,
+              "donor_delay": 61258,
+              "total_delay": 61238,
+              "selected_donor_nets": [
+                29,
+                34,
+                38,
+                45,
+                46,
+                106,
+                118,
+                120,
+                124,
+                143,
+                147,
+                175,
+                199,
+                204
+              ],
+              "dependency_arcs": 144,
+              "certificate": {
+                "minimum_delta": -6,
+                "max_flow": 6,
+                "finite_infinity": 39,
+                "weighted_minimum_delta": -6,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-scale.json",
+              "variant": "delayed_conflict_first",
+              "seed": 20,
+              "output_sha256": "698a3e0b48d447052ada58329651255bd7c606bccaf9af6781c87b8de1483069",
+              "base_delay": 61238,
+              "donor_delay": 61282,
+              "total_delay": 61238,
+              "selected_donor_nets": [],
+              "dependency_arcs": 171,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 14,
+                "finite_infinity": 73,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-scale.json",
+              "variant": "delayed_conflict_first",
+              "seed": 19,
+              "output_sha256": "15433b6a9c1cbedc99a5af7ae49c29a839454436bc5228213a4f6a05edd6ce98",
+              "base_delay": 61238,
+              "donor_delay": 61292,
+              "total_delay": 61238,
+              "selected_donor_nets": [],
+              "dependency_arcs": 162,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 2,
+                "finite_infinity": 59,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-scale.json",
+              "variant": "control",
+              "seed": 20,
+              "output_sha256": "4339e53e164c8bfe9ade3b3e77dbe9041d05c39fe64e12481be997afc5d8b7b5",
+              "base_delay": 61238,
+              "donor_delay": 61292,
+              "total_delay": 61238,
+              "selected_donor_nets": [],
+              "dependency_arcs": 173,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 2,
+                "finite_infinity": 59,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        },
+        {
+          "case": "case_05",
+          "previous_run": "20261003T202702.499477Z-exact-polish",
+          "previous_delay": 69307,
+          "selected_delay": 69307,
+          "changed": false,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-scale.json",
+              "variant": "delayed_conflict_first",
+              "seed": 20,
+              "output_sha256": "204433a026fd99ddca1ebe00a313a383f474b411206d4cacaf41bf74a8fa4778",
+              "base_delay": 69307,
+              "donor_delay": 69373,
+              "total_delay": 69307,
+              "selected_donor_nets": [],
+              "dependency_arcs": 184,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 20,
+                "finite_infinity": 107,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-scale.json",
+              "variant": "delayed_conflict_first",
+              "seed": 19,
+              "output_sha256": "3f425b8ac3b882cfd93656e016c690678154eab2f90c1140bc7a76530b9642da",
+              "base_delay": 69307,
+              "donor_delay": 69373,
+              "total_delay": 69307,
+              "selected_donor_nets": [],
+              "dependency_arcs": 197,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 20,
+                "finite_infinity": 107,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-scale.json",
+              "variant": "control",
+              "seed": 20,
+              "output_sha256": "868a7ce4d285c899932bc664d1882de83dd3582bdac7622255261b55a306ae5c",
+              "base_delay": 69307,
+              "donor_delay": 69373,
+              "total_delay": 69307,
+              "selected_donor_nets": [],
+              "dependency_arcs": 220,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 20,
+                "finite_infinity": 107,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-scale.json",
+              "variant": "control",
+              "seed": 19,
+              "output_sha256": "d3affc6d45eac5c9ae96537781e25b8bbcb6e90f6bdeee05937ef7939a8b51fe",
+              "base_delay": 69307,
+              "donor_delay": 69373,
+              "total_delay": 69307,
+              "selected_donor_nets": [],
+              "dependency_arcs": 211,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 20,
+                "finite_infinity": 107,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        },
+        {
+          "case": "case_06",
+          "previous_run": "20261003T202702.499477Z-exact-polish",
+          "previous_delay": 82903,
+          "selected_delay": 82885,
+          "changed": true,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-scale.json",
+              "variant": "delayed_conflict_first",
+              "seed": 19,
+              "output_sha256": "111ad8c182f2ace67d8fdfd4804b33fc516e39d5ecca9a849219b988434b7916",
+              "base_delay": 82903,
+              "donor_delay": 82931,
+              "total_delay": 82903,
+              "selected_donor_nets": [],
+              "dependency_arcs": 198,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 46,
+                "finite_infinity": 121,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-schedule.json",
+              "variant": "repair_first",
+              "seed": 40,
+              "output_sha256": "8256824ed8bcf7fe4bf6710b3a43dad09060fbe4b5c668636f2271889d2c1aba",
+              "base_delay": 82903,
+              "donor_delay": 82943,
+              "total_delay": 82885,
+              "selected_donor_nets": [
+                12,
+                15,
+                24,
+                26,
+                27,
+                125,
+                132,
+                148,
+                214,
+                237
+              ],
+              "dependency_arcs": 197,
+              "certificate": {
+                "minimum_delta": -18,
+                "max_flow": 30,
+                "finite_infinity": 137,
+                "weighted_minimum_delta": -18,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-slice.json",
+              "variant": "slice25",
+              "seed": 45,
+              "output_sha256": "16e52db36e22f8246210c67742843ccc99642b534b9c7a858c6703f6bb23532e",
+              "base_delay": 82885,
+              "donor_delay": 82973,
+              "total_delay": 82885,
+              "selected_donor_nets": [],
+              "dependency_arcs": 201,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 4,
+                "finite_infinity": 97,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-scale.json",
+              "variant": "delayed_conflict_first",
+              "seed": 20,
+              "output_sha256": "a231a5814d384557992529112a3cf4f8c26d4fce1e8b0de0dac597f6c6478228",
+              "base_delay": 82885,
+              "donor_delay": 82975,
+              "total_delay": 82885,
+              "selected_donor_nets": [],
+              "dependency_arcs": 210,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 4,
+                "finite_infinity": 99,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-slice.json",
+              "variant": "slice10",
+              "seed": 45,
+              "output_sha256": "f853f21a66e4b1149c138bfc86d80ff35dc64f6dc1e4a2f0464fd179d2a60e27",
+              "base_delay": 82885,
+              "donor_delay": 82981,
+              "total_delay": 82885,
+              "selected_donor_nets": [],
+              "dependency_arcs": 205,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 8,
+                "finite_infinity": 113,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-schedule.json",
+              "variant": "control",
+              "seed": 40,
+              "output_sha256": "3154294a12712914a9f84282bc3de16bfdc60e9003de7349012b186a6d6ec740",
+              "base_delay": 82885,
+              "donor_delay": 82983,
+              "total_delay": 82885,
+              "selected_donor_nets": [],
+              "dependency_arcs": 219,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 14,
+                "finite_infinity": 127,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        },
+        {
+          "case": "case_07",
+          "previous_run": "20261003T202702.499477Z-exact-polish",
+          "previous_delay": 90719,
+          "selected_delay": 90719,
+          "changed": false,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-scale.json",
+              "variant": "control",
+              "seed": 20,
+              "output_sha256": "552ecc83d179a0aa0741da5ef66487fe0a7c9c52facc47a83b154357b5a85dd9",
+              "base_delay": 90719,
+              "donor_delay": 90929,
+              "total_delay": 90719,
+              "selected_donor_nets": [],
+              "dependency_arcs": 288,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 44,
+                "finite_infinity": 299,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-scale.json",
+              "variant": "delayed_conflict_first",
+              "seed": 19,
+              "output_sha256": "f8170c23150c359c09f28241b2dd28b1f3f07642df47d83e50e4d4f7a8d8a360",
+              "base_delay": 90719,
+              "donor_delay": 90939,
+              "total_delay": 90719,
+              "selected_donor_nets": [],
+              "dependency_arcs": 318,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 40,
+                "finite_infinity": 301,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-scale.json",
+              "variant": "control",
+              "seed": 19,
+              "output_sha256": "9de455419c430df91e52464028bd1173888a059661777619e1378ca1390ee5e0",
+              "base_delay": 90719,
+              "donor_delay": 90941,
+              "total_delay": 90719,
+              "selected_donor_nets": [],
+              "dependency_arcs": 307,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 40,
+                "finite_infinity": 303,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-scale.json",
+              "variant": "delayed_conflict_first",
+              "seed": 20,
+              "output_sha256": "e4f619fd5eb5ad30ab78aa23ef81f37950d1794619f5b86d025b8f43b0bdd9a2",
+              "base_delay": 90719,
+              "donor_delay": 90945,
+              "total_delay": 90719,
+              "selected_donor_nets": [],
+              "dependency_arcs": 295,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 40,
+                "finite_infinity": 307,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        },
+        {
+          "case": "case_08",
+          "previous_run": "20261003T202702.499477Z-exact-polish",
+          "previous_delay": 115845,
+          "selected_delay": 115841,
+          "changed": true,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-slice.json",
+              "variant": "slice10",
+              "seed": 45,
+              "output_sha256": "a55aa0ab180740b8246c220b733fe36e5aac1371d8dd84d02196fdd7ca5c4344",
+              "base_delay": 115845,
+              "donor_delay": 116125,
+              "total_delay": 115843,
+              "selected_donor_nets": [
+                93,
+                125,
+                166,
+                222
+              ],
+              "dependency_arcs": 372,
+              "certificate": {
+                "minimum_delta": -2,
+                "max_flow": 44,
+                "finite_infinity": 373,
+                "weighted_minimum_delta": -2,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-slice.json",
+              "variant": "slice10",
+              "seed": 44,
+              "output_sha256": "34a79edf1171977b5ff46fb1afe9f4eadce0c43a1f0786034ae90cf373211845",
+              "base_delay": 115843,
+              "donor_delay": 116127,
+              "total_delay": 115843,
+              "selected_donor_nets": [],
+              "dependency_arcs": 350,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 66,
+                "finite_infinity": 417,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-slice.json",
+              "variant": "slice25",
+              "seed": 44,
+              "output_sha256": "7bcd98992f4c912712b9f3fc26dc3c345f60917f6efe39656b9bb996c21409ce",
+              "base_delay": 115843,
+              "donor_delay": 116137,
+              "total_delay": 115843,
+              "selected_donor_nets": [],
+              "dependency_arcs": 378,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 60,
+                "finite_infinity": 415,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-slice.json",
+              "variant": "control",
+              "seed": 44,
+              "output_sha256": "4f42a257d4f795ce908768a822eae945d152c81eb5e887bafc2aa17cd6a15add",
+              "base_delay": 115843,
+              "donor_delay": 116153,
+              "total_delay": 115841,
+              "selected_donor_nets": [
+                172,
+                191
+              ],
+              "dependency_arcs": 400,
+              "certificate": {
+                "minimum_delta": -2,
+                "max_flow": 58,
+                "finite_infinity": 431,
+                "weighted_minimum_delta": -2,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-scale.json",
+              "variant": "delayed_conflict_first",
+              "seed": 19,
+              "output_sha256": "deb5880cf0392493a89508445f5b7b604aef21a0d96d40a6f2ff1755a0581fff",
+              "base_delay": 115841,
+              "donor_delay": 116159,
+              "total_delay": 115841,
+              "selected_donor_nets": [],
+              "dependency_arcs": 374,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 26,
+                "finite_infinity": 371,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-slice.json",
+              "variant": "slice25",
+              "seed": 45,
+              "output_sha256": "e06d23b3b6c7e1c7000f3ca77da3a8de2595f60d53ca267b292ca531c1c39acf",
+              "base_delay": 115841,
+              "donor_delay": 116177,
+              "total_delay": 115841,
+              "selected_donor_nets": [],
+              "dependency_arcs": 360,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 28,
+                "finite_infinity": 393,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tier": "congested",
+      "run_id": "20261003T203432.770794Z-exact-polish",
+      "score": 1.1399638783162933,
+      "previous_score": 1.1399444824341571,
+      "improved_cases": 1,
+      "cases": [
+        {
+          "case": "case_01",
+          "previous_run": "20261003T203018.539649Z-exact-polish",
+          "previous_delay": 58775,
+          "selected_delay": 58771,
+          "changed": true,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-history.json",
+              "variant": "cycle_history",
+              "seed": 34,
+              "output_sha256": "140e7ba5b382f9ee26b9946c6bd50e09ea813575fbd12913ba7cca904838a8c9",
+              "base_delay": 58775,
+              "donor_delay": 58905,
+              "total_delay": 58775,
+              "selected_donor_nets": [],
+              "dependency_arcs": 76,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 86,
+                "finite_infinity": 303,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-transfer.json",
+              "variant": "delayed_conflict_first",
+              "seed": 14,
+              "output_sha256": "320f4e7976b957a117d072d766a99f2b8a1eac916e1924bca66a3eecb6de010f",
+              "base_delay": 58775,
+              "donor_delay": 58921,
+              "total_delay": 58775,
+              "selected_donor_nets": [],
+              "dependency_arcs": 84,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 90,
+                "finite_infinity": 327,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-history.json",
+              "variant": "control",
+              "seed": 35,
+              "output_sha256": "4f3b066f066348a081e8963016a744aef5723c504b3b0c43bcd88cf8a105c652",
+              "base_delay": 58775,
+              "donor_delay": 58921,
+              "total_delay": 58775,
+              "selected_donor_nets": [],
+              "dependency_arcs": 86,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 100,
+                "finite_infinity": 347,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-history.json",
+              "variant": "control",
+              "seed": 36,
+              "output_sha256": "8a02a0f762a592e2c75f475f355e3381660047e5243e77417014e75c5f5c248b",
+              "base_delay": 58775,
+              "donor_delay": 58935,
+              "total_delay": 58771,
+              "selected_donor_nets": [
+                11,
+                20,
+                69,
+                105
+              ],
+              "dependency_arcs": 81,
+              "certificate": {
+                "minimum_delta": -4,
+                "max_flow": 74,
+                "finite_infinity": 317,
+                "weighted_minimum_delta": -4,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-history.json",
+              "variant": "dual_release",
+              "seed": 34,
+              "output_sha256": "78606f254911913a97a9d545625b7efa7164faa6d03652bb77d8d0685e6ae960",
+              "base_delay": 58771,
+              "donor_delay": 58937,
+              "total_delay": 58771,
+              "selected_donor_nets": [],
+              "dependency_arcs": 89,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 76,
+                "finite_infinity": 319,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-history.json",
+              "variant": "dual_release",
+              "seed": 36,
+              "output_sha256": "10426261ff5cf20a3751ffaadfc21d314ad6d0c8aa0f182ed2ea703b216f78ce",
+              "base_delay": 58771,
+              "donor_delay": 58939,
+              "total_delay": 58771,
+              "selected_donor_nets": [],
+              "dependency_arcs": 82,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 74,
+                "finite_infinity": 317,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        },
+        {
+          "case": "case_02",
+          "previous_run": "20261003T203018.539649Z-exact-polish",
+          "previous_delay": 109716,
+          "selected_delay": 109716,
+          "changed": false,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-congested.json",
+              "variant": "control",
+              "seed": 20,
+              "output_sha256": "56dc9f7b392ade79c41651aa7d8bbd771dd10598c9fe8bdae96eb16a2fdb1fdc",
+              "base_delay": 109716,
+              "donor_delay": 109918,
+              "total_delay": 109716,
+              "selected_donor_nets": [],
+              "dependency_arcs": 158,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 198,
+                "finite_infinity": 599,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-congested.json",
+              "variant": "delayed_conflict_first",
+              "seed": 20,
+              "output_sha256": "0afc8e7c610f06511226a884fae06ef9ac9b504d5deea120808a3d536b3e203d",
+              "base_delay": 109716,
+              "donor_delay": 109922,
+              "total_delay": 109716,
+              "selected_donor_nets": [],
+              "dependency_arcs": 169,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 200,
+                "finite_infinity": 607,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-congested.json",
+              "variant": "control",
+              "seed": 19,
+              "output_sha256": "008e499e77f16adb84b392b2da682a37ea3728ef406f9e04d7bd4d8d5327d2f0",
+              "base_delay": 109716,
+              "donor_delay": 109926,
+              "total_delay": 109716,
+              "selected_donor_nets": [],
+              "dependency_arcs": 161,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 216,
+                "finite_infinity": 643,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-congested.json",
+              "variant": "delayed_conflict_first",
+              "seed": 19,
+              "output_sha256": "258bf092c25718832264e92f77756361f5bd17d92acef82f861edfd8c798a46d",
+              "base_delay": 109716,
+              "donor_delay": 109926,
+              "total_delay": 109716,
+              "selected_donor_nets": [],
+              "dependency_arcs": 174,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 216,
+                "finite_infinity": 643,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        },
+        {
+          "case": "case_03",
+          "previous_run": "20261003T203018.539649Z-exact-polish",
+          "previous_delay": 192637,
+          "selected_delay": 192637,
+          "changed": false,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-congested.json",
+              "variant": "delayed_conflict_first",
+              "seed": 20,
+              "output_sha256": "4cc7cd6680de118408ab67fc49711c8fa191c7525815d4cc1310279dcf2094cf",
+              "base_delay": 192637,
+              "donor_delay": 192883,
+              "total_delay": 192637,
+              "selected_donor_nets": [],
+              "dependency_arcs": 211,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 122,
+                "finite_infinity": 491,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-congested.json",
+              "variant": "control",
+              "seed": 19,
+              "output_sha256": "9637aaca5f611314cbc04a4da790024b3f16c761daa0174c62217a6a15812540",
+              "base_delay": 192637,
+              "donor_delay": 192885,
+              "total_delay": 192637,
+              "selected_donor_nets": [],
+              "dependency_arcs": 221,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 152,
+                "finite_infinity": 553,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-congested.json",
+              "variant": "control",
+              "seed": 20,
+              "output_sha256": "7d5d7eeac06851c9a9be746ee8da066d14e9ca39cd29e4579436fe2e8f5fbd72",
+              "base_delay": 192637,
+              "donor_delay": 192891,
+              "total_delay": 192637,
+              "selected_donor_nets": [],
+              "dependency_arcs": 217,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 198,
+                "finite_infinity": 651,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-congested.json",
+              "variant": "delayed_conflict_first",
+              "seed": 19,
+              "output_sha256": "36800b60965186f559f13522323cd94705d4dab34aed6cb56c73242fe44602c1",
+              "base_delay": 192637,
+              "donor_delay": 192917,
+              "total_delay": 192637,
+              "selected_donor_nets": [],
+              "dependency_arcs": 200,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 100,
+                "finite_infinity": 481,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        },
+        {
+          "case": "case_04",
+          "previous_run": "20261003T203018.539649Z-exact-polish",
+          "previous_delay": 210697,
+          "selected_delay": 210697,
+          "changed": false,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-transfer.json",
+              "variant": "control",
+              "seed": 13,
+              "output_sha256": "95f0e3eb2b2eb3e4c3c09cad38a8d91fa9279f54f082cf12a1bfad3479d3b338",
+              "base_delay": 210697,
+              "donor_delay": 210953,
+              "total_delay": 210697,
+              "selected_donor_nets": [],
+              "dependency_arcs": 272,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 316,
+                "finite_infinity": 889,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-transfer.json",
+              "variant": "delayed_conflict_first",
+              "seed": 13,
+              "output_sha256": "e9e87ef7b31e44a04b287040366ad30203093bbc9b2d3079d93de4129c79847f",
+              "base_delay": 210697,
+              "donor_delay": 211035,
+              "total_delay": 210697,
+              "selected_donor_nets": [],
+              "dependency_arcs": 273,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 248,
+                "finite_infinity": 835,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-transfer.json",
+              "variant": "delayed_conflict_first",
+              "seed": 14,
+              "output_sha256": "c4a9e62c6a13b3c58041d3ab6abc65bb7a978a204a568e0c6fb9892e1f501c0e",
+              "base_delay": 210697,
+              "donor_delay": 211101,
+              "total_delay": 210697,
+              "selected_donor_nets": [],
+              "dependency_arcs": 288,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 228,
+                "finite_infinity": 861,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-transfer.json",
+              "variant": "control",
+              "seed": 14,
+              "output_sha256": "658d0ffa3c74d050411af126f8c7560ade427b0579ecacfc592ee22bfecb30f0",
+              "base_delay": 210697,
+              "donor_delay": 211113,
+              "total_delay": 210697,
+              "selected_donor_nets": [],
+              "dependency_arcs": 295,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 194,
+                "finite_infinity": 805,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-congested.json",
+              "variant": "delayed_conflict_first",
+              "seed": 20,
+              "output_sha256": "12348dac32fd747efc85d0b72dd83af0667c3e433bfc1877a1420ce5e6fe8314",
+              "base_delay": 210697,
+              "donor_delay": 211165,
+              "total_delay": 210697,
+              "selected_donor_nets": [],
+              "dependency_arcs": 287,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 262,
+                "finite_infinity": 993,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-congested.json",
+              "variant": "control",
+              "seed": 20,
+              "output_sha256": "67ede74d5d4dd838b356a8fcbc3800bc737321b6cc35bd6e29845021ffad0f79",
+              "base_delay": 210697,
+              "donor_delay": 211167,
+              "total_delay": 210697,
+              "selected_donor_nets": [],
+              "dependency_arcs": 290,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 288,
+                "finite_infinity": 1047,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tier": "designs",
+      "run_id": "20261003T203441.048447Z-exact-polish",
+      "score": 1.2892733080827021,
+      "previous_score": 1.2888530770437552,
+      "improved_cases": 2,
+      "cases": [
+        {
+          "case": "ctrl",
+          "previous_run": "20261003T203057.739683Z-exact-polish",
+          "previous_delay": 56292,
+          "selected_delay": 56246,
+          "changed": true,
+          "experiment_report": "docs/evidence/phase3/evolution-delayed-transfer.json",
+          "variant": "delayed_conflict_first",
+          "seed": 15,
+          "source_sha256": "6eab965d3af2de6d08a8033c318b538d13b92eaf0f3483c9040827d1d5ae47f2",
+          "output_sha256": "5d36810cc6d4f8539a8c84df95b134017977fe29c187c5a92821f55f6e0ff361",
+          "work_expansions": 50000000,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-transfer.json",
+              "variant": "delayed_conflict_first",
+              "seed": 15,
+              "output_sha256": "5d36810cc6d4f8539a8c84df95b134017977fe29c187c5a92821f55f6e0ff361",
+              "base_delay": 56270,
+              "donor_delay": 56270,
+              "total_delay": 56270,
+              "selected_donor_nets": [],
+              "dependency_arcs": 0,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 0,
+                "finite_infinity": 1,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-transfer.json",
+              "variant": "delayed_conflict_first",
+              "seed": 14,
+              "output_sha256": "5923de11c1e164ae9328dd4c496b7233aff5a73b254ce2700482eb42ea0b2ddc",
+              "base_delay": 56270,
+              "donor_delay": 56280,
+              "total_delay": 56270,
+              "selected_donor_nets": [],
+              "dependency_arcs": 62,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 30,
+                "finite_infinity": 71,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-transfer.json",
+              "variant": "control",
+              "seed": 13,
+              "output_sha256": "84a082043b40206b49c01b41d55d1e3ea0ae0c0155b1c537186d6c6982424c37",
+              "base_delay": 56270,
+              "donor_delay": 56298,
+              "total_delay": 56258,
+              "selected_donor_nets": [
+                4,
+                81,
+                123,
+                145,
+                164,
+                167,
+                176
+              ],
+              "dependency_arcs": 73,
+              "certificate": {
+                "minimum_delta": -12,
+                "max_flow": 74,
+                "finite_infinity": 201,
+                "weighted_minimum_delta": -12,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-designs.json",
+              "variant": "control",
+              "seed": 20,
+              "output_sha256": "4e9ceb13af7f929a413b5b1b930296ab76a3b33c0a9cac48272513fd60fb27ed",
+              "base_delay": 56258,
+              "donor_delay": 56308,
+              "total_delay": 56258,
+              "selected_donor_nets": [],
+              "dependency_arcs": 72,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 86,
+                "finite_infinity": 223,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-transfer.json",
+              "variant": "control",
+              "seed": 14,
+              "output_sha256": "9efc6e8299c8a71dca48412b40177f01ee3e8de64aceef74ba34996ceb64cf6f",
+              "base_delay": 56258,
+              "donor_delay": 56308,
+              "total_delay": 56246,
+              "selected_donor_nets": [
+                19,
+                46,
+                66,
+                160
+              ],
+              "dependency_arcs": 66,
+              "certificate": {
+                "minimum_delta": -12,
+                "max_flow": 70,
+                "finite_infinity": 215,
+                "weighted_minimum_delta": -12,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-designs.json",
+              "variant": "control",
+              "seed": 19,
+              "output_sha256": "02d8e54222934081c3e85043a4660a43ee980720eea4d305126ba0f76baf5b08",
+              "base_delay": 56246,
+              "donor_delay": 56312,
+              "total_delay": 56246,
+              "selected_donor_nets": [],
+              "dependency_arcs": 77,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 58,
+                "finite_infinity": 183,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        },
+        {
+          "case": "int2float",
+          "previous_run": "20261003T203057.739683Z-exact-polish",
+          "previous_delay": 101962,
+          "selected_delay": 101962,
+          "changed": false,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-designs.json",
+              "variant": "delayed_conflict_first",
+              "seed": 20,
+              "output_sha256": "3f43793c9d9423df50dde2cebcf9b3f903398582a51368edf7e841f37341cca0",
+              "base_delay": 101962,
+              "donor_delay": 102286,
+              "total_delay": 101962,
+              "selected_donor_nets": [],
+              "dependency_arcs": 286,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 496,
+                "finite_infinity": 1317,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-precision.json",
+              "variant": "precision1024",
+              "seed": 32,
+              "output_sha256": "bf3699c5f418e74d6ceab67e3a694f9180bb99ee4e25a00688a230c6c31065f3",
+              "base_delay": 101962,
+              "donor_delay": 102292,
+              "total_delay": 101962,
+              "selected_donor_nets": [],
+              "dependency_arcs": 274,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 474,
+                "finite_infinity": 1279,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-schedule.json",
+              "variant": "control",
+              "seed": 41,
+              "output_sha256": "334fb5ffa8713d45270826a44d627871c6169c52afda9918e99aa306c7d2fa42",
+              "base_delay": 101962,
+              "donor_delay": 102362,
+              "total_delay": 101962,
+              "selected_donor_nets": [],
+              "dependency_arcs": 279,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 458,
+                "finite_infinity": 1317,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-history.json",
+              "variant": "cold_decay",
+              "seed": 34,
+              "output_sha256": "a3199f311e3c6582c913ceba9d226e15409a01a62a15b731f88bbc953507a76c",
+              "base_delay": 101962,
+              "donor_delay": 102440,
+              "total_delay": 101962,
+              "selected_donor_nets": [],
+              "dependency_arcs": 286,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 480,
+                "finite_infinity": 1439,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-history.json",
+              "variant": "cycle_history",
+              "seed": 34,
+              "output_sha256": "2bcba1fdc7bb58a2280867bd20d51c58347e441ff353092db61ab80c09fd4737",
+              "base_delay": 101962,
+              "donor_delay": 102446,
+              "total_delay": 101962,
+              "selected_donor_nets": [],
+              "dependency_arcs": 266,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 482,
+                "finite_infinity": 1449,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-history.json",
+              "variant": "control",
+              "seed": 34,
+              "output_sha256": "2b2cb09d5e32ea78d69a8f22fc90933dfce6f8e7bf9e9c897719eafb25940a4a",
+              "base_delay": 101962,
+              "donor_delay": 102460,
+              "total_delay": 101962,
+              "selected_donor_nets": [],
+              "dependency_arcs": 287,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 540,
+                "finite_infinity": 1579,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        },
+        {
+          "case": "router",
+          "previous_run": "20261003T203057.739683Z-exact-polish",
+          "previous_delay": 74777,
+          "selected_delay": 74765,
+          "changed": true,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-transfer.json",
+              "variant": "delayed_conflict_first",
+              "seed": 14,
+              "output_sha256": "4cf6cfbc5eaca9173e3bfc874761cf796887ca31870e8cd99d6229bfaeb60198",
+              "base_delay": 74777,
+              "donor_delay": 74795,
+              "total_delay": 74767,
+              "selected_donor_nets": [
+                50,
+                55,
+                57,
+                65,
+                74,
+                75,
+                76,
+                141,
+                144
+              ],
+              "dependency_arcs": 126,
+              "certificate": {
+                "minimum_delta": -10,
+                "max_flow": 100,
+                "finite_infinity": 239,
+                "weighted_minimum_delta": -10,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-transfer.json",
+              "variant": "control",
+              "seed": 14,
+              "output_sha256": "cc8e61fb1b8e5777e2b9bf75a33b198177ab0749d32a01e340746d9260bd8566",
+              "base_delay": 74767,
+              "donor_delay": 74797,
+              "total_delay": 74765,
+              "selected_donor_nets": [
+                145,
+                239,
+                264,
+                270,
+                281,
+                282
+              ],
+              "dependency_arcs": 138,
+              "certificate": {
+                "minimum_delta": -2,
+                "max_flow": 114,
+                "finite_infinity": 263,
+                "weighted_minimum_delta": -2,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-designs.json",
+              "variant": "control",
+              "seed": 20,
+              "output_sha256": "bd3de4e02f62d01783dce4c12265448d5c46f202b56385e7ae4d1f9df5284de5",
+              "base_delay": 74765,
+              "donor_delay": 74799,
+              "total_delay": 74765,
+              "selected_donor_nets": [],
+              "dependency_arcs": 144,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 88,
+                "finite_infinity": 211,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-transfer.json",
+              "variant": "control",
+              "seed": 13,
+              "output_sha256": "3aca04959581583b0ddb07ee290d938cf37b68cd8879dc89fd5d3343cf2db719",
+              "base_delay": 74765,
+              "donor_delay": 74803,
+              "total_delay": 74765,
+              "selected_donor_nets": [],
+              "dependency_arcs": 114,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 88,
+                "finite_infinity": 215,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-transfer.json",
+              "variant": "delayed_conflict_first",
+              "seed": 15,
+              "output_sha256": "77d522e90cc55b3f6ed290757f1d9c11e94fd4c6df7ae6d37ebe435386a37e29",
+              "base_delay": 74765,
+              "donor_delay": 74805,
+              "total_delay": 74765,
+              "selected_donor_nets": [],
+              "dependency_arcs": 136,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 108,
+                "finite_infinity": 257,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-transfer.json",
+              "variant": "control",
+              "seed": 15,
+              "output_sha256": "af59b30b08c62b5c9348714612587438563b5cdc8b53d4a29c05959af73a4c6f",
+              "base_delay": 74765,
+              "donor_delay": 74807,
+              "total_delay": 74765,
+              "selected_donor_nets": [],
+              "dependency_arcs": 132,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 88,
+                "finite_infinity": 219,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tier": "stress",
+      "run_id": "20261003T203516.758178Z-exact-polish",
+      "score": 1.0334560947429232,
+      "previous_score": 1.0334560947429232,
+      "improved_cases": 0,
+      "cases": [
+        {
+          "case": "case_01",
+          "previous_run": "20261003T203153.582946Z-exact-polish",
+          "previous_delay": 1107840,
+          "selected_delay": 1107840,
+          "changed": false,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-schedule.json",
+              "variant": "control",
+              "seed": 40,
+              "output_sha256": "e3418012bd2eef80d0717413a1f393d25af182306c37dd7c596fc633ea36b444",
+              "base_delay": 1107840,
+              "donor_delay": 1109852,
+              "total_delay": 1107840,
+              "selected_donor_nets": [],
+              "dependency_arcs": 2888,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 64,
+                "finite_infinity": 2141,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-slice.json",
+              "variant": "slice25",
+              "seed": 44,
+              "output_sha256": "6a0931e0aa21824033f8025bb31434cdf7fb6b14ff445e3b0d3273791ac8eb01",
+              "base_delay": 1107840,
+              "donor_delay": 1109930,
+              "total_delay": 1107840,
+              "selected_donor_nets": [],
+              "dependency_arcs": 2890,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 104,
+                "finite_infinity": 2299,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-schedule.json",
+              "variant": "control",
+              "seed": 41,
+              "output_sha256": "81128ffba49c390cbde281d4f36eccf0b84c7c332c0c4fca40bc072887e21826",
+              "base_delay": 1107840,
+              "donor_delay": 1109932,
+              "total_delay": 1107840,
+              "selected_donor_nets": [],
+              "dependency_arcs": 2918,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 60,
+                "finite_infinity": 2213,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-slice.json",
+              "variant": "control",
+              "seed": 45,
+              "output_sha256": "fb952e7748f17550020514c0c157840472849b7fab6d09a35d4378d401e7e760",
+              "base_delay": 1107840,
+              "donor_delay": 1109932,
+              "total_delay": 1107840,
+              "selected_donor_nets": [],
+              "dependency_arcs": 2836,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 48,
+                "finite_infinity": 2189,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-stress.json",
+              "variant": "delayed_conflict_first",
+              "seed": 19,
+              "output_sha256": "f74a58a326354a991559c8e5f20b5145b627e3baa1914ed0ac75ee4859552dcb",
+              "base_delay": 1107840,
+              "donor_delay": 1109940,
+              "total_delay": 1107840,
+              "selected_donor_nets": [],
+              "dependency_arcs": 2881,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 62,
+                "finite_infinity": 2225,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-delayed-full-stress.json",
+              "variant": "delayed_conflict_first",
+              "seed": 20,
+              "output_sha256": "d6f15f2e85f055262028aca77573bdc948cd9652a8c54974e103b21a6e4c5dff",
+              "base_delay": 1107840,
+              "donor_delay": 1109954,
+              "total_delay": 1107840,
+              "selected_donor_nets": [],
+              "dependency_arcs": 2915,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 42,
+                "finite_infinity": 2199,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "scope": "Best legal whole-case portfolio from own completed source-variant trials and previous own coverage. Added search and per-case selection,not uniform-budget solver comparison. No competitor routes. Inherited search costs remain separate/partly unknown. Optional bounded two-parent min-cut tree fusion;exact only per pair,not global optimization.",
+  "coverage_sha256_result": "ae511cc69feee5f51f09a885125a342df7babf8c48f1a1e7fc5130e8de7240d1"
+}
