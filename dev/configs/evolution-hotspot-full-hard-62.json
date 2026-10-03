@@ -1,0 +1,134 @@
+{
+  "coverage": "docs/evidence/phase3/tier-hotspot-fusion-coverage.json",
+  "variants": [
+    "control",
+    "hotspot_direct4",
+    "hotspot_diverse4"
+  ],
+  "seeds": [
+    62
+  ],
+  "work_budget": 50000000,
+  "budget": 60,
+  "cases": [
+    {
+      "tier": "hard",
+      "case": "case_01",
+      "mode": "fanout_fine_escape",
+      "settings": {
+        "present_initial": 2,
+        "present_step": 1,
+        "history_step": 1,
+        "group_limit": 13,
+        "tree_prices": 2,
+        "accept_equal": 1
+      }
+    },
+    {
+      "tier": "hard",
+      "case": "case_02",
+      "mode": "fanout_fine_escape",
+      "settings": {
+        "present_initial": 2,
+        "present_step": 1,
+        "history_step": 1,
+        "group_limit": 13,
+        "tree_prices": 2,
+        "accept_equal": 1
+      }
+    },
+    {
+      "tier": "hard",
+      "case": "case_03",
+      "mode": "fanout_fine_escape",
+      "settings": {
+        "present_initial": 2,
+        "present_step": 1,
+        "history_step": 1,
+        "group_limit": 13,
+        "tree_prices": 2,
+        "accept_equal": 1
+      }
+    },
+    {
+      "tier": "hard",
+      "case": "case_04",
+      "mode": "fanout_fine_escape",
+      "settings": {
+        "present_initial": 2,
+        "present_step": 1,
+        "history_step": 1,
+        "group_limit": 13,
+        "tree_prices": 2,
+        "accept_equal": 1
+      }
+    },
+    {
+      "tier": "hard",
+      "case": "case_05",
+      "mode": "fanout_fine_escape",
+      "settings": {
+        "present_initial": 2,
+        "present_step": 1,
+        "history_step": 1,
+        "group_limit": 13,
+        "tree_prices": 2,
+        "accept_equal": 1
+      }
+    },
+    {
+      "tier": "hard",
+      "case": "case_06",
+      "mode": "fanout_fine_escape",
+      "settings": {
+        "present_initial": 2,
+        "present_step": 1,
+        "history_step": 1,
+        "group_limit": 13,
+        "tree_prices": 2,
+        "accept_equal": 1
+      }
+    },
+    {
+      "tier": "hard",
+      "case": "case_07",
+      "mode": "fanout_fine_escape",
+      "settings": {
+        "present_initial": 2,
+        "present_step": 1,
+        "history_step": 1,
+        "group_limit": 13,
+        "tree_prices": 2,
+        "accept_equal": 1
+      }
+    },
+    {
+      "tier": "hard",
+      "case": "case_08",
+      "mode": "fanout_fine_escape",
+      "settings": {
+        "present_initial": 2,
+        "present_step": 1,
+        "history_step": 1,
+        "group_limit": 13,
+        "tree_prices": 2,
+        "accept_equal": 1
+      }
+    },
+    {
+      "tier": "hard",
+      "case": "case_09",
+      "mode": "fanout_fine_escape",
+      "settings": {
+        "present_initial": 2,
+        "present_step": 1,
+        "history_step": 1,
+        "group_limit": 13,
+        "tree_prices": 2,
+        "accept_equal": 1
+      }
+    }
+  ],
+  "scope": "Full9hardcases,control/direct/diverse;one independentseed50M each plus disclosed hotspot analysis cost. No automatic default change.",
+  "hotspots": "docs/evidence/phase3/dual-hotspots-full-hard.json"
+}

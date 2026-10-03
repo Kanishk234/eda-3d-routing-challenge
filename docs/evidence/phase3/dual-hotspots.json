@@ -1,0 +1,4324 @@
+{
+  "complete": true,
+  "upstream_revision": "499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+  "frozen_sha256": {
+    "/home/younix/eda-3d-routing-challenge/docs/evidence/phase3/tier-evolution-fusion-coverage.json": "ae511cc69feee5f51f09a885125a342df7babf8c48f1a1e7fc5130e8de7240d1",
+    "/home/younix/eda-3d-routing-challenge/dev/solver/exact_polish.cpp": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+    "/home/younix/eda-3d-routing-challenge/dev/dual_hotspots.py": "185e789ef53035bb80dc8c8042966702248ebeb3d5634331e3a922439444a832",
+    "/home/younix/eda-3d-routing-challenge/dev/dual_bound.py": "109c6236c18153250e99d1a63c9c89294c7287d14988ca6c3dfb0881e0c7d2a6"
+  },
+  "source_sha256": "cea8aa98022868af15c2c00eb3da9c5c41d5efe0c0ed66fea691877947dc24f4",
+  "binary_sha256": "d3339184ce089a02e2b54ca309c2d007f184f8cdecb6f26f0afa3cd74ded5561",
+  "build_command": [
+    "g++",
+    "-O3",
+    "-std=c++17",
+    "-Wall",
+    "-Wextra",
+    "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261003-dual-hotspots-checked/hotspots.cpp",
+    "-o",
+    "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261003-dual-hotspots-checked/hotspots"
+  ],
+  "machine": {
+    "hostname": "LAPTOP-C8RSJ5BT",
+    "os": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "cpus": 16,
+    "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]"
+  },
+  "rows": [
+    {
+      "tier": "hard",
+      "case": "case_01",
+      "case_sha256": "685a165a7a15811dff12839e0dbe79752b889558213f760ad5f0df6139766f5d",
+      "parent_sha256": "d589065438376aa81a5e223cfbb4feec156d0f6c099065016c849d3c35415acd",
+      "parent_delay": 9048,
+      "command": [
+        "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261003-dual-hotspots-checked/hotspots",
+        "64",
+        "1",
+        "max_sink",
+        "16",
+        "adaptive"
+      ],
+      "wall_s": 1.7417857219697908,
+      "price_resolution": 16,
+      "iterations": [
+        {
+          "iteration": 0,
+          "lower_bound": 7156,
+          "best_lower_bound": 7156,
+          "priced_vertices": 0
+        },
+        {
+          "iteration": 1,
+          "lower_bound": 7150,
+          "best_lower_bound": 7156,
+          "priced_vertices": 359
+        },
+        {
+          "iteration": 2,
+          "lower_bound": 7248,
+          "best_lower_bound": 7248,
+          "priced_vertices": 486
+        },
+        {
+          "iteration": 3,
+          "lower_bound": 7319,
+          "best_lower_bound": 7319,
+          "priced_vertices": 548
+        },
+        {
+          "iteration": 4,
+          "lower_bound": 7411,
+          "best_lower_bound": 7411,
+          "priced_vertices": 579
+        },
+        {
+          "iteration": 5,
+          "lower_bound": 7464,
+          "best_lower_bound": 7464,
+          "priced_vertices": 603
+        },
+        {
+          "iteration": 6,
+          "lower_bound": 7551,
+          "best_lower_bound": 7551,
+          "priced_vertices": 644
+        },
+        {
+          "iteration": 7,
+          "lower_bound": 7568,
+          "best_lower_bound": 7568,
+          "priced_vertices": 663
+        },
+        {
+          "iteration": 8,
+          "lower_bound": 7618,
+          "best_lower_bound": 7618,
+          "priced_vertices": 715
+        },
+        {
+          "iteration": 9,
+          "lower_bound": 7635,
+          "best_lower_bound": 7635,
+          "priced_vertices": 738
+        },
+        {
+          "iteration": 10,
+          "lower_bound": 7629,
+          "best_lower_bound": 7635,
+          "priced_vertices": 780
+        },
+        {
+          "iteration": 11,
+          "lower_bound": 7668,
+          "best_lower_bound": 7668,
+          "priced_vertices": 852
+        },
+        {
+          "iteration": 12,
+          "lower_bound": 7668,
+          "best_lower_bound": 7668,
+          "priced_vertices": 851
+        },
+        {
+          "iteration": 13,
+          "lower_bound": 7676,
+          "best_lower_bound": 7676,
+          "priced_vertices": 885
+        },
+        {
+          "iteration": 14,
+          "lower_bound": 7669,
+          "best_lower_bound": 7676,
+          "priced_vertices": 905
+        },
+        {
+          "iteration": 15,
+          "lower_bound": 7679,
+          "best_lower_bound": 7679,
+          "priced_vertices": 914
+        },
+        {
+          "iteration": 16,
+          "lower_bound": 7674,
+          "best_lower_bound": 7679,
+          "priced_vertices": 906
+        },
+        {
+          "iteration": 17,
+          "lower_bound": 7694,
+          "best_lower_bound": 7694,
+          "priced_vertices": 938
+        },
+        {
+          "iteration": 18,
+          "lower_bound": 7683,
+          "best_lower_bound": 7694,
+          "priced_vertices": 944
+        },
+        {
+          "iteration": 19,
+          "lower_bound": 7694,
+          "best_lower_bound": 7694,
+          "priced_vertices": 943
+        },
+        {
+          "iteration": 20,
+          "lower_bound": 7703,
+          "best_lower_bound": 7703,
+          "priced_vertices": 932
+        },
+        {
+          "iteration": 21,
+          "lower_bound": 7713,
+          "best_lower_bound": 7713,
+          "priced_vertices": 1015
+        },
+        {
+          "iteration": 22,
+          "lower_bound": 7718,
+          "best_lower_bound": 7718,
+          "priced_vertices": 982
+        },
+        {
+          "iteration": 23,
+          "lower_bound": 7726,
+          "best_lower_bound": 7726,
+          "priced_vertices": 987
+        },
+        {
+          "iteration": 24,
+          "lower_bound": 7724,
+          "best_lower_bound": 7726,
+          "priced_vertices": 1007
+        },
+        {
+          "iteration": 25,
+          "lower_bound": 7748,
+          "best_lower_bound": 7748,
+          "priced_vertices": 1004
+        },
+        {
+          "iteration": 26,
+          "lower_bound": 7744,
+          "best_lower_bound": 7748,
+          "priced_vertices": 1008
+        },
+        {
+          "iteration": 27,
+          "lower_bound": 7730,
+          "best_lower_bound": 7748,
+          "priced_vertices": 1027
+        },
+        {
+          "iteration": 28,
+          "lower_bound": 7748,
+          "best_lower_bound": 7748,
+          "priced_vertices": 1002
+        },
+        {
+          "iteration": 29,
+          "lower_bound": 7743,
+          "best_lower_bound": 7748,
+          "priced_vertices": 997
+        },
+        {
+          "iteration": 30,
+          "lower_bound": 7732,
+          "best_lower_bound": 7748,
+          "priced_vertices": 1014
+        },
+        {
+          "iteration": 31,
+          "lower_bound": 7732,
+          "best_lower_bound": 7748,
+          "priced_vertices": 993
+        },
+        {
+          "iteration": 32,
+          "lower_bound": 7735,
+          "best_lower_bound": 7748,
+          "priced_vertices": 1036
+        },
+        {
+          "iteration": 33,
+          "lower_bound": 7733,
+          "best_lower_bound": 7748,
+          "priced_vertices": 993
+        },
+        {
+          "iteration": 34,
+          "lower_bound": 7739,
+          "best_lower_bound": 7748,
+          "priced_vertices": 998
+        },
+        {
+          "iteration": 35,
+          "lower_bound": 7740,
+          "best_lower_bound": 7748,
+          "priced_vertices": 1027
+        },
+        {
+          "iteration": 36,
+          "lower_bound": 7756,
+          "best_lower_bound": 7756,
+          "priced_vertices": 991
+        },
+        {
+          "iteration": 37,
+          "lower_bound": 7757,
+          "best_lower_bound": 7757,
+          "priced_vertices": 988
+        },
+        {
+          "iteration": 38,
+          "lower_bound": 7752,
+          "best_lower_bound": 7757,
+          "priced_vertices": 1003
+        },
+        {
+          "iteration": 39,
+          "lower_bound": 7753,
+          "best_lower_bound": 7757,
+          "priced_vertices": 990
+        },
+        {
+          "iteration": 40,
+          "lower_bound": 7761,
+          "best_lower_bound": 7761,
+          "priced_vertices": 1021
+        },
+        {
+          "iteration": 41,
+          "lower_bound": 7767,
+          "best_lower_bound": 7767,
+          "priced_vertices": 1043
+        },
+        {
+          "iteration": 42,
+          "lower_bound": 7775,
+          "best_lower_bound": 7775,
+          "priced_vertices": 1053
+        },
+        {
+          "iteration": 43,
+          "lower_bound": 7763,
+          "best_lower_bound": 7775,
+          "priced_vertices": 1061
+        },
+        {
+          "iteration": 44,
+          "lower_bound": 7770,
+          "best_lower_bound": 7775,
+          "priced_vertices": 1055
+        },
+        {
+          "iteration": 45,
+          "lower_bound": 7764,
+          "best_lower_bound": 7775,
+          "priced_vertices": 1078
+        },
+        {
+          "iteration": 46,
+          "lower_bound": 7768,
+          "best_lower_bound": 7775,
+          "priced_vertices": 1048
+        },
+        {
+          "iteration": 47,
+          "lower_bound": 7772,
+          "best_lower_bound": 7775,
+          "priced_vertices": 1054
+        },
+        {
+          "iteration": 48,
+          "lower_bound": 7779,
+          "best_lower_bound": 7779,
+          "priced_vertices": 1068
+        },
+        {
+          "iteration": 49,
+          "lower_bound": 7779,
+          "best_lower_bound": 7779,
+          "priced_vertices": 1043
+        },
+        {
+          "iteration": 50,
+          "lower_bound": 7777,
+          "best_lower_bound": 7779,
+          "priced_vertices": 1089
+        },
+        {
+          "iteration": 51,
+          "lower_bound": 7785,
+          "best_lower_bound": 7785,
+          "priced_vertices": 1049
+        },
+        {
+          "iteration": 52,
+          "lower_bound": 7783,
+          "best_lower_bound": 7785,
+          "priced_vertices": 1043
+        },
+        {
+          "iteration": 53,
+          "lower_bound": 7775,
+          "best_lower_bound": 7785,
+          "priced_vertices": 1056
+        },
+        {
+          "iteration": 54,
+          "lower_bound": 7784,
+          "best_lower_bound": 7785,
+          "priced_vertices": 1033
+        },
+        {
+          "iteration": 55,
+          "lower_bound": 7783,
+          "best_lower_bound": 7785,
+          "priced_vertices": 1060
+        },
+        {
+          "iteration": 56,
+          "lower_bound": 7787,
+          "best_lower_bound": 7787,
+          "priced_vertices": 1035
+        },
+        {
+          "iteration": 57,
+          "lower_bound": 7783,
+          "best_lower_bound": 7787,
+          "priced_vertices": 1027
+        },
+        {
+          "iteration": 58,
+          "lower_bound": 7789,
+          "best_lower_bound": 7789,
+          "priced_vertices": 1050
+        },
+        {
+          "iteration": 59,
+          "lower_bound": 7781,
+          "best_lower_bound": 7789,
+          "priced_vertices": 1047
+        },
+        {
+          "iteration": 60,
+          "lower_bound": 7784,
+          "best_lower_bound": 7789,
+          "priced_vertices": 1058
+        },
+        {
+          "iteration": 61,
+          "lower_bound": 7792,
+          "best_lower_bound": 7792,
+          "priced_vertices": 1033
+        },
+        {
+          "iteration": 62,
+          "lower_bound": 7789,
+          "best_lower_bound": 7792,
+          "priced_vertices": 1033
+        },
+        {
+          "iteration": 63,
+          "lower_bound": 7787,
+          "best_lower_bound": 7792,
+          "priced_vertices": 1036
+        }
+      ],
+      "best_lower_bound": 7792,
+      "expansions": 7227078,
+      "hotspots": [
+        [
+          970,
+          124
+        ],
+        [
+          1383,
+          82
+        ],
+        [
+          1546,
+          77
+        ],
+        [
+          1381,
+          66
+        ],
+        [
+          1506,
+          66
+        ],
+        [
+          1380,
+          57
+        ],
+        [
+          1565,
+          57
+        ],
+        [
+          1954,
+          54
+        ],
+        [
+          1352,
+          52
+        ],
+        [
+          1452,
+          52
+        ],
+        [
+          1547,
+          52
+        ],
+        [
+          2099,
+          52
+        ],
+        [
+          1522,
+          50
+        ],
+        [
+          1524,
+          50
+        ],
+        [
+          1955,
+          49
+        ],
+        [
+          2023,
+          49
+        ],
+        [
+          1379,
+          48
+        ],
+        [
+          1469,
+          48
+        ],
+        [
+          1929,
+          48
+        ],
+        [
+          1353,
+          47
+        ],
+        [
+          1474,
+          47
+        ],
+        [
+          1523,
+          47
+        ],
+        [
+          1548,
+          47
+        ],
+        [
+          2123,
+          47
+        ],
+        [
+          1378,
+          46
+        ],
+        [
+          1398,
+          46
+        ],
+        [
+          1448,
+          46
+        ],
+        [
+          1473,
+          46
+        ],
+        [
+          1496,
+          46
+        ],
+        [
+          2000,
+          46
+        ],
+        [
+          2050,
+          46
+        ],
+        [
+          2074,
+          46
+        ],
+        [
+          2172,
+          46
+        ],
+        [
+          1396,
+          45
+        ],
+        [
+          1399,
+          45
+        ],
+        [
+          1423,
+          45
+        ],
+        [
+          1424,
+          45
+        ],
+        [
+          1446,
+          45
+        ],
+        [
+          1498,
+          45
+        ],
+        [
+          1500,
+          45
+        ],
+        [
+          1549,
+          45
+        ],
+        [
+          2025,
+          45
+        ],
+        [
+          1261,
+          44
+        ],
+        [
+          1374,
+          44
+        ],
+        [
+          1375,
+          44
+        ],
+        [
+          1406,
+          44
+        ],
+        [
+          1449,
+          44
+        ],
+        [
+          1472,
+          44
+        ],
+        [
+          1475,
+          44
+        ],
+        [
+          1477,
+          44
+        ],
+        [
+          1572,
+          44
+        ],
+        [
+          1956,
+          44
+        ],
+        [
+          2024,
+          44
+        ],
+        [
+          2026,
+          44
+        ],
+        [
+          2034,
+          44
+        ],
+        [
+          2147,
+          44
+        ],
+        [
+          1471,
+          43
+        ],
+        [
+          1975,
+          43
+        ],
+        [
+          1999,
+          43
+        ],
+        [
+          2001,
+          43
+        ],
+        [
+          2048,
+          43
+        ],
+        [
+          1421,
+          42
+        ],
+        [
+          1447,
+          42
+        ],
+        [
+          1450,
+          42
+        ],
+        [
+          1470,
+          42
+        ],
+        [
+          1476,
+          42
+        ],
+        [
+          1499,
+          42
+        ],
+        [
+          1976,
+          42
+        ],
+        [
+          1979,
+          42
+        ],
+        [
+          2002,
+          42
+        ],
+        [
+          2022,
+          42
+        ],
+        [
+          2046,
+          42
+        ],
+        [
+          2071,
+          42
+        ],
+        [
+          2082,
+          42
+        ],
+        [
+          1327,
+          41
+        ],
+        [
+          1355,
+          41
+        ],
+        [
+          1360,
+          41
+        ],
+        [
+          1400,
+          41
+        ],
+        [
+          1427,
+          41
+        ],
+        [
+          1519,
+          41
+        ],
+        [
+          1668,
+          41
+        ],
+        [
+          1977,
+          41
+        ],
+        [
+          1996,
+          41
+        ],
+        [
+          2044,
+          41
+        ],
+        [
+          2049,
+          41
+        ],
+        [
+          2068,
+          41
+        ],
+        [
+          2069,
+          41
+        ],
+        [
+          2196,
+          41
+        ],
+        [
+          1330,
+          40
+        ],
+        [
+          1354,
+          40
+        ],
+        [
+          1376,
+          40
+        ],
+        [
+          1430,
+          40
+        ],
+        [
+          1494,
+          40
+        ],
+        [
+          1518,
+          40
+        ],
+        [
+          1576,
+          40
+        ],
+        [
+          1904,
+          40
+        ],
+        [
+          1906,
+          40
+        ],
+        [
+          1907,
+          40
+        ],
+        [
+          1972,
+          40
+        ],
+        [
+          1995,
+          40
+        ],
+        [
+          2027,
+          40
+        ],
+        [
+          2043,
+          40
+        ],
+        [
+          2067,
+          40
+        ],
+        [
+          2100,
+          40
+        ],
+        [
+          1361,
+          39
+        ],
+        [
+          1382,
+          39
+        ],
+        [
+          1402,
+          39
+        ],
+        [
+          1422,
+          39
+        ],
+        [
+          1426,
+          39
+        ],
+        [
+          1431,
+          39
+        ],
+        [
+          1435,
+          39
+        ],
+        [
+          1451,
+          39
+        ],
+        [
+          1497,
+          39
+        ],
+        [
+          1513,
+          39
+        ],
+        [
+          1516,
+          39
+        ],
+        [
+          1566,
+          39
+        ],
+        [
+          1571,
+          39
+        ],
+        [
+          1645,
+          39
+        ],
+        [
+          1881,
+          39
+        ],
+        [
+          1903,
+          39
+        ],
+        [
+          1928,
+          39
+        ],
+        [
+          1937,
+          39
+        ],
+        [
+          1957,
+          39
+        ],
+        [
+          2003,
+          39
+        ],
+        [
+          2021,
+          39
+        ],
+        [
+          2030,
+          39
+        ],
+        [
+          2045,
+          39
+        ],
+        [
+          2051,
+          39
+        ],
+        [
+          2072,
+          39
+        ],
+        [
+          2073,
+          39
+        ],
+        [
+          2076,
+          39
+        ],
+        [
+          2091,
+          39
+        ],
+        [
+          2105,
+          39
+        ],
+        [
+          901,
+          38
+        ],
+        [
+          1425,
+          38
+        ],
+        [
+          1482,
+          38
+        ],
+        [
+          1501,
+          38
+        ],
+        [
+          1521,
+          38
+        ],
+        [
+          1541,
+          38
+        ],
+        [
+          1542,
+          38
+        ],
+        [
+          1591,
+          38
+        ],
+        [
+          1592,
+          38
+        ],
+        [
+          1883,
+          38
+        ],
+        [
+          1930,
+          38
+        ],
+        [
+          1978,
+          38
+        ],
+        [
+          1998,
+          38
+        ],
+        [
+          2009,
+          38
+        ],
+        [
+          2020,
+          38
+        ],
+        [
+          2058,
+          38
+        ],
+        [
+          2075,
+          38
+        ],
+        [
+          2092,
+          38
+        ],
+        [
+          2126,
+          38
+        ],
+        [
+          2188,
+          38
+        ],
+        [
+          2197,
+          38
+        ],
+        [
+          2220,
+          38
+        ],
+        [
+          1331,
+          37
+        ],
+        [
+          1372,
+          37
+        ],
+        [
+          1407,
+          37
+        ],
+        [
+          1444,
+          37
+        ],
+        [
+          1502,
+          37
+        ],
+        [
+          1905,
+          37
+        ],
+        [
+          1997,
+          37
+        ],
+        [
+          2004,
+          37
+        ],
+        [
+          2006,
+          37
+        ],
+        [
+          2029,
+          37
+        ],
+        [
+          2047,
+          37
+        ],
+        [
+          2052,
+          37
+        ],
+        [
+          2053,
+          37
+        ],
+        [
+          2070,
+          37
+        ],
+        [
+          2098,
+          37
+        ],
+        [
+          776,
+          36
+        ],
+        [
+          1306,
+          36
+        ],
+        [
+          1350,
+          36
+        ],
+        [
+          1397,
+          36
+        ],
+        [
+          1401,
+          36
+        ],
+        [
+          1403,
+          36
+        ],
+        [
+          1445,
+          36
+        ],
+        [
+          1453,
+          36
+        ],
+        [
+          1466,
+          36
+        ],
+        [
+          1492,
+          36
+        ],
+        [
+          1505,
+          36
+        ],
+        [
+          1517,
+          36
+        ],
+        [
+          1543,
+          36
+        ],
+        [
+          1568,
+          36
+        ],
+        [
+          1569,
+          36
+        ],
+        [
+          1573,
+          36
+        ],
+        [
+          1596,
+          36
+        ],
+        [
+          1882,
+          36
+        ],
+        [
+          1908,
+          36
+        ],
+        [
+          2028,
+          36
+        ],
+        [
+          2081,
+          36
+        ],
+        [
+          2089,
+          36
+        ],
+        [
+          2096,
+          36
+        ],
+        [
+          2121,
+          36
+        ],
+        [
+          2128,
+          36
+        ],
+        [
+          2143,
+          36
+        ],
+        [
+          2599,
+          36
+        ],
+        [
+          1356,
+          35
+        ],
+        [
+          1358,
+          35
+        ],
+        [
+          1404,
+          35
+        ],
+        [
+          1420,
+          35
+        ],
+        [
+          1432,
+          35
+        ],
+        [
+          1443,
+          35
+        ],
+        [
+          1467,
+          35
+        ],
+        [
+          1493,
+          35
+        ],
+        [
+          1520,
+          35
+        ],
+        [
+          1550,
+          35
+        ],
+        [
+          1619,
+          35
+        ],
+        [
+          1973,
+          35
+        ],
+        [
+          1980,
+          35
+        ],
+        [
+          1982,
+          35
+        ],
+        [
+          1983,
+          35
+        ],
+        [
+          2054,
+          35
+        ],
+        [
+          2094,
+          35
+        ],
+        [
+          2118,
+          35
+        ],
+        [
+          2124,
+          35
+        ],
+        [
+          2125,
+          35
+        ],
+        [
+          2144,
+          35
+        ],
+        [
+          2163,
+          35
+        ],
+        [
+          920,
+          34
+        ],
+        [
+          1282,
+          34
+        ],
+        [
+          1302,
+          34
+        ],
+        [
+          1307,
+          34
+        ],
+        [
+          1347,
+          34
+        ],
+        [
+          1409,
+          34
+        ],
+        [
+          1418,
+          34
+        ],
+        [
+          1491,
+          34
+        ],
+        [
+          1515,
+          34
+        ],
+        [
+          1525,
+          34
+        ],
+        [
+          1544,
+          34
+        ],
+        [
+          1567,
+          34
+        ],
+        [
+          1593,
+          34
+        ],
+        [
+          1615,
+          34
+        ],
+        [
+          1616,
+          34
+        ],
+        [
+          1620,
+          34
+        ],
+        [
+          1621,
+          34
+        ],
+        [
+          1666,
+          34
+        ],
+        [
+          1879,
+          34
+        ],
+        [
+          1880,
+          34
+        ],
+        [
+          1902,
+          34
+        ],
+        [
+          1946,
+          34
+        ],
+        [
+          1970,
+          34
+        ],
+        [
+          1971,
+          34
+        ],
+        [
+          1985,
+          34
+        ],
+        [
+          2033,
+          34
+        ],
+        [
+          2065,
+          34
+        ],
+        [
+          2095,
+          34
+        ],
+        [
+          2120,
+          34
+        ],
+        [
+          2146,
+          34
+        ],
+        [
+          2191,
+          34
+        ],
+        [
+          2192,
+          34
+        ],
+        [
+          2219,
+          34
+        ],
+        [
+          2478,
+          34
+        ],
+        [
+          2675,
+          34
+        ],
+        [
+          873,
+          33
+        ],
+        [
+          922,
+          33
+        ]
+      ]
+    },
+    {
+      "tier": "hard",
+      "case": "case_04",
+      "case_sha256": "06324939b75971e45caa9e7f19d824a254e0f61167dd6b279bbff612d77d96f1",
+      "parent_sha256": "f2f3ec2e82cf8d049d05dc24601af91d19badddeecb9128d2a25171e2d6d1cbd",
+      "parent_delay": 13949,
+      "command": [
+        "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261003-dual-hotspots-checked/hotspots",
+        "64",
+        "1",
+        "max_sink",
+        "16",
+        "adaptive"
+      ],
+      "wall_s": 3.675156276905909,
+      "price_resolution": 16,
+      "iterations": [
+        {
+          "iteration": 0,
+          "lower_bound": 10253,
+          "best_lower_bound": 10253,
+          "priced_vertices": 0
+        },
+        {
+          "iteration": 1,
+          "lower_bound": 10240,
+          "best_lower_bound": 10253,
+          "priced_vertices": 518
+        },
+        {
+          "iteration": 2,
+          "lower_bound": 10465,
+          "best_lower_bound": 10465,
+          "priced_vertices": 704
+        },
+        {
+          "iteration": 3,
+          "lower_bound": 10581,
+          "best_lower_bound": 10581,
+          "priced_vertices": 778
+        },
+        {
+          "iteration": 4,
+          "lower_bound": 10739,
+          "best_lower_bound": 10739,
+          "priced_vertices": 875
+        },
+        {
+          "iteration": 5,
+          "lower_bound": 10826,
+          "best_lower_bound": 10826,
+          "priced_vertices": 876
+        },
+        {
+          "iteration": 6,
+          "lower_bound": 10909,
+          "best_lower_bound": 10909,
+          "priced_vertices": 961
+        },
+        {
+          "iteration": 7,
+          "lower_bound": 10920,
+          "best_lower_bound": 10920,
+          "priced_vertices": 1025
+        },
+        {
+          "iteration": 8,
+          "lower_bound": 10963,
+          "best_lower_bound": 10963,
+          "priced_vertices": 1126
+        },
+        {
+          "iteration": 9,
+          "lower_bound": 10965,
+          "best_lower_bound": 10965,
+          "priced_vertices": 1198
+        },
+        {
+          "iteration": 10,
+          "lower_bound": 11029,
+          "best_lower_bound": 11029,
+          "priced_vertices": 1280
+        },
+        {
+          "iteration": 11,
+          "lower_bound": 11019,
+          "best_lower_bound": 11029,
+          "priced_vertices": 1296
+        },
+        {
+          "iteration": 12,
+          "lower_bound": 11035,
+          "best_lower_bound": 11035,
+          "priced_vertices": 1318
+        },
+        {
+          "iteration": 13,
+          "lower_bound": 11048,
+          "best_lower_bound": 11048,
+          "priced_vertices": 1445
+        },
+        {
+          "iteration": 14,
+          "lower_bound": 11081,
+          "best_lower_bound": 11081,
+          "priced_vertices": 1420
+        },
+        {
+          "iteration": 15,
+          "lower_bound": 11077,
+          "best_lower_bound": 11081,
+          "priced_vertices": 1453
+        },
+        {
+          "iteration": 16,
+          "lower_bound": 11074,
+          "best_lower_bound": 11081,
+          "priced_vertices": 1441
+        },
+        {
+          "iteration": 17,
+          "lower_bound": 11063,
+          "best_lower_bound": 11081,
+          "priced_vertices": 1463
+        },
+        {
+          "iteration": 18,
+          "lower_bound": 11087,
+          "best_lower_bound": 11087,
+          "priced_vertices": 1475
+        },
+        {
+          "iteration": 19,
+          "lower_bound": 11097,
+          "best_lower_bound": 11097,
+          "priced_vertices": 1489
+        },
+        {
+          "iteration": 20,
+          "lower_bound": 11120,
+          "best_lower_bound": 11120,
+          "priced_vertices": 1496
+        },
+        {
+          "iteration": 21,
+          "lower_bound": 11147,
+          "best_lower_bound": 11147,
+          "priced_vertices": 1576
+        },
+        {
+          "iteration": 22,
+          "lower_bound": 11157,
+          "best_lower_bound": 11157,
+          "priced_vertices": 1560
+        },
+        {
+          "iteration": 23,
+          "lower_bound": 11157,
+          "best_lower_bound": 11157,
+          "priced_vertices": 1560
+        },
+        {
+          "iteration": 24,
+          "lower_bound": 11158,
+          "best_lower_bound": 11158,
+          "priced_vertices": 1578
+        },
+        {
+          "iteration": 25,
+          "lower_bound": 11165,
+          "best_lower_bound": 11165,
+          "priced_vertices": 1579
+        },
+        {
+          "iteration": 26,
+          "lower_bound": 11155,
+          "best_lower_bound": 11165,
+          "priced_vertices": 1558
+        },
+        {
+          "iteration": 27,
+          "lower_bound": 11161,
+          "best_lower_bound": 11165,
+          "priced_vertices": 1550
+        },
+        {
+          "iteration": 28,
+          "lower_bound": 11172,
+          "best_lower_bound": 11172,
+          "priced_vertices": 1567
+        },
+        {
+          "iteration": 29,
+          "lower_bound": 11167,
+          "best_lower_bound": 11172,
+          "priced_vertices": 1564
+        },
+        {
+          "iteration": 30,
+          "lower_bound": 11159,
+          "best_lower_bound": 11172,
+          "priced_vertices": 1568
+        },
+        {
+          "iteration": 31,
+          "lower_bound": 11173,
+          "best_lower_bound": 11173,
+          "priced_vertices": 1607
+        },
+        {
+          "iteration": 32,
+          "lower_bound": 11186,
+          "best_lower_bound": 11186,
+          "priced_vertices": 1562
+        },
+        {
+          "iteration": 33,
+          "lower_bound": 11177,
+          "best_lower_bound": 11186,
+          "priced_vertices": 1571
+        },
+        {
+          "iteration": 34,
+          "lower_bound": 11198,
+          "best_lower_bound": 11198,
+          "priced_vertices": 1531
+        },
+        {
+          "iteration": 35,
+          "lower_bound": 11205,
+          "best_lower_bound": 11205,
+          "priced_vertices": 1522
+        },
+        {
+          "iteration": 36,
+          "lower_bound": 11192,
+          "best_lower_bound": 11205,
+          "priced_vertices": 1543
+        },
+        {
+          "iteration": 37,
+          "lower_bound": 11200,
+          "best_lower_bound": 11205,
+          "priced_vertices": 1526
+        },
+        {
+          "iteration": 38,
+          "lower_bound": 11195,
+          "best_lower_bound": 11205,
+          "priced_vertices": 1564
+        },
+        {
+          "iteration": 39,
+          "lower_bound": 11195,
+          "best_lower_bound": 11205,
+          "priced_vertices": 1537
+        },
+        {
+          "iteration": 40,
+          "lower_bound": 11197,
+          "best_lower_bound": 11205,
+          "priced_vertices": 1551
+        },
+        {
+          "iteration": 41,
+          "lower_bound": 11217,
+          "best_lower_bound": 11217,
+          "priced_vertices": 1581
+        },
+        {
+          "iteration": 42,
+          "lower_bound": 11243,
+          "best_lower_bound": 11243,
+          "priced_vertices": 1627
+        },
+        {
+          "iteration": 43,
+          "lower_bound": 11241,
+          "best_lower_bound": 11243,
+          "priced_vertices": 1602
+        },
+        {
+          "iteration": 44,
+          "lower_bound": 11229,
+          "best_lower_bound": 11243,
+          "priced_vertices": 1634
+        },
+        {
+          "iteration": 45,
+          "lower_bound": 11225,
+          "best_lower_bound": 11243,
+          "priced_vertices": 1637
+        },
+        {
+          "iteration": 46,
+          "lower_bound": 11237,
+          "best_lower_bound": 11243,
+          "priced_vertices": 1658
+        },
+        {
+          "iteration": 47,
+          "lower_bound": 11233,
+          "best_lower_bound": 11243,
+          "priced_vertices": 1628
+        },
+        {
+          "iteration": 48,
+          "lower_bound": 11229,
+          "best_lower_bound": 11243,
+          "priced_vertices": 1652
+        },
+        {
+          "iteration": 49,
+          "lower_bound": 11228,
+          "best_lower_bound": 11243,
+          "priced_vertices": 1614
+        },
+        {
+          "iteration": 50,
+          "lower_bound": 11241,
+          "best_lower_bound": 11243,
+          "priced_vertices": 1647
+        },
+        {
+          "iteration": 51,
+          "lower_bound": 11243,
+          "best_lower_bound": 11243,
+          "priced_vertices": 1614
+        },
+        {
+          "iteration": 52,
+          "lower_bound": 11244,
+          "best_lower_bound": 11244,
+          "priced_vertices": 1662
+        },
+        {
+          "iteration": 53,
+          "lower_bound": 11244,
+          "best_lower_bound": 11244,
+          "priced_vertices": 1653
+        },
+        {
+          "iteration": 54,
+          "lower_bound": 11239,
+          "best_lower_bound": 11244,
+          "priced_vertices": 1642
+        },
+        {
+          "iteration": 55,
+          "lower_bound": 11252,
+          "best_lower_bound": 11252,
+          "priced_vertices": 1618
+        },
+        {
+          "iteration": 56,
+          "lower_bound": 11257,
+          "best_lower_bound": 11257,
+          "priced_vertices": 1634
+        },
+        {
+          "iteration": 57,
+          "lower_bound": 11264,
+          "best_lower_bound": 11264,
+          "priced_vertices": 1631
+        },
+        {
+          "iteration": 58,
+          "lower_bound": 11267,
+          "best_lower_bound": 11267,
+          "priced_vertices": 1629
+        },
+        {
+          "iteration": 59,
+          "lower_bound": 11261,
+          "best_lower_bound": 11267,
+          "priced_vertices": 1620
+        },
+        {
+          "iteration": 60,
+          "lower_bound": 11253,
+          "best_lower_bound": 11267,
+          "priced_vertices": 1638
+        },
+        {
+          "iteration": 61,
+          "lower_bound": 11265,
+          "best_lower_bound": 11267,
+          "priced_vertices": 1616
+        },
+        {
+          "iteration": 62,
+          "lower_bound": 11259,
+          "best_lower_bound": 11267,
+          "priced_vertices": 1612
+        },
+        {
+          "iteration": 63,
+          "lower_bound": 11257,
+          "best_lower_bound": 11267,
+          "priced_vertices": 1584
+        }
+      ],
+      "best_lower_bound": 11267,
+      "expansions": 15773113,
+      "hotspots": [
+        [
+          3341,
+          68
+        ],
+        [
+          1904,
+          66
+        ],
+        [
+          2171,
+          65
+        ],
+        [
+          2923,
+          64
+        ],
+        [
+          3045,
+          64
+        ],
+        [
+          1271,
+          63
+        ],
+        [
+          2140,
+          63
+        ],
+        [
+          3015,
+          63
+        ],
+        [
+          3076,
+          62
+        ],
+        [
+          3252,
+          62
+        ],
+        [
+          3281,
+          62
+        ],
+        [
+          3074,
+          61
+        ],
+        [
+          2147,
+          60
+        ],
+        [
+          3164,
+          60
+        ],
+        [
+          3313,
+          60
+        ],
+        [
+          3047,
+          59
+        ],
+        [
+          2951,
+          58
+        ],
+        [
+          3073,
+          58
+        ],
+        [
+          2114,
+          57
+        ],
+        [
+          3167,
+          57
+        ],
+        [
+          3311,
+          57
+        ],
+        [
+          2145,
+          56
+        ],
+        [
+          2148,
+          56
+        ],
+        [
+          2176,
+          56
+        ],
+        [
+          2774,
+          56
+        ],
+        [
+          3136,
+          56
+        ],
+        [
+          3168,
+          56
+        ],
+        [
+          3046,
+          55
+        ],
+        [
+          3283,
+          55
+        ],
+        [
+          1934,
+          54
+        ],
+        [
+          2090,
+          54
+        ],
+        [
+          3199,
+          54
+        ],
+        [
+          2146,
+          53
+        ],
+        [
+          2205,
+          53
+        ],
+        [
+          3106,
+          53
+        ],
+        [
+          1874,
+          52
+        ],
+        [
+          2175,
+          52
+        ],
+        [
+          2804,
+          52
+        ],
+        [
+          2831,
+          52
+        ],
+        [
+          3018,
+          52
+        ],
+        [
+          3104,
+          52
+        ],
+        [
+          3105,
+          52
+        ],
+        [
+          3225,
+          52
+        ],
+        [
+          3196,
+          51
+        ],
+        [
+          2173,
+          50
+        ],
+        [
+          2234,
+          50
+        ],
+        [
+          2264,
+          50
+        ],
+        [
+          3017,
+          50
+        ],
+        [
+          3048,
+          50
+        ],
+        [
+          3075,
+          50
+        ],
+        [
+          3098,
+          50
+        ],
+        [
+          3134,
+          50
+        ],
+        [
+          3282,
+          50
+        ],
+        [
+          3310,
+          50
+        ],
+        [
+          2172,
+          49
+        ],
+        [
+          2204,
+          49
+        ],
+        [
+          2206,
+          49
+        ],
+        [
+          2233,
+          49
+        ],
+        [
+          2263,
+          49
+        ],
+        [
+          2926,
+          49
+        ],
+        [
+          3078,
+          49
+        ],
+        [
+          3101,
+          49
+        ],
+        [
+          3102,
+          49
+        ],
+        [
+          3103,
+          49
+        ],
+        [
+          3107,
+          49
+        ],
+        [
+          3133,
+          49
+        ],
+        [
+          3193,
+          49
+        ],
+        [
+          3312,
+          49
+        ],
+        [
+          2110,
+          48
+        ],
+        [
+          2144,
+          48
+        ],
+        [
+          2174,
+          48
+        ],
+        [
+          2177,
+          48
+        ],
+        [
+          2203,
+          48
+        ],
+        [
+          2235,
+          48
+        ],
+        [
+          2354,
+          48
+        ],
+        [
+          3044,
+          48
+        ],
+        [
+          3070,
+          48
+        ],
+        [
+          3163,
+          48
+        ],
+        [
+          3220,
+          48
+        ],
+        [
+          3222,
+          48
+        ],
+        [
+          3224,
+          48
+        ],
+        [
+          3288,
+          48
+        ],
+        [
+          2119,
+          47
+        ],
+        [
+          2178,
+          47
+        ],
+        [
+          2180,
+          47
+        ],
+        [
+          2201,
+          47
+        ],
+        [
+          2230,
+          47
+        ],
+        [
+          2265,
+          47
+        ],
+        [
+          2307,
+          47
+        ],
+        [
+          2321,
+          47
+        ],
+        [
+          2834,
+          47
+        ],
+        [
+          2928,
+          47
+        ],
+        [
+          3014,
+          47
+        ],
+        [
+          3049,
+          47
+        ],
+        [
+          3053,
+          47
+        ],
+        [
+          3108,
+          47
+        ],
+        [
+          3131,
+          47
+        ],
+        [
+          3229,
+          47
+        ],
+        [
+          3230,
+          47
+        ],
+        [
+          3251,
+          47
+        ],
+        [
+          3287,
+          47
+        ],
+        [
+          2055,
+          46
+        ],
+        [
+          2084,
+          46
+        ],
+        [
+          2120,
+          46
+        ],
+        [
+          2149,
+          46
+        ],
+        [
+          2293,
+          46
+        ],
+        [
+          2324,
+          46
+        ],
+        [
+          2924,
+          46
+        ],
+        [
+          2984,
+          46
+        ],
+        [
+          3042,
+          46
+        ],
+        [
+          3079,
+          46
+        ],
+        [
+          3165,
+          46
+        ],
+        [
+          3221,
+          46
+        ],
+        [
+          3228,
+          46
+        ],
+        [
+          3254,
+          46
+        ],
+        [
+          3259,
+          46
+        ],
+        [
+          2111,
+          45
+        ],
+        [
+          2117,
+          45
+        ],
+        [
+          2142,
+          45
+        ],
+        [
+          2236,
+          45
+        ],
+        [
+          2832,
+          45
+        ],
+        [
+          3040,
+          45
+        ],
+        [
+          3135,
+          45
+        ],
+        [
+          3223,
+          45
+        ],
+        [
+          2054,
+          44
+        ],
+        [
+          2083,
+          44
+        ],
+        [
+          2085,
+          44
+        ],
+        [
+          2089,
+          44
+        ],
+        [
+          2112,
+          44
+        ],
+        [
+          2113,
+          44
+        ],
+        [
+          2238,
+          44
+        ],
+        [
+          2294,
+          44
+        ],
+        [
+          2322,
+          44
+        ],
+        [
+          2988,
+          44
+        ],
+        [
+          3007,
+          44
+        ],
+        [
+          3052,
+          44
+        ],
+        [
+          3144,
+          44
+        ],
+        [
+          3166,
+          44
+        ],
+        [
+          3190,
+          44
+        ],
+        [
+          3258,
+          44
+        ],
+        [
+          1994,
+          43
+        ],
+        [
+          2121,
+          43
+        ],
+        [
+          2262,
+          43
+        ],
+        [
+          2355,
+          43
+        ],
+        [
+          2412,
+          43
+        ],
+        [
+          2421,
+          43
+        ],
+        [
+          2922,
+          43
+        ],
+        [
+          2956,
+          43
+        ],
+        [
+          2982,
+          43
+        ],
+        [
+          3013,
+          43
+        ],
+        [
+          3021,
+          43
+        ],
+        [
+          3039,
+          43
+        ],
+        [
+          3071,
+          43
+        ],
+        [
+          3080,
+          43
+        ],
+        [
+          3109,
+          43
+        ],
+        [
+          3132,
+          43
+        ],
+        [
+          3161,
+          43
+        ],
+        [
+          3191,
+          43
+        ],
+        [
+          3195,
+          43
+        ],
+        [
+          3202,
+          43
+        ],
+        [
+          3226,
+          43
+        ],
+        [
+          3280,
+          43
+        ],
+        [
+          2087,
+          42
+        ],
+        [
+          2150,
+          42
+        ],
+        [
+          2179,
+          42
+        ],
+        [
+          2208,
+          42
+        ],
+        [
+          2267,
+          42
+        ],
+        [
+          2271,
+          42
+        ],
+        [
+          2295,
+          42
+        ],
+        [
+          2298,
+          42
+        ],
+        [
+          2381,
+          42
+        ],
+        [
+          2383,
+          42
+        ],
+        [
+          2413,
+          42
+        ],
+        [
+          2863,
+          42
+        ],
+        [
+          2894,
+          42
+        ],
+        [
+          2953,
+          42
+        ],
+        [
+          2955,
+          42
+        ],
+        [
+          2981,
+          42
+        ],
+        [
+          2983,
+          42
+        ],
+        [
+          2985,
+          42
+        ],
+        [
+          3009,
+          42
+        ],
+        [
+          3038,
+          42
+        ],
+        [
+          3077,
+          42
+        ],
+        [
+          3130,
+          42
+        ],
+        [
+          3137,
+          42
+        ],
+        [
+          3253,
+          42
+        ],
+        [
+          3284,
+          42
+        ],
+        [
+          4036,
+          42
+        ],
+        [
+          2058,
+          41
+        ],
+        [
+          2060,
+          41
+        ],
+        [
+          2088,
+          41
+        ],
+        [
+          2118,
+          41
+        ],
+        [
+          2170,
+          41
+        ],
+        [
+          2268,
+          41
+        ],
+        [
+          2269,
+          41
+        ],
+        [
+          2291,
+          41
+        ],
+        [
+          2292,
+          41
+        ],
+        [
+          2299,
+          41
+        ],
+        [
+          2352,
+          41
+        ],
+        [
+          2353,
+          41
+        ],
+        [
+          2358,
+          41
+        ],
+        [
+          2418,
+          41
+        ],
+        [
+          2449,
+          41
+        ],
+        [
+          2897,
+          41
+        ],
+        [
+          3020,
+          41
+        ],
+        [
+          3041,
+          41
+        ],
+        [
+          3068,
+          41
+        ],
+        [
+          3069,
+          41
+        ],
+        [
+          3083,
+          41
+        ],
+        [
+          3095,
+          41
+        ],
+        [
+          3099,
+          41
+        ],
+        [
+          3100,
+          41
+        ],
+        [
+          3139,
+          41
+        ],
+        [
+          3160,
+          41
+        ],
+        [
+          3169,
+          41
+        ],
+        [
+          3200,
+          41
+        ],
+        [
+          3219,
+          41
+        ],
+        [
+          3227,
+          41
+        ],
+        [
+          3257,
+          41
+        ],
+        [
+          3342,
+          41
+        ],
+        [
+          3344,
+          41
+        ],
+        [
+          1931,
+          40
+        ],
+        [
+          1933,
+          40
+        ],
+        [
+          1964,
+          40
+        ],
+        [
+          2053,
+          40
+        ],
+        [
+          2139,
+          40
+        ],
+        [
+          2195,
+          40
+        ],
+        [
+          2202,
+          40
+        ],
+        [
+          2207,
+          40
+        ],
+        [
+          2209,
+          40
+        ],
+        [
+          2237,
+          40
+        ],
+        [
+          2244,
+          40
+        ],
+        [
+          2255,
+          40
+        ],
+        [
+          2260,
+          40
+        ],
+        [
+          2261,
+          40
+        ],
+        [
+          2320,
+          40
+        ],
+        [
+          2323,
+          40
+        ],
+        [
+          2325,
+          40
+        ],
+        [
+          2329,
+          40
+        ],
+        [
+          2361,
+          40
+        ],
+        [
+          2382,
+          40
+        ],
+        [
+          2386,
+          40
+        ],
+        [
+          2925,
+          40
+        ],
+        [
+          2952,
+          40
+        ],
+        [
+          2954,
+          40
+        ],
+        [
+          3010,
+          40
+        ],
+        [
+          3012,
+          40
+        ],
+        [
+          3050,
+          40
+        ],
+        [
+          3128,
+          40
+        ],
+        [
+          3170,
+          40
+        ],
+        [
+          3171,
+          40
+        ],
+        [
+          3197,
+          40
+        ],
+        [
+          3233,
+          40
+        ],
+        [
+          3250,
+          40
+        ],
+        [
+          3255,
+          40
+        ],
+        [
+          3286,
+          40
+        ]
+      ]
+    },
+    {
+      "tier": "hard",
+      "case": "case_07",
+      "case_sha256": "e3475bed19f53670482b4b864a276c475b47e1cac7237d8fa26eeb48714de8f0",
+      "parent_sha256": "5561d17e6c2a1bfc271b8de30c9e9dbb1ae07e8b19c77469132f6aa85645932a",
+      "parent_delay": 22753,
+      "command": [
+        "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261003-dual-hotspots-checked/hotspots",
+        "64",
+        "1",
+        "max_sink",
+        "16",
+        "adaptive"
+      ],
+      "wall_s": 5.89282338891644,
+      "price_resolution": 16,
+      "iterations": [
+        {
+          "iteration": 0,
+          "lower_bound": 16461,
+          "best_lower_bound": 16461,
+          "priced_vertices": 0
+        },
+        {
+          "iteration": 1,
+          "lower_bound": 16400,
+          "best_lower_bound": 16461,
+          "priced_vertices": 684
+        },
+        {
+          "iteration": 2,
+          "lower_bound": 16625,
+          "best_lower_bound": 16625,
+          "priced_vertices": 982
+        },
+        {
+          "iteration": 3,
+          "lower_bound": 16884,
+          "best_lower_bound": 16884,
+          "priced_vertices": 1070
+        },
+        {
+          "iteration": 4,
+          "lower_bound": 17022,
+          "best_lower_bound": 17022,
+          "priced_vertices": 1177
+        },
+        {
+          "iteration": 5,
+          "lower_bound": 17138,
+          "best_lower_bound": 17138,
+          "priced_vertices": 1278
+        },
+        {
+          "iteration": 6,
+          "lower_bound": 17242,
+          "best_lower_bound": 17242,
+          "priced_vertices": 1380
+        },
+        {
+          "iteration": 7,
+          "lower_bound": 17350,
+          "best_lower_bound": 17350,
+          "priced_vertices": 1510
+        },
+        {
+          "iteration": 8,
+          "lower_bound": 17378,
+          "best_lower_bound": 17378,
+          "priced_vertices": 1563
+        },
+        {
+          "iteration": 9,
+          "lower_bound": 17372,
+          "best_lower_bound": 17378,
+          "priced_vertices": 1652
+        },
+        {
+          "iteration": 10,
+          "lower_bound": 17376,
+          "best_lower_bound": 17378,
+          "priced_vertices": 1766
+        },
+        {
+          "iteration": 11,
+          "lower_bound": 17366,
+          "best_lower_bound": 17378,
+          "priced_vertices": 1803
+        },
+        {
+          "iteration": 12,
+          "lower_bound": 17414,
+          "best_lower_bound": 17414,
+          "priced_vertices": 1868
+        },
+        {
+          "iteration": 13,
+          "lower_bound": 17446,
+          "best_lower_bound": 17446,
+          "priced_vertices": 1988
+        },
+        {
+          "iteration": 14,
+          "lower_bound": 17512,
+          "best_lower_bound": 17512,
+          "priced_vertices": 2056
+        },
+        {
+          "iteration": 15,
+          "lower_bound": 17517,
+          "best_lower_bound": 17517,
+          "priced_vertices": 2151
+        },
+        {
+          "iteration": 16,
+          "lower_bound": 17519,
+          "best_lower_bound": 17519,
+          "priced_vertices": 2124
+        },
+        {
+          "iteration": 17,
+          "lower_bound": 17566,
+          "best_lower_bound": 17566,
+          "priced_vertices": 2126
+        },
+        {
+          "iteration": 18,
+          "lower_bound": 17592,
+          "best_lower_bound": 17592,
+          "priced_vertices": 2134
+        },
+        {
+          "iteration": 19,
+          "lower_bound": 17570,
+          "best_lower_bound": 17592,
+          "priced_vertices": 2107
+        },
+        {
+          "iteration": 20,
+          "lower_bound": 17554,
+          "best_lower_bound": 17592,
+          "priced_vertices": 2185
+        },
+        {
+          "iteration": 21,
+          "lower_bound": 17589,
+          "best_lower_bound": 17592,
+          "priced_vertices": 2226
+        },
+        {
+          "iteration": 22,
+          "lower_bound": 17630,
+          "best_lower_bound": 17630,
+          "priced_vertices": 2192
+        },
+        {
+          "iteration": 23,
+          "lower_bound": 17612,
+          "best_lower_bound": 17630,
+          "priced_vertices": 2230
+        },
+        {
+          "iteration": 24,
+          "lower_bound": 17649,
+          "best_lower_bound": 17649,
+          "priced_vertices": 2284
+        },
+        {
+          "iteration": 25,
+          "lower_bound": 17685,
+          "best_lower_bound": 17685,
+          "priced_vertices": 2242
+        },
+        {
+          "iteration": 26,
+          "lower_bound": 17685,
+          "best_lower_bound": 17685,
+          "priced_vertices": 2271
+        },
+        {
+          "iteration": 27,
+          "lower_bound": 17696,
+          "best_lower_bound": 17696,
+          "priced_vertices": 2309
+        },
+        {
+          "iteration": 28,
+          "lower_bound": 17695,
+          "best_lower_bound": 17696,
+          "priced_vertices": 2268
+        },
+        {
+          "iteration": 29,
+          "lower_bound": 17702,
+          "best_lower_bound": 17702,
+          "priced_vertices": 2222
+        },
+        {
+          "iteration": 30,
+          "lower_bound": 17707,
+          "best_lower_bound": 17707,
+          "priced_vertices": 2233
+        },
+        {
+          "iteration": 31,
+          "lower_bound": 17715,
+          "best_lower_bound": 17715,
+          "priced_vertices": 2221
+        },
+        {
+          "iteration": 32,
+          "lower_bound": 17716,
+          "best_lower_bound": 17716,
+          "priced_vertices": 2275
+        },
+        {
+          "iteration": 33,
+          "lower_bound": 17702,
+          "best_lower_bound": 17716,
+          "priced_vertices": 2211
+        },
+        {
+          "iteration": 34,
+          "lower_bound": 17708,
+          "best_lower_bound": 17716,
+          "priced_vertices": 2236
+        },
+        {
+          "iteration": 35,
+          "lower_bound": 17705,
+          "best_lower_bound": 17716,
+          "priced_vertices": 2205
+        },
+        {
+          "iteration": 36,
+          "lower_bound": 17723,
+          "best_lower_bound": 17723,
+          "priced_vertices": 2200
+        },
+        {
+          "iteration": 37,
+          "lower_bound": 17721,
+          "best_lower_bound": 17723,
+          "priced_vertices": 2195
+        },
+        {
+          "iteration": 38,
+          "lower_bound": 17733,
+          "best_lower_bound": 17733,
+          "priced_vertices": 2184
+        },
+        {
+          "iteration": 39,
+          "lower_bound": 17715,
+          "best_lower_bound": 17733,
+          "priced_vertices": 2226
+        },
+        {
+          "iteration": 40,
+          "lower_bound": 17714,
+          "best_lower_bound": 17733,
+          "priced_vertices": 2184
+        },
+        {
+          "iteration": 41,
+          "lower_bound": 17710,
+          "best_lower_bound": 17733,
+          "priced_vertices": 2247
+        },
+        {
+          "iteration": 42,
+          "lower_bound": 17725,
+          "best_lower_bound": 17733,
+          "priced_vertices": 2244
+        },
+        {
+          "iteration": 43,
+          "lower_bound": 17736,
+          "best_lower_bound": 17736,
+          "priced_vertices": 2293
+        },
+        {
+          "iteration": 44,
+          "lower_bound": 17749,
+          "best_lower_bound": 17749,
+          "priced_vertices": 2316
+        },
+        {
+          "iteration": 45,
+          "lower_bound": 17765,
+          "best_lower_bound": 17765,
+          "priced_vertices": 2373
+        },
+        {
+          "iteration": 46,
+          "lower_bound": 17777,
+          "best_lower_bound": 17777,
+          "priced_vertices": 2298
+        },
+        {
+          "iteration": 47,
+          "lower_bound": 17750,
+          "best_lower_bound": 17777,
+          "priced_vertices": 2317
+        },
+        {
+          "iteration": 48,
+          "lower_bound": 17744,
+          "best_lower_bound": 17777,
+          "priced_vertices": 2300
+        },
+        {
+          "iteration": 49,
+          "lower_bound": 17755,
+          "best_lower_bound": 17777,
+          "priced_vertices": 2363
+        },
+        {
+          "iteration": 50,
+          "lower_bound": 17761,
+          "best_lower_bound": 17777,
+          "priced_vertices": 2325
+        },
+        {
+          "iteration": 51,
+          "lower_bound": 17765,
+          "best_lower_bound": 17777,
+          "priced_vertices": 2321
+        },
+        {
+          "iteration": 52,
+          "lower_bound": 17761,
+          "best_lower_bound": 17777,
+          "priced_vertices": 2316
+        },
+        {
+          "iteration": 53,
+          "lower_bound": 17788,
+          "best_lower_bound": 17788,
+          "priced_vertices": 2349
+        },
+        {
+          "iteration": 54,
+          "lower_bound": 17802,
+          "best_lower_bound": 17802,
+          "priced_vertices": 2305
+        },
+        {
+          "iteration": 55,
+          "lower_bound": 17800,
+          "best_lower_bound": 17802,
+          "priced_vertices": 2324
+        },
+        {
+          "iteration": 56,
+          "lower_bound": 17818,
+          "best_lower_bound": 17818,
+          "priced_vertices": 2271
+        },
+        {
+          "iteration": 57,
+          "lower_bound": 17805,
+          "best_lower_bound": 17818,
+          "priced_vertices": 2311
+        },
+        {
+          "iteration": 58,
+          "lower_bound": 17811,
+          "best_lower_bound": 17818,
+          "priced_vertices": 2240
+        },
+        {
+          "iteration": 59,
+          "lower_bound": 17799,
+          "best_lower_bound": 17818,
+          "priced_vertices": 2283
+        },
+        {
+          "iteration": 60,
+          "lower_bound": 17806,
+          "best_lower_bound": 17818,
+          "priced_vertices": 2262
+        },
+        {
+          "iteration": 61,
+          "lower_bound": 17821,
+          "best_lower_bound": 17821,
+          "priced_vertices": 2257
+        },
+        {
+          "iteration": 62,
+          "lower_bound": 17809,
+          "best_lower_bound": 17821,
+          "priced_vertices": 2284
+        },
+        {
+          "iteration": 63,
+          "lower_bound": 17808,
+          "best_lower_bound": 17821,
+          "priced_vertices": 2283
+        }
+      ],
+      "best_lower_bound": 17821,
+      "expansions": 28411185,
+      "hotspots": [
+        [
+          2786,
+          69
+        ],
+        [
+          3407,
+          69
+        ],
+        [
+          3504,
+          68
+        ],
+        [
+          3332,
+          62
+        ],
+        [
+          2973,
+          56
+        ],
+        [
+          3260,
+          55
+        ],
+        [
+          3331,
+          55
+        ],
+        [
+          4158,
+          55
+        ],
+        [
+          3292,
+          54
+        ],
+        [
+          4413,
+          54
+        ],
+        [
+          4484,
+          54
+        ],
+        [
+          2862,
+          53
+        ],
+        [
+          3147,
+          53
+        ],
+        [
+          3151,
+          53
+        ],
+        [
+          3224,
+          53
+        ],
+        [
+          3152,
+          52
+        ],
+        [
+          3296,
+          52
+        ],
+        [
+          3367,
+          52
+        ],
+        [
+          4483,
+          52
+        ],
+        [
+          4663,
+          52
+        ],
+        [
+          4664,
+          52
+        ],
+        [
+          3150,
+          51
+        ],
+        [
+          3211,
+          51
+        ],
+        [
+          3366,
+          51
+        ],
+        [
+          3444,
+          51
+        ],
+        [
+          4520,
+          51
+        ],
+        [
+          4628,
+          51
+        ],
+        [
+          3145,
+          50
+        ],
+        [
+          3146,
+          50
+        ],
+        [
+          3187,
+          50
+        ],
+        [
+          3217,
+          50
+        ],
+        [
+          3219,
+          50
+        ],
+        [
+          3220,
+          50
+        ],
+        [
+          3329,
+          50
+        ],
+        [
+          3368,
+          50
+        ],
+        [
+          3401,
+          50
+        ],
+        [
+          4081,
+          50
+        ],
+        [
+          4439,
+          50
+        ],
+        [
+          4447,
+          50
+        ],
+        [
+          4449,
+          50
+        ],
+        [
+          4550,
+          50
+        ],
+        [
+          4656,
+          50
+        ],
+        [
+          3149,
+          49
+        ],
+        [
+          3255,
+          49
+        ],
+        [
+          3324,
+          49
+        ],
+        [
+          3406,
+          49
+        ],
+        [
+          4549,
+          49
+        ],
+        [
+          4592,
+          49
+        ],
+        [
+          4627,
+          49
+        ],
+        [
+          3110,
+          48
+        ],
+        [
+          3112,
+          48
+        ],
+        [
+          3148,
+          48
+        ],
+        [
+          3153,
+          48
+        ],
+        [
+          3221,
+          48
+        ],
+        [
+          3256,
+          48
+        ],
+        [
+          3325,
+          48
+        ],
+        [
+          3327,
+          48
+        ],
+        [
+          3330,
+          48
+        ],
+        [
+          3399,
+          48
+        ],
+        [
+          4408,
+          48
+        ],
+        [
+          4409,
+          48
+        ],
+        [
+          4411,
+          48
+        ],
+        [
+          4442,
+          48
+        ],
+        [
+          4548,
+          48
+        ],
+        [
+          4584,
+          48
+        ],
+        [
+          2025,
+          47
+        ],
+        [
+          3081,
+          47
+        ],
+        [
+          3109,
+          47
+        ],
+        [
+          3111,
+          47
+        ],
+        [
+          3118,
+          47
+        ],
+        [
+          3189,
+          47
+        ],
+        [
+          3288,
+          47
+        ],
+        [
+          3290,
+          47
+        ],
+        [
+          3323,
+          47
+        ],
+        [
+          3361,
+          47
+        ],
+        [
+          3364,
+          47
+        ],
+        [
+          3397,
+          47
+        ],
+        [
+          3505,
+          47
+        ],
+        [
+          4405,
+          47
+        ],
+        [
+          4407,
+          47
+        ],
+        [
+          4444,
+          47
+        ],
+        [
+          4446,
+          47
+        ],
+        [
+          4868,
+          47
+        ],
+        [
+          4875,
+          47
+        ],
+        [
+          3005,
+          46
+        ],
+        [
+          3008,
+          46
+        ],
+        [
+          3075,
+          46
+        ],
+        [
+          3115,
+          46
+        ],
+        [
+          3116,
+          46
+        ],
+        [
+          3155,
+          46
+        ],
+        [
+          3182,
+          46
+        ],
+        [
+          3183,
+          46
+        ],
+        [
+          3184,
+          46
+        ],
+        [
+          3186,
+          46
+        ],
+        [
+          3222,
+          46
+        ],
+        [
+          3253,
+          46
+        ],
+        [
+          3254,
+          46
+        ],
+        [
+          3257,
+          46
+        ],
+        [
+          3295,
+          46
+        ],
+        [
+          3328,
+          46
+        ],
+        [
+          3358,
+          46
+        ],
+        [
+          3360,
+          46
+        ],
+        [
+          3371,
+          46
+        ],
+        [
+          3396,
+          46
+        ],
+        [
+          3404,
+          46
+        ],
+        [
+          3434,
+          46
+        ],
+        [
+          3546,
+          46
+        ],
+        [
+          3649,
+          46
+        ],
+        [
+          3721,
+          46
+        ],
+        [
+          4082,
+          46
+        ],
+        [
+          4410,
+          46
+        ],
+        [
+          4441,
+          46
+        ],
+        [
+          4443,
+          46
+        ],
+        [
+          4448,
+          46
+        ],
+        [
+          4513,
+          46
+        ],
+        [
+          4514,
+          46
+        ],
+        [
+          4517,
+          46
+        ],
+        [
+          4585,
+          46
+        ],
+        [
+          4625,
+          46
+        ],
+        [
+          4662,
+          46
+        ],
+        [
+          2857,
+          45
+        ],
+        [
+          3007,
+          45
+        ],
+        [
+          3074,
+          45
+        ],
+        [
+          3076,
+          45
+        ],
+        [
+          3117,
+          45
+        ],
+        [
+          3180,
+          45
+        ],
+        [
+          3188,
+          45
+        ],
+        [
+          3216,
+          45
+        ],
+        [
+          3218,
+          45
+        ],
+        [
+          3252,
+          45
+        ],
+        [
+          3258,
+          45
+        ],
+        [
+          3289,
+          45
+        ],
+        [
+          3291,
+          45
+        ],
+        [
+          3293,
+          45
+        ],
+        [
+          3297,
+          45
+        ],
+        [
+          3321,
+          45
+        ],
+        [
+          3395,
+          45
+        ],
+        [
+          3398,
+          45
+        ],
+        [
+          3547,
+          45
+        ],
+        [
+          4372,
+          45
+        ],
+        [
+          4406,
+          45
+        ],
+        [
+          4412,
+          45
+        ],
+        [
+          4445,
+          45
+        ],
+        [
+          4489,
+          45
+        ],
+        [
+          4512,
+          45
+        ],
+        [
+          4553,
+          45
+        ],
+        [
+          4555,
+          45
+        ],
+        [
+          4586,
+          45
+        ],
+        [
+          4588,
+          45
+        ],
+        [
+          4619,
+          45
+        ],
+        [
+          4620,
+          45
+        ],
+        [
+          4867,
+          45
+        ],
+        [
+          1996,
+          44
+        ],
+        [
+          2975,
+          44
+        ],
+        [
+          3039,
+          44
+        ],
+        [
+          3079,
+          44
+        ],
+        [
+          3108,
+          44
+        ],
+        [
+          3144,
+          44
+        ],
+        [
+          3294,
+          44
+        ],
+        [
+          3365,
+          44
+        ],
+        [
+          3433,
+          44
+        ],
+        [
+          3469,
+          44
+        ],
+        [
+          3507,
+          44
+        ],
+        [
+          3543,
+          44
+        ],
+        [
+          3579,
+          44
+        ],
+        [
+          3616,
+          44
+        ],
+        [
+          4157,
+          44
+        ],
+        [
+          4194,
+          44
+        ],
+        [
+          4440,
+          44
+        ],
+        [
+          4478,
+          44
+        ],
+        [
+          4481,
+          44
+        ],
+        [
+          4515,
+          44
+        ],
+        [
+          4551,
+          44
+        ],
+        [
+          4554,
+          44
+        ],
+        [
+          4591,
+          44
+        ],
+        [
+          4626,
+          44
+        ],
+        [
+          4655,
+          44
+        ],
+        [
+          4661,
+          44
+        ],
+        [
+          4693,
+          44
+        ],
+        [
+          4695,
+          44
+        ],
+        [
+          4876,
+          44
+        ],
+        [
+          2061,
+          43
+        ],
+        [
+          3045,
+          43
+        ],
+        [
+          3114,
+          43
+        ],
+        [
+          3154,
+          43
+        ],
+        [
+          3214,
+          43
+        ],
+        [
+          3215,
+          43
+        ],
+        [
+          3223,
+          43
+        ],
+        [
+          3251,
+          43
+        ],
+        [
+          3259,
+          43
+        ],
+        [
+          3262,
+          43
+        ],
+        [
+          3317,
+          43
+        ],
+        [
+          3326,
+          43
+        ],
+        [
+          3334,
+          43
+        ],
+        [
+          3357,
+          43
+        ],
+        [
+          3359,
+          43
+        ],
+        [
+          3387,
+          43
+        ],
+        [
+          3394,
+          43
+        ],
+        [
+          3400,
+          43
+        ],
+        [
+          3403,
+          43
+        ],
+        [
+          3471,
+          43
+        ],
+        [
+          3509,
+          43
+        ],
+        [
+          3544,
+          43
+        ],
+        [
+          3572,
+          43
+        ],
+        [
+          3659,
+          43
+        ],
+        [
+          3723,
+          43
+        ],
+        [
+          4370,
+          43
+        ],
+        [
+          4371,
+          43
+        ],
+        [
+          4450,
+          43
+        ],
+        [
+          4451,
+          43
+        ],
+        [
+          4479,
+          43
+        ],
+        [
+          4482,
+          43
+        ],
+        [
+          4516,
+          43
+        ],
+        [
+          4556,
+          43
+        ],
+        [
+          4582,
+          43
+        ],
+        [
+          4621,
+          43
+        ],
+        [
+          4624,
+          43
+        ],
+        [
+          4657,
+          43
+        ],
+        [
+          4691,
+          43
+        ],
+        [
+          4692,
+          43
+        ],
+        [
+          4764,
+          43
+        ],
+        [
+          5091,
+          43
+        ],
+        [
+          3006,
+          42
+        ],
+        [
+          3038,
+          42
+        ],
+        [
+          3040,
+          42
+        ],
+        [
+          3080,
+          42
+        ],
+        [
+          3082,
+          42
+        ],
+        [
+          3113,
+          42
+        ],
+        [
+          3185,
+          42
+        ],
+        [
+          3249,
+          42
+        ],
+        [
+          3250,
+          42
+        ],
+        [
+          3261,
+          42
+        ],
+        [
+          3299,
+          42
+        ],
+        [
+          3322,
+          42
+        ],
+        [
+          3362,
+          42
+        ],
+        [
+          3363,
+          42
+        ],
+        [
+          3423,
+          42
+        ],
+        [
+          3432,
+          42
+        ],
+        [
+          3470,
+          42
+        ],
+        [
+          3571,
+          42
+        ],
+        [
+          3580,
+          42
+        ],
+        [
+          4342,
+          42
+        ],
+        [
+          4476,
+          42
+        ],
+        [
+          4477,
+          42
+        ],
+        [
+          4518,
+          42
+        ],
+        [
+          4519,
+          42
+        ],
+        [
+          4524,
+          42
+        ],
+        [
+          4552,
+          42
+        ],
+        [
+          4557,
+          42
+        ],
+        [
+          4587,
+          42
+        ],
+        [
+          4589,
+          42
+        ],
+        [
+          4622,
+          42
+        ],
+        [
+          4658,
+          42
+        ],
+        [
+          4733,
+          42
+        ],
+        [
+          4767,
+          42
+        ],
+        [
+          4833,
+          42
+        ]
+      ]
+    }
+  ],
+  "scope": "Own legal parent inputs,64adaptive fractional-price iterations;top256positive vertex prices from best bound. Heuristic hotspots,not certified graph cuts or legal relaxed routes. Analysis cost is additional to routing work."
+}

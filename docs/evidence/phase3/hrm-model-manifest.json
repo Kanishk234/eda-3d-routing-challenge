@@ -1,0 +1,57 @@
+{
+  "revision": "f5e213cb9e405e5728e0414b5d4f7f6d8d3d9a70",
+  "files": [
+    {
+      "path": "LICENSE",
+      "git_blob": "ee00bb7725c56deeecaf6add7c818852be1827fb",
+      "sha256": "e25f32e384b2db86ea5d191a785721fc52a13a3808ec1a12a9898f981dde248d"
+    },
+    {
+      "path": "models/common.py",
+      "git_blob": "1a045051f26cd2ecf25b5d16a11cb609de7df0e4",
+      "sha256": "fa749ad9b68ac0852f9cda157baa3a9c2ff8abaee973751b32b7cd010a4cf859"
+    },
+    {
+      "path": "models/ema.py",
+      "git_blob": "2e5293330418b6ff750e950072f9b983af2f4334",
+      "sha256": "10f4dcbcda44dc044e51aeefa1344cc06e89b42c9d782d012dc018310e98c609"
+    },
+    {
+      "path": "models/layers.py",
+      "git_blob": "705bcaf23e3fadfb3eaebcf706ef4542397f52c4",
+      "sha256": "519d38a4668c343868bf31a5853cab7f455f9dcac0cbcc36e02f95dce9fb01e7"
+    },
+    {
+      "path": "models/losses.py",
+      "git_blob": "2597cd67cc4530c6536fd1c479a60ce6dea94b79",
+      "sha256": "1fa6d4af0f4554a3fb2009d1a11d80c50abab9710453995785093b5c355596c3"
+    },
+    {
+      "path": "models/recursive_reasoning/hrm.py",
+      "git_blob": "9a1a5037c9ad3e12c233451fc2401b7f4b088292",
+      "sha256": "eb9e27416b95de989a52bf766230c090506b60cca2517e452fdc7db5d95af459"
+    },
+    {
+      "path": "models/recursive_reasoning/trm.py",
+      "git_blob": "5c3e39dfb6e2f93f0781e9e25af9a12751201482",
+      "sha256": "3454818b64a1abb45c062782d380aa4bb560e2cb35db9cc309cf367ca3ac262c"
+    },
+    {
+      "path": "models/sparse_embedding.py",
+      "git_blob": "f369205e34a05767d8d529e3ba39463689fab787",
+      "sha256": "9429742ce022918751331acf92c1a9b8d0f2f364e9acef5d71fb81b886c7a2d0"
+    },
+    {
+      "path": "pytorch_model.bin",
+      "revision": "86ac3c59cc0c560e541f380f27a6974a99c89fff",
+      "bytes": 109107957,
+      "sha256": "fbba4311bde129af725adef93dd5ced5e6c2ba270321826948d4f47506e51f25"
+    },
+    {
+      "path": "all_config.yaml",
+      "revision": "86ac3c59cc0c560e541f380f27a6974a99c89fff",
+      "bytes": 976,
+      "sha256": "6a79e015bcbc84c62424eaf17dd24430cf5df3a5a66f0c690ab32523b5b9ee31"
+    }
+  ]
+}

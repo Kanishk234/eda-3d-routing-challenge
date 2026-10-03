@@ -1,0 +1,69 @@
+--- control.cpp
++++ solver.cpp
+@@ -76,6 +76,40 @@
+ }
+ struct NegotiationConfig { I present_initial=2,present_step=2,history_step=2; };
+ struct Engine {
++    std::vector<I> hotspot_halo;
++    std::uint64_t hotspot_group_attempts=0,hotspot_group_additions=0;
++    void read_hotspots() {
++        std::string magic;int count;
++        if(!(std::cin>>magic>>count) || magic!="M3DHOTSPOT1" || count<0 || count>256) throw std::runtime_error("invalid hotspot header");
++        hotspot_halo.assign(vcount,0);std::set<int> seen;
++        for(int k=0;k<count;++k) {
++            int v;I price;if(!(std::cin>>v>>price) || price<=0 || price>1000000000) throw std::runtime_error("invalid hotspot price");
++            valid_vertex(v);if(!seen.insert(v).second)throw std::runtime_error("duplicate hotspot");
++            int x=v%w,y=(v%wh)/w,z=v/wh;
++            for(int dz=-1;dz<=1;++dz)for(int dy=-3;dy<=3;++dy)for(int dx=-3;dx<=3;++dx) {
++                int distance=std::abs(dx)+std::abs(dy)+2*std::abs(dz);
++                if(distance>3 || x+dx<0 || x+dx>=w || y+dy<0 || y+dy>=h || z+dz<0 || z+dz>=l)continue;
++                int u=((z+dz)*h+y+dy)*w+x+dx;hotspot_halo[u]=add(hotspot_halo[u],multiply(price,4-distance));
++            }
++        }
++    }
++    void augment_hotspot_group(std::vector<int>& group,int seed,int cap) {
++        ++hotspot_group_attempts;int anchor=nets[seed].root;I peak=0;
++        for(int v:nets[seed].vertices)if(hotspot_halo[v]>peak){peak=hotspot_halo[v];anchor=v;}
++        if(!peak || group.size()>=static_cast<std::size_t>(cap))return;
++        int ax=anchor%w,ay=(anchor%wh)/w,az=anchor/wh;
++        std::vector<std::pair<I,int>> ranked;
++        for(std::size_t j=0;j<nets.size();++j) {
++            if(std::find(group.begin(),group.end(),j)!=group.end())continue;
++            I affinity=0;
++            for(int v:nets[j].vertices)if(std::abs(v%w-ax)+std::abs((v%wh)/w-ay)<=4 && std::abs(v/wh-az)<=1)affinity=std::max(affinity,hotspot_halo[v]);
++            if(affinity>0)ranked.emplace_back(multiply(affinity,std::max<I>(1,nets[j].delay-relaxed_delay(nets[j]))),static_cast<int>(j));
++        }
++        std::sort(ranked.begin(),ranked.end(),[](auto a,auto b){return a.first!=b.first?a.first>b.first:a.second<b.second;});
++        int added=0;
++        for(auto candidate:ranked){if(added>=2 || group.size()>=static_cast<std::size_t>(cap))break;group.push_back(candidate.second);++added;++hotspot_group_additions;}
++    }
++
+     NegotiationConfig negotiation;
+     int group_limit=13;
+     bool repair_first=false;
+@@ -769,6 +803,7 @@
+                     }
+                     ++neighborhood_attempts[strategy];
+                 }
++                augment_hotspot_group(group,index,max_blockers+1);
+                 if(group.size()>13) ++large_group_attempts;
+                 if(used_escape) ++eligibility_attempts;
+                 ++group_sizes[std::min(group.size(),group_sizes.size()-1)];
+@@ -916,7 +951,7 @@
+     void output() {
+         if(!ablation_mode) std::cerr<<"{\"proposals\":"<<proposals<<",\"no_gain\":"<<no_gain
+                  <<",\"too_many\":"<<too_many<<",\"attempts\":"<<attempts
+-                 <<",\"negotiation_rounds\":"<<negotiation_rounds<<",\"conflicted_rounds\":"<<conflicted_rounds
++                 <<",\"hotspot_group_attempts\":"<<hotspot_group_attempts<<",\"hotspot_group_additions\":"<<hotspot_group_additions<<",\"negotiation_rounds\":"<<negotiation_rounds<<",\"conflicted_rounds\":"<<conflicted_rounds
+                  <<",\"fresh_attempts\":"<<fresh_attempts<<",\"fresh_legal\":"<<fresh_legal
+                  <<",\"read_s\":"<<read_s<<",\"validation_s\":"<<validation_s<<",\"optimization_s\":"<<optimization_s
+                  <<",\"search_reset_s\":"<<search_reset_s<<",\"search_rebuild_s\":"<<search_rebuild_s
+@@ -1026,7 +1061,7 @@
+         }
+         engine.deadline=std::chrono::steady_clock::now()+std::chrono::duration_cast<std::chrono::steady_clock::duration>(std::chrono::duration<double>(seconds));
+         auto read_start=std::chrono::steady_clock::now();
+-        engine.read(search_only);
++        engine.read(search_only);engine.read_hotspots();
+         engine.read_s=std::chrono::duration<double>(std::chrono::steady_clock::now()-read_start).count();
+         if(operation=="donor") {
+             Engine alternate; alternate.deadline=engine.deadline; alternate.read(false);

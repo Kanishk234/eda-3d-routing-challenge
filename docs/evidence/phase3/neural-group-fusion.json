@@ -1,0 +1,783 @@
+{
+  "complete": true,
+  "coverage_sha256": "c12a01f177903997610a47ba748f42cfc5730322da74ff4f4922f93bbb063348",
+  "reports": {
+    "docs/evidence/phase3/evolution-neural-groups.json": "13a163819933c5607b28f63c5a83c6a647cb55c5568927ec30bdc5cca61ea11d"
+  },
+  "fusion_donors": 6,
+  "known_experimental_core_wall_s": 192.57574354903772,
+  "rows": [
+    {
+      "tier": "intro",
+      "run_id": "20261003T233037.865607Z-exact-polish",
+      "score": 1.1148937089086874,
+      "previous_score": 1.1148937089086874,
+      "improved_cases": 0,
+      "cases": [
+        {
+          "case": "case_01",
+          "previous_run": "20261003T232609.656287Z-exact-polish",
+          "previous_delay": 206,
+          "selected_delay": 206,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_02",
+          "previous_run": "20261003T232609.656287Z-exact-polish",
+          "previous_delay": 1030,
+          "selected_delay": 1030,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_03",
+          "previous_run": "20261003T232609.656287Z-exact-polish",
+          "previous_delay": 1611,
+          "selected_delay": 1611,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_04",
+          "previous_run": "20261003T232609.656287Z-exact-polish",
+          "previous_delay": 2036,
+          "selected_delay": 2036,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_05",
+          "previous_run": "20261003T232609.656287Z-exact-polish",
+          "previous_delay": 3761,
+          "selected_delay": 3761,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_06",
+          "previous_run": "20261003T232609.656287Z-exact-polish",
+          "previous_delay": 5369,
+          "selected_delay": 5369,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_07",
+          "previous_run": "20261003T232609.656287Z-exact-polish",
+          "previous_delay": 5377,
+          "selected_delay": 5377,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_08",
+          "previous_run": "20261003T232609.656287Z-exact-polish",
+          "previous_delay": 7717,
+          "selected_delay": 7717,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_09",
+          "previous_run": "20261003T232609.656287Z-exact-polish",
+          "previous_delay": 8284,
+          "selected_delay": 8284,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_10",
+          "previous_run": "20261003T232609.656287Z-exact-polish",
+          "previous_delay": 10825,
+          "selected_delay": 10825,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_11",
+          "previous_run": "20261003T232609.656287Z-exact-polish",
+          "previous_delay": 12716,
+          "selected_delay": 12716,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_12",
+          "previous_run": "20261003T232609.656287Z-exact-polish",
+          "previous_delay": 16633,
+          "selected_delay": 16633,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_13",
+          "previous_run": "20261003T232609.656287Z-exact-polish",
+          "previous_delay": 20343,
+          "selected_delay": 20343,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_14",
+          "previous_run": "20261003T232609.656287Z-exact-polish",
+          "previous_delay": 22139,
+          "selected_delay": 22139,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_15",
+          "previous_run": "20261003T232609.656287Z-exact-polish",
+          "previous_delay": 25192,
+          "selected_delay": 25192,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_16",
+          "previous_run": "20261003T232609.656287Z-exact-polish",
+          "previous_delay": 34360,
+          "selected_delay": 34360,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_17",
+          "previous_run": "20261003T232609.656287Z-exact-polish",
+          "previous_delay": 44568,
+          "selected_delay": 44568,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_18",
+          "previous_run": "20261003T232609.656287Z-exact-polish",
+          "previous_delay": 47467,
+          "selected_delay": 47467,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_19",
+          "previous_run": "20261003T232609.656287Z-exact-polish",
+          "previous_delay": 41274,
+          "selected_delay": 41274,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_20",
+          "previous_run": "20261003T232609.656287Z-exact-polish",
+          "previous_delay": 46856,
+          "selected_delay": 46856,
+          "changed": false,
+          "fusion_trace": []
+        }
+      ]
+    },
+    {
+      "tier": "hard",
+      "run_id": "20261003T233042.222317Z-exact-polish",
+      "score": 1.3050947884669668,
+      "previous_score": 1.305073911793704,
+      "improved_cases": 1,
+      "cases": [
+        {
+          "case": "case_01",
+          "previous_run": "20261003T232613.844517Z-exact-polish",
+          "previous_delay": 9012,
+          "selected_delay": 9012,
+          "changed": false,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-neural-groups.json",
+              "variant": "control",
+              "seed": 66,
+              "output_sha256": "9bfd1cc167d303dfbfb356cb8887589aa203e6b8795c9629353fc61d06377eea",
+              "base_delay": 9012,
+              "donor_delay": 9016,
+              "total_delay": 9012,
+              "selected_donor_nets": [],
+              "dependency_arcs": 14,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 18,
+                "finite_infinity": 41,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-neural-groups.json",
+              "variant": "control",
+              "seed": 65,
+              "output_sha256": "b336c396a49594fa570a57197783523d7893be8de4d6eda66a83ec4974a2c3ce",
+              "base_delay": 9012,
+              "donor_delay": 9016,
+              "total_delay": 9012,
+              "selected_donor_nets": [],
+              "dependency_arcs": 12,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 16,
+                "finite_infinity": 37,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-neural-groups.json",
+              "variant": "neural_groups",
+              "seed": 65,
+              "output_sha256": "562989c61a2ae16909f6483905ddfb80079922aaa6ae2ec884f2d9f16dc2652c",
+              "base_delay": 9012,
+              "donor_delay": 9024,
+              "total_delay": 9012,
+              "selected_donor_nets": [],
+              "dependency_arcs": 24,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 18,
+                "finite_infinity": 49,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-neural-groups.json",
+              "variant": "neural_groups",
+              "seed": 66,
+              "output_sha256": "a4a44006523df8cdfde56d2cbe12efe0e1612503c9c0b879d24e2023032b4910",
+              "base_delay": 9012,
+              "donor_delay": 9024,
+              "total_delay": 9012,
+              "selected_donor_nets": [],
+              "dependency_arcs": 23,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 18,
+                "finite_infinity": 49,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-neural-groups.json",
+              "variant": "spatial_groups",
+              "seed": 66,
+              "output_sha256": "c046f1cd248928750f32679ac9d8607c302431c4460f041b57e94d0c8f4aa98e",
+              "base_delay": 9012,
+              "donor_delay": 9024,
+              "total_delay": 9012,
+              "selected_donor_nets": [],
+              "dependency_arcs": 20,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 16,
+                "finite_infinity": 45,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-neural-groups.json",
+              "variant": "spatial_groups",
+              "seed": 65,
+              "output_sha256": "c7308aecc20a62323fbaee4ad0595ec3c199306842e1064714a4627040be2be5",
+              "base_delay": 9012,
+              "donor_delay": 9024,
+              "total_delay": 9012,
+              "selected_donor_nets": [],
+              "dependency_arcs": 23,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 16,
+                "finite_infinity": 45,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        },
+        {
+          "case": "case_02",
+          "previous_run": "20261003T232613.844517Z-exact-polish",
+          "previous_delay": 13910,
+          "selected_delay": 13910,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_03",
+          "previous_run": "20261003T232613.844517Z-exact-polish",
+          "previous_delay": 11748,
+          "selected_delay": 11748,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_04",
+          "previous_run": "20261003T232613.844517Z-exact-polish",
+          "previous_delay": 13893,
+          "selected_delay": 13891,
+          "changed": true,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-neural-groups.json",
+              "variant": "spatial_groups",
+              "seed": 66,
+              "output_sha256": "2209da707f6f37c77b2c1c0b7dbe47a44cf0ff3be2aaa388d30abdd630fc00d3",
+              "base_delay": 13893,
+              "donor_delay": 13905,
+              "total_delay": 13891,
+              "selected_donor_nets": [
+                4,
+                40,
+                56,
+                58,
+                60,
+                62,
+                67,
+                68,
+                76,
+                77
+              ],
+              "dependency_arcs": 32,
+              "certificate": {
+                "minimum_delta": -2,
+                "max_flow": 18,
+                "finite_infinity": 53,
+                "weighted_minimum_delta": -2,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-neural-groups.json",
+              "variant": "spatial_groups",
+              "seed": 65,
+              "output_sha256": "25c089e726d30703e13af287e973e43664ab5da8941870c8c1acc7d762fa85d2",
+              "base_delay": 13891,
+              "donor_delay": 13905,
+              "total_delay": 13891,
+              "selected_donor_nets": [],
+              "dependency_arcs": 17,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 2,
+                "finite_infinity": 19,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-neural-groups.json",
+              "variant": "control",
+              "seed": 65,
+              "output_sha256": "a87105b0eadea8ada3310e06de3bd2784c9cf395ad43ae71e0fd3aa3bdd1a4d0",
+              "base_delay": 13891,
+              "donor_delay": 13907,
+              "total_delay": 13891,
+              "selected_donor_nets": [],
+              "dependency_arcs": 12,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 2,
+                "finite_infinity": 21,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-neural-groups.json",
+              "variant": "control",
+              "seed": 66,
+              "output_sha256": "a502572d384383c290edc5a22a4a209fa8218c888787d641c648cdede35aa0be",
+              "base_delay": 13891,
+              "donor_delay": 13909,
+              "total_delay": 13891,
+              "selected_donor_nets": [],
+              "dependency_arcs": 14,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 2,
+                "finite_infinity": 23,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-neural-groups.json",
+              "variant": "neural_groups",
+              "seed": 65,
+              "output_sha256": "d9563b064f2c92024d23c9b556c56dcda2fde28b55685f57d269f4ef1ab6aa63",
+              "base_delay": 13891,
+              "donor_delay": 13909,
+              "total_delay": 13891,
+              "selected_donor_nets": [],
+              "dependency_arcs": 15,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 2,
+                "finite_infinity": 23,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-neural-groups.json",
+              "variant": "neural_groups",
+              "seed": 66,
+              "output_sha256": "e653d6d3bf799441cf2e0162d376ec666aacfa4ebaf2d6de7c8e0dda4d3c5041",
+              "base_delay": 13891,
+              "donor_delay": 13909,
+              "total_delay": 13891,
+              "selected_donor_nets": [],
+              "dependency_arcs": 17,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 2,
+                "finite_infinity": 23,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        },
+        {
+          "case": "case_05",
+          "previous_run": "20261003T232613.844517Z-exact-polish",
+          "previous_delay": 16133,
+          "selected_delay": 16133,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_06",
+          "previous_run": "20261003T232613.844517Z-exact-polish",
+          "previous_delay": 21278,
+          "selected_delay": 21278,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_07",
+          "previous_run": "20261003T232613.844517Z-exact-polish",
+          "previous_delay": 22669,
+          "selected_delay": 22669,
+          "changed": false,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-neural-groups.json",
+              "variant": "control",
+              "seed": 65,
+              "output_sha256": "1838e3341a7ffb3340c1842f4007fa7edfe504a55ff20ed64c6ce625b9644b18",
+              "base_delay": 22669,
+              "donor_delay": 22685,
+              "total_delay": 22669,
+              "selected_donor_nets": [],
+              "dependency_arcs": 44,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 62,
+                "finite_infinity": 141,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-neural-groups.json",
+              "variant": "spatial_groups",
+              "seed": 65,
+              "output_sha256": "19d638b68f290e909d9c046ff70beaf3fc9d82ee7f044536bdda4651099a91ae",
+              "base_delay": 22669,
+              "donor_delay": 22711,
+              "total_delay": 22669,
+              "selected_donor_nets": [],
+              "dependency_arcs": 45,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 68,
+                "finite_infinity": 179,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-neural-groups.json",
+              "variant": "neural_groups",
+              "seed": 66,
+              "output_sha256": "71dd0884edac8758d02e99951501c713121a9f0e5901ba5c60e6063d2fbb387d",
+              "base_delay": 22669,
+              "donor_delay": 22711,
+              "total_delay": 22669,
+              "selected_donor_nets": [],
+              "dependency_arcs": 45,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 68,
+                "finite_infinity": 179,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-neural-groups.json",
+              "variant": "spatial_groups",
+              "seed": 66,
+              "output_sha256": "c913e3738c0819063791b1b842b11c48d81ba14a9204c4e60bc46054b7d48b7d",
+              "base_delay": 22669,
+              "donor_delay": 22711,
+              "total_delay": 22669,
+              "selected_donor_nets": [],
+              "dependency_arcs": 50,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 70,
+                "finite_infinity": 183,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-neural-groups.json",
+              "variant": "neural_groups",
+              "seed": 65,
+              "output_sha256": "e4af8b285ee762049aeb700644cb045c1cba369cfec6579325a9b98159d6e2ed",
+              "base_delay": 22669,
+              "donor_delay": 22711,
+              "total_delay": 22669,
+              "selected_donor_nets": [],
+              "dependency_arcs": 46,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 70,
+                "finite_infinity": 183,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-neural-groups.json",
+              "variant": "control",
+              "seed": 66,
+              "output_sha256": "378a5f4b6c3ebfeec3f0bf6cb10c7c8697bc69d377d22597a76c29faf9d6948d",
+              "base_delay": 22669,
+              "donor_delay": 22717,
+              "total_delay": 22669,
+              "selected_donor_nets": [],
+              "dependency_arcs": 48,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 56,
+                "finite_infinity": 161,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        },
+        {
+          "case": "case_08",
+          "previous_run": "20261003T232613.844517Z-exact-polish",
+          "previous_delay": 23472,
+          "selected_delay": 23472,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_09",
+          "previous_run": "20261003T232613.844517Z-exact-polish",
+          "previous_delay": 22504,
+          "selected_delay": 22504,
+          "changed": false,
+          "fusion_trace": []
+        }
+      ]
+    },
+    {
+      "tier": "scale",
+      "run_id": "20261003T233045.764037Z-exact-polish",
+      "score": 1.0652009886450964,
+      "previous_score": 1.0652009886450964,
+      "improved_cases": 0,
+      "cases": [
+        {
+          "case": "case_01",
+          "previous_run": "20261003T232616.936508Z-exact-polish",
+          "previous_delay": 42308,
+          "selected_delay": 42308,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_02",
+          "previous_run": "20261003T232616.936508Z-exact-polish",
+          "previous_delay": 48274,
+          "selected_delay": 48274,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_03",
+          "previous_run": "20261003T232616.936508Z-exact-polish",
+          "previous_delay": 58286,
+          "selected_delay": 58286,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_04",
+          "previous_run": "20261003T232616.936508Z-exact-polish",
+          "previous_delay": 61212,
+          "selected_delay": 61212,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_05",
+          "previous_run": "20261003T232616.936508Z-exact-polish",
+          "previous_delay": 69305,
+          "selected_delay": 69305,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_06",
+          "previous_run": "20261003T232616.936508Z-exact-polish",
+          "previous_delay": 82877,
+          "selected_delay": 82877,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_07",
+          "previous_run": "20261003T232616.936508Z-exact-polish",
+          "previous_delay": 90681,
+          "selected_delay": 90681,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_08",
+          "previous_run": "20261003T232616.936508Z-exact-polish",
+          "previous_delay": 115835,
+          "selected_delay": 115835,
+          "changed": false,
+          "fusion_trace": []
+        }
+      ]
+    },
+    {
+      "tier": "congested",
+      "run_id": "20261003T233054.298071Z-exact-polish",
+      "score": 1.140209104270672,
+      "previous_score": 1.140209104270672,
+      "improved_cases": 0,
+      "cases": [
+        {
+          "case": "case_01",
+          "previous_run": "20261003T232622.424151Z-exact-polish",
+          "previous_delay": 58767,
+          "selected_delay": 58767,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_02",
+          "previous_run": "20261003T232622.424151Z-exact-polish",
+          "previous_delay": 109700,
+          "selected_delay": 109700,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_03",
+          "previous_run": "20261003T232622.424151Z-exact-polish",
+          "previous_delay": 192571,
+          "selected_delay": 192571,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_04",
+          "previous_run": "20261003T232622.424151Z-exact-polish",
+          "previous_delay": 210633,
+          "selected_delay": 210633,
+          "changed": false,
+          "fusion_trace": []
+        }
+      ]
+    },
+    {
+      "tier": "designs",
+      "run_id": "20261003T233058.600161Z-exact-polish",
+      "score": 1.2911548758211056,
+      "previous_score": 1.2911548758211056,
+      "improved_cases": 0,
+      "cases": [
+        {
+          "case": "ctrl",
+          "previous_run": "20261003T232626.486457Z-exact-polish",
+          "previous_delay": 56180,
+          "selected_delay": 56180,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "int2float",
+          "previous_run": "20261003T232626.486457Z-exact-polish",
+          "previous_delay": 101696,
+          "selected_delay": 101696,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "router",
+          "previous_run": "20261003T232626.486457Z-exact-polish",
+          "previous_delay": 74721,
+          "selected_delay": 74721,
+          "changed": false,
+          "fusion_trace": []
+        }
+      ]
+    },
+    {
+      "tier": "stress",
+      "run_id": "20261003T233105.912222Z-exact-polish",
+      "score": 1.0339077947832496,
+      "previous_score": 1.0339077947832496,
+      "improved_cases": 0,
+      "cases": [
+        {
+          "case": "case_01",
+          "previous_run": "20261003T232633.153883Z-exact-polish",
+          "previous_delay": 1107356,
+          "selected_delay": 1107356,
+          "changed": false,
+          "fusion_trace": []
+        }
+      ]
+    }
+  ],
+  "scope": "Best legal whole-case portfolio from own completed source-variant trials and previous own coverage. Added search and per-case selection,not uniform-budget solver comparison. No competitor routes. Inherited search costs remain separate/partly unknown. Optional bounded two-parent min-cut tree fusion;exact only per pair,not global optimization.",
+  "coverage_sha256_result": "d3b4de4004d416cc4c4cef05887308edf86d0f08c4b2229b640bfdaeb78c10f2"
+}

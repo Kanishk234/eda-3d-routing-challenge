@@ -1,0 +1,6 @@
+{
+  "command": "PYTHONPATH=dev .venv/bin/python -m unittest discover -s dev -p 'test_*.py'",
+  "passed": 129,
+  "wall_s": 34.045,
+  "scope": "Before new HRM local adapter; two later focused window checks separate."
+}

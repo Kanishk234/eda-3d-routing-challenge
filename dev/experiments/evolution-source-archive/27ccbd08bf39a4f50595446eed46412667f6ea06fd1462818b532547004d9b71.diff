@@ -1,0 +1,60 @@
+--- control.cpp
++++ solver.cpp
+@@ -76,6 +76,25 @@
+ }
+ struct NegotiationConfig { I present_initial=2,present_step=2,history_step=2; };
+ struct Engine {
++
++    std::vector<std::vector<int>> pretrained_groups;
++    void read_pretrained_groups() {
++        std::string magic;int count;
++        if(!(std::cin>>magic>>count) || magic!="M3DNEURAL1" || count!=static_cast<int>(nets.size()))
++            throw std::runtime_error("invalid neural group header");
++        pretrained_groups.resize(count);
++        for(int focal=0;focal<count;++focal) {
++            std::vector<int> neural,spatial;
++            for(auto* group:{&neural,&spatial}) {
++                int size;if(!(std::cin>>size) || size<2 || size>13)throw std::runtime_error("invalid neural group size");
++                std::set<int> seen;
++                for(int j=0;j<size;++j){int v;if(!(std::cin>>v) || v<0 || v>=count || !seen.insert(v).second)throw std::runtime_error("invalid neural group index");group->push_back(v);}
++                if(group->front()!=focal)throw std::runtime_error("invalid neural focal net");
++            }
++            pretrained_groups[focal]=neural;
++        }
++    }
++
+     NegotiationConfig negotiation;
+     int group_limit=13;
+     bool repair_first=false;
+@@ -619,7 +638,12 @@
+                 ++proposals;
+                 std::vector<int> group{index};
+                 bool used_donor=false,used_escape=false;
+-                if(conflict_windows) {
++                if(!pretrained_groups.empty()) {
++                    group=pretrained_groups[index];
++                    if(group.size()>static_cast<std::size_t>(max_blockers+1))group.resize(max_blockers+1);
++                    if(group.size()<2){++no_gain;continue;}
++                    ++attempts;
++                } else if(conflict_windows) {
+                     Net ideal;
+                     if(!shortest(nets[index],ideal,true,penalty)) break;
+                     if(ideal.delay>=nets[index].delay) {++no_gain;continue;}
+@@ -744,7 +768,7 @@
+                 }
+                 if(spatial_groups) ++attempts;
+                 int strategy=0;
+-                if(adaptive_groups && !(used_escape && escape_direct)) {
++                if(pretrained_groups.empty() && adaptive_groups && !(used_escape && escape_direct)) {
+                     std::discrete_distribution<int> choose(neighborhood_weights.begin(),neighborhood_weights.end());
+                     strategy=choose(group_rng);
+                     if(strategy==1) {
+@@ -1026,7 +1050,7 @@
+         }
+         engine.deadline=std::chrono::steady_clock::now()+std::chrono::duration_cast<std::chrono::steady_clock::duration>(std::chrono::duration<double>(seconds));
+         auto read_start=std::chrono::steady_clock::now();
+-        engine.read(search_only);
++        engine.read(search_only);engine.read_pretrained_groups();
+         engine.read_s=std::chrono::duration<double>(std::chrono::steady_clock::now()-read_start).count();
+         if(operation=="donor") {
+             Engine alternate; alternate.deadline=engine.deadline; alternate.read(false);

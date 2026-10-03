@@ -1,0 +1,23 @@
+{
+  "revision": "ca374200f70f1954ec82348d6c4e92ad4aff3168",
+  "files": [
+    {
+      "path": "LICENSE",
+      "git_blob": "9fa34dbe2c3d9f07a3f85680116fa4bdce5d46f4",
+      "sha256": "777e06e651fa9ce8c4e95ee1fe650aac254e63eeaffaaafb8f0e924244b0a32a",
+      "bytes": 1071
+    },
+    {
+      "path": "src/model.py",
+      "git_blob": "24ee366941fbb5ba18d4eddbf017932e05fe93ad",
+      "sha256": "a5aa6923d4951ca63e18214702d06045a98c66466bcaed7f34852ba543943234",
+      "bytes": 25089
+    },
+    {
+      "path": "models/cvrp_100/checkpoint-2000.pt",
+      "git_blob": "17a9b64c9eed680873e74349df31a63e52aecc0a",
+      "sha256": "a37332c06aa5fdd5f9a6fe948c1f2efeffe321c444395724a9eae333854bb11a",
+      "bytes": 14091098
+    }
+  ]
+}

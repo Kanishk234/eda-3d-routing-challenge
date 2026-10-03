@@ -1,0 +1,207 @@
+{
+  "scope": "Public primary source/model inventory; no inference, model download, training or solver adoption performed",
+  "sources": {
+    "hrm_tree": {
+      "revision": "f5e213cb9e405e5728e0414b5d4f7f6d8d3d9a70",
+      "truncated": false,
+      "checkpoint_inventory": []
+    },
+    "hrm_files": {
+      "revision": "86ac3c59cc0c560e541f380f27a6974a99c89fff",
+      "truncated": null,
+      "model_files": [
+        {
+          "rfilename": ".gitattributes"
+        },
+        {
+          "rfilename": "README.md"
+        },
+        {
+          "rfilename": "all_config.yaml"
+        },
+        {
+          "rfilename": "assets/step_60764_puzzle_0.png"
+        },
+        {
+          "rfilename": "assets/step_60764_puzzle_1.png"
+        },
+        {
+          "rfilename": "pytorch_model.bin"
+        }
+      ]
+    },
+    "nds_tree": {
+      "revision": "ca374200f70f1954ec82348d6c4e92ad4aff3168",
+      "truncated": false,
+      "checkpoint_inventory": [
+        {
+          "path": "data/pcvrp/pcvrp1000_test_seed1234_2_2_2_3_0.1_0.2_0.5.pt",
+          "git_blob": "5341d945d783ff36ee6fe1f0addf4ec770adb906",
+          "bytes": 4005712
+        },
+        {
+          "path": "data/pcvrp/pcvrp1000_valid_seed1233_2_2_2_3_0.1_0.2_0.5.pt",
+          "git_blob": "9c54ec866d6cf55a2fa96c22209bd9327e4a8ff6",
+          "bytes": 16014745
+        },
+        {
+          "path": "data/pcvrp/pcvrp100_test_seed1234_2_2_2_3_0.1_0.2_0.5.pt",
+          "git_blob": "090f4a6ec76451631e8102f5ab0d2d0cbd0c3941",
+          "bytes": 16122695
+        },
+        {
+          "path": "data/pcvrp/pcvrp100_valid_seed1233_2_2_2_3_0.1_0.2_0.5.pt",
+          "git_blob": "a7997920e8e73705fe41d8915a039d6ae46fa3b1",
+          "bytes": 1614736
+        },
+        {
+          "path": "data/pcvrp/pcvrp2000_test_seed1234_2_2_2_3_0.1_0.2_0.5.pt",
+          "git_blob": "755ae34504d3d577a9a69eae8cb9f8de5cbfd2a7",
+          "bytes": 8005712
+        },
+        {
+          "path": "data/pcvrp/pcvrp2000_valid_seed1233_2_2_2_3_0.1_0.2_0.5.pt",
+          "git_blob": "8e8ed7b07b0f2f2c7b2debd8970cc5eedef6e390",
+          "bytes": 32014745
+        },
+        {
+          "path": "data/pcvrp/pcvrp500_test_seed1234_2_2_2_3_0.1_0.2_0.5.pt",
+          "git_blob": "8fa8d325151f819660008bc814d6c280e012ef01",
+          "bytes": 2005767
+        },
+        {
+          "path": "data/pcvrp/pcvrp500_valid_seed1233_2_2_2_3_0.1_0.2_0.5.pt",
+          "git_blob": "fb11a72057ac8c41b95c0e31028e545846d95532",
+          "bytes": 8014736
+        },
+        {
+          "path": "data/vrptw/vrptw1000_test_seed1234_2_2_2_3_1800_400_50.pt",
+          "git_blob": "ad781f0a8c2f4890901a025915217befbd27fb1c",
+          "bytes": 6008272
+        },
+        {
+          "path": "data/vrptw/vrptw1000_valid_seed1233_2_2_2_3_1800_400_50.pt",
+          "git_blob": "a8eff1faf2fad2450475a1235c2eedf6e4372bc1",
+          "bytes": 24023323
+        },
+        {
+          "path": "data/vrptw/vrptw100_test_seed1234_2_2_2_3_1800_400_50.pt",
+          "git_blob": "8b13186731bf6d19a277a85ea9e5c08b174d1607",
+          "bytes": 24203269
+        },
+        {
+          "path": "data/vrptw/vrptw100_valid_seed1233_2_2_2_3_1800_400_50.pt",
+          "git_blob": "9d1152e67b669bf3585f09858bd5717bd1a4e7da",
+          "bytes": 2423312
+        },
+        {
+          "path": "data/vrptw/vrptw2000_test_seed1234_2_2_2_3_1800_400_50.pt",
+          "git_blob": "25741965aaa73874331cc43e9d019799c7e23622",
+          "bytes": 12008272
+        },
+        {
+          "path": "data/vrptw/vrptw2000_valid_seed1233_2_2_2_3_1800_400_50.pt",
+          "git_blob": "00b1d9c64698ef2075919724e811b44c7e4316d6",
+          "bytes": 48023323
+        },
+        {
+          "path": "data/vrptw/vrptw500_test_seed1234_2_2_2_3_1800_400_50.pt",
+          "git_blob": "5fb5bad01ec8a6edad2346b4209b8ca0a189002d",
+          "bytes": 3008325
+        },
+        {
+          "path": "data/vrptw/vrptw500_valid_seed1233_2_2_2_3_1800_400_50.pt",
+          "git_blob": "d262053f6f908f1a4185ba26140d49ded1b22d09",
+          "bytes": 12023312
+        },
+        {
+          "path": "models/cvrp_100/checkpoint-2000.pt",
+          "git_blob": "17a9b64c9eed680873e74349df31a63e52aecc0a",
+          "bytes": 14091098
+        },
+        {
+          "path": "models/cvrp_1000/checkpoint-2000.pt",
+          "git_blob": "7bb81f6e5e9caa4680f277c1ad9fe15b9ce58c6e",
+          "bytes": 14090970
+        },
+        {
+          "path": "models/cvrp_2000/checkpoint-500.pt",
+          "git_blob": "91d1fe360b90effee60bbf2429749e0efd1c6c3e",
+          "bytes": 13883082
+        },
+        {
+          "path": "models/cvrp_500/checkpoint-2000.pt",
+          "git_blob": "eaf78d9ddee71979302b2337180b9226df38f643",
+          "bytes": 14092762
+        },
+        {
+          "path": "models/pcvrp_100/checkpoint-2000.pt",
+          "git_blob": "0ab55e472568e94b0fc1b9dd07ed59d8ac28b400",
+          "bytes": 14093338
+        },
+        {
+          "path": "models/pcvrp_1000/checkpoint-2000.pt",
+          "git_blob": "7c788ac46f3df589e6a0e0ada8f3dceda69387ca",
+          "bytes": 14094490
+        },
+        {
+          "path": "models/pcvrp_2000/checkpoint-500.pt",
+          "git_blob": "47873c32caca7ccc9b71a46f142b3f559ebde33d",
+          "bytes": 13885514
+        },
+        {
+          "path": "models/pcvrp_500/checkpoint-2000.pt",
+          "git_blob": "d61723e1459c369acc24555227117075cb4feebf",
+          "bytes": 14094682
+        },
+        {
+          "path": "models/vrptw_100/checkpoint-2000.pt",
+          "git_blob": "2a8f46c90a5eed7c8aa75dfe6ffbdc26b2daa5a4",
+          "bytes": 14292786
+        },
+        {
+          "path": "models/vrptw_1000/checkpoint-2000.pt",
+          "git_blob": "032b2e3189ffe9ee960127329f16e63a2e603f24",
+          "bytes": 14293618
+        },
+        {
+          "path": "models/vrptw_2000/checkpoint-500.pt",
+          "git_blob": "e6a63372d712c2729651abe25026e697d555ca42",
+          "bytes": 14084702
+        },
+        {
+          "path": "models/vrptw_500/checkpoint-2000.pt",
+          "git_blob": "8718c679680fcfafbb226aca41ac17f4c9563d1a",
+          "bytes": 14293298
+        }
+      ]
+    }
+  },
+  "files": [
+    {
+      "name": "hrm_config.txt",
+      "bytes": 976,
+      "sha256": "6a79e015bcbc84c62424eaf17dd24430cf5df3a5a66f0c690ab32523b5b9ee31"
+    },
+    {
+      "name": "hrm_eval.txt",
+      "bytes": 14744,
+      "sha256": "ac7528fb994f3dddc3afbc0bf317f90c535d9a339759512904f9c98e54cfce3d"
+    },
+    {
+      "name": "hrm_readme.txt",
+      "bytes": 4468,
+      "sha256": "2f8b5cba3c864cf002f80d40ef80f96c07b1f9897aba378de1c6662def10019a"
+    },
+    {
+      "name": "nds_eval_config.txt",
+      "bytes": 934,
+      "sha256": "f5f48e4d6db20f7308b9080f1f6884edde29974cba4b83430f1e87ac7f19740e"
+    },
+    {
+      "name": "nds_model.txt",
+      "bytes": 25089,
+      "sha256": "a5aa6923d4951ca63e18214702d06045a98c66466bcaed7f34852ba543943234"
+    }
+  ]
+}

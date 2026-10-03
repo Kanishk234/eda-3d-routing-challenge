@@ -1,0 +1,6 @@
+{
+  "command": "PYTHONPATH=dev .venv/bin/python -m unittest discover -s dev -p 'test_*.py'",
+  "passed": 132,
+  "wall_s": 30.564,
+  "scope": "Before new branch adapter; subsequent branch checks separate."
+}

@@ -1,0 +1,57 @@
+{
+  "coverage": "docs/evidence/phase3/tier-evolution-fusion-coverage.json",
+  "variants": [
+    "control",
+    "hotspot2",
+    "hotspot4"
+  ],
+  "seeds": [
+    50,
+    51
+  ],
+  "work_budget": 50000000,
+  "budget": 60,
+  "cases": [
+    {
+      "tier": "hard",
+      "case": "case_01",
+      "mode": "fanout_fine_escape",
+      "settings": {
+        "present_initial": 2,
+        "present_step": 1,
+        "history_step": 1,
+        "group_limit": 13,
+        "tree_prices": 2,
+        "accept_equal": 1
+      }
+    },
+    {
+      "tier": "hard",
+      "case": "case_04",
+      "mode": "fanout_fine_escape",
+      "settings": {
+        "present_initial": 2,
+        "present_step": 1,
+        "history_step": 1,
+        "group_limit": 13,
+        "tree_prices": 2,
+        "accept_equal": 1
+      }
+    },
+    {
+      "tier": "hard",
+      "case": "case_07",
+      "mode": "fanout_fine_escape",
+      "settings": {
+        "present_initial": 2,
+        "present_step": 1,
+        "history_step": 1,
+        "group_limit": 13,
+        "tree_prices": 2,
+        "accept_equal": 1
+      }
+    }
+  ],
+  "scope": "Three hard development cases,two new seeds50M matched routing work plus disclosed one-time64iteration dual analysis;own frozen fusion parents. Compare ordinary neighborhoods with up to2/4 nearby high-price nets added.",
+  "hotspots": "docs/evidence/phase3/dual-hotspots.json"
+}

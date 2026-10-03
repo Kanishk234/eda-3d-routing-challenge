@@ -1,0 +1,2893 @@
+{
+  "complete": true,
+  "upstream_revision": "499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+  "frozen_sha256": {
+    "/home/younix/eda-3d-routing-challenge/docs/evidence/phase3/tier-evolution-fusion-coverage.json": "ae511cc69feee5f51f09a885125a342df7babf8c48f1a1e7fc5130e8de7240d1",
+    "/home/younix/eda-3d-routing-challenge/dev/solver/exact_polish.cpp": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+    "/home/younix/eda-3d-routing-challenge/dev/dual_hotspots.py": "185e789ef53035bb80dc8c8042966702248ebeb3d5634331e3a922439444a832",
+    "/home/younix/eda-3d-routing-challenge/dev/dual_bound.py": "109c6236c18153250e99d1a63c9c89294c7287d14988ca6c3dfb0881e0c7d2a6"
+  },
+  "source_sha256": "cea8aa98022868af15c2c00eb3da9c5c41d5efe0c0ed66fea691877947dc24f4",
+  "binary_sha256": "d3339184ce089a02e2b54ca309c2d007f184f8cdecb6f26f0afa3cd74ded5561",
+  "build_command": [
+    "g++",
+    "-O3",
+    "-std=c++17",
+    "-Wall",
+    "-Wextra",
+    "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261003-dual-hotspots-validation/hotspots.cpp",
+    "-o",
+    "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261003-dual-hotspots-validation/hotspots"
+  ],
+  "machine": {
+    "hostname": "LAPTOP-C8RSJ5BT",
+    "os": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "cpus": 16,
+    "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]"
+  },
+  "rows": [
+    {
+      "tier": "hard",
+      "case": "case_08",
+      "case_sha256": "b1dbc8ed8aab7cbb457987f4b8a877b9c2adda8575b326d9822523f090cec1f2",
+      "parent_sha256": "d36d9415fb93fbbe9e4ddc874e6228c1e6598711adf1761622330d6108caef12",
+      "parent_delay": 23598,
+      "command": [
+        "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261003-dual-hotspots-validation/hotspots",
+        "64",
+        "1",
+        "max_sink",
+        "16",
+        "adaptive"
+      ],
+      "wall_s": 8.047877194010653,
+      "price_resolution": 16,
+      "iterations": [
+        {
+          "iteration": 0,
+          "lower_bound": 16576,
+          "best_lower_bound": 16576,
+          "priced_vertices": 0
+        },
+        {
+          "iteration": 1,
+          "lower_bound": 16539,
+          "best_lower_bound": 16576,
+          "priced_vertices": 782
+        },
+        {
+          "iteration": 2,
+          "lower_bound": 16834,
+          "best_lower_bound": 16834,
+          "priced_vertices": 1117
+        },
+        {
+          "iteration": 3,
+          "lower_bound": 17143,
+          "best_lower_bound": 17143,
+          "priced_vertices": 1224
+        },
+        {
+          "iteration": 4,
+          "lower_bound": 17337,
+          "best_lower_bound": 17337,
+          "priced_vertices": 1314
+        },
+        {
+          "iteration": 5,
+          "lower_bound": 17581,
+          "best_lower_bound": 17581,
+          "priced_vertices": 1468
+        },
+        {
+          "iteration": 6,
+          "lower_bound": 17647,
+          "best_lower_bound": 17647,
+          "priced_vertices": 1529
+        },
+        {
+          "iteration": 7,
+          "lower_bound": 17680,
+          "best_lower_bound": 17680,
+          "priced_vertices": 1632
+        },
+        {
+          "iteration": 8,
+          "lower_bound": 17762,
+          "best_lower_bound": 17762,
+          "priced_vertices": 1861
+        },
+        {
+          "iteration": 9,
+          "lower_bound": 17763,
+          "best_lower_bound": 17763,
+          "priced_vertices": 1915
+        },
+        {
+          "iteration": 10,
+          "lower_bound": 17766,
+          "best_lower_bound": 17766,
+          "priced_vertices": 2018
+        },
+        {
+          "iteration": 11,
+          "lower_bound": 17820,
+          "best_lower_bound": 17820,
+          "priced_vertices": 2201
+        },
+        {
+          "iteration": 12,
+          "lower_bound": 17801,
+          "best_lower_bound": 17820,
+          "priced_vertices": 2266
+        },
+        {
+          "iteration": 13,
+          "lower_bound": 17840,
+          "best_lower_bound": 17840,
+          "priced_vertices": 2316
+        },
+        {
+          "iteration": 14,
+          "lower_bound": 17883,
+          "best_lower_bound": 17883,
+          "priced_vertices": 2407
+        },
+        {
+          "iteration": 15,
+          "lower_bound": 17904,
+          "best_lower_bound": 17904,
+          "priced_vertices": 2391
+        },
+        {
+          "iteration": 16,
+          "lower_bound": 17949,
+          "best_lower_bound": 17949,
+          "priced_vertices": 2366
+        },
+        {
+          "iteration": 17,
+          "lower_bound": 17949,
+          "best_lower_bound": 17949,
+          "priced_vertices": 2392
+        },
+        {
+          "iteration": 18,
+          "lower_bound": 17996,
+          "best_lower_bound": 17996,
+          "priced_vertices": 2390
+        },
+        {
+          "iteration": 19,
+          "lower_bound": 18006,
+          "best_lower_bound": 18006,
+          "priced_vertices": 2372
+        },
+        {
+          "iteration": 20,
+          "lower_bound": 18003,
+          "best_lower_bound": 18006,
+          "priced_vertices": 2372
+        },
+        {
+          "iteration": 21,
+          "lower_bound": 18019,
+          "best_lower_bound": 18019,
+          "priced_vertices": 2487
+        },
+        {
+          "iteration": 22,
+          "lower_bound": 18061,
+          "best_lower_bound": 18061,
+          "priced_vertices": 2476
+        },
+        {
+          "iteration": 23,
+          "lower_bound": 18045,
+          "best_lower_bound": 18061,
+          "priced_vertices": 2490
+        },
+        {
+          "iteration": 24,
+          "lower_bound": 18087,
+          "best_lower_bound": 18087,
+          "priced_vertices": 2509
+        },
+        {
+          "iteration": 25,
+          "lower_bound": 18078,
+          "best_lower_bound": 18087,
+          "priced_vertices": 2509
+        },
+        {
+          "iteration": 26,
+          "lower_bound": 18052,
+          "best_lower_bound": 18087,
+          "priced_vertices": 2561
+        },
+        {
+          "iteration": 27,
+          "lower_bound": 18053,
+          "best_lower_bound": 18087,
+          "priced_vertices": 2527
+        },
+        {
+          "iteration": 28,
+          "lower_bound": 18088,
+          "best_lower_bound": 18088,
+          "priced_vertices": 2512
+        },
+        {
+          "iteration": 29,
+          "lower_bound": 18119,
+          "best_lower_bound": 18119,
+          "priced_vertices": 2506
+        },
+        {
+          "iteration": 30,
+          "lower_bound": 18141,
+          "best_lower_bound": 18141,
+          "priced_vertices": 2493
+        },
+        {
+          "iteration": 31,
+          "lower_bound": 18145,
+          "best_lower_bound": 18145,
+          "priced_vertices": 2489
+        },
+        {
+          "iteration": 32,
+          "lower_bound": 18122,
+          "best_lower_bound": 18145,
+          "priced_vertices": 2478
+        },
+        {
+          "iteration": 33,
+          "lower_bound": 18122,
+          "best_lower_bound": 18145,
+          "priced_vertices": 2454
+        },
+        {
+          "iteration": 34,
+          "lower_bound": 18131,
+          "best_lower_bound": 18145,
+          "priced_vertices": 2513
+        },
+        {
+          "iteration": 35,
+          "lower_bound": 18127,
+          "best_lower_bound": 18145,
+          "priced_vertices": 2446
+        },
+        {
+          "iteration": 36,
+          "lower_bound": 18144,
+          "best_lower_bound": 18145,
+          "priced_vertices": 2465
+        },
+        {
+          "iteration": 37,
+          "lower_bound": 18146,
+          "best_lower_bound": 18146,
+          "priced_vertices": 2453
+        },
+        {
+          "iteration": 38,
+          "lower_bound": 18127,
+          "best_lower_bound": 18146,
+          "priced_vertices": 2518
+        },
+        {
+          "iteration": 39,
+          "lower_bound": 18131,
+          "best_lower_bound": 18146,
+          "priced_vertices": 2501
+        },
+        {
+          "iteration": 40,
+          "lower_bound": 18159,
+          "best_lower_bound": 18159,
+          "priced_vertices": 2432
+        },
+        {
+          "iteration": 41,
+          "lower_bound": 18187,
+          "best_lower_bound": 18187,
+          "priced_vertices": 2542
+        },
+        {
+          "iteration": 42,
+          "lower_bound": 18204,
+          "best_lower_bound": 18204,
+          "priced_vertices": 2571
+        },
+        {
+          "iteration": 43,
+          "lower_bound": 18222,
+          "best_lower_bound": 18222,
+          "priced_vertices": 2629
+        },
+        {
+          "iteration": 44,
+          "lower_bound": 18210,
+          "best_lower_bound": 18222,
+          "priced_vertices": 2551
+        },
+        {
+          "iteration": 45,
+          "lower_bound": 18213,
+          "best_lower_bound": 18222,
+          "priced_vertices": 2583
+        },
+        {
+          "iteration": 46,
+          "lower_bound": 18219,
+          "best_lower_bound": 18222,
+          "priced_vertices": 2555
+        },
+        {
+          "iteration": 47,
+          "lower_bound": 18205,
+          "best_lower_bound": 18222,
+          "priced_vertices": 2574
+        },
+        {
+          "iteration": 48,
+          "lower_bound": 18201,
+          "best_lower_bound": 18222,
+          "priced_vertices": 2599
+        },
+        {
+          "iteration": 49,
+          "lower_bound": 18205,
+          "best_lower_bound": 18222,
+          "priced_vertices": 2619
+        },
+        {
+          "iteration": 50,
+          "lower_bound": 18209,
+          "best_lower_bound": 18222,
+          "priced_vertices": 2631
+        },
+        {
+          "iteration": 51,
+          "lower_bound": 18217,
+          "best_lower_bound": 18222,
+          "priced_vertices": 2614
+        },
+        {
+          "iteration": 52,
+          "lower_bound": 18217,
+          "best_lower_bound": 18222,
+          "priced_vertices": 2686
+        },
+        {
+          "iteration": 53,
+          "lower_bound": 18231,
+          "best_lower_bound": 18231,
+          "priced_vertices": 2620
+        },
+        {
+          "iteration": 54,
+          "lower_bound": 18215,
+          "best_lower_bound": 18231,
+          "priced_vertices": 2672
+        },
+        {
+          "iteration": 55,
+          "lower_bound": 18240,
+          "best_lower_bound": 18240,
+          "priced_vertices": 2573
+        },
+        {
+          "iteration": 56,
+          "lower_bound": 18231,
+          "best_lower_bound": 18240,
+          "priced_vertices": 2593
+        },
+        {
+          "iteration": 57,
+          "lower_bound": 18233,
+          "best_lower_bound": 18240,
+          "priced_vertices": 2578
+        },
+        {
+          "iteration": 58,
+          "lower_bound": 18244,
+          "best_lower_bound": 18244,
+          "priced_vertices": 2574
+        },
+        {
+          "iteration": 59,
+          "lower_bound": 18245,
+          "best_lower_bound": 18245,
+          "priced_vertices": 2565
+        },
+        {
+          "iteration": 60,
+          "lower_bound": 18212,
+          "best_lower_bound": 18245,
+          "priced_vertices": 2549
+        },
+        {
+          "iteration": 61,
+          "lower_bound": 18213,
+          "best_lower_bound": 18245,
+          "priced_vertices": 2637
+        },
+        {
+          "iteration": 62,
+          "lower_bound": 18230,
+          "best_lower_bound": 18245,
+          "priced_vertices": 2621
+        },
+        {
+          "iteration": 63,
+          "lower_bound": 18245,
+          "best_lower_bound": 18245,
+          "priced_vertices": 2532
+        }
+      ],
+      "best_lower_bound": 18245,
+      "expansions": 34084740,
+      "hotspots": [
+        [
+          3506,
+          71
+        ],
+        [
+          3593,
+          67
+        ],
+        [
+          5261,
+          67
+        ],
+        [
+          5524,
+          67
+        ],
+        [
+          4921,
+          66
+        ],
+        [
+          5369,
+          66
+        ],
+        [
+          3582,
+          65
+        ],
+        [
+          4997,
+          64
+        ],
+        [
+          5026,
+          64
+        ],
+        [
+          5221,
+          64
+        ],
+        [
+          3599,
+          63
+        ],
+        [
+          6813,
+          63
+        ],
+        [
+          3553,
+          62
+        ],
+        [
+          3592,
+          62
+        ],
+        [
+          4989,
+          62
+        ],
+        [
+          5030,
+          62
+        ],
+        [
+          5182,
+          62
+        ],
+        [
+          4876,
+          61
+        ],
+        [
+          5072,
+          61
+        ],
+        [
+          5262,
+          61
+        ],
+        [
+          4996,
+          60
+        ],
+        [
+          3817,
+          59
+        ],
+        [
+          4958,
+          59
+        ],
+        [
+          5035,
+          59
+        ],
+        [
+          5068,
+          59
+        ],
+        [
+          5069,
+          59
+        ],
+        [
+          5071,
+          59
+        ],
+        [
+          3585,
+          58
+        ],
+        [
+          3631,
+          58
+        ],
+        [
+          4726,
+          58
+        ],
+        [
+          4959,
+          58
+        ],
+        [
+          5144,
+          58
+        ],
+        [
+          5220,
+          58
+        ],
+        [
+          3583,
+          57
+        ],
+        [
+          3590,
+          57
+        ],
+        [
+          5109,
+          57
+        ],
+        [
+          3589,
+          56
+        ],
+        [
+          3591,
+          56
+        ],
+        [
+          3818,
+          56
+        ],
+        [
+          4954,
+          56
+        ],
+        [
+          4992,
+          56
+        ],
+        [
+          5070,
+          56
+        ],
+        [
+          5107,
+          56
+        ],
+        [
+          5181,
+          56
+        ],
+        [
+          5183,
+          56
+        ],
+        [
+          3438,
+          55
+        ],
+        [
+          3515,
+          55
+        ],
+        [
+          3547,
+          55
+        ],
+        [
+          4920,
+          55
+        ],
+        [
+          4998,
+          55
+        ],
+        [
+          5025,
+          55
+        ],
+        [
+          5027,
+          55
+        ],
+        [
+          5029,
+          55
+        ],
+        [
+          5034,
+          55
+        ],
+        [
+          5258,
+          55
+        ],
+        [
+          3435,
+          54
+        ],
+        [
+          3436,
+          54
+        ],
+        [
+          3476,
+          54
+        ],
+        [
+          3740,
+          54
+        ],
+        [
+          3782,
+          54
+        ],
+        [
+          4990,
+          54
+        ],
+        [
+          5028,
+          54
+        ],
+        [
+          5036,
+          54
+        ],
+        [
+          5037,
+          54
+        ],
+        [
+          5106,
+          54
+        ],
+        [
+          3552,
+          53
+        ],
+        [
+          3665,
+          53
+        ],
+        [
+          3741,
+          53
+        ],
+        [
+          4727,
+          53
+        ],
+        [
+          4840,
+          53
+        ],
+        [
+          4878,
+          53
+        ],
+        [
+          4916,
+          53
+        ],
+        [
+          4955,
+          53
+        ],
+        [
+          5108,
+          53
+        ],
+        [
+          3400,
+          52
+        ],
+        [
+          3472,
+          52
+        ],
+        [
+          3548,
+          52
+        ],
+        [
+          3550,
+          52
+        ],
+        [
+          3581,
+          52
+        ],
+        [
+          3584,
+          52
+        ],
+        [
+          3663,
+          52
+        ],
+        [
+          3664,
+          52
+        ],
+        [
+          3666,
+          52
+        ],
+        [
+          3673,
+          52
+        ],
+        [
+          3738,
+          52
+        ],
+        [
+          3742,
+          52
+        ],
+        [
+          3743,
+          52
+        ],
+        [
+          3746,
+          52
+        ],
+        [
+          3779,
+          52
+        ],
+        [
+          4841,
+          52
+        ],
+        [
+          4881,
+          52
+        ],
+        [
+          4993,
+          52
+        ],
+        [
+          5045,
+          52
+        ],
+        [
+          5067,
+          52
+        ],
+        [
+          5185,
+          52
+        ],
+        [
+          5186,
+          52
+        ],
+        [
+          5222,
+          52
+        ],
+        [
+          5225,
+          52
+        ],
+        [
+          5228,
+          52
+        ],
+        [
+          3437,
+          51
+        ],
+        [
+          3474,
+          51
+        ],
+        [
+          3509,
+          51
+        ],
+        [
+          3525,
+          51
+        ],
+        [
+          3587,
+          51
+        ],
+        [
+          3623,
+          51
+        ],
+        [
+          3624,
+          51
+        ],
+        [
+          3625,
+          51
+        ],
+        [
+          3627,
+          51
+        ],
+        [
+          3635,
+          51
+        ],
+        [
+          3701,
+          51
+        ],
+        [
+          3780,
+          51
+        ],
+        [
+          4952,
+          51
+        ],
+        [
+          4956,
+          51
+        ],
+        [
+          4957,
+          51
+        ],
+        [
+          4968,
+          51
+        ],
+        [
+          4995,
+          51
+        ],
+        [
+          5022,
+          51
+        ],
+        [
+          5073,
+          51
+        ],
+        [
+          5110,
+          51
+        ],
+        [
+          5112,
+          51
+        ],
+        [
+          5223,
+          51
+        ],
+        [
+          5224,
+          51
+        ],
+        [
+          5259,
+          51
+        ],
+        [
+          5340,
+          51
+        ],
+        [
+          6968,
+          51
+        ],
+        [
+          3398,
+          50
+        ],
+        [
+          3433,
+          50
+        ],
+        [
+          3514,
+          50
+        ],
+        [
+          3549,
+          50
+        ],
+        [
+          3556,
+          50
+        ],
+        [
+          3586,
+          50
+        ],
+        [
+          3588,
+          50
+        ],
+        [
+          3629,
+          50
+        ],
+        [
+          3702,
+          50
+        ],
+        [
+          3819,
+          50
+        ],
+        [
+          4764,
+          50
+        ],
+        [
+          4846,
+          50
+        ],
+        [
+          5076,
+          50
+        ],
+        [
+          5145,
+          50
+        ],
+        [
+          5147,
+          50
+        ],
+        [
+          5148,
+          50
+        ],
+        [
+          5149,
+          50
+        ],
+        [
+          5189,
+          50
+        ],
+        [
+          5190,
+          50
+        ],
+        [
+          5342,
+          50
+        ],
+        [
+          5376,
+          50
+        ],
+        [
+          3473,
+          49
+        ],
+        [
+          3513,
+          49
+        ],
+        [
+          3546,
+          49
+        ],
+        [
+          3580,
+          49
+        ],
+        [
+          3632,
+          49
+        ],
+        [
+          3662,
+          49
+        ],
+        [
+          3667,
+          49
+        ],
+        [
+          3670,
+          49
+        ],
+        [
+          3704,
+          49
+        ],
+        [
+          3739,
+          49
+        ],
+        [
+          3744,
+          49
+        ],
+        [
+          4879,
+          49
+        ],
+        [
+          4880,
+          49
+        ],
+        [
+          4917,
+          49
+        ],
+        [
+          4918,
+          49
+        ],
+        [
+          5032,
+          49
+        ],
+        [
+          5146,
+          49
+        ],
+        [
+          5184,
+          49
+        ],
+        [
+          5188,
+          49
+        ],
+        [
+          5341,
+          49
+        ],
+        [
+          3399,
+          48
+        ],
+        [
+          3441,
+          48
+        ],
+        [
+          3471,
+          48
+        ],
+        [
+          3508,
+          48
+        ],
+        [
+          3511,
+          48
+        ],
+        [
+          3596,
+          48
+        ],
+        [
+          3700,
+          48
+        ],
+        [
+          3703,
+          48
+        ],
+        [
+          3851,
+          48
+        ],
+        [
+          4541,
+          48
+        ],
+        [
+          4914,
+          48
+        ],
+        [
+          4919,
+          48
+        ],
+        [
+          4960,
+          48
+        ],
+        [
+          4991,
+          48
+        ],
+        [
+          5007,
+          48
+        ],
+        [
+          5031,
+          48
+        ],
+        [
+          5075,
+          48
+        ],
+        [
+          5077,
+          48
+        ],
+        [
+          5111,
+          48
+        ],
+        [
+          5155,
+          48
+        ],
+        [
+          5187,
+          48
+        ],
+        [
+          5226,
+          48
+        ],
+        [
+          5227,
+          48
+        ],
+        [
+          5301,
+          48
+        ],
+        [
+          3397,
+          47
+        ],
+        [
+          3434,
+          47
+        ],
+        [
+          3470,
+          47
+        ],
+        [
+          3475,
+          47
+        ],
+        [
+          3479,
+          47
+        ],
+        [
+          3512,
+          47
+        ],
+        [
+          3517,
+          47
+        ],
+        [
+          3545,
+          47
+        ],
+        [
+          3551,
+          47
+        ],
+        [
+          3554,
+          47
+        ],
+        [
+          3562,
+          47
+        ],
+        [
+          3626,
+          47
+        ],
+        [
+          3628,
+          47
+        ],
+        [
+          3705,
+          47
+        ],
+        [
+          3856,
+          47
+        ],
+        [
+          3857,
+          47
+        ],
+        [
+          4839,
+          47
+        ],
+        [
+          4886,
+          47
+        ],
+        [
+          4915,
+          47
+        ],
+        [
+          4953,
+          47
+        ],
+        [
+          4994,
+          47
+        ],
+        [
+          5024,
+          47
+        ],
+        [
+          5044,
+          47
+        ],
+        [
+          5152,
+          47
+        ],
+        [
+          5193,
+          47
+        ],
+        [
+          5299,
+          47
+        ],
+        [
+          5305,
+          47
+        ],
+        [
+          5339,
+          47
+        ],
+        [
+          5525,
+          47
+        ],
+        [
+          3395,
+          46
+        ],
+        [
+          3477,
+          46
+        ],
+        [
+          3510,
+          46
+        ],
+        [
+          3557,
+          46
+        ],
+        [
+          3595,
+          46
+        ],
+        [
+          3622,
+          46
+        ],
+        [
+          3658,
+          46
+        ],
+        [
+          3734,
+          46
+        ],
+        [
+          3781,
+          46
+        ],
+        [
+          3784,
+          46
+        ],
+        [
+          4161,
+          46
+        ],
+        [
+          4800,
+          46
+        ],
+        [
+          4838,
+          46
+        ],
+        [
+          4842,
+          46
+        ],
+        [
+          4844,
+          46
+        ],
+        [
+          4882,
+          46
+        ],
+        [
+          4883,
+          46
+        ],
+        [
+          4884,
+          46
+        ],
+        [
+          4965,
+          46
+        ],
+        [
+          5001,
+          46
+        ],
+        [
+          5065,
+          46
+        ],
+        [
+          5078,
+          46
+        ],
+        [
+          5080,
+          46
+        ],
+        [
+          5105,
+          46
+        ],
+        [
+          5113,
+          46
+        ],
+        [
+          5114,
+          46
+        ],
+        [
+          5115,
+          46
+        ],
+        [
+          5116,
+          46
+        ],
+        [
+          5150,
+          46
+        ],
+        [
+          5260,
+          46
+        ],
+        [
+          5408,
+          46
+        ],
+        [
+          3282,
+          45
+        ],
+        [
+          3322,
+          45
+        ],
+        [
+          3396,
+          45
+        ],
+        [
+          3440,
+          45
+        ],
+        [
+          3478,
+          45
+        ],
+        [
+          3507,
+          45
+        ]
+      ]
+    },
+    {
+      "tier": "hard",
+      "case": "case_09",
+      "case_sha256": "bcbd72a7bb47ec5c5f82428573ffabdb932594c4b574d552808851617b05f6c1",
+      "parent_sha256": "ebd3b71b51ef0369ae3314475299027bd262bbc569b7ce5012a94456ad078ff7",
+      "parent_delay": 22574,
+      "command": [
+        "/home/younix/eda-3d-routing-challenge/dev/artifacts/20261003-dual-hotspots-validation/hotspots",
+        "64",
+        "1",
+        "max_sink",
+        "16",
+        "adaptive"
+      ],
+      "wall_s": 7.619492067024112,
+      "price_resolution": 16,
+      "iterations": [
+        {
+          "iteration": 0,
+          "lower_bound": 17404,
+          "best_lower_bound": 17404,
+          "priced_vertices": 0
+        },
+        {
+          "iteration": 1,
+          "lower_bound": 17294,
+          "best_lower_bound": 17404,
+          "priced_vertices": 833
+        },
+        {
+          "iteration": 2,
+          "lower_bound": 17422,
+          "best_lower_bound": 17422,
+          "priced_vertices": 1193
+        },
+        {
+          "iteration": 3,
+          "lower_bound": 17558,
+          "best_lower_bound": 17558,
+          "priced_vertices": 1355
+        },
+        {
+          "iteration": 4,
+          "lower_bound": 17711,
+          "best_lower_bound": 17711,
+          "priced_vertices": 1508
+        },
+        {
+          "iteration": 5,
+          "lower_bound": 17838,
+          "best_lower_bound": 17838,
+          "priced_vertices": 1595
+        },
+        {
+          "iteration": 6,
+          "lower_bound": 17933,
+          "best_lower_bound": 17933,
+          "priced_vertices": 1689
+        },
+        {
+          "iteration": 7,
+          "lower_bound": 18022,
+          "best_lower_bound": 18022,
+          "priced_vertices": 1698
+        },
+        {
+          "iteration": 8,
+          "lower_bound": 18065,
+          "best_lower_bound": 18065,
+          "priced_vertices": 1780
+        },
+        {
+          "iteration": 9,
+          "lower_bound": 18218,
+          "best_lower_bound": 18218,
+          "priced_vertices": 1892
+        },
+        {
+          "iteration": 10,
+          "lower_bound": 18239,
+          "best_lower_bound": 18239,
+          "priced_vertices": 1913
+        },
+        {
+          "iteration": 11,
+          "lower_bound": 18299,
+          "best_lower_bound": 18299,
+          "priced_vertices": 2062
+        },
+        {
+          "iteration": 12,
+          "lower_bound": 18287,
+          "best_lower_bound": 18299,
+          "priced_vertices": 2083
+        },
+        {
+          "iteration": 13,
+          "lower_bound": 18389,
+          "best_lower_bound": 18389,
+          "priced_vertices": 2117
+        },
+        {
+          "iteration": 14,
+          "lower_bound": 18306,
+          "best_lower_bound": 18389,
+          "priced_vertices": 2238
+        },
+        {
+          "iteration": 15,
+          "lower_bound": 18330,
+          "best_lower_bound": 18389,
+          "priced_vertices": 2245
+        },
+        {
+          "iteration": 16,
+          "lower_bound": 18349,
+          "best_lower_bound": 18389,
+          "priced_vertices": 2316
+        },
+        {
+          "iteration": 17,
+          "lower_bound": 18364,
+          "best_lower_bound": 18389,
+          "priced_vertices": 2467
+        },
+        {
+          "iteration": 18,
+          "lower_bound": 18367,
+          "best_lower_bound": 18389,
+          "priced_vertices": 2364
+        },
+        {
+          "iteration": 19,
+          "lower_bound": 18380,
+          "best_lower_bound": 18389,
+          "priced_vertices": 2404
+        },
+        {
+          "iteration": 20,
+          "lower_bound": 18363,
+          "best_lower_bound": 18389,
+          "priced_vertices": 2465
+        },
+        {
+          "iteration": 21,
+          "lower_bound": 18403,
+          "best_lower_bound": 18403,
+          "priced_vertices": 2532
+        },
+        {
+          "iteration": 22,
+          "lower_bound": 18442,
+          "best_lower_bound": 18442,
+          "priced_vertices": 2523
+        },
+        {
+          "iteration": 23,
+          "lower_bound": 18446,
+          "best_lower_bound": 18446,
+          "priced_vertices": 2559
+        },
+        {
+          "iteration": 24,
+          "lower_bound": 18451,
+          "best_lower_bound": 18451,
+          "priced_vertices": 2592
+        },
+        {
+          "iteration": 25,
+          "lower_bound": 18430,
+          "best_lower_bound": 18451,
+          "priced_vertices": 2563
+        },
+        {
+          "iteration": 26,
+          "lower_bound": 18442,
+          "best_lower_bound": 18451,
+          "priced_vertices": 2594
+        },
+        {
+          "iteration": 27,
+          "lower_bound": 18465,
+          "best_lower_bound": 18465,
+          "priced_vertices": 2612
+        },
+        {
+          "iteration": 28,
+          "lower_bound": 18466,
+          "best_lower_bound": 18466,
+          "priced_vertices": 2655
+        },
+        {
+          "iteration": 29,
+          "lower_bound": 18495,
+          "best_lower_bound": 18495,
+          "priced_vertices": 2581
+        },
+        {
+          "iteration": 30,
+          "lower_bound": 18481,
+          "best_lower_bound": 18495,
+          "priced_vertices": 2593
+        },
+        {
+          "iteration": 31,
+          "lower_bound": 18502,
+          "best_lower_bound": 18502,
+          "priced_vertices": 2637
+        },
+        {
+          "iteration": 32,
+          "lower_bound": 18514,
+          "best_lower_bound": 18514,
+          "priced_vertices": 2632
+        },
+        {
+          "iteration": 33,
+          "lower_bound": 18502,
+          "best_lower_bound": 18514,
+          "priced_vertices": 2604
+        },
+        {
+          "iteration": 34,
+          "lower_bound": 18525,
+          "best_lower_bound": 18525,
+          "priced_vertices": 2542
+        },
+        {
+          "iteration": 35,
+          "lower_bound": 18517,
+          "best_lower_bound": 18525,
+          "priced_vertices": 2547
+        },
+        {
+          "iteration": 36,
+          "lower_bound": 18505,
+          "best_lower_bound": 18525,
+          "priced_vertices": 2561
+        },
+        {
+          "iteration": 37,
+          "lower_bound": 18503,
+          "best_lower_bound": 18525,
+          "priced_vertices": 2537
+        },
+        {
+          "iteration": 38,
+          "lower_bound": 18501,
+          "best_lower_bound": 18525,
+          "priced_vertices": 2539
+        },
+        {
+          "iteration": 39,
+          "lower_bound": 18538,
+          "best_lower_bound": 18538,
+          "priced_vertices": 2534
+        },
+        {
+          "iteration": 40,
+          "lower_bound": 18541,
+          "best_lower_bound": 18541,
+          "priced_vertices": 2588
+        },
+        {
+          "iteration": 41,
+          "lower_bound": 18564,
+          "best_lower_bound": 18564,
+          "priced_vertices": 2604
+        },
+        {
+          "iteration": 42,
+          "lower_bound": 18556,
+          "best_lower_bound": 18564,
+          "priced_vertices": 2667
+        },
+        {
+          "iteration": 43,
+          "lower_bound": 18560,
+          "best_lower_bound": 18564,
+          "priced_vertices": 2642
+        },
+        {
+          "iteration": 44,
+          "lower_bound": 18567,
+          "best_lower_bound": 18567,
+          "priced_vertices": 2619
+        },
+        {
+          "iteration": 45,
+          "lower_bound": 18558,
+          "best_lower_bound": 18567,
+          "priced_vertices": 2688
+        },
+        {
+          "iteration": 46,
+          "lower_bound": 18570,
+          "best_lower_bound": 18570,
+          "priced_vertices": 2707
+        },
+        {
+          "iteration": 47,
+          "lower_bound": 18590,
+          "best_lower_bound": 18590,
+          "priced_vertices": 2691
+        },
+        {
+          "iteration": 48,
+          "lower_bound": 18589,
+          "best_lower_bound": 18590,
+          "priced_vertices": 2688
+        },
+        {
+          "iteration": 49,
+          "lower_bound": 18594,
+          "best_lower_bound": 18594,
+          "priced_vertices": 2688
+        },
+        {
+          "iteration": 50,
+          "lower_bound": 18576,
+          "best_lower_bound": 18594,
+          "priced_vertices": 2718
+        },
+        {
+          "iteration": 51,
+          "lower_bound": 18573,
+          "best_lower_bound": 18594,
+          "priced_vertices": 2687
+        },
+        {
+          "iteration": 52,
+          "lower_bound": 18593,
+          "best_lower_bound": 18594,
+          "priced_vertices": 2724
+        },
+        {
+          "iteration": 53,
+          "lower_bound": 18597,
+          "best_lower_bound": 18597,
+          "priced_vertices": 2691
+        },
+        {
+          "iteration": 54,
+          "lower_bound": 18596,
+          "best_lower_bound": 18597,
+          "priced_vertices": 2704
+        },
+        {
+          "iteration": 55,
+          "lower_bound": 18607,
+          "best_lower_bound": 18607,
+          "priced_vertices": 2676
+        },
+        {
+          "iteration": 56,
+          "lower_bound": 18592,
+          "best_lower_bound": 18607,
+          "priced_vertices": 2674
+        },
+        {
+          "iteration": 57,
+          "lower_bound": 18602,
+          "best_lower_bound": 18607,
+          "priced_vertices": 2596
+        },
+        {
+          "iteration": 58,
+          "lower_bound": 18588,
+          "best_lower_bound": 18607,
+          "priced_vertices": 2655
+        },
+        {
+          "iteration": 59,
+          "lower_bound": 18616,
+          "best_lower_bound": 18616,
+          "priced_vertices": 2666
+        },
+        {
+          "iteration": 60,
+          "lower_bound": 18630,
+          "best_lower_bound": 18630,
+          "priced_vertices": 2650
+        },
+        {
+          "iteration": 61,
+          "lower_bound": 18637,
+          "best_lower_bound": 18637,
+          "priced_vertices": 2615
+        },
+        {
+          "iteration": 62,
+          "lower_bound": 18631,
+          "best_lower_bound": 18637,
+          "priced_vertices": 2649
+        },
+        {
+          "iteration": 63,
+          "lower_bound": 18621,
+          "best_lower_bound": 18637,
+          "priced_vertices": 2618
+        }
+      ],
+      "best_lower_bound": 18637,
+      "expansions": 33491738,
+      "hotspots": [
+        [
+          5535,
+          67
+        ],
+        [
+          5381,
+          58
+        ],
+        [
+          3816,
+          57
+        ],
+        [
+          5376,
+          56
+        ],
+        [
+          5569,
+          55
+        ],
+        [
+          5940,
+          55
+        ],
+        [
+          3656,
+          53
+        ],
+        [
+          4179,
+          53
+        ],
+        [
+          5137,
+          50
+        ],
+        [
+          5650,
+          50
+        ],
+        [
+          7135,
+          50
+        ],
+        [
+          5415,
+          49
+        ],
+        [
+          5336,
+          48
+        ],
+        [
+          5536,
+          48
+        ],
+        [
+          3537,
+          47
+        ],
+        [
+          3617,
+          47
+        ],
+        [
+          5494,
+          47
+        ],
+        [
+          5649,
+          47
+        ],
+        [
+          3499,
+          45
+        ],
+        [
+          3657,
+          45
+        ],
+        [
+          3856,
+          45
+        ],
+        [
+          4138,
+          45
+        ],
+        [
+          4425,
+          45
+        ],
+        [
+          5098,
+          45
+        ],
+        [
+          5303,
+          45
+        ],
+        [
+          5427,
+          45
+        ],
+        [
+          5467,
+          45
+        ],
+        [
+          5616,
+          45
+        ],
+        [
+          3738,
+          44
+        ],
+        [
+          5302,
+          44
+        ],
+        [
+          5453,
+          44
+        ],
+        [
+          5617,
+          44
+        ],
+        [
+          5781,
+          44
+        ],
+        [
+          5854,
+          44
+        ],
+        [
+          5938,
+          44
+        ],
+        [
+          6018,
+          44
+        ],
+        [
+          3459,
+          43
+        ],
+        [
+          3577,
+          43
+        ],
+        [
+          3873,
+          43
+        ],
+        [
+          4056,
+          43
+        ],
+        [
+          4255,
+          43
+        ],
+        [
+          4261,
+          43
+        ],
+        [
+          4262,
+          43
+        ],
+        [
+          5097,
+          43
+        ],
+        [
+          5337,
+          43
+        ],
+        [
+          5493,
+          43
+        ],
+        [
+          5570,
+          43
+        ],
+        [
+          5577,
+          43
+        ],
+        [
+          5690,
+          43
+        ],
+        [
+          5730,
+          43
+        ],
+        [
+          5737,
+          43
+        ],
+        [
+          3737,
+          42
+        ],
+        [
+          4260,
+          42
+        ],
+        [
+          5216,
+          42
+        ],
+        [
+          5380,
+          42
+        ],
+        [
+          5388,
+          42
+        ],
+        [
+          5537,
+          42
+        ],
+        [
+          5610,
+          42
+        ],
+        [
+          5618,
+          42
+        ],
+        [
+          5697,
+          42
+        ],
+        [
+          5780,
+          42
+        ],
+        [
+          5937,
+          42
+        ],
+        [
+          3536,
+          41
+        ],
+        [
+          3698,
+          41
+        ],
+        [
+          3872,
+          41
+        ],
+        [
+          3896,
+          41
+        ],
+        [
+          4055,
+          41
+        ],
+        [
+          4254,
+          41
+        ],
+        [
+          5099,
+          41
+        ],
+        [
+          5217,
+          41
+        ],
+        [
+          5339,
+          41
+        ],
+        [
+          5341,
+          41
+        ],
+        [
+          5342,
+          41
+        ],
+        [
+          5345,
+          41
+        ],
+        [
+          5445,
+          41
+        ],
+        [
+          5576,
+          41
+        ],
+        [
+          5776,
+          41
+        ],
+        [
+          5935,
+          41
+        ],
+        [
+          3616,
+          40
+        ],
+        [
+          3736,
+          40
+        ],
+        [
+          3741,
+          40
+        ],
+        [
+          3890,
+          40
+        ],
+        [
+          3895,
+          40
+        ],
+        [
+          3976,
+          40
+        ],
+        [
+          4058,
+          40
+        ],
+        [
+          4181,
+          40
+        ],
+        [
+          4256,
+          40
+        ],
+        [
+          4371,
+          40
+        ],
+        [
+          5177,
+          40
+        ],
+        [
+          5256,
+          40
+        ],
+        [
+          5338,
+          40
+        ],
+        [
+          5374,
+          40
+        ],
+        [
+          5414,
+          40
+        ],
+        [
+          5416,
+          40
+        ],
+        [
+          5456,
+          40
+        ],
+        [
+          5530,
+          40
+        ],
+        [
+          5531,
+          40
+        ],
+        [
+          5532,
+          40
+        ],
+        [
+          5619,
+          40
+        ],
+        [
+          5653,
+          40
+        ],
+        [
+          5740,
+          40
+        ],
+        [
+          5770,
+          40
+        ],
+        [
+          5779,
+          40
+        ],
+        [
+          5819,
+          40
+        ],
+        [
+          5899,
+          40
+        ],
+        [
+          3665,
+          39
+        ],
+        [
+          3739,
+          39
+        ],
+        [
+          3855,
+          39
+        ],
+        [
+          3891,
+          39
+        ],
+        [
+          3892,
+          39
+        ],
+        [
+          3935,
+          39
+        ],
+        [
+          3936,
+          39
+        ],
+        [
+          4057,
+          39
+        ],
+        [
+          4059,
+          39
+        ],
+        [
+          4061,
+          39
+        ],
+        [
+          4084,
+          39
+        ],
+        [
+          4097,
+          39
+        ],
+        [
+          4099,
+          39
+        ],
+        [
+          4128,
+          39
+        ],
+        [
+          4137,
+          39
+        ],
+        [
+          4180,
+          39
+        ],
+        [
+          4257,
+          39
+        ],
+        [
+          4259,
+          39
+        ],
+        [
+          4463,
+          39
+        ],
+        [
+          4614,
+          39
+        ],
+        [
+          5057,
+          39
+        ],
+        [
+          5059,
+          39
+        ],
+        [
+          5297,
+          39
+        ],
+        [
+          5340,
+          39
+        ],
+        [
+          5377,
+          39
+        ],
+        [
+          5454,
+          39
+        ],
+        [
+          5466,
+          39
+        ],
+        [
+          5491,
+          39
+        ],
+        [
+          5573,
+          39
+        ],
+        [
+          5578,
+          39
+        ],
+        [
+          5608,
+          39
+        ],
+        [
+          5611,
+          39
+        ],
+        [
+          5652,
+          39
+        ],
+        [
+          5656,
+          39
+        ],
+        [
+          5696,
+          39
+        ],
+        [
+          5735,
+          39
+        ],
+        [
+          5736,
+          39
+        ],
+        [
+          6099,
+          39
+        ],
+        [
+          3576,
+          38
+        ],
+        [
+          3813,
+          38
+        ],
+        [
+          3832,
+          38
+        ],
+        [
+          3893,
+          38
+        ],
+        [
+          3894,
+          38
+        ],
+        [
+          3931,
+          38
+        ],
+        [
+          3934,
+          38
+        ],
+        [
+          4044,
+          38
+        ],
+        [
+          4089,
+          38
+        ],
+        [
+          4217,
+          38
+        ],
+        [
+          4222,
+          38
+        ],
+        [
+          4258,
+          38
+        ],
+        [
+          4331,
+          38
+        ],
+        [
+          5263,
+          38
+        ],
+        [
+          5268,
+          38
+        ],
+        [
+          5301,
+          38
+        ],
+        [
+          5306,
+          38
+        ],
+        [
+          5346,
+          38
+        ],
+        [
+          5379,
+          38
+        ],
+        [
+          5426,
+          38
+        ],
+        [
+          5450,
+          38
+        ],
+        [
+          5455,
+          38
+        ],
+        [
+          5490,
+          38
+        ],
+        [
+          5496,
+          38
+        ],
+        [
+          5574,
+          38
+        ],
+        [
+          5575,
+          38
+        ],
+        [
+          5651,
+          38
+        ],
+        [
+          5691,
+          38
+        ],
+        [
+          5732,
+          38
+        ],
+        [
+          5773,
+          38
+        ],
+        [
+          5900,
+          38
+        ],
+        [
+          5936,
+          38
+        ],
+        [
+          5979,
+          38
+        ],
+        [
+          6105,
+          38
+        ],
+        [
+          6136,
+          38
+        ],
+        [
+          6175,
+          38
+        ],
+        [
+          3498,
+          37
+        ],
+        [
+          3658,
+          37
+        ],
+        [
+          3697,
+          37
+        ],
+        [
+          3740,
+          37
+        ],
+        [
+          3746,
+          37
+        ],
+        [
+          3777,
+          37
+        ],
+        [
+          3781,
+          37
+        ],
+        [
+          3942,
+          37
+        ],
+        [
+          3972,
+          37
+        ],
+        [
+          3985,
+          37
+        ],
+        [
+          4016,
+          37
+        ],
+        [
+          4049,
+          37
+        ],
+        [
+          4051,
+          37
+        ],
+        [
+          4052,
+          37
+        ],
+        [
+          4054,
+          37
+        ],
+        [
+          4063,
+          37
+        ],
+        [
+          4127,
+          37
+        ],
+        [
+          4177,
+          37
+        ],
+        [
+          4178,
+          37
+        ],
+        [
+          4183,
+          37
+        ],
+        [
+          4220,
+          37
+        ],
+        [
+          4221,
+          37
+        ],
+        [
+          4263,
+          37
+        ],
+        [
+          4335,
+          37
+        ],
+        [
+          4375,
+          37
+        ],
+        [
+          4377,
+          37
+        ],
+        [
+          4378,
+          37
+        ],
+        [
+          4384,
+          37
+        ],
+        [
+          4415,
+          37
+        ],
+        [
+          4423,
+          37
+        ],
+        [
+          4455,
+          37
+        ],
+        [
+          5055,
+          37
+        ],
+        [
+          5058,
+          37
+        ],
+        [
+          5095,
+          37
+        ],
+        [
+          5176,
+          37
+        ],
+        [
+          5333,
+          37
+        ],
+        [
+          5334,
+          37
+        ],
+        [
+          5344,
+          37
+        ],
+        [
+          5413,
+          37
+        ],
+        [
+          5457,
+          37
+        ],
+        [
+          5533,
+          37
+        ],
+        [
+          5538,
+          37
+        ],
+        [
+          5568,
+          37
+        ],
+        [
+          5579,
+          37
+        ],
+        [
+          5583,
+          37
+        ],
+        [
+          5613,
+          37
+        ],
+        [
+          5693,
+          37
+        ],
+        [
+          5695,
+          37
+        ],
+        [
+          5733,
+          37
+        ],
+        [
+          5734,
+          37
+        ],
+        [
+          5738,
+          37
+        ],
+        [
+          5778,
+          37
+        ],
+        [
+          5810,
+          37
+        ],
+        [
+          5820,
+          37
+        ],
+        [
+          5850,
+          37
+        ],
+        [
+          5858,
+          37
+        ],
+        [
+          5934,
+          37
+        ],
+        [
+          5946,
+          37
+        ],
+        [
+          6139,
+          37
+        ],
+        [
+          2057,
+          36
+        ],
+        [
+          3578,
+          36
+        ],
+        [
+          3659,
+          36
+        ],
+        [
+          3735,
+          36
+        ],
+        [
+          3745,
+          36
+        ],
+        [
+          3778,
+          36
+        ],
+        [
+          3852,
+          36
+        ],
+        [
+          3854,
+          36
+        ],
+        [
+          3866,
+          36
+        ],
+        [
+          3868,
+          36
+        ],
+        [
+          3905,
+          36
+        ],
+        [
+          3937,
+          36
+        ],
+        [
+          3945,
+          36
+        ],
+        [
+          3949,
+          36
+        ],
+        [
+          3975,
+          36
+        ],
+        [
+          3977,
+          36
+        ],
+        [
+          4013,
+          36
+        ],
+        [
+          4015,
+          36
+        ]
+      ]
+    }
+  ],
+  "scope": "Own legal parent inputs,64adaptive fractional-price iterations;top256positive vertex prices from best bound. Heuristic hotspots,not certified graph cuts or legal relaxed routes. Analysis cost is additional to routing work."
+}

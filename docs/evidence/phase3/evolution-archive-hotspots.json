@@ -1,0 +1,330 @@
+{
+  "reports": {
+    "docs/evidence/phase3/evolution-hotspot.json": "567270c16bd74c7e4153eec3798d1e1318acd443702547fd2fd499b70589cad6",
+    "docs/evidence/phase3/evolution-hotspot-direct.json": "20d344a56379ff9f8802cc2df9b50f9a0cd6bd60e3819e9ec079cdc0850487e6",
+    "docs/evidence/phase3/evolution-hotspot-diverse.json": "a79d201b8d627764892b2f56cd51ec28b72e25006aa8a2e1cff21694732118ab",
+    "docs/evidence/phase3/evolution-hotspot-validation.json": "475f5a2d2d126d4c51419fef5aee23543432ecc6c0664ae64127d182c81c6458"
+  },
+  "entries": [
+    {
+      "report": "docs/evidence/phase3/evolution-hotspot.json",
+      "name": "control",
+      "mutation_family": "hotspot-neighborhood",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "binary_sha256": "e1b8e3c52a2b7269ff4f0b43c3641859fce32a49cd592bba2b19c76439d7eadb",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.diff",
+      "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "comparisons": [],
+      "legal_rows": 6,
+      "order_changes": 0,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption. Dynamic own dual-price hotspots;analysis adds search cost. Geometric vicinity is a heuristic neighborhood,not a certified cut. Mandatory blockers retained and group cap respected."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-hotspot.json",
+      "name": "hotspot2",
+      "mutation_family": "hotspot-neighborhood",
+      "source_sha256": "6db061851bc5c834c182513b6f5464796b9eb9a1b3e11b7982803810a86f2b8b",
+      "binary_sha256": "a9095716775159c0b62e01e4a6ba78838af6c5148f95ab433f67b08cb53fc8b8",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/6db061851bc5c834c182513b6f5464796b9eb9a1b3e11b7982803810a86f2b8b.diff",
+      "patch_sha256": "954fa5c45c4fe6822627dd72a5b09e5003273b516498546066b016792dbc2932",
+      "comparisons": [
+        {
+          "tier": "hard",
+          "variant": "hotspot2",
+          "wins": 1,
+          "ties": 3,
+          "losses": 2,
+          "geomean_score_ratio": 0.9998177654253788,
+          "pairs": 6
+        }
+      ],
+      "legal_rows": 6,
+      "order_changes": 0,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption. Dynamic own dual-price hotspots;analysis adds search cost. Geometric vicinity is a heuristic neighborhood,not a certified cut. Mandatory blockers retained and group cap respected."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-hotspot.json",
+      "name": "hotspot4",
+      "mutation_family": "hotspot-neighborhood",
+      "source_sha256": "3c099abc29cc7beac5caf3fc300863adafdf007341660dccc6014c55fffeaeb8",
+      "binary_sha256": "4fbc396814b8367db81a47080bad5d9dc2a74625b8306e7d54add0714aeac477",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/3c099abc29cc7beac5caf3fc300863adafdf007341660dccc6014c55fffeaeb8.diff",
+      "patch_sha256": "d69ac490106f445e261ba21795552822af220e63347750a8f36b91844a9c83fc",
+      "comparisons": [
+        {
+          "tier": "hard",
+          "variant": "hotspot4",
+          "wins": 1,
+          "ties": 4,
+          "losses": 1,
+          "geomean_score_ratio": 0.9998501161377997,
+          "pairs": 6
+        }
+      ],
+      "legal_rows": 6,
+      "order_changes": 0,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption. Dynamic own dual-price hotspots;analysis adds search cost. Geometric vicinity is a heuristic neighborhood,not a certified cut. Mandatory blockers retained and group cap respected."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-hotspot-direct.json",
+      "name": "control",
+      "mutation_family": "hotspot-neighborhood",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "binary_sha256": "e1b8e3c52a2b7269ff4f0b43c3641859fce32a49cd592bba2b19c76439d7eadb",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.diff",
+      "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "comparisons": [],
+      "legal_rows": 6,
+      "order_changes": 0,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption. Dynamic own dual-price hotspots;analysis adds search cost. Geometric vicinity is a heuristic neighborhood,not a certified cut. Mandatory blockers retained and group cap respected. Direct hotspot groups bypass the individual-net gain gate;all external nets stay fixed and normal negotiated legality/rollback/physical acceptance apply."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-hotspot-direct.json",
+      "name": "hotspot_direct2",
+      "mutation_family": "hotspot-neighborhood",
+      "source_sha256": "b3d7b563627e9a2c20a98ae6e86718d07104dda228b37f86eba3040cd0147b0e",
+      "binary_sha256": "9f3ed86c68cee2aecad50e52c1a9124bbf971e1d6de8140277ff21a79b2afa49",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/b3d7b563627e9a2c20a98ae6e86718d07104dda228b37f86eba3040cd0147b0e.diff",
+      "patch_sha256": "b4206d7e1b6ecc2200d4eeb046eb879d5c47cd5066da650bdef3e912540c3a9e",
+      "comparisons": [
+        {
+          "tier": "hard",
+          "variant": "hotspot_direct2",
+          "wins": 1,
+          "ties": 4,
+          "losses": 1,
+          "geomean_score_ratio": 1.0000238848552834,
+          "pairs": 6
+        }
+      ],
+      "legal_rows": 6,
+      "order_changes": 0,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption. Dynamic own dual-price hotspots;analysis adds search cost. Geometric vicinity is a heuristic neighborhood,not a certified cut. Mandatory blockers retained and group cap respected. Direct hotspot groups bypass the individual-net gain gate;all external nets stay fixed and normal negotiated legality/rollback/physical acceptance apply."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-hotspot-direct.json",
+      "name": "hotspot_direct4",
+      "mutation_family": "hotspot-neighborhood",
+      "source_sha256": "375ab943b08928e62e4995312a8b599e01151cd872d12ab1b2fe2903a6d784c0",
+      "binary_sha256": "c2a6cdb8d38707ea995cfe2b330571f9688abdee1ee22d5ccbdecad75d5ece71",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/375ab943b08928e62e4995312a8b599e01151cd872d12ab1b2fe2903a6d784c0.diff",
+      "patch_sha256": "3782d03588f69e134ac01dc441a786459070b155e74f52df481091b2dbd0b953",
+      "comparisons": [
+        {
+          "tier": "hard",
+          "variant": "hotspot_direct4",
+          "wins": 2,
+          "ties": 3,
+          "losses": 1,
+          "geomean_score_ratio": 1.0000924038682162,
+          "pairs": 6
+        }
+      ],
+      "legal_rows": 6,
+      "order_changes": 0,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption. Dynamic own dual-price hotspots;analysis adds search cost. Geometric vicinity is a heuristic neighborhood,not a certified cut. Mandatory blockers retained and group cap respected. Direct hotspot groups bypass the individual-net gain gate;all external nets stay fixed and normal negotiated legality/rollback/physical acceptance apply."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-hotspot-diverse.json",
+      "name": "control",
+      "mutation_family": "hotspot-neighborhood",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "binary_sha256": "e1b8e3c52a2b7269ff4f0b43c3641859fce32a49cd592bba2b19c76439d7eadb",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.diff",
+      "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "comparisons": [],
+      "legal_rows": 6,
+      "order_changes": 0,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption. Dynamic own dual-price hotspots;analysis adds search cost. Geometric vicinity is a heuristic neighborhood,not a certified cut. Mandatory blockers retained and group cap respected. Direct hotspot groups bypass the individual-net gain gate;all external nets stay fixed and normal negotiated legality/rollback/physical acceptance apply. Diversified direct groups draw up to4nets without replacement from top12affinities,sqrt-weighted,using existing seeded group RNG."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-hotspot-diverse.json",
+      "name": "hotspot_direct4",
+      "mutation_family": "hotspot-neighborhood",
+      "source_sha256": "375ab943b08928e62e4995312a8b599e01151cd872d12ab1b2fe2903a6d784c0",
+      "binary_sha256": "c2a6cdb8d38707ea995cfe2b330571f9688abdee1ee22d5ccbdecad75d5ece71",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/375ab943b08928e62e4995312a8b599e01151cd872d12ab1b2fe2903a6d784c0.diff",
+      "patch_sha256": "3782d03588f69e134ac01dc441a786459070b155e74f52df481091b2dbd0b953",
+      "comparisons": [
+        {
+          "tier": "hard",
+          "variant": "hotspot_direct4",
+          "wins": 1,
+          "ties": 4,
+          "losses": 1,
+          "geomean_score_ratio": 0.9998744315728891,
+          "pairs": 6
+        }
+      ],
+      "legal_rows": 6,
+      "order_changes": 0,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption. Dynamic own dual-price hotspots;analysis adds search cost. Geometric vicinity is a heuristic neighborhood,not a certified cut. Mandatory blockers retained and group cap respected. Direct hotspot groups bypass the individual-net gain gate;all external nets stay fixed and normal negotiated legality/rollback/physical acceptance apply. Diversified direct groups draw up to4nets without replacement from top12affinities,sqrt-weighted,using existing seeded group RNG."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-hotspot-diverse.json",
+      "name": "hotspot_diverse4",
+      "mutation_family": "hotspot-neighborhood",
+      "source_sha256": "52e22a460c5bf08d8eee057a9ddea29d6af7671bb66f73152ed0b8b8bcd9558e",
+      "binary_sha256": "64ddcc13ba67f406d726650413dc70e637098341c0e96b9077418204a088cd41",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/52e22a460c5bf08d8eee057a9ddea29d6af7671bb66f73152ed0b8b8bcd9558e.diff",
+      "patch_sha256": "febd649ae9e9a3d49c0a7af91d281cbecd32bf8f020d7acf3323168c44012c6d",
+      "comparisons": [
+        {
+          "tier": "hard",
+          "variant": "hotspot_diverse4",
+          "wins": 3,
+          "ties": 3,
+          "losses": 0,
+          "geomean_score_ratio": 1.0001010112894848,
+          "pairs": 6
+        }
+      ],
+      "legal_rows": 6,
+      "order_changes": 0,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption. Dynamic own dual-price hotspots;analysis adds search cost. Geometric vicinity is a heuristic neighborhood,not a certified cut. Mandatory blockers retained and group cap respected. Direct hotspot groups bypass the individual-net gain gate;all external nets stay fixed and normal negotiated legality/rollback/physical acceptance apply. Diversified direct groups draw up to4nets without replacement from top12affinities,sqrt-weighted,using existing seeded group RNG."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-hotspot-validation.json",
+      "name": "control",
+      "mutation_family": "hotspot-neighborhood",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "binary_sha256": "e1b8e3c52a2b7269ff4f0b43c3641859fce32a49cd592bba2b19c76439d7eadb",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.diff",
+      "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "comparisons": [],
+      "legal_rows": 4,
+      "order_changes": 0,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption. Dynamic own dual-price hotspots;analysis adds search cost. Geometric vicinity is a heuristic neighborhood,not a certified cut. Mandatory blockers retained and group cap respected. Direct hotspot groups bypass the individual-net gain gate;all external nets stay fixed and normal negotiated legality/rollback/physical acceptance apply. Diversified direct groups draw up to4nets without replacement from top12affinities,sqrt-weighted,using existing seeded group RNG."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-hotspot-validation.json",
+      "name": "hotspot_direct4",
+      "mutation_family": "hotspot-neighborhood",
+      "source_sha256": "375ab943b08928e62e4995312a8b599e01151cd872d12ab1b2fe2903a6d784c0",
+      "binary_sha256": "c2a6cdb8d38707ea995cfe2b330571f9688abdee1ee22d5ccbdecad75d5ece71",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/375ab943b08928e62e4995312a8b599e01151cd872d12ab1b2fe2903a6d784c0.diff",
+      "patch_sha256": "3782d03588f69e134ac01dc441a786459070b155e74f52df481091b2dbd0b953",
+      "comparisons": [
+        {
+          "tier": "hard",
+          "variant": "hotspot_direct4",
+          "wins": 3,
+          "ties": 1,
+          "losses": 0,
+          "geomean_score_ratio": 1.0009916519655702,
+          "pairs": 4
+        }
+      ],
+      "legal_rows": 4,
+      "order_changes": 0,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption. Dynamic own dual-price hotspots;analysis adds search cost. Geometric vicinity is a heuristic neighborhood,not a certified cut. Mandatory blockers retained and group cap respected. Direct hotspot groups bypass the individual-net gain gate;all external nets stay fixed and normal negotiated legality/rollback/physical acceptance apply. Diversified direct groups draw up to4nets without replacement from top12affinities,sqrt-weighted,using existing seeded group RNG."
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-hotspot-validation.json",
+      "name": "hotspot_diverse4",
+      "mutation_family": "hotspot-neighborhood",
+      "source_sha256": "52e22a460c5bf08d8eee057a9ddea29d6af7671bb66f73152ed0b8b8bcd9558e",
+      "binary_sha256": "64ddcc13ba67f406d726650413dc70e637098341c0e96b9077418204a088cd41",
+      "parent_source": "dev/experiments/evolution-source-archive/c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp",
+      "source_patch": "dev/experiments/evolution-source-archive/52e22a460c5bf08d8eee057a9ddea29d6af7671bb66f73152ed0b8b8bcd9558e.diff",
+      "patch_sha256": "febd649ae9e9a3d49c0a7af91d281cbecd32bf8f020d7acf3323168c44012c6d",
+      "comparisons": [
+        {
+          "tier": "hard",
+          "variant": "hotspot_diverse4",
+          "wins": 3,
+          "ties": 0,
+          "losses": 1,
+          "geomean_score_ratio": 1.0005700082678075,
+          "pairs": 4
+        }
+      ],
+      "legal_rows": 4,
+      "order_changes": 0,
+      "uphill_moves": 0,
+      "scope": "LLM-proposed variants from current existing coding-agent session; independently implemented GR-Evolve-inspired measured loop,not execution/reproduction of its stack. Same parent/work caps,seeds,configs; concurrent native runs prevent isolated timing claims. No training,paid API or competitor routes. Development pilot only;reserved validation required before adoption. Dynamic own dual-price hotspots;analysis adds search cost. Geometric vicinity is a heuristic neighborhood,not a certified cut. Mandatory blockers retained and group cap respected. Direct hotspot groups bypass the individual-net gain gate;all external nets stay fixed and normal negotiated legality/rollback/physical acceptance apply. Diversified direct groups draw up to4nets without replacement from top12affinities,sqrt-weighted,using existing seeded group RNG."
+    }
+  ],
+  "best_own_cases": {
+    "hard/case_01": {
+      "delay": 9036,
+      "case_sha256": "685a165a7a15811dff12839e0dbe79752b889558213f760ad5f0df6139766f5d",
+      "output": "dev/artifacts/20261003-evolution-hotspot-direct-checked/hotspot_direct4/hard-case_01-54/candidate.sol.json",
+      "output_sha256": "57e6a86ce1c9fb7f83c064bbe6a217622aa2b7e9657926f5ebfae06b2aba42a3",
+      "report": "docs/evidence/phase3/evolution-hotspot-direct.json",
+      "variant": "hotspot_direct4",
+      "source_sha256": "375ab943b08928e62e4995312a8b599e01151cd872d12ab1b2fe2903a6d784c0",
+      "seed": 54,
+      "work_budget": 50000000
+    },
+    "hard/case_04": {
+      "delay": 13915,
+      "case_sha256": "06324939b75971e45caa9e7f19d824a254e0f61167dd6b279bbff612d77d96f1",
+      "output": "dev/artifacts/20261003-evolution-hotspot/control/hard-case_04-51/candidate.sol.json",
+      "output_sha256": "f44826060e77474a202b3a325a382c0989d90aaea62c5a747bdce7f0b610ac79",
+      "report": "docs/evidence/phase3/evolution-hotspot.json",
+      "variant": "control",
+      "source_sha256": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+      "seed": 51,
+      "work_budget": 50000000
+    },
+    "hard/case_07": {
+      "delay": 22731,
+      "case_sha256": "e3475bed19f53670482b4b864a276c475b47e1cac7237d8fa26eeb48714de8f0",
+      "output": "dev/artifacts/20261003-evolution-hotspot/hotspot4/hard-case_07-51/candidate.sol.json",
+      "output_sha256": "07678da170885448d3323ae0959a5091fd810dc1783c8eb9ec87cdc98deae12b",
+      "report": "docs/evidence/phase3/evolution-hotspot.json",
+      "variant": "hotspot4",
+      "source_sha256": "3c099abc29cc7beac5caf3fc300863adafdf007341660dccc6014c55fffeaeb8",
+      "seed": 51,
+      "work_budget": 50000000
+    },
+    "hard/case_08": {
+      "delay": 23544,
+      "case_sha256": "b1dbc8ed8aab7cbb457987f4b8a877b9c2adda8575b326d9822523f090cec1f2",
+      "output": "dev/artifacts/20261003-evolution-hotspot-validation/hotspot_diverse4/hard-case_08-59/candidate.sol.json",
+      "output_sha256": "6a571a0d38ddae7339da7ca21590e607e2fecd95d369098cc829bb46aa8bbce9",
+      "report": "docs/evidence/phase3/evolution-hotspot-validation.json",
+      "variant": "hotspot_diverse4",
+      "source_sha256": "52e22a460c5bf08d8eee057a9ddea29d6af7671bb66f73152ed0b8b8bcd9558e",
+      "seed": 59,
+      "work_budget": 50000000
+    },
+    "hard/case_09": {
+      "delay": 22526,
+      "case_sha256": "bcbd72a7bb47ec5c5f82428573ffabdb932594c4b574d552808851617b05f6c1",
+      "output": "dev/artifacts/20261003-evolution-hotspot-validation/hotspot_direct4/hard-case_09-60/candidate.sol.json",
+      "output_sha256": "fe5098f4fd4d9e060536fdc25dda0a5b7fa3fbaf37e75eb03f1e0e0494b7374b",
+      "report": "docs/evidence/phase3/evolution-hotspot-validation.json",
+      "variant": "hotspot_direct4",
+      "source_sha256": "375ab943b08928e62e4995312a8b599e01151cd872d12ab1b2fe2903a6d784c0",
+      "seed": 60,
+      "work_budget": 50000000
+    }
+  },
+  "policy": "Keep all legal source variants and their observations,including worse exploratory families. Production promotion requires full-tier/validation evidence;no automatic adoption. Score comparisons are within tiers,not summed delay or six-tier aggregate.",
+  "unique_source_count": 6,
+  "legal_evaluations": 66
+}

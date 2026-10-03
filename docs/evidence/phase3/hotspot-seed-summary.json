@@ -1,0 +1,52 @@
+{
+  "complete": true,
+  "source_report": "docs/evidence/phase3/evolution-hotspot-full-scores.json/report.json",
+  "scope": "Two-seed descriptive full-hard scores;paired routing expansion caps plus extra preparation cost,not matched total compute or statistical confidence.",
+  "variants": [
+    {
+      "variant": "control",
+      "seeds": [
+        61,
+        62
+      ],
+      "scores": [
+        1.3038493409014902,
+        1.3040186922170092
+      ],
+      "mean": 1.3039340165592497,
+      "stdev": 0.00011974946360633624,
+      "min": 1.3038493409014902,
+      "max": 1.3040186922170092
+    },
+    {
+      "variant": "hotspot_direct4",
+      "seeds": [
+        61,
+        62
+      ],
+      "scores": [
+        1.3039985925181574,
+        1.3041447596627749
+      ],
+      "mean": 1.3040716760904663,
+      "stdev": 0.00010335577914568038,
+      "min": 1.3039985925181574,
+      "max": 1.3041447596627749
+    },
+    {
+      "variant": "hotspot_diverse4",
+      "seeds": [
+        61,
+        62
+      ],
+      "scores": [
+        1.3044175684846866,
+        1.3040732207340022
+      ],
+      "mean": 1.3042453946093444,
+      "stdev": 0.0002434906295952531,
+      "min": 1.3040732207340022,
+      "max": 1.3044175684846866
+    }
+  ]
+}

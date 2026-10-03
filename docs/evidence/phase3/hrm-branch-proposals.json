@@ -1,0 +1,452 @@
+{
+  "status": "complete",
+  "frozen_sha256": {
+    "/home/younix/eda-3d-routing-challenge/dev/hrm_branch_proposals.py": "16f3931ad0a028715d9c619ca6bfe0c3f5d531f5a497796592d4ec3da50186ad",
+    "/home/younix/eda-3d-routing-challenge/dev/hrm_cpu_probe.py": "02dd35b28af485179cab0fc0ec6c9c6092bd0b92a51b87a8d70f8b0ef27fe2a6",
+    "/home/younix/eda-3d-routing-challenge/dev/hrm_local_proposals.py": "3182c5d791b770a4f79755d534e98cbbaa8a3e948470db51693f3aabd297f804",
+    "/home/younix/eda-3d-routing-challenge/dev/branch_repair.py": "fac12b4771279883b09714a76b9e05837450c8458cd4d780385ff7cb7e4e3a13",
+    "/home/younix/eda-3d-routing-challenge/dev/select_tree_pool.py": "e8905011506abe7513a85f113b33797d458ef067366e33cd6d71b6f0b7219725",
+    "/home/younix/eda-3d-routing-challenge/docs/evidence/phase3/tier-hotspot-fusion-coverage.json": "aa87226c0d272ad7b48f9dd9b23c0e0c37528db9b3521274c7d2ed0b3192e351"
+  },
+  "model_manifest": {
+    "revision": "f5e213cb9e405e5728e0414b5d4f7f6d8d3d9a70",
+    "files": [
+      {
+        "path": "LICENSE",
+        "git_blob": "ee00bb7725c56deeecaf6add7c818852be1827fb",
+        "sha256": "e25f32e384b2db86ea5d191a785721fc52a13a3808ec1a12a9898f981dde248d"
+      },
+      {
+        "path": "models/common.py",
+        "git_blob": "1a045051f26cd2ecf25b5d16a11cb609de7df0e4",
+        "sha256": "fa749ad9b68ac0852f9cda157baa3a9c2ff8abaee973751b32b7cd010a4cf859"
+      },
+      {
+        "path": "models/ema.py",
+        "git_blob": "2e5293330418b6ff750e950072f9b983af2f4334",
+        "sha256": "10f4dcbcda44dc044e51aeefa1344cc06e89b42c9d782d012dc018310e98c609"
+      },
+      {
+        "path": "models/layers.py",
+        "git_blob": "705bcaf23e3fadfb3eaebcf706ef4542397f52c4",
+        "sha256": "519d38a4668c343868bf31a5853cab7f455f9dcac0cbcc36e02f95dce9fb01e7"
+      },
+      {
+        "path": "models/losses.py",
+        "git_blob": "2597cd67cc4530c6536fd1c479a60ce6dea94b79",
+        "sha256": "1fa6d4af0f4554a3fb2009d1a11d80c50abab9710453995785093b5c355596c3"
+      },
+      {
+        "path": "models/recursive_reasoning/hrm.py",
+        "git_blob": "9a1a5037c9ad3e12c233451fc2401b7f4b088292",
+        "sha256": "eb9e27416b95de989a52bf766230c090506b60cca2517e452fdc7db5d95af459"
+      },
+      {
+        "path": "models/recursive_reasoning/trm.py",
+        "git_blob": "5c3e39dfb6e2f93f0781e9e25af9a12751201482",
+        "sha256": "3454818b64a1abb45c062782d380aa4bb560e2cb35db9cc309cf367ca3ac262c"
+      },
+      {
+        "path": "models/sparse_embedding.py",
+        "git_blob": "f369205e34a05767d8d529e3ba39463689fab787",
+        "sha256": "9429742ce022918751331acf92c1a9b8d0f2f364e9acef5d71fb81b886c7a2d0"
+      },
+      {
+        "path": "pytorch_model.bin",
+        "revision": "86ac3c59cc0c560e541f380f27a6974a99c89fff",
+        "bytes": 109107957,
+        "sha256": "fbba4311bde129af725adef93dd5ced5e6c2ba270321826948d4f47506e51f25"
+      },
+      {
+        "path": "all_config.yaml",
+        "revision": "86ac3c59cc0c560e541f380f27a6974a99c89fff",
+        "bytes": 976,
+        "sha256": "6a79e015bcbc84c62424eaf17dd24430cf5df3a5a66f0c690ab32523b5b9ee31"
+      }
+    ]
+  },
+  "rows": [
+    {
+      "case": "case_01",
+      "case_sha256": "685a165a7a15811dff12839e0dbe79752b889558213f760ad5f0df6139766f5d",
+      "parent_sha256": "fd11b2987a3c4cc4340de1a4e6d41dc534a73d379ce456dd0f771c669fead9ae",
+      "before_delay": 9024,
+      "eligible_branches": 62,
+      "groups": [
+        [
+          {
+            "nid": 15,
+            "gap": 52,
+            "removed": 22,
+            "sinks": 1
+          },
+          {
+            "nid": 13,
+            "gap": 52,
+            "removed": 21,
+            "sinks": 1
+          },
+          {
+            "nid": 20,
+            "gap": 40,
+            "removed": 27,
+            "sinks": 1
+          },
+          {
+            "nid": 23,
+            "gap": 32,
+            "removed": 18,
+            "sinks": 1
+          }
+        ],
+        [
+          {
+            "nid": 47,
+            "gap": 44,
+            "removed": 22,
+            "sinks": 1
+          },
+          {
+            "nid": 35,
+            "gap": 40,
+            "removed": 27,
+            "sinks": 1
+          },
+          {
+            "nid": 12,
+            "gap": 40,
+            "removed": 23,
+            "sinks": 1
+          },
+          {
+            "nid": 24,
+            "gap": 38,
+            "removed": 19,
+            "sinks": 1
+          }
+        ]
+      ],
+      "inference_wall_s": 67.58906318200752,
+      "outcomes": [
+        {
+          "method": "control",
+          "delay": 9024,
+          "legal": true,
+          "expansions": 6206,
+          "limited": false,
+          "search_and_selection_wall_s": 0.07502474496141076,
+          "output_sha256": "fc297f6535662cae7d2041ab4dfb8d1d00b4422dc3528c30c8f92e230b57b5bf",
+          "selection": {
+            "status": "OPTIMAL",
+            "restricted_optimal": true,
+            "fallback_base": false,
+            "best_bound": 9024.0,
+            "chosen_delay": 9024,
+            "base_delay": 9024,
+            "variables": 71,
+            "vertex_constraints": 19,
+            "wall_s": 0.002885977,
+            "deterministic_time": 1.255e-05
+          }
+        },
+        {
+          "method": "hrm_tie",
+          "delay": 9024,
+          "legal": true,
+          "expansions": 6190,
+          "limited": false,
+          "search_and_selection_wall_s": 0.07269572792574763,
+          "output_sha256": "fc297f6535662cae7d2041ab4dfb8d1d00b4422dc3528c30c8f92e230b57b5bf",
+          "selection": {
+            "status": "OPTIMAL",
+            "restricted_optimal": true,
+            "fallback_base": false,
+            "best_bound": 9024.0,
+            "chosen_delay": 9024,
+            "base_delay": 9024,
+            "variables": 71,
+            "vertex_constraints": 19,
+            "wall_s": 0.001014832,
+            "deterministic_time": 1.255e-05
+          }
+        },
+        {
+          "method": "hrm_priced",
+          "delay": 9024,
+          "legal": true,
+          "expansions": 6188,
+          "limited": false,
+          "search_and_selection_wall_s": 0.07283058203756809,
+          "output_sha256": "fc297f6535662cae7d2041ab4dfb8d1d00b4422dc3528c30c8f92e230b57b5bf",
+          "selection": {
+            "status": "OPTIMAL",
+            "restricted_optimal": true,
+            "fallback_base": false,
+            "best_bound": 9024.0,
+            "chosen_delay": 9024,
+            "base_delay": 9024,
+            "variables": 71,
+            "vertex_constraints": 19,
+            "wall_s": 0.001046939,
+            "deterministic_time": 1.255e-05
+          }
+        }
+      ]
+    },
+    {
+      "case": "case_04",
+      "case_sha256": "06324939b75971e45caa9e7f19d824a254e0f61167dd6b279bbff612d77d96f1",
+      "parent_sha256": "864038462688d200877a361877ee28aa8d567d194b99aefde48eceaf45dd2aa5",
+      "before_delay": 13909,
+      "eligible_branches": 78,
+      "groups": [
+        [
+          {
+            "nid": 72,
+            "gap": 76,
+            "removed": 29,
+            "sinks": 1
+          },
+          {
+            "nid": 62,
+            "gap": 42,
+            "removed": 34,
+            "sinks": 1
+          },
+          {
+            "nid": 33,
+            "gap": 40,
+            "removed": 27,
+            "sinks": 1
+          },
+          {
+            "nid": 50,
+            "gap": 40,
+            "removed": 17,
+            "sinks": 1
+          }
+        ],
+        [
+          {
+            "nid": 57,
+            "gap": 74,
+            "removed": 27,
+            "sinks": 1
+          },
+          {
+            "nid": 64,
+            "gap": 44,
+            "removed": 26,
+            "sinks": 1
+          },
+          {
+            "nid": 66,
+            "gap": 32,
+            "removed": 19,
+            "sinks": 1
+          },
+          {
+            "nid": 4,
+            "gap": 26,
+            "removed": 18,
+            "sinks": 1
+          }
+        ]
+      ],
+      "inference_wall_s": 67.8766191661125,
+      "outcomes": [
+        {
+          "method": "control",
+          "delay": 13909,
+          "legal": true,
+          "expansions": 4105,
+          "limited": false,
+          "search_and_selection_wall_s": 0.07722498499788344,
+          "output_sha256": "cf151cac4a61969531ae4128bee0b6e369f8f84ddfe8e0b8f37a74623123da4c",
+          "selection": {
+            "status": "OPTIMAL",
+            "restricted_optimal": true,
+            "fallback_base": false,
+            "best_bound": 13909.0,
+            "chosen_delay": 13909,
+            "base_delay": 13909,
+            "variables": 86,
+            "vertex_constraints": 33,
+            "wall_s": 0.001358992,
+            "deterministic_time": 1.445e-05
+          }
+        },
+        {
+          "method": "hrm_tie",
+          "delay": 13909,
+          "legal": true,
+          "expansions": 4096,
+          "limited": false,
+          "search_and_selection_wall_s": 0.07696002605371177,
+          "output_sha256": "cf151cac4a61969531ae4128bee0b6e369f8f84ddfe8e0b8f37a74623123da4c",
+          "selection": {
+            "status": "OPTIMAL",
+            "restricted_optimal": true,
+            "fallback_base": false,
+            "best_bound": 13909.0,
+            "chosen_delay": 13909,
+            "base_delay": 13909,
+            "variables": 86,
+            "vertex_constraints": 33,
+            "wall_s": 0.001269291,
+            "deterministic_time": 1.445e-05
+          }
+        },
+        {
+          "method": "hrm_priced",
+          "delay": 13909,
+          "legal": true,
+          "expansions": 4095,
+          "limited": false,
+          "search_and_selection_wall_s": 0.07151832105591893,
+          "output_sha256": "cf151cac4a61969531ae4128bee0b6e369f8f84ddfe8e0b8f37a74623123da4c",
+          "selection": {
+            "status": "OPTIMAL",
+            "restricted_optimal": true,
+            "fallback_base": false,
+            "best_bound": 13909.0,
+            "chosen_delay": 13909,
+            "base_delay": 13909,
+            "variables": 86,
+            "vertex_constraints": 33,
+            "wall_s": 0.0011216400000000001,
+            "deterministic_time": 1.445e-05
+          }
+        }
+      ]
+    },
+    {
+      "case": "case_07",
+      "case_sha256": "e3475bed19f53670482b4b864a276c475b47e1cac7237d8fa26eeb48714de8f0",
+      "parent_sha256": "b26ed3f363d83f35db8dd39ce6f9bd5808e1254f68a9c382092f065ce6e10213",
+      "before_delay": 22723,
+      "eligible_branches": 94,
+      "groups": [
+        [
+          {
+            "nid": 80,
+            "gap": 110,
+            "removed": 33,
+            "sinks": 4
+          },
+          {
+            "nid": 4,
+            "gap": 12,
+            "removed": 10,
+            "sinks": 1
+          },
+          {
+            "nid": 31,
+            "gap": 6,
+            "removed": 10,
+            "sinks": 1
+          },
+          {
+            "nid": 12,
+            "gap": 2,
+            "removed": 6,
+            "sinks": 2
+          }
+        ],
+        [
+          {
+            "nid": 48,
+            "gap": 100,
+            "removed": 36,
+            "sinks": 3
+          },
+          {
+            "nid": 74,
+            "gap": 14,
+            "removed": 10,
+            "sinks": 1
+          },
+          {
+            "nid": 34,
+            "gap": 4,
+            "removed": 6,
+            "sinks": 1
+          },
+          {
+            "nid": 9,
+            "gap": 2,
+            "removed": 4,
+            "sinks": 1
+          }
+        ]
+      ],
+      "inference_wall_s": 64.74364554311614,
+      "outcomes": [
+        {
+          "method": "control",
+          "delay": 22723,
+          "legal": true,
+          "expansions": 2527,
+          "limited": false,
+          "search_and_selection_wall_s": 0.24068789498414844,
+          "output_sha256": "2f7b7737d2aea7414d8362921234e22c4431c8ee7d05b9ddebee35d65f0a49ae",
+          "selection": {
+            "status": "OPTIMAL",
+            "restricted_optimal": true,
+            "fallback_base": false,
+            "best_bound": 22723.0,
+            "chosen_delay": 22723,
+            "base_delay": 22723,
+            "variables": 98,
+            "vertex_constraints": 1,
+            "wall_s": 0.0010728530000000001,
+            "deterministic_time": 1.667e-05
+          }
+        },
+        {
+          "method": "hrm_tie",
+          "delay": 22723,
+          "legal": true,
+          "expansions": 2481,
+          "limited": false,
+          "search_and_selection_wall_s": 0.07244905293919146,
+          "output_sha256": "2f7b7737d2aea7414d8362921234e22c4431c8ee7d05b9ddebee35d65f0a49ae",
+          "selection": {
+            "status": "OPTIMAL",
+            "restricted_optimal": true,
+            "fallback_base": false,
+            "best_bound": 22723.0,
+            "chosen_delay": 22723,
+            "base_delay": 22723,
+            "variables": 98,
+            "vertex_constraints": 1,
+            "wall_s": 0.0010215930000000001,
+            "deterministic_time": 1.667e-05
+          }
+        },
+        {
+          "method": "hrm_priced",
+          "delay": 22723,
+          "legal": true,
+          "expansions": 2481,
+          "limited": false,
+          "search_and_selection_wall_s": 0.07849120604805648,
+          "output_sha256": "2f7b7737d2aea7414d8362921234e22c4431c8ee7d05b9ddebee35d65f0a49ae",
+          "selection": {
+            "status": "OPTIMAL",
+            "restricted_optimal": true,
+            "fallback_base": false,
+            "best_bound": 22723.0,
+            "chosen_delay": 22723,
+            "base_delay": 22723,
+            "variables": 98,
+            "vertex_constraints": 1,
+            "wall_s": 0.0010891990000000001,
+            "deterministic_time": 1.667e-05
+          }
+        }
+      ]
+    }
+  ],
+  "scope": "Own connected-subtree branch windows,pretrained HRM hints;outside geometry fixed. No training. Restricted candidate-pool exact selection,not globally exact. Extra inference cost disclosed."
+}

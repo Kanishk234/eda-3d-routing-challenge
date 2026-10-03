@@ -1,0 +1,6 @@
+{
+  "command": "PYTHONPATH=dev .venv/bin/python -m unittest discover -s dev -p 'test_*.py'",
+  "passed": 138,
+  "wall_s": 36.465,
+  "scope": "Full development suite through pretrained HRM and NDS adapters;official full45case checks separate."
+}

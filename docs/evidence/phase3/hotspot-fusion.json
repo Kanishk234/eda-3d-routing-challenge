@@ -1,0 +1,1060 @@
+{
+  "complete": true,
+  "coverage_sha256": "1ad7fa37f52e0c1d22918ada933078af6c660d576a7b8b25bbb97ac6abfb6871",
+  "reports": {
+    "docs/evidence/phase3/evolution-hotspot.json": "567270c16bd74c7e4153eec3798d1e1318acd443702547fd2fd499b70589cad6",
+    "docs/evidence/phase3/evolution-hotspot-direct.json": "20d344a56379ff9f8802cc2df9b50f9a0cd6bd60e3819e9ec079cdc0850487e6",
+    "docs/evidence/phase3/evolution-hotspot-diverse.json": "a79d201b8d627764892b2f56cd51ec28b72e25006aa8a2e1cff21694732118ab",
+    "docs/evidence/phase3/evolution-hotspot-validation.json": "475f5a2d2d126d4c51419fef5aee23543432ecc6c0664ae64127d182c81c6458"
+  },
+  "fusion_donors": 6,
+  "known_experimental_core_wall_s": 690.7633112807525,
+  "rows": [
+    {
+      "tier": "intro",
+      "run_id": "20261003T230222.846288Z-exact-polish",
+      "score": 1.1148380524976755,
+      "previous_score": 1.1148380524976755,
+      "improved_cases": 0,
+      "cases": [
+        {
+          "case": "case_01",
+          "previous_run": "20261003T224109.837225Z-exact-polish",
+          "previous_delay": 206,
+          "selected_delay": 206,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_02",
+          "previous_run": "20261003T224109.837225Z-exact-polish",
+          "previous_delay": 1030,
+          "selected_delay": 1030,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_03",
+          "previous_run": "20261003T224109.837225Z-exact-polish",
+          "previous_delay": 1611,
+          "selected_delay": 1611,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_04",
+          "previous_run": "20261003T224109.837225Z-exact-polish",
+          "previous_delay": 2036,
+          "selected_delay": 2036,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_05",
+          "previous_run": "20261003T224109.837225Z-exact-polish",
+          "previous_delay": 3761,
+          "selected_delay": 3761,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_06",
+          "previous_run": "20261003T224109.837225Z-exact-polish",
+          "previous_delay": 5369,
+          "selected_delay": 5369,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_07",
+          "previous_run": "20261003T224109.837225Z-exact-polish",
+          "previous_delay": 5377,
+          "selected_delay": 5377,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_08",
+          "previous_run": "20261003T224109.837225Z-exact-polish",
+          "previous_delay": 7717,
+          "selected_delay": 7717,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_09",
+          "previous_run": "20261003T224109.837225Z-exact-polish",
+          "previous_delay": 8284,
+          "selected_delay": 8284,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_10",
+          "previous_run": "20261003T224109.837225Z-exact-polish",
+          "previous_delay": 10825,
+          "selected_delay": 10825,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_11",
+          "previous_run": "20261003T224109.837225Z-exact-polish",
+          "previous_delay": 12716,
+          "selected_delay": 12716,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_12",
+          "previous_run": "20261003T224109.837225Z-exact-polish",
+          "previous_delay": 16633,
+          "selected_delay": 16633,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_13",
+          "previous_run": "20261003T224109.837225Z-exact-polish",
+          "previous_delay": 20343,
+          "selected_delay": 20343,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_14",
+          "previous_run": "20261003T224109.837225Z-exact-polish",
+          "previous_delay": 22139,
+          "selected_delay": 22139,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_15",
+          "previous_run": "20261003T224109.837225Z-exact-polish",
+          "previous_delay": 25192,
+          "selected_delay": 25192,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_16",
+          "previous_run": "20261003T224109.837225Z-exact-polish",
+          "previous_delay": 34360,
+          "selected_delay": 34360,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_17",
+          "previous_run": "20261003T224109.837225Z-exact-polish",
+          "previous_delay": 44588,
+          "selected_delay": 44588,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_18",
+          "previous_run": "20261003T224109.837225Z-exact-polish",
+          "previous_delay": 47477,
+          "selected_delay": 47477,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_19",
+          "previous_run": "20261003T224109.837225Z-exact-polish",
+          "previous_delay": 41288,
+          "selected_delay": 41288,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_20",
+          "previous_run": "20261003T224109.837225Z-exact-polish",
+          "previous_delay": 46856,
+          "selected_delay": 46856,
+          "changed": false,
+          "fusion_trace": []
+        }
+      ]
+    },
+    {
+      "tier": "hard",
+      "run_id": "20261003T230231.787895Z-exact-polish",
+      "score": 1.3035816917222296,
+      "previous_score": 1.3028044330245385,
+      "improved_cases": 4,
+      "cases": [
+        {
+          "case": "case_01",
+          "previous_run": "20261003T224109.838930Z-exact-polish",
+          "previous_delay": 9048,
+          "selected_delay": 9024,
+          "changed": true,
+          "experiment_report": "docs/evidence/phase3/evolution-hotspot-direct.json",
+          "variant": "hotspot_direct4",
+          "seed": 54,
+          "source_sha256": "375ab943b08928e62e4995312a8b599e01151cd872d12ab1b2fe2903a6d784c0",
+          "output_sha256": "57e6a86ce1c9fb7f83c064bbe6a217622aa2b7e9657926f5ebfae06b2aba42a3",
+          "work_expansions": 50000000,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-hotspot-diverse.json",
+              "variant": "hotspot_diverse4",
+              "seed": 58,
+              "output_sha256": "48b350a43abc6dd43c25174ef9c479c90c30df2669c7ae39a13c8afa6ccd9245",
+              "base_delay": 9036,
+              "donor_delay": 9036,
+              "total_delay": 9036,
+              "selected_donor_nets": [],
+              "dependency_arcs": 10,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 10,
+                "finite_infinity": 21,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-hotspot-direct.json",
+              "variant": "hotspot_direct4",
+              "seed": 54,
+              "output_sha256": "57e6a86ce1c9fb7f83c064bbe6a217622aa2b7e9657926f5ebfae06b2aba42a3",
+              "base_delay": 9036,
+              "donor_delay": 9036,
+              "total_delay": 9036,
+              "selected_donor_nets": [],
+              "dependency_arcs": 0,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 0,
+                "finite_infinity": 1,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-hotspot-diverse.json",
+              "variant": "control",
+              "seed": 58,
+              "output_sha256": "726858243bc6a4f17b7d7fbf44726544cd15ff6f8022cb42cebc300fe6a1b974",
+              "base_delay": 9036,
+              "donor_delay": 9036,
+              "total_delay": 9024,
+              "selected_donor_nets": [
+                0,
+                5,
+                46,
+                50,
+                51,
+                57
+              ],
+              "dependency_arcs": 27,
+              "certificate": {
+                "minimum_delta": -12,
+                "max_flow": 28,
+                "finite_infinity": 81,
+                "weighted_minimum_delta": -12,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-hotspot-direct.json",
+              "variant": "control",
+              "seed": 54,
+              "output_sha256": "0b30aa7ad6d5d2f032bbd4f63d3f2d5be5f473590ae9b93bf21a6c5066b629dd",
+              "base_delay": 9024,
+              "donor_delay": 9048,
+              "total_delay": 9024,
+              "selected_donor_nets": [],
+              "dependency_arcs": 23,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 26,
+                "finite_infinity": 77,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-hotspot.json",
+              "variant": "control",
+              "seed": 50,
+              "output_sha256": "0c4133a996009eabccbeacc89fd868034ae46b15ab2456d25bc2064bbe90e01b",
+              "base_delay": 9024,
+              "donor_delay": 9048,
+              "total_delay": 9024,
+              "selected_donor_nets": [],
+              "dependency_arcs": 18,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 22,
+                "finite_infinity": 69,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-hotspot.json",
+              "variant": "hotspot2",
+              "seed": 51,
+              "output_sha256": "36db23e372e6f810fc44a607fc238424176aeffa1ae86604e4fc2e6f75f8e1d0",
+              "base_delay": 9024,
+              "donor_delay": 9048,
+              "total_delay": 9024,
+              "selected_donor_nets": [],
+              "dependency_arcs": 23,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 26,
+                "finite_infinity": 77,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        },
+        {
+          "case": "case_02",
+          "previous_run": "20261003T224109.838930Z-exact-polish",
+          "previous_delay": 13926,
+          "selected_delay": 13926,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_03",
+          "previous_run": "20261003T224109.838930Z-exact-polish",
+          "previous_delay": 11766,
+          "selected_delay": 11766,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_04",
+          "previous_run": "20261003T224109.838930Z-exact-polish",
+          "previous_delay": 13911,
+          "selected_delay": 13909,
+          "changed": true,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-hotspot.json",
+              "variant": "control",
+              "seed": 51,
+              "output_sha256": "f44826060e77474a202b3a325a382c0989d90aaea62c5a747bdce7f0b610ac79",
+              "base_delay": 13911,
+              "donor_delay": 13915,
+              "total_delay": 13911,
+              "selected_donor_nets": [],
+              "dependency_arcs": 28,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 28,
+                "finite_infinity": 61,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-hotspot.json",
+              "variant": "hotspot2",
+              "seed": 50,
+              "output_sha256": "97eb03d9fab441c2c9fa835a2a91816c5a3c133102b1f6df484a9a1e3c7473d8",
+              "base_delay": 13911,
+              "donor_delay": 13929,
+              "total_delay": 13911,
+              "selected_donor_nets": [],
+              "dependency_arcs": 19,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 16,
+                "finite_infinity": 51,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-hotspot-direct.json",
+              "variant": "control",
+              "seed": 53,
+              "output_sha256": "144603e19901707ba702a5cef67160f15ebd6082e20768e5405f65847efa8514",
+              "base_delay": 13911,
+              "donor_delay": 13937,
+              "total_delay": 13911,
+              "selected_donor_nets": [],
+              "dependency_arcs": 14,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 14,
+                "finite_infinity": 55,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-hotspot-direct.json",
+              "variant": "hotspot_direct2",
+              "seed": 54,
+              "output_sha256": "ef93262cd3d8e716e266b2fc5795269aaaeb8088186e4d3f4086a10793a29020",
+              "base_delay": 13911,
+              "donor_delay": 13939,
+              "total_delay": 13911,
+              "selected_donor_nets": [],
+              "dependency_arcs": 45,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 76,
+                "finite_infinity": 181,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-hotspot-diverse.json",
+              "variant": "hotspot_direct4",
+              "seed": 58,
+              "output_sha256": "69de1e022fc6f3470ac16a9d3215d1e7f9868918157456207064a8ea258d1f8f",
+              "base_delay": 13911,
+              "donor_delay": 13941,
+              "total_delay": 13911,
+              "selected_donor_nets": [],
+              "dependency_arcs": 27,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 58,
+                "finite_infinity": 147,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-hotspot.json",
+              "variant": "hotspot4",
+              "seed": 51,
+              "output_sha256": "f5b0c5ce03a3558ada1d686f4a8f4b34f10e48abc331d415258307e5a76d07fe",
+              "base_delay": 13911,
+              "donor_delay": 13941,
+              "total_delay": 13909,
+              "selected_donor_nets": [
+                49,
+                50,
+                66
+              ],
+              "dependency_arcs": 29,
+              "certificate": {
+                "minimum_delta": -2,
+                "max_flow": 58,
+                "finite_infinity": 151,
+                "weighted_minimum_delta": -2,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        },
+        {
+          "case": "case_05",
+          "previous_run": "20261003T224109.838930Z-exact-polish",
+          "previous_delay": 16137,
+          "selected_delay": 16137,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_06",
+          "previous_run": "20261003T224109.838930Z-exact-polish",
+          "previous_delay": 21300,
+          "selected_delay": 21300,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_07",
+          "previous_run": "20261003T224109.838930Z-exact-polish",
+          "previous_delay": 22737,
+          "selected_delay": 22723,
+          "changed": true,
+          "experiment_report": "docs/evidence/phase3/evolution-hotspot.json",
+          "variant": "hotspot4",
+          "seed": 51,
+          "source_sha256": "3c099abc29cc7beac5caf3fc300863adafdf007341660dccc6014c55fffeaeb8",
+          "output_sha256": "07678da170885448d3323ae0959a5091fd810dc1783c8eb9ec87cdc98deae12b",
+          "work_expansions": 50000000,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-hotspot.json",
+              "variant": "hotspot4",
+              "seed": 51,
+              "output_sha256": "07678da170885448d3323ae0959a5091fd810dc1783c8eb9ec87cdc98deae12b",
+              "base_delay": 22731,
+              "donor_delay": 22731,
+              "total_delay": 22731,
+              "selected_donor_nets": [],
+              "dependency_arcs": 0,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 0,
+                "finite_infinity": 1,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-hotspot-diverse.json",
+              "variant": "hotspot_diverse4",
+              "seed": 57,
+              "output_sha256": "5228b0959c96155eab3099073a53a71bb7566f216dfca14ae070c7d309ab3122",
+              "base_delay": 22731,
+              "donor_delay": 22745,
+              "total_delay": 22725,
+              "selected_donor_nets": [
+                11,
+                25,
+                28,
+                86,
+                88
+              ],
+              "dependency_arcs": 34,
+              "certificate": {
+                "minimum_delta": -6,
+                "max_flow": 46,
+                "finite_infinity": 119,
+                "weighted_minimum_delta": -6,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-hotspot-diverse.json",
+              "variant": "control",
+              "seed": 57,
+              "output_sha256": "36d5316d8ec9232f105a28c5afcd61ea5bf616d0772cb6ccc0c342c30e6442a9",
+              "base_delay": 22725,
+              "donor_delay": 22749,
+              "total_delay": 22723,
+              "selected_donor_nets": [
+                41,
+                54
+              ],
+              "dependency_arcs": 40,
+              "certificate": {
+                "minimum_delta": -2,
+                "max_flow": 68,
+                "finite_infinity": 165,
+                "weighted_minimum_delta": -2,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-hotspot-diverse.json",
+              "variant": "hotspot_direct4",
+              "seed": 57,
+              "output_sha256": "b4c804e064777211300384ec9834e2c17c3c5b32d649759158fe1daec1e99258",
+              "base_delay": 22723,
+              "donor_delay": 22749,
+              "total_delay": 22723,
+              "selected_donor_nets": [],
+              "dependency_arcs": 29,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 46,
+                "finite_infinity": 119,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-hotspot-direct.json",
+              "variant": "hotspot_direct4",
+              "seed": 53,
+              "output_sha256": "038f9251f22e91fea0b0a04bb4c3bf0aff55f68f494552b1f89bcc569b084934",
+              "base_delay": 22723,
+              "donor_delay": 22751,
+              "total_delay": 22723,
+              "selected_donor_nets": [],
+              "dependency_arcs": 34,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 50,
+                "finite_infinity": 129,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-hotspot.json",
+              "variant": "hotspot4",
+              "seed": 50,
+              "output_sha256": "17d8f921326d4b8201ecb02ee13bf396b32876acc6f68d06807077a044bfc2da",
+              "base_delay": 22723,
+              "donor_delay": 22751,
+              "total_delay": 22723,
+              "selected_donor_nets": [],
+              "dependency_arcs": 26,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 46,
+                "finite_infinity": 121,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        },
+        {
+          "case": "case_08",
+          "previous_run": "20261003T224109.838930Z-exact-polish",
+          "previous_delay": 23492,
+          "selected_delay": 23492,
+          "changed": false,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-hotspot-validation.json",
+              "variant": "hotspot_diverse4",
+              "seed": 59,
+              "output_sha256": "6a571a0d38ddae7339da7ca21590e607e2fecd95d369098cc829bb46aa8bbce9",
+              "base_delay": 23492,
+              "donor_delay": 23544,
+              "total_delay": 23492,
+              "selected_donor_nets": [],
+              "dependency_arcs": 48,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 68,
+                "finite_infinity": 189,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-hotspot-validation.json",
+              "variant": "hotspot_direct4",
+              "seed": 59,
+              "output_sha256": "bf7da3607579a4aef2231eed82b68b73991b80639c546241f7ab19300243f9a3",
+              "base_delay": 23492,
+              "donor_delay": 23548,
+              "total_delay": 23492,
+              "selected_donor_nets": [],
+              "dependency_arcs": 49,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 102,
+                "finite_infinity": 261,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-hotspot-validation.json",
+              "variant": "hotspot_direct4",
+              "seed": 60,
+              "output_sha256": "b8e2f866e16860ffe6ba8ae2e1a74cfa5f3b0bbbadc87284e17be8c76b62acbf",
+              "base_delay": 23492,
+              "donor_delay": 23580,
+              "total_delay": 23492,
+              "selected_donor_nets": [],
+              "dependency_arcs": 37,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 58,
+                "finite_infinity": 205,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-hotspot-validation.json",
+              "variant": "hotspot_diverse4",
+              "seed": 60,
+              "output_sha256": "aa2394edefc2c1b5905ba27daa7522b3da101b43538fc848f765e25e511a4a14",
+              "base_delay": 23492,
+              "donor_delay": 23584,
+              "total_delay": 23492,
+              "selected_donor_nets": [],
+              "dependency_arcs": 43,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 64,
+                "finite_infinity": 221,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-hotspot-validation.json",
+              "variant": "control",
+              "seed": 59,
+              "output_sha256": "d20c051574467183d8c8625f334937ba236fa2c6fd0b6d188609fe32a9c428aa",
+              "base_delay": 23492,
+              "donor_delay": 23590,
+              "total_delay": 23492,
+              "selected_donor_nets": [],
+              "dependency_arcs": 48,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 68,
+                "finite_infinity": 235,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-hotspot-validation.json",
+              "variant": "control",
+              "seed": 60,
+              "output_sha256": "b3c341b2876550c6258975661d39bab4eda8222f1e164d9d993612628fa0b7d2",
+              "base_delay": 23492,
+              "donor_delay": 23598,
+              "total_delay": 23492,
+              "selected_donor_nets": [],
+              "dependency_arcs": 49,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 68,
+                "finite_infinity": 243,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        },
+        {
+          "case": "case_09",
+          "previous_run": "20261003T224109.838930Z-exact-polish",
+          "previous_delay": 22562,
+          "selected_delay": 22518,
+          "changed": true,
+          "experiment_report": "docs/evidence/phase3/evolution-hotspot-validation.json",
+          "variant": "hotspot_direct4",
+          "seed": 60,
+          "source_sha256": "375ab943b08928e62e4995312a8b599e01151cd872d12ab1b2fe2903a6d784c0",
+          "output_sha256": "fe5098f4fd4d9e060536fdc25dda0a5b7fa3fbaf37e75eb03f1e0e0494b7374b",
+          "work_expansions": 50000000,
+          "fusion_trace": [
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-hotspot-validation.json",
+              "variant": "hotspot_direct4",
+              "seed": 60,
+              "output_sha256": "fe5098f4fd4d9e060536fdc25dda0a5b7fa3fbaf37e75eb03f1e0e0494b7374b",
+              "base_delay": 22526,
+              "donor_delay": 22526,
+              "total_delay": 22526,
+              "selected_donor_nets": [],
+              "dependency_arcs": 0,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 0,
+                "finite_infinity": 1,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-hotspot-validation.json",
+              "variant": "control",
+              "seed": 59,
+              "output_sha256": "a86438b6a374486f593bcb6f5d7e511ff65623e4f3746cdbde9ad721c6490699",
+              "base_delay": 22526,
+              "donor_delay": 22554,
+              "total_delay": 22526,
+              "selected_donor_nets": [],
+              "dependency_arcs": 38,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 42,
+                "finite_infinity": 113,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-hotspot-validation.json",
+              "variant": "hotspot_diverse4",
+              "seed": 60,
+              "output_sha256": "e375e98e8b4f273fcff9da4e3acaf418827472a931fc9f7c32aaae70149c8b30",
+              "base_delay": 22526,
+              "donor_delay": 22554,
+              "total_delay": 22518,
+              "selected_donor_nets": [
+                0,
+                10,
+                13,
+                26,
+                32,
+                33,
+                37,
+                38,
+                41,
+                43,
+                61,
+                78,
+                80,
+                82,
+                92,
+                103
+              ],
+              "dependency_arcs": 49,
+              "certificate": {
+                "minimum_delta": -8,
+                "max_flow": 42,
+                "finite_infinity": 129,
+                "weighted_minimum_delta": -8,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-hotspot-validation.json",
+              "variant": "hotspot_direct4",
+              "seed": 59,
+              "output_sha256": "ebba1369367df77e42a82a04188c3182c155c3d9df8365668ad38945d1e1c367",
+              "base_delay": 22518,
+              "donor_delay": 22554,
+              "total_delay": 22518,
+              "selected_donor_nets": [],
+              "dependency_arcs": 46,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 38,
+                "finite_infinity": 113,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-hotspot-validation.json",
+              "variant": "control",
+              "seed": 60,
+              "output_sha256": "9ba1cd67e6084484ca615b4bc8782dfdae4af423423f5f6577d65e9ac8bd8f72",
+              "base_delay": 22518,
+              "donor_delay": 22558,
+              "total_delay": 22518,
+              "selected_donor_nets": [],
+              "dependency_arcs": 37,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 30,
+                "finite_infinity": 101,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            },
+            {
+              "experiment_report": "docs/evidence/phase3/evolution-hotspot-validation.json",
+              "variant": "hotspot_diverse4",
+              "seed": 59,
+              "output_sha256": "50f455aa31f13f6d8a411724c671d121bb1347354370243a71619bb6f271a2db",
+              "base_delay": 22518,
+              "donor_delay": 22564,
+              "total_delay": 22518,
+              "selected_donor_nets": [],
+              "dependency_arcs": 48,
+              "certificate": {
+                "minimum_delta": 0,
+                "max_flow": 26,
+                "finite_infinity": 99,
+                "weighted_minimum_delta": 0,
+                "primary_scale": 1,
+                "prefer_donor": false
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tier": "scale",
+      "run_id": "20261003T230235.716444Z-exact-polish",
+      "score": 1.0651784086502307,
+      "previous_score": 1.0651784086502307,
+      "improved_cases": 0,
+      "cases": [
+        {
+          "case": "case_01",
+          "previous_run": "20261003T224406.759107Z-exact-polish",
+          "previous_delay": 42312,
+          "selected_delay": 42312,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_02",
+          "previous_run": "20261003T224406.759107Z-exact-polish",
+          "previous_delay": 48274,
+          "selected_delay": 48274,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_03",
+          "previous_run": "20261003T224406.759107Z-exact-polish",
+          "previous_delay": 58286,
+          "selected_delay": 58286,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_04",
+          "previous_run": "20261003T224406.759107Z-exact-polish",
+          "previous_delay": 61212,
+          "selected_delay": 61212,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_05",
+          "previous_run": "20261003T224406.759107Z-exact-polish",
+          "previous_delay": 69307,
+          "selected_delay": 69307,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_06",
+          "previous_run": "20261003T224406.759107Z-exact-polish",
+          "previous_delay": 82879,
+          "selected_delay": 82879,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_07",
+          "previous_run": "20261003T224406.759107Z-exact-polish",
+          "previous_delay": 90683,
+          "selected_delay": 90683,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_08",
+          "previous_run": "20261003T224406.759107Z-exact-polish",
+          "previous_delay": 115835,
+          "selected_delay": 115835,
+          "changed": false,
+          "fusion_trace": []
+        }
+      ]
+    },
+    {
+      "tier": "congested",
+      "run_id": "20261003T230243.792403Z-exact-polish",
+      "score": 1.1401285047708647,
+      "previous_score": 1.1401285047708647,
+      "improved_cases": 0,
+      "cases": [
+        {
+          "case": "case_01",
+          "previous_run": "20261003T224625.086746Z-exact-polish",
+          "previous_delay": 58767,
+          "selected_delay": 58767,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_02",
+          "previous_run": "20261003T224625.086746Z-exact-polish",
+          "previous_delay": 109700,
+          "selected_delay": 109700,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_03",
+          "previous_run": "20261003T224625.086746Z-exact-polish",
+          "previous_delay": 192609,
+          "selected_delay": 192609,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "case_04",
+          "previous_run": "20261003T224625.086746Z-exact-polish",
+          "previous_delay": 210651,
+          "selected_delay": 210651,
+          "changed": false,
+          "fusion_trace": []
+        }
+      ]
+    },
+    {
+      "tier": "designs",
+      "run_id": "20261003T230248.305130Z-exact-polish",
+      "score": 1.2898868254018376,
+      "previous_score": 1.2898868254018376,
+      "improved_cases": 0,
+      "cases": [
+        {
+          "case": "ctrl",
+          "previous_run": "20261003T224659.150930Z-exact-polish",
+          "previous_delay": 56218,
+          "selected_delay": 56218,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "int2float",
+          "previous_run": "20261003T224659.150930Z-exact-polish",
+          "previous_delay": 101900,
+          "selected_delay": 101900,
+          "changed": false,
+          "fusion_trace": []
+        },
+        {
+          "case": "router",
+          "previous_run": "20261003T224659.150930Z-exact-polish",
+          "previous_delay": 74741,
+          "selected_delay": 74741,
+          "changed": false,
+          "fusion_trace": []
+        }
+      ]
+    },
+    {
+      "tier": "stress",
+      "run_id": "20261003T230256.026775Z-exact-polish",
+      "score": 1.0337789640395343,
+      "previous_score": 1.0337789640395343,
+      "improved_cases": 0,
+      "cases": [
+        {
+          "case": "case_01",
+          "previous_run": "20261003T224749.303340Z-exact-polish",
+          "previous_delay": 1107494,
+          "selected_delay": 1107494,
+          "changed": false,
+          "fusion_trace": []
+        }
+      ]
+    }
+  ],
+  "scope": "Best legal whole-case portfolio from own completed source-variant trials and previous own coverage. Added search and per-case selection,not uniform-budget solver comparison. No competitor routes. Inherited search costs remain separate/partly unknown. Optional bounded two-parent min-cut tree fusion;exact only per pair,not global optimization.",
+  "coverage_sha256_result": "aa87226c0d272ad7b48f9dd9b23c0e0c37528db9b3521274c7d2ed0b3192e351"
+}

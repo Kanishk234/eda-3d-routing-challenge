@@ -1,0 +1,44 @@
+{
+  "coverage": "docs/evidence/phase3/tier-evolution-fusion-coverage.json",
+  "variants": [
+    "control",
+    "hotspot_direct4",
+    "hotspot_diverse4"
+  ],
+  "seeds": [
+    59,
+    60
+  ],
+  "work_budget": 50000000,
+  "budget": 60,
+  "cases": [
+    {
+      "tier": "hard",
+      "case": "case_08",
+      "mode": "fanout_fine_escape",
+      "settings": {
+        "present_initial": 2,
+        "present_step": 1,
+        "history_step": 1,
+        "group_limit": 13,
+        "tree_prices": 2,
+        "accept_equal": 1
+      }
+    },
+    {
+      "tier": "hard",
+      "case": "case_09",
+      "mode": "fanout_fine_escape",
+      "settings": {
+        "present_initial": 2,
+        "present_step": 1,
+        "history_step": 1,
+        "group_limit": 13,
+        "tree_prices": 2,
+        "accept_equal": 1
+      }
+    }
+  ],
+  "scope": "Reserved hard08/09:control,direct4,diverse4;two independentseeds50M routingwork plus disclosedanalysis. Directmethodpositive ondevscreen;no defaultadoption.",
+  "hotspots": "docs/evidence/phase3/dual-hotspots-validation.json"
+}

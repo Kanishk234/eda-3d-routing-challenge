@@ -1,0 +1,57 @@
+{
+  "coverage": "docs/evidence/phase3/tier-hotspot-fusion-coverage.json",
+  "variants": [
+    "control",
+    "spatial_groups",
+    "neural_groups"
+  ],
+  "seeds": [
+    65,
+    66
+  ],
+  "work_budget": 50000000,
+  "budget": 60,
+  "cases": [
+    {
+      "tier": "hard",
+      "case": "case_01",
+      "mode": "fanout_fine_escape",
+      "settings": {
+        "present_initial": 2,
+        "present_step": 1,
+        "history_step": 1,
+        "group_limit": 13,
+        "tree_prices": 2,
+        "accept_equal": 1
+      }
+    },
+    {
+      "tier": "hard",
+      "case": "case_04",
+      "mode": "fanout_fine_escape",
+      "settings": {
+        "present_initial": 2,
+        "present_step": 1,
+        "history_step": 1,
+        "group_limit": 13,
+        "tree_prices": 2,
+        "accept_equal": 1
+      }
+    },
+    {
+      "tier": "hard",
+      "case": "case_07",
+      "mode": "fanout_fine_escape",
+      "settings": {
+        "present_initial": 2,
+        "present_step": 1,
+        "history_step": 1,
+        "group_limit": 13,
+        "tree_prices": 2,
+        "accept_equal": 1
+      }
+    }
+  ],
+  "scope": "First frozen pretrained NDS CPU groups using explicit VRP proxy. Same-size spatial and native controls;hard01/04/07,two seeds50M each. Extra inference cost separate,no training,no competitorroutes.",
+  "neural_groups": "docs/evidence/phase3/nds-net-groups.json"
+}

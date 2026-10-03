@@ -1,0 +1,278 @@
+{
+  "reports": {
+    "docs/evidence/phase3/evolution-hotspot-full-hard-61.json": "5395db83e95b8c2df90f0fd06f7d56adcaeb04d670d943b4d3987b96d4a6cb03",
+    "docs/evidence/phase3/evolution-hotspot-full-hard-62.json": "b6ab064bfe8232858572c79038a1db0cc271cb113400f036fc816bc3d3b53865"
+  },
+  "rows": [
+    {
+      "report": "docs/evidence/phase3/evolution-hotspot-full-hard-61.json",
+      "tier": "hard",
+      "variant": "control",
+      "seed": 61,
+      "score": 1.3038493409014902,
+      "official_rescore_sha256": "0f8001817c591799df6bf7b00100551cfba25a7969c315931de53f2365a60fec",
+      "process": {
+        "command": [
+          "/home/younix/eda-3d-routing-challenge/.venv/bin/python",
+          "-m",
+          "m3d.cli",
+          "score-suite",
+          "--suite",
+          "benchmarks_hard",
+          "--submission-dir",
+          "/home/younix/eda-3d-routing-challenge/docs/evidence/phase3/evolution-hotspot-full-scores.json/evolution-hotspot-full-hard-61/hard/control/61/routes",
+          "--out",
+          "/home/younix/eda-3d-routing-challenge/docs/evidence/phase3/evolution-hotspot-full-scores.json/evolution-hotspot-full-hard-61/hard/control/61/official-rescore.json"
+        ],
+        "cwd": "/home/younix/eda-3d-routing-challenge/dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+        "budget_s": 180,
+        "wall_s": 0.16501913499087095,
+        "exit_code": 0,
+        "timeout": false,
+        "interrupted": false,
+        "log": "docs/evidence/phase3/evolution-hotspot-full-scores.json/evolution-hotspot-full-hard-61/hard/control/61/official.log",
+        "peak_rss_kib": 18924,
+        "user_cpu_s": 0.14,
+        "system_cpu_s": 0.01
+      }
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-hotspot-full-hard-61.json",
+      "tier": "hard",
+      "variant": "hotspot_direct4",
+      "seed": 61,
+      "score": 1.3039985925181574,
+      "official_rescore_sha256": "379b93e1c5d4c773acc1a31ea9e6680685378b4d8a8a457d03cde01e52272104",
+      "process": {
+        "command": [
+          "/home/younix/eda-3d-routing-challenge/.venv/bin/python",
+          "-m",
+          "m3d.cli",
+          "score-suite",
+          "--suite",
+          "benchmarks_hard",
+          "--submission-dir",
+          "/home/younix/eda-3d-routing-challenge/docs/evidence/phase3/evolution-hotspot-full-scores.json/evolution-hotspot-full-hard-61/hard/hotspot_direct4/61/routes",
+          "--out",
+          "/home/younix/eda-3d-routing-challenge/docs/evidence/phase3/evolution-hotspot-full-scores.json/evolution-hotspot-full-hard-61/hard/hotspot_direct4/61/official-rescore.json"
+        ],
+        "cwd": "/home/younix/eda-3d-routing-challenge/dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+        "budget_s": 180,
+        "wall_s": 0.21498305292334408,
+        "exit_code": 0,
+        "timeout": false,
+        "interrupted": false,
+        "log": "docs/evidence/phase3/evolution-hotspot-full-scores.json/evolution-hotspot-full-hard-61/hard/hotspot_direct4/61/official.log",
+        "peak_rss_kib": 19044,
+        "user_cpu_s": 0.15,
+        "system_cpu_s": 0.01
+      }
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-hotspot-full-hard-61.json",
+      "tier": "hard",
+      "variant": "hotspot_diverse4",
+      "seed": 61,
+      "score": 1.3044175684846866,
+      "official_rescore_sha256": "0c0c4210784b665bd74f1b81fe39649b86423beb28e7f1d531c6805508a43a96",
+      "process": {
+        "command": [
+          "/home/younix/eda-3d-routing-challenge/.venv/bin/python",
+          "-m",
+          "m3d.cli",
+          "score-suite",
+          "--suite",
+          "benchmarks_hard",
+          "--submission-dir",
+          "/home/younix/eda-3d-routing-challenge/docs/evidence/phase3/evolution-hotspot-full-scores.json/evolution-hotspot-full-hard-61/hard/hotspot_diverse4/61/routes",
+          "--out",
+          "/home/younix/eda-3d-routing-challenge/docs/evidence/phase3/evolution-hotspot-full-scores.json/evolution-hotspot-full-hard-61/hard/hotspot_diverse4/61/official-rescore.json"
+        ],
+        "cwd": "/home/younix/eda-3d-routing-challenge/dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+        "budget_s": 180,
+        "wall_s": 0.21506189194042236,
+        "exit_code": 0,
+        "timeout": false,
+        "interrupted": false,
+        "log": "docs/evidence/phase3/evolution-hotspot-full-scores.json/evolution-hotspot-full-hard-61/hard/hotspot_diverse4/61/official.log",
+        "peak_rss_kib": 18924,
+        "user_cpu_s": 0.15,
+        "system_cpu_s": 0.02
+      }
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-hotspot-full-hard-62.json",
+      "tier": "hard",
+      "variant": "control",
+      "seed": 62,
+      "score": 1.3040186922170092,
+      "official_rescore_sha256": "66a504c562026c687b02f8d82d4c3813c6afa21932a9c57e0845fb9150efc5a5",
+      "process": {
+        "command": [
+          "/home/younix/eda-3d-routing-challenge/.venv/bin/python",
+          "-m",
+          "m3d.cli",
+          "score-suite",
+          "--suite",
+          "benchmarks_hard",
+          "--submission-dir",
+          "/home/younix/eda-3d-routing-challenge/docs/evidence/phase3/evolution-hotspot-full-scores.json/evolution-hotspot-full-hard-62/hard/control/62/routes",
+          "--out",
+          "/home/younix/eda-3d-routing-challenge/docs/evidence/phase3/evolution-hotspot-full-scores.json/evolution-hotspot-full-hard-62/hard/control/62/official-rescore.json"
+        ],
+        "cwd": "/home/younix/eda-3d-routing-challenge/dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+        "budget_s": 180,
+        "wall_s": 0.21502162294927984,
+        "exit_code": 0,
+        "timeout": false,
+        "interrupted": false,
+        "log": "docs/evidence/phase3/evolution-hotspot-full-scores.json/evolution-hotspot-full-hard-62/hard/control/62/official.log",
+        "peak_rss_kib": 19056,
+        "user_cpu_s": 0.16,
+        "system_cpu_s": 0.01
+      }
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-hotspot-full-hard-62.json",
+      "tier": "hard",
+      "variant": "hotspot_direct4",
+      "seed": 62,
+      "score": 1.3041447596627749,
+      "official_rescore_sha256": "8795fa7b67ed843a02e9890bd76a3673fc9f54c6dcb1696aedea4a14a66dd0b7",
+      "process": {
+        "command": [
+          "/home/younix/eda-3d-routing-challenge/.venv/bin/python",
+          "-m",
+          "m3d.cli",
+          "score-suite",
+          "--suite",
+          "benchmarks_hard",
+          "--submission-dir",
+          "/home/younix/eda-3d-routing-challenge/docs/evidence/phase3/evolution-hotspot-full-scores.json/evolution-hotspot-full-hard-62/hard/hotspot_direct4/62/routes",
+          "--out",
+          "/home/younix/eda-3d-routing-challenge/docs/evidence/phase3/evolution-hotspot-full-scores.json/evolution-hotspot-full-hard-62/hard/hotspot_direct4/62/official-rescore.json"
+        ],
+        "cwd": "/home/younix/eda-3d-routing-challenge/dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+        "budget_s": 180,
+        "wall_s": 0.2147527920315042,
+        "exit_code": 0,
+        "timeout": false,
+        "interrupted": false,
+        "log": "docs/evidence/phase3/evolution-hotspot-full-scores.json/evolution-hotspot-full-hard-62/hard/hotspot_direct4/62/official.log",
+        "peak_rss_kib": 18916,
+        "user_cpu_s": 0.16,
+        "system_cpu_s": 0.01
+      }
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-hotspot-full-hard-62.json",
+      "tier": "hard",
+      "variant": "hotspot_diverse4",
+      "seed": 62,
+      "score": 1.3040732207340022,
+      "official_rescore_sha256": "fc35259743cd0a52a07e0a8e7529f5ddf3ccfb9e960549960b816e6608184905",
+      "process": {
+        "command": [
+          "/home/younix/eda-3d-routing-challenge/.venv/bin/python",
+          "-m",
+          "m3d.cli",
+          "score-suite",
+          "--suite",
+          "benchmarks_hard",
+          "--submission-dir",
+          "/home/younix/eda-3d-routing-challenge/docs/evidence/phase3/evolution-hotspot-full-scores.json/evolution-hotspot-full-hard-62/hard/hotspot_diverse4/62/routes",
+          "--out",
+          "/home/younix/eda-3d-routing-challenge/docs/evidence/phase3/evolution-hotspot-full-scores.json/evolution-hotspot-full-hard-62/hard/hotspot_diverse4/62/official-rescore.json"
+        ],
+        "cwd": "/home/younix/eda-3d-routing-challenge/dev/upstream/499ad7e2a415a97e9ce9b3396b0477e75ebd13e6",
+        "budget_s": 180,
+        "wall_s": 0.21487373509444296,
+        "exit_code": 0,
+        "timeout": false,
+        "interrupted": false,
+        "log": "docs/evidence/phase3/evolution-hotspot-full-scores.json/evolution-hotspot-full-hard-62/hard/hotspot_diverse4/62/official.log",
+        "peak_rss_kib": 18920,
+        "user_cpu_s": 0.17,
+        "system_cpu_s": 0.0
+      }
+    }
+  ],
+  "summaries": [
+    {
+      "report": "docs/evidence/phase3/evolution-hotspot-full-hard-61.json",
+      "tier": "hard",
+      "variant": "control",
+      "mean": 1.3038493409014902,
+      "minimum": 1.3038493409014902,
+      "maximum": 1.3038493409014902,
+      "stdev": 0,
+      "seeds": 1
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-hotspot-full-hard-61.json",
+      "tier": "hard",
+      "variant": "hotspot_direct4",
+      "mean": 1.3039985925181574,
+      "minimum": 1.3039985925181574,
+      "maximum": 1.3039985925181574,
+      "stdev": 0,
+      "seeds": 1
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-hotspot-full-hard-61.json",
+      "tier": "hard",
+      "variant": "hotspot_diverse4",
+      "mean": 1.3044175684846866,
+      "minimum": 1.3044175684846866,
+      "maximum": 1.3044175684846866,
+      "stdev": 0,
+      "seeds": 1
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-hotspot-full-hard-62.json",
+      "tier": "hard",
+      "variant": "control",
+      "mean": 1.3040186922170092,
+      "minimum": 1.3040186922170092,
+      "maximum": 1.3040186922170092,
+      "stdev": 0,
+      "seeds": 1
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-hotspot-full-hard-62.json",
+      "tier": "hard",
+      "variant": "hotspot_direct4",
+      "mean": 1.3041447596627749,
+      "minimum": 1.3041447596627749,
+      "maximum": 1.3041447596627749,
+      "stdev": 0,
+      "seeds": 1
+    },
+    {
+      "report": "docs/evidence/phase3/evolution-hotspot-full-hard-62.json",
+      "tier": "hard",
+      "variant": "hotspot_diverse4",
+      "mean": 1.3040732207340022,
+      "minimum": 1.3040732207340022,
+      "maximum": 1.3040732207340022,
+      "stdev": 0,
+      "seeds": 1
+    }
+  ],
+  "complete": true,
+  "scope": "Complete within-tier official geometric scores by seed and source variant. Seed mean/spread are descriptive;no six-tier aggregate.",
+  "relocated_process_logs": {
+    "docs/evidence/phase3/evolution-hotspot-full-scores.json/evolution-hotspot-full-hard-61/hard/control/61/official.log": "dev/artifacts/20261003-hotspot-full-official-logs/evolution-hotspot-full-hard-61/hard/control/61/official.log",
+    "docs/evidence/phase3/evolution-hotspot-full-scores.json/evolution-hotspot-full-hard-61/hard/control/61/official.resources.txt": "dev/artifacts/20261003-hotspot-full-official-logs/evolution-hotspot-full-hard-61/hard/control/61/official.resources.txt",
+    "docs/evidence/phase3/evolution-hotspot-full-scores.json/evolution-hotspot-full-hard-61/hard/hotspot_direct4/61/official.log": "dev/artifacts/20261003-hotspot-full-official-logs/evolution-hotspot-full-hard-61/hard/hotspot_direct4/61/official.log",
+    "docs/evidence/phase3/evolution-hotspot-full-scores.json/evolution-hotspot-full-hard-61/hard/hotspot_direct4/61/official.resources.txt": "dev/artifacts/20261003-hotspot-full-official-logs/evolution-hotspot-full-hard-61/hard/hotspot_direct4/61/official.resources.txt",
+    "docs/evidence/phase3/evolution-hotspot-full-scores.json/evolution-hotspot-full-hard-61/hard/hotspot_diverse4/61/official.log": "dev/artifacts/20261003-hotspot-full-official-logs/evolution-hotspot-full-hard-61/hard/hotspot_diverse4/61/official.log",
+    "docs/evidence/phase3/evolution-hotspot-full-scores.json/evolution-hotspot-full-hard-61/hard/hotspot_diverse4/61/official.resources.txt": "dev/artifacts/20261003-hotspot-full-official-logs/evolution-hotspot-full-hard-61/hard/hotspot_diverse4/61/official.resources.txt",
+    "docs/evidence/phase3/evolution-hotspot-full-scores.json/evolution-hotspot-full-hard-62/hard/control/62/official.log": "dev/artifacts/20261003-hotspot-full-official-logs/evolution-hotspot-full-hard-62/hard/control/62/official.log",
+    "docs/evidence/phase3/evolution-hotspot-full-scores.json/evolution-hotspot-full-hard-62/hard/control/62/official.resources.txt": "dev/artifacts/20261003-hotspot-full-official-logs/evolution-hotspot-full-hard-62/hard/control/62/official.resources.txt",
+    "docs/evidence/phase3/evolution-hotspot-full-scores.json/evolution-hotspot-full-hard-62/hard/hotspot_direct4/62/official.log": "dev/artifacts/20261003-hotspot-full-official-logs/evolution-hotspot-full-hard-62/hard/hotspot_direct4/62/official.log",
+    "docs/evidence/phase3/evolution-hotspot-full-scores.json/evolution-hotspot-full-hard-62/hard/hotspot_direct4/62/official.resources.txt": "dev/artifacts/20261003-hotspot-full-official-logs/evolution-hotspot-full-hard-62/hard/hotspot_direct4/62/official.resources.txt",
+    "docs/evidence/phase3/evolution-hotspot-full-scores.json/evolution-hotspot-full-hard-62/hard/hotspot_diverse4/62/official.log": "dev/artifacts/20261003-hotspot-full-official-logs/evolution-hotspot-full-hard-62/hard/hotspot_diverse4/62/official.log",
+    "docs/evidence/phase3/evolution-hotspot-full-scores.json/evolution-hotspot-full-hard-62/hard/hotspot_diverse4/62/official.resources.txt": "dev/artifacts/20261003-hotspot-full-official-logs/evolution-hotspot-full-hard-62/hard/hotspot_diverse4/62/official.resources.txt"
+  }
+}
