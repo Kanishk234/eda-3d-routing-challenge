@@ -27,3 +27,7 @@ Probe requires the selected own native run folders restored/present under dev/ar
 ## Next experiment
 
 Learn global construction decisions with broader feasible synthetic training data, explicitly reward whole-case legality and physical delay, and compare against randomized fresh construction under matched work budgets. Explore congestion-dependent ordering and neighborhood selection rather than only tie preferences. These are proposals, not completed implementations. An external general AI model has not been called for route generation; no paid endpoint or GPU hardware is assumed.
+
+## Updated direction (October 3)
+
+User prefers existing models and AI tools; further own training deferred. See PRETRAINED_AI_REFRESH.md. Actual licensed REST5 eight-transform and REST10 broader-fanout CPU probes both finish with zero gains on hard01/04/07. Keep as rejected adaptations, not proof no AI can help. Existing-LLM algorithm evolution is the next researched AI direction; no external paid API invoked.

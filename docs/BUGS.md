@@ -70,3 +70,10 @@ Initial CP-SAT selection completed but measurement helper rejected relative log 
 
 ### Exact-pool ancestry reporter compatibility
 New exact-pool manifests recorded ancestry as a run-cost dictionary without the pre-summed aggregate field. report_tiers now accepts either representation and sums the dictionary when needed. Initial archive attempt failed before writing archives; rerun successfully rescored all45 routes and archived/restored both improved hard/congested runs. No evaluator or benchmark input changed.
+
+## Compiled fresh probe reporter path normalization
+First run_fresh_cpp.py attempt completed/checkered its first legal fresh result but failed while converting a relative output path against absolute ROOT. Canonical routes unaffected;partial ignored artifact retained. Normalize output directory at CLI entry. Rerun completes24attempts with checked outputs/hashes. No physical-score bug;reporting only.
+
+## Parallel campaign used nonexistent designs names
+
+Designs cases are ctrl/int2float/router, not case_01/case_02. First14-task campaign saved three result rows then propagated argparse error2, leaving other task logs/manifests retained. Corrected plan; preflight checks all declared names before launching work, and individual future errors no longer prevent collecting successful siblings. Corrected14/14task campaign completed; two focused plan-name checks pass. First attempt's compute remains additional search cost, not omitted from experiment history.

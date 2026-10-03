@@ -114,3 +114,22 @@ Broader static-CBS screen uses up to4 nets and margin2 on hard01/04/07. Equal-di
 
 ## 55. Expand public-source review and prototype dynamic groups
 User explicitly requests all forks/PRs/code review; this authorizes reading implementations while prior no-competitor-route-input constraint remains. Inventory23publicforks/26PRs and all listed branches; inspect available source and external linked IrwinJam solver. Source availability is uneven; do not pretend metadata is implementation. No copied/executed third-party code. Dynamic displacement and slow fresh negotiation are prioritized; adaptive price-pool screens show no gain. Detailed evidence PUBLIC_SOURCE_REVIEW.md/public-source-audit.json. Do not infer a CPU ceiling from stalled local operators.
+
+## 56. Research global construction and context-dependent decisions
+
+Refresh literature across cost-distance trees, learned decisions, differentiable allocation, hierarchical planning and GPU DAG batching. Update26PRinventory and inspect changed PR25 tree; verify actual linked solver blobs and reread negotiation/LNS/overnight source. Competitor route prohibition remains. Record hypotheses/costs in ROUTING_DIRECTIONS_REFRESH.md. Exact optimization of the same already-optimal finite pool cannot beat its incumbent; improve candidate generation first. Independent fresh Python negotiation yields more legal synthetic teacher cases but no official-tier gain. Gradual schedule not adopted; compare conflict-only rerouting under matched ceilings. Preserve old all-net source before experimental change.
+
+## 57. Retain a genuinely fresh intro basin; keep AI policies experimental
+Own curriculum produces99feasible teacher layouts and519decision examples;context-linear/MLP and simple controls all42/64legal,random36/64. Denser heldout short-first9/24 vsMLP8/24;fixed official hard01allincomplete. Models are not production defaults. Fresh Python conflict negotiation plus native refinement beats intro05 by60physical delay units. Own finite-pool CP selection retains this and gets0hardgain;every selection restricted OPTIMAL,full outputs officially rescored. Production source unchanged;isolated compiled fresh probe changes fixed-point/tie behavior and creates more own basins but no whole-case winner. Continue measured generation/refinement/selection with full resource/provenance disclosure. CPU ceiling still unestablished.
+
+## Prefer existing AI before further custom training
+
+User explicitly requests this direction. Defer new own-model training. Investigate published obstacle-aware models/checkpoints and existing general-LLM code-evolution frameworks. Existing pretrained REST5/10 inference is CPU-compatible and licensed; accept proposals only through true-delay checking. No paid endpoint, Docker stack or GPU dependency introduced. Zero gains from a corridor adaptation do not prove an AI ceiling.
+
+## October 3: retain source families;compare scores by tier
+
+Keep source variants and legal outputs even after negative screens. Initial10Mordering results did not justify abandoning the family;larger budgets found small mixed improvements. Full-tier tests still govern default adoption. Archive diversity is inspired by existing code-evolution frameworks,not a claim of running them. Existing coding model proposes mutations;no own model training or paid model endpoint added.
+
+Retain best whole-case routes across our declared trials,with exact source/seed/work/provenance and extra search cost disclosure. Do not substitute summed delay or a combined six-tier number for the official per-tier geometric score. Equal-best geometry can be a useful search state;test its checkpoint retention separately from physical improvement.
+
+Use conservative capacity-price bounds to diagnose remaining headroom. Uniform sink price allocation and a maximum fully priced sink bound are valid relaxations;fractional/adaptive tolls strengthen observed bounds. They do not produce legal routes or promise an achievable score. Preserve negative iterations and the best bound.

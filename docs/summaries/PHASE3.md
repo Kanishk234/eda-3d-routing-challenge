@@ -256,3 +256,15 @@ See SAMPLING_FUSION.md. Weighted seeds and donor-preferring fusion ties did not 
 ## Eligibility-aware repair
 
 See ELIGIBILITY_REPAIR.md. Fine full-case restarts rejected after matched losses;over-cap blocker avoidance optional after designs/congested pilot gains. Added fixed all45case stage improves38cases/all6scores;independently legal and archived/restored.40focused checks pass. Phase3 continues;freeze/regeneration/submission pending.
+
+## October 3 continuation and pretrained model refresh
+
+All45 current selected routes independently legal, archived and restored. Current scores: intro1.113689 hard1.294388 scale1.062926 congested1.136300 designs1.284755 stress1.030589. Longer independent own walks still help; resource reuse prototype and expanded REST5 symmetry proposals give zero gains in three-case screens. Prefer existing pretrained models/general LLM algorithm evolution; custom training deferred at user request. REST10 CPU experiment and native seeds24/25 continuation active at this checkpoint. This is added portfolio effort, not matched-budget superiority; final freeze/regeneration/submission still pending.
+
+## October 3 sustained refinement checkpoint
+
+Worked through the requested absence on source evolution,neutral geometry,history prices,fixed-point precision,repair-budget allocation,exact-bound tightening and downstream-preserving connector repair. Kept weaker families and source patches rather than discarding them.705officially legal source-variant observations;27distinct sources. Full-tier comparisons show mixed small effects,so no universal solver-default promotion. Existing model in this coding session proposes code;no custom training or external paid API. This is independently implemented inspiration from GR-Evolve/OpenEvolve,not execution of those stacks.
+
+Two further full native rounds and bounded two-parent fusion yield canonical scores: intro1.1146742601,hard1.3014679170,scale1.0648977613,congested1.1399638783,designs1.2892733081,stress1.0334560947. All45officially checked and rescored;archives restored with matching hashes. Fusion itself improves17cases across five tiers;stress ties the newest native incumbent. Portfolio and total extra effort disclosed. These are output gains,not matched-budget universal algorithm superiority.
+
+123developmentchecks pass;66archived source observations reconstruct and one best hard04variant's executable/output replay matches hashes,delay13953. Full nine-case conservative capacity bound gives hard score upper bound1.61690258,not an achievable target. Phase3still active;phases4/5freeze,full ancestry regeneration and submission preparation remain unfinished. Next:use dual-price bottlenecks for coordinated neighborhoods,adapt budget scheduling by observed search stage,and validate refinements on full tiers and additional seeds. No running jobs at session close,no remote publication.
