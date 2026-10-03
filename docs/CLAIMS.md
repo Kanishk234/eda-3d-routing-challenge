@@ -112,3 +112,11 @@ Fresh conflict-only screen: on hard01two fixed seeds,aggressive schedule produce
 - Observed:delayed-order full-tier effects small/mixed;neutral annealing full-hard effect slightly negative despite initial positive reserved screen. No universal/default-superiority claim.
 - Bound:full9hard capacity-price analysis gives score upper bound1.61690258 versus independent-path1.76166758. Valid conservative lower-bound derivation DUAL_ROUTING_BOUND.md;neither ceiling claimed achievable. No global optimality claim.
 - Existing AI:actual pretrained REST5/10CPU inference tested earlier,no measured improvement in declared small screens. Current source evolution uses the existing coding model in this session;not a GR-Evolve/OpenROAD execution,external paid API or new training pipeline.
+
+
+## October3 pretrained adaptation checkpoint
+
+- Selected six-tier portfolio: intro1.1148937089;hard1.3050947885;scale1.0652009886;congested1.1402091043;designs1.2911548758;stress1.0339077948. Full45legal officialrescore and allarchivehashmatching evidence in tier-neural-group-fusion-coverage.json/neural-group-fusion-restoration.json. Addedsearch/per-caseportfolio policy disclosed;no global-best or matched-totalbudget claim.
+- Full-hard hotspot variants pairedpositive overnative ineach ofseeds61/62,butindividualregressionsoccur. hotspot-seed-summary.json givesseedmeans/spreads;extra price-analysiscompute means matchedroutingwork only. No universaldefaultpromotion.
+- ActualfrozenHRM/NDSCPUinference achieved withhashpinnedpublishedweights. HRM21legaloutputs zero gains;NDS18legal outputs belowcontrolonaverage,one pairedwin. No training or demonstratedneural portfolio gain. Spatialcontroldonor saves2hard04units;notAIattribution. hrm-*-proposals.json,evolution-neural-groups.json,neural-group-fusion.json scopes preserved.
+- All138developmentchecks pass;thisdoesnot establishfull ancestral regeneration,newcasegeneralization,globaloptimality or finishedphase4/5.

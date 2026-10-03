@@ -1,6 +1,6 @@
 # Existing AI routing tools: October 3 refresh
 
-User preference: reuse existing AI and published models before considering custom training. No new training pipeline is authorized by this research direction; earlier own toy models remain experimental, not production defaults.
+User preference: reuse existing AI and published models before considering custom training. No new training pipeline has been launched; earlier own toy models remain experimental, not production defaults.
 
 ## Candidates and evidence
 
@@ -27,3 +27,13 @@ Prioritize pretrained obstacle-aware proposal generation if a licensed checkpoin
 ## Framework source inspection
 
 Read GR-Evolve's actual GeneticRunCodex.sh (Git blob591ba2a3fdb0cc84acf55cff74128fcc1bd71658), not only its abstract. It invokes an existing agent wrapper in75 serial iterations with logs and a process lock. The loop itself is a restart driver; candidate selection resides in agent context/evaluation, not an independent learned router. No script copied or executed. Our adaptation should keep immutable parent variants, matched fixed-work results, official legality and true physical delay; a general pretrained coding model proposes changes, and existing experiment wrappers evaluate them. The source loop's set-e behavior exits on a failed command before later handling, so do not import it unchanged.
+
+## Follow-on source/model audit
+
+- NeuralSteiner predicts candidate Steiner points from spatial/congestion information and then uses graph post-processing. Primary NeurIPS paper/slides advertise https://github.com/liuruizhi96/NeuralSteiner ;the public URL currently returns404 through the browser. No verified checkpoint/source download in this audit. A release promise is not a model we can run. Primary page: https://proceedings.neurips.cc/paper_files/paper/2024/hash/e6617714485265b9380a5315bf3ba98f-Abstract-Conference.html .
+- MazeNet full HTML inspected: https://arxiv.org/html/2410.18832v2 . Its experiments described here use small2Dunit-costmazes(up to11x11,eightterminals) and a wirelength/Steiner objective. No model-weight or implementation link located in the inspected article/search. Claimed empirical accuracy does not establish exactness or our3Ddelay performance. Keep it a research lead pending a usable checkpoint.
+- Cost-distance primary abstract revisited: https://arxiv.org/abs/2503.04419 . Congestion cost plus weighted source-sink distances fits our per-net tradeoff structurally. Current hotspot neighborhoods are an independent search heuristic,not its component-merging algorithm or approximation guarantee.
+
+## Released-model adaptation results
+
+AI_ADAPTATION_NEXT.md now records actual pretrained HRM3D and NDS CPU experiments,not merely availability research. Both checkpoints downloaded and hashed;HRM whole-net/gap-priced/partial-branch screens21legal outputs,zero gains. NDS18legal source-variant trials:one paired neural win but below native on average. All exploratory variants retained. Spatial-control donor fusion saves2hard04delayunits;no accepted neural donor improvement. No training/GPU/paidAPI. Detailed scope,CPU inference costs,source inventories and reproduction commands are in the adaptation document.
