@@ -1,0 +1,33 @@
+{
+  "run_id": "20261003T203406.740284Z-exact-polish",
+  "score": 1.3014679169752474,
+  "archive_sha256": "d30cef10b6f7e22c711ef258522062c037cf1af03248c29de226ce4b80e74105",
+  "members": {
+    "manifest.json": "75bc0d134d0be058c8fb132696a3a287b5c28b2e55177eba53e2220b4e1d64a0",
+    "coverage-rescore.json": "52748caecaed36a84f0f700c5ce1e64bdeb58a628b2bedefeabbb3106b0d3d1d",
+    "routes/case_01.sol.json": "d589065438376aa81a5e223cfbb4feec156d0f6c099065016c849d3c35415acd",
+    "routes/case_02.sol.json": "089b0f0bf4e0e58b145724403b1a60fa8e86f9fb790c7d9cf7b382f69ba6d366",
+    "routes/case_03.sol.json": "e028d0b62aaa4417abf5dca8766c0c5d4307de44b3bbe7cfc5b1314826e34a99",
+    "routes/case_04.sol.json": "f2f3ec2e82cf8d049d05dc24601af91d19badddeecb9128d2a25171e2d6d1cbd",
+    "routes/case_05.sol.json": "807f2cfd1c568f1d6247567ad9bbcb51ece04ceba133ab9385537b62c20f80c7",
+    "routes/case_06.sol.json": "819f54b9cf086d256b3baa7acb60d15454408f1f7920f1de9f4a7ce7923894e2",
+    "routes/case_07.sol.json": "5561d17e6c2a1bfc271b8de30c9e9dbb1ae07e8b19c77469132f6aa85645932a",
+    "routes/case_08.sol.json": "d36d9415fb93fbbe9e4ddc874e6228c1e6598711adf1761622330d6108caef12",
+    "routes/case_09.sol.json": "ebd3b71b51ef0369ae3314475299027bd262bbc569b7ce5012a94456ad078ff7",
+    "development-source/evolution_checkpoint.py": "134a2a4e355f32f2e43fac5353f8718cfde5e7852a4a854840e7d5e467b93918",
+    "development-source/evolved-1edd4ff2fa58a42396d38be99445c947d10b156f6e076248834474b5c8542073.cpp": "1edd4ff2fa58a42396d38be99445c947d10b156f6e076248834474b5c8542073",
+    "development-source/evolved-398f1c63bb9a18ab5cb6e0d54ed364740f1ceef70e40c3079a12abaac9b64e76.cpp": "398f1c63bb9a18ab5cb6e0d54ed364740f1ceef70e40c3079a12abaac9b64e76",
+    "development-source/evolved-4a4a116c8d7fc335e34229ff7a720d75d40c1db531e5f842b75882c516f1b68c.cpp": "4a4a116c8d7fc335e34229ff7a720d75d40c1db531e5f842b75882c516f1b68c",
+    "development-source/evolved-5048249b7084c563c977a2e2f317424a36c9dcf84edf042c4b2120dad020ba7c.cpp": "5048249b7084c563c977a2e2f317424a36c9dcf84edf042c4b2120dad020ba7c",
+    "development-source/evolved-6eab965d3af2de6d08a8033c318b538d13b92eaf0f3483c9040827d1d5ae47f2.cpp": "6eab965d3af2de6d08a8033c318b538d13b92eaf0f3483c9040827d1d5ae47f2",
+    "development-source/evolved-c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+    "development-source/evolved-d80c4846eb6c8c229fc0636f0e63a4d859ba46d0f6db3135466180fd31b6b8d6.cpp": "d80c4846eb6c8c229fc0636f0e63a4d859ba46d0f6db3135466180fd31b6b8d6",
+    "development-source/evolved-e1358831e86caa1ee94ff49d76bbbf78618394fcc75967ae8f637bfd14d5d600.cpp": "e1358831e86caa1ee94ff49d76bbbf78618394fcc75967ae8f637bfd14d5d600",
+    "development-source/evolved-eddae4b33d06f15040aeb9f0d7fd46c951397b1d7b55a1c5403e8073bb552747.cpp": "eddae4b33d06f15040aeb9f0d7fd46c951397b1d7b55a1c5403e8073bb552747",
+    "development-source/exact_polish.cpp": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+    "development-source/measure.py": "567d13af7911c668243237ae39ad84fed9462715cc7a0c85ae9aae7f2970dbe2",
+    "development-source/recombine_routes.py": "851d18dfa9767240f03f4f971d7c8022bbb8e6912fce0f1122be173bfc60d3fa",
+    "development-source/run_polish.py": "e4ed5c38874cea1945514d7fd8a69086296f0c1597252f98bd45d4c1928ad252"
+  },
+  "limitations": "Preserves scored outputs and their recorded source/manifest; missing raw ancestors are not reconstructed. See coverage evidence for case-portfolio and donor ancestry."
+}

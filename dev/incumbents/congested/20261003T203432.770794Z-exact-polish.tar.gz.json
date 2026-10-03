@@ -1,0 +1,23 @@
+{
+  "run_id": "20261003T203432.770794Z-exact-polish",
+  "score": 1.1399638783162933,
+  "archive_sha256": "324ace48bd15b724c12085bb372f11f052b9587a2bc2a0843c445337f11e7fb6",
+  "members": {
+    "manifest.json": "47e70e6a9331a56635d3e079ab593a1ed625f1575cc403f61da277c722b73453",
+    "coverage-rescore.json": "e05f993263a9ea0af9af0b4b6cddbf1e04144ef3f22610f90a502afa7ae624fd",
+    "routes/case_01.sol.json": "e4bead364daaec2a726eb80af24002ef544db709b8a8212dedd35f1772a132d6",
+    "routes/case_02.sol.json": "c10e04a424466bd812375a19ee1c24444b02f36b292aaba919ae49d3bcdee201",
+    "routes/case_03.sol.json": "27f9781e3583e4d57c91274b45a2efbbd0989ab10f30b2cc46c0c5e5c4b99f72",
+    "routes/case_04.sol.json": "ce5feabb66c408d651148282d017961a93f41dbdfe729cff92f4756116f076aa",
+    "development-source/evolution_checkpoint.py": "134a2a4e355f32f2e43fac5353f8718cfde5e7852a4a854840e7d5e467b93918",
+    "development-source/evolved-6eab965d3af2de6d08a8033c318b538d13b92eaf0f3483c9040827d1d5ae47f2.cpp": "6eab965d3af2de6d08a8033c318b538d13b92eaf0f3483c9040827d1d5ae47f2",
+    "development-source/evolved-c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+    "development-source/evolved-e36e4b7069b3ef89e13acbe89d08ec2e1059be6f37f24b3a5302c9bca2903e7c.cpp": "e36e4b7069b3ef89e13acbe89d08ec2e1059be6f37f24b3a5302c9bca2903e7c",
+    "development-source/evolved-e8b521f87671ef79e9f794c9afb7a92ad7f3901cf2bae45030f78ccc7b9bc906.cpp": "e8b521f87671ef79e9f794c9afb7a92ad7f3901cf2bae45030f78ccc7b9bc906",
+    "development-source/exact_polish.cpp": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+    "development-source/measure.py": "567d13af7911c668243237ae39ad84fed9462715cc7a0c85ae9aae7f2970dbe2",
+    "development-source/recombine_routes.py": "851d18dfa9767240f03f4f971d7c8022bbb8e6912fce0f1122be173bfc60d3fa",
+    "development-source/run_polish.py": "e4ed5c38874cea1945514d7fd8a69086296f0c1597252f98bd45d4c1928ad252"
+  },
+  "limitations": "Preserves scored outputs and their recorded source/manifest; missing raw ancestors are not reconstructed. See coverage evidence for case-portfolio and donor ancestry."
+}
