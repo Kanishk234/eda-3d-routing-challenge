@@ -1,0 +1,30 @@
+{
+  "run_id": "20261003T230231.787895Z-exact-polish",
+  "score": 1.3035816917222296,
+  "archive_sha256": "a105674b686f7f40b0db396c3ab4e9da446afa08ac148dbcf532ba3a477bd523",
+  "members": {
+    "manifest.json": "20a6724a4a05e6f065bd503e1a088565a2a93cca0e4fb167c5739d5b59a15d7f",
+    "coverage-rescore.json": "07eb19a3c21f95d938a6ac2fadb829874312564c91b5c18d2c8898465113f1f7",
+    "routes/case_01.sol.json": "fd11b2987a3c4cc4340de1a4e6d41dc534a73d379ce456dd0f771c669fead9ae",
+    "routes/case_02.sol.json": "5910e61b7227c5829289f63fe9ab672a8538368af4d8d57e36b52f6fcc065cb5",
+    "routes/case_03.sol.json": "bc904e05ac2613b02bd95085586c2909b0a22e3f49b9483c5725d62250d6048a",
+    "routes/case_04.sol.json": "864038462688d200877a361877ee28aa8d567d194b99aefde48eceaf45dd2aa5",
+    "routes/case_05.sol.json": "ce875fb9377beecebc61e555943942bcf479d306f5a2917a6ee37012e926c3a9",
+    "routes/case_06.sol.json": "a78807bb1644d71ccf73b82dfc9b83ee3287b2325df4f14c9fe59e091a5cbd6f",
+    "routes/case_07.sol.json": "b26ed3f363d83f35db8dd39ce6f9bd5808e1254f68a9c382092f065ce6e10213",
+    "routes/case_08.sol.json": "f7bf8466b52a94a87e5ef8fff74431475f8c2f62f2f533d4e9512e87efc760a7",
+    "routes/case_09.sol.json": "ce36691ba1e6917e0613b28a16abc27a724bb061b63b0521cccc575c576e6512",
+    "development-source/evolution_checkpoint.py": "134a2a4e355f32f2e43fac5353f8718cfde5e7852a4a854840e7d5e467b93918",
+    "development-source/evolved-375ab943b08928e62e4995312a8b599e01151cd872d12ab1b2fe2903a6d784c0.cpp": "375ab943b08928e62e4995312a8b599e01151cd872d12ab1b2fe2903a6d784c0",
+    "development-source/evolved-3c099abc29cc7beac5caf3fc300863adafdf007341660dccc6014c55fffeaeb8.cpp": "3c099abc29cc7beac5caf3fc300863adafdf007341660dccc6014c55fffeaeb8",
+    "development-source/evolved-52e22a460c5bf08d8eee057a9ddea29d6af7671bb66f73152ed0b8b8bcd9558e.cpp": "52e22a460c5bf08d8eee057a9ddea29d6af7671bb66f73152ed0b8b8bcd9558e",
+    "development-source/evolved-6db061851bc5c834c182513b6f5464796b9eb9a1b3e11b7982803810a86f2b8b.cpp": "6db061851bc5c834c182513b6f5464796b9eb9a1b3e11b7982803810a86f2b8b",
+    "development-source/evolved-b3d7b563627e9a2c20a98ae6e86718d07104dda228b37f86eba3040cd0147b0e.cpp": "b3d7b563627e9a2c20a98ae6e86718d07104dda228b37f86eba3040cd0147b0e",
+    "development-source/evolved-c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa.cpp": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+    "development-source/exact_polish.cpp": "c0d5d05dc745b1b51ff320c7f4fbef5545a4dc48a719bde5bdcf6ea894e660fa",
+    "development-source/measure.py": "567d13af7911c668243237ae39ad84fed9462715cc7a0c85ae9aae7f2970dbe2",
+    "development-source/recombine_routes.py": "851d18dfa9767240f03f4f971d7c8022bbb8e6912fce0f1122be173bfc60d3fa",
+    "development-source/run_polish.py": "e4ed5c38874cea1945514d7fd8a69086296f0c1597252f98bd45d4c1928ad252"
+  },
+  "limitations": "Preserves scored outputs and their recorded source/manifest; missing raw ancestors are not reconstructed. See coverage evidence for case-portfolio and donor ancestry."
+}
