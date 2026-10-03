@@ -2,3 +2,15 @@
 --extra-index-url https://download.pytorch.org/whl/cpu
 torch==2.8.0+cpu
 numpy==2.5.3
+
+# Optional pretrained HRM CPU inference.
+einops==0.8.1
+pydantic==2.11.7
+pydantic-core==2.33.2
+PyYAML==6.0.2
+annotated-types==0.8.0
+typing-inspection==0.4.4
+
+# Optional pretrained NDS checkpoint configuration types.
+omegaconf==2.3.0
+antlr4-python3-runtime==4.9.3

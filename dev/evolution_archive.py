@@ -8,6 +8,8 @@ from measure import ROOT,digest,save
 
 def family(report,path):
  names=set(report['plan']['variants'])
+ if 'neural_groups' in names:return 'pretrained-neighborhood'
+ if any(x.startswith('hotspot') for x in names):return 'hotspot-neighborhood'
  if 'cold_anneal_neutral' in names:return 'history-crossover'
  if any(x.startswith('precision') for x in names):return 'precision'
  if names.intersection({'slice10','slice25','repair_first'}):return 'scheduling'
