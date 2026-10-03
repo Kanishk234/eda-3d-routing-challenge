@@ -1,0 +1,27 @@
+{
+  "model_root": "dev/artifacts/20261002-learned-context-order",
+  "cases": [
+    {
+      "suite": "benchmarks",
+      "file": "case_05.json"
+    },
+    {
+      "suite": "benchmarks_hard",
+      "file": "case_01.json"
+    }
+  ],
+  "seeds": [
+    1
+  ],
+  "methods": [
+    "context_linear",
+    "context_mlp",
+    "static_linear",
+    "pressure",
+    "short_first",
+    "random"
+  ],
+  "work_budget": 3000000,
+  "budget": 30,
+  "scope": "Fixed model official development screen; no heldout-case tuning,one fresh attempt per method,failures retained."
+}

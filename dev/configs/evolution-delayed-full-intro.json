@@ -1,0 +1,258 @@
+{
+  "coverage": "docs/evidence/phase3/tier-independent-eighth-coverage.json",
+  "variants": [
+    "control",
+    "delayed_conflict_first"
+  ],
+  "seeds": [
+    19,
+    20
+  ],
+  "work_budget": 50000000,
+  "budget": 60,
+  "cases": [
+    {
+      "tier": "intro",
+      "case": "case_01",
+      "mode": "fanout_fine_escape",
+      "settings": {
+        "present_initial": 2,
+        "group_limit": 13,
+        "present_step": 2,
+        "history_step": 2,
+        "tree_prices": 0
+      }
+    },
+    {
+      "tier": "intro",
+      "case": "case_02",
+      "mode": "fanout_fine_escape",
+      "settings": {
+        "present_initial": 2,
+        "group_limit": 13,
+        "present_step": 2,
+        "history_step": 2,
+        "tree_prices": 0
+      }
+    },
+    {
+      "tier": "intro",
+      "case": "case_03",
+      "mode": "fanout_fine_escape",
+      "settings": {
+        "present_initial": 2,
+        "group_limit": 13,
+        "present_step": 2,
+        "history_step": 2,
+        "tree_prices": 0
+      }
+    },
+    {
+      "tier": "intro",
+      "case": "case_04",
+      "mode": "fanout_fine_escape",
+      "settings": {
+        "present_initial": 2,
+        "group_limit": 13,
+        "present_step": 2,
+        "history_step": 2,
+        "tree_prices": 0
+      }
+    },
+    {
+      "tier": "intro",
+      "case": "case_05",
+      "mode": "fanout_fine_escape",
+      "settings": {
+        "present_initial": 2,
+        "group_limit": 13,
+        "present_step": 2,
+        "history_step": 2,
+        "tree_prices": 0
+      }
+    },
+    {
+      "tier": "intro",
+      "case": "case_06",
+      "mode": "fanout_fine_escape",
+      "settings": {
+        "present_initial": 2,
+        "group_limit": 13,
+        "present_step": 2,
+        "history_step": 2,
+        "tree_prices": 0
+      }
+    },
+    {
+      "tier": "intro",
+      "case": "case_07",
+      "mode": "fanout_fine_escape",
+      "settings": {
+        "present_initial": 2,
+        "group_limit": 13,
+        "present_step": 2,
+        "history_step": 2,
+        "tree_prices": 0
+      }
+    },
+    {
+      "tier": "intro",
+      "case": "case_08",
+      "mode": "fanout_fine_escape",
+      "settings": {
+        "present_initial": 2,
+        "group_limit": 13,
+        "present_step": 2,
+        "history_step": 2,
+        "tree_prices": 0
+      }
+    },
+    {
+      "tier": "intro",
+      "case": "case_09",
+      "mode": "fanout_fine_escape",
+      "settings": {
+        "present_initial": 2,
+        "group_limit": 13,
+        "present_step": 2,
+        "history_step": 2,
+        "tree_prices": 0
+      }
+    },
+    {
+      "tier": "intro",
+      "case": "case_10",
+      "mode": "fanout_fine_escape",
+      "settings": {
+        "present_initial": 2,
+        "group_limit": 13,
+        "present_step": 2,
+        "history_step": 2,
+        "tree_prices": 0
+      }
+    },
+    {
+      "tier": "intro",
+      "case": "case_11",
+      "mode": "fanout_fine_escape",
+      "settings": {
+        "present_initial": 2,
+        "group_limit": 13,
+        "present_step": 2,
+        "history_step": 2,
+        "tree_prices": 0
+      }
+    },
+    {
+      "tier": "intro",
+      "case": "case_12",
+      "mode": "fanout_fine_escape",
+      "settings": {
+        "present_initial": 2,
+        "group_limit": 13,
+        "present_step": 2,
+        "history_step": 2,
+        "tree_prices": 0
+      }
+    },
+    {
+      "tier": "intro",
+      "case": "case_13",
+      "mode": "fanout_fine_escape",
+      "settings": {
+        "present_initial": 2,
+        "group_limit": 13,
+        "present_step": 2,
+        "history_step": 2,
+        "tree_prices": 0
+      }
+    },
+    {
+      "tier": "intro",
+      "case": "case_14",
+      "mode": "fanout_fine_escape",
+      "settings": {
+        "present_initial": 2,
+        "group_limit": 13,
+        "present_step": 2,
+        "history_step": 2,
+        "tree_prices": 0
+      }
+    },
+    {
+      "tier": "intro",
+      "case": "case_15",
+      "mode": "fanout_fine_escape",
+      "settings": {
+        "present_initial": 2,
+        "group_limit": 13,
+        "present_step": 2,
+        "history_step": 2,
+        "tree_prices": 0
+      }
+    },
+    {
+      "tier": "intro",
+      "case": "case_16",
+      "mode": "fanout_fine_escape",
+      "settings": {
+        "present_initial": 2,
+        "group_limit": 13,
+        "present_step": 2,
+        "history_step": 2,
+        "tree_prices": 0
+      }
+    },
+    {
+      "tier": "intro",
+      "case": "case_17",
+      "mode": "fanout_fine_escape",
+      "settings": {
+        "present_initial": 2,
+        "group_limit": 13,
+        "present_step": 2,
+        "history_step": 2,
+        "tree_prices": 0
+      }
+    },
+    {
+      "tier": "intro",
+      "case": "case_18",
+      "mode": "fanout_fine_escape",
+      "settings": {
+        "present_initial": 2,
+        "group_limit": 13,
+        "present_step": 2,
+        "history_step": 2,
+        "tree_prices": 0
+      }
+    },
+    {
+      "tier": "intro",
+      "case": "case_19",
+      "mode": "fanout_fine_escape",
+      "settings": {
+        "present_initial": 2,
+        "group_limit": 13,
+        "present_step": 2,
+        "history_step": 2,
+        "tree_prices": 0
+      }
+    },
+    {
+      "tier": "intro",
+      "case": "case_20",
+      "mode": "fanout_fine_escape",
+      "settings": {
+        "present_initial": 2,
+        "group_limit": 13,
+        "present_step": 2,
+        "history_step": 2,
+        "tree_prices": 0
+      }
+    }
+  ],
+  "scope": "Full intro comparison with same 50M expansion ceiling and 1000-pass cap. Natural pass completion is accepted only when neither wall nor work limit triggered; actual expansions disclosed. Not exact equal-work comparison.",
+  "allow_natural_completion": true,
+  "passes": 1000
+}

@@ -1,0 +1,44 @@
+{
+  "coverage": "docs/evidence/phase3/tier-long-case-coverage.json",
+  "variants": [
+    "control",
+    "fine_anneal_neutral"
+  ],
+  "seeds": [
+    34,
+    35,
+    36
+  ],
+  "work_budget": 60000000,
+  "budget": 60,
+  "cases": [
+    {
+      "tier": "hard",
+      "case": "case_08",
+      "mode": "fanout_fine_escape",
+      "settings": {
+        "present_initial": 2,
+        "present_step": 1,
+        "history_step": 1,
+        "group_limit": 13,
+        "tree_prices": 2,
+        "accept_equal": 1
+      }
+    },
+    {
+      "tier": "hard",
+      "case": "case_09",
+      "mode": "fanout_fine_escape",
+      "settings": {
+        "present_initial": 2,
+        "present_step": 1,
+        "history_step": 1,
+        "group_limit": 13,
+        "tree_prices": 2,
+        "accept_equal": 1
+      }
+    }
+  ],
+  "scope": "Reserved hard08/09 comparison of neutral-best checkpoint annealing against control,three new seeds60M;previous development sample positive.",
+  "mutation_family": "mixed"
+}

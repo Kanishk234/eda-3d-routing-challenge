@@ -1,0 +1,36 @@
+{
+  "cases": [
+    {
+      "suite": "benchmarks",
+      "file": "case_05.json"
+    },
+    {
+      "suite": "benchmarks_hard",
+      "file": "case_01.json"
+    }
+  ],
+  "seeds": [
+    1,
+    2
+  ],
+  "work_budget": 3000000,
+  "budget": 30,
+  "rounds": 180,
+  "schedules": {
+    "aggressive": {
+      "initial": 2,
+      "multiplier": 1.12,
+      "cap": 32,
+      "history": 2,
+      "fanout_power": 0.5
+    },
+    "gradual": {
+      "initial": 0.05,
+      "multiplier": 1.03,
+      "cap": 3,
+      "history": 0.05,
+      "fanout_power": 0.5
+    }
+  },
+  "scope": "Fresh own intro05/hard01 paired schedule screen,2seeds,3M/case30s safety; no incumbent geometry or tier claim."
+}

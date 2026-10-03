@@ -1,0 +1,44 @@
+{
+  "coverage": "docs/evidence/phase3/tier-independent-fourth-coverage.json",
+  "cases": [
+    {
+      "suite": "benchmarks",
+      "file": "case_05.json"
+    },
+    {
+      "suite": "benchmarks_hard",
+      "file": "case_01.json"
+    },
+    {
+      "suite": "benchmarks_hard",
+      "file": "case_04.json"
+    }
+  ],
+  "seeds": [
+    1,
+    2
+  ],
+  "variants": [
+    {
+      "schedule": "aggressive",
+      "conflict_only": false
+    },
+    {
+      "schedule": "aggressive",
+      "conflict_only": true
+    },
+    {
+      "schedule": "gradual",
+      "conflict_only": false
+    },
+    {
+      "schedule": "gradual",
+      "conflict_only": true
+    }
+  ],
+  "rounds": 1000,
+  "work_budget": 20000000,
+  "budget": 30,
+  "polish_passes": 3,
+  "scope": "Own fresh compiled construction;3development cases,2seeds,4schedule/selectivity variants;20M/30s per attempt,failure retained. No full-tier claim."
+}

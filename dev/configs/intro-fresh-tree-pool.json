@@ -1,0 +1,10 @@
+{
+  "suite": "benchmarks",
+  "runs": [
+    "20261002T233929.591895Z-exact-polish"
+  ],
+  "extra_candidates": "docs/evidence/phase3/intro-fresh-tree-catalog.json",
+  "seconds": 10,
+  "deterministic_time": 2,
+  "scope": "Restricted exact own tree selection; newestnative16/17 base plus declared fresh basins;added search/selection cost,no competitor geometry."
+}

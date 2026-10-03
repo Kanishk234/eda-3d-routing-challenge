@@ -1,0 +1,32 @@
+--- control.cpp
++++ solver.cpp
+@@ -792,7 +792,10 @@
+                     for(int v:candidate.vertices) owner[v]=candidate.id;
+                     after=add(after,candidate.delay); nets[j]=std::move(candidate);
+                 }
+-                bool accept_uphill=uphill && legal && after>=before && after-before<=before/100 && rng()%4==0;
++                double work_phase=work_limit?std::min(1.0,static_cast<double>(expansions)/work_limit):0.5;
++                double temperature=std::max(1.0,0.005*before*(1.0-work_phase)*(1.0-work_phase));
++                bool accept_uphill=uphill && legal && after>before && after-before<=before/50 &&
++                    static_cast<double>(rng()%1000000)/1000000.0<std::exp(-static_cast<double>(after-before)/temperature);
+                 bool geometry_changed=false;
+                 if(accept_equal && legal && after==before) {
+                     for(std::size_t k=0;k<group.size();++k) {
+@@ -893,7 +896,7 @@
+                 }
+                 std::stable_sort(order.begin(),order.end(),[&](int a,int b){return potential[a]>potential[b];});
+             }
+-            if(repair_first) repair(seed+static_cast<unsigned long long>(pass),1,4,true,false,wide?std::max(12,group_limit-1):4);
++            if(repair_first) repair(seed+static_cast<unsigned long long>(pass),1,4,true,false,wide?std::max(12,group_limit-1):4,true);
+             for(int j:order) {
+                 ++polish_attempts;
+                 Net candidate;
+@@ -905,7 +908,7 @@
+                 for(int v:candidate.vertices) owner[v]=nets[j].id;
+                 nets[j]=std::move(candidate);
+             }
+-            if(!repair_first) repair(seed+static_cast<unsigned long long>(pass),1,4,true,false,wide?std::max(12,group_limit-1):4);
++            if(!repair_first) repair(seed+static_cast<unsigned long long>(pass),1,4,true,false,wide?std::max(12,group_limit-1):4,true);
+         }
+     }
+     std::string group_histogram() const {

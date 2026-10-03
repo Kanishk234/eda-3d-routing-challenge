@@ -1,0 +1,15 @@
+{
+  "coverage": "docs/evidence/phase3/tier-independent-eighth-coverage.json",
+  "cases": [
+    "case_01",
+    "case_04",
+    "case_07"
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "work_budget": 3000000,
+  "budget": 60
+}

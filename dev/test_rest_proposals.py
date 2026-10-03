@@ -2,10 +2,21 @@
 import unittest
 from test_exact import make,reference
 from branch_repair import Router,Limit
-from rest_proposals import template,tree_with_template
+from rest_proposals import template,tree_with_template,transformed_points,transformed_template
 from run_polish import Submission,check
 
 class Proposals(unittest.TestCase):
+    def test_all_rectangle_symmetries(self):
+        points=[(1,2),(5,4)]
+        for t in range(8):
+            transformed=transformed_points(points,t,7,6)
+            width,height=(6,7) if t&1 else (7,6)
+            self.assertTrue(all(0<=x<width and 0<=y<height for x,y in transformed))
+            corridor=transformed_template(points,[0,1],t,7,6)
+            self.assertTrue(set(points)<=corridor)
+            self.assertEqual(len(corridor),7)
+            self.assertTrue(all(0<=x<7 and 0<=y<6 for x,y in corridor))
+
     def test_l_corridor(self):
         self.assertEqual(template([(0,0),(2,2)],[0,1]),{(0,0),(0,1),(0,2),(1,2),(2,2)})
 

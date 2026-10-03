@@ -1,0 +1,83 @@
+{
+  "coverage": "docs/evidence/phase3/tier-independent-sixth-coverage.json",
+  "workers": 2,
+  "seeds": [
+    20,
+    21
+  ],
+  "work_budget": 75000000,
+  "tiers": [
+    {
+      "tier": "intro",
+      "settings": {
+        "mode": "fanout_fine_escape",
+        "present_initial": 2,
+        "group_limit": 13,
+        "present_step": 2,
+        "history_step": 2,
+        "tree_prices": 0
+      }
+    },
+    {
+      "tier": "hard",
+      "settings": {
+        "mode": "fanout_fine_escape",
+        "present_initial": 2,
+        "group_limit": 13,
+        "present_step": 1,
+        "history_step": 1,
+        "tree_prices": 2,
+        "accept_equal": true
+      }
+    },
+    {
+      "tier": "scale",
+      "settings": {
+        "mode": "fanout_fine_adaptive",
+        "present_initial": 2,
+        "group_limit": 3,
+        "present_step": 2,
+        "history_step": 2,
+        "tree_prices": 0
+      }
+    },
+    {
+      "tier": "congested",
+      "settings": {
+        "mode": "fanout_fine_escape",
+        "present_initial": 2,
+        "group_limit": 3,
+        "present_step": 4,
+        "history_step": 4,
+        "tree_prices": 1,
+        "accept_equal": true,
+        "escape_direct": true
+      }
+    },
+    {
+      "tier": "designs",
+      "settings": {
+        "mode": "fanout_fine_escape",
+        "present_initial": 2,
+        "group_limit": 3,
+        "present_step": 2,
+        "history_step": 2,
+        "tree_prices": 1,
+        "accept_equal": true,
+        "escape_penalty": 8
+      }
+    },
+    {
+      "tier": "stress",
+      "settings": {
+        "mode": "fanout_fine_escape",
+        "present_initial": 2,
+        "group_limit": 13,
+        "present_step": 2,
+        "history_step": 2,
+        "tree_prices": 0
+      }
+    }
+  ],
+  "scope": "Own continuation20/21,75M/case60s safety,two workers,independent full-round official rescoring. Added effort;no automatic promotion. Own fresh ancestry disclosed."
+}

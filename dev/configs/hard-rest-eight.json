@@ -1,0 +1,26 @@
+{
+  "coverage": "docs/evidence/phase3/tier-independent-sixth-coverage.json",
+  "tier": "hard",
+  "cases": [
+    "case_01",
+    "case_04",
+    "case_07"
+  ],
+  "work_budget": 15000000,
+  "budget": 90,
+  "penalties": [
+    0,
+    16,
+    64
+  ],
+  "transformations": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ]
+}

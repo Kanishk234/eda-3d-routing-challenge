@@ -1,0 +1,83 @@
+{
+  "coverage": "docs/evidence/phase3/tier-long-case-coverage.json",
+  "workers": 2,
+  "seeds": [
+    24,
+    25
+  ],
+  "work_budget": 100000000,
+  "tiers": [
+    {
+      "tier": "intro",
+      "settings": {
+        "mode": "fanout_fine_escape",
+        "present_initial": 2,
+        "group_limit": 13,
+        "present_step": 2,
+        "history_step": 2,
+        "tree_prices": 0
+      }
+    },
+    {
+      "tier": "hard",
+      "settings": {
+        "mode": "fanout_fine_escape",
+        "present_initial": 2,
+        "group_limit": 13,
+        "present_step": 1,
+        "history_step": 1,
+        "tree_prices": 2,
+        "accept_equal": true
+      }
+    },
+    {
+      "tier": "scale",
+      "settings": {
+        "mode": "fanout_fine_adaptive",
+        "present_initial": 2,
+        "group_limit": 3,
+        "present_step": 2,
+        "history_step": 2,
+        "tree_prices": 0
+      }
+    },
+    {
+      "tier": "congested",
+      "settings": {
+        "mode": "fanout_fine_escape",
+        "present_initial": 2,
+        "group_limit": 3,
+        "present_step": 4,
+        "history_step": 4,
+        "tree_prices": 1,
+        "accept_equal": true,
+        "escape_direct": true
+      }
+    },
+    {
+      "tier": "designs",
+      "settings": {
+        "mode": "fanout_fine_escape",
+        "present_initial": 2,
+        "group_limit": 3,
+        "present_step": 2,
+        "history_step": 2,
+        "tree_prices": 1,
+        "accept_equal": true,
+        "escape_penalty": 8
+      }
+    },
+    {
+      "tier": "stress",
+      "settings": {
+        "mode": "fanout_fine_escape",
+        "present_initial": 2,
+        "group_limit": 13,
+        "present_step": 2,
+        "history_step": 2,
+        "tree_prices": 0
+      }
+    }
+  ],
+  "scope": "Own seeds24/25 from verified long-case portfolio,100M/case60s,two workers;added effort;no training/no competitor routes."
+}

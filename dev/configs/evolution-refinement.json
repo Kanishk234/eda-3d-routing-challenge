@@ -1,0 +1,60 @@
+{
+  "coverage": "docs/evidence/phase3/tier-long-case-coverage.json",
+  "variants": [
+    "control",
+    "conflict_first",
+    "conflict_last",
+    "delayed_conflict_first",
+    "flow_conflict_first",
+    "rotate_order"
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "work_budget": 50000000,
+  "budget": 60,
+  "cases": [
+    {
+      "tier": "hard",
+      "case": "case_01",
+      "mode": "fanout_fine_escape",
+      "settings": {
+        "present_initial": 2,
+        "present_step": 1,
+        "history_step": 1,
+        "group_limit": 13,
+        "tree_prices": 2,
+        "accept_equal": 1
+      }
+    },
+    {
+      "tier": "hard",
+      "case": "case_04",
+      "mode": "fanout_fine_escape",
+      "settings": {
+        "present_initial": 2,
+        "present_step": 1,
+        "history_step": 1,
+        "group_limit": 13,
+        "tree_prices": 2,
+        "accept_equal": 1
+      }
+    },
+    {
+      "tier": "hard",
+      "case": "case_07",
+      "mode": "fanout_fine_escape",
+      "settings": {
+        "present_initial": 2,
+        "present_step": 1,
+        "history_step": 1,
+        "group_limit": 13,
+        "tree_prices": 2,
+        "accept_equal": 1
+      }
+    }
+  ],
+  "scope": "Second generation: retain and refine ordering family,5x larger matched work budget,diagnostic order-change counters;own parent,3dev cases,seeds1/2/3,one worker."
+}

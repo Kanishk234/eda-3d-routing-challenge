@@ -1,0 +1,17 @@
+{
+  "coverage": "docs/evidence/phase3/tier-independent-sixth-coverage.json",
+  "cases": [
+    "case_01",
+    "case_04",
+    "case_07"
+  ],
+  "seed": 1,
+  "nets": 8,
+  "max_sinks": 4,
+  "work_budget": 2000000,
+  "budget": 30,
+  "penalties": [
+    16,
+    64
+  ]
+}

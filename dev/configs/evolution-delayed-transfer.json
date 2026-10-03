@@ -1,0 +1,73 @@
+{
+  "coverage": "docs/evidence/phase3/tier-independent-eighth-coverage.json",
+  "variants": [
+    "control",
+    "delayed_conflict_first"
+  ],
+  "seeds": [
+    13,
+    14,
+    15
+  ],
+  "work_budget": 50000000,
+  "budget": 60,
+  "cases": [
+    {
+      "tier": "designs",
+      "case": "ctrl",
+      "mode": "fanout_fine_escape",
+      "settings": {
+        "present_initial": 2,
+        "group_limit": 3,
+        "present_step": 2,
+        "history_step": 2,
+        "tree_prices": 1,
+        "accept_equal": 1,
+        "escape_penalty": 8
+      }
+    },
+    {
+      "tier": "designs",
+      "case": "router",
+      "mode": "fanout_fine_escape",
+      "settings": {
+        "present_initial": 2,
+        "group_limit": 3,
+        "present_step": 2,
+        "history_step": 2,
+        "tree_prices": 1,
+        "accept_equal": 1,
+        "escape_penalty": 8
+      }
+    },
+    {
+      "tier": "congested",
+      "case": "case_01",
+      "mode": "fanout_fine_escape",
+      "settings": {
+        "present_initial": 2,
+        "group_limit": 3,
+        "present_step": 4,
+        "history_step": 4,
+        "tree_prices": 1,
+        "accept_equal": 1,
+        "escape_direct": 1
+      }
+    },
+    {
+      "tier": "congested",
+      "case": "case_04",
+      "mode": "fanout_fine_escape",
+      "settings": {
+        "present_initial": 2,
+        "group_limit": 3,
+        "present_step": 4,
+        "history_step": 4,
+        "tree_prices": 1,
+        "accept_equal": 1,
+        "escape_direct": 1
+      }
+    }
+  ],
+  "scope": "Delayed candidate transfer screen;independent tier comparisons,50M,seeds13/14/15,four cases,not six-tier aggregate or full tier claim."
+}

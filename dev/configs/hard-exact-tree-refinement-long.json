@@ -1,0 +1,20 @@
+{
+  "coverage": "docs/evidence/phase3/tier-long-case-coverage.json",
+  "tier": "hard",
+  "cases": [
+    "case_04"
+  ],
+  "pairs_per_case": 8,
+  "margin": 1,
+  "seconds": 60,
+  "deterministic_time": 15,
+  "proposal_work": 10000000,
+  "proposal_seconds": 60,
+  "scope": "Retain exact model family; refined vs original non-strict optimization with feasible incumbent hints,8same groups on hard04,60s/15deterministic ceilings. Declared added research budget.",
+  "max_group": 3,
+  "discovery_options": 4,
+  "prune_arcs": true,
+  "solver": "tree",
+  "all_fanouts": true,
+  "strict_improvement": false
+}

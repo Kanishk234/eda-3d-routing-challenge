@@ -19,6 +19,26 @@ def template(points,indices):
         preferred.update((k,yy) for k in range(min(x,xx),max(x,xx)+1))
     return preferred
 
+def transformed_points(points,transform,width,height):
+    """Eight rectangle symmetries; bit0 swaps axes, bits1/2 reflect."""
+    out=[]
+    for x,y in points:
+        if transform&2:x=width-1-x
+        if transform&4:y=height-1-y
+        if transform&1:x,y=y,x
+        out.append((x,y))
+    return out
+
+def transformed_template(points,indices,transform,width,height):
+    preferred=template(transformed_points(points,transform,width,height),indices)
+    out=set()
+    for x,y in preferred:
+        if transform&1:x,y=y,x
+        if transform&2:x=width-1-x
+        if transform&4:y=height-1-y
+        out.add((x,y))
+    return out
+
 def tree_with_template(router,nid,preferred,penalty):
     n=router.nets[nid];root=router.pins[n.driver];todo={router.pins[s] for s in n.sinks};dist={root:(0,0)};parent={};queue=[(0,0,root)]
     while queue and todo:
@@ -42,17 +62,18 @@ def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('plan',type=Path);p.add_argument('--model-root',type=Path,required=True);p.add_argument('--out',type=Path,required=True);a=p.parse_args();assert not a.out.exists();a.out.mkdir(parents=True);(a.out/'routes').mkdir()
     import numpy as np,torch
     torch.set_num_threads(1);torch.set_num_interop_threads(1);torch.manual_seed(1)
+    plan=json.loads(a.plan.read_text())
     manifest=json.loads((a.model_root/'manifest.json').read_text())
     for file in manifest['files']:assert digest(a.model_root/file['path'])==file['sha256']
     sys.path.insert(0,str(a.model_root.resolve()));from models.actor_critic import Actor
     # Legacy checkpoint includes a NumPy scalar evaluation metric. Keep the
     # restricted loader and allow only these known NumPy numeric types.
     with torch.serialization.safe_globals([(np._core.multiarray.scalar,'numpy.core.multiarray.scalar'),np.dtype,type(np.dtype('float64'))]):
-        checkpoint=torch.load(a.model_root/'save/DAC21/rsmt5b.pt',map_location='cpu',weights_only=True)
-    actor=Actor(5,torch.device('cpu'));actor.load_state_dict(checkpoint['actor_state_dict']);actor.eval()
-    plan=json.loads(a.plan.read_text());stage=next(r for r in json.loads((ROOT/plan['coverage']).read_text())['rows'] if r['tier']==plan['tier']);suite=stage['config']['suite']
+        checkpoint=torch.load(a.model_root/plan.get('model_checkpoint','save/DAC21/rsmt5b.pt'),map_location='cpu',weights_only=True)
+    actor=Actor(plan.get('model_degree',5),torch.device('cpu'));actor.load_state_dict(checkpoint['actor_state_dict']);actor.eval()
+    stage=next(r for r in json.loads((ROOT/plan['coverage']).read_text())['rows'] if r['tier']==plan['tier']);suite=stage['config']['suite']
     sources=[a.plan,Path(__file__),ROOT/'dev/branch_repair.py',ROOT/'dev/select_tree_pool.py',ROOT/plan['coverage']];frozen={str(p.resolve()):digest(p) for p in sources}
-    report=dict(status='running',plan=plan,model_manifest=manifest,torch_version=torch.__version__,cpu_threads=1,source_sha256=frozen,rows=[],scope='Existing REST5-terminal weights; adapted XY topology tie preferences. Multi-sink3D delay not training objective; degree2-5 transfer experimental. No competitor routes. Restricted finite-pool selection only.');save(a.out/'progress.json',report)
+    report=dict(status='running',plan=plan,model_manifest=manifest,torch_version=torch.__version__,cpu_threads=1,source_sha256=frozen,rows=[],scope='Published REST weights; adapted XY topology tie preferences. Multi-sink3D delay not training objective; variable-degree transfer experimental. No competitor routes. Restricted finite-pool selection only.');save(a.out/'progress.json',report)
     for case in json.loads((OFFICIAL/suite/'suite.json').read_text())['cases']:
         if case['name'] not in plan['cases']:continue
         path=OFFICIAL/suite/case['instance_file'];source=ROOT/'dev/artifacts'/stage['run_id']/'routes'/(case['name']+'.sol.json');inst=Instance.load(path);sub=Submission.load(source);before=check(inst,sub);assert before.legal
@@ -65,13 +86,15 @@ def main():
         try:
             for n in inst.nets:
                 pins=[router.pins[p] for p in n.pins()];degree=len(pins)
-                if not 2<=degree<=5:continue
-                points=[v[:2] for v in pins];coords=np.array([[x/inst.width,y/inst.height] for x,y in points],dtype=np.float32);actor.degree=degree
-                for swap in [False,True]:
-                    inputs=coords[:,::-1].copy() if swap else coords
+                if not 2<=degree<=plan.get('max_degree',5):continue
+                points=[v[:2] for v in pins];actor.degree=degree
+                for transform in plan.get('transformations',[0,1]):
+                    assert transform in range(8)
+                    transformed=transformed_points(points,transform,inst.width,inst.height)
+                    width,height=(inst.height,inst.width) if transform&1 else (inst.width,inst.height)
+                    inputs=np.array([[x/width,y/height] for x,y in transformed],dtype=np.float32)
                     with torch.inference_mode():indices,_=actor(inputs[None],True)
-                    neural_calls+=1;prefer=template(points,indices[0].tolist())
-                    if swap:prefer=template([(y,x) for x,y in points],indices[0].tolist());prefer={(y,x) for x,y in prefer}
+                    neural_calls+=1;prefer=transformed_template(points,indices[0].tolist(),transform,inst.width,inst.height)
                     for penalty in plan['penalties']:
                         tree=tree_with_template(router,n.id,prefer,penalty)
                         if tree:add(tree)

@@ -1,0 +1,99 @@
+{
+  "cases": [
+    {
+      "synthetic_seed": 1001
+    },
+    {
+      "synthetic_seed": 1002
+    },
+    {
+      "synthetic_seed": 1003
+    },
+    {
+      "synthetic_seed": 1004
+    },
+    {
+      "synthetic_seed": 1005
+    },
+    {
+      "synthetic_seed": 1006
+    },
+    {
+      "synthetic_seed": 1007
+    },
+    {
+      "synthetic_seed": 1008
+    },
+    {
+      "synthetic_seed": 1009
+    },
+    {
+      "synthetic_seed": 1010
+    },
+    {
+      "synthetic_seed": 1011
+    },
+    {
+      "synthetic_seed": 1012
+    },
+    {
+      "synthetic_seed": 1013
+    },
+    {
+      "synthetic_seed": 1014
+    },
+    {
+      "synthetic_seed": 1015
+    },
+    {
+      "synthetic_seed": 1016
+    },
+    {
+      "synthetic_seed": 1017
+    },
+    {
+      "synthetic_seed": 1018
+    },
+    {
+      "synthetic_seed": 1019
+    },
+    {
+      "synthetic_seed": 1020
+    },
+    {
+      "synthetic_seed": 1021
+    },
+    {
+      "synthetic_seed": 1022
+    },
+    {
+      "synthetic_seed": 1023
+    },
+    {
+      "synthetic_seed": 1024
+    }
+  ],
+  "seeds": [
+    1
+  ],
+  "work_budget": 250000,
+  "budget": 10,
+  "rounds": 80,
+  "schedules": {
+    "aggressive": {
+      "initial": 2,
+      "multiplier": 1.12,
+      "cap": 32,
+      "history": 2,
+      "fanout_power": 0.5
+    },
+    "gradual": {
+      "initial": 0.05,
+      "multiplier": 1.03,
+      "cap": 3,
+      "history": 0.05,
+      "fanout_power": 0.5
+    }
+  },
+  "scope": "Fresh own synthetic curriculum screen; matched ceilings,24cases with failures retained; no official-tier claims."
+}

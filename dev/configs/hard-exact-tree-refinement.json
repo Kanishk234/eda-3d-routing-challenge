@@ -1,0 +1,22 @@
+{
+  "coverage": "docs/evidence/phase3/tier-long-case-coverage.json",
+  "tier": "hard",
+  "cases": [
+    "case_01",
+    "case_04",
+    "case_07"
+  ],
+  "pairs_per_case": 10,
+  "margin": 1,
+  "seconds": 30,
+  "deterministic_time": 3,
+  "proposal_work": 10000000,
+  "proposal_seconds": 60,
+  "scope": "Refine exact tree family with per-sink slack bounds,larger declared discovery/solve caps;compare original and refined using same graphs/discovery/solve ceilings.",
+  "max_group": 3,
+  "discovery_options": 4,
+  "prune_arcs": true,
+  "solver": "tree",
+  "all_fanouts": true,
+  "strict_improvement": true
+}

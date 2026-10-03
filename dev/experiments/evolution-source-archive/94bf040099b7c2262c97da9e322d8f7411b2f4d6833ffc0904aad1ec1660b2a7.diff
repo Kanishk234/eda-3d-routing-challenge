@@ -1,0 +1,17 @@
+--- control.cpp
++++ solver.cpp
+@@ -479,6 +479,14 @@
+         for(int iteration=0;iteration<max_rounds && !expired();++iteration) {
+             ++negotiation_rounds;
+             if(shuffled_groups) std::shuffle(routing_order.begin(),routing_order.end(),group_rng);
++            // LLM-proposed local ordering: count conflicted vertices per net.
++            // Only ordering changes; costs, legal acceptance and rollback stay intact.
++            std::vector<int> conflict_debt(nets.size(),0);
++            for(int j:routing_order) for(int v:nets[j].vertices)
++                conflict_debt[j]+=(usage[v]>1);
++            std::stable_sort(routing_order.begin(),routing_order.end(),[&](int a,int b) {
++                return conflict_debt[a] < conflict_debt[b];
++            });
+             for(int j:routing_order) {
+                 for(int v:nets[j].vertices) --usage[v];
+                 Net candidate;

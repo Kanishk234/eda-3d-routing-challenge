@@ -1,0 +1,22 @@
+{
+  "coverage": "docs/evidence/phase3/tier-independent-eighth-coverage.json",
+  "cases": [
+    "case_01",
+    "case_04",
+    "case_07"
+  ],
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "work_budget": 6000000,
+  "budget": 60,
+  "penalties": [
+    0,
+    1,
+    2,
+    4
+  ],
+  "scope": "Refine segment family with mildly priced requester proposals;compare same proposal mixture with existing branch rebuild,6M work/60s,seeds1/2/3. Earlier unpriced screen allties;no deletion."
+}

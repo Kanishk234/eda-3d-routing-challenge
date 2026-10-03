@@ -1,0 +1,31 @@
+--- control.cpp
++++ solver.cpp
+@@ -76,6 +76,7 @@
+ }
+ struct NegotiationConfig { I present_initial=2,present_step=2,history_step=2; };
+ struct Engine {
++    std::uint64_t evolution_order_calls=0,evolution_order_changes=0;
+     NegotiationConfig negotiation;
+     int group_limit=13;
+     bool repair_first=false;
+@@ -479,6 +480,11 @@
+         for(int iteration=0;iteration<max_rounds && !expired();++iteration) {
+             ++negotiation_rounds;
+             if(shuffled_groups) std::shuffle(routing_order.begin(),routing_order.end(),group_rng);
++            auto prior_order=routing_order;
++            routing_order=group;
++            std::rotate(routing_order.begin(),routing_order.begin()+(iteration%routing_order.size()),routing_order.end());
++            ++evolution_order_calls;
++            evolution_order_changes+=(prior_order!=routing_order);
+             for(int j:routing_order) {
+                 for(int v:nets[j].vertices) --usage[v];
+                 Net candidate;
+@@ -916,7 +922,7 @@
+     void output() {
+         if(!ablation_mode) std::cerr<<"{\"proposals\":"<<proposals<<",\"no_gain\":"<<no_gain
+                  <<",\"too_many\":"<<too_many<<",\"attempts\":"<<attempts
+-                 <<",\"negotiation_rounds\":"<<negotiation_rounds<<",\"conflicted_rounds\":"<<conflicted_rounds
++                 <<",\"evolution_order_calls\":"<<evolution_order_calls<<",\"evolution_order_changes\":"<<evolution_order_changes<<",\"negotiation_rounds\":"<<negotiation_rounds<<",\"conflicted_rounds\":"<<conflicted_rounds
+                  <<",\"fresh_attempts\":"<<fresh_attempts<<",\"fresh_legal\":"<<fresh_legal
+                  <<",\"read_s\":"<<read_s<<",\"validation_s\":"<<validation_s<<",\"optimization_s\":"<<optimization_s
+                  <<",\"search_reset_s\":"<<search_reset_s<<",\"search_rebuild_s\":"<<search_rebuild_s

@@ -1,0 +1,36 @@
+{
+  "cases": [
+    {
+      "suite": "benchmarks_hard",
+      "file": "case_01.json"
+    }
+  ],
+  "seeds": [
+    1,
+    2
+  ],
+  "work_budget": 3000000,
+  "budget": 30,
+  "rounds": 180,
+  "schedules": {
+    "aggressive": {
+      "initial": 2,
+      "multiplier": 1.12,
+      "cap": 32,
+      "history": 2,
+      "fanout_power": 0.5,
+      "conflict_only": true,
+      "full_every": 10
+    },
+    "gradual": {
+      "initial": 0.05,
+      "multiplier": 1.03,
+      "cap": 3,
+      "history": 0.05,
+      "fanout_power": 0.5,
+      "conflict_only": true,
+      "full_every": 10
+    }
+  },
+  "scope": "Followup hard01 same3M/30s ceilings; conflict-only passes plus every10th full pass. Earlier all-net report/source snapshot preserved."
+}

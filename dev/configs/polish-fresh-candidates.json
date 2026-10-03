@@ -1,0 +1,35 @@
+{
+  "coverage": "docs/evidence/phase3/tier-independent-fourth-coverage.json",
+  "work_budget": 20000000,
+  "budget": 60,
+  "items": [
+    {
+      "suite": "benchmarks_hard",
+      "case": "case_01",
+      "seed": 1,
+      "source": "dev/artifacts/20261002-fresh-negotiation-conflict/case_01-1-aggressive.sol.json",
+      "generation_report": "docs/evidence/phase3/fresh-negotiation-conflict.json"
+    },
+    {
+      "suite": "benchmarks_hard",
+      "case": "case_01",
+      "seed": 2,
+      "source": "dev/artifacts/20261002-fresh-negotiation-conflict/case_01-2-aggressive.sol.json",
+      "generation_report": "docs/evidence/phase3/fresh-negotiation-conflict.json"
+    },
+    {
+      "suite": "benchmarks",
+      "case": "case_05",
+      "seed": 1,
+      "source": "dev/artifacts/20261002-fresh-negotiation-official/case_05-1-aggressive.sol.json",
+      "generation_report": "docs/evidence/phase3/fresh-negotiation-official.json"
+    },
+    {
+      "suite": "benchmarks",
+      "case": "case_05",
+      "seed": 2,
+      "source": "dev/artifacts/20261002-fresh-negotiation-official/case_05-2-aggressive.sol.json",
+      "generation_report": "docs/evidence/phase3/fresh-negotiation-official.json"
+    }
+  ]
+}

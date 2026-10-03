@@ -1,0 +1,109 @@
+{
+  "coverage": "docs/evidence/phase3/tier-independent-sixth-coverage.json",
+  "workers": 8,
+  "per_worker_ram_reservation": 314572800,
+  "seeds": [
+    22,
+    23
+  ],
+  "budget": 180,
+  "work_budget": 200000000,
+  "cases": [
+    {
+      "tier": "hard",
+      "case": "case_01",
+      "settings": {
+        "mode": "fanout_fine_escape",
+        "present_initial": 2,
+        "group_limit": 13,
+        "present_step": 1,
+        "history_step": 1,
+        "tree_prices": 2,
+        "accept_equal": true
+      }
+    },
+    {
+      "tier": "hard",
+      "case": "case_04",
+      "settings": {
+        "mode": "fanout_fine_escape",
+        "present_initial": 2,
+        "group_limit": 13,
+        "present_step": 1,
+        "history_step": 1,
+        "tree_prices": 2,
+        "accept_equal": true
+      }
+    },
+    {
+      "tier": "hard",
+      "case": "case_07",
+      "settings": {
+        "mode": "fanout_fine_escape",
+        "present_initial": 2,
+        "group_limit": 13,
+        "present_step": 1,
+        "history_step": 1,
+        "tree_prices": 2,
+        "accept_equal": true
+      }
+    },
+    {
+      "tier": "congested",
+      "case": "case_01",
+      "settings": {
+        "mode": "fanout_fine_escape",
+        "present_initial": 2,
+        "group_limit": 3,
+        "present_step": 4,
+        "history_step": 4,
+        "tree_prices": 1,
+        "accept_equal": true,
+        "escape_direct": true
+      }
+    },
+    {
+      "tier": "congested",
+      "case": "case_02",
+      "settings": {
+        "mode": "fanout_fine_escape",
+        "present_initial": 2,
+        "group_limit": 3,
+        "present_step": 4,
+        "history_step": 4,
+        "tree_prices": 1,
+        "accept_equal": true,
+        "escape_direct": true
+      }
+    },
+    {
+      "tier": "designs",
+      "case": "ctrl",
+      "settings": {
+        "mode": "fanout_fine_escape",
+        "present_initial": 2,
+        "group_limit": 3,
+        "present_step": 2,
+        "history_step": 2,
+        "tree_prices": 1,
+        "accept_equal": true,
+        "escape_penalty": 8
+      }
+    },
+    {
+      "tier": "designs",
+      "case": "int2float",
+      "settings": {
+        "mode": "fanout_fine_escape",
+        "present_initial": 2,
+        "group_limit": 3,
+        "present_step": 2,
+        "history_step": 2,
+        "tree_prices": 1,
+        "accept_equal": true,
+        "escape_penalty": 8
+      }
+    }
+  ],
+  "scope": "14independent own-case walks,8workers; 180s/200M caps,42CPU-minute planned search ceiling. Plus active2worker all-tier continuation. Separate immutable parent;no competitor routes,no automatic selection. Memory gates reserve2GiB plus300MiB/worker against observed previous peaks<=49MiB. Corrected designs names; every future result is retained even if another task fails."
+}
